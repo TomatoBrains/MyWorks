@@ -1,0 +1,542 @@
+*{
+margin: 0;
+box-sizing: border-box;
+
+}
+
+.container{
+	max-width: 1200px;
+	margin:0 auto;
+	padding: 0;
+	width: 100%;
+}
+a { 
+text-decoration: none; 
+}
+a:hover { text-decoration: none; 
+}
+p {
+	margin: 0;
+}
+
+
+
+
+
+/*хедер и внутри нав*/
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(https://i.imgur.com/yoSEYGg.jpg);
+	background-color: #000000;
+	background-size: cover;
+	font-size: 16px;
+
+}
+header .container {
+	padding-bottom: 25px;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin: auto auto 150px auto;
+	padding-top: 2.500em;
+}
+.navmogo a{
+	font:bold 1.875em "Montserrat";
+	color: #ffffff;
+	text-align: left;
+}
+.navmogo a:hover {
+	color: #fce38a;
+}
+.navpaneltext a{
+	font: 0.875em "Montserrat";
+	color: #ffffff;
+	margin-right: 3.438em;
+	border: none;
+	padding-bottom: 0.625em;
+}
+.navpaneltext a:hover{
+	color: #fce38a;
+	transition: color .2s linear;
+	border-bottom: 3px solid #fce38a ;
+}
+.navpaneltext svg{
+	fill:#fff;
+}
+.navpaneltext svg:hover {
+	fill: #fce38a;
+	transition: color .2s linear;
+}
+.h2nav {
+	font: 4.500em "Kaushan Script";
+	text-align: center;
+	color: #ffffff;
+}
+.headercontentbox {
+	max-width: 55em;
+}
+.h1nav {
+	font: bold 9.375em "Montserrat";
+	text-align: center;
+	color: #ffffff;
+}
+.h1nav:after {
+	content: "";
+	border-bottom: 3px solid rgb(255,255,255);
+	width: 0.400em;
+	display: block;
+	margin:70px auto 50px;
+}
+/*кнопка леарн*/
+.learnbutton {
+	display: block;
+	text-align: center;
+	margin-bottom: 150px;
+}
+.learnbutton a {
+  font-size: 0.875em;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 10px 30px;
+  border: 3px solid rgb(255,255,255);
+}
+.learnbutton a:hover {
+	color: rgb(204, 31, 65);
+	border-color: rgb(204, 31, 65);
+	transition: color .2s;
+}
+/*слайдер нижний*/
+.headerslider {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: rgba(255,255,255, 0.7);
+}
+.sliderelem {
+	width: 25%;
+	margin: 0 30px 0 0;
+	padding-top: 25px;
+	border-top: 3px solid;
+	font: 18px "Montserrat";
+	text-transform: uppercase;
+}
+.headerslider span {
+	font: bold 24px "Montserrat"; 
+}
+.sliderelem:hover {
+	color:rgba(204, 31, 65, 1);
+	transition: color .2s;
+}
+
+
+
+
+
+/*Второй блок текст*/
+.contentbox {
+	padding: 90px 0 110px;
+}
+.top {
+	text-align: center;
+	max-width: 55em;
+	margin:0 auto;
+}
+.top.about_us {
+	margin-bottom: 103px;
+}
+h4 {
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+h3:after {
+	content: "";
+	border-bottom: 3px solid rgb(243, 129, 129);
+	width: 2.000em;
+	display: block;
+	margin: 39px auto 45px;
+}
+.head_text {
+	font: 15px "Roboto";
+	color: rgba(0,0,0, .5);
+}
+/*второй блок контент*/
+.content_card {
+	display: flex;
+	justify-content: space-between;
+}
+.main_card{
+	position: relative;
+	background: #95e1d3;
+}
+.main_card:hover .card_pic img{
+	opacity: 0.1;
+}
+.card_pic {
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+.card_pic img {
+	display: block;
+	transition: opacity .2s linear;
+}
+.main_card:hover .card_pic{
+	transform: translate(-10px, -10px);
+	transition: transform .2s linear;
+}
+.card_text {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	font: bold 18px "Montserrat";
+	color: rgb(255,255,255);
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+.main_card:hover .card_text {
+	opacity: 1;
+	transform: translate(-10px, -10px);
+	transition: transform .2s linear;
+	}
+.card_hide_pic {
+	position: absolute;
+	top: 39%;
+	left: 45%;
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+.main_card:hover .card_hide_pic {
+	opacity: 1;
+	transform: translate(-10px, -10px);
+	transition: transform .2s linear;
+}
+
+
+
+
+
+/* Блок фактов*/
+.facts {
+	background-color: #95e1d3;
+}
+.facts_content {
+	display: flex;
+	justify-content: space-between;
+}
+.facts.box {
+	flex: 1 1;
+	color: #fff;
+	border-right: 1px solid #b5eae0;
+	padding: 82px 60px;
+	text-align: center;
+}
+.facts.box:first-child {
+	border-left: 1px solid #b5eae0;
+}
+.facts.number {
+	font:bold 72px "Montserrat";
+	margin-bottom: 25px;
+}
+.facts.text {
+	font: 14px "Montserrat";
+	text-transform: uppercase;
+}
+
+
+
+
+/*Блок сервиса*/
+.top_box {
+	display: flex;
+	border-bottom: 1px solid rgba(0,0,0, .2);
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+.bot_box {
+	display: flex;
+}
+.elem {
+	display: flex;
+}
+.service_img {
+	align-items: center;
+	padding-right: 30px;
+}
+.descr .text_top {
+	font:500 14px "Montserrat";
+	text-transform: uppercase;
+}
+.descr .text_bot {
+	font: 15px "Roboto";
+	opacity: .5;
+	text-align: left;
+}
+
+
+
+
+
+/* Блок планшета*/
+.feature {
+	background-image: url(https://i.imgur.com/ZaD5UMQ.png);
+	position: relative;
+	background-size: cover;
+	width: 100%;
+}
+.feature_content{
+	background-color: rgba( 255, 255, 255, 0.5);
+}
+.top_feature {
+	text-align: center;
+	padding-top: 90px;
+}
+.bot_feature {
+	display: flex;
+	justify-content: center;
+}
+.bot_feature .tablet {
+	position: relative;
+	right: 2%;
+
+}
+.tablet img {
+	display: block;
+	margin: 0 auto;
+}
+.bot_feature .phone {
+	position: absolute;
+	right: 26%; 
+	bottom: -12%;
+}
+
+
+
+
+/*Блок 4 сервис 2*/
+.service2 {
+	padding: 90px 0 110px;
+}
+.content_service2{
+	display: flex;
+	justify-content: space-between;
+}
+.content_service2 .left_box {
+	margin-right: 30px;
+}
+.content_service2 .accordion {
+	margin-top: -3px;
+}
+.card {
+	margin-bottom: 10px;
+}
+
+
+/*отмена бутстрап стилей*/
+.accordion>.card:first-of-type{
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.accordion>.card:not(:first-of-type):not(:last-of-type){
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.accordion>.card:last-of-type{
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.accordion {
+	width: 100%;
+}
+
+
+.card-header {
+	background-color: #fff;
+}
+.card {
+	width: 100%;
+}
+.card-body {
+	padding: 20px;
+}
+.text_card  {
+	height: 120px;
+	overflow-y: scroll;
+	font: 15px "Roboto";
+	color: #b9b9b9;
+}
+/* width */
+.text_card::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.text_card::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+/* Handle */
+.text_card::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+  border-radius: 10px;
+}
+
+
+/* отмена бутстрап стилей*/
+.btn-link:focus {
+	text-decoration: none;
+}
+.btn-link:hover {
+	text-decoration: none;
+}
+
+.btn.btn-link {
+	 font: 700 14px "Montserrat" ;
+	 color:black;
+	 text-transform: uppercase;
+}
+
+
+
+
+
+/*Блок слайдера бутстрап*/
+.quote {
+	background-color: #f8f8f8;
+}
+.carousel_content {
+	display: flex;
+	align-items: center;
+	margin:79px 0 70px 0;
+
+}
+.carousel_pic {
+	display: block;
+	padding: 40px 40px 24px 40px;
+	border: 3px solid #95e1d3;
+	margin-right: 60px;
+}
+.carousel_text {
+	font: lighter 24px "Roboto";
+	color: #b7b7b7;
+}
+.container2 {
+	max-width: 1120px;
+	margin:0 auto;
+	padding: 0;
+}
+.carousel-control-prev {
+	left: -120px;
+	opacity: 1;
+}
+.carousel-control-next {
+	right:-120px;
+	opacity: 1;
+}
+.carousel-control-next-icon {
+	background-image: url(images/arrow_right.svg);
+	opacity: 1;
+}
+.carousel-control-prev-icon {
+	background-image: url(images/arrow_left.svg);
+	opacity: 1;
+}
+/*отменя бутстрапа ховера и фокуса*/
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+	opacity: 1;
+}
+.carousel_text_bot {
+	display: flex;
+	color: black;
+	margin-top: 20px;
+	font:24px "Kaushan Script";
+}
+.red_line {
+	margin-right: 10px;
+}
+
+
+
+
+
+/*блок нашей тимы*/
+.our_team {
+	padding-bottom: 105px;
+}
+.our_team_top {
+	padding-top: 100px;
+	margin-bottom: 95px;
+	text-align: center;
+}
+.our_team .main_card .card_hide_pic {
+	top: 46%;
+	left: 15%;
+}
+.our_team .card_hide_pic {
+	display: flex;
+}
+.our_team .card_hide_pic a {
+	border-right: 1px solid #f9bd87;
+	background-color: #fce38a;
+	padding: 20px;
+}
+.our_team .card_hide_pic a:last-child {
+	border: none;
+}
+.our_team .card_hide_pic a:hover  {
+	background-color: #f38181;
+}
+.our_team .card_hide_pic a:hover path {
+	fill: rgb(255,255,255);
+}
+.card_info {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.card_names {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+.name_of_card {
+	text-align: center;
+	font:700 14px "Montserrat";
+	text-transform: uppercase;
+}
+.job_of_card {
+	margin-top: 15px;
+	font: 15px "Roboto";
+	color: #d9d9d9;
+}
+
+
+
+
+/*блок лого*/
+.logos {
+	background-color: #f8f8f8;
+	padding: 60px 0 60px 0;
+}
+
+
+
+
+/*блок работы*/ 
+.work_top {
+	padding: 100px 0 100px 0;
+	text-align: center;
+}
+

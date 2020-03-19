@@ -1,0 +1,223 @@
+* {
+margin: 0;
+box-sizing: border-box;
+}
+.container{
+	max-width: 1120px;
+}            
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+nav{
+	background-color: #000000;
+}
+.container.nav{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+.navbuttons{
+	display: flex;
+	align-items: center;
+}
+.axitbutton{
+	padding: 0;
+}
+.container.nav button {
+  border: none;
+  font: 16px "Raleway";
+  color: #b0b0b0;
+  background-color: transparent;
+  }
+.navbuttons button {
+padding: 30px 25px;
+}
+.container.nav button:hover{
+	color: red;
+	border-color: green;
+	background-color: yellow;
+}
+
+
+
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-image: url(https://i.imgur.com/AHmk69z.jpg);
+	background-color: #000000;
+	background-size: cover;
+	padding-top: 111px;
+	padding-bottom: 138px;
+}
+.container.head{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	align-items: flex-start;
+}
+.container.headleft {
+	color: white;
+	width: 47%;
+}
+.ax {
+	font: 60px "Nanum Gothic";
+	font-weight: 600;
+}
+.it{
+	font: 60px "Nanum Gothic";
+	color: #ff8b38;
+}
+.h2text {
+	font: 36px "Releway";
+	padding-top: 33px;
+	padding-bottom: 33px;
+}
+.h3text {
+	font: 16px "Releway";
+	font-weight: lighter;
+	color: rgba(255, 255, 255, 0.4);
+	padding-top:  33px;
+	padding-bottom: 33px;
+	max-width: 450px;
+}
+.hrheader  {
+	border:2px solid white;
+	width: 64px;
+}
+.download.b {
+	border: 2px solid white;
+  	font: 15px "Open Sans";
+  	font-weight: 600;
+  	color: #b0b0b0;
+  	background-color: transparent;
+  	padding: 10px 35px;
+}
+.container.head button:hover{
+	color: black;
+	border-color: green;
+	background-color: yellow;
+}
+.container.headright {
+	width: 34%;
+	height: 100%;
+	padding-top: 20px;
+}
+.hrtop{
+	font: 20px "Open Sans";
+	font-weight: bolder; 
+	text-align: center;
+	color: black;
+	background-color: #f5f5f5;
+	border: 1px #f5f5f5;
+	border-radius: 5px 5px 0 0;
+	padding: 14.5px 55px;
+}
+.hrtoplink {
+	color: #ff8b38;
+}
+.container.head a:active {
+	color:green;
+}
+.hrcenter {
+	background-color: white;
+	padding-top: 40px;
+	
+}
+.hrcenter form{
+	padding: 0px 34px 0px 42px;
+}
+.hrcenter input, textarea {
+  border: none;
+  border-bottom: 2px solid #d6d6d6;
+  font-size: 14px;
+  outline: none;
+  font-family: "Open Sans";
+  margin-bottom: 45px;
+  width: 100%;
+ } 
+.hrbot {
+	background-color: #ff9b51;
+	border-radius: 0 0 5px 5px;
+}
+.submit input{
+	display: flex;
+	justify-content: center;
+	border: none;
+	font: 16px "Open Sans";
+	color: white;
+	background-color: #ff9b51;
+	border-radius: 0 0 5px 5px;
+	margin: auto;
+	padding:20px 80px 20px 80px; 
+}
+.submit input:hover{
+	color: black;
+	background-color: green;
+}
+
+
+
+
+
+.container.socialmedia {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: auto;
+	background-color: #ffffff;
+}
+.textsocialmedia {
+	padding-right: 50px;
+}
+.socialmedia1 {
+	font: 20px "Open Sans";
+	font-weight: bold;
+	padding-top: 23px;
+}
+.socialmedia2 {
+	font: 14px "Open Sans";
+	color: rgb(134, 135, 139);
+	padding-bottom: 23px;
+	word-wrap: normal;
+
+}
+.socialicon {
+	display: flex;
+  	font-family: "FontAwesome";
+  	color: rgb(204, 204, 204);
+  	padding-top: 30px;
+}
+.socialicon form {
+	margin-right: 55px;
+}
+.socialicon form:last-child {
+	margin-right: 0;
+}
+.socialicon svg:hover {
+	color: green;
+}
+.socialicon input{
+ 	padding: 0;
+  	border: none;
+  	font: inherit;
+  	color: inherit;
+  	background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
