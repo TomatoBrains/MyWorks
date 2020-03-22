@@ -1,0 +1,35 @@
+.header {
+    padding-bottom: 60px;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__content-button {
+    width: 30px;
+    height: 20px;
+    justify-content: end;
+    z-index: 11;
+    position: fixed;
+    top: 40px;
+}
+.header__content-Topline,
+.header__content-Midline,
+.header__content-Botline {
+    display: block;
+        height: 4px;
+        background-color: #616161;
+        transition-duration: .25s;
+        position: absolute;
+        width: 30px;
+}
+.header__content-Midline {
+    margin-top: -8px;
+}
+.header__content-Botline {
+    margin-top: 8px;
+}
+.header__content-menu {
+    position: relative;
+}
