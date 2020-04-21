@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: white;
+}
+
+//Logo
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+}
+.logo img {
+    width: 272px;
+    height:92px;
+}
+
+//Search
+.search_input {
+    display: flex;
+    justify-content: center;
+    margin-top:30px ;
+}
+.search_input input {
+    width: 40%;
+    border-radius:25px;
+    border:none;
+    padding:12px 12px 12px 50px;
+    box-shadow:0 1px 6px 0 rgba(32, 33, 36, .28);
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;    
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+.fas.fa-search {
+    position: relative;
+    left: 36px;
+    top: 14px;
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+}
+.fas.fa-microphone {
+    position: relative;
+    right: 36px;
+    background: linear-gradient(180deg, #4285F4 33%, #EA4335 66%, #34A853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+//User content
+.user-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.menu__hover {
+    opacity: 0;
+    align-self: flex-end;
+    margin: 5px 5px 0 0;
+}
+.fas.fa-ellipsis-v {
+    font-size: 16px;
+    color: #666464;
+}
+.user_icon {
+    display: flex;
+    flex-direction: column;
+    width:110px;
+}
+.circle {
+    background-color: #a8a8a829;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 70px;
+    width: 70px;
+}
+.icon_link {
+    align-self: center;
+}
+.icon_link img {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+.name_link {
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+.user_icon:hover {
+    background-color: #6e6d6d29;
+    transition: .3s ease-in;
+}
+.user_icon:hover .menu__hover {
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
+//modal window
+.modal_window {
+   max-width: 350px;
+    min-height: 300px;
+}
+.modal_window_inputs {
+    display:flex;
+    flex-direction: column;
+}

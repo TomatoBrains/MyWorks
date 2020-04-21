@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@mixin padding {
+    padding: 20px;
+}
+@mixin trasition {
+    transition: .3s ease;
+}
+@mixin btn-style {
+    border-radius: 5px;
+    color: #fff;
+    padding: 7.5px 15px;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+//Modal window 
+.modal_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-window {
+    max-width: 500px;
+    border: 1px solid #a0a0a0;
+    border-radius: 6px;
+    margin:0 auto;
+    display: none;
+    background-color: #ffffff;
+}
+//Modal window open and close for js
+.modal-window_open {
+    animation-name: zoom-in;
+    animation-duration: 1s;
+  }
+  @keyframes zoom-in {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+.modal-window_close {
+    animation-name: zoom-out;
+    animation-duration: 1s;
+  }
+  @keyframes zoom-out {
+    from {transform: scale(1)}
+    to {transform: scale(0)}
+  }
+//Modal window interior style
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a0a0a077;
+    @include padding;
+}
+.exit_btn {
+    &:hover .btn_icon{
+        color: #000000;
+        @include trasition;
+    }
+}
+.btn_icon {
+    color: #a0a0a0;
+    font-size: 30px;
+}
+.modal_body {
+    @include padding;
+    border-bottom: 1px solid #a0a0a077;
+}
+.modal_footer {
+    display: flex;
+    justify-content: flex-end;
+    @include padding;
+}
+.modal_footer {
+    & button:first-of-type {
+        margin-right: 10px;
+    }
+}
+.modal_footer_btn {
+    @include btn-style;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.close_btn {
+    &:hover {
+        background-color: #5A6268;
+        @include trasition;
+    }
+}
+.save_btn {
+    background-color: rgb(31, 124, 223);
+    &:hover {
+        background-color: #0169D9;
+        @include trasition;
+    }
+}
+
+//Launch-btn
+.open_modal {
+    position: absolute;
+
+}
+.open_modal_btn {
+    @include btn-style;
+    background-color: rgb(31, 124, 223);
+    border-color: #0062cc;
+    &:hover {
+        background-color: #0169D9;
+    }
+}

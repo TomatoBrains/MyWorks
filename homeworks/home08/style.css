@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+input {
+    outline: none;
+    font-family:'Roboto';
+}
+ul {
+    list-style: none;
+}
+
+/*Main style*/
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.kino {
+    padding-top:100px ;
+    margin-left: 100px;
+}
+.kino_menu {
+    display: flex;
+}
+.kino h1 {
+    padding-bottom:30px ;
+    font:700 50px 'Roboto';
+}
+.menu_li {
+    font:24px 'Roboto';
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 50px;    
+    box-shadow:5px 5px 20px 2px rgba(0,0,0,0.1);
+}
+.menu_li:last-child {
+    margin-right: 0;
+}
+.menu_li:hover {
+    transform: translate(0, -10px);
+    box-shadow:0 0 20px 5px rgba(19, 19, 19, 0.1);
+    transition: .3s ease;
+    color: red;
+}
+.menu_li:active {
+    background-color: rgb(245, 245, 245);
+    box-shadow:none;
+    transition: .2s ease;
+}
+.menu_li:hover a {
+    color: red;
+}
+.fa-caret-down {
+    color: #B3B3B3;
+}
+.fa-caret-up {
+    color: #000;
+}
+/*Modal windows date style*/
+.date_input {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    left: 104px;
+}
+/*Modal windows cinema and genre style*/
+.modal_windows {
+    display: flex;
+    font-family: 'Roboto';
+}
+.choise_modal {
+    margin: 20px 0 0 100px;
+    display: none;
+    height: 200px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    box-shadow:5px 5px 20px 1px rgba(0,0,0,0.1);
+}
+.cinema_modal {
+    position: absolute;
+    left: 130px;
+}
+.cinema_roster_title {
+    color:rgba(0,0,0,0.3);
+    font-size: 16px;
+    margin-left: 15px;
+}
+.modal_choise_open {
+    animation-name: open;
+    animation-duration: .3s;
+}
+@keyframes open {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.cinema_search {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 30px 10px 30px;
+    background-color: #EDEDED;
+    border: 1px solid #EDEDED;
+    border-radius: 30px;
+}
+.cinema_choise_input {
+    position: relative;
+    top: 0;
+}
+.cinema_search::placeholder {
+    color: rgb(56, 56, 56);
+}
+.cinema_search_icon {
+    position: absolute;
+    color: #A6A6A6;
+    top: 18px;
+    left: 18px;
+}
+.cinema_li, .genre_li {
+    padding: 3px 0 3px 15px;
+}
+.cinema_li:hover {
+    background-color: #ddd;
+}
+.cinema_li a, .genre_li a {
+    display: block;
+}
+.genre_modal {
+    position: absolute;
+    left: 320px;
+}
+.genre_choise_roster {
+    width: 251px;
+}
+.genre_li:first-child {
+    margin-top: 10px;
+}
+.genre_li:hover {
+    background-color: #ddd;
+}

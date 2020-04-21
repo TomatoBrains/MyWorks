@@ -1,0 +1,19 @@
+button {
+    width: 100px;
+    height: 50px;
+    margin: 10px 10px;
+    font-size: 18px;
+    &:hover {
+        background-color: #ddd;
+    }
+}
+div {
+    margin: 10px 0;
+}
+p {
+    font-size: 22px;
+    font-weight: 900;
+}
+div > div {
+    display: flex;
+}

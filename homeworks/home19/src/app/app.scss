@@ -1,0 +1,78 @@
+* {
+  font-family:'Raleway';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+//Col-xl
+.col-xl-2 {
+  width: 16.67777777%;
+}
+.col-xl-4 {
+  width: 33.333333333%;
+}
+.col-xl-5 {
+  width: 41.677777777%;
+}
+.col-xl-6 {
+  width: 50%;
+}
+.col-xl-7 {
+  width: 58.333333333%;
+}
+.col-xl-12 {
+  width: 100%;
+}
+
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/typography";
+@import "scss/helpers";
+
+@import "components/burger/nav";
+@import "components/slider/slider";
+
+@import "scss/header";
+@import "scss/banner";
+@import "scss/about";
+@import "scss/works";
+@import "scss/services";
+@import "scss/team";
+@import "scss/says";
+@import "scss/companies";
+@import "scss/contact";
+@import "scss/footer";
+@import "scss/media1199_1024";
+@import "scss/mediaLg";
+@import "scss/mediaMd";
+@import "scss/mediaXs";
+
+
+

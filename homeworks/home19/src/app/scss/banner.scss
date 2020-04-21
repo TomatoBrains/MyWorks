@@ -1,0 +1,36 @@
+.banner {
+    min-height: 50vh;
+    padding: $paddingSection60;
+    background-image: url(../img/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner__descr-text {
+    color:#505050;
+    text-align: center;
+    text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+    & h1 {
+        font:700 2.8125rem 'Montserrat';
+    }
+    & span {
+        background-color: #b2f2ee;
+        font:700 2.8125rem 'Montserrat';
+    }
+}
+.banner__descr-button {
+    padding-top: 60px;
+    text-align: center;
+    font: 400 18px 'Montserrat';
+    & button {
+        padding: 20px 50px;
+        border: 2px solid #777879;
+        transition: .1s ease;
+        &:hover {
+            color:#505050;
+            font-weight: 700;
+            background-color: #b2f2ee;
+            border-color: #505050;
+            box-shadow: 0px 0px 15px 0px #505050;
+        }
+    }
+}

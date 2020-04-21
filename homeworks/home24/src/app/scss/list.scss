@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.list-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list__profile {
+    display: flex;
+    width: 33.333%;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    &-descr {
+        width: 50%;
+        & p {
+            margin-bottom: 5px;
+        }
+        & p:nth-child(2n+1){
+            font-weight: 700;
+        }
+    }
+    &-img {
+        width: 50%;
+        & p {
+            font-weight: 700;
+        }
+    }
+}
+.list__companies {
+    display: flex;
+    flex-wrap: wrap;
+    &-descr {
+        border: 2px solid black;
+        width: 33%;
+    }
+}

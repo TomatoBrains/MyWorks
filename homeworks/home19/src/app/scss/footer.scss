@@ -1,0 +1,45 @@
+.social {
+    background-color: #262b2e;
+    padding: $paddingSection60;
+}
+.social__content {
+    text-align: center;
+    color: #fff;
+    & p {
+        font: $textFont;
+    }
+}
+.social__content-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social__content-svg {
+    background-color: #424648;
+    margin-right: 10px;
+    transition: .2s ease;
+    & a {
+        display: block;
+        padding: 15px;
+    }
+    & svg {
+        width: 25px;
+        height: 25px;
+    }
+    & path {
+        fill: #bbb8b9;
+    }
+    &:hover {
+        background-color:$colorAqua;
+    }
+    &:hover path {
+        fill: #000;
+    }
+}
+.social__content-copyright {
+    margin-top: 40px;
+    font: $textFont;
+    & a {
+        color:#99a1a7 ;
+    }
+}

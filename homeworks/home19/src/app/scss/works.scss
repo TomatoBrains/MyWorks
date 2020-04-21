@@ -1,0 +1,29 @@
+.works {
+    padding: $paddingSection60;
+}
+.works__img-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.works__img {
+    display: flex;
+    justify-content: center;
+    margin-right: $marginRight15;
+    margin-bottom: $marginBot15;
+    & a {
+        display: flex;
+    }
+    &:hover img {
+        border-radius: 50%;
+        box-shadow: 0 0 15px 7px #acacac;
+        transition: .2s ease;
+    }
+}
+.works__img-flex {
+    & > div:nth-child(3n)
+    {
+        >div {
+           margin-right: 0; 
+        }
+    }
+}
