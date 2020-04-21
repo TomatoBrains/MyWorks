@@ -1,0 +1,98 @@
+.services {
+    padding: $paddingSection60;
+    background-color:#f9fbfb;
+}
+.services__descr {
+    & >div:nth-child(2) {
+        & >div:nth-child(1){
+            flex-direction: row-reverse;
+        }
+    }
+}
+.services__descr-flex {
+    display: flex;
+    margin-bottom: 15px;
+}
+.services__descr-text {
+    color:#fff;
+    height: 100%;
+    margin-right: $marginRight15;
+    margin-bottom: $marginBot15;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    & h3 {
+        font: $h3Font;
+        padding-top: 60px;
+        margin-bottom: 25px;
+    }
+    & p {
+        font: $textFont;
+        margin-bottom: 60px;
+        color:#c7c7c7;
+        max-width: 400px;
+        line-height: 1.75;
+    }
+    & span {
+        display: none;
+    }
+    & button {
+        margin-bottom: 60px;
+        font: $textFont;
+        line-height: 1.75;
+        font-size: 1.125rem;
+        color:#c7c7c7; 
+        & svg {
+            margin-left: 15px;
+        }     
+    }
+    &:hover span {
+        display: block;
+    }
+    &:hover:before {
+        background-color: $colorAqua;
+        transition: .3s ease;
+    }
+    &:hover h3 {
+        color:#000;
+        transition: .1s ease;
+    }
+    &:hover p {
+        color:#000;
+        transition: .1s ease;
+    }
+    &:hover button {
+        display: none;
+    }
+}
+.services-background-1 {
+    background-image:url(../img/services/servicesBack1.jpg);
+}
+.services-background-2 {
+    background-image:url(../img/services/servicesBack2.jpg);
+}
+.services-background-3 {
+    background-image:url(../img/services/servicesBack1.jpg);
+}
+.services-background-4 {
+    background-image:url(../img/services/servicesBack3.jpg);
+}
+.services-background-5 {
+    background-image:url(../img/services/servicesBack4.jpg);
+}
+.services-background-6 {
+    background-image:url(../img/services/servicesBack5.jpg);
+}
+
+.services__descr-margin {
+    margin-left: 50px;
+}
