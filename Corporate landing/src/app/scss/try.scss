@@ -1,0 +1,74 @@
+.try {
+  background-color: #323969;
+  padding: $padding_section;
+  &__title {
+    &--uptext {
+      color: $color-red;
+      & p {
+        font: $ExoMedium_16;
+      }
+    }
+    &--head {
+      color: #fff;
+    }
+  }
+  &--flex {
+    display: flex;
+  }
+  &__form {
+    margin-top: $margin_top_40;
+    &--input {
+      margin-right: 20px;
+      & input {
+        padding: 15px 40px 15px 20px;
+        background-color: $color-blueLight;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        font: $ExoRegular_16;
+        &::-webkit-input-placeholder {
+          color: #fff;
+        }
+        &::-moz-placeholder {
+          color: #fff;
+        }
+        &:-ms-input-placeholder {
+          color: #fff;
+        }
+        &::-ms-input-placeholder {
+          color: #fff;
+        }
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+    &--submit {
+      & button {
+        cursor: pointer;
+        padding: 15px 85px 15px 85px;
+        background-color: $color-red;
+        border: 1px solid rgb(255, 109, 109);
+        border-radius: 3px;
+        box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25);
+        color: #fff;
+        font: $ExoRegular_16;
+        &:focus {
+          box-shadow: 0 0 0 2px $color-red inset, 0 0 0 4px white inset;
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+  &__footer {
+    margin-top: $margin_top_20;
+    text-align: center;
+    & p {
+      font: $ExoRegular_16;
+      color: $color-grayText;
+    }
+    & a {
+      font: $ExoRegular_16;
+      color: $color-grayText;
+    }
+  }
+}

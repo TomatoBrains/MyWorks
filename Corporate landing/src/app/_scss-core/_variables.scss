@@ -1,0 +1,37 @@
+@import "functions";
+
+$font-base: "Exo", sans-serif;
+
+//--------------------------------------
+// Colors
+//--------------------------------------
+
+$color-red: #ff6d6d;
+$color-gray: #8185a3;
+$color-redLight: #fb8686;
+$color-grayText: #717171;
+$color-blueDark: #323969;
+$color-grayLight: #ececec;
+$color-blueLight: #464c77;
+
+//--------------------------------------
+// Fonts
+//--------------------------------------
+
+$ExoThin_60: 100 3.75rem "Exo", sans-serif;
+$ExoMedium_16: 500 1rem "Exo", sans-serif;
+$ExoMedium_14: 500 0.875rem "Exo", sans-serif;
+$ExoMedium_40: 500 2.5rem "Exo", sans-serif;
+$ExoMedium_22: 500 1.375rem "Exo", sans-serif;
+$ExoRegular_14: 400 0.875rem "Exo", sans-serif;
+$ExoRegularItalic_16: italic 400 1rem "Exo", sans-serif;
+$ExoRegular_16: 400 1rem "Exo", sans-serif;
+//--------------------------------------
+// Metrics
+//--------------------------------------
+
+$margin_top_60: 60px;
+$margin_top_40: 40px;
+$margin_top_20: 20px;
+$margin_top_10: 10px;
+$padding_section: 60px 0;

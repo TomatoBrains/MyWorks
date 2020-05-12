@@ -1,0 +1,55 @@
+.header {
+  background: url(../img/headerBackground.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &__descr {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    & h1 {
+      font: $ExoThin_60;
+    }
+  }
+  &__video {
+    margin-top: $margin_top_40;
+    text-align: center;
+    &--btn {
+      border-radius: 50%;
+      padding: 30px;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      background-color: $color-gray;
+      &:hover {
+        box-shadow: 0 0 0 2px $color-gray inset, 0 0 0 4px white inset;
+        transition: 0.2s ease;
+      }
+      & svg {
+        position: absolute;
+        top: 36%;
+        left: 38%;
+      }
+    }
+  }
+  &__action {
+    margin-top: $margin_top_60;
+    text-align: center;
+    &--btn {
+      border-radius: 5px;
+      font: $ExoRegular_16;
+      color:#fff;
+      padding: 20px 50px;
+      background-color: $color-red;
+      &:hover {
+        box-shadow: 0 0 0 2px $color-red inset, 0 0 0 4px white inset;
+        transition: .2s ease;
+      }
+    }
+    &--descr {
+      font: $ExoRegular_14;
+      margin-top: 40px;
+    }
+  }
+}

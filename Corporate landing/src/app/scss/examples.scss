@@ -1,0 +1,21 @@
+.examples {
+  padding-top: 60px;
+  &__title {
+    &--main {
+      max-width: 600px;
+      margin: 0 auto;
+      & p {
+        font: $ExoMedium_16;
+        color: $color-grayText;
+        margin-top: $margin_top_20;
+        line-height:  1.857;
+      }
+    }
+  }
+  &__browser {
+    &--img {
+      text-align: center;
+      margin-top: $margin_top_40;
+    }
+  }
+}

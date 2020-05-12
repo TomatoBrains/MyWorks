@@ -1,0 +1,43 @@
+.features {
+  background: url(../img/featuresBackground.jpg) no-repeat;
+  background-size: cover;
+  padding: $padding_section;
+  height: 100vh;
+  &--flex {
+    display: flex;
+  }
+  &__descr {
+    margin-top: $margin_top_40;
+    margin-right: 30px;
+    text-align: center;
+    &--head {
+      margin-top: $margin_top_20;
+      & h3 {
+        font: $ExoMedium_22;
+      }
+    }
+    &--main {
+      margin-top: $margin_top_20;
+      & p {
+        font: $ExoMedium_16;
+        color: $color-grayText;
+        line-height:  1.857;
+      }
+    }
+  }
+}
+.section__title {
+  text-align: center;
+  &--uptext {
+    & p {
+      font: $ExoMedium_16;
+      color: $color-redLight;
+      line-height:  1.857;
+    }
+  }
+  &--head {
+    & h2 {
+      font: $ExoMedium_40;
+    }
+  }
+}

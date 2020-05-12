@@ -1,0 +1,47 @@
+.clients {
+  background: url(../img/clientsBackground.jpg) no-repeat;
+  background-size: cover;
+  padding: $padding_section;
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    text-align: center;
+    margin-right: 40px;
+    &--name {
+      margin-top: $margin_top_20;
+      & a {
+        font: $ExoMedium_22;
+        &:hover {
+          color: $color-red;
+          transition: 0.2s ease;
+        }
+      }
+    }
+    &--downtext {
+      margin-top: $margin_top_10;
+      & p {
+        font: $ExoMedium_16;
+        color: $color-red;
+      }
+    }
+    &--main {
+      margin-top: $margin_top_20;
+      & p {
+        font: $ExoRegularItalic_16;
+        color: $color-grayText;
+        line-height:  1.857;
+      }
+    }
+  }
+  &__companies {
+    margin-top: $margin_top_40;
+    &--img {
+      &:hover {
+        transform: scale(1.2);
+        transition: 0.2s ease;
+      }
+    }
+  }
+}

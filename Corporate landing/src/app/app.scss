@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+//Col-xl
+.col-xl-2 {
+  width: 16.67777777%;
+}
+.col-xl-3 {
+  width: 25%;
+}
+.col-xl-4 {
+  width: 33.333333333%;
+}
+.col-xl-6 {
+  width: 50%;
+}
+.col-xl-7 {
+  width: 58.333333333%;
+}
+
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/fonts";
+
+@import "scss/header";
+@import "scss/advantages";
+@import "scss/features";
+@import "scss/design";
+@import "scss/clients";
+@import "scss/examples";
+@import "scss/try";
+@import "scss/footer";
