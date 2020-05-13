@@ -1,9 +1,8 @@
 .advantages {
-  padding: $padding_section 0;
+  padding: $padding_section;
 
   background: url(../img/advantagesBackgroundRight.jpg) no-repeat;
   background-size: 100% 100%;
-  height: 100vh;
   &--flex {
     display: flex;
   }
@@ -21,13 +20,14 @@
   }
   &--dots {
     color: $color-redLight;
+    font: $ExoMedium_40;
   }
   &--main {
     margin-top: $margin_top_40;
     & p {
       font: $ExoMedium_16;
       color: $color-grayText;
-      line-height:  1.857;
+      line-height: 1.857;
       &:nth-child(2) {
         margin-top: 20px;
       }

@@ -1,0 +1,296 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-7 {
+    width: 58.333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.6777%;
+  }
+  .col-md-4 {
+    width: 33.33333%;
+  }
+  .col-md-2 {
+    width: 16.6777777%;
+  }
+  * {
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .advantages {
+    &__descr {
+      &--main {
+        width: 60%;
+      }
+    }
+  }
+  .features {
+    &--flex {
+      justify-content: center;
+    }
+  }
+  .design {
+    &--flex {
+      flex-direction: column-reverse;
+    }
+    &__notebook {
+      margin: 40px 0 0 0;
+      text-align: center;
+    }
+  }
+  .clients {
+    &--flex {
+      justify-content: center;
+    }
+    &__item {
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    &__companies {
+      margin-right: 10px;
+    }
+  }
+  .try {
+    &--flex {
+      justify-content: center;
+    }
+    &__form {
+      &--input {
+        margin-right: 0px;
+        text-align: center;
+      }
+      &--submit {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .footer {
+    &__adress {
+      text-align: center;
+    }
+    &__support {
+      text-align: center;
+      margin-top: 10px;
+    }
+    &__about {
+      text-align: center;
+      margin-top: 10px;
+    }
+    &__news {
+      text-align: center;
+      &--input {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (min-width: 579px) and (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+  * {
+    flex-wrap: wrap;
+  }
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .advantages {
+    height: auto;
+    background: none;
+  }
+  .features {
+    height: auto;
+    &__descr {
+      margin-right: 0;
+    }
+  }
+  .design {
+    &--flex {
+      flex-direction: column-reverse;
+    }
+    &__notebook {
+      margin: 40px 0 0 0;
+    }
+    &__descr {
+      &--dots {
+        color: #000;
+      }
+    }
+  }
+  .clients {
+    &__item {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &--flex {
+      justify-content: space-around;
+    }
+    &__companies {
+      margin-top: 20px;
+      margin-right: 5px;
+    }
+  }
+  .try {
+    &--flex {
+      text-align: center;
+    }
+    &__form {
+      &--input {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &--submit {
+        & button {
+          padding: 15px 80px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__adress {
+      text-align: center;
+    }
+    &__support {
+      text-align: center;
+      margin-top: 10px;
+    }
+    &__about {
+      text-align: center;
+      margin-top: 10px;
+    }
+    &__news {
+      text-align: center;
+      &--input {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 575px) and (min-width: 320px) {
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  * {
+    flex-wrap: wrap;
+  }
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header {
+    &__descr {
+      & h1 {
+        font-size: 3rem;
+      }
+    }
+    &__video {
+      margin-top: 20px;
+    }
+  }
+  .advantages {
+    height: auto;
+    background: none;
+  }
+  .features {
+    height: auto;
+    &__descr {
+      margin-right: 0;
+    }
+  }
+  .design {
+    &--flex {
+      flex-direction: column-reverse;
+    }
+    &__notebook {
+      margin: 40px 0 0 0;
+    }
+    &__descr {
+      &--dots {
+        color: #000;
+      }
+    }
+  }
+  .clients {
+    &__item {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &--flex {
+      justify-content: space-around;
+    }
+    &__companies {
+      margin-top: 20px;
+      margin-right: 5px;
+    }
+  }
+  .try {
+    &--flex {
+      text-align: center;
+    }
+    &__form {
+      &--input {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &--submit {
+        & button {
+          padding: 15px 80px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__adress {
+      text-align: center;
+    }
+    &__support {
+      text-align: center;
+      margin-top: 10px;
+    }
+    &__about {
+      text-align: center;
+      margin-top: 10px;
+    }
+    &__news {
+      text-align: center;
+      &--input {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-height: 570px) {
+  .header {
+    &__action {
+      margin-top: 30px;
+    }
+  }
+}
