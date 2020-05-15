@@ -1,0 +1,30 @@
+.header {
+  &__iframe {
+    display: none;
+    & iframe {
+      position: fixed;
+      top: 15%;
+      left: 15%;
+      width: 70vw;
+      z-index: 2;
+      height: 70vh;
+    }
+  }
+  &__background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #000000bf;
+    z-index: 2;
+    width: 100vw;
+
+    &--hide {
+      display: none;
+    }
+  }
+}
+.show {
+  display: block;
+}

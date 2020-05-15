@@ -2,11 +2,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  scroll-behavior: smooth; }
+  padding: 0; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  scroll-behavior: smooth; }
 
 a {
   text-decoration: none;
@@ -123,8 +123,8 @@ img {
       .header__action--btn:hover {
         -webkit-box-shadow: 0 0 0 2px #ff6d6d inset, 0 0 0 4px white inset;
                 box-shadow: 0 0 0 2px #ff6d6d inset, 0 0 0 4px white inset;
-        -webkit-transition: .2s ease;
-        transition: .2s ease; }
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease; }
     .header__action--descr {
       font: 400 0.875rem "Exo", sans-serif;
       margin-top: 40px; }
@@ -220,7 +220,8 @@ img {
     .clients__item--name {
       margin-top: 20px; }
       .clients__item--name a {
-        font: 500 1.375rem "Exo", sans-serif; }
+        font: 500 1.375rem "Exo", sans-serif;
+        color: #fff; }
         .clients__item--name a:hover {
           color: #ff6d6d;
           -webkit-transition: 0.2s ease;
@@ -390,7 +391,33 @@ img {
         color: #ff6d6d;
         -webkit-transition: 0.2s ease;
         transition: 0.2s ease; }
-      @media (max-width: 575px) and (min-width: 320px) {
+
+.header__iframe {
+  display: none; }
+  .header__iframe iframe {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    width: 70vw;
+    z-index: 2;
+    height: 70vh; }
+
+.header__background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #000000bf;
+  z-index: 2;
+  width: 100vw; }
+  .header__background--hide {
+    display: none; }
+
+.show {
+  display: block; }
+
+@media (max-width: 575px) and (min-width: 320px) {
 
   .col-xs-12 {
     width: 100%; }
@@ -480,7 +507,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
-      @media (min-width: 579px) and (max-width: 767px) {
+
+@media (min-width: 579px) and (max-width: 767px) {
 
   .col-sm-12 {
     width: 100%; }
@@ -564,7 +592,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
-      @media (min-width: 768px) and (max-width: 1024px) {
+
+@media (min-width: 768px) and (max-width: 1024px) {
 
   .col-md-12 {
     width: 100%; }
@@ -654,7 +683,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
-      @media (max-height: 570px) {
+
+@media (max-height: 570px) {
 
   .header__action {
     margin-top: 30px; } }

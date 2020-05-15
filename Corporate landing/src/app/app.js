@@ -1,7 +1,7 @@
-import './app.scss';
+import "./app.scss";
 
-import $ from 'jquery'
+import $ from "jquery";
 
 window.jQuery = $;
 
-//import './components/index'
+import "./components/btnOnclick/index";

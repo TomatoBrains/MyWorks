@@ -39,12 +39,12 @@
     &--btn {
       border-radius: 5px;
       font: $ExoRegular_16;
-      color:#fff;
+      color: #fff;
       padding: 20px 50px;
       background-color: $color-red;
       &:hover {
         box-shadow: 0 0 0 2px $color-red inset, 0 0 0 4px white inset;
-        transition: .2s ease;
+        transition: 0.2s ease;
       }
     }
     &--descr {

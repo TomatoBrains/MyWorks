@@ -2,10 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -57,5 +57,7 @@ img {
 @import "scss/examples";
 @import "scss/try";
 @import "scss/footer";
+
+@import "components/btnOnclick/videoOnclik";
 
 @import "scss/media";
