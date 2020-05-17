@@ -41,10 +41,9 @@
     &--flex {
       flex-direction: column-reverse;
     }
-    &__notebook {
-      margin: 40px 0 0 0;
-      text-align: center;
-    }
+  }
+  .carousel {
+    margin: 40px 0 0 0;
   }
   .clients {
     &--flex {
@@ -127,14 +126,14 @@
     &--flex {
       flex-direction: column-reverse;
     }
-    &__notebook {
-      margin: 40px 0 0 0;
-    }
     &__descr {
       &--dots {
         color: #000;
       }
     }
+  }
+  .carousel {
+    margin: 40px 0 0 0;
   }
   .clients {
     &__item {
@@ -229,12 +228,17 @@
     &--flex {
       flex-direction: column-reverse;
     }
-    &__notebook {
-      margin: 40px 0 0 0;
-    }
     &__descr {
       &--dots {
         color: #000;
+      }
+    }
+  }
+  .carousel {
+    margin: 40px 0 0 0;
+    &--img {
+      & img {
+        max-height: 170px;
       }
     }
   }

@@ -1,11 +1,12 @@
 .design {
-    background: url(../img/designBackground.jpg) no-repeat;
-    background-size: cover;
+  background: url(../img/designBackground.jpg) no-repeat;
+  background-size: cover;
   padding: $padding_section;
   &--flex {
     display: flex;
   }
-  &__notebook {
+  &__carousel {
     margin: 40px 40px 0 0;
+    display: flex;
   }
 }

@@ -1,17 +1,5 @@
 import $ from "jquery";
 
-/*function changeShowClass() {
-  $(".header__iframe").toggleClass("show");
-  $(".header__background").toggleClass("show");
-}
-$(".header__video--btn").on("click", function () {
-  changeShowClass();
-  $("html").css("overflow", "hidden");
-});
-$(".header__background").on("click", function () {
-  changeShowClass();
-  $("html").css("overflow", "auto");
-});*/
 class VideoOnClick {
   constructor(obj) {
     this.headerBackground = obj.headerBackground;
