@@ -1,9 +1,12 @@
 * {
-  font-family:'Raleway';
+  font-family: "Raleway";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -73,6 +76,3 @@ img {
 @import "scss/mediaLg";
 @import "scss/mediaMd";
 @import "scss/mediaXs";
-
-
-

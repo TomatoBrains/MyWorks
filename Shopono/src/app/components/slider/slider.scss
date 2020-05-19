@@ -1,16 +1,18 @@
-.about__slider, .slider{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:$colorGray;
+.about__slider,
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $colorGray;
 }
-.about__slider-img, .slider-img  {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 40px;
-    display: flex;
-    &::before {
-    content: '';
+.about__slider-img,
+.slider-img {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+  display: flex;
+  &::before {
+    content: "";
     position: absolute;
     width: 110%;
     -webkit-transform: rotate(90deg);
@@ -22,22 +24,81 @@
     top: 50%;
     margin-top: -50%;
     left: -5%;
-    }
+  }
 }
 
-.about__slider-buttons, .slider-buttons {
-    display: flex;
-    justify-content:center;
+.slick-dots {
+  bottom: 0;
+  left: -25%;
+  & li {
+    margin: 0;
     & button {
-        margin-right: 5px;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #d0d0d0;
-        &:focus {
-            background-color:$colorAqua;
-        }
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #d0d0d0;
+      &:before {
+        content: none;
+      }
     }
+  }
+}
+.slick-dots li.slick-active button {
+  background-color: $colorAqua;
+}
+.slick-slide {
+  & img {
+    display: inherit;
+  }
+}
+.slick-prev {
+  bottom: -18px;
+  right: 10%;
+  left: unset;
+  top: unset;
+  z-index: 200;
+}
+.slick-next {
+  bottom: -18px;
+  right: 2%;
+  left: unset;
+  top: unset;
+  z-index: 200;
+}
+.slick-prev.slick-arrow {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px #d6d6d6;
+  border-radius: 5px;
+  padding: 25px;
+  background-image: url("../img/says/left.svg");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:before {
+    content: none;
+  }
+  &:hover {
+    background-color: $colorAqua;
+  }
+}
+.slick-next.slick-arrow {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px #d6d6d6;
+  border-radius: 5px;
+  padding: 25px;
+  background-image: url("../img/says/right.svg");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:before {
+    content: none;
+  }
+  &:hover {
+    background-color: $colorAqua;
+  }
+}
+.says__slick > ul {
+  left: -32%;
 }
 //SLIDER END

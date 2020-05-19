@@ -1,29 +1,29 @@
 .about {
-    padding: $paddingSection60;
-    background-color:#f8fafa;
+  padding: $paddingSection60;
+  background-color: #f8fafa;
 }
 .title {
-    text-align: center;
-    padding-bottom: 30px;
-    & h2 {
-        font: $h2FontTitle;
-    }
-    & p {
-        font: $subTitle;
-    }
+  text-align: center;
+  padding-bottom: 30px;
+  & h2 {
+    font: $h2FontTitle;
+  }
+  & p {
+    font: $subTitle;
+  }
 }
 
 .about-flex {
-    display: flex;
+  display: flex !important;
 }
 .about__descr {
-    & h3 {
-        font: $h3Font;
-        margin-bottom: 30px;
-    }
-    & p {
-        font: $textFont;
-        line-height: 1.75;
-        margin-bottom: 40px;
-    }
+  & h3 {
+    font: $h3Font;
+    margin-bottom: 30px;
+  }
+  & p {
+    font: $textFont;
+    line-height: 1.75;
+    margin-bottom: 40px;
+  }
 }
