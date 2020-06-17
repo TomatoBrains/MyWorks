@@ -1,0 +1,559 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: "MyriadPro";
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+input {
+  outline: none; }
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  width: 1000px;
+  margin: 0 auto; }
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MyriadPro-It";
+  src: url("../fonts/MyriadPro-SemiboldIt.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+.header {
+  padding: 65px 0;
+  background-color: #dcdcdc; }
+  .header-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__logo {
+    width: 50%; }
+    .header__logo img {
+      max-width: 100%;
+      max-height: 100%; }
+  .header__phoneNumber {
+    width: 50%; }
+    .header__phoneNumber--link a {
+      color: #767676;
+      font: 400 1.666rem "MyriadPro";
+      line-height: 1.15; }
+      .header__phoneNumber--link a:hover {
+        font-weight: 700;
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease; }
+
+.awesome {
+  background-image: url(../img/awesome/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 72px 0 94px 0; }
+  .awesome--title {
+    text-align: center; }
+  .awesome__form {
+    margin-left: 98px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .awesome__form--title {
+      text-align: center;
+      margin-bottom: 18px; }
+      .awesome__form--title h2 {
+        color: #9da3d7;
+        font: 600 1rem "MyriadPro"; }
+    .awesome__form--body {
+      background-color: #9da3d7;
+      padding: 29px 22px 22px 52px; }
+    .awesome__form--description {
+      font: 400 1rem "MyriadPro";
+      margin-bottom: 26px;
+      max-width: 313px;
+      color: #fff; }
+    .awesome__form--phoneInput input,
+    .awesome__form--phoneInput button {
+      width: 290px;
+      height: 50px; }
+    .awesome__form--tel {
+      margin-bottom: 21px; }
+      .awesome__form--tel input {
+        padding-left: 17px;
+        font: 400 1rem "MyriadPro"; }
+    .awesome__form--submit button {
+      background-color: #ffc087; }
+      .awesome__form--submit button:hover {
+        -webkit-box-shadow: 0 0 0 3px #ffc087 inset, 0 0 0 7px white inset;
+                box-shadow: 0 0 0 3px #ffc087 inset, 0 0 0 7px white inset;
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+  .modal-back {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ddd;
+    top: 0;
+    opacity: 0.5; }
+  .modal__window {
+    position: fixed;
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 25px;
+    background-color: #fff;
+    border: 2px solid #9da3d7;
+    border-radius: 10px; }
+    .modal__window--close {
+      text-align: right;
+      position: relative;
+      top: -15px; }
+      .modal__window--close span {
+        cursor: pointer; }
+
+.show {
+  display: block; }
+
+.overflowToggle {
+  overflow: hidden; }
+
+.slider {
+  padding: 43px 0 34px 0; }
+  .slider__title {
+    margin-bottom: 22px; }
+    .slider__title h2 {
+      font: 600 1rem "MyriadPro";
+      color: #9da3d7;
+      text-align: center; }
+  .slider__slick {
+    max-width: 700px;
+    margin: 0 auto; }
+    .slider__slick--frame {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 8px 8px 0 8px;
+      -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.17);
+              box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.17); }
+
+.slick-dots {
+  bottom: -45px; }
+  .slick-dots li {
+    margin-right: 20px; }
+    .slick-dots li button {
+      width: 35px;
+      height: 35px;
+      -webkit-box-shadow: inset 0 0 9px 0 rgba(0, 0, 0, 0.22);
+              box-shadow: inset 0 0 9px 0 rgba(0, 0, 0, 0.22);
+      border: solid 3px #dddddd;
+      background-color: #ffffff;
+      border-radius: 50%; }
+      .slick-dots li button::before {
+        content: none; }
+
+.slick-active button {
+  -webkit-box-shadow: 0 0 0 2px #ffffff inset, 0 0 0 4px white inset !important;
+          box-shadow: 0 0 0 2px #ffffff inset, 0 0 0 4px white inset !important;
+  background-color: #9da3d7 !important;
+  -webkit-transition: 0.2s ease !important;
+  transition: 0.2s ease !important; }
+
+.simpletext {
+  padding: 34px 0 36px 0; }
+  .simpletext__content h2 {
+    text-align: center;
+    margin-bottom: 37px;
+    font: 600 1rem "MyriadPro"; }
+  .simpletext__content p {
+    text-align: justify;
+    font: 400 0.583rem "MyriadPro"; }
+
+.calculator {
+  padding: 36px 0 99px 0; }
+  .calculator__title h2 {
+    font: 600 1rem "MyriadPro";
+    color: #9da3d7;
+    text-align: center; }
+  .calculator__content--windows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 37px; }
+    .calculator__content--windows-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .calculator__content--windows-type a {
+      font: 700 0.583rem "MyriadPro";
+      cursor: pointer; }
+      .calculator__content--windows-type a:hover {
+        color: #0099de;
+        text-decoration: underline;
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease; }
+    .calculator__content--windows-img {
+      margin-bottom: 23px; }
+  .calculator__content--form {
+    margin-top: 36px;
+    -webkit-box-shadow: 2.5px 4.3px 10px 0 rgba(0, 0, 0, 0.23), inset 1px 1.7px 6px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 2.5px 4.3px 10px 0 rgba(0, 0, 0, 0.23), inset 1px 1.7px 6px 0 rgba(0, 0, 0, 0.35);
+    padding-bottom: 50px;
+    border-radius: 8px; }
+    .calculator__content--form-body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .calculator__content--form-size {
+      margin-top: 39px; }
+    .calculator__content--form-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative;
+      height: 50%; }
+      .calculator__content--form-img_picture {
+        margin-top: 29px; }
+      .calculator__content--form-img_main {
+        text-align: center; }
+        .calculator__content--form-img_main p {
+          font: 600 0.916rem "MyriadPro-It";
+          color: #636363; }
+      .calculator__content--form-img_aside {
+        position: absolute;
+        left: 0;
+        top: 50%; }
+        .calculator__content--form-img_aside p {
+          -webkit-writing-mode: vertical-rl;
+              -ms-writing-mode: tb-rl;
+                  writing-mode: vertical-rl;
+          -webkit-transform: rotate(-180deg);
+                  transform: rotate(-180deg);
+          font: 600 0.916rem "MyriadPro-It";
+          color: #636363; }
+    .calculator__content--form-inputSize {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 50%;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .calculator__content--form-inputSize_width {
+        margin-right: 25px;
+        text-align: center; }
+      .calculator__content--form-inputSize_height {
+        margin-left: 25px;
+        text-align: center; }
+      .calculator__content--form-inputSize input {
+        max-width: 90px;
+        height: 46px;
+        border-radius: 7.4px;
+        border: solid 2px #a2a2a2;
+        margin-top: 10px;
+        text-align: center;
+        font: 400 1.395rem "MyriadPro"; }
+      .calculator__content--form-inputSize span {
+        font: 700 1.854rem "MyriadPro";
+        color: #0099de;
+        line-height: 1;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
+      .calculator__content--form-inputSize p {
+        font: 400 0.854rem "MyriadPro"; }
+    .calculator__content--form-properties {
+      margin-top: 63px; }
+      .calculator__content--form-properties_title h2 {
+        font: 700 1.25rem "MyriadPro";
+        color: #0099de; }
+      .calculator__content--form-properties_radio {
+        margin-top: 52px; }
+        .calculator__content--form-properties_radio p {
+          font: 600 1rem "MyriadPro"; }
+        .calculator__content--form-properties_radio-inputs {
+          margin-top: 27px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .calculator__content--form-properties_radio-inputs input {
+            height: 16px;
+            width: 16px; }
+          .calculator__content--form-properties_radio-inputs label {
+            margin-right: 30px;
+            font: 400 0.75rem "MyriadPro";
+            margin-left: 10px; }
+          .calculator__content--form-properties_radio-inputs label:nth-of-type(3) {
+            margin-right: 0; }
+      .calculator__content--form-properties_select {
+        margin-top: 62px;
+        display: inline-block;
+        position: relative; }
+      .calculator__content--form-properties p {
+        font: 600 1rem "MyriadPro"; }
+      .calculator__content--form-properties select {
+        margin-top: 18px;
+        border-radius: 8px;
+        border: solid 2px #aeaeae;
+        height: 46px;
+        width: 358px;
+        padding-left: 17px;
+        outline: none;
+        font: 400 0.77rem "MyriadPro";
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-image: url(../img/calculator/selectArrow.png);
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 11px; }
+    .calculator__content--form_footer {
+      margin-top: 60px; }
+      .calculator__content--form_footer form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .calculator__content--form_footer-inputTel {
+        margin-right: 22px; }
+        .calculator__content--form_footer-inputTel input {
+          border-radius: 10px;
+          background-color: #c6c6c6;
+          height: 46px;
+          width: 280px;
+          border: none;
+          background-image: url(../img/calculator/footerUser.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          padding-left: 62px;
+          font: 400 0.75rem "MyriadPro"; }
+      .calculator__content--form_footer-inputSubmit button {
+        width: 280px;
+        height: 46px;
+        border-radius: 10px;
+        background-color: #9da3d7;
+        border: none;
+        color: #fff;
+        cursor: pointer; }
+        .calculator__content--form_footer-inputSubmit button:hover {
+          -webkit-box-shadow: 0 0 0 3px #9da3d7 inset, 0 0 0 7px white inset;
+                  box-shadow: 0 0 0 3px #9da3d7 inset, 0 0 0 7px white inset;
+          -webkit-transition: 0.2s ease;
+          transition: 0.2s ease; }
+
+.footer {
+  padding: 57px 0 45px 0;
+  background-color: #777777; }
+  .footer__content p {
+    color: #fff;
+    font: 400 1rem "MyriadPro";
+    max-width: 181px; }
+  @media (max-width: 575px) and (min-width: 320px) {
+
+  html {
+    font-size: 16px; }
+
+  .container {
+    width: 100%;
+    padding: 0 15px; }
+
+  .header__logo {
+    margin-right: 10px; }
+
+  .header__phoneNumber--link a {
+    font-size: 20px; }
+
+  .awesome__form {
+    margin-left: 0; }
+
+  .awesome__form--body {
+    padding: 20px; }
+
+  .awesome__form--tel input {
+    width: 100%; }
+
+  .awesome__form--submit button {
+    width: 100%; }
+
+  .calculator__content--windows {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .calculator__content--windows-item {
+    width: 45%;
+    margin-bottom: 15px; }
+
+  .calculator__content--form {
+    padding: 0 15px 15px; }
+
+  .calculator__content--form-img_aside {
+    left: -25px; }
+
+  .calculator__content--form-properties {
+    text-align: center; }
+
+  .calculator__content--form-properties_select select {
+    width: 100%; }
+
+  .calculator__content--form-properties_radio-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .calculator__content--form-properties_radio-inputs div {
+    margin-bottom: 15px; }
+
+  .calculator__content--form_footer form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .calculator__content--form_footer-inputTel {
+    margin: 0 0 15px 0;
+    width: 100%; }
+
+  .calculator__content--form_footer-inputTel input {
+    width: 100%; }
+
+  .calculator__content--form_footer-inputSubmit {
+    width: 100%; }
+
+  .calculator__content--form_footer-inputSubmit button {
+    width: 100%; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+
+  html {
+    font-size: 16px; }
+
+  .container {
+    width: 100%;
+    padding: 0 15px; }
+
+  .header__logo {
+    margin-right: 10px; }
+
+  .header__phoneNumber--link a {
+    font-size: 20px; }
+
+  .awesome__form {
+    margin-left: 0; }
+
+  .awesome__form--body {
+    padding: 20px; }
+
+  .awesome__form--tel input {
+    width: 100%; }
+
+  .awesome__form--submit button {
+    width: 100%; }
+
+  .calculator__content--windows {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .calculator__content--windows-item {
+    width: 45%;
+    margin-bottom: 15px; }
+
+  .calculator__content--form {
+    padding: 0 15px 15px; }
+
+  .calculator__content--form-img__aside {
+    left: -25px; }
+
+  .calculator__content--form-properties {
+    text-align: center; }
+
+  .calculator__content--form-properties_select select {
+    width: 100%; }
+
+  .calculator__content--form-properties_radio-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .calculator__content--form-properties_radio-inputs div {
+    margin-bottom: 15px; }
+
+  .calculator__content--form_footer form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .calculator__content--form_footer-inputTel {
+    margin: 0 0 15px 0;
+    width: 100%; }
+
+  .calculator__content--form_footer-inputTel input {
+    width: 100%; }
+
+  .calculator__content--form_footer-inputSubmit {
+    width: 100%; }
+
+  .calculator__content--form_footer-inputSubmit button {
+    width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  html {
+    font-size: 18px; }
+
+  .container {
+    width: 100%;
+    padding: 0 15px; } }

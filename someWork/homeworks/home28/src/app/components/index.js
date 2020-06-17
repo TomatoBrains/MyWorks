@@ -211,7 +211,7 @@ function ConstructorPerson(arr, personsList, personsFilters, personsModal){
         this.personsList.html('');
         arr.map(function(elem, index){
             self.personsList.append(`
-            <div class="list__profile ${elem.eyeColor}">
+            <div class="list__profile">
                 <div class="list__profile-img">
                     <img src="img/profile.jpg" alt="">
                 </div>
@@ -277,7 +277,7 @@ function ConstructorPerson(arr, personsList, personsFilters, personsModal){
             self.nameSearch = e.target.value;
         })
         $('.eye--checkbox').on('change', function(e){
-            self.eyeCheckbox = e.target.value;
+            self.eyeCheckbox = e.target.checked;
         });
         $('.ageFrom--input').on('change', function(e){
             self.ageInputFrom = e.target.value;
@@ -296,14 +296,20 @@ function ConstructorPerson(arr, personsList, personsFilters, personsModal){
         const self = this;
         let filter = this.arr.filter(function(item){
             return item.name.first.indexOf(self.nameSearch) > -1 
-            //&& (self.eyeCheckbox === '' || self.eyeCheckbox == item.eyeColor)
+            && (self.eyeCheckbox === '' || self.eyeCheckbox == item.eyeColor)
             && (self.fruitRadioBtn === '' || self.fruitRadioBtn == item.favoriteFruit)
             //&& (self.rangeBalance === 0 || self.rangeBalance >= item.balance)
             && (self.ageInputFrom === '' || self.ageInputFrom <= item.age)
             && (self.ageInputTo === '' || self.ageInputTo >= item.age)
         })
         this.initPersonsList(filter)
+        console.log(filter)
     }
 }
 let personsList = new ConstructorPerson(allProfileInfo, $('.list'), $('.filters'), $('.modalProfile'));
 personsList.init();
+
+
+fetch('https://reqres.in/api/users')
+.then(response => response.json())
+.then(users => console.log(users.data[0].email));

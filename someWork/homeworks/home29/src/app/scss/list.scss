@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+}
+.list{
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters {
+    width: 33%;
+}
+.list-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list__profile {
+    display: flex;
+    width: 33.333%;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    &-descr {
+        width: 50%;
+        & p {
+            margin-bottom: 5px;
+        }
+        & p:nth-child(2n+1){
+            font-weight: 700;
+        }
+    }
+    &-img {
+        width: 50%;
+        & p {
+            font-weight: 700;
+        }
+    }
+}
+.list__companies {
+    display: flex;
+    flex-wrap: wrap;
+    &-descr {
+        border: 2px solid black;
+        width: 33%;
+    }
+}
+.modalBtn {
+    cursor: pointer;
+}
+.modalProfile {
+    position: fixed;
+    left: 25%;
+    width: 50vw;
+    background-color: #fff;
+    border:2px solid #000;
+    top: 25%;
+    display: none;
+    padding: 25px;
+    z-index: 2;
+    flex-direction: column-reverse;
+    & p:nth-child(2n+1) {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.modalProfile-close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+.modalBack-close {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color:rgba($color: #ddd, $alpha: 0.5);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.show {
+    display: flex;
+}

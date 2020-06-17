@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.btn {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+.btn:hover {
+  background-color: rgb(92, 92, 92);
+}

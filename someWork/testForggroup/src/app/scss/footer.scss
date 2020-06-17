@@ -1,0 +1,11 @@
+.footer {
+  padding: 57px 0 45px 0;
+  background-color: #777777;
+  &__content {
+    & p {
+      color: #fff;
+      font: $myriadReg_24;
+      max-width: 181px;
+    }
+  }
+}

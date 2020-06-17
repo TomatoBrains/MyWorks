@@ -1,0 +1,200 @@
+.calculator {
+  padding: 36px 0 99px 0;
+  &__title {
+    & h2 {
+      font: $myriadSemiBold_24;
+      color: $colorLightBlue;
+      text-align: center;
+    }
+  }
+  &__content {
+    &--windows {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 37px;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &-type {
+        & a {
+          font: $myriadBold_14;
+          cursor: pointer;
+          &:hover {
+            color: #0099de;
+            text-decoration: underline;
+            transition: 0.2s ease;
+          }
+        }
+      }
+      &-img {
+        margin-bottom: 23px;
+      }
+    }
+    &--form {
+      margin-top: 36px;
+      box-shadow: 2.5px 4.3px 10px 0 rgba(0, 0, 0, 0.23),
+        inset 1px 1.7px 6px 0 rgba(0, 0, 0, 0.35);
+      padding-bottom: 50px;
+      border-radius: 8px;
+      &-body {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      &-size {
+        margin-top: 39px;
+      }
+      &-img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 50%;
+        &_picture {
+          margin-top: 29px;
+        }
+        &_main {
+          text-align: center;
+          & p {
+            font: $myriadSemiBold-It_22;
+            color: #636363;
+          }
+        }
+        &_aside {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          & p {
+            writing-mode: vertical-rl;
+            transform: rotate(-180deg);
+            font: $myriadSemiBold-It_22;
+            color: #636363;
+          }
+        }
+      }
+      &-inputSize {
+        display: flex;
+        height: 50%;
+        align-items: flex-end;
+        &_width {
+          margin-right: 25px;
+          text-align: center;
+        }
+        &_height {
+          margin-left: 25px;
+          text-align: center;
+        }
+        & input {
+          max-width: 90px;
+          height: 46px;
+          border-radius: 7.4px;
+          border: solid 2px #a2a2a2;
+          margin-top: 10px;
+          text-align: center;
+          font: $myriadReg_33-5;
+        }
+        & span {
+          font: $myriadBold_44-5;
+          color: #0099de;
+          line-height: 1;
+          align-self: flex-end;
+        }
+        & p {
+          font: $myriadReg_20-5;
+        }
+      }
+      &-properties {
+        margin-top: 63px;
+        &_title {
+          & h2 {
+            font: $myriadBold_30;
+            color: #0099de;
+          }
+        }
+        &_radio {
+          margin-top: 52px;
+          & p {
+            font: $myriadSemiBold_24;
+          }
+          &-inputs {
+            margin-top: 27px;
+            display: flex;
+            & input {
+              height: 16px;
+              width: 16px;
+            }
+            & label {
+              margin-right: 30px;
+              font: $myriadReg_18;
+              margin-left: 10px;
+            }
+            & label:nth-of-type(3) {
+              margin-right: 0;
+            }
+          }
+        }
+        &_select {
+          margin-top: 62px;
+          display: inline-block;
+          position: relative;
+        }
+        & p {
+          font: $myriadSemiBold_24;
+        }
+        & select {
+          margin-top: 18px;
+          border-radius: 8px;
+          border: solid 2px #aeaeae;
+          height: 46px;
+          width: 358px;
+          padding-left: 17px;
+          outline: none;
+          font: $myriadReg_18-5;
+          appearance: none;
+          background-image: url(../img/calculator/selectArrow.png);
+          background-repeat: no-repeat;
+          background-position-x: 95%;
+          background-position-y: 11px;
+        }
+      }
+      &_footer {
+        margin-top: 60px;
+        & form {
+          display: flex;
+          justify-content: center;
+        }
+        &-inputTel {
+          margin-right: 22px;
+          & input {
+            border-radius: 10px;
+            background-color: #c6c6c6;
+            height: 46px;
+            width: 280px;
+            border: none;
+            background-image: url(../img/calculator/footerUser.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 62px;
+            font: $myriadReg_18;
+          }
+        }
+        &-inputSubmit {
+          & button {
+            width: 280px;
+            height: 46px;
+            border-radius: 10px;
+            background-color: #9da3d7;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+              box-shadow: 0 0 0 3px #9da3d7 inset, 0 0 0 7px white inset;
+              transition: 0.2s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "MyriadPro";
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input {
+  outline: none;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/typography";
+@import "scss/helpers";
+
+@import "scss/header.scss";
+@import "scss/awesome.scss";
+@import "components/modal/modal.scss";
+@import "components/slider/slider.scss";
+@import "scss/simpletext.scss";
+@import "scss/calculator.scss";
+@import "scss/footer.scss";
+@import "scss/media.scss";

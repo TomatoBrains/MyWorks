@@ -1,0 +1,193 @@
+@media (max-width: 575px) and (min-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header {
+    &__logo {
+      margin-right: 10px;
+    }
+    &__phoneNumber {
+      &--link {
+        & a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .awesome {
+    &__form {
+      margin-left: 0;
+      &--body {
+        padding: 20px;
+      }
+      &--tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &--submit {
+        & button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .calculator {
+    &__content {
+      &--windows {
+        flex-wrap: wrap;
+        &-item {
+          width: 45%;
+          margin-bottom: 15px;
+        }
+      }
+      &--form {
+        padding: 0 15px 15px;
+        &-img {
+          &_aside {
+            left: -25px;
+          }
+        }
+        &-properties {
+          text-align: center;
+          &_select {
+            & select {
+              width: 100%;
+            }
+          }
+          &_radio {
+            &-inputs {
+              flex-direction: column;
+              & div {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+        &_footer {
+          & form {
+            flex-wrap: wrap;
+          }
+          &-inputTel {
+            margin: 0 0 15px 0;
+            width: 100%;
+            & input {
+              width: 100%;
+            }
+          }
+          &-inputSubmit {
+            width: 100%;
+            & button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header {
+    &__logo {
+      margin-right: 10px;
+    }
+    &__phoneNumber {
+      &--link {
+        & a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .awesome {
+    &__form {
+      margin-left: 0;
+      &--body {
+        padding: 20px;
+      }
+      &--tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &--submit {
+        & button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .calculator {
+    &__content {
+      &--windows {
+        flex-wrap: wrap;
+        &-item {
+          width: 45%;
+          margin-bottom: 15px;
+        }
+      }
+      &--form {
+        padding: 0 15px 15px;
+        &-img {
+          &__aside {
+            left: -25px;
+          }
+        }
+        &-properties {
+          text-align: center;
+          &_select {
+            & select {
+              width: 100%;
+            }
+          }
+          &_radio {
+            &-inputs {
+              flex-direction: column;
+              & div {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+        &_footer {
+          & form {
+            flex-wrap: wrap;
+          }
+          &-inputTel {
+            margin: 0 0 15px 0;
+            width: 100%;
+            & input {
+              width: 100%;
+            }
+          }
+          &-inputSubmit {
+            width: 100%;
+            & button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

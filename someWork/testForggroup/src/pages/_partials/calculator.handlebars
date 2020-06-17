@@ -1,0 +1,123 @@
+<div class="calculator">
+    <div class="container">
+        <div class="calculator__title">
+            <h2>КАЛЬКУЛЯТОР<br> (СТОИМОСТЬ ПОЛЬЗОВАТЕЛЬ УЗНАЁТ ПО ТЕЛЕФОНУ)</h2>
+        </div>
+        <div class="calculator__content">
+            <div class="calculator__content--windows">
+                <div class="calculator__content--windows-item">
+                    <div class="calculator__content--windows-img">
+                        <img src="img/calculator/window_sm_1.png" alt="Одностворчатое">
+                    </div>
+                    <div class="calculator__content--windows-type">
+                        <a data-src="img/calculator/window_1.png" data-type="1">Одностворчатое</a>
+                    </div>
+                </div>
+                <div class="calculator__content--windows-item">
+                    <div class="calculator__content--windows-img">
+                        <img src="img/calculator/window_sm_2.png" alt="Двухстворчатое">
+                    </div>
+                    <div class="calculator__content--windows-type">
+                        <a data-src="img/calculator/window_2.png" data-type="2">Двухстворчатое</a>
+                    </div>
+                </div>
+                <div class="calculator__content--windows-item">
+                    <div class="calculator__content--windows-img">
+                        <img src="img/calculator/window_sm_3.png" alt="Трехстворчатое">
+                    </div>
+                    <div class="calculator__content--windows-type">
+                        <a data-src="img/calculator/window_3.png" data-type="3">Трехстворчатое</a>
+                    </div>
+                </div>
+                <div class="calculator__content--windows-item">
+                    <div class="calculator__content--windows-img">
+                        <img src="img/calculator/window_sm_4.png" alt="Балконный блок">
+                    </div>
+                    <div class="calculator__content--windows-type">
+                        <a data-src="img/calculator/window_4.png" data-type="4">Балконный блок</a>
+                    </div>
+                </div>
+                <div class="calculator__content--windows-item">
+                    <div class="calculator__content--windows-img">
+                        <img src="img/calculator/window_sm_5.png" alt="Остекление балкона">
+                    </div>
+                    <div class="calculator__content--windows-type">
+                        <a data-src="img/calculator/window_5.png" data-type="5">Остекление балкона</a>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__content--form">
+                <div class="calculator__content--form-body">
+                    <div class="calculator__content--form-size">
+                        <div class="calculator__content--form-img">
+                            <div class="calculator__content--form-img_aside">
+                                <p>высота</p>
+                            </div>
+                            <div class="calculator__content--form-img_main">
+                                <p>ширина</p>
+                                <div class="calculator__content--form-img_picture">
+                                    <img class="calculator__changeImg" src="img/calculator/window_5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__content--form-inputSize">
+                            <div class="calculator__content--form-inputSize_width">
+                                <p>ширина, см</p>
+                                <input type="number" name="inputSize-width" min="120" max="240" step="10" id=""
+                                    placeholder="120">
+                            </div>
+                            <span>X</span>
+                            <div class="calculator__content--form-inputSize_height">
+                                <p>высота, см</p>
+                                <input type="number" name="inputSize-width" min="120" max="240" step="10" id=""
+                                    placeholder="120">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__content--form-properties">
+                        <div class="calculator__content--form-properties_title">
+                            <h2>Одностворчатое окно КВЕ</h2>
+                        </div>
+                        <div class="calculator__content--form-properties_radio">
+                            <p>1. Критерий выбора</p>
+                            <div class="calculator__content--form-properties_radio-inputs">
+                                <div>
+                                    <input class="calculator-radioBtn" type="radio" name="inputRadio" value="1">
+                                    <label for="inputRadio_1">пункт выбора 1</label>
+                                </div>
+                                <div>
+                                    <input class="calculator-radioBtn" type="radio" name="inputRadio" value="2">
+                                    <label for="inputRadio_1">пункт выбора 2</label>
+                                </div>
+                                <div>
+                                    <input class="calculator-radioBtn" type="radio" name="inputRadio" value="3">
+                                    <label for="inputRadio_1">пункт выбора 3</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="calculator__content--form-properties_select">
+                            <p>2. Выберите открывание створки</p>
+                            <select name="" class="calculator-select">
+                                <option value="10">Не открывается</option>
+                                <option value="20">Открывается</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__content--form_footer">
+                    <form action="" onsubmit="return false">
+                        <div class="calculator__content--form_footer-inputTel">
+                            <input type="tel" name="phone" placeholder="Введите номер"
+                                pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){7,12}(\s*)?$" required>
+                        </div>
+                        <div class="calculator__content--form_footer-inputSubmit">
+                            <button type="submit">РАССЧИТАТЬ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

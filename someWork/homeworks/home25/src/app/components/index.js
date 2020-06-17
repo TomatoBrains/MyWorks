@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 let allProfileInfo = [{
         "id": 1,
         "name": "Leanne Graham",
@@ -231,17 +233,18 @@ let allProfileInfo = [{
 ];
 let companies = [];
 let cities = [];
-let list = document.getElementsByClassName('list-flex')[0];
-let listSelectCity = document.getElementsByClassName('list__select-city')[0];
-let listCompanies = document.getElementsByClassName('list__companies')[0];
-let modalWindow = document.getElementsByClassName('modalProfile')[0];
-let modalWindowClose = document.getElementsByClassName('modalProfile-close')[0];
-let modalBackClose  = document.getElementsByClassName('modalBack-close')[0];
+let list = $('.list-flex');
+let listSelectCity = $('.list__select-city');
+let listCompanies = $('.list__companies');
+let modalWindow = $('.modalProfile');
+let modalWindowClose = $('.modalProfile-close');
+let modalBackClose  = $('.modalBack-close');
+
 
 function draw (arr) {
     for (let i = 0; i < arr.length; i++) {
         let iterator = arr[i];
-        list.innerHTML += `
+        list.append(`
     <div class="list__profile">
         <div class="list__profile-img">
             <img src="img/profile.jpg" alt="">
@@ -251,37 +254,36 @@ function draw (arr) {
             <p>${iterator.name}</p>
             <span class="modalBtn" data-id = '${i}'> Show more Info </span>
         </div>
-    </div>`;
+    </div>`);
 companies.indexOf(iterator.company) == -1 ? companies.push(iterator.company):null;
 cities.indexOf(iterator.address.city) == -1 ? cities.push(iterator.address.city):null;
     };
 };
 
 function drawSelectCity () {
-    listSelectCity.innerHTML = `<select>
+    listSelectCity.append ( `<select>
     ${cities.map(function(item) {
         return '<option value = ' + item + '>' + item + '</option>'
-    })}</select>`
+    })}</select>`)
 }
 
 function drawCompaniesDescr () {
         for(let i=0;i<companies.length;i++){
             let iter = companies[i];
-            listCompanies.innerHTML +=`
+            listCompanies.append(`
             <div class="list__companies-descr">
             <p>${iter.name}</p>
             <p>${iter.catchPhrase}</p>
             <p>${iter.bs}</p>
-        </div>`;
+        </div>`);
         }
     };
 
 function showProfileInformation(event) {
   let click = event.target;
-  console.log(allProfileInfo[click.dataset.id])
-  modalWindow.classList.add('show');
-  modalBackClose.classList.add('show');
-  modalWindow.getElementsByClassName('modalProfile__info')[0].innerHTML = `
+  modalWindow.addClass('show');
+  modalBackClose.addClass('show');
+  $('.modalProfile__info').html( `
   <p>username</p>
   <p>${allProfileInfo[click.dataset.id].username}</p>
   <p>email</p>
@@ -294,7 +296,7 @@ function showProfileInformation(event) {
   <p>${allProfileInfo[click.dataset.id].website}</p>  
   <p>company</p> 
   <p>${allProfileInfo[click.dataset.id].company.name + ' ' +allProfileInfo[click.dataset.id].company.catchPhrase }</p>  
-  `;
+  `);
 };
 
 function addClickEvent() {
@@ -303,16 +305,14 @@ function addClickEvent() {
       elements[i].onclick = showProfileInformation;
     }
 };
-function modalClose() {
-    modalWindowClose.onclick = function() {
-        modalWindow.classList.remove('show');
-        modalBackClose.classList.remove('show');
-    };
-    modalBackClose.onclick = function() {
-        modalWindow.classList.remove('show');
-        modalBackClose.classList.remove('show');
-    };
+function removeModalShowClass() {
+    modalWindow.removeClass('show');
+    modalBackClose.removeClass('show');
 };
+function modalClose() {
+    modalWindowClose.click(removeModalShowClass);
+    modalBackClose.click(removeModalShowClass);
+}
 
 draw(allProfileInfo);
 drawSelectCity();
