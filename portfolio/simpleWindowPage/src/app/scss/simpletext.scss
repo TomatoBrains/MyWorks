@@ -1,0 +1,14 @@
+.simpletext {
+  padding: 34px 0 36px 0;
+  &__content {
+    & h2 {
+      text-align: center;
+      margin-bottom: 37px;
+      font: $myriadSemiBold_24;
+    }
+    & p {
+      text-align: justify;
+      font: $myriadReg_14;
+    }
+  }
+}

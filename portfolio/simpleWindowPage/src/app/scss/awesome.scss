@@ -1,0 +1,54 @@
+.awesome {
+  background-image: url(../img/awesome/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 72px 0 94px 0;
+  &--title {
+    text-align: center;
+  }
+  &__form {
+    margin-left: 98px;
+    display: flex;
+    &--title {
+      text-align: center;
+      margin-bottom: 18px;
+      & h2 {
+        color: $colorLightBlue;
+        font: $myriadSemiBold_24;
+      }
+    }
+    &--body {
+      background-color: $colorLightBlue;
+      padding: 29px 22px 22px 52px;
+    }
+    &--description {
+      font: $myriadReg_24;
+      margin-bottom: 26px;
+      max-width: 313px;
+      color: #fff;
+    }
+    &--phoneInput {
+      & input,
+      button {
+        width: 290px;
+        height: 50px;
+      }
+    }
+    &--tel {
+      margin-bottom: 21px;
+      & input {
+        padding-left: 17px;
+        font: $myriadReg_24;
+      }
+    }
+    &--submit {
+      & button {
+        background-color: $colorLightOrange;
+        &:hover {
+          box-shadow: 0 0 0 3px $colorLightOrange inset, 0 0 0 7px white inset;
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+}
