@@ -1,0 +1,42 @@
+@import "functions";
+
+$font-base: "MuseoSansCyrl", sans-serif;
+
+//--------------------------------------
+// Primary Colors
+//--------------------------------------
+
+$colorRozeDark: #ff6078;
+$colorRozeDarker: #d7747a;
+$colorRozeLight: rgba(214, 117, 122, 0.57);
+$colorRozeLighter: rgba(243, 158, 162, 0.5);
+$colorGreen: #27b24b;
+$colorGray: #ebeaea;
+
+//--------------------------------------
+// Fonts
+//--------------------------------------
+
+$fontMuseoSansCyrlLight_12: 300 0.625vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_14: 300 0.729vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_15: 300 0.781vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_16: 300 0.833vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_18: 300 0.938vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_30: 300 1.563vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_36: 300 1.875vw "MuseoSansCyrl";
+$fontMuseoSansCyrlLight_48: 300 2.5vw "MuseoSansCyrl";
+$fontMuseoSansCyrlMed_12: 500 0.625vw "MuseoSansCyrl";
+$fontMuseoSansCyrlMed_14: 500 0.729vw "MuseoSansCyrl";
+$fontMuseoSansCyrlMed_15: 500 0.781vw "MuseoSansCyrl";
+$fontMuseoSansCyrlMed_24: 500 1.25vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_14: 700 0.729vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_15: 700 0.781vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_16: 700 0.833vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_18: 700 0.938vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_30: 700 1.563vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_36: 700 1.875vw "MuseoSansCyrl";
+$fontMuseoSansCyrlBold_48: 700 2.5vw "MuseoSansCyrl";
+
+//--------------------------------------
+// Metrics
+//--------------------------------------

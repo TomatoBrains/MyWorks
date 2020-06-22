@@ -1,0 +1,745 @@
+@media (max-width: 575px) and (min-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .header {
+    &_flex {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__descr {
+      margin-left: 1rem;
+      & p {
+        font-size: 1.2rem;
+        max-width: none;
+      }
+    }
+    &__map {
+      margin-top: 1rem;
+      & p {
+        font-size: 1.2rem;
+      }
+      &-icon {
+        width: 80px;
+      }
+      &-iframe {
+        width: 20rem;
+        height: 15rem;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        top: unset;
+      }
+    }
+    &__contact {
+      margin-top: 1rem;
+      & p,
+      span {
+        font-size: 1.2rem;
+      }
+      & a {
+        font-size: 1.5rem;
+      }
+      &-tel {
+        &_wraper {
+          & span {
+            border-radius: 50%;
+            width: 3px;
+            height: 3px;
+          }
+          & p {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    &__rec {
+      margin-top: 1rem;
+
+      & span {
+        font-size: 1.2rem;
+      }
+    }
+    &__menu {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      & a {
+        width: 50%;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      & a:nth-child(1) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .main {
+    &__descr {
+      &-title {
+        & h1 {
+          font-size: 1.5rem;
+          & span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &-list {
+        & ul {
+          & li {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-btn {
+        margin-top: 1rem;
+        & p {
+          max-width: none;
+          font-size: 1rem;
+        }
+      }
+      &-img {
+        bottom: 5px;
+        left: 70%;
+        & img {
+          max-width: 10rem;
+        }
+      }
+      &-info {
+        top: 41%;
+        left: 70%;
+        & img {
+          width: 2.2rem;
+        }
+        &_hover {
+          padding: 2rem;
+          max-width: 10rem;
+          top: 28%;
+          left: 83%;
+          & p {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-card {
+        width: 100%;
+        top: 45%;
+        left: 80%;
+      }
+    }
+    &__wawe {
+      bottom: -2px;
+      &-arrow {
+        width: 1.5rem;
+      }
+    }
+    &__women {
+      position: relative;
+      bottom: -2rem;
+      max-width: none;
+    }
+    &__popup {
+      width: auto;
+      &-close {
+        top: 1rem;
+        right: 4rem;
+      }
+      &-content {
+        width: auto;
+        & h2 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          font-size: 1rem;
+          background-size: 6%;
+        }
+        & input {
+          font-size: 1rem;
+          &::placeholder {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-submit {
+        padding-right: 2rem;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%);
+        & a {
+          font-size: 1rem;
+        }
+        &_img {
+          bottom: 12px;
+          right: -7px;
+          width: 5rem;
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 25rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 2rem;
+            & span {
+              font-size: 2rem;
+            }
+          }
+          & span {
+            font-size: 2rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) and (min-width: 375px) {
+  .main {
+    &__descr {
+      &-card {
+        width: 100%;
+        top: 30%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+      }
+      &-info {
+        width: 100%;
+        top: 25%;
+        left: 124%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        &_hover {
+          top: 14%;
+          left: 83%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &__popup {
+      &-submit {
+        padding-right: 4.4rem;
+        &_img {
+          width: 8rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .header {
+    &_flex {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__descr {
+      margin-left: 1rem;
+      & p {
+        font-size: 2.2rem;
+        max-width: none;
+      }
+    }
+    &__map {
+      margin-top: 1rem;
+      & p {
+        font-size: 2.2rem;
+      }
+      &-icon {
+        width: 80px;
+      }
+      &-iframe {
+        width: 40rem;
+        height: 30rem;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        top: unset;
+      }
+    }
+    &__contact {
+      margin-top: 1rem;
+      & p,
+      span {
+        font-size: 2.2rem;
+      }
+      & a {
+        font-size: 2.5rem;
+      }
+      &-tel {
+        &_wraper {
+          & span {
+            border-radius: 50%;
+            width: 3px;
+            height: 3px;
+          }
+          & p {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    &__rec {
+      margin-top: 1rem;
+
+      & span {
+        font-size: 2.2rem;
+      }
+    }
+    &__menu {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      & a {
+        width: 50%;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      & a:nth-child(1) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .main {
+    &__descr {
+      &-title {
+        & h1 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      &-list {
+        & ul {
+          & li {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-btn {
+        margin-top: 1rem;
+        & p {
+          max-width: none;
+          font-size: 2rem;
+        }
+      }
+      &-img {
+        bottom: 5px;
+        left: 70%;
+        & img {
+          max-width: 15rem;
+        }
+      }
+      &-info {
+        top: 41%;
+        left: 80%;
+        & img {
+          width: 2.2rem;
+        }
+        &_hover {
+          padding: 2rem;
+          max-width: 15rem;
+          top: 27%;
+          left: 89%;
+          & p {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-card {
+        width: 100%;
+        top: 45%;
+        left: 90%;
+      }
+    }
+    &__wawe {
+      bottom: -2px;
+      &-arrow {
+        width: 1.5rem;
+      }
+    }
+    &__women {
+      position: relative;
+      bottom: -2rem;
+      max-width: none;
+    }
+    &__popup {
+      width: auto;
+      &-close {
+        top: 1rem;
+        right: 4rem;
+      }
+      &-content {
+        width: auto;
+        & h2 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          font-size: 2rem;
+          background-size: 6%;
+        }
+        & input {
+          font-size: 2rem;
+          &::placeholder {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-submit {
+        padding-right: 6.5rem;
+        width: auto;
+        & a {
+          font-size: 2rem;
+        }
+        &_img {
+          bottom: 30px;
+          right: -7px;
+          width: 14rem;
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 40rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 3rem;
+            & span {
+              font-size: 3rem;
+            }
+          }
+          & span {
+            font-size: 3rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .header {
+    &_flex {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__descr {
+      margin-left: 1rem;
+      & p {
+        font-size: 2.2rem;
+        max-width: none;
+      }
+    }
+    &__map {
+      margin-top: 1rem;
+      & p {
+        font-size: 2.2rem;
+      }
+      &-icon {
+        width: 80px;
+      }
+      &-iframe {
+        width: 40rem;
+        height: 30rem;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        top: unset;
+      }
+    }
+    &__contact {
+      margin-top: 1rem;
+      & p,
+      span {
+        font-size: 2.2rem;
+      }
+      & a {
+        font-size: 2.5rem;
+      }
+      &-tel {
+        &_wraper {
+          & span {
+            border-radius: 50%;
+            width: 3px;
+            height: 3px;
+          }
+          & p {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    &__rec {
+      margin-top: 1rem;
+
+      & span {
+        font-size: 2.2rem;
+      }
+    }
+    &__menu {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      & a {
+        width: 50%;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      & a:nth-child(1) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .main {
+    &__descr {
+      &-title {
+        & h1 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      &-list {
+        & ul {
+          & li {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-btn {
+        margin-top: 1rem;
+        & p {
+          max-width: none;
+          font-size: 2rem;
+        }
+      }
+      &-img {
+        bottom: 5px;
+        left: 70%;
+        & img {
+          max-width: 15rem;
+        }
+      }
+      &-info {
+        top: 74%;
+        left: 64%;
+        & img {
+          width: 2.2rem;
+        }
+        &_hover {
+          padding: 2rem;
+          max-width: 15rem;
+          top: 42%;
+          left: 71%;
+          & p {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-card {
+        top: 82%;
+        left: 70%;
+        & img {
+          max-width: 60rem;
+        }
+      }
+    }
+    &__wawe {
+      bottom: -2px;
+      &-arrow {
+        width: 1.5rem;
+      }
+    }
+    &__women {
+      top: 21%;
+      max-width: 47rem;
+    }
+    &__popup {
+      width: auto;
+      &-close {
+        top: 1rem;
+        right: 4rem;
+      }
+      &-content {
+        width: auto;
+        & h2 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          font-size: 2rem;
+          background-size: 6%;
+        }
+        & input {
+          font-size: 2rem;
+          &::placeholder {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-submit {
+        padding-right: 6.5rem;
+        width: auto;
+        & a {
+          font-size: 2rem;
+        }
+        &_img {
+          bottom: 30px;
+          right: -7px;
+          width: 14rem;
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 40rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 3rem;
+            & span {
+              font-size: 3rem;
+            }
+          }
+          & span {
+            font-size: 3rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
