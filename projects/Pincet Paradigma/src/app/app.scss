@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "MuseoSansCyrl";
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input {
+  outline: none;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+.wrapper_background {
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.container {
+  padding: 0 10.156vw;
+  margin: 0 auto;
+}
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/fonts";
+
+@import "scss/header.scss";
+@import "scss/main.scss";
+@import "scss/relocation.scss";
+@import "scss/services.scss";
+
+@import "components/popup/popup.scss";
+@import "components/map/map.scss";
+@import "components/blur/blur.scss";
+
+@import "scss/media.scss";

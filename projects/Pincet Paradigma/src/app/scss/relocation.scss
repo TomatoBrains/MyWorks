@@ -1,0 +1,449 @@
+.relocation {
+  padding: $blockPadding_55 0;
+  background-image: url(../img/relocation/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__women {
+    &-wraper {
+      position: relative;
+    }
+    &-img {
+      width: 33.646vw;
+    }
+    &-videoBtn {
+      position: absolute;
+      top: 45%;
+      right: -2.5vw;
+      display: flex;
+      z-index: 4;
+      & span {
+        padding: 2vw;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 140%;
+        height: 140%;
+        z-index: -1;
+        background-color: rgba(241, 241, 241, 0.44);
+        border-radius: 100%;
+        animation: pulseicon 3.3s infinite linear;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 170%;
+        height: 170%;
+        z-index: -2;
+        background-color: rgba(241, 241, 241, 0.3);
+        border-radius: 100%;
+        animation: pulseicon 3.3s infinite linear;
+      }
+    }
+    &-leave {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 4.896vw;
+    }
+  }
+  &__title {
+    & h2 {
+      font: $fontMuseoSansCyrlBold_48;
+    }
+  }
+  &__mapBtn {
+    margin-top: $elemMarginTop_60;
+    margin-left: 2.083vw;
+    &-btn {
+      position: relative;
+      border-radius: 15px;
+      background-image: $btnGradient;
+      width: 25.417vw;
+      padding: 4px;
+      text-align: left;
+      &--border {
+        border: 1px dashed #fff;
+        border-radius: 15px;
+        padding: 1.302vw 3.802vw 1.302vw 2.188vw;
+      }
+      & p {
+        color: #fff;
+        font: $fontMuseoSansCyrlBold_18;
+        & + p {
+          color: #fff;
+          display: block;
+          font: $fontMuseoSansCyrlLight_18;
+        }
+      }
+    }
+    &-img {
+      position: absolute;
+      left: -2.031vw;
+      border-radius: 50%;
+      box-shadow: 0px 1px 65px 0px rgba(239, 140, 146, 0.67);
+      width: 4.063vw;
+      top: 10px;
+    }
+  }
+  &__descr {
+    margin-top: $elemMarginTop_60;
+    & p {
+      font: $fontMuseoSansCyrlLight_24;
+      & span {
+        font: $fontMuseoSansCyrlBold_24;
+      }
+    }
+  }
+  &__sign {
+    margin-top: $elemMarginTop_60;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    &-name {
+      text-align: right;
+      margin-right: 45px;
+      & p {
+        font: $fontMuseoSansCyrlBold_24;
+        & + p {
+          font: $fontMuseoSansCyrlLight_16;
+        }
+      }
+    }
+    &-img {
+      width: 9.688vw;
+    }
+    &-leave {
+      position: absolute;
+      left: 0vw;
+      bottom: -2vw;
+      width: 9.896vw;
+    }
+  }
+  &__blurRight {
+    position: absolute;
+    right: -8vw;
+    top: 0;
+    width: 19.115vw;
+  }
+  &__leaveRight {
+    position: absolute;
+    right: 5vw;
+    top: 10vw;
+    width: 7.448vw;
+  }
+}
+@keyframes pulseicon {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+@media (min-width: $mediaXl) {
+}
+@media (max-width: $mediaLg) {
+  .relocation {
+    &__women {
+      margin-top: 2.5rem;
+      &-img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      &-videoBtn {
+        right: -3rem;
+        & span {
+          padding: 2rem;
+        }
+      }
+      &-leave {
+        width: 5rem;
+      }
+    }
+    &__leaveRight {
+      width: 5rem;
+      top: 10rem;
+      right: 1rem;
+    }
+    &__blurRight {
+      width: 15rem;
+      right: -5rem;
+    }
+    &__title {
+      margin-top: 2rem;
+      & h2 {
+        font-size: $mobFont_26;
+      }
+    }
+    &__descr {
+      margin-top: 2.5rem;
+      & p {
+        font-size: $mobFont_20;
+        & span {
+          font-size: $mobFont_20;
+        }
+      }
+    }
+    &__mapBtn {
+      margin-top: 2.5rem;
+      &-img {
+        left: -3rem;
+        width: 5rem;
+      }
+      &-btn {
+        width: 35rem;
+        &--border {
+          padding: 1rem 2rem 1rem 3rem;
+        }
+        & p {
+          font-size: $mobFont_15;
+          & + p {
+            font-size: $mobFont_15;
+          }
+        }
+      }
+    }
+    &__sign {
+      margin-top: 2.5rem;
+      &-name {
+        z-index: 2;
+        & p {
+          font-size: $mobFont_20;
+          & + p {
+            font-size: $mobFont_14;
+          }
+        }
+      }
+      &-img {
+        width: 13rem;
+      }
+      &-leave {
+        width: 8rem;
+        z-index: 0;
+        bottom: -0.5rem;
+      }
+    }
+  }
+}
+@media (max-width: $mediaMd) {
+  .relocation {
+    &--flex {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    &__women {
+      margin-top: 2rem;
+      &-img {
+        width: 40rem;
+        margin: 0 auto;
+      }
+      &-videoBtn {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: unset;
+        & span {
+          padding: 2.5rem;
+          & svg {
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+      }
+      &-leave {
+        width: 10rem;
+        left: -1rem;
+        top: 2rem;
+      }
+    }
+    &__leaveRight {
+      width: 11rem;
+      right: 2rem;
+      top: unset;
+      bottom: 0rem;
+    }
+    &__blurRight {
+      width: 11rem;
+    }
+    &__title {
+      text-align: center;
+      margin-top: 1rem;
+      width: 43rem;
+      margin: 1rem auto 0;
+      & h2 {
+        font-size: $mobFont_24;
+      }
+    }
+    &__descr {
+      text-align: left;
+      margin-top: 2rem;
+      & p {
+        font-size: $mobFont_16;
+        & span {
+          font-size: $mobFont_16;
+        }
+      }
+    }
+    &__mapBtn {
+      margin-top: 2rem;
+      margin-left: 0;
+      &-img {
+        left: -2.5rem;
+        width: 6.5rem;
+      }
+      &-btn {
+        width: 40rem;
+        margin: 0 auto;
+        &--border {
+          padding: 2rem 3rem 2rem 4rem;
+        }
+        & p {
+          font-size: $mobFont_14;
+          & + p {
+            font-size: $mobFont_14;
+          }
+        }
+      }
+    }
+    &__sign {
+      margin-top: 2rem;
+      &-name {
+        z-index: 2;
+        & p {
+          font-size: $mobFont_16;
+          & + p {
+            font-size: $mobFont_14;
+          }
+        }
+      }
+      &-img {
+        width: 15rem;
+      }
+      &-leave {
+        width: 13rem;
+        z-index: 0;
+        bottom: -0.5rem;
+      }
+    }
+  }
+}
+@media (max-width: $mediaSm) {
+  .relocation {
+    &--flex {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    &__women {
+      margin-top: 1rem;
+      &-img {
+        width: 30rem;
+        margin: 0 auto;
+      }
+      &-videoBtn {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: unset;
+        & span {
+          padding: 2.5rem;
+          & svg {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+      &-leave {
+        width: 7rem;
+        left: -1rem;
+        top: 2rem;
+      }
+    }
+    &__leaveRight {
+      width: 8rem;
+      right: 2rem;
+      top: unset;
+      bottom: 0rem;
+    }
+    &__blurRight {
+      width: 9rem;
+    }
+    &__title {
+      text-align: center;
+      margin-top: 1rem;
+      & h2 {
+        font-size: $mobFont_22;
+      }
+    }
+    &__descr {
+      text-align: left;
+      margin-top: 1rem;
+      & p {
+        font-size: $mobFont_14;
+        & span {
+          font-size: $mobFont_14;
+        }
+      }
+    }
+    &__mapBtn {
+      margin-left: 0;
+      &-img {
+        left: -1rem;
+        width: 4rem;
+      }
+      &-btn {
+        width: 30rem;
+        margin: 0 auto;
+        &--border {
+          padding: 1rem 2rem 1rem 3rem;
+        }
+        & p {
+          font-size: $mobFont_12;
+          & + p {
+            font-size: $mobFont_12;
+          }
+        }
+      }
+    }
+    &__sign {
+      &-name {
+        z-index: 2;
+        & p {
+          font-size: $mobFont_14;
+          & + p {
+            font-size: $mobFont_12;
+          }
+        }
+      }
+      &-img {
+        width: 9rem;
+      }
+      &-leave {
+        width: 9rem;
+        z-index: 0;
+        bottom: -0.5rem;
+      }
+    }
+  }
+}

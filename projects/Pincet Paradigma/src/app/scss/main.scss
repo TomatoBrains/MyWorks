@@ -1,0 +1,728 @@
+.main {
+  position: relative;
+  padding: 5.521vw 0 9.427vw 0;
+  overflow: hidden;
+  &__descr {
+    margin-left: 5.99vw;
+    position: relative;
+    z-index: 1;
+    &-title {
+      & h1 {
+        font: $fontMuseoSansCyrlLight_48;
+        & span {
+          font: $fontMuseoSansCyrlBold_48;
+        }
+      }
+    }
+    &-list {
+      margin-top: 3.125vw;
+      & ul {
+        & li {
+          font: $fontMuseoSansCyrlLight_18;
+          margin-top: 1.094vw;
+          display: flex;
+          align-items: center;
+          &::before {
+            content: url(../img/main/liMarker.png);
+            position: absolute;
+            left: -35px;
+          }
+        }
+      }
+    }
+    &-btn {
+      position: relative;
+      padding: 1.302vw 7.917vw 1.302vw 2.135vw;
+      margin-top: 4.583vw;
+      display: inline-block;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: $colorRozeDark;
+      border-radius: 39.2px;
+      border-image-source: linear-gradient(to top, $colorRozeLighter, #ffffff);
+      border-image-slice: 1;
+      background-image: linear-gradient(
+          to top,
+          rgba(241, 153, 157, 0.47),
+          rgba(252, 182, 182, 0.99)
+        ),
+        linear-gradient(to top, $colorRozeLighter, #ffffff);
+      box-shadow: 0 8px 13px $colorRozeLighter,
+        inset 0 -4px 1px $colorRozeDarker;
+      & p {
+        font: $fontMuseoSansCyrlBold_14;
+        color: #fff;
+        text-shadow: 0px 1px 5px rgba(210, 110, 116, 0.49);
+        max-width: 9.323vw;
+        text-align: center;
+      }
+      &::after {
+        margin-left: -30px;
+        content: " ";
+        width: 30px;
+        height: 300px;
+        background: #fff;
+        -webkit-animation-delay: 0.05s;
+        animation-delay: 0.05s;
+        position: absolute;
+        left: -40px;
+        top: -150px;
+        transition: all 0.1s;
+        -webkit-animation-name: blink;
+        animation-name: blink;
+        -webkit-animation-duration: 3.5s;
+        animation-duration: 3.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        transform: rotate(45deg);
+      }
+      @-webkit-keyframes blink {
+        0% {
+          left: -30px;
+          margin-left: 0px;
+        }
+
+        30% {
+          left: 110%;
+          margin-left: 80px;
+        }
+
+        100% {
+          left: 110%;
+          margin-left: 80px;
+        }
+      }
+      @keyframes blink {
+        0% {
+          left: -30px;
+          margin-left: 0px;
+        }
+
+        30% {
+          left: 110%;
+          margin-left: 80px;
+        }
+
+        100% {
+          left: 110%;
+          margin-left: 80px;
+        }
+      }
+    }
+    &-img {
+      position: absolute;
+      position: absolute;
+      bottom: 1vh;
+      left: 12vw;
+      & img {
+        max-width: 10.885vw;
+      }
+    }
+    &-card {
+      position: absolute;
+      top: 79%;
+      left: 57%;
+      transform: translate(-50%, -50%);
+    }
+    &-info {
+      position: absolute;
+      top: 72%;
+      left: 53%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      z-index: 11;
+      &:hover {
+        & + .main__descr-info_hover {
+          opacity: 1;
+          transition: 0.3s ease;
+        }
+      }
+      & img {
+        border-radius: 50%;
+        -webkit-animation: pulseInfo 2s infinite;
+        animation: pulseInfo 2s infinite;
+      }
+      &_hover {
+        opacity: 0;
+        transition: 0.3s ease;
+        padding: 1.771vw 1.406vw 1.51vw 1.406vw;
+        max-width: 9.167vw;
+        position: absolute;
+        top: 60%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-position: center;
+        z-index: 10;
+        border-top-left-radius: 200% 33%;
+        background-color: white;
+        border-top-right-radius: 200% 33%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 8px -10px 0px 1px rgba(203, 210, 223, 0.18);
+        & p {
+          font: $fontMuseoSansCyrlLight_14;
+        }
+      }
+      @-webkit-keyframes pulseInfo {
+        0% {
+          box-shadow: 0 0 0 0 rgba(209, 119, 122, 0.49);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(209, 119, 122, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(209, 119, 122, 0);
+        }
+      }
+      @keyframes pulseInfo {
+        0% {
+          box-shadow: 0 0 0 0 rgba(209, 119, 122, 0.49);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(209, 119, 122, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(209, 119, 122, 0);
+        }
+      }
+    }
+  }
+  &__women {
+    position: absolute;
+    right: 0;
+    top: 6.354vw;
+    max-width: 45.408vw;
+  }
+  &__wawe {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: -3px;
+    &-arrow {
+      position: absolute;
+      top: 0;
+      top: 36%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+//mdeia
+@media (max-width: 575px) and (min-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .main {
+    &__descr {
+      &-title {
+        & h1 {
+          font-size: 1.5rem;
+          & span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &-list {
+        & ul {
+          & li {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-btn {
+        margin-top: 1rem;
+        & p {
+          max-width: none;
+          font-size: 1rem;
+        }
+      }
+      &-img {
+        bottom: 5px;
+        left: 70%;
+        & img {
+          max-width: 10rem;
+        }
+      }
+      &-info {
+        top: 41%;
+        left: 70%;
+        & img {
+          width: 2.2rem;
+        }
+        &_hover {
+          padding: 2rem;
+          max-width: 10rem;
+          top: 28%;
+          left: 83%;
+          & p {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-card {
+        width: 100%;
+        top: 45%;
+        left: 80%;
+      }
+    }
+    &__wawe {
+      bottom: -2px;
+      &-arrow {
+        width: 1.5rem;
+      }
+    }
+    &__women {
+      position: relative;
+      bottom: -2rem;
+      max-width: none;
+    }
+    &__popup {
+      width: auto;
+      &-close {
+        top: 1rem;
+        right: 4rem;
+      }
+      &-content {
+        width: auto;
+        & h2 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          font-size: 1rem;
+          background-size: 6%;
+        }
+        & input {
+          font-size: 1rem;
+          &::placeholder {
+            font-size: 1rem;
+          }
+        }
+      }
+      &-submit {
+        padding-right: 2rem;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%);
+        & a {
+          font-size: 1rem;
+        }
+        &_img {
+          bottom: 12px;
+          right: -7px;
+          width: 5rem;
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 25rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 2rem;
+            & span {
+              font-size: 2rem;
+            }
+          }
+          & span {
+            font-size: 2rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) and (min-width: 375px) {
+  .main {
+    &__descr {
+      &-card {
+        width: 100%;
+        top: 30%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+      }
+      &-info {
+        width: 100%;
+        top: 25%;
+        left: 124%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        &_hover {
+          top: 14%;
+          left: 83%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &__popup {
+      &-submit {
+        padding-right: 4.4rem;
+        &_img {
+          width: 8rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .main {
+    &__descr {
+      &-title {
+        & h1 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      &-list {
+        & ul {
+          & li {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-btn {
+        margin-top: 1rem;
+        & p {
+          max-width: none;
+          font-size: 2rem;
+        }
+      }
+      &-img {
+        bottom: 5px;
+        left: 70%;
+        & img {
+          max-width: 15rem;
+        }
+      }
+      &-info {
+        top: 41%;
+        left: 80%;
+        & img {
+          width: 2.2rem;
+        }
+        &_hover {
+          padding: 2rem;
+          max-width: 15rem;
+          top: 27%;
+          left: 89%;
+          & p {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-card {
+        width: 100%;
+        top: 45%;
+        left: 90%;
+      }
+    }
+    &__wawe {
+      bottom: -2px;
+      &-arrow {
+        width: 1.5rem;
+      }
+    }
+    &__women {
+      position: relative;
+      bottom: -2rem;
+      max-width: none;
+    }
+    &__popup {
+      width: auto;
+      &-close {
+        top: 1rem;
+        right: 4rem;
+      }
+      &-content {
+        width: auto;
+        & h2 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          font-size: 2rem;
+          background-size: 6%;
+        }
+        & input {
+          font-size: 2rem;
+          &::placeholder {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-submit {
+        padding-right: 6.5rem;
+        width: auto;
+        & a {
+          font-size: 2rem;
+        }
+        &_img {
+          bottom: 30px;
+          right: -7px;
+          width: 14rem;
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 40rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 3rem;
+            & span {
+              font-size: 3rem;
+            }
+          }
+          & span {
+            font-size: 3rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .main {
+    &__descr {
+      &-title {
+        & h1 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      &-list {
+        & ul {
+          & li {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-btn {
+        margin-top: 1rem;
+        & p {
+          max-width: none;
+          font-size: 2rem;
+        }
+      }
+      &-img {
+        bottom: 5px;
+        left: 70%;
+        & img {
+          max-width: 15rem;
+        }
+      }
+      &-info {
+        top: 74%;
+        left: 64%;
+        & img {
+          width: 2.2rem;
+        }
+        &_hover {
+          padding: 2rem;
+          max-width: 15rem;
+          top: 42%;
+          left: 71%;
+          & p {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-card {
+        top: 82%;
+        left: 70%;
+        & img {
+          max-width: 60rem;
+        }
+      }
+    }
+    &__wawe {
+      bottom: -2px;
+      &-arrow {
+        width: 1.5rem;
+      }
+    }
+    &__women {
+      top: 21%;
+      max-width: 47rem;
+    }
+    &__popup {
+      width: auto;
+      &-close {
+        top: 1rem;
+        right: 4rem;
+      }
+      &-content {
+        width: auto;
+        & h2 {
+          font-size: 2.5rem;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          font-size: 2rem;
+          background-size: 6%;
+        }
+        & input {
+          font-size: 2rem;
+          &::placeholder {
+            font-size: 2rem;
+          }
+        }
+      }
+      &-submit {
+        padding-right: 6.5rem;
+        width: auto;
+        & a {
+          font-size: 2rem;
+        }
+        &_img {
+          bottom: 30px;
+          right: -7px;
+          width: 14rem;
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 40rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 3rem;
+            & span {
+              font-size: 3rem;
+            }
+          }
+          & span {
+            font-size: 3rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
