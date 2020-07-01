@@ -11,6 +11,18 @@ a {
   text-decoration: none;
   color: #000;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
 input {
   outline: none;
 }
@@ -32,6 +44,31 @@ img {
   background-size: cover;
   overflow-x: hidden;
 }
+h2 {
+  font: $fontMuseoSansCyrlBold_48;
+}
+h3 {
+  font: $fontMuseoSansCyrlBold_30;
+}
+p {
+  font: $fontMuseoSansCyrlLight_24;
+}
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 300;
+}
+.borderDashed {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #ff6078;
+}
+.linkColorRoze {
+  color: #ff6078;
+}
+.flex {
+  display: flex;
+}
 .container {
   padding: 0 10.156vw;
   margin: 0 auto;
@@ -45,9 +82,12 @@ img {
 @import "scss/main.scss";
 @import "scss/relocation.scss";
 @import "scss/services.scss";
+@import "scss/work.scss";
+@import "scss/qualification.scss";
 
 @import "components/popup/popup.scss";
 @import "components/map/map.scss";
 @import "components/blur/blur.scss";
+@import "components/titleFade/titleFade.scss";
 
 @import "scss/media.scss";

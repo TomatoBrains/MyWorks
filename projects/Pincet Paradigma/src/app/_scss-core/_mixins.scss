@@ -16,3 +16,27 @@
   background-image: linear-gradient(to top, #ee858c, #fabcbc);
   box-shadow: 0 8px 13px rgba(243, 158, 162, 0.5), inset 0 -4px 1px #d7747a;
 }
+
+@mixin sm_567 {
+  @media (max-width: $mediaSm) {
+    @content;
+  }
+}
+@mixin md_767 {
+  @media (max-width: $mediaMd) {
+    @content;
+  }
+}
+@mixin lg_900 {
+  @media (max-width: $mediaLg) {
+    @content;
+  }
+}
+@media (min-width: $mediaXl) {
+}
+@media (max-width: $mediaLg) {
+}
+@media (max-width: $mediaMd) {
+}
+@media (max-width: $mediaSm) {
+}

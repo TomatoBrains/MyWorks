@@ -62,10 +62,26 @@
       right: 0;
       width: 4.896vw;
     }
+    &-descr {
+      position: absolute;
+      bottom: 1vw;
+      right: -3vw;
+      width: 8.802vw;
+      & p {
+        //font: $fontMuseoSansCyrlLight_18;
+        color: $colorRozeDark;
+      }
+    }
+    &-line {
+      position: absolute;
+      right: -3vw;
+      bottom: 5vw;
+      width: 1.875vw;
+    }
   }
   &__title {
     & h2 {
-      font: $fontMuseoSansCyrlBold_48;
+      // font: $fontMuseoSansCyrlBold_48;
     }
   }
   &__mapBtn {
@@ -105,7 +121,7 @@
   &__descr {
     margin-top: $elemMarginTop_60;
     & p {
-      font: $fontMuseoSansCyrlLight_24;
+      //font: $fontMuseoSansCyrlLight_24;
       & span {
         font: $fontMuseoSansCyrlBold_24;
       }
@@ -181,6 +197,14 @@
       &-leave {
         width: 5rem;
       }
+      &-descr {
+        & p {
+          font-size: 10px;
+        }
+      }
+      &-line {
+        width: 2rem;
+      }
     }
     &__leaveRight {
       width: 5rem;
@@ -193,14 +217,10 @@
     }
     &__title {
       margin-top: 2rem;
-      & h2 {
-        font-size: $mobFont_26;
-      }
     }
     &__descr {
       margin-top: 2.5rem;
       & p {
-        font-size: $mobFont_20;
         & span {
           font-size: $mobFont_20;
         }
@@ -277,6 +297,12 @@
         left: -1rem;
         top: 2rem;
       }
+      &-descr {
+        display: none;
+      }
+      &-line {
+        display: none;
+      }
     }
     &__leaveRight {
       width: 11rem;
@@ -292,15 +318,11 @@
       margin-top: 1rem;
       width: 43rem;
       margin: 1rem auto 0;
-      & h2 {
-        font-size: $mobFont_24;
-      }
     }
     &__descr {
       text-align: left;
       margin-top: 2rem;
       & p {
-        font-size: $mobFont_16;
         & span {
           font-size: $mobFont_16;
         }
@@ -379,6 +401,12 @@
         left: -1rem;
         top: 2rem;
       }
+      &-descr {
+        display: none;
+      }
+      &-line {
+        display: none;
+      }
     }
     &__leaveRight {
       width: 8rem;
@@ -392,15 +420,14 @@
     &__title {
       text-align: center;
       margin-top: 1rem;
+      width: auto;
       & h2 {
-        font-size: $mobFont_22;
       }
     }
     &__descr {
       text-align: left;
       margin-top: 1rem;
       & p {
-        font-size: $mobFont_14;
         & span {
           font-size: $mobFont_14;
         }

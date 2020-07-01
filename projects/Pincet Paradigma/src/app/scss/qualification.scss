@@ -1,0 +1,67 @@
+.qualification {
+  &__title {
+    text-align: center;
+  }
+  &__workers {
+    margin-top: $elemMarginTop_60;
+    position: relative;
+    &-item {
+      margin-right: 100px;
+    }
+    &-card {
+      position: relative;
+    }
+    &-img {
+      width: 17.708vw;
+    }
+    &-name {
+      position: absolute;
+      bottom: 3vw;
+      right: 7vw;
+      padding: 0.938vw 1.719vw;
+      background-color: #fff;
+      border-radius: 10px;
+      transform: skew(-11deg);
+      box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
+      z-index: 5;
+      & p {
+        transform: skew(10deg);
+        font-weight: 700;
+      }
+    }
+    &-master {
+      position: absolute;
+      bottom: 1vw;
+      right: 10vw;
+      padding: 1.042vw 0.885vw;
+      border-radius: 10px;
+      background-color: #fdfdfd;
+      & p {
+        font: $fontMuseoSansCyrlMed_11;
+      }
+    }
+    & ul {
+      margin-top: 2.083vw;
+      & li {
+        font: $fontMuseoSansCyrlLight_18;
+      }
+    }
+    &-link {
+      display: inline-block;
+      margin-top: 1.563vw;
+    }
+  }
+}
+.arrowLeft {
+  position: absolute;
+  top: 50%;
+  left: -7vw;
+}
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  right: -7vw;
+}
+.purple {
+  color: #9770b6;
+}

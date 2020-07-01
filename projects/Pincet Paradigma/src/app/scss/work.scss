@@ -1,0 +1,172 @@
+.work {
+  overflow-x: hidden;
+  padding: $blockPadding_55 0;
+  @include sm_567 {
+    padding: 2rem 0;
+  }
+  @include md_767 {
+    padding: 3rem;
+  }
+  @include lg_900 {
+    padding: 3rem;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 4.427vw;
+    @include sm_567 {
+      margin-bottom: 1rem;
+    }
+    @include md_767 {
+      margin-bottom: 1.5rem;
+    }
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    & h2 {
+      font: $fontMuseoSansCyrlBold_48;
+      @include sm_567 {
+        font-size: $mobFont_22;
+      }
+      @include md_767 {
+        font-size: $mobFont_24;
+      }
+      @include lg_900 {
+        font-size: $mobFont_26;
+      }
+    }
+  }
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+    @include sm_567 {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include md_767 {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include lg_900 {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    & div {
+      display: flex;
+    }
+  }
+  &__img {
+    position: relative;
+    &:hover {
+      z-index: 5;
+    }
+    &:hover .work--wraper {
+      transform: scale(1.2);
+    }
+    &:hover .work--wraper img {
+      border-radius: 5px;
+    }
+    &:hover .work__background {
+      opacity: 0.4;
+      border-radius: 5px;
+    }
+    &:hover .work__zoom {
+      opacity: 1;
+    }
+  }
+  &--wraper {
+    transition: all 0.3s ease;
+  }
+  &__background {
+    position: absolute;
+    background-image: linear-gradient(to top, #ee858c, #fabcbc),
+      linear-gradient(to bottom, #90d436, #90d436);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  &__zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  &__more {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.271vw;
+    @include sm_567 {
+      margin-top: 1.5rem;
+    }
+    @include md_767 {
+      margin-top: 2rem;
+    }
+    @include lg_900 {
+      margin-top: 2.5rem;
+    }
+    &-btn {
+      width: 13.802vw;
+      height: 4.479vw;
+      border-radius: 42.5px;
+      border-style: solid;
+      border: 1px solid $colorRozeDark;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include sm_567 {
+        width: 20rem;
+        height: 6rem;
+      }
+      @include md_767 {
+        width: 22rem;
+        height: 8rem;
+      }
+      @include lg_900 {
+        width: 25rem;
+        height: 8rem;
+      }
+      & a {
+        font: $fontMuseoSansCyrlBold_14;
+        margin-right: 15px;
+        @include sm_567 {
+          font-size: $mobFont_14;
+        }
+        @include md_767 {
+          font-size: $mobFont_16;
+        }
+        @include lg_900 {
+          font-size: $mobFont_16;
+        }
+      }
+      & img {
+        animation: loader 2s linear infinite;
+      }
+    }
+  }
+}
+.col-20 {
+  width: 20%;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

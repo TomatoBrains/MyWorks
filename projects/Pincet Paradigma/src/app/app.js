@@ -7,3 +7,6 @@ window.jQuery = $;
 import "./components/blur";
 import "./components/map";
 import "./components/popup";
+import "./components/imgZoom";
+import "./components/titleFade";
+import "./components/slider";

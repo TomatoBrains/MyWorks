@@ -55,7 +55,6 @@
     &-btn {
       position: relative;
       cursor: pointer;
-      padding: 1.563vw 3.646vw 1.563vw 2.083vw;
       margin-top: 2.083vw;
       @include mainBtn;
       &--margin {
@@ -74,6 +73,8 @@
         color: #fff;
         font: $fontMuseoSansCyrlLight_14;
         letter-spacing: 1.68px;
+        padding: 1.563vw 3.646vw 1.563vw 2.083vw;
+        display: block;
       }
       &::after {
         margin-left: -30px;
@@ -119,6 +120,7 @@
     }
   }
   &__more {
+    margin-top: 1.563vw;
     & h2 {
       font: $fontMuseoSansCyrlBold_48;
       text-align: center;
@@ -170,6 +172,7 @@
       flex-direction: column;
       align-items: center;
       & p {
+        text-align: left;
         font: $fontMuseoSansCyrlLight_24;
         & span {
           font: $fontMuseoSansCyrlBold_24;
@@ -201,6 +204,7 @@
   &__wawe {
     margin-top: 5.99vw;
     position: relative;
+    display: flex;
     &-svg {
       padding: 7px;
       border-radius: 50%;
@@ -249,6 +253,12 @@
       z-index: 2;
     }
   }
+  &__leaves {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+  }
 }
 @keyframes jump {
   0% {
@@ -278,5 +288,387 @@
   100% {
     transform: scale(1.2);
     opacity: 0;
+  }
+}
+@media (min-width: $mediaXl) {
+}
+@media (max-width: $mediaLg) {
+  .services {
+    padding-top: 4rem;
+    &--flex {
+      flex-wrap: wrap;
+    }
+    &__title {
+      & h2 {
+        font-size: $mobFont_26;
+      }
+    }
+    &__card {
+      height: auto;
+      box-shadow: 0px 7px 117px 0 rgba(176, 148, 149, 0.3);
+      background-color: #ffffff;
+      width: 35rem;
+      margin: 2rem auto;
+      height: 95%;
+      justify-content: space-between;
+      &-img {
+        width: 30rem;
+        height: 30rem;
+      }
+      &-descr {
+        width: auto;
+        margin-top: 2rem;
+        & h3 {
+          font-size: $mobFont_22;
+        }
+        & p {
+          font-size: $mobFont_18;
+        }
+      }
+      &-leave {
+        bottom: 50%;
+        right: -20rem;
+        width: 15rem;
+      }
+      &-btn {
+        margin-top: 2rem;
+        &--wraper {
+          opacity: 1;
+        }
+        &--position {
+          top: 4rem !important;
+        }
+        & a {
+          font-size: $mobFont_14;
+          padding: 3rem 4rem;
+        }
+        &-img {
+          width: 15rem;
+          right: -8rem;
+          top: 4rem;
+        }
+      }
+      &-sign {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        & a {
+          font-size: $mobFont_16;
+        }
+      }
+    }
+    &__more {
+      margin-top: 3rem;
+      & h2 {
+        font-size: $mobFont_26;
+      }
+    }
+    &__other {
+      padding: 2rem 2.5rem;
+      background-image: linear-gradient(to top, #ee858c, #fabcbc);
+      border: 1px dashed #fff;
+      height: 100%;
+      &--wraper {
+        margin-top: 2rem;
+        width: 35rem;
+        margin: 2rem auto;
+        height: 20rem;
+        &:hover {
+          transition: none;
+          transform: none;
+        }
+      }
+      &-img {
+        width: 25rem;
+      }
+      &-descr {
+        width: auto;
+        color: #fff;
+        height: 100%;
+        justify-content: space-between;
+        & p {
+          font-size: $mobFont_18;
+          & span {
+            font-size: $mobFont_18;
+          }
+        }
+      }
+      &-btn {
+        width: auto;
+        opacity: 1;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        & a {
+          font-size: $mobFont_16;
+        }
+      }
+    }
+    &__wawe {
+      margin-top: 3rem;
+      &-scroll {
+        & a {
+          padding: 3px;
+          top: 0.5rem;
+        }
+      }
+      &-img {
+        top: 3rem;
+      }
+    }
+    &__blurLeft {
+      width: 25rem;
+      z-index: -1;
+      left: -2rem;
+    }
+  }
+}
+@media (max-width: $mediaMd) {
+  .services {
+    padding-top: 3rem;
+    &--flex {
+      flex-wrap: wrap;
+    }
+    &__title {
+      & h2 {
+        font-size: $mobFont_24;
+      }
+    }
+    &__card {
+      height: auto;
+      box-shadow: 0px 7px 117px 0 rgba(176, 148, 149, 0.3);
+      background-color: #ffffff;
+      width: 40rem;
+      margin: 1.5rem auto;
+      &-img {
+        width: 35rem;
+        height: 35rem;
+      }
+      &-descr {
+        width: auto;
+        margin-top: 1.5rem;
+        & h3 {
+          font-size: $mobFont_20;
+        }
+        & p {
+          font-size: $mobFont_16;
+        }
+      }
+      &-leave {
+        bottom: -8rem;
+        right: -7rem;
+        width: 8rem;
+      }
+      &-btn {
+        margin-top: 1.5rem;
+        &--wraper {
+          opacity: 1;
+        }
+        &--position {
+          top: 3rem !important;
+        }
+        & a {
+          font-size: $mobFont_14;
+          padding: 2.5rem 3.5rem;
+        }
+        &-img {
+          width: 16rem;
+          right: -9rem;
+          top: 3rem;
+        }
+      }
+      &-sign {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        & a {
+          font-size: $mobFont_14;
+        }
+      }
+    }
+    &__more {
+      margin-top: 2rem;
+      & h2 {
+        font-size: $mobFont_24;
+      }
+    }
+    &__other {
+      padding: 1.5rem 2rem;
+      background-image: linear-gradient(to top, #ee858c, #fabcbc);
+      border: 1px dashed #fff;
+      &--wraper {
+        margin-top: 1.5rem;
+        width: 35rem;
+        margin: 1.5rem auto;
+        height: auto;
+        &:hover {
+          transition: none;
+          transform: none;
+        }
+      }
+      &-img {
+        width: 20rem;
+      }
+      &-descr {
+        width: auto;
+        color: #fff;
+        & p {
+          font-size: $mobFont_16;
+          & span {
+            font-size: $mobFont_16;
+          }
+        }
+      }
+      &-btn {
+        width: auto;
+        opacity: 1;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        & a {
+          font-size: $mobFont_14;
+        }
+      }
+    }
+    &__wawe {
+      margin-top: 2.5rem;
+      &-scroll {
+        & a {
+          padding: 3px;
+          top: 0.5rem;
+        }
+      }
+      &-img {
+        top: 3rem;
+      }
+    }
+    &__blurLeft {
+      width: 20rem;
+      z-index: -1;
+      left: -2rem;
+    }
+  }
+}
+@media (max-width: $mediaSm) {
+  .services {
+    padding-top: 2rem;
+    &--flex {
+      flex-wrap: wrap;
+    }
+    &__title {
+      & h2 {
+        font-size: $mobFont_22;
+      }
+    }
+    &__card {
+      height: auto;
+      box-shadow: 0px 7px 117px 0 rgba(176, 148, 149, 0.3);
+      background-color: #ffffff;
+      width: 27rem;
+      margin: 1rem auto;
+      &-img {
+        width: 25rem;
+        height: 25rem;
+      }
+      &-descr {
+        width: auto;
+        margin-top: 1rem;
+        & h3 {
+          font-size: $mobFont_18;
+        }
+        & p {
+          font-size: $mobFont_14;
+        }
+      }
+      &-leave {
+        bottom: -4rem;
+        right: -3rem;
+        width: 5rem;
+      }
+      &-btn {
+        margin-top: 1rem;
+        &--wraper {
+          opacity: 1;
+        }
+        &--position {
+          top: 2rem !important;
+        }
+        & a {
+          font-size: $mobFont_12;
+          padding: 1.5rem 2.5rem;
+        }
+        &-img {
+          width: 10rem;
+          right: -5rem;
+          top: 2rem;
+        }
+      }
+      &-sign {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        & a {
+          font-size: $mobFont_12;
+        }
+      }
+    }
+    &__more {
+      margin-top: 1.5rem;
+      & h2 {
+        font-size: $mobFont_22;
+      }
+    }
+    &__other {
+      padding: 1rem 1.5rem;
+      background-image: linear-gradient(to top, #ee858c, #fabcbc);
+      border: 1px dashed #fff;
+      &--wraper {
+        margin-top: 1rem;
+        width: 25rem;
+        margin: 1rem auto;
+        height: auto;
+        &:hover {
+          transition: none;
+          transform: none;
+        }
+      }
+      &-img {
+        width: 12rem;
+      }
+      &-descr {
+        width: auto;
+        color: #fff;
+        & p {
+          font-size: $mobFont_14;
+          & span {
+            font-size: $mobFont_14;
+          }
+        }
+      }
+      &-btn {
+        width: auto;
+        opacity: 1;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        & a {
+          font-size: $mobFont_12;
+        }
+      }
+    }
+    &__wawe {
+      margin-top: 2rem;
+      & img {
+        height: 5rem;
+      }
+      &-scroll {
+        & a {
+          padding: 3px;
+          top: 0.5rem;
+        }
+      }
+      &-img {
+        top: 3rem;
+      }
+    }
+    &__blurLeft {
+      width: 12rem;
+      z-index: -1;
+      left: -2rem;
+    }
   }
 }
