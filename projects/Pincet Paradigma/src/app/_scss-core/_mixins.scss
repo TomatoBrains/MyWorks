@@ -2,7 +2,9 @@
   width: $w;
   height: $h;
 }
+//main Button
 @mixin mainBtn {
+  position: relative;
   overflow: hidden;
   cursor: pointer;
   background-color: #ff6078;
@@ -15,6 +17,276 @@
   border-image-slice: 1;
   background-image: linear-gradient(to top, #ee858c, #fabcbc);
   box-shadow: 0 8px 13px rgba(243, 158, 162, 0.5), inset 0 -4px 1px #d7747a;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+//blick on btn
+@mixin mainBtnBlick {
+  &::after {
+    margin-left: -30px;
+    content: " ";
+    width: 30px;
+    height: 300px;
+    background: #fff;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@mixin mainBtnHover {
+  &:hover {
+    box-shadow: inset 0px 4px 4px #d7747a;
+  }
+}
+//video btn
+@mixin videoBtn {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  & span {
+    padding: 2vw;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    z-index: -1;
+    background-color: rgba(241, 241, 241, 0.44);
+    border-radius: 100%;
+    animation: pulseicon 3.3s infinite linear;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 170%;
+    height: 170%;
+    z-index: -2;
+    background-color: rgba(241, 241, 241, 0.3);
+    border-radius: 100%;
+    animation: pulseicon 3.3s infinite linear;
+  }
+}
+//background for zoomed img
+@mixin zoomBackground {
+  position: absolute;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#ee858c),
+      to(#fabcbc)
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(#90d436), to(#90d436));
+  background-image: -webkit-linear-gradient(bottom, #ee858c, #fabcbc),
+    -webkit-linear-gradient(top, #90d436, #90d436);
+  background-image: -o-linear-gradient(bottom, #ee858c, #fabcbc),
+    -o-linear-gradient(top, #90d436, #90d436);
+  background-image: linear-gradient(to top, #ee858c, #fabcbc),
+    linear-gradient(to bottom, #90d436, #90d436);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+//icon for zoomed img
+@mixin zoomIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+//wawe scroll icon with animate
+@mixin scrollIcon {
+  padding: 7px;
+  border-radius: 50%;
+  border: solid 3px #ee858c;
+  display: inline;
+  position: absolute;
+  top: 1.5vw;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  -webkit-animation: jump 2s infinite linear;
+  animation: jump 2s infinite linear;
+  background-color: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #ee858c;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    -webkit-animation: pulse 1.8s linear infinite;
+    animation: pulse 1.8s linear infinite;
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #ee858c86;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    -webkit-animation: pulse 1.8s linear infinite;
+    animation: pulse 1.8s linear infinite;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+  @include lg_900 {
+    padding: 5px;
+  }
+  @include md_767 {
+    padding: 4px;
+  }
+  @include sm_567 {
+    padding: 3px;
+  }
+}
+//name card for img
+@mixin nameCard {
+  position: absolute;
+  bottom: 7vw;
+  right: 5vw;
+  padding: 0.938vw 1.719vw;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-transform: skew(-11deg);
+  -ms-transform: skew(-11deg);
+  transform: skew(-11deg);
+  -webkit-box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
+  box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.5);
+  z-index: 5;
+  & p {
+    font-weight: 700;
+  }
+  @include sm_567 {
+    padding: 1.5rem 3.5rem;
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+  @include md_767 {
+    padding: 1.5rem 3.5rem;
+    & p {
+      font-size: 1.6rem;
+    }
+  }
+  @include lg_900 {
+    padding: 1.5rem 3.5rem;
+    & p {
+      font-size: 2rem;
+    }
+  }
+}
+//master card for img
+@mixin masterCard {
+  position: absolute;
+  bottom: 5vw;
+  right: 9vw;
+  padding: 1.042vw 0.885vw;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  @include sm_567 {
+    padding: 1rem;
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+  @include md_767 {
+    padding: 1rem;
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+  @include lg_900 {
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+}
+//big roze number on img
+@mixin bigNumber {
+  font-family: "PTSerif";
+  font-size: 3.125vw;
+  color: #ff6078;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#e97f86),
+      to(#fabcbc)
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(#ed8f93), to(#ed8f93));
+  background-image: -webkit-linear-gradient(bottom, #e97f86, #fabcbc),
+    -webkit-linear-gradient(top, #ed8f93, #ed8f93);
+  background-image: -o-linear-gradient(bottom, #e97f86, #fabcbc),
+    -o-linear-gradient(top, #ed8f93, #ed8f93);
+  background-image: linear-gradient(to top, #e97f86, #fabcbc),
+    linear-gradient(to bottom, #ed8f93, #ed8f93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+//border dahsed btn
+@mixin dashedBtn {
+  position: relative;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #ee858c, #fabcbc);
+  padding: 4px;
+  & > div {
+    border: 1px dashed #fff;
+    border-radius: 15px;
+  }
+}
+@mixin callDot {
+  width: 0.313vw;
+  height: 0.313vw;
+  box-shadow: 0 0 7px 0 rgba(79, 160, 55, 0.61);
+  background-color: #27b24b;
+  border-radius: 50%;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  margin-right: 0.469vw;
 }
 
 @mixin sm_567 {
@@ -23,20 +295,12 @@
   }
 }
 @mixin md_767 {
-  @media (max-width: $mediaMd) {
+  @media (min-width: 568px) and (max-width: $mediaMd) {
     @content;
   }
 }
 @mixin lg_900 {
-  @media (max-width: $mediaLg) {
+  @media (min-width: 768px) and (max-width: $mediaLg) {
     @content;
   }
-}
-@media (min-width: $mediaXl) {
-}
-@media (max-width: $mediaLg) {
-}
-@media (max-width: $mediaMd) {
-}
-@media (max-width: $mediaSm) {
 }

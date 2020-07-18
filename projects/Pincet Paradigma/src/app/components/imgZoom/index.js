@@ -1,5 +1,12 @@
 import $ from "jquery";
-import lightbox from "lightbox2";
-lightbox.option({
-  albumLabel: false,
+
+window.jQuery = $;
+
+window.$ = window.jQuery = require("jquery");
+
+const fancybox = require("@fancyapps/fancybox");
+
+$('[data-fancybox="gallery"]').fancybox({
+  arrows: true,
+  thumbs: false,
 });

@@ -87,6 +87,7 @@
         inset 0 -4px 1px $colorRozeDarker;
       & a {
         font: $fontMuseoSansCyrlBold_18;
+        font-size: 1.5vw;
         color: #fff;
         text-shadow: 0px 1px 5px rgba(210, 110, 116, 0.49);
         max-width: 9.323vw;
@@ -110,11 +111,14 @@
       }
       &_img {
         position: absolute;
-        bottom: 5vw;
-        right: 6vw;
+        bottom: 0.5vw;
+        right: 1vw;
         & img {
-          width: 7.448vw;
+          width: 9.448vw;
         }
+      }
+      &--wraper {
+        position: relative;
       }
     }
     &_img {
@@ -173,6 +177,321 @@
       display: none;
       position: fixed;
       z-index: 11;
+    }
+  }
+}
+@include lg_900 {
+  .main {
+    &__popup {
+      width: 30rem;
+      padding: 0;
+      &-close {
+        position: absolute;
+        right: 4rem;
+        top: 2rem;
+      }
+      &-content {
+        width: auto;
+        padding: 3rem;
+        & h2 {
+          font-size: 2.5rem;
+          text-align: center;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          padding: 2rem;
+          width: 100%;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+        & input {
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-submit {
+        width: 100%;
+        padding: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+        &--wraper {
+          position: relative;
+        }
+        & a {
+          font-size: 1.4rem;
+        }
+        &_img {
+          bottom: 0.5rem;
+          right: 0rem;
+          width: 10rem;
+
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          padding: 2rem;
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+          padding: 2rem;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 25rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 2rem;
+            & span {
+              font-size: 2rem;
+            }
+          }
+          & span {
+            font-size: 2rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
+@include md_767 {
+  .main {
+    &__popup {
+      width: 30rem;
+      padding: 0;
+      &-close {
+        position: absolute;
+        right: 4rem;
+        top: 2rem;
+      }
+      &-content {
+        width: auto;
+        padding: 3rem;
+        & h2 {
+          font-size: 2.5rem;
+          text-align: center;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          padding: 2rem;
+          width: 100%;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+        & input {
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-submit {
+        width: 100%;
+        padding: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+        &--wraper {
+          position: relative;
+        }
+        & a {
+          font-size: 1.4rem;
+        }
+        &_img {
+          bottom: 0.5rem;
+          right: 0rem;
+          width: 10rem;
+
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          padding: 2rem;
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+          padding: 2rem;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 25rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 2rem;
+            & span {
+              font-size: 2rem;
+            }
+          }
+          & span {
+            font-size: 2rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
+@include sm_567 {
+  .main {
+    &__popup {
+      width: 30rem;
+      padding: 0;
+      &-close {
+        position: absolute;
+        right: 4rem;
+        top: 2rem;
+      }
+      &-content {
+        width: auto;
+        padding: 3rem;
+        & h2 {
+          font-size: 2.5rem;
+          text-align: center;
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+      &-inputs {
+        & select {
+          padding: 2rem;
+          width: 100%;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+        & input {
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-submit {
+        width: 100%;
+        padding: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+        &--wraper {
+          position: relative;
+        }
+        & a {
+          font-size: 1.4rem;
+        }
+        &_img {
+          bottom: 0.5rem;
+          right: 0rem;
+          width: 10rem;
+
+          & img {
+            width: auto;
+          }
+        }
+      }
+      &-select {
+        & select {
+          width: 100%;
+        }
+      }
+      &-name {
+        & input {
+          padding: 2rem;
+          width: 100%;
+        }
+      }
+      &-tel {
+        & input {
+          width: 100%;
+          padding: 2rem;
+        }
+      }
+      &_img {
+        bottom: 0px;
+        left: -60px;
+        width: 10rem;
+      }
+      &-complete {
+        width: 25rem;
+        &_close {
+          top: 1rem;
+          right: 4rem;
+        }
+        &_text {
+          & p {
+            font-size: 2rem;
+            & span {
+              font-size: 2rem;
+            }
+          }
+          & span {
+            font-size: 2rem;
+          }
+        }
+        &_img {
+          width: 4rem;
+        }
+      }
     }
   }
 }

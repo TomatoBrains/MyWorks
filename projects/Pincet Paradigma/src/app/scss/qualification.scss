@@ -1,23 +1,34 @@
 .qualification {
+  background-image: url(../img/qualification/background.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   &__title {
     text-align: center;
   }
   &__workers {
     margin-top: $elemMarginTop_60;
     position: relative;
+    &-slider {
+      & .slick-slide {
+        margin-left: 2.0835vw;
+        margin-right: 2.0835vw;
+      }
+    }
     &-item {
       margin-right: 100px;
     }
     &-card {
-      position: relative;
+      text-align: center;
     }
     &-img {
-      width: 17.708vw;
+      display: inline-block;
+      position: relative;
     }
     &-name {
       position: absolute;
       bottom: 3vw;
-      right: 7vw;
+      right: 1vw;
       padding: 0.938vw 1.719vw;
       background-color: #fff;
       border-radius: 10px;
@@ -32,7 +43,7 @@
     &-master {
       position: absolute;
       bottom: 1vw;
-      right: 10vw;
+      right: 4vw;
       padding: 1.042vw 0.885vw;
       border-radius: 10px;
       background-color: #fdfdfd;
@@ -42,6 +53,7 @@
     }
     & ul {
       margin-top: 2.083vw;
+      list-style-image: url(../img/qualification/check.png);
       & li {
         font: $fontMuseoSansCyrlLight_18;
       }
@@ -50,12 +62,123 @@
       display: inline-block;
       margin-top: 1.563vw;
     }
+    & .slick-disabled {
+      opacity: 0.3;
+    }
+  }
+  &__certificate {
+    padding: 0 6.25vw;
+    position: relative;
+    display: flex;
+    margin-top: 4.792vw;
+    &-descr {
+      text-align: left;
+      width: 14.323vw;
+      padding-right: 3.906vw;
+    }
+    &-items {
+      width: 81%;
+      position: relative;
+      margin-left: 4vw;
+      & .slick-disabled {
+        opacity: 0.3;
+      }
+    }
+    &-link {
+      display: inline-block;
+      margin-top: 1.302vw;
+    }
+    &-wraper {
+      position: relative;
+    }
+    &-img {
+      position: absolute;
+      z-index: 2;
+      left: -8vw;
+      bottom: -1vw;
+      width: 20.292vw;
+    }
+    &-background {
+      @include zoomBackground;
+    }
+    &-zoom {
+      @include zoomIcon;
+    }
+    &-item {
+      position: relative;
+      padding-right: 10px;
+      &:hover .qualification__certificate-background {
+        opacity: 0.4;
+      }
+      &:hover .qualification__certificate-zoom {
+        opacity: 1;
+      }
+    }
+  }
+  &__number {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3vw;
+    position: relative;
+    color: #fff;
+    & p {
+      font: $fontMuseoSansCyrlMed_19;
+      z-index: 2;
+      margin-right: 1vw;
+      & span {
+        font-size: 3.021vw;
+        font-family: "Lust";
+      }
+    }
+  }
+
+  &__leaveLeft {
+    position: absolute;
+    top: -6vw;
+  }
+  &__leaveRight2 {
+    position: absolute;
+    top: -8vw;
+    right: 0;
+  }
+  &__leaveRight {
+    position: absolute;
+    top: 11vw;
+    right: 30%;
+    z-index: -1;
+  }
+  &__blurRight {
+    position: absolute;
+    right: 0;
+    bottom: -6vw;
+    width: 11.146vw;
+    z-index: 1;
+  }
+  &__leaveCenter {
+    position: absolute;
+    top: 11vw;
+    left: 30%;
+    z-index: -1;
   }
 }
 .arrowLeft {
   position: absolute;
   top: 50%;
   left: -7vw;
+}
+.arrowRightBot {
+  position: absolute;
+  top: 50%;
+  right: -3.5vw;
+  transform: translate(0, -50%);
+}
+.arrowLeftBot {
+  position: absolute;
+  top: 50%;
+  left: -6.5vw;
+  transform: translate(0, -50%);
+  z-index: 3;
 }
 .arrowRight {
   position: absolute;
@@ -64,4 +187,299 @@
 }
 .purple {
   color: #9770b6;
+}
+@include lg_900 {
+  .qualification {
+    &__workers {
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+      &-slider {
+        & .slick-slide {
+          margin-left: 2rem;
+          margin-right: 0;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__leaveLeft {
+      width: 8rem;
+      top: 6rem;
+    }
+    &__leaveRight {
+      width: 16rem;
+      top: 7rem;
+      right: 13rem;
+    }
+    &__leaveRight2 {
+      width: 8rem;
+      top: 0;
+      z-index: -1;
+    }
+    &__leaveCenter {
+      width: 16rem;
+      left: 9rem;
+      top: 15rem;
+    }
+    &__certificate {
+      flex-wrap: wrap;
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 24rem;
+        left: 0rem;
+        bottom: -1rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__number {
+      & p {
+        font-size: 1.4rem;
+        & span {
+          font-size: 3rem;
+        }
+      }
+    }
+    &__blurRight {
+      width: 8rem;
+      bottom: -4rem;
+    }
+  }
+  .arrowRight {
+    display: none;
+  }
+  .arrowLeft {
+    display: none;
+  }
+  .arrowRightBot {
+    display: none;
+  }
+  .arrowLeftBot {
+    display: none;
+  }
+}
+@include md_767 {
+  .qualification {
+    &__workers {
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+      &-slider {
+        & .slick-slide {
+          margin-left: 2rem;
+          margin-right: 0;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__leaveLeft {
+      width: 8rem;
+      top: 6rem;
+    }
+    &__leaveRight {
+      width: 16rem;
+      top: 7rem;
+      right: 13rem;
+    }
+    &__leaveRight2 {
+      width: 8rem;
+      top: 0;
+      z-index: -1;
+    }
+    &__leaveCenter {
+      width: 16rem;
+      left: 9rem;
+      top: 15rem;
+    }
+    &__certificate {
+      flex-wrap: wrap;
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        padding: 0;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 24rem;
+        left: 0rem;
+        bottom: -1rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__number {
+      & p {
+        font-size: 1.4rem;
+        & span {
+          font-size: 3rem;
+        }
+      }
+    }
+    &__blurRight {
+      width: 8rem;
+      bottom: -4rem;
+    }
+  }
+  .arrowRight {
+    display: none;
+  }
+  .arrowLeft {
+    display: none;
+  }
+  .arrowRightBot {
+    display: none;
+  }
+  .arrowLeftBot {
+    display: none;
+  }
+}
+@include sm_567 {
+  .qualification {
+    &__workers {
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+      &-slider {
+        & .slick-slide {
+          margin-left: 2rem;
+          margin-right: 0;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+      &-img {
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__leaveLeft {
+      width: 6rem;
+      top: 6rem;
+    }
+    &__leaveRight {
+      width: 12rem;
+      top: 7rem;
+      right: 0rem;
+    }
+    &__leaveRight2 {
+      width: 5rem;
+      top: 0;
+      z-index: -1;
+    }
+    &__leaveCenter {
+      width: 14rem;
+      left: 1rem;
+      top: 15rem;
+    }
+    &__certificate {
+      flex-wrap: wrap;
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        padding: 0;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 17rem;
+        left: -6rem;
+        bottom: -1rem;
+      }
+    }
+    &__number {
+      & p {
+        font-size: 1.4rem;
+        & span {
+          font-size: 3rem;
+        }
+      }
+    }
+    &__blurRight {
+      width: 8rem;
+      bottom: -4rem;
+    }
+  }
+  .arrowRight {
+    display: none;
+  }
+  .arrowLeft {
+    display: none;
+  }
+  .arrowRightBot {
+    display: none;
+  }
+  .arrowLeftBot {
+    display: none;
+  }
 }

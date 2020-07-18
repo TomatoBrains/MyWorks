@@ -1,0 +1,334 @@
+.price {
+  padding: 60px 0;
+  position: relative;
+  &--flex {
+    display: flex;
+  }
+  &__title {
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto 3.125vw auto;
+  }
+  &__example {
+    position: relative;
+    margin-top: 9vw;
+    & > img {
+      max-height: 53.49vw;
+    }
+    &-action {
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 0;
+      & p {
+        width: 5.208vw;
+        margin-left: 5px;
+        font-size: 0.833vw;
+      }
+      & img {
+        width: 1.302vw;
+        height: 1.563vw;
+      }
+    }
+    &-descr {
+      position: absolute;
+      z-index: 2;
+      & > img {
+        width: 2.5vw;
+        cursor: pointer;
+      }
+      &:hover .price__example-info {
+        display: block;
+        z-index: -1;
+      }
+      &.dot1 {
+        top: 2vw;
+        right: 12vw;
+      }
+      &.dot2 {
+        top: 7vw;
+        right: 10vw;
+      }
+      &.dot3 {
+        top: 8vw;
+        left: 5vw;
+      }
+      &.dot4 {
+        top: 11vw;
+        left: 6vw;
+      }
+      &.dot5 {
+        top: 12vw;
+        right: 7vw;
+      }
+      &.dot6 {
+        top: 17vw;
+        left: 2vw;
+      }
+      &.dot7 {
+        top: 19vw;
+        right: 12vw;
+      }
+      &.dot8 {
+        top: 20vw;
+        right: 8vw;
+      }
+      &.dot9 {
+        top: 22vw;
+        right: 11vw;
+      }
+      &.dot10 {
+        top: 25vw;
+        left: 8vw;
+      }
+      &.dot11 {
+        bottom: 15vw;
+        right: 12vw;
+      }
+    }
+    &-info {
+      display: none;
+      position: absolute;
+      width: 13.563vw;
+      z-index: 1;
+      top: -5.5vw;
+      right: 0;
+      &--wrapper {
+        padding: 6px;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+    }
+    &-text {
+      border: 1px dashed $colorRozeDark;
+      padding: 1.25vw 1.719vw 0.833vw 1.51vw;
+      background-color: #fff;
+      border-radius: 10px;
+      & p:nth-of-type(1) {
+        font-size: 0.938vw;
+      }
+      & p:nth-of-type(2) {
+        font-size: 0.729vw;
+        margin-top: 10px;
+      }
+      & p:nth-of-type(3) {
+        font-size: 0.938vw;
+        margin-top: 10px;
+      }
+    }
+    &-leave {
+      position: absolute;
+      bottom: 15vw;
+      left: -5vw;
+    }
+  }
+  &__calc {
+    &-main {
+      padding: 1.823vw 0;
+      background-color: #ddd;
+      border-radius: 10px;
+      margin-top: 2vw;
+      position: relative;
+    }
+    &-switch {
+      display: flex;
+      align-items: center;
+      &--women {
+        border-bottom: 1px dashed #000;
+        margin-right: 4.167vw;
+        cursor: pointer;
+        & a {
+          font: $fontMuseoSansCyrlLight_48;
+        }
+      }
+      &--men {
+        @include mainBtn;
+        padding: 1.875vw 4.427vw;
+        border-radius: 57.5px;
+        cursor: pointer;
+        & a {
+          font: $fontMuseoSansCyrlLight_48;
+          color: #fff;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+      padding-left: 2vw;
+      &-title {
+        border-bottom: none;
+        & p {
+          font: $fontMuseoSansCyrlBold_24;
+          & span {
+            font-size: 0.8vw;
+          }
+        }
+      }
+      & p:nth-of-type(1) {
+        width: 45%;
+      }
+      & p:nth-of-type(2) {
+        width: 25%;
+      }
+      & p:nth-of-type(3) {
+        width: 15%;
+      }
+      & p:nth-of-type(4) {
+        width: 15%;
+      }
+      & div:nth-of-type(1) {
+        width: 15%;
+      }
+      & div:nth-of-type(2) {
+        width: 15%;
+      }
+      & p {
+        font-size: 1.094vw;
+        margin-bottom: 7px;
+        margin-top: 7px;
+      }
+      & label {
+        font-size: 1.094vw;
+        font-weight: 300;
+        margin-bottom: 7px;
+        margin-top: 7px;
+      }
+    }
+    &-total {
+      display: flex;
+      align-items: center;
+      margin: 2vw 4.375vw 0 4.375vw;
+      & > p {
+        font: $fontMuseoSansCyrlBold_30;
+        margin-right: 20px;
+      }
+      &--wraper {
+        @include dashedBtn;
+        padding: 6px 7px;
+      }
+      &-descr {
+        display: flex;
+      }
+      &-full {
+        margin-right: 1.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1.823vw;
+        color: #fff;
+        text-align: center;
+        & p {
+          font: $fontMuseoSansCyrlLight_16;
+          width: 9.844vw;
+        }
+        & .tbig {
+          font: $fontMuseoSansCyrlLight_30;
+        }
+      }
+      &-discount {
+        background-color: #fff;
+        border-radius: 15px;
+        margin: 0.729vw 0.729vw 0.729vw 0;
+        padding: 1.042vw 1.563vw;
+        display: flex;
+        align-items: center;
+        & p {
+          font: $fontMuseoSansCyrlBold_16;
+          margin-right: 20px;
+          width: 10vw;
+        }
+        & .tbig {
+          font: $fontMuseoSansCyrlLight_30;
+          width: 4.844vw;
+          margin: 0;
+        }
+      }
+    }
+    &-blur {
+      position: absolute;
+      top: -11vw;
+      right: -11vw;
+      z-index: -1;
+    }
+  }
+  &__leaveTop {
+    position: absolute;
+    top: -10vw;
+    left: 0;
+    width: 6.552vw;
+  }
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: $colorRozeDark;
+}
+input[type="radio"]:not(:checked) + label:before {
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  left: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  background-color: $colorRozeDark;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}

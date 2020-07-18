@@ -1,0 +1,371 @@
+.request {
+  padding-bottom: 3.125vw;
+  position: relative;
+  &__title {
+    text-align: center;
+  }
+  &__form {
+    position: relative;
+    margin-top: 2.344vw;
+    display: flex;
+    background-image: url(../img/request/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    padding: 3.646vw 4.427vw 0 2.865vw;
+    &-img {
+      margin-right: 3.125vw;
+    }
+    &-inputs {
+      margin-right: 3.125vw;
+      text-align: center;
+      & label {
+        font: $fontMuseoSansCyrlMed_16;
+        color: #000;
+      }
+      & input {
+        background-color: #fff;
+        padding: 1.198vw 0 1.198vw 1.719vw;
+        width: 16.146vw;
+        color: #989797;
+        margin-top: 0.833vw;
+        border-radius: 40px;
+        border: none;
+        border: solid 1px #fbeeef;
+        &::placeholder {
+          font: $fontMuseoSansCyrlLight_16;
+        }
+      }
+    }
+    &-tel {
+      margin-top: 1.042vw;
+    }
+    &-btn {
+      position: relative;
+      & button {
+        @include mainBtn;
+        width: 15.729vw;
+        height: 3.646vw;
+        margin-top: 1.354vw;
+        color: #fff;
+        font: $fontMuseoSansCyrlBold_14;
+        letter-spacing: 1.68px;
+        text-align: left;
+        padding-left: 1.875vw;
+        @include mainBtnBlick;
+        @include mainBtnHover;
+      }
+      & img {
+        position: absolute;
+        width: 11.063vw;
+        right: -2vw;
+        bottom: 0.5vw;
+      }
+    }
+    &-rightImg {
+      position: absolute;
+      z-index: -1;
+      right: -5vw;
+      top: 2vw;
+      width: 10.208vw;
+    }
+    &-leftImg {
+      position: absolute;
+      left: -4vw;
+      top: -4vw;
+      width: 10.208vw;
+    }
+    &-women {
+      position: relative;
+      &--name {
+        @include nameCard;
+        & p {
+          font: $fontMuseoSansCyrlBold_24;
+        }
+      }
+      &--master {
+        @include masterCard;
+        & p {
+          font: $fontMuseoSansCyrlMed_12;
+        }
+      }
+    }
+  }
+  &__blur {
+    position: absolute;
+    bottom: -8vw;
+    z-index: -1;
+  }
+}
+@include lg_900 {
+  .request {
+    &__form {
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      &-img {
+        margin-bottom: 2rem;
+      }
+      &-inputs {
+        margin: 0;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        & button {
+          width: 35rem;
+          height: 7rem;
+          font-size: 1.6rem;
+          padding-left: 3rem;
+        }
+        & img {
+          width: 25rem;
+          right: -8rem;
+          bottom: 1rem;
+        }
+      }
+      &-women {
+        &--name {
+          bottom: 10rem;
+          right: 19rem;
+
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 7rem;
+          right: 22rem;
+        }
+      }
+      &-leftImg {
+        width: 15rem;
+        left: -2rem;
+        top: -4rem;
+      }
+      &-rightImg {
+        width: 9rem;
+        right: -2rem;
+        top: 1rem;
+        z-index: 1;
+      }
+    }
+    &__blur {
+      width: 20rem;
+      bottom: 29rem;
+      z-index: 1;
+    }
+  }
+}
+@include md_767 {
+  .request {
+    &__form {
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      &-img {
+        margin-bottom: 2rem;
+      }
+      &-inputs {
+        margin: 0;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        & button {
+          width: 35rem;
+          height: 7rem;
+          font-size: 1.6rem;
+          padding-left: 3rem;
+        }
+        & img {
+          width: 25rem;
+          right: -8rem;
+          bottom: 1rem;
+        }
+      }
+      &-women {
+        &--name {
+          bottom: 10rem;
+          right: 8rem;
+
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 7rem;
+          right: 11rem;
+        }
+      }
+      &-leftImg {
+        width: 15rem;
+        left: -2rem;
+        top: -4rem;
+      }
+      &-rightImg {
+        width: 9rem;
+        right: -2rem;
+        top: 1rem;
+        z-index: 1;
+      }
+    }
+    &__blur {
+      width: 20rem;
+      bottom: 29rem;
+      z-index: 1;
+    }
+  }
+}
+@include sm_567 {
+  .request {
+    &__form {
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      justify-content: center;
+      &-img {
+        margin-bottom: 2rem;
+      }
+      &-inputs {
+        margin: 0;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        & button {
+          width: 20rem;
+          height: 5rem;
+          font-size: 1.2rem;
+          padding-left: 2rem;
+        }
+        & img {
+          width: 10rem;
+          right: -4rem;
+          bottom: 1rem;
+        }
+      }
+      &-women {
+        &--name {
+          bottom: 6rem;
+          right: 2rem;
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 3rem;
+          right: 5rem;
+        }
+      }
+      &-leftImg {
+        width: 8rem;
+        left: -1rem;
+        top: -1rem;
+      }
+      &-rightImg {
+        width: 5rem;
+        right: -1rem;
+        top: 1rem;
+        z-index: 1;
+      }
+    }
+    &__blur {
+      width: 10rem;
+      bottom: 22rem;
+      z-index: 1;
+    }
+  }
+}

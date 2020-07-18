@@ -6,6 +6,11 @@
 html {
   font-family: "MuseoSansCyrl";
   font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -44,6 +49,9 @@ img {
   background-size: cover;
   overflow-x: hidden;
 }
+h1 {
+  font: $fontMuseoSansCyrlBold_48;
+}
 h2 {
   font: $fontMuseoSansCyrlBold_48;
 }
@@ -53,8 +61,12 @@ h3 {
 p {
   font: $fontMuseoSansCyrlLight_24;
 }
+
 .bold {
   font-weight: 700;
+}
+.bolder {
+  font-weight: 900;
 }
 .light {
   font-weight: 300;
@@ -62,9 +74,62 @@ p {
 .borderDashed {
   padding-bottom: 5px;
   border-bottom: 1px dashed #ff6078;
+  display: inline-block;
 }
 .linkColorRoze {
   color: #ff6078;
+  font: $fontMuseoSansCyrlMed_15;
+  letter-spacing: 1.5px;
+}
+.tbig {
+  font: $fontMuseoSansCyrlLight_30;
+}
+.roze {
+  color: $colorRozeDarkText;
+}
+.bigIcon {
+  border: 1px solid #fbe3e5;
+  width: 2.865vw;
+  height: 2.865vw;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sm_567 {
+    width: 4rem;
+    height: 4rem;
+  }
+  @include md_767 {
+    width: 5rem;
+    height: 5rem;
+  }
+  @include lg_900 {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.smallIcon {
+  box-shadow: 0px 3px 20px 0 rgba(68, 68, 68, 0.21);
+  width: 1.823vw;
+  height: 1.823vw;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sm_567 {
+    width: 3rem;
+    height: 3rem;
+  }
+  @include md_767 {
+    width: 4rem;
+    height: 4rem;
+  }
+  @include lg_900 {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .flex {
   display: flex;
@@ -77,17 +142,37 @@ p {
 
 @import "scss/helpers";
 @import "scss/fonts";
-
+//general style
+@import "scss/waweTop.scss";
+//main style
 @import "scss/header.scss";
 @import "scss/main.scss";
 @import "scss/relocation.scss";
 @import "scss/services.scss";
 @import "scss/work.scss";
 @import "scss/qualification.scss";
-
+@import "scss/reviews.scss";
+@import "scss/wait.scss";
+@import "scss/request.scss";
+@import "scss/paper.scss";
+@import "scss/footer.scss";
+//depilation style
+@import "scss/dep/main.scss";
+@import "scss/dep/save.scss";
+@import "scss/dep/facts.scss";
+@import "scss/dep/pain.scss";
+@import "scss/dep/price.scss";
+@import "scss/dep/request.scss";
+@import "scss/dep/complex.scss";
+//components style
 @import "components/popup/popup.scss";
 @import "components/map/map.scss";
 @import "components/blur/blur.scss";
 @import "components/titleFade/titleFade.scss";
-
+@import "components/burger/burger.scss";
+//lib style
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+//media
 @import "scss/media.scss";

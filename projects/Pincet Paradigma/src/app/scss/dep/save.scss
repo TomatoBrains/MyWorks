@@ -1,0 +1,129 @@
+.save {
+  background-image: url(../img/dep/save/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 5.573vw;
+  &--flex {
+    display: flex;
+  }
+  &__title {
+    text-align: center;
+    max-width: 57.552vw;
+    margin: 0 auto;
+    margin-bottom: 3.646vw;
+  }
+  &__descr {
+    &-title {
+      @include dashedBtn;
+      color: #fff;
+      width: 18.125vw;
+      text-align: center;
+      margin: 0 auto;
+      & p {
+        padding: 1.354vw 2.76vw;
+        font: $fontMuseoSansCyrlBold_24;
+      }
+    }
+    &-item {
+      display: flex;
+      margin-top: 2.865vw;
+      &--revers {
+        flex-direction: row-reverse;
+      }
+    }
+    &-img {
+      margin-right: 1.823vw;
+      width: 25vw;
+      position: relative;
+      &--margin {
+        margin-right: 0;
+      }
+      &--number {
+        @include bigNumber;
+        font-size: 2.474vw;
+        position: absolute;
+        &-1 {
+          left: -2vw;
+          top: 2vw;
+        }
+        &-2 {
+          bottom: 2vw;
+          left: 1vw;
+        }
+        &-3 {
+          top: 0;
+        }
+        &-4 {
+          top: -1vw;
+        }
+        &-5 {
+          left: -0.5vw;
+          bottom: -1vw;
+        }
+        &-6 {
+          right: 0;
+          bottom: -1vw;
+        }
+      }
+    }
+    &-text {
+      & h3 {
+        font: $fontMuseoSansCyrlBold_24;
+      }
+      & p {
+        font: $fontMuseoSansCyrlLight_16;
+        margin-top: 20px;
+      }
+      &--marginR {
+        margin-right: 1.823vw;
+        text-align: right;
+      }
+    }
+    &-content {
+      &--revers {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &__master {
+    position: relative;
+    margin: 0 25px;
+    &-name {
+      @include nameCard;
+      color: $colorPurple;
+      left: 2vw;
+      top: 12vw;
+      right: unset;
+      bottom: unset;
+      box-shadow: 1px -0.2px 90px 0 rgba(122, 122, 122, 0.38);
+      & p {
+        font: $fontMuseoSansCyrlBold_19;
+        transform: skew(11deg);
+      }
+    }
+    &-rank {
+      @include masterCard;
+      left: 0vw;
+      top: 14.5vw;
+      bottom: unset;
+      right: unset;
+      padding: 0.677vw 0.885vw;
+      box-shadow: 1px -0.2px 90px 0 rgba(122, 122, 122, 0.38);
+      text-align: center;
+      transform: skew(-11deg);
+      & p {
+        font: $fontMuseoSansCyrlMed_12;
+        width: 10.313vw;
+        transform: skew(11deg);
+      }
+    }
+    &-btn {
+      @include videoBtn;
+      bottom: 3vw;
+      right: 6vw;
+      & span {
+        padding: 1.5vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.waweTop {
+  display: flex;
+  position: relative;
+  &-svg {
+    @include scrollIcon;
+  }
+  &-img {
+    position: absolute;
+    top: 3.5vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  &--margin {
+    margin-top: 3.646vw;
+  }
+}

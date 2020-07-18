@@ -1,0 +1,120 @@
+.facts {
+  padding: 60px 0 120px 0;
+  &--flex {
+    display: flex;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 4.792vw;
+    & p {
+      margin-top: 20px;
+      font: $fontMuseoSansCyrlLight_30;
+      color: $colorRozeSubText;
+    }
+  }
+  &__macbook {
+    position: absolute;
+    left: 0;
+    width: 46.875vw;
+    &-btn {
+      @include videoBtn;
+      top: 11vw;
+      left: 22vw;
+      & span {
+        padding: 1.5vw;
+      }
+    }
+    &-line {
+      position: absolute;
+      top: 3vw;
+      right: 17vw;
+      transform: rotate(235deg);
+    }
+    &-descr {
+      position: absolute;
+      top: 5vw;
+      right: 6vw;
+      width: 7.031vw;
+      & p {
+        font: $fontMuseoSansCyrlLight_18;
+        color: $colorRozeDark;
+      }
+    }
+    &-flower {
+      position: absolute;
+      z-index: -1;
+      bottom: 11vw;
+      right: -12vw;
+      width: 33.802vw;
+    }
+    &-blur {
+      position: absolute;
+      bottom: 11vw;
+      right: -12vw;
+      width: 30vw;
+      z-index: -2;
+    }
+    &-leave {
+      position: absolute;
+      z-index: -1;
+      position: absolute;
+      top: -3vw;
+      left: 4vw;
+    }
+  }
+  &__descr {
+    margin-top: 6vw;
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      width: 50%;
+      display: flex;
+      align-items: center;
+    }
+    &-number {
+      @include bigNumber;
+      font-size: 4vw;
+      &--text {
+        @include bigNumber;
+        font-size: 1vw;
+        transform: rotate(-180deg);
+        writing-mode: vertical-rl;
+        margin-left: -6px;
+        & p {
+          font-size: 1.3vw;
+        }
+      }
+    }
+    &-text {
+      margin-left: 1.823vw;
+      text-align: left;
+      & p {
+        font: $fontMuseoSansCyrlLight_18;
+      }
+    }
+    &-btn {
+      @include mainBtn;
+      @include mainBtnBlick;
+      padding: 1.302vw 7.917vw 1.302vw 2.135vw;
+      font: $fontMuseoSansCyrlBold_18;
+      & a {
+        color: #fff;
+      }
+      &--wraper {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10vw;
+        margin-top: 5.208vw;
+      }
+    }
+    &-clockImg {
+      position: absolute;
+      width: 13vw;
+      bottom: 0.5vw;
+      right: -5vw;
+    }
+  }
+}

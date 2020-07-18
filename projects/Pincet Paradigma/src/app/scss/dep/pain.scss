@@ -1,0 +1,22 @@
+.pain {
+  padding: 60px 0;
+  &--flex {
+    display: flex;
+  }
+  &__text {
+    &-title {
+      & p {
+        margin-top: 2.604vw;
+      }
+      & ul {
+        margin-top: 15px;
+        list-style-image: url(../img/dep/pain/check.png);
+        margin-left: 1vw;
+        & li {
+          font: $fontMuseoSansCyrlLight_20;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,32 +1,18 @@
 .main {
   position: relative;
-  padding: 5.521vw 0 9.427vw 0;
+  padding-top: 5.521vw;
   overflow: hidden;
   &__descr {
     margin-left: 5.99vw;
     position: relative;
     z-index: 1;
-    &-title {
-      & h1 {
-        font: $fontMuseoSansCyrlLight_48;
-        & span {
-          font: $fontMuseoSansCyrlBold_48;
-        }
-      }
-    }
     &-list {
       margin-top: 3.125vw;
       & ul {
+        list-style-image: url(../img/main/liMarker1.png);
         & li {
           font: $fontMuseoSansCyrlLight_18;
           margin-top: 1.094vw;
-          display: flex;
-          align-items: center;
-          &::before {
-            content: url(../img/main/liMarker.png);
-            position: absolute;
-            left: -35px;
-          }
         }
       }
     }
@@ -108,6 +94,10 @@
           margin-left: 80px;
         }
       }
+      &--wraper {
+        position: relative;
+        display: flex;
+      }
     }
     &-img {
       position: absolute;
@@ -119,23 +109,24 @@
       }
     }
     &-card {
+      right: -29vw;
       position: absolute;
-      top: 79%;
-      left: 57%;
-      transform: translate(-50%, -50%);
+      bottom: -9vw;
+      width: 44.427vw;
     }
     &-info {
       position: absolute;
-      top: 72%;
-      left: 53%;
-      transform: translate(-50%, -50%);
+      top: 9.5vw;
+      right: 25.5vw;
       cursor: pointer;
       z-index: 11;
-      &:hover {
-        & + .main__descr-info_hover {
-          opacity: 1;
-          transition: 0.3s ease;
-        }
+      & img {
+        width: 2.083vw;
+        height: 2.083vw;
+      }
+      &:hover .main__descr-info_hover {
+        opacity: 1;
+        transition: 0.3s ease;
       }
       & img {
         border-radius: 50%;
@@ -145,15 +136,12 @@
       &_hover {
         opacity: 0;
         transition: 0.3s ease;
-        padding: 1.771vw 1.406vw 1.51vw 1.406vw;
-        max-width: 9.167vw;
         position: absolute;
-        top: 60%;
-        left: 57%;
-        transform: translate(-50%, -50%);
+        top: -11vw;
+        left: 1vw;
+        z-index: -1;
         text-align: center;
         background-position: center;
-        z-index: 10;
         border-top-left-radius: 200% 33%;
         background-color: white;
         border-top-right-radius: 200% 33%;
@@ -161,6 +149,8 @@
         border-bottom-right-radius: 20px;
         box-shadow: 8px -10px 0px 1px rgba(203, 210, 223, 0.18);
         & p {
+          width: 6.354vw;
+          margin: 2vw 2vw;
           font: $fontMuseoSansCyrlLight_14;
         }
       }
@@ -191,538 +181,280 @@
   &__women {
     position: absolute;
     right: 0;
-    top: 6.354vw;
+    top: 9.354vw;
     max-width: 45.408vw;
   }
   &__wawe {
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    bottom: -3px;
-    &-arrow {
+    display: flex;
+    position: relative;
+    margin-top: 3.125vw;
+    max-height: 100%;
+    &-svg {
+      @include scrollIcon;
+    }
+    &-img {
       position: absolute;
-      top: 0;
-      top: 36%;
+      top: 3.5vw;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 2;
     }
   }
 }
 //mdeia
-@media (max-width: 575px) and (min-width: 320px) {
+@include sm_567 {
   .container {
     padding: 0 15px;
   }
-  .col-xs-6 {
-    width: 50%;
-  }
   .main {
     &__descr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &-title {
+        order: 1;
         & h1 {
-          font-size: 1.5rem;
           & span {
-            font-size: 1.5rem;
+            font-size: 2.2rem;
           }
         }
       }
       &-list {
+        order: 3;
+        margin-top: -10rem;
         & ul {
           & li {
-            font-size: 1rem;
+            font-size: 1.4rem;
           }
         }
       }
       &-btn {
-        margin-top: 1rem;
+        padding: 1rem 9rem 1rem 1rem;
+        &--wraper {
+          order: 4;
+          margin-top: 2rem;
+        }
         & p {
           max-width: none;
           font-size: 1rem;
         }
       }
       &-img {
-        bottom: 5px;
-        left: 70%;
+        right: -1rem;
+        top: 1.5rem;
+        left: auto;
+        width: 12rem;
         & img {
-          max-width: 10rem;
+          max-width: 100%;
         }
       }
       &-info {
-        top: 41%;
-        left: 70%;
+        left: 19rem;
+        top: 11rem;
         & img {
-          width: 2.2rem;
+          width: 3rem;
+          height: auto;
         }
         &_hover {
-          padding: 2rem;
-          max-width: 10rem;
-          top: 28%;
-          left: 83%;
+          top: -12rem;
+          left: -9rem;
           & p {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            width: 10rem;
           }
         }
       }
       &-card {
-        width: 100%;
-        top: 45%;
-        left: 80%;
+        order: 2;
+        position: relative;
+        width: 50rem;
+        right: -8rem;
+        top: 4rem;
       }
     }
     &__wawe {
       bottom: -2px;
-      &-arrow {
-        width: 1.5rem;
+      height: 5rem;
+      &-img {
+        top: 3rem;
       }
     }
     &__women {
       position: relative;
-      bottom: -2rem;
-      max-width: none;
-    }
-    &__popup {
-      width: auto;
-      &-close {
-        top: 1rem;
-        right: 4rem;
-      }
-      &-content {
-        width: auto;
-        & h2 {
-          font-size: 2.5rem;
-          & span {
-            font-size: 2.5rem;
-          }
-        }
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-      &-inputs {
-        & select {
-          font-size: 1rem;
-          background-size: 6%;
-        }
-        & input {
-          font-size: 1rem;
-          &::placeholder {
-            font-size: 1rem;
-          }
-        }
-      }
-      &-submit {
-        padding-right: 2rem;
-        width: auto;
-        left: 50%;
-        transform: translate(-50%);
-        & a {
-          font-size: 1rem;
-        }
-        &_img {
-          bottom: 12px;
-          right: -7px;
-          width: 5rem;
-          & img {
-            width: auto;
-          }
-        }
-      }
-      &-select {
-        & select {
-          width: 100%;
-        }
-      }
-      &-name {
-        & input {
-          width: 100%;
-        }
-      }
-      &-tel {
-        & input {
-          width: 100%;
-        }
-      }
-      &_img {
-        bottom: 0px;
-        left: -60px;
-        width: 10rem;
-      }
-      &-complete {
-        width: 25rem;
-        &_close {
-          top: 1rem;
-          right: 4rem;
-        }
-        &_text {
-          & p {
-            font-size: 2rem;
-            & span {
-              font-size: 2rem;
-            }
-          }
-          & span {
-            font-size: 2rem;
-          }
-        }
-        &_img {
-          width: 4rem;
-        }
-      }
+      bottom: -4rem;
+      right: -2rem;
+      top: unset;
+      max-width: 100%;
     }
   }
 }
-@media (max-width: 575px) and (min-width: 375px) {
+@include md_767 {
   .main {
     &__descr {
-      &-card {
-        width: 100%;
-        top: 30%;
-        left: 85%;
-        transform: translate(-50%, -50%);
-      }
-      &-info {
-        width: 100%;
-        top: 25%;
-        left: 124%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        &_hover {
-          top: 14%;
-          left: 83%;
-          -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-    &__popup {
-      &-submit {
-        padding-right: 4.4rem;
-        &_img {
-          width: 8rem;
-        }
-      }
-    }
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .container {
-    padding: 0 15px;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .main {
-    &__descr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &-title {
+        order: 1;
         & h1 {
-          font-size: 2.5rem;
           & span {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
           }
         }
       }
       &-list {
+        order: 3;
+        margin-top: -10rem;
         & ul {
           & li {
-            font-size: 2rem;
+            font-size: 1.4rem;
           }
         }
       }
       &-btn {
-        margin-top: 1rem;
+        padding: 2rem 9rem 2rem 1rem;
+        &--wraper {
+          order: 4;
+          margin-top: 2rem;
+        }
         & p {
           max-width: none;
-          font-size: 2rem;
+          font-size: 1.2rem;
         }
       }
       &-img {
-        bottom: 5px;
-        left: 70%;
+        right: -6rem;
+        top: 2.5rem;
+        left: auto;
+        width: 16rem;
         & img {
-          max-width: 15rem;
+          max-width: 100%;
         }
       }
       &-info {
-        top: 41%;
-        left: 80%;
+        left: 31rem;
+        top: 17rem;
         & img {
-          width: 2.2rem;
+          width: 3rem;
+          height: auto;
         }
         &_hover {
-          padding: 2rem;
-          max-width: 15rem;
-          top: 27%;
-          left: 89%;
+          top: -14rem;
+          left: 1rem;
           & p {
-            font-size: 2rem;
+            font-size: 1.2rem;
+            width: 10rem;
           }
         }
       }
       &-card {
-        width: 100%;
-        top: 45%;
-        left: 90%;
+        order: 2;
+        position: relative;
+        width: 80rem;
+        right: -15rem;
+        top: 10rem;
       }
     }
     &__wawe {
       bottom: -2px;
-      &-arrow {
-        width: 1.5rem;
+      height: 5rem;
+      &-img {
+        top: 3rem;
       }
     }
     &__women {
       position: relative;
-      bottom: -2rem;
-      max-width: none;
-    }
-    &__popup {
-      width: auto;
-      &-close {
-        top: 1rem;
-        right: 4rem;
-      }
-      &-content {
-        width: auto;
-        & h2 {
-          font-size: 2.5rem;
-          & span {
-            font-size: 2.5rem;
-          }
-        }
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-      &-inputs {
-        & select {
-          font-size: 2rem;
-          background-size: 6%;
-        }
-        & input {
-          font-size: 2rem;
-          &::placeholder {
-            font-size: 2rem;
-          }
-        }
-      }
-      &-submit {
-        padding-right: 6.5rem;
-        width: auto;
-        & a {
-          font-size: 2rem;
-        }
-        &_img {
-          bottom: 30px;
-          right: -7px;
-          width: 14rem;
-          & img {
-            width: auto;
-          }
-        }
-      }
-      &-select {
-        & select {
-          width: 100%;
-        }
-      }
-      &-name {
-        & input {
-          width: 100%;
-        }
-      }
-      &-tel {
-        & input {
-          width: 100%;
-        }
-      }
-      &_img {
-        bottom: 0px;
-        left: -60px;
-        width: 10rem;
-      }
-      &-complete {
-        width: 40rem;
-        &_close {
-          top: 1rem;
-          right: 4rem;
-        }
-        &_text {
-          & p {
-            font-size: 3rem;
-            & span {
-              font-size: 3rem;
-            }
-          }
-          & span {
-            font-size: 3rem;
-          }
-        }
-        &_img {
-          width: 4rem;
-        }
-      }
+      bottom: -4rem;
+      right: -2rem;
+      top: unset;
+      max-width: 100%;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    padding: 0 15px;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
+@include lg_900 {
   .main {
     &__descr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &-title {
+        order: 1;
         & h1 {
-          font-size: 2.5rem;
           & span {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
           }
         }
       }
       &-list {
+        order: 3;
+        margin-top: -10rem;
         & ul {
           & li {
-            font-size: 2rem;
+            font-size: 1.4rem;
           }
         }
       }
       &-btn {
-        margin-top: 1rem;
+        padding: 2rem 9rem 2rem 2rem;
+        &--wraper {
+          order: 4;
+          margin-top: 2rem;
+        }
         & p {
           max-width: none;
-          font-size: 2rem;
+          font-size: 1.2rem;
         }
       }
       &-img {
-        bottom: 5px;
-        left: 70%;
+        right: -6rem;
+        top: 5.5rem;
+        left: auto;
+        width: 16rem;
         & img {
-          max-width: 15rem;
+          max-width: 100%;
         }
       }
       &-info {
-        top: 74%;
-        left: 64%;
+        left: 31rem;
+        top: 17rem;
         & img {
-          width: 2.2rem;
+          width: 3rem;
+          height: auto;
         }
         &_hover {
-          padding: 2rem;
-          max-width: 15rem;
-          top: 42%;
-          left: 71%;
+          top: -14rem;
+          left: 1rem;
           & p {
-            font-size: 2rem;
+            font-size: 1.2rem;
+            width: 10rem;
           }
         }
       }
       &-card {
-        top: 82%;
-        left: 70%;
-        & img {
-          max-width: 60rem;
-        }
+        order: 2;
+        position: relative;
+        width: 80rem;
+        right: -15rem;
+        top: 10rem;
       }
     }
     &__wawe {
       bottom: -2px;
-      &-arrow {
-        width: 1.5rem;
+      height: 5rem;
+      &-img {
+        top: 3rem;
       }
     }
     &__women {
-      top: 21%;
-      max-width: 47rem;
-    }
-    &__popup {
-      width: auto;
-      &-close {
-        top: 1rem;
-        right: 4rem;
-      }
-      &-content {
-        width: auto;
-        & h2 {
-          font-size: 2.5rem;
-          & span {
-            font-size: 2.5rem;
-          }
-        }
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-      &-inputs {
-        & select {
-          font-size: 2rem;
-          background-size: 6%;
-        }
-        & input {
-          font-size: 2rem;
-          &::placeholder {
-            font-size: 2rem;
-          }
-        }
-      }
-      &-submit {
-        padding-right: 6.5rem;
-        width: auto;
-        & a {
-          font-size: 2rem;
-        }
-        &_img {
-          bottom: 30px;
-          right: -7px;
-          width: 14rem;
-          & img {
-            width: auto;
-          }
-        }
-      }
-      &-select {
-        & select {
-          width: 100%;
-        }
-      }
-      &-name {
-        & input {
-          width: 100%;
-        }
-      }
-      &-tel {
-        & input {
-          width: 100%;
-        }
-      }
-      &_img {
-        bottom: 0px;
-        left: -60px;
-        width: 10rem;
-      }
-      &-complete {
-        width: 40rem;
-        &_close {
-          top: 1rem;
-          right: 4rem;
-        }
-        &_text {
-          & p {
-            font-size: 3rem;
-            & span {
-              font-size: 3rem;
-            }
-          }
-          & span {
-            font-size: 3rem;
-          }
-        }
-        &_img {
-          width: 4rem;
-        }
-      }
+      position: relative;
+      bottom: -4rem;
+      right: -2rem;
+      top: unset;
+      max-width: 100%;
     }
   }
 }

@@ -63,7 +63,12 @@
     "handlebars-loader": "^1.7.0"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "handlebars": "^4.0.11",
+    "imagemin": "^7.0.1",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "jquery.maskedinput": "^1.4.1",
     "lightbox2": "^2.11.1",
     "slick-carousel": "^1.8.1"
   }

@@ -1,0 +1,149 @@
+.main {
+  &__descr {
+    &-img {
+      &--DEP {
+        width: 8vw;
+        left: 2vw;
+        & img {
+          max-width: 18vw;
+        }
+      }
+    }
+    &-leaves {
+      &--DEP {
+        position: absolute;
+        top: 17vw;
+        right: 1vw;
+      }
+    }
+    &-blur {
+      &--DEP {
+        position: absolute;
+        right: -11vw;
+        top: 12vw;
+      }
+    }
+  }
+}
+@include lg_900 {
+  .main {
+    &__descr {
+      &-list {
+        &--DEP {
+          margin-top: 2rem;
+        }
+      }
+      &-leaves {
+        &--DEP {
+          width: 20rem;
+          top: 16rem;
+          right: -1rem;
+        }
+      }
+      &-blur {
+        &--DEP {
+          width: 20rem;
+          left: 3rem;
+          bottom: 8rem;
+          top: unset;
+        }
+      }
+      &-img {
+        &--DEP {
+          width: 24rem;
+          top: 1rem;
+          right: -4rem;
+        }
+      }
+    }
+    &__women {
+      &--DEP {
+        max-width: 40rem;
+        bottom: -7rem;
+        margin: 0 auto;
+        right: unset;
+      }
+    }
+  }
+}
+@include md_767 {
+  .main {
+    &__descr {
+      &-list {
+        &--DEP {
+          margin-top: 2rem;
+        }
+      }
+      &-leaves {
+        &--DEP {
+          width: 13rem;
+          top: 18rem;
+          right: -1rem;
+        }
+      }
+      &-blur {
+        &--DEP {
+          width: 13rem;
+          left: -6rem;
+          bottom: -1rem;
+          top: unset;
+        }
+      }
+      &-img {
+        &--DEP {
+          width: 24rem;
+          top: 0rem;
+          right: -5rem;
+        }
+      }
+    }
+    &__women {
+      &--DEP {
+        max-width: 35rem;
+        bottom: -7rem;
+        margin: 0 auto;
+        right: unset;
+      }
+    }
+  }
+}
+@include sm_567 {
+  .main {
+    &__descr {
+      &-list {
+        &--DEP {
+          margin-top: 2rem;
+        }
+      }
+      &-leaves {
+        &--DEP {
+          width: 10rem;
+          top: 18rem;
+          right: -1rem;
+        }
+      }
+      &-blur {
+        &--DEP {
+          width: 10rem;
+          left: -6rem;
+          bottom: -1rem;
+          top: unset;
+        }
+      }
+      &-img {
+        &--DEP {
+          width: 17rem;
+          top: -1rem;
+        }
+      }
+    }
+    &__women {
+      &--DEP {
+        max-width: 25rem;
+        bottom: -7rem;
+        margin: 0 auto;
+        right: unset;
+      }
+    }
+  }
+}

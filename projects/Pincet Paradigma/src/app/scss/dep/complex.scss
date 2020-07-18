@@ -1,0 +1,52 @@
+.complex {
+  &__title {
+    margin-top: 1vw;
+    text-align: center;
+  }
+  &--flex {
+    display: flex;
+  }
+  &--margin {
+    margin-top: 3.125vw;
+  }
+  &__item {
+    background-color: #ddd;
+    margin-right: 1.927vw;
+    padding-left: 4.167vw;
+    padding-bottom: 3.125vw;
+    &-discount {
+      text-align: right;
+    }
+    &-title {
+      border-bottom: 1px solid #e6e5e5;
+      width: 16.313vw;
+      & p {
+        font: $fontMuseoSansCyrlBold_48;
+        margin-bottom: 1.927vw;
+      }
+    }
+    &-content {
+      margin-top: 1.927vw;
+      & ul {
+        list-style-image: url(../img/dep/complex/check.png);
+        font: $fontMuseoSansCyrlLight_24;
+      }
+    }
+    &-price {
+      display: flex;
+    }
+    &--smallUpT {
+      font: $fontMuseoSansCyrlLight_16;
+    }
+    &--smallT {
+      font: $fontMuseoSansCyrlBold_30;
+    }
+    &--bigT {
+      font: $fontMuseoSansCyrlBold_48;
+    }
+    &--bigerT {
+      font: $fontMuseoSansCyrlBold_60;
+      color: $colorRozeDark;
+    }
+  }
+}

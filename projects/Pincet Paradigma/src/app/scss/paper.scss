@@ -1,0 +1,158 @@
+.paper {
+  padding: 3.125vw 0;
+  position: relative;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    margin-top: 3.125vw;
+  }
+  &--flex {
+    display: flex;
+  }
+  &__item {
+    margin-right: 1.042vw;
+    display: flex;
+    flex-direction: column;
+    &-img {
+      position: relative;
+    }
+    &-like {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.521vw 0.781vw;
+      background-color: #fff;
+      top: 1vw;
+      right: 1vw;
+      border-radius: 19px;
+      font: $fontMuseoSansCyrlLight_16;
+      & img {
+        margin-right: 6px;
+      }
+    }
+    &-descr {
+      text-align: left;
+      margin-top: 2.083vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      flex: 1;
+      & p {
+        margin-top: 0.781vw;
+      }
+      &--link {
+        margin-top: 1.563vw;
+      }
+    }
+  }
+  &__leaves {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 6.573vw;
+  }
+}
+@include lg_900 {
+  .paper {
+    &__title {
+      flex-direction: column;
+      & a {
+        margin-top: 1rem;
+      }
+    }
+    &--flex {
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      &-descr {
+        & p {
+          margin-top: 1rem;
+        }
+        &--link {
+          margin-top: 1rem;
+        }
+      }
+      &-like {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+    &__leaves {
+      width: 6rem;
+      z-index: -1;
+    }
+  }
+}
+@include md_767 {
+  .paper {
+    &__title {
+      flex-direction: column;
+      & a {
+        margin-top: 1rem;
+      }
+    }
+    &--flex {
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      &-descr {
+        & p {
+          margin-top: 1rem;
+        }
+        &--link {
+          margin-top: 1rem;
+        }
+      }
+      &-like {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+    &__leaves {
+      width: 6rem;
+      z-index: -1;
+    }
+  }
+}
+@include sm_567 {
+  .paper {
+    &__title {
+      flex-direction: column;
+      & a {
+        margin-top: 1rem;
+      }
+    }
+    &--flex {
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      &-descr {
+        & p {
+          margin-top: 1rem;
+        }
+        &--link {
+          margin-top: 1rem;
+        }
+      }
+      &-like {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+    &__leaves {
+      width: 4rem;
+      z-index: -1;
+    }
+  }
+}

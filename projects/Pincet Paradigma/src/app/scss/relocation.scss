@@ -178,9 +178,8 @@
     transform: translate(-50%, -50%) scale(0.7);
   }
 }
-@media (min-width: $mediaXl) {
-}
-@media (max-width: $mediaLg) {
+
+@include lg_900 {
   .relocation {
     &__women {
       margin-top: 2.5rem;
@@ -267,7 +266,7 @@
     }
   }
 }
-@media (max-width: $mediaMd) {
+@include md_767 {
   .relocation {
     &--flex {
       flex-wrap: wrap;
@@ -371,7 +370,7 @@
     }
   }
 }
-@media (max-width: $mediaSm) {
+@include sm_567 {
   .relocation {
     &--flex {
       flex-wrap: wrap;

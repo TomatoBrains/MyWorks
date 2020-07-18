@@ -290,9 +290,8 @@
     opacity: 0;
   }
 }
-@media (min-width: $mediaXl) {
-}
-@media (max-width: $mediaLg) {
+
+@include lg_900 {
   .services {
     padding-top: 4rem;
     &--flex {
@@ -336,16 +335,16 @@
           opacity: 1;
         }
         &--position {
-          top: 4rem !important;
+          top: 5rem !important;
         }
         & a {
           font-size: $mobFont_14;
           padding: 3rem 4rem;
         }
         &-img {
-          width: 15rem;
-          right: -8rem;
-          top: 4rem;
+          width: 13rem;
+          right: -6rem;
+          top: 5rem;
         }
       }
       &-sign {
@@ -421,7 +420,7 @@
     }
   }
 }
-@media (max-width: $mediaMd) {
+@include md_767 {
   .services {
     padding-top: 3rem;
     &--flex {
@@ -545,7 +544,7 @@
     }
   }
 }
-@media (max-width: $mediaSm) {
+@include sm_567 {
   .services {
     padding-top: 2rem;
     &--flex {
@@ -578,8 +577,9 @@
       }
       &-leave {
         bottom: -4rem;
-        right: -3rem;
+        right: -2rem;
         width: 5rem;
+        z-index: 1;
       }
       &-btn {
         margin-top: 1rem;
