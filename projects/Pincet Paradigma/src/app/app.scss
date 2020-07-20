@@ -96,6 +96,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
+  &:hover {
+    box-shadow: 0 0 0 2px #fcbfc4 inset;
+  }
   @include sm_567 {
     width: 4rem;
     height: 4rem;
@@ -134,6 +138,33 @@ p {
 .flex {
   display: flex;
 }
+details:focus,
+summary:focus {
+  outline: 0;
+  outline: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details > summary {
+  list-style: none;
+}
+details[open] {
+  & summary {
+    padding-bottom: 0;
+    & span {
+      transform: rotate(180deg);
+    }
+  }
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  & > span {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+}
 .container {
   padding: 0 10.156vw;
   margin: 0 auto;
@@ -143,7 +174,7 @@ p {
 @import "scss/helpers";
 @import "scss/fonts";
 //general style
-@import "scss/waweTop.scss";
+@import "scss/wawes.scss";
 //main style
 @import "scss/header.scss";
 @import "scss/main.scss";
@@ -164,6 +195,9 @@ p {
 @import "scss/dep/price.scss";
 @import "scss/dep/request.scss";
 @import "scss/dep/complex.scss";
+@import "scss/dep/qa.scss";
+@import "scss/dep/online.scss";
+@import "scss/dep/learn.scss";
 //components style
 @import "components/popup/popup.scss";
 @import "components/map/map.scss";

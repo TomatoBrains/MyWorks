@@ -1,0 +1,139 @@
+.learn {
+  &--wraper {
+    background-image: url(../img/dep/learn/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  &--flex {
+    display: flex;
+  }
+  &__title {
+    text-align: center;
+    width: 85%;
+    margin: 2vw auto;
+  }
+  &__diplom {
+    position: relative;
+    &-leave {
+      position: absolute;
+      bottom: -4vw;
+      left: -10vw;
+      width: 24vw;
+    }
+  }
+  &__descr {
+    margin-left: 5.729vw;
+    &-title {
+      text-align: center;
+      & p {
+        font: $fontMuseoSansCyrlLight_30;
+      }
+    }
+    &-tabs {
+      margin-top: 1vw;
+    }
+    &-btns {
+      display: flex;
+      justify-content: center;
+      & a {
+        font: $fontMuseoSansCyrlLight_18;
+        text-align: center;
+        color: #fff;
+        padding: 1.2vw 0;
+        width: 19.063vw;
+        background: $btnGradient;
+        border-top: 1px dashed #fff;
+        border-right: 1px dashed #fff;
+        border-left: 1px dashed #fff;
+        display: inline-block;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &--first {
+        margin-right: 20px;
+      }
+      &--wraper {
+        padding: 7px 7px 0 7px;
+        background: $btnGradient;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+    &-content {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 2.448vw 2.813vw;
+      display: flex;
+    }
+    &-text {
+      width: 27.375vw;
+      margin-right: 2.083vw;
+      & p {
+        font: $fontMuseoSansCyrlLight_16;
+        margin-bottom: 1.875vw;
+      }
+      & ul {
+        font: $fontMuseoSansCyrlBold_16;
+        list-style: none;
+        & li {
+          background: url(../img/dep/learn/check.png) no-repeat left center;
+          padding-left: 1.5vw;
+          margin-bottom: 1vw;
+        }
+      }
+    }
+    &-clarification {
+      border: 1px dashed $colorRozeLighter;
+      border-width: 2px;
+      border-radius: 15px;
+      padding: 1.302vw;
+      &--text {
+        & p {
+          font: $fontMuseoSansCyrlLight_14;
+          width: 3.281vw;
+        }
+      }
+      &--img {
+        position: relative;
+        & p {
+          position: absolute;
+          font: $fontMuseoSansCyrlBold_48;
+          color: #fff;
+          & span {
+            font: $fontMuseoSansCyrlLight_18;
+          }
+        }
+      }
+      &--top {
+        display: flex;
+        align-items: center;
+        & p {
+          right: 3.5vw;
+          top: 1.5vw;
+        }
+        & .learn__descr-clarification--text {
+          margin-right: 1vw;
+        }
+      }
+      &--bottom {
+        display: flex;
+        margin-top: 2vw;
+        text-align: center;
+        & p {
+          right: 7vw;
+          top: 1.5vw;
+        }
+        & .learn__descr-clarification--text {
+          margin-top: 1vw;
+          margin-left: -4vw;
+        }
+      }
+      &--lineH {
+        line-height: 0.4 !important;
+      }
+    }
+  }
+}

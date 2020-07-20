@@ -1,0 +1,124 @@
+.online {
+  padding-top: 2.604vw;
+  position: relative;
+  &--flex {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    width: 16.4vw;
+    position: relative;
+    &--smt {
+      font: $fontMuseoSansCyrlLight_30;
+    }
+    &-img {
+      position: absolute;
+      top: -2vw;
+      z-index: -1;
+      right: -16vw;
+      width: 18.698vw;
+    }
+  }
+  &__request {
+    margin-top: 3.021vw;
+    margin-right: 4.063vw;
+    & .request {
+      &__form {
+        padding-bottom: 2.448vw;
+        &-inputs {
+          width: 15.063vw;
+        }
+        &-women {
+          width: 13vw;
+          position: absolute;
+          right: 1vw;
+          &--name {
+            bottom: 1vw;
+            right: 1vw;
+            padding: 0.677vw 1.094vw;
+            & p {
+              font: $fontMuseoSansCyrlBold_16;
+            }
+          }
+          &--master {
+            bottom: -2.5vw;
+            right: 2vw;
+            padding: 0.833vw;
+            & p {
+              font: $fontMuseoSansCyrlMed_12;
+              width: 7.083vw;
+            }
+          }
+        }
+        &-btn {
+          & button {
+            height: 4.6vw;
+            font-size: 0.9vw;
+          }
+          & img {
+            width: 12.063vw;
+            right: -5vw;
+            bottom: 1vw;
+          }
+        }
+      }
+      &__title {
+        & p {
+          font: $fontMuseoSansCyrlBold_20;
+        }
+      }
+      &__img {
+        z-index: -1;
+        position: absolute;
+        left: -4vw;
+        top: 2vw;
+      }
+    }
+  }
+  &__descr {
+    width: 22.979vw;
+    text-align: center;
+    &-text {
+      & p:nth-of-type(1) {
+        margin-bottom: 2vw;
+        font: $fontMuseoSansCyrlLight_30;
+      }
+      & p:nth-of-type(2) {
+        font: $fontMuseoSansCyrlMed_19;
+        color: $colorGreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & span {
+          @include callDot;
+        }
+      }
+    }
+    &-mesage {
+      margin-top: 2vw;
+      display: flex;
+      justify-content: center;
+      & a {
+        margin-right: 8px;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -15vw;
+    width: 32vw;
+    z-index: -1;
+  }
+  &__leave {
+    position: absolute;
+    bottom: 4vw;
+    right: 37vw;
+  }
+  &__leaves {
+    position: absolute;
+    top: 0;
+    right: 31vw;
+    width: 11vw;
+  }
+}

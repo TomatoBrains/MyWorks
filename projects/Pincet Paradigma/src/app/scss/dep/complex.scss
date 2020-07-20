@@ -1,4 +1,12 @@
 .complex {
+  position: relative;
+  &--background {
+    background-image: url(../img/dep/complex/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
   &__title {
     margin-top: 1vw;
     text-align: center;
@@ -10,12 +18,30 @@
     margin-top: 3.125vw;
   }
   &__item {
-    background-color: #ddd;
+    background-color: #fff;
     margin-right: 1.927vw;
-    padding-left: 4.167vw;
-    padding-bottom: 3.125vw;
+    padding: 2.271vw 4.167vw 3.125vw 4.167vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
     &-discount {
+      position: absolute;
+      top: -1vw;
+      right: -2vw;
       text-align: right;
+      position: relative;
+      font: $fontAppetite_30;
+      color: #fff;
+      &--img {
+        position: absolute;
+        right: -0.8vw;
+        width: 4.271vw;
+        z-index: -1;
+        top: 0vw;
+      }
     }
     &-title {
       border-bottom: 1px solid #e6e5e5;
@@ -27,19 +53,32 @@
     }
     &-content {
       margin-top: 1.927vw;
+      position: relative;
       & ul {
         list-style-image: url(../img/dep/complex/check.png);
         font: $fontMuseoSansCyrlLight_24;
       }
     }
     &-price {
-      display: flex;
+      border-top: 1px solid #e6e5e5;
+      margin-top: 1.927vw;
+      padding-top: 1.719vw;
+      &--text {
+        display: flex;
+        justify-content: space-between;
+      }
+      &--number {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
     &--smallUpT {
       font: $fontMuseoSansCyrlLight_16;
     }
     &--smallT {
-      font: $fontMuseoSansCyrlBold_30;
+      font: $fontMuseoSansCyrlLight_30;
+      margin-left: -0.5vw;
     }
     &--bigT {
       font: $fontMuseoSansCyrlBold_48;
@@ -48,5 +87,45 @@
       font: $fontMuseoSansCyrlBold_60;
       color: $colorRozeDark;
     }
+    &-btn {
+      @include mainBtn;
+      @include mainBtnHover;
+      @include mainBtnBlick;
+      width: 16.146vw;
+      height: 4.167vw;
+      margin-top: 2.344vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        font: $fontMuseoSansCyrlBold_18;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    &--img {
+      position: absolute;
+      right: -3.4vw;
+      top: 12vw;
+      width: 9.625vw;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(237deg);
+    }
+  }
+  &__more {
+    text-align: center;
+    margin-top: 3.646vw;
+    cursor: pointer;
+  }
+  &__blur {
+    position: absolute;
+    left: -9vw;
+    top: 4vw;
+  }
+  &__leaves {
+    position: absolute;
+    right: 0;
+    top: 7vw;
   }
 }
