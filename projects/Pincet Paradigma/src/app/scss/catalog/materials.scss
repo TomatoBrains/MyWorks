@@ -1,0 +1,21 @@
+.materials {
+  position: relative;
+  padding-bottom: 60px;
+  background-image: url(../img/catalog/material/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title {
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  &__content {
+    font: $fontMuseoSansCyrlLight_24;
+    color: $colorGrayText;
+    text-align: center;
+  }
+  &__leaves {
+    position: absolute;
+    bottom: -2vw;
+    right: 0;
+  }
+}

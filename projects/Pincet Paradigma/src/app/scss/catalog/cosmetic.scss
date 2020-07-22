@@ -1,0 +1,276 @@
+.cosmetic {
+  background-image: url(../img/catalog/cosmetic/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &__title {
+    text-align: center;
+    margin-bottom: 2.5vw;
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__catalog {
+    margin-right: 1.5vw;
+    &-accordeon {
+      & details {
+        margin-bottom: 2vw;
+        cursor: pointer;
+        & summary {
+          background-color: #fff;
+          box-shadow: 0px 4px 18px 0 rgba(176, 148, 149, 0.2);
+          font: $fontMuseoSansCyrlBold_30;
+          padding: 2.031vw 0 2.031vw 1.563vw;
+          border-radius: 20px;
+          justify-content: end;
+          align-items: center;
+          & span {
+            margin-right: 1.563vw;
+            width: 2.083vw;
+            height: 2.083vw;
+            background: $colorGray;
+            border-radius: 50%;
+            text-align: center;
+            transform: rotate(270deg);
+          }
+        }
+      }
+      & details[open] {
+        & summary {
+          & span {
+            transform: rotate(360deg);
+            background-image: linear-gradient(to top, #ee858c, #fabcbc);
+          }
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      margin-left: 4.948vw;
+      margin-top: 20px;
+      background-color: #fff;
+      box-shadow: 0px 4px 18px 0 rgba(176, 148, 149, 0.2);
+      border-radius: 20px;
+      padding: 1vw 0;
+      align-items: center;
+    }
+    &-img {
+      width: 4.583vw;
+      margin-left: 2.5vw;
+    }
+    &-descr {
+      margin-left: 5.208vw;
+      margin-right: 5vw;
+      &--upt {
+        font-size: 0.729vw;
+        color: $colorGreen;
+        display: flex;
+        align-items: center;
+        & span {
+          @include callDot;
+        }
+      }
+      &--title {
+        font: $fontMuseoSansCyrlBold_20;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      &--hardness,
+      &--weight {
+        font: $fontMuseoSansCyrlLight_16;
+      }
+    }
+    &-amount {
+      margin-right: 5vw;
+      &--title {
+        margin-bottom: 10px;
+        & p {
+          font: $fontMuseoSansCyrlLight_16;
+        }
+      }
+    }
+    &-wraper {
+      &--btns {
+        display: flex;
+        justify-content: flex-end;
+        width: 8.125vw;
+      }
+      &--input {
+        height: 3.281vw;
+        font: $fontMuseoSansCyrlBold_24;
+        border-right: none;
+        border-left: none;
+        width: 30%;
+        height: 55px;
+        text-align: center;
+        background-color: #fff;
+        border-top: 1px solid #f6f6f6;
+        border-bottom: 1px solid #f6f6f6;
+      }
+      &--btn {
+        color: #afafaf;
+        font-weight: 500;
+        border-radius: 0;
+        cursor: pointer;
+        font-size: 18px;
+        background-color: #fff;
+        transition: all 0.15s ease 0.05s;
+        background: none;
+        padding: 0 5px;
+        border: 1px solid #f4f2f2;
+        width: 33%;
+        &.one {
+          border-right: unset;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+        }
+        &.two {
+          border-left: unset;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+        }
+        &:hover {
+          color: #ffffff;
+          background-color: $colorRozeDarkText;
+        }
+      }
+    }
+    &-price {
+      text-align: center;
+      &--title {
+        font: $fontMuseoSansCyrlLight_16;
+      }
+      &--main {
+        font: $fontMuseoSansCyrlBold_36;
+        margin: 9px 0;
+        & span {
+          font: $fontMuseoSansCyrlBold_18;
+          margin-left: -5px;
+        }
+      }
+      &--btn {
+        @include mainBtn;
+        @include mainBtnBlick;
+        @include mainBtnHover;
+        padding: 0.677vw 1.302vw;
+        & a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__cart {
+    background-color: #fff;
+    box-shadow: 0px 4px 73px 0 rgba(176, 148, 149, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.719vw 3.385vw;
+    &-title {
+      font: $fontMuseoSansCyrlBold_30;
+      margin-bottom: 1.5vw;
+    }
+    &-item {
+      &--title {
+        font: $fontMuseoSansCyrlLight_20;
+        margin-bottom: 0.781vw;
+      }
+      &--content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 7px;
+        margin-bottom: 0.781vw;
+        padding-bottom: 0.938vw;
+        border-bottom: 1px solid $colorGray;
+        & p {
+          font: $fontMuseoSansCyrlBold_18;
+        }
+      }
+    }
+    &-total {
+      padding: 0.7vw 0;
+      background-color: $colorRozeVeryLight;
+      border-radius: 10px;
+      margin-bottom: 2vw;
+      & p:nth-of-type(1) {
+        font: $fontMuseoSansCyrlLight_18;
+      }
+      & p:nth-of-type(2) {
+        font: $fontMuseoSansCyrlBold_30;
+        & span {
+          font: $fontMuseoSansCyrlBold_18;
+        }
+      }
+    }
+    &-request {
+      &--title {
+        font: $fontMuseoSansCyrlBold_24;
+        margin-bottom: 1vw;
+      }
+      &--inputs {
+        & input {
+          width: 100%;
+          border-radius: 10px;
+          padding: 1vw 0 1vw 1.25vw;
+          border: 1px solid $colorGray;
+          margin-bottom: 10px;
+          font: $fontMuseoSansCyrlLight_18;
+          &::placeholder {
+            font: $fontMuseoSansCyrlLight_18;
+          }
+        }
+      }
+      &--delivery {
+        & p {
+          font: $fontMuseoSansCyrlMed_19;
+          margin-bottom: 15px;
+        }
+        & label {
+          padding-top: 3px;
+          &::before {
+            border-radius: 50% !important;
+          }
+        }
+        & input[type="radio"]:checked + label:before,
+        & input[type="radio"]:checked + label:after {
+          background-color: $colorRozeDarker;
+        }
+        & input[type="radio"]:not(:checked) + label {
+          padding-left: 25px;
+        }
+        & input[type="radio"]:checked + label {
+          padding-left: 25px;
+        }
+      }
+      &--submit {
+        margin-top: 2vw;
+        @include mainBtn;
+        @include mainBtnBlick;
+        @include mainBtnHover;
+        padding: 1.094vw 0;
+        width: 100%;
+        color: #fff;
+        font: $fontMuseoSansCyrlBold_18;
+        & button {
+          letter-spacing: 2.16px;
+        }
+      }
+    }
+  }
+  &__blur {
+    position: absolute;
+    left: -4vw;
+    top: 10vw;
+    z-index: -1;
+  }
+  &__leaveLeft {
+    position: absolute;
+    left: 3vw;
+    top: 7vw;
+  }
+  &__leavesRight {
+    position: absolute;
+    top: 0;
+    right: -5vw;
+  }
+}

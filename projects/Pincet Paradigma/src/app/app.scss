@@ -43,128 +43,6 @@ button {
 img {
   max-width: 100%;
 }
-.wrapper_background {
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-}
-h1 {
-  font: $fontMuseoSansCyrlBold_48;
-}
-h2 {
-  font: $fontMuseoSansCyrlBold_48;
-}
-h3 {
-  font: $fontMuseoSansCyrlBold_30;
-}
-p {
-  font: $fontMuseoSansCyrlLight_24;
-}
-
-.bold {
-  font-weight: 700;
-}
-.bolder {
-  font-weight: 900;
-}
-.light {
-  font-weight: 300;
-}
-.borderDashed {
-  padding-bottom: 5px;
-  border-bottom: 1px dashed #ff6078;
-  display: inline-block;
-}
-.linkColorRoze {
-  color: #ff6078;
-  font: $fontMuseoSansCyrlMed_15;
-  letter-spacing: 1.5px;
-}
-.tbig {
-  font: $fontMuseoSansCyrlLight_30;
-}
-.roze {
-  color: $colorRozeDarkText;
-}
-.bigIcon {
-  border: 1px solid #fbe3e5;
-  width: 2.865vw;
-  height: 2.865vw;
-  border-radius: 50%;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  &:hover {
-    box-shadow: 0 0 0 2px #fcbfc4 inset;
-  }
-  @include sm_567 {
-    width: 4rem;
-    height: 4rem;
-  }
-  @include md_767 {
-    width: 5rem;
-    height: 5rem;
-  }
-  @include lg_900 {
-    width: 5rem;
-    height: 5rem;
-  }
-}
-.smallIcon {
-  box-shadow: 0px 3px 20px 0 rgba(68, 68, 68, 0.21);
-  width: 1.823vw;
-  height: 1.823vw;
-  border-radius: 50%;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @include sm_567 {
-    width: 3rem;
-    height: 3rem;
-  }
-  @include md_767 {
-    width: 4rem;
-    height: 4rem;
-  }
-  @include lg_900 {
-    width: 4rem;
-    height: 4rem;
-  }
-}
-.flex {
-  display: flex;
-}
-details:focus,
-summary:focus {
-  outline: 0;
-  outline: none;
-}
-details summary::-webkit-details-marker {
-  display: none;
-}
-details > summary {
-  list-style: none;
-}
-details[open] {
-  & summary {
-    padding-bottom: 0;
-    & span {
-      transform: rotate(180deg);
-    }
-  }
-}
-summary {
-  display: flex;
-  justify-content: space-between;
-  & > span {
-    display: inline-block;
-    transition: transform 0.2s;
-  }
-}
 .container {
   padding: 0 10.156vw;
   margin: 0 auto;
@@ -198,6 +76,11 @@ summary {
 @import "scss/dep/qa.scss";
 @import "scss/dep/online.scss";
 @import "scss/dep/learn.scss";
+//catalog style
+@import "scss/catalog/main.scss";
+@import "scss/catalog/cosmetic.scss";
+@import "scss/catalog/order.scss";
+@import "scss/catalog/materials.scss";
 //components style
 @import "components/popup/popup.scss";
 @import "components/map/map.scss";

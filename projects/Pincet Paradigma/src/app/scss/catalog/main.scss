@@ -1,0 +1,52 @@
+.catalog-main {
+  & .main {
+    &__descr {
+      &-img {
+        bottom: 0vh;
+        left: 7vw;
+        @include lg_900 {
+          right: -6rem;
+          top: 2.8rem;
+          left: auto;
+          width: 16rem;
+        }
+        @include md_767 {
+          right: -6rem;
+          top: 2.8rem;
+          left: auto;
+          width: 16rem;
+        }
+        @include sm_567 {
+          right: -1rem;
+          top: 1.5rem;
+          left: auto;
+          width: 10rem;
+        }
+      }
+      &-list {
+        @include lg_900 {
+          margin-top: 2rem;
+        }
+        @include md_767 {
+          margin-top: 2rem;
+        }
+        @include sm_567 {
+          margin-top: 2rem;
+        }
+      }
+    }
+    &__women {
+      top: 0;
+      max-width: 39.408vw;
+      @include lg_900 {
+        max-width: 100%;
+      }
+      @include md_767 {
+        max-width: 100%;
+      }
+      @include sm_567 {
+        max-width: 100%;
+      }
+    }
+  }
+}

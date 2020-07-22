@@ -7,3 +7,8 @@ $(function ($) {
     placeholder: "+375 -- --- -- -- ",
   });
 });
+$(function ($) {
+  $(".inputTel").mask("+375 99 999 99 99", {
+    placeholder: "+375 -- --- -- -- ",
+  });
+});

@@ -12,3 +12,4 @@ import "./components/titleFade";
 import "./components/slider";
 import "./components/maskInput";
 import "./components/burger";
+import "./components/prodCount";

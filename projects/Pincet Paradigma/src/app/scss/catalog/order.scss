@@ -1,0 +1,134 @@
+.order {
+  background-image: url(../img/catalog/order/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 60px;
+  &__title {
+    margin-bottom: 3vw;
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  &__call {
+    margin-bottom: 2vw;
+    &--flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & > p {
+      font: $fontMuseoSansCyrlMed_24;
+      color: $colorGreen;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > span {
+        @include callDot;
+      }
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+      margin-right: 2vw;
+      margin-top: 1.302vw;
+      & a {
+        font: $fontMuseoSansCyrlBold_30;
+      }
+      & span {
+        width: 3.385vw;
+        height: 3.385vw;
+        margin-right: 1vw;
+        & img {
+          width: 20px;
+        }
+      }
+      &--link {
+        font: $fontMuseoSansCyrlBold_18;
+      }
+    }
+    &-work {
+      display: flex;
+      align-items: center;
+      margin-top: 1.302vw;
+      & p {
+        font: $fontMuseoSansCyrlBold_30;
+      }
+      & span {
+        width: 3.385vw;
+        height: 3.385vw;
+        margin-right: 1vw;
+        & img {
+          width: 20px;
+        }
+      }
+      &--text {
+        font: $fontMuseoSansCyrlBold_18;
+      }
+    }
+  }
+  &__item {
+    width: 11.719vw;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  &__img {
+    margin-bottom: 2.083vw;
+    position: relative;
+  }
+  &__descr {
+    display: flex;
+  }
+  &__number {
+    position: absolute;
+    & p {
+      @include bigNumber;
+    }
+    &--1 {
+      top: -2vw;
+      left: 2vw;
+    }
+    &--2 {
+      right: -3vw;
+      bottom: 2vw;
+    }
+    &--3 {
+      bottom: 0vw;
+      left: -1vw;
+    }
+    &--4 {
+      top: 1vw;
+      right: 9vw;
+    }
+    &--5 {
+      bottom: 8vw;
+      left: 4vw;
+    }
+    &--6 {
+      right: -3vw;
+      bottom: 2vw;
+    }
+    &--7 {
+      bottom: 0vw;
+      left: -1vw;
+    }
+    &--8 {
+      left: -1vw;
+      bottom: 1vw;
+    }
+  }
+  &__blur {
+    position: absolute;
+    top: 3vw;
+    left: -10vw;
+  }
+  &__leaves {
+    position: absolute;
+    right: 1vw;
+    top: 3vw;
+  }
+}
