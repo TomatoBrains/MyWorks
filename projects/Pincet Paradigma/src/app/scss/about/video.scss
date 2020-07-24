@@ -1,0 +1,44 @@
+.video {
+  padding: 30px 0;
+  position: relative;
+  &__title {
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__reviews {
+    z-index: 2;
+    &-item {
+      width: 13.438vw;
+      position: relative;
+    }
+    &-btn {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include videoBtn;
+      & span {
+        padding: 1vw;
+      }
+      & svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  &__blur {
+    position: absolute;
+    bottom: 4vw;
+    left: -11vw;
+    z-index: 1;
+  }
+  &__leaves {
+    position: absolute;
+    top: -12vw;
+    right: 0;
+  }
+}

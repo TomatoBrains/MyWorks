@@ -119,6 +119,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 250px 0 0 0 rgba(255, 96, 120, 0.3) inset;
+      }
       @include sm_567 {
         width: 20rem;
         height: 6rem;

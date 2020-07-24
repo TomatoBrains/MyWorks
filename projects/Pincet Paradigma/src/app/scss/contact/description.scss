@@ -1,0 +1,121 @@
+.description {
+  position: relative;
+  padding: 30px 0;
+  &__title {
+    text-align: left;
+    margin-bottom: 2vw;
+  }
+  &__content {
+    &-title {
+      margin-bottom: 1.5vw;
+    }
+    &-text {
+      font: $fontMuseoSansCyrlLight_14;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__leaves {
+    position: absolute;
+    right: 0;
+    width: 5vw;
+    top: 7vw;
+  }
+  &__leave {
+    position: absolute;
+    right: 5vw;
+    transform: rotate(270deg);
+    top: 11vw;
+  }
+}
+@include lg_900 {
+  .description {
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__content {
+      &-title {
+        margin-bottom: 1.5rem;
+      }
+      &-text {
+        font-size: 1.6rem;
+      }
+    }
+    &__descr {
+      margin-bottom: 1.5rem;
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+    &__leaves {
+      right: 0;
+      width: 4rem;
+      top: 3rem;
+    }
+    &__leave {
+      width: 8rem;
+      top: 7rem;
+      right: 7rem;
+    }
+  }
+}
+@include md_767 {
+  .description {
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__content {
+      &-title {
+        margin-bottom: 1.5rem;
+      }
+      &-text {
+        font-size: 1.6rem;
+      }
+    }
+    &__descr {
+      margin-bottom: 1.5rem;
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+    &__leaves {
+      right: 0;
+      width: 4rem;
+      top: 3rem;
+    }
+    &__leave {
+      width: 8rem;
+      top: 2rem;
+      right: 7rem;
+    }
+  }
+}
+@include sm_567 {
+  .description {
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__content {
+      &-title {
+        margin-bottom: 1.5rem;
+      }
+      &-text {
+        font-size: 1.6rem;
+      }
+    }
+    &__descr {
+      margin-bottom: 1.5rem;
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+    &__leaves {
+      width: 3rem;
+      top: 1rem;
+    }
+    &__leave {
+      width: 5rem;
+      top: 3rem;
+      right: 4rem;
+    }
+  }
+}

@@ -96,6 +96,7 @@
     }
   }
   &__map {
+    z-index: 2;
     &--flex {
       display: flex;
       align-items: flex-end;
@@ -103,7 +104,7 @@
     }
     &-img {
       position: absolute;
-      z-index: -1;
+      z-index: 1;
       top: -4vw;
       width: 42.583vw;
       left: -5vw;

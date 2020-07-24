@@ -1,0 +1,59 @@
+.screenshots {
+  padding: 30px 0;
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 3vw;
+  }
+  &__slider {
+    position: relative;
+    width: 12.292vw;
+    &-phone {
+      position: absolute;
+      width: 13.9vw;
+      z-index: 2;
+      left: -0.8vw;
+      top: -0.8vw;
+    }
+    &-flower {
+      position: absolute;
+      top: 4vw;
+      z-index: -1;
+      right: -8vw;
+      width: 19vw;
+    }
+    &-arrowRight {
+      position: absolute;
+      right: -6vw;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &-arrowLeft {
+      position: absolute;
+      left: -6vw;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &-paging {
+      font: $fontMuseoSansCyrlLight_36;
+      margin-top: 2.3vw;
+      text-align: center;
+    }
+    & .slick-slide {
+      width: 12.292vw;
+    }
+    & .slick-disabled {
+      opacity: 0.4;
+    }
+  }
+  &__message {
+    margin-left: 10.417vw;
+    &-item {
+      margin-right: 2.865vw;
+      width: 12.292vw;
+    }
+  }
+}

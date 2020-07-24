@@ -1,0 +1,93 @@
+.papers {
+  padding: 30px 0;
+  position: relative;
+  &--flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  &__filter {
+    text-align: center;
+    &-title {
+      margin-bottom: 1.3vw;
+    }
+    &-item {
+      @include mainBtn;
+      background-image: linear-gradient(to top, #fff, #fff);
+      box-shadow: none;
+      padding: 1vw 1.3vw;
+      border-radius: 7px;
+      margin-right: 1.5vw;
+      font: $fontMuseoSansCyrlBold_24;
+      margin-bottom: 3.385vw;
+      transition: all 0.3s ease;
+      &:hover {
+        background-image: linear-gradient(to top, #ee858c, #fabcbc);
+        color: #fff;
+      }
+    }
+  }
+  .paper {
+    &__item {
+      margin-bottom: 2vw;
+      &-descr {
+        text-align: center;
+      }
+    }
+  }
+  &__leaves {
+    position: absolute;
+    left: 1vw;
+    top: -1vw;
+    width: 8vw;
+  }
+}
+@include lg_900 {
+  .papers {
+    &--flex {
+      justify-content: center;
+    }
+    &__filter {
+      &-item {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@include md_767 {
+  .papers {
+    &--flex {
+      justify-content: center;
+    }
+    &__filter {
+      &-item {
+        font-size: 2rem;
+      }
+    }
+    & .papers__content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@include sm_567 {
+  .papers {
+    &--flex {
+      justify-content: center;
+    }
+    &__filter {
+      &-item {
+        font-size: 2rem;
+        width: 100%;
+      }
+    }
+    & .papers__content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

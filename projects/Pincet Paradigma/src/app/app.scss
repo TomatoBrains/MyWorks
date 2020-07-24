@@ -44,7 +44,7 @@ img {
   max-width: 100%;
 }
 .container {
-  padding: 0 10.156vw;
+  padding: 0 9.375vw;
   margin: 0 auto;
 }
 @import "app/_scss-core/_core";
@@ -81,6 +81,18 @@ img {
 @import "scss/catalog/cosmetic.scss";
 @import "scss/catalog/order.scss";
 @import "scss/catalog/materials.scss";
+//about
+@import "scss/about/aboutDescr.scss";
+@import "scss/about/same.scss";
+@import "scss/about/screenshots.scss";
+@import "scss/about/video.scss";
+@import "scss/about/team.scss";
+//papers style
+@import "scss/papers/papers.scss";
+//paperName style
+@import "scss/paperName/paperName.scss";
+//contact style
+@import "scss/contact/description.scss";
 //components style
 @import "components/popup/popup.scss";
 @import "components/map/map.scss";

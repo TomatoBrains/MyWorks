@@ -1,0 +1,66 @@
+.same {
+  position: relative;
+  &--flex {
+    display: flex;
+  }
+  &__present {
+    position: relative;
+    &-img {
+      position: absolute;
+      width: 45vw;
+      left: -7vw;
+      top: 9vw;
+    }
+    &-line {
+      position: absolute;
+      top: 10vw;
+      right: -3vw;
+      z-index: 1;
+    }
+  }
+  &__form {
+    &-title {
+      text-align: center;
+      margin-bottom: 1.5vw;
+    }
+    &-descr {
+      width: 27.083vw;
+      text-align: center;
+      font: $fontMuseoSansCyrlLight_16;
+      margin: 0 auto;
+      margin-bottom: 2.5vw;
+    }
+    & .request__form {
+      padding-bottom: 4.688vw;
+      display: block;
+      &-inputs {
+        margin: 0 auto;
+        width: 26.042vw;
+        & input {
+          width: 100%;
+        }
+      }
+      &-btn {
+        & button {
+          width: 100%;
+          padding-left: 3vw;
+        }
+        & img {
+          width: 13.063vw;
+          right: -5vw;
+        }
+      }
+    }
+  }
+  &__blur {
+    position: absolute;
+    top: 1vw;
+    left: -8vw;
+    z-index: -1;
+  }
+  &__leave {
+    position: absolute;
+    top: -8vw;
+    left: 11vw;
+  }
+}

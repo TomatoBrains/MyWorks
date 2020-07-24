@@ -114,3 +114,29 @@ $(".reviews__screenshots-slider").slick({
     },
   ],
 });
+//about screenshots
+var $status = $(".screenshots__slider-paging");
+var $slickElement = $(".screenshots__slider-phoneSlide");
+
+$slickElement.on("init reInit afterChange", function (
+  event,
+  slick,
+  currentSlide,
+  nextSlide
+) {
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  $status.html(
+    `<span class='bold roze'>${i}</span>  /  <span>${slick.slideCount}</span>`
+  );
+});
+$(".screenshots__slider-phoneSlide").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  infinite: false,
+  nextArrow: $(".screenshots__slider-arrowRight"),
+  prevArrow: $(".screenshots__slider-arrowLeft"),
+  autoplay: false,
+  pauseOnHover: true,
+  fade: true,
+});

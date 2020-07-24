@@ -1,0 +1,421 @@
+.team {
+  background-image: url(../img/about/team/background.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  &__title {
+    text-align: center;
+  }
+  &__workers {
+    margin-top: $elemMarginTop_60;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 2;
+    &-item {
+      margin: 0 auto;
+    }
+    &-ul {
+      margin-left: 15px;
+    }
+    &-card {
+      text-align: center;
+    }
+    &-img {
+      display: inline-block;
+      position: relative;
+    }
+    &-name {
+      position: absolute;
+      bottom: 3vw;
+      right: 1vw;
+      padding: 0.938vw 1.719vw;
+      background-color: #fff;
+      border-radius: 10px;
+      transform: skew(-11deg);
+      box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
+      z-index: 5;
+      & p {
+        transform: skew(10deg);
+        font-weight: 700;
+      }
+    }
+    &-master {
+      position: absolute;
+      bottom: 1vw;
+      right: 4vw;
+      padding: 1.042vw 0.885vw;
+      border-radius: 10px;
+      background-color: #fdfdfd;
+      & p {
+        font: $fontMuseoSansCyrlMed_11;
+      }
+    }
+    & ul {
+      margin-top: 2.083vw;
+      list-style-image: url(../img/about/team/check.png);
+      & li {
+        font: $fontMuseoSansCyrlLight_18;
+      }
+    }
+    &-link {
+      display: inline-block;
+      margin-top: 1.563vw;
+    }
+    & .slick-disabled {
+      opacity: 0.3;
+    }
+  }
+  &__certificate {
+    position: relative;
+    margin-top: 4.792vw;
+    &--flex {
+      display: flex;
+    }
+    &-descr {
+      text-align: center;
+      margin-bottom: 2vw;
+    }
+    &-items {
+      position: relative;
+    }
+    &-wraper {
+      position: relative;
+    }
+    &-img {
+      position: absolute;
+      z-index: 2;
+      left: -8vw;
+      bottom: -1vw;
+      width: 20.292vw;
+    }
+    &-background {
+      @include zoomBackground;
+    }
+    &-zoom {
+      @include zoomIcon;
+    }
+    &-item {
+      position: relative;
+      margin-right: 10px;
+      &:hover .team__certificate-background {
+        opacity: 0.4;
+      }
+      &:hover .team__certificate-zoom {
+        opacity: 1;
+      }
+    }
+  }
+  &__leaveLeft {
+    position: absolute;
+    top: 13vw;
+  }
+  &__leaveRight2 {
+    position: absolute;
+    top: 28vw;
+    right: 0;
+  }
+  &__leaveRight {
+    position: absolute;
+    top: 11vw;
+    right: 30%;
+    z-index: 1;
+  }
+  &__blurRight {
+    position: absolute;
+    right: 0;
+    bottom: -3vw;
+    width: 5.146vw;
+    z-index: 1;
+  }
+  &__blurRightTop {
+    position: absolute;
+    right: -10vw;
+    top: -1vw;
+  }
+  &__blurleft {
+    position: absolute;
+    left: -10vw;
+    z-index: 1;
+    bottom: 19vw;
+    transform: rotate(-159deg);
+  }
+  &__leaveCenter {
+    position: absolute;
+    top: 11vw;
+    left: 30%;
+    z-index: 1;
+  }
+  & .work__more-btn {
+    background-color: transparent;
+  }
+}
+@include lg_900 {
+  .team {
+    &__workers {
+      &-item {
+        margin-bottom: 2rem;
+      }
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__blurRightTop {
+      display: none;
+    }
+    &__blurleft {
+      display: none;
+    }
+    &__leaveLeft {
+      width: 8rem;
+      top: 6rem;
+    }
+    &__leaveRight {
+      width: 16rem;
+      top: 7rem;
+      right: 13rem;
+    }
+    &__leaveRight2 {
+      width: 8rem;
+      top: 0;
+      z-index: -1;
+    }
+    &__leaveCenter {
+      width: 16rem;
+      left: 9rem;
+      top: 15rem;
+    }
+
+    &__certificate {
+      &--flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        margin-bottom: 1.5rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 24rem;
+        left: 0rem;
+        bottom: -1rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__blurRight {
+      width: 8rem;
+      bottom: -4rem;
+    }
+  }
+}
+@include md_767 {
+  .team {
+    &__workers {
+      &-item {
+        margin-bottom: 2rem;
+      }
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__blurRightTop {
+      display: none;
+    }
+    &__blurleft {
+      display: none;
+    }
+    &__leaveLeft {
+      width: 8rem;
+      top: 6rem;
+    }
+    &__leaveRight {
+      width: 16rem;
+      top: 7rem;
+      right: 13rem;
+    }
+    &__leaveRight2 {
+      width: 8rem;
+      top: 0;
+      z-index: -1;
+    }
+    &__leaveCenter {
+      width: 16rem;
+      left: 9rem;
+      top: 15rem;
+    }
+    &__certificate {
+      &--flex {
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        padding: 0;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 24rem;
+        left: 0rem;
+        bottom: -1rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__blurRight {
+      width: 8rem;
+      bottom: -4rem;
+    }
+  }
+}
+@include sm_567 {
+  .team {
+    &__workers {
+      &-item {
+        margin-bottom: 1.5rem;
+      }
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+      &-img {
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__blurRightTop {
+      display: none;
+    }
+    &__blurleft {
+      display: none;
+    }
+    &__leaveLeft {
+      width: 6rem;
+      top: 6rem;
+    }
+    &__leaveRight {
+      width: 12rem;
+      top: 7rem;
+      right: 0rem;
+    }
+    &__leaveRight2 {
+      width: 5rem;
+      top: 0;
+      z-index: -1;
+    }
+    &__leaveCenter {
+      width: 14rem;
+      left: 1rem;
+      top: 15rem;
+    }
+    &__certificate {
+      &--flex {
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        margin-bottom: 1rem;
+        padding: 0;
+        margin-right: 0;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 17rem;
+        left: -6rem;
+        bottom: -1rem;
+      }
+    }
+    &__number {
+      & p {
+        font-size: 1.4rem;
+        & span {
+          font-size: 3rem;
+        }
+      }
+    }
+    &__blurRight {
+      width: 8rem;
+      bottom: -4rem;
+    }
+  }
+}
