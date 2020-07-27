@@ -288,7 +288,25 @@
   animation: pulse 2s infinite;
   margin-right: 0.469vw;
 }
-
+@mixin daysPurple {
+  text-align: left;
+  position: relative;
+  width: 8.333vw;
+  margin: 0 auto;
+  padding: 0.781vw 0 0.625vw 1.042vw;
+  border-radius: 7px;
+  background-image: linear-gradient(to top, #905fbd, #d2a7f1);
+  color: #fff;
+  & img {
+    position: absolute;
+    right: 0.3vw;
+    top: 0;
+    width: 1.563vw;
+  }
+  & p {
+    font: $fontMuseoSansCyrlMed_14;
+  }
+}
 @mixin sm_567 {
   @media (max-width: $mediaSm) {
     @content;

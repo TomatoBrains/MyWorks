@@ -1,0 +1,117 @@
+.request-learn {
+  padding-bottom: 0;
+  & .request__form {
+    display: block;
+    padding-left: 0;
+    overflow: hidden;
+
+    &--wraper {
+      display: flex;
+      margin-top: 1.604vw;
+      position: relative;
+      justify-content: center;
+    }
+    &-img {
+      width: 22.042vw;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    &-title {
+      text-align: center;
+    }
+    &-inputs {
+      width: 32.031vw;
+      margin-left: 3vw;
+      margin-right: 0;
+    }
+    &-women {
+      width: 20.073vw;
+      position: absolute;
+      right: -2vw;
+      &--name {
+        bottom: 3vw;
+        right: 1vw;
+      }
+      &--master {
+        bottom: 1vw;
+        right: 4vw;
+      }
+    }
+    &-name {
+      margin-right: 15px;
+      & input {
+        font: $fontMuseoSansCyrlLight_16;
+        &::placeholder {
+          font: $fontMuseoSansCyrlLight_16;
+        }
+      }
+    }
+    &-tel {
+      margin: 0;
+      & input {
+        font: $fontMuseoSansCyrlLight_16;
+        &::placeholder {
+          font: $fontMuseoSansCyrlLight_16;
+        }
+      }
+    }
+    &-btn {
+      & button {
+        width: 60%;
+        letter-spacing: 1.92px;
+        text-transform: uppercase;
+      }
+      & img {
+        width: 12.063vw;
+        right: 5vw;
+      }
+    }
+    &-call {
+      margin-top: 3.385vw;
+      margin-bottom: 3.125vw;
+      &--boldT {
+        font: $fontMuseoSansCyrlBold_24;
+      }
+      &--smallT {
+        font: $fontMuseoSansCyrlMed_14;
+        color: #48cb7d;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & span {
+          @include callDot;
+        }
+      }
+    }
+    &--flex {
+      display: flex;
+      justify-content: center;
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      margin-top: 1.302vw;
+      &--link {
+        font: $fontMuseoSansCyrlBold_18;
+      }
+    }
+    &-work {
+      display: flex;
+      align-items: center;
+      margin-top: 1.302vw;
+      &--text {
+        font: $fontMuseoSansCyrlBold_18;
+      }
+    }
+    &-leave {
+      position: absolute;
+      top: 14vw;
+      left: 26vw;
+      width: 3vw;
+    }
+  }
+}

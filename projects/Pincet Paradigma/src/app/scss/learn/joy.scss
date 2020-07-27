@@ -1,0 +1,290 @@
+.joy {
+  position: relative;
+  overflow-x: hidden;
+  &--wraper {
+    background-image: url(../img/wait/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 3.125vw;
+  }
+  &__title {
+    margin-top: 7.552vw;
+    margin-bottom: 2.604vw;
+    text-align: center;
+  }
+  &__wawe {
+    display: flex;
+    position: relative;
+    &-svg {
+      @include scrollIcon;
+    }
+    &-img {
+      position: absolute;
+      top: 3.5vw;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    &--margin {
+      margin-top: 3.646vw;
+    }
+  }
+  &__img {
+    margin-bottom: 2.083vw;
+    position: relative;
+  }
+  &__descr {
+    & h3 {
+      margin-bottom: 1.302vw;
+    }
+  }
+  &--margin {
+    margin-bottom: 4.167vw;
+  }
+  &--marginTop {
+    margin-top: 4.167vw;
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  &__leaveLeft {
+    position: absolute;
+    left: 0;
+    top: 24vw;
+    width: 6.875vw;
+  }
+  &__blur {
+    position: absolute;
+    right: -9vw;
+    bottom: 21vw;
+    width: 25vw;
+  }
+  &__number {
+    position: absolute;
+    & p {
+      font-family: "PTSerif";
+      font-size: 3.125vw;
+      color: $colorRozeDark;
+      background-image: linear-gradient(to top, #e97f86, #fabcbc),
+        linear-gradient(to bottom, #ed8f93, #ed8f93);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--1 {
+      top: 0;
+      left: 7vw;
+    }
+    &--2 {
+      right: 3vw;
+      bottom: 2vw;
+    }
+    &--3 {
+      bottom: 0vw;
+      left: 5vw;
+    }
+    &--4 {
+      top: 1vw;
+      right: 4vw;
+    }
+    &--5 {
+      bottom: 2vw;
+      left: 4vw;
+    }
+    &--6 {
+      top: 1vw;
+      left: 5vw;
+    }
+  }
+}
+@include lg_900 {
+  .joy {
+    padding-bottom: 2.5rem;
+    &--margin {
+      margin: 2rem 0;
+    }
+    &__img {
+      margin-bottom: 1rem;
+    }
+    &__descr {
+      margin: 0 auto 2.5rem auto;
+    }
+    &__blur {
+      width: 19rem;
+      right: -4rem;
+      bottom: 38%;
+    }
+    &__leaveLeft {
+      width: 7rem;
+      top: 12rem;
+    }
+    &__wawe {
+      &-img {
+        top: 2.5rem;
+      }
+    }
+    &--marginTop {
+      margin: 0;
+    }
+    &__number {
+      & p {
+        font-size: 5rem;
+      }
+      &--1 {
+        top: 0;
+        left: 3rem;
+      }
+      &--2 {
+        bottom: 4rem;
+        right: 2rem;
+      }
+      &--3 {
+        bottom: 0vw;
+        left: 3rem;
+      }
+      &--4 {
+        top: 2rem;
+        right: -1rem;
+      }
+      &--5 {
+        bottom: 1rem;
+        left: -1rem;
+      }
+      &--6 {
+        top: 1rem;
+        left: 3rem;
+      }
+    }
+  }
+}
+@include md_767 {
+  .joy {
+    padding-bottom: 2.5rem;
+    &--margin {
+      margin: 2rem 0;
+    }
+    &__img {
+      margin-bottom: 1rem;
+    }
+    &__descr {
+      margin: 0 auto 2.5rem auto;
+    }
+    &__blur {
+      width: 19rem;
+      right: -4rem;
+      bottom: 38rem;
+    }
+    &__leaveLeft {
+      width: 7rem;
+      top: 10rem;
+    }
+    &__wawe {
+      &-img {
+        top: 2.5rem;
+      }
+    }
+    &__img {
+      width: auto;
+      height: auto;
+    }
+    &--marginTop {
+      margin: 0;
+    }
+    &__number {
+      & p {
+        font-size: 5rem;
+      }
+      &--1 {
+        top: 0;
+        left: 3rem;
+      }
+      &--2 {
+        bottom: 4rem;
+        right: 2rem;
+      }
+      &--3 {
+        bottom: 0vw;
+        left: 3rem;
+      }
+      &--4 {
+        top: 2rem;
+        right: -1rem;
+      }
+      &--5 {
+        bottom: 1rem;
+        left: -1rem;
+      }
+      &--6 {
+        top: 1rem;
+        left: 3rem;
+      }
+    }
+  }
+}
+@include sm_567 {
+  .joy {
+    padding-bottom: 2.5rem;
+    &--margin {
+      margin: 2rem 0;
+    }
+    &__img {
+      margin-bottom: 1rem;
+    }
+    &__descr {
+      margin: 0 auto 2.5rem auto;
+      width: 25rem;
+    }
+    &__blur {
+      width: 13rem;
+      right: -4rem;
+      bottom: 13rem;
+    }
+    &__leaveLeft {
+      width: 6rem;
+      top: 5%;
+    }
+    &__wawe {
+      &-img {
+        top: 2.5rem;
+      }
+    }
+    &__img {
+      width: auto;
+      height: auto;
+    }
+    &--marginTop {
+      margin: 0;
+    }
+    &__number {
+      & p {
+        font-size: 5rem;
+      }
+      &--1 {
+        top: 0;
+        left: 5rem;
+      }
+      &--2 {
+        bottom: 4rem;
+        right: 1rem;
+      }
+      &--3 {
+        bottom: 0vw;
+        left: 3rem;
+      }
+      &--4 {
+        top: 2rem;
+        right: 0rem;
+      }
+      &--5 {
+        bottom: 1rem;
+        left: 1rem;
+      }
+      &--6 {
+        top: 1rem;
+        left: 3rem;
+      }
+    }
+  }
+}
