@@ -1,0 +1,329 @@
+.programm {
+  padding: 30px 0;
+  background-image: url(../img/learn/programm/background.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  &__tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+    &-item {
+      padding: 5px;
+      background-color: #fff;
+      border-radius: 10px;
+      position: relative;
+      margin-right: 2vw;
+      box-shadow: 1px -0.2px 109px 0 rgba(220, 178, 180, 0.25);
+      width: 20.729vw;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      &:hover {
+        background: linear-gradient(to top, #ee858c, #fabcbc);
+      }
+      &:hover .programm__tabs-inner {
+        background: linear-gradient(to top, #ee858c, #fabcbc);
+        border-color: #fff;
+      }
+      &:hover .programm__tabs-descr {
+        color: #fff;
+      }
+    }
+    &-inner {
+      display: flex;
+      background-color: #fff;
+      border: 1px dashed $colorRozeLighter;
+      border-radius: 10px;
+      align-items: center;
+      padding: 2vw 1vw 1.5vw 1vw;
+      position: relative;
+      height: 9.844vw;
+      transition: all 0.2s linear;
+    }
+    &-img {
+      position: absolute;
+      top: 1.5vw;
+      width: 6vw;
+      left: 0.5vw;
+    }
+    &-descr {
+      font: $fontMuseoSansCyrlLight_24;
+      margin-left: 6vw;
+      transition: all 0.2s linear;
+    }
+    &-sign {
+      top: -1vw;
+      right: 2vw;
+      @include daysPurple;
+      position: absolute;
+      width: 9vw;
+    }
+  }
+  &__content {
+    &-descr {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2vw;
+      &--title {
+        margin: 0 auto;
+        margin-bottom: 2vw;
+        width: 60%;
+        text-align: center;
+      }
+    }
+    &-course {
+      width: 48%;
+      background-color: #fff;
+      box-shadow: 1px -0.2px 150px 0 rgba(139, 117, 118, 0.1);
+      border-radius: 10px;
+      padding: 3.385vw 4.688vw 0 4.688vw;
+      margin-left: 3.854vw;
+    }
+    &-title {
+      text-align: center;
+    }
+    &-days {
+      margin-top: 2.604vw;
+      &--title {
+        display: flex;
+        align-items: flex-end;
+        & p:nth-of-type(1) {
+          @include daysPurple;
+          padding: 0.938vw 2.135vw;
+          margin: 0;
+          width: 9.479vw;
+          font: $fontMuseoSansCyrlMed_19;
+          margin-right: 3vw;
+          margin-bottom: 10px;
+        }
+        & p:nth-of-type(2) {
+          font: $fontAppetite_100;
+          color: $colorRozeLighter;
+          line-height: 0;
+          & span {
+            font: $fontAppetite_55;
+          }
+        }
+      }
+      &--accordeon {
+        margin-bottom: 1.5vw;
+        & details {
+          font: $fontMuseoSansCyrlLight_20;
+          margin-bottom: 10px;
+          & summary {
+            font: $fontMuseoSansCyrlBold_20;
+            cursor: pointer;
+            margin-bottom: 10px;
+            justify-content: end;
+            & span {
+              transform: rotate(270deg);
+              margin-right: 10px;
+            }
+          }
+        }
+        & details[open] {
+          & summary {
+            span {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+      &--hidden {
+        padding-left: 2vw;
+      }
+      &--result {
+        border-bottom: 1px solid $colorRozeLighter;
+        padding-bottom: 2.5vw;
+        & p:nth-of-type(1) {
+          @include daysPurple;
+          padding: 0.938vw 2.135vw;
+          margin: 0;
+          width: auto;
+          font: $fontMuseoSansCyrlMed_19;
+          margin-right: 3vw;
+          margin-bottom: 10px;
+          width: 9.479vw;
+        }
+      }
+      &--borderB {
+        border: none;
+      }
+    }
+    &-pluses {
+      margin-left: 7.604vw;
+      position: relative;
+      & > div:nth-child(2n) {
+        flex-direction: row-reverse;
+        & .programm__content-pluses--descr:nth-of-type(2n) {
+          margin-right: 3vw;
+          margin-left: 0;
+        }
+      }
+      &--item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 2vw;
+      }
+      &--descr {
+        font: $fontMuseoSansCyrlLight_24;
+        max-width: 16.885vw;
+        margin-left: 3vw;
+      }
+      &--number {
+        position: absolute;
+        @include bigNumber;
+        &-1 {
+          left: -1vw;
+          top: 4vw;
+        }
+        &-2 {
+          right: 10vw;
+          bottom: 2vw;
+        }
+        &-3 {
+          left: -1vw;
+          top: 4vw;
+        }
+        &-4 {
+          right: 13vw;
+          top: 2vw;
+        }
+        &-5 {
+          left: -1vw;
+          top: 6vw;
+        }
+      }
+      &--leavesBig {
+        position: absolute;
+        top: 0;
+        left: 5vw;
+      }
+      &--leaveR {
+        top: 27vw;
+        position: absolute;
+        right: -5vw;
+      }
+    }
+    &-master {
+      position: relative;
+      &--descr {
+        width: 75%;
+        margin-left: 9.115vw;
+      }
+      &--ul {
+        & ul {
+          list-style: none;
+          & li {
+            font: $fontMuseoSansCyrlLight_30;
+            background-image: url(../img/learn/programm/check.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 2vw;
+          }
+        }
+      }
+      &--img {
+        position: relative;
+      }
+      &--name {
+        @include nameCard;
+        font: $fontMuseoSansCyrlBold_30;
+        bottom: 4vw;
+        right: 1vw;
+        padding: 0.538vw 2.719vw;
+      }
+      &--rank {
+        @include masterCard;
+        font: $fontMuseoSansCyrlMed_15;
+        bottom: 1.5vw;
+        right: -1vw;
+      }
+      &--title {
+        text-align: left;
+        margin-bottom: 2vw;
+      }
+      &--branch {
+        position: absolute;
+        right: -10vw;
+        top: -8vw;
+        width: 25vw;
+      }
+      &--leaves {
+        position: absolute;
+        top: 1vw;
+        width: 5vw;
+        right: -6vw;
+      }
+      &--blurR {
+        position: absolute;
+        right: -18vw;
+        top: -8vw;
+        width: 22vw;
+      }
+      &--leavesL {
+        position: absolute;
+        left: -10vw;
+        top: 0vw;
+        width: 6vw;
+      }
+    }
+    &-diplom {
+      position: relative;
+      &--title {
+        text-align: left;
+        margin-top: 11.198vw;
+        & p {
+          margin-top: 3vw;
+        }
+      }
+      &--img {
+        position: absolute;
+        width: 70vw;
+        top: -4vw;
+        right: -26vw;
+      }
+      &--leavesC {
+        position: absolute;
+        top: 1vw;
+        left: 23vw;
+      }
+      &--blur {
+        position: absolute;
+        top: -2vw;
+        left: -19vw;
+      }
+    }
+    &-discount {
+      margin-top: 15.625vw;
+      &--img {
+        position: relative;
+      }
+      &--number {
+        @include bigNumber;
+        position: absolute;
+        right: -3vw;
+        bottom: 4vw;
+      }
+      &--title {
+        text-align: left;
+        width: 75%;
+        & p {
+          margin-top: 3vw;
+        }
+      }
+      & .programm--flex {
+        justify-content: space-between;
+      }
+    }
+  }
+}

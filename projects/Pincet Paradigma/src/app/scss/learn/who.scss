@@ -1,0 +1,74 @@
+.who {
+  background-image: url(../img/learn/who/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  padding: 30px 0;
+  &__title {
+    text-align: center;
+    max-width: 65%;
+    margin: 0 auto;
+    margin-bottom: 2.5vw;
+    &--bottom {
+      width: 80%;
+      text-align: left;
+      margin-bottom: 2.5vw;
+    }
+  }
+  &__img {
+    margin-right: 2vw;
+    position: relative;
+    & a {
+      position: absolute;
+      @include videoBtn;
+      right: 13vw;
+      bottom: 2vw;
+      & span {
+        padding: 1.5vw;
+      }
+    }
+    &--line {
+      position: absolute;
+      bottom: -4vw;
+      right: 9vw;
+      transform: rotate(99deg);
+    }
+    &--text {
+      position: absolute;
+      right: -10vw;
+      bottom: 0vw;
+      font: $fontMuseoSansCyrlLight_18;
+      color: $colorRozeDark;
+      max-width: 14.792vw;
+    }
+  }
+  &__descr {
+    text-align: center;
+    & p {
+      margin-bottom: 2vw;
+    }
+    &--bottom {
+      text-align: left;
+    }
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__leavesR {
+    position: absolute;
+    bottom: 14vw;
+    right: 5vw;
+    width: 7vw;
+  }
+  &__leavesL {
+    position: absolute;
+    top: 0;
+  }
+  &__blur {
+    position: absolute;
+    right: -10vw;
+    top: 16vw;
+  }
+}
