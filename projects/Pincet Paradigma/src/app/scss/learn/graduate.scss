@@ -1,0 +1,120 @@
+.graduate {
+  padding: 30px 0;
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 2vw;
+  }
+  &__student {
+    &-slider {
+      & .slick-slide {
+        width: 12.5vw;
+        margin-right: 15px;
+      }
+      &--wraper {
+        position: relative;
+        & .slick-disabled {
+          opacity: 0.4;
+        }
+      }
+      &--arrowR {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: -2vw;
+        cursor: pointer;
+      }
+      &--arrowL {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: -3vw;
+        cursor: pointer;
+      }
+    }
+  }
+  &__clients {
+    margin-right: 5.979vw;
+    &-title {
+      display: flex;
+      align-items: end;
+    }
+    &-link {
+      width: 11.677vw;
+    }
+    &-head {
+      width: 23.292vw;
+      margin-right: 6.667vw;
+    }
+    &-link {
+      margin-top: 1vw;
+      letter-spacing: 1.5px;
+    }
+    &-video {
+      display: flex;
+    }
+    &-left {
+      position: relative;
+      margin-right: 1vw;
+      display: flex;
+      width: 13.542vw;
+      height: 24.219vw;
+    }
+    &-center {
+      position: relative;
+      margin-right: 1vw;
+      display: flex;
+      width: 13.542vw;
+      height: 24.219vw;
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+    }
+    &-btn {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include videoBtn;
+      & span {
+        padding: 1vw;
+      }
+      & svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &-top {
+      width: 50%;
+      position: relative;
+      width: 6.51vw;
+      height: 11.458vw;
+      & span {
+        padding: 0.5vw;
+      }
+      & svg {
+        width: 15px;
+        height: 15px;
+      }
+      margin-bottom: 1vw;
+    }
+    &-bottom {
+      width: 50%;
+      position: relative;
+      width: 6.51vw;
+      height: 11.458vw;
+      & span {
+        padding: 0.5vw;
+      }
+      & svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &-img {
+      display: flex;
+    }
+  }
+}

@@ -140,3 +140,38 @@ $(".screenshots__slider-phoneSlide").slick({
   pauseOnHover: true,
   fade: true,
 });
+//graduate slider
+$(".graduate__student-slider").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  infinite: false,
+  nextArrow: $(".graduate__student-slider--arrowR"),
+  prevArrow: $(".graduate__student-slider--arrowL"),
+  autoplay: false,
+  pauseOnHover: true,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 901,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});

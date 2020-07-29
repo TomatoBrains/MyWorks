@@ -4,6 +4,11 @@
   background-size: cover;
   overflow-x: hidden;
 }
+.masage-wraper {
+  background-image: url(../img/masage/main/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .catalog-wraper {
   background-image: url(../img/catalog/main/background.png);
   background-repeat: no-repeat;
@@ -12,7 +17,7 @@
 .learn-wraper {
   background-image: url(../img/learn/main/background.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 .about-wraper {
   background-image: url(../img/about/back1.png);
