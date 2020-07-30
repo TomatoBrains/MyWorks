@@ -1,0 +1,60 @@
+.result {
+  background: no-repeat url(../img/masage/result/back.png);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  &__title {
+    text-align: center;
+    margin-bottom: 6.771vw;
+  }
+  &__content {
+    display: flex;
+    &-item {
+      display: flex;
+      margin-right: 8.333vw;
+    }
+    & div:nth-of-type(2) {
+      margin-right: 0;
+    }
+    &-before {
+      position: relative;
+      & p {
+        position: absolute;
+        top: -2vw;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+      }
+    }
+    &-after {
+      position: relative;
+      & p {
+        position: absolute;
+        top: -3vw;
+        text-align: center;
+        transform: translate(-50%);
+        left: 50%;
+        width: 100%;
+        border-radius: 7px;
+        background: linear-gradient(to top, #905fbd, #d2a7f1);
+        padding: 0.6vw 1vw;
+        color: #fff;
+        width: 14.833vw;
+      }
+    }
+  }
+  &__blur {
+    position: absolute;
+    right: -7vw;
+    bottom: -12vw;
+    z-index: -1;
+  }
+  &__leaves {
+    position: absolute;
+    left: 0;
+    top: -15vw;
+  }
+}

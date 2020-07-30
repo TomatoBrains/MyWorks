@@ -1,0 +1,56 @@
+.effect {
+  position: relative;
+  &__title {
+    text-align: center;
+    margin-bottom: 4.896vw;
+  }
+  &-wraper {
+    background: no-repeat url(../img/masage/effect/back.png);
+    background-position: top left;
+    background-size: cover;
+  }
+  &__content {
+    display: flex;
+    &-item {
+      margin-right: 3.125vw;
+    }
+    & div:nth-of-type(4) {
+      margin-right: 0;
+    }
+    &-img {
+      margin-bottom: 10px;
+      position: relative;
+      &--absolute {
+        position: absolute;
+        top: -2vw;
+        right: -2vw;
+        text-align: center;
+        width: 8.854vw;
+        & span {
+          font: $fontAppetite_30;
+          width: 8.031vw;
+          color: #fff;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          line-height: 20px;
+        }
+      }
+    }
+    &-text {
+      font: $fontMuseoSansCyrlLight_18;
+      text-align: center;
+    }
+  }
+  &__blur {
+    position: absolute;
+    top: 1vw;
+    right: -10vw;
+  }
+  &__leave {
+    position: absolute;
+    top: 10vw;
+    left: 0;
+  }
+}

@@ -1,0 +1,87 @@
+.benefit {
+  padding: 30px 0;
+  position: relative;
+  background: no-repeat url(../img/masage/benefit/back.png);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  &__title {
+    text-align: center;
+    margin-bottom: 4.167vw;
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    position: absolute;
+    left: 1vw;
+  }
+  &__list {
+    margin-left: 2vw;
+    & ul {
+      list-style: none;
+      & li {
+        display: flex;
+        align-items: center;
+        font: $fontMuseoSansCyrlLight_24;
+        margin-bottom: 2.24vw;
+        & span {
+          & img {
+            max-width: unset;
+            width: 3.188vw;
+            box-shadow: -4.9px 3.5px 79px 0 rgba(159, 96, 96, 0.3);
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin-right: 15px;
+          }
+        }
+      }
+      & li:nth-of-type(1) {
+        margin-left: -11vw;
+      }
+      & li:nth-of-type(2) {
+        margin-left: -8vw;
+      }
+      & li:nth-of-type(3) {
+        margin-left: -5vw;
+      }
+      & li:nth-of-type(4) {
+        margin-left: -2vw;
+      }
+      & li:nth-of-type(6) {
+        margin-left: -2vw;
+      }
+      & li:nth-of-type(7) {
+        margin-left: -5vw;
+      }
+      & li:nth-of-type(8) {
+        margin-left: -8vw;
+      }
+      & li:nth-of-type(9) {
+        margin-left: -11vw;
+      }
+    }
+  }
+  &__blur {
+    position: absolute;
+    right: -11vw;
+    top: 0;
+  }
+  &__leaveR {
+    top: 4vw;
+    position: absolute;
+    right: 6vw;
+  }
+  &__leaveL {
+    position: absolute;
+
+    top: 5vw;
+    left: 3vw;
+  }
+  &__leaveC {
+    position: absolute;
+    right: 5vw;
+    bottom: 19vw;
+  }
+}

@@ -54,6 +54,7 @@
     &-content {
       margin-top: 1.927vw;
       position: relative;
+      flex-grow: 5;
       & ul {
         list-style-image: url(../img/dep/complex/check.png);
         font: $fontMuseoSansCyrlLight_24;
