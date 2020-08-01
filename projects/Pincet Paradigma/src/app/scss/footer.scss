@@ -11,6 +11,12 @@
       position: absolute;
       left: -10vw;
     }
+    &-blur {
+      position: absolute;
+      top: 3vw;
+      width: 20vw;
+      z-index: -1;
+    }
   }
   &__descr {
     &-phones {
@@ -198,6 +204,9 @@
         width: 39rem;
         left: -5rem;
       }
+      &-blur {
+        width: 20rem;
+      }
     }
     &__descr {
       text-align: center;
@@ -353,6 +362,9 @@
         position: relative;
         width: 55rem;
         left: unset;
+      }
+      &-blur {
+        width: 20rem;
       }
     }
     &__descr {
@@ -511,6 +523,9 @@
         position: relative;
         width: 29rem;
         left: unset;
+      }
+      &-blur {
+        width: 20rem;
       }
     }
     &__descr {

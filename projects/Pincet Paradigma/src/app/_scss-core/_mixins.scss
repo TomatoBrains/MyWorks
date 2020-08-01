@@ -266,6 +266,15 @@
     linear-gradient(to bottom, #ed8f93, #ed8f93);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include lg_900 {
+    font-size: 4rem;
+  }
+  @include md_767 {
+    font-size: 4rem;
+  }
+  @include sm-567 {
+    font-size: 4rem;
+  }
 }
 //border dahsed btn
 @mixin dashedBtn {

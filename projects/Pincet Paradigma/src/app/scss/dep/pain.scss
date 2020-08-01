@@ -1,14 +1,40 @@
 .pain {
   padding: 60px 0;
+  @include md_767 {
+    padding: 40px 0;
+  }
+  @include sm_567 {
+    padding: 30px 0;
+  }
+  &-wraper {
+    background-image: url(../img/dep/pain/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
   &--flex {
     display: flex;
   }
   &__text {
     &-title {
+      @include md_767 {
+        text-align: center;
+      }
+      @include sm_567 {
+        text-align: center;
+      }
       & p {
         margin-top: 2.604vw;
       }
       & ul {
+        @include md_767 {
+          text-align: left;
+          margin-left: 2rem;
+        }
+        @include sm_567 {
+          text-align: left;
+          margin-left: 2rem;
+        }
         margin-top: 15px;
         list-style-image: url(../img/dep/pain/check.png);
         margin-left: 1vw;

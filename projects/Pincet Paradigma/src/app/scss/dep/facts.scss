@@ -1,5 +1,14 @@
 .facts {
   padding: 60px 0 120px 0;
+  @include lg_900 {
+    padding: 60px 0;
+  }
+  @include md_767 {
+    padding: 30px 0;
+  }
+  @include sm_567 {
+    padding: 30px 0;
+  }
   &--flex {
     display: flex;
   }
@@ -10,16 +19,49 @@
       margin-top: 20px;
       font: $fontMuseoSansCyrlLight_30;
       color: $colorRozeSubText;
+      @include lg_900 {
+        font-size: 1.6rem;
+      }
+      @include md_767 {
+        font-size: 1.5rem;
+      }
+      @include sm_567 {
+        font-size: 1.4rem;
+      }
     }
   }
   &__macbook {
     position: absolute;
     left: 0;
     width: 46.875vw;
+    @include lg_900 {
+      width: 100%;
+    }
+    @include md_767 {
+      width: 100%;
+    }
+    @include sm-567 {
+      width: 100%;
+    }
     &-btn {
       @include videoBtn;
       top: 11vw;
       left: 22vw;
+      @include lg_900 {
+        top: 28%;
+        right: 42%;
+        left: unset;
+      }
+      @include md_767 {
+        top: 28%;
+        right: 42%;
+        left: unset;
+      }
+      @include sm_567 {
+        top: 28%;
+        right: 42%;
+        left: unset;
+      }
       & span {
         padding: 1.5vw;
       }
@@ -29,12 +71,35 @@
       top: 3vw;
       right: 17vw;
       transform: rotate(235deg);
+      @include lg_900 {
+        display: none;
+      }
+      @include md_767 {
+        display: none;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
     &-descr {
       position: absolute;
       top: 5vw;
       right: 6vw;
       width: 7.031vw;
+      @include lg_900 {
+        width: 10rem;
+        right: 7vw;
+      }
+      @include md_767 {
+        width: 10rem;
+        right: 11vw;
+        top: 12vw;
+      }
+      @include sm_567 {
+        width: 10rem;
+        right: 6vw;
+        top: 7vw;
+      }
       & p {
         font: $fontMuseoSansCyrlLight_18;
         color: $colorRozeDark;
@@ -46,6 +111,14 @@
       bottom: 11vw;
       right: -12vw;
       width: 33.802vw;
+      @include md_767 {
+        width: 23rem;
+        bottom: 22vw;
+      }
+      @include sm_567 {
+        width: 23rem;
+        bottom: 22vw;
+      }
     }
     &-blur {
       position: absolute;
@@ -53,6 +126,14 @@
       right: -12vw;
       width: 30vw;
       z-index: -2;
+      @include md_767 {
+        width: 21rem;
+        right: -12vw;
+      }
+      @include sm_567 {
+        width: 21rem;
+        right: -12vw;
+      }
     }
     &-leave {
       position: absolute;
@@ -64,6 +145,16 @@
   }
   &__descr {
     margin-top: 6vw;
+    @include md_767 {
+      margin-top: -1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    @include sm_567 {
+      margin-top: -1rem;
+      display: flex;
+      flex-direction: column;
+    }
     &-content {
       display: flex;
       flex-wrap: wrap;
@@ -99,6 +190,15 @@
       @include mainBtnBlick;
       padding: 1.302vw 7.917vw 1.302vw 2.135vw;
       font: $fontMuseoSansCyrlBold_18;
+      letter-spacing: 0.45px;
+      @include md_767 {
+        padding: 2rem 0 2rem 5rem;
+        width: 25rem;
+      }
+      @include sm_567 {
+        padding: 2rem 0 2rem 5rem;
+        width: 25rem;
+      }
       & a {
         color: #fff;
       }
@@ -108,6 +208,18 @@
         justify-content: flex-end;
         margin-right: 10vw;
         margin-top: 5.208vw;
+        @include lg_900 {
+        }
+        @include md_767 {
+          margin: 2rem auto 0 auto;
+          display: inline-flex;
+          justify-content: center;
+        }
+        @include sm_567 {
+          margin: 2rem auto 0 auto;
+          justify-content: center;
+          display: inline-flex;
+        }
       }
     }
     &-clockImg {
@@ -115,6 +227,14 @@
       width: 13vw;
       bottom: 0.5vw;
       right: -5vw;
+      @include md_767 {
+        right: -28%;
+        width: 17rem;
+      }
+      @include sm_567 {
+        width: 15rem;
+        right: -21%;
+      }
     }
   }
 }

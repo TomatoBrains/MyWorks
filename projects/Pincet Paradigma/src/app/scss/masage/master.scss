@@ -1,0 +1,135 @@
+.master {
+  padding: 30px 0;
+  &--wraper {
+    background-image: url(../img/masage/master/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  &--flex {
+    display: flex;
+  }
+  &__workers {
+    margin-top: $elemMarginTop_60;
+    position: relative;
+    &-item {
+      margin-right: 100px;
+    }
+    &-card {
+      text-align: center;
+    }
+    &-img {
+      display: inline-block;
+      position: relative;
+    }
+    &-name {
+      position: absolute;
+      bottom: 3vw;
+      right: 1vw;
+      padding: 0.538vw 2.719vw;
+      background-color: #fff;
+      border-radius: 10px;
+      transform: skew(-11deg);
+      box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
+      z-index: 5;
+      & p {
+        transform: skew(10deg);
+        font-weight: 700;
+      }
+    }
+    &-master {
+      position: absolute;
+      bottom: 1vw;
+      right: 3vw;
+      padding: 1.042vw 1.885vw;
+      border-radius: 10px;
+      background-color: #fdfdfd;
+      & p {
+        font: $fontMuseoSansCyrlMed_11;
+      }
+    }
+    &-link {
+      display: inline-block;
+      margin-top: 1.563vw;
+    }
+    &-ul {
+      & ul {
+        margin-top: 2.083vw;
+        list-style-image: url(../img/qualification/check.png);
+        & li {
+          font: $fontMuseoSansCyrlLight_18;
+        }
+      }
+    }
+  }
+  &__descr {
+    &-title {
+      margin: 3.146vw 0 1.5vw 0;
+    }
+    &-text {
+      & p {
+        margin-bottom: 1.5vw;
+        font: $fontMuseoSansCyrlLight_18;
+      }
+    }
+    &-diploms {
+      &--title {
+        margin-top: 4.167vw;
+        margin-bottom: 1.5vw;
+      }
+    }
+  }
+  &__certificate {
+    padding: 0 6.25vw;
+    position: relative;
+    display: flex;
+    margin-top: 4.792vw;
+    &--wraper {
+      display: flex;
+    }
+    &-descr {
+      text-align: left;
+      width: 14.323vw;
+      padding-right: 3.906vw;
+    }
+    &-items {
+      width: 81%;
+      position: relative;
+      margin-left: 4vw;
+    }
+    &-link {
+      display: inline-block;
+      margin-top: 1.302vw;
+    }
+    &--wraper {
+      position: relative;
+    }
+    &-img {
+      position: absolute;
+      z-index: 2;
+      left: -5vw;
+      bottom: -1vw;
+      width: 13.292vw;
+    }
+    &-background {
+      @include zoomBackground;
+    }
+    &-zoom {
+      @include zoomIcon;
+    }
+    &-item {
+      position: relative;
+      margin-right: 10px;
+      &:hover .master__certificate-background {
+        opacity: 0.4;
+      }
+      &:hover .master__certificate-zoom {
+        opacity: 1;
+      }
+    }
+  }
+}

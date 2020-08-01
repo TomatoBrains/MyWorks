@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.masage__result-wraper {
+  background-image: url(../img/masage/result/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .catalog-wraper {
   background-image: url(../img/catalog/main/background.png);
   background-repeat: no-repeat;
@@ -142,5 +147,144 @@ summary {
   & > span {
     display: inline-block;
     transition: transform 0.2s;
+  }
+}
+.flexWrap {
+  @include lg_900 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include md_767 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include sm-567 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.posRel {
+  @include lg_900 {
+    position: relative;
+  }
+  @include md_767 {
+    position: relative;
+  }
+  @include sm-567 {
+    position: relative;
+  }
+}
+.mtxt {
+  & p {
+    @include lg_900 {
+      font-size: 1.6rem;
+      width: auto;
+    }
+    @include md_767 {
+      font-size: 1.5rem;
+      width: auto;
+    }
+    @include sm-567 {
+      font-size: 1.4rem;
+      width: auto;
+    }
+    & span {
+      @include lg_900 {
+        font-size: 1.6rem;
+      }
+      @include md_767 {
+        font-size: 1.5rem;
+      }
+      @include sm-567 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  & a {
+    @include lg_900 {
+      font-size: 1.6rem;
+    }
+    @include md_767 {
+      font-size: 1.5rem;
+    }
+    @include sm-567 {
+      font-size: 1.4rem;
+    }
+  }
+  & li {
+    @include lg_900 {
+      font-size: 1.6rem !important;
+    }
+    @include md_767 {
+      font-size: 1.5rem !important;
+    }
+    @include sm-567 {
+      font-size: 1.4rem !important;
+    }
+  }
+}
+.mbtxt {
+  & p {
+    @include lg_900 {
+      font-size: 2rem;
+      width: auto;
+    }
+    @include md_767 {
+      font-size: 2rem;
+      width: auto;
+    }
+    @include sm-567 {
+      font-size: 2rem;
+      width: auto;
+    }
+    & span {
+      @include lg_900 {
+        font-size: 2rem;
+      }
+      @include md_767 {
+        font-size: 2rem;
+      }
+      @include sm-567 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.ptxtsm {
+  & p {
+    @include lg_900 {
+      font-size: 1.4rem;
+    }
+    @include md_767 {
+      font-size: 1.3rem;
+    }
+    @include sm-567 {
+      font-size: 1.2rem;
+    }
+    & span {
+      @include lg_900 {
+        font-size: 1.4rem;
+      }
+      @include md_767 {
+        font-size: 1.3rem;
+      }
+      @include sm-567 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.btnTxt {
+  @include lg_900 {
+    font-size: 1.8rem;
+  }
+  @include md_767 {
+    font-size: 1.7rem;
+  }
+  @include sm-567 {
+    font-size: 1.6rem;
   }
 }

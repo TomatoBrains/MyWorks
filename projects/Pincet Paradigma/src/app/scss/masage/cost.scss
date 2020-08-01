@@ -1,0 +1,346 @@
+.costMas {
+  padding-top: 6vw;
+  position: relative;
+  background: none;
+  &--flex {
+    display: flex;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 3vw;
+    position: relative;
+    &-leave {
+      position: absolute;
+      top: -8vw;
+      right: -4vw;
+    }
+  }
+  &__calc {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -0.8px 0.6px 150px 0 rgba(139, 117, 118, 0.1);
+    padding: 2vw 0;
+    margin-right: 1vw;
+    position: relative;
+    &-proc {
+      display: flex;
+      align-items: center;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      justify-content: space-between;
+      &--number {
+        font: $fontMuseoSansCyrlBold_36;
+      }
+      &--icons {
+        font: $fontMuseoSansCyrlBold_36;
+        color: $colorRozeSubText;
+        display: flex;
+        align-items: center;
+        border: 1px dashed $colorRozeLighter;
+        border-radius: 15px;
+        padding: 1vw;
+        & > span {
+          margin-right: 1vw;
+          margin-left: 1vw;
+          font: $fontMuseoSansCyrlLight_18;
+          color: #000;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: 3.385vw;
+          & img {
+            margin-bottom: 10px;
+          }
+        }
+        & span:nth-of-type(1) {
+          margin-left: 0;
+        }
+        & span:nth-of-type(4) {
+          margin-right: 0;
+        }
+      }
+    }
+    &-main {
+      padding: 1.823vw 0;
+      border-radius: 10px;
+      position: relative;
+    }
+    &-switch {
+      display: flex;
+      align-items: center;
+      &--women {
+        border-bottom: 1px dashed #000;
+        margin-right: 4.167vw;
+        cursor: pointer;
+        & a {
+          font: $fontMuseoSansCyrlLight_48;
+        }
+      }
+      &--men {
+        @include mainBtn;
+        padding: 1.875vw 4.427vw;
+        border-radius: 57.5px;
+        cursor: pointer;
+        & a {
+          font: $fontMuseoSansCyrlLight_48;
+          color: #fff;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+      padding-left: 2vw;
+      &-title {
+        border-bottom: none;
+        & p {
+          font: $fontMuseoSansCyrlBold_24;
+          & span {
+            font-size: 0.8vw;
+          }
+        }
+      }
+      & p:nth-of-type(1) {
+        width: 45%;
+        margin-right: 4vw;
+      }
+      & p:nth-of-type(2) {
+        width: 25%;
+      }
+      & p:nth-of-type(3) {
+        width: 15%;
+      }
+      & p:nth-of-type(4) {
+        width: 15%;
+      }
+      & p {
+        font-size: 1.094vw;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      & label {
+        font-size: 1.094vw;
+        font-weight: 300;
+        margin-bottom: 7px;
+        margin-top: 7px;
+        width: 95px;
+      }
+    }
+    &-total {
+      display: flex;
+      align-items: center;
+      margin: 0 2.375vw;
+      & > p {
+        font: $fontMuseoSansCyrlBold_30;
+        margin-right: 20px;
+      }
+      &--wraper {
+        @include dashedBtn;
+        padding: 6px 7px;
+      }
+      &-descr {
+        display: flex;
+      }
+      &-full {
+        margin-right: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.823vw;
+        color: #fff;
+        text-align: center;
+        & p {
+          font: $fontMuseoSansCyrlLight_16;
+          width: 9.844vw;
+        }
+        & .tbig {
+          font: $fontMuseoSansCyrlLight_30;
+        }
+      }
+      &-discount {
+        background-color: #fff;
+        border-radius: 15px;
+        margin: 0.729vw 0.729vw 0.729vw 0;
+        padding: 1.042vw 1.563vw;
+        display: flex;
+        align-items: center;
+        & p {
+          font: $fontMuseoSansCyrlBold_16;
+          margin-right: 20px;
+          width: 10vw;
+        }
+        & .tbig {
+          font: $fontMuseoSansCyrlLight_30;
+          width: 4.844vw;
+          margin: 0;
+        }
+      }
+    }
+    &-blur {
+      position: absolute;
+      top: -11vw;
+      right: -11vw;
+      z-index: -1;
+    }
+    &-line {
+      position: absolute;
+      z-index: 2;
+      bottom: -12vw;
+      width: 8vw;
+      left: 1vw;
+    }
+  }
+  &__cards {
+    border-radius: 10px;
+    box-shadow: -0.8px 0.6px 150px 0 rgba(139, 117, 118, 0.1);
+    background-color: #ffffff;
+    padding: 3.2vw 1.4vw 1.4vw 1.4vw;
+    position: relative;
+    &-title {
+      text-align: center;
+      margin-bottom: 1vw;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      &--img {
+        width: 6.25vw;
+        margin-right: 1.5vw;
+      }
+      &--text {
+      }
+      &--smtext {
+        font: $fontMuseoSansCyrlLight_16;
+        & span {
+          font: $fontMuseoSansCyrlBold_24;
+          margin-left: 5px;
+        }
+      }
+      &--bgtext {
+        font: $fontAppetite_72;
+        & span {
+          font: $fontAppetite_36;
+        }
+      }
+      &--wraper {
+        font: $fontMuseoSansCyrlMed_19 !important;
+        border-radius: 7px;
+        background-image: linear-gradient(to top, #905fbd, #d2a7f1);
+        padding: 0.5vw 1vw;
+        color: #fff;
+      }
+    }
+    &-present {
+      @include dashedBtn;
+      color: #fff;
+      margin-top: 2vw;
+      &--wraper {
+        position: relative;
+        padding: 1.2vw 0 1.2vw 1vw;
+        & p {
+          width: 20.531vw;
+        }
+        & img {
+          position: absolute;
+          right: 0;
+          top: -1.5vw;
+          width: 9vw;
+        }
+      }
+    }
+    &-leaves {
+      position: absolute;
+      top: 45%;
+      width: 5vw;
+      right: 0;
+    }
+    &-line {
+      position: absolute;
+      bottom: -12vw;
+      width: 8vw;
+      right: 1vw;
+      z-index: 2;
+    }
+  }
+  &__sign {
+    margin: 2.5vw auto 0 auto;
+    font: $fontMuseoSansCyrlLight_18;
+    color: $colorRozeDark;
+    width: 60%;
+    text-align: center;
+  }
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: $colorRozeDark;
+}
+input[type="checkbox"]:not(:checked) + label:before {
+  background-color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  right: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  background-color: $colorRozeDark;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

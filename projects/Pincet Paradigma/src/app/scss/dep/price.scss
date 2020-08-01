@@ -1,6 +1,10 @@
 .price {
   padding: 60px 0;
   position: relative;
+  background-image: url(../img/dep/price/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   &--flex {
     display: flex;
   }
@@ -8,12 +12,43 @@
     text-align: center;
     width: 50vw;
     margin: 0 auto 3.125vw auto;
+    @include lg_900 {
+      width: 100%;
+    }
+    @include md_767 {
+      width: 100%;
+    }
+    @include sm_567 {
+      width: 100%;
+    }
   }
   &__example {
     position: relative;
     margin-top: 9vw;
+    &-wraper {
+      position: relative;
+      display: inline-flex;
+    }
+    @include lg_900 {
+      text-align: center;
+    }
+    @include md_767 {
+      text-align: center;
+    }
+    @include sm_567 {
+      text-align: center;
+    }
     & > img {
       max-height: 53.49vw;
+      @include lg_900 {
+        max-height: 100%;
+      }
+      @include md_767 {
+        max-height: 100%;
+      }
+      @include sm_567 {
+        max-height: 100%;
+      }
     }
     &-action {
       position: absolute;
@@ -24,10 +59,31 @@
         width: 5.208vw;
         margin-left: 5px;
         font-size: 0.833vw;
+        @include lg_900 {
+          font-size: 1.6rem;
+        }
+        @include md_767 {
+          font-size: 1.5rem;
+        }
+        @include sm_567 {
+          font-size: 1.4rem;
+        }
       }
       & img {
         width: 1.302vw;
         height: 1.563vw;
+        @include lg_900 {
+          width: 4rem;
+          height: auto;
+        }
+        @include md_767 {
+          width: 4rem;
+          height: auto;
+        }
+        @include sm_567 {
+          width: 4rem;
+          height: auto;
+        }
       }
     }
     &-descr {
@@ -36,54 +92,63 @@
       & > img {
         width: 2.5vw;
         cursor: pointer;
+        @include lg_900 {
+          width: 4rem;
+        }
+        @include md_767 {
+          width: 4rem;
+        }
+        @include sm_567 {
+          width: 4rem;
+        }
       }
       &:hover .price__example-info {
         display: block;
         z-index: -1;
       }
       &.dot1 {
-        top: 2vw;
-        right: 12vw;
+        top: 5%;
+        right: 33%;
       }
       &.dot2 {
-        top: 7vw;
-        right: 10vw;
+        top: 13%;
+        right: 22%;
       }
       &.dot3 {
-        top: 8vw;
-        left: 5vw;
+        top: 14%;
+        left: 29%;
       }
       &.dot4 {
-        top: 11vw;
-        left: 6vw;
+        top: 21%;
+        left: 29%;
       }
       &.dot5 {
-        top: 12vw;
-        right: 7vw;
+        top: 23%;
+        right: 6%;
       }
       &.dot6 {
-        top: 17vw;
-        left: 2vw;
+        top: 31%;
+        left: 9%;
       }
       &.dot7 {
-        top: 19vw;
-        right: 12vw;
+        top: 36%;
+        right: 31%;
       }
       &.dot8 {
-        top: 20vw;
-        right: 8vw;
+        top: 37%;
+        right: 14%;
       }
       &.dot9 {
-        top: 22vw;
-        right: 11vw;
+        top: 42%;
+        right: 26%;
       }
       &.dot10 {
-        top: 25vw;
-        left: 8vw;
+        top: 47%;
+        left: 45%;
       }
       &.dot11 {
-        bottom: 15vw;
-        right: 12vw;
+        top: 68%;
+        right: 34%;
       }
     }
     &-info {
@@ -93,6 +158,35 @@
       z-index: 1;
       top: -5.5vw;
       right: 0;
+      @include lg_900 {
+        width: 25rem;
+        top: unset;
+        bottom: 0;
+      }
+      @include md_767 {
+        width: 25rem;
+        top: unset;
+        bottom: 0;
+      }
+      @include sm_567 {
+        width: 15rem;
+        top: unset;
+        bottom: 0;
+      }
+      &.info6 {
+        @include lg_900 {
+          left: 0;
+          right: unset;
+        }
+        @include md_767 {
+          left: 0;
+          right: unset;
+        }
+        @include sm_567 {
+          left: 0;
+          right: unset;
+        }
+      }
       &--wrapper {
         padding: 6px;
         background-color: #fff;
@@ -106,14 +200,41 @@
       border-radius: 10px;
       & p:nth-of-type(1) {
         font-size: 0.938vw;
+        @include lg_900 {
+          font-size: 1.6rem;
+        }
+        @include md_767 {
+          font-size: 1.5rem;
+        }
+        @include sm_567 {
+          font-size: 1.4rem;
+        }
       }
       & p:nth-of-type(2) {
         font-size: 0.729vw;
         margin-top: 10px;
+        @include lg_900 {
+          font-size: 1.6rem;
+        }
+        @include md_767 {
+          font-size: 1.5rem;
+        }
+        @include sm_567 {
+          font-size: 1.4rem;
+        }
       }
       & p:nth-of-type(3) {
         font-size: 0.938vw;
         margin-top: 10px;
+        @include lg_900 {
+          font-size: 1.6rem;
+        }
+        @include md_767 {
+          font-size: 1.5rem;
+        }
+        @include sm_567 {
+          font-size: 1.4rem;
+        }
       }
     }
     &-leave {
@@ -123,9 +244,18 @@
     }
   }
   &__calc {
+    @include lg_900 {
+      margin-top: 2rem;
+    }
+    @include md_767 {
+      margin-top: 2rem;
+    }
+    @include sm_567 {
+      margin-top: 2rem;
+    }
     &-main {
       padding: 1.823vw 0;
-      background-color: #ddd;
+      background-color: #fff;
       border-radius: 10px;
       margin-top: 2vw;
       position: relative;
@@ -133,6 +263,15 @@
     &-switch {
       display: flex;
       align-items: center;
+      @include lg_900 {
+        justify-content: center;
+      }
+      @include md_767 {
+        justify-content: center;
+      }
+      @include sm_567 {
+        justify-content: center;
+      }
       &--women {
         border-bottom: 1px dashed #000;
         margin-right: 4.167vw;
@@ -164,24 +303,101 @@
             font-size: 0.8vw;
           }
         }
+        &--column {
+          @include lg_900 {
+            display: flex;
+            flex-direction: column;
+          }
+          @include md_767 {
+            display: flex;
+            flex-direction: column;
+          }
+          @include sm_567 {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      & label {
+        width: 80%;
+        @include lg_900 {
+          width: 50%;
+        }
+        @include md_767 {
+          width: 50%;
+        }
       }
       & p:nth-of-type(1) {
         width: 45%;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 27%;
+        }
       }
       & p:nth-of-type(2) {
         width: 25%;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 18%;
+        }
       }
       & p:nth-of-type(3) {
         width: 15%;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 27%;
+        }
       }
       & p:nth-of-type(4) {
         width: 15%;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 27%;
+        }
       }
       & div:nth-of-type(1) {
         width: 15%;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 30%;
+        }
       }
       & div:nth-of-type(2) {
         width: 15%;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 30%;
+        }
       }
       & p {
         font-size: 1.094vw;
@@ -193,15 +409,48 @@
         font-weight: 300;
         margin-bottom: 7px;
         margin-top: 7px;
+        @include lg_900 {
+          font-size: 1.4rem;
+        }
+        @include md_767 {
+          font-size: 1.3rem;
+        }
+        @include sm_567 {
+          font-size: 1.2rem;
+        }
       }
     }
     &-total {
       display: flex;
       align-items: center;
       margin: 2vw 4.375vw 0 4.375vw;
+      @include lg_900 {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      @include md_767 {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      @include sm_567 {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
       & > p {
         font: $fontMuseoSansCyrlBold_30;
         margin-right: 20px;
+        @include lg_900 {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+        @include md_767 {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+        @include sm_567 {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
       }
       &--wraper {
         @include dashedBtn;
@@ -224,6 +473,15 @@
         }
         & .tbig {
           font: $fontMuseoSansCyrlLight_30;
+          @include lg_900 {
+            font-size: 2rem;
+          }
+          @include md_767 {
+            font-size: 2rem;
+          }
+          @include sm_567 {
+            font-size: 2rem;
+          }
         }
       }
       &-discount {
@@ -242,6 +500,18 @@
           font: $fontMuseoSansCyrlLight_30;
           width: 4.844vw;
           margin: 0;
+          @include lg_900 {
+            font-size: 2rem;
+            width: auto;
+          }
+          @include md_767 {
+            font-size: 2rem;
+            width: auto;
+          }
+          @include sm_567 {
+            font-size: 2rem;
+            width: auto;
+          }
         }
       }
     }
@@ -270,15 +540,24 @@ input[type="radio"]:checked + label,
 input[type="radio"]:not(:checked) + label {
   display: inline-block;
   position: relative;
-  padding-left: 40px;
+  padding-right: 40px;
   cursor: pointer;
+  @include lg_900 {
+    padding-right: 0;
+  }
+  @include md_767 {
+    padding-right: 0;
+  }
+  @include sm_567 {
+    padding-right: 0;
+  }
 }
 
 input[type="radio"]:checked + label:before,
 input[type="radio"]:not(:checked) + label:before {
   content: "";
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 0px;
   width: 18px;
   height: 18px;
@@ -288,7 +567,7 @@ input[type="radio"]:not(:checked) + label:before {
 input[type="radio"]:not(:checked) + label:before {
   background-color: #fff;
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 0px;
   width: 18px;
   height: 18px;
@@ -312,7 +591,7 @@ input[type="radio"]:not(:checked) + label:after {
 
 input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
-  left: 3px;
+  right: 3px;
   top: 4px;
   width: 10px;
   height: 5px;

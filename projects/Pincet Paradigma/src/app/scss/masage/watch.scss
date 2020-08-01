@@ -1,8 +1,5 @@
 .watch {
   padding: 30px 0;
-  background: no-repeat url(../img/masage/watch/back.png);
-  background-position: top;
-  background-size: cover;
   position: relative;
   &__title {
     margin-bottom: 3.646vw;
@@ -16,6 +13,29 @@
     width: 57vw;
     left: 4vw;
     top: 6.5vw;
+    &-btn {
+      @include videoBtn;
+      top: 12vw;
+      left: 21vw;
+      & span {
+        padding: 1.5vw;
+      }
+    }
+    &-text {
+      position: absolute;
+      font: $fontMuseoSansCyrlLight_18;
+      color: $colorRozeDark;
+      width: 7.854vw;
+      text-align: right;
+      top: 5vw;
+      right: 19vw;
+    }
+    &-line {
+      position: absolute;
+      left: -6vw;
+      top: 1vw;
+      width: 7vw;
+    }
   }
   &__content {
     &-row {
