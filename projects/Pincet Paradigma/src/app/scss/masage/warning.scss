@@ -8,18 +8,37 @@
   }
   &__descr {
     position: relative;
-    padding: 2.5vw 4vw;
+    padding: 2.5vw 4vw 2.5vw 7vw;
     text-align: center;
     border-radius: 15px;
     box-shadow: -0.8px 0.6px 59px 0 rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to top, #905fbd, #d2a7f1);
     font: $fontMuseoSansCyrlBold_30;
+    @include lg_900 {
+      padding-left: 10rem;
+    }
+    @include md_767 {
+      padding-left: 10rem;
+    }
     color: #fff;
     border: 1px dashed #fff;
     &-icon {
       position: absolute;
       left: -4vw;
       top: 0.5vw;
+      @include lg_900 {
+        width: 12rem;
+        left: -1%;
+        top: -8%;
+      }
+      @include md_767 {
+        width: 12rem;
+        left: -1%;
+        top: -8%;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
   }
 }

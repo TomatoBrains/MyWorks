@@ -575,10 +575,6 @@ input[type="radio"]:not(:checked) + label:before {
   border-radius: 5px;
 }
 
-input[type="radio"]:checked + label:before,
-input[type="radio"]:not(:checked) + label:before {
-}
-
 input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
   content: "";

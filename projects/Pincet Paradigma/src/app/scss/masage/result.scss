@@ -8,9 +8,18 @@
   }
   &__content {
     display: flex;
+    justify-content: space-between;
     &-item {
       display: flex;
-      margin-right: 8.333vw;
+      @include lg_900 {
+        margin-top: 3rem;
+      }
+      @include md_767 {
+        margin-top: 3rem;
+      }
+      @include sm_567 {
+        margin-top: 3rem;
+      }
     }
     & div:nth-of-type(2) {
       margin-right: 0;
@@ -24,6 +33,15 @@
         left: 50%;
         transform: translate(-50%);
         width: 100%;
+        @include lg_900 {
+          top: -2rem;
+        }
+        @include md_767 {
+          top: -2rem;
+        }
+        @include sm_567 {
+          top: -2rem;
+        }
       }
     }
     &-after {
@@ -40,6 +58,18 @@
         padding: 0.6vw 1vw;
         color: #fff;
         width: 14.833vw;
+        @include lg_900 {
+          width: 22rem;
+          top: -2rem;
+        }
+        @include md_767 {
+          width: 22rem;
+          top: -2rem;
+        }
+        @include sm_567 {
+          width: 15rem;
+          top: -2rem;
+        }
       }
     }
   }
@@ -48,10 +78,28 @@
     right: -7vw;
     bottom: -12vw;
     z-index: -1;
+    @include lg_900 {
+      width: 13rem;
+    }
+    @include md_767 {
+      width: 13rem;
+    }
+    @include sm_567 {
+      width: 13rem;
+    }
   }
   &__leaves {
     position: absolute;
     left: 0;
     top: -15vw;
+    @include lg_900 {
+      width: 3rem;
+    }
+    @include md_767 {
+      width: 3rem;
+    }
+    @include sm_567 {
+      width: 3rem;
+    }
   }
 }

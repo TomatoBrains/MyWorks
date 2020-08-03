@@ -160,7 +160,7 @@ summary {
     flex-wrap: wrap;
     justify-content: center;
   }
-  @include sm-567 {
+  @include sm_567 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -173,45 +173,54 @@ summary {
   @include md_767 {
     position: relative;
   }
-  @include sm-567 {
+  @include sm_567 {
     position: relative;
   }
 }
 .mtxt {
+  @include lg_900 {
+    font-size: 1.6rem !important;
+  }
+  @include md_767 {
+    font-size: 1.5rem !important;
+  }
+  @include sm_567 {
+    font-size: 1.4rem !important;
+  }
   & p {
     @include lg_900 {
-      font-size: 1.6rem;
+      font-size: 1.6rem !important;
       width: auto;
     }
     @include md_767 {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
       width: auto;
     }
-    @include sm-567 {
-      font-size: 1.4rem;
+    @include sm_567 {
+      font-size: 1.4rem !important;
       width: auto;
     }
     & span {
       @include lg_900 {
-        font-size: 1.6rem;
+        font-size: 1.6rem !important;
       }
       @include md_767 {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
       }
-      @include sm-567 {
-        font-size: 1.4rem;
+      @include sm_567 {
+        font-size: 1.4rem !important;
       }
     }
   }
   & a {
     @include lg_900 {
-      font-size: 1.6rem;
+      font-size: 1.6rem !important;
     }
     @include md_767 {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
     }
-    @include sm-567 {
-      font-size: 1.4rem;
+    @include sm_567 {
+      font-size: 1.4rem !important;
     }
   }
   & li {
@@ -221,12 +230,24 @@ summary {
     @include md_767 {
       font-size: 1.5rem !important;
     }
-    @include sm-567 {
+    @include sm_567 {
       font-size: 1.4rem !important;
     }
   }
 }
 .mbtxt {
+  @include lg_900 {
+    font-size: 2rem;
+    width: auto;
+  }
+  @include md_767 {
+    font-size: 2rem;
+    width: auto;
+  }
+  @include sm_567 {
+    font-size: 2rem;
+    width: auto;
+  }
   & p {
     @include lg_900 {
       font-size: 2rem;
@@ -236,7 +257,7 @@ summary {
       font-size: 2rem;
       width: auto;
     }
-    @include sm-567 {
+    @include sm_567 {
       font-size: 2rem;
       width: auto;
     }
@@ -247,13 +268,46 @@ summary {
       @include md_767 {
         font-size: 2rem;
       }
-      @include sm-567 {
+      @include sm_567 {
+        font-size: 2rem;
+      }
+    }
+  }
+  & a {
+    @include lg_900 {
+      font-size: 2rem;
+    }
+    @include md_767 {
+      font-size: 2rem;
+    }
+    @include sm_567 {
+      font-size: 2rem;
+    }
+  }
+  & ul {
+    & li {
+      @include lg_900 {
+        font-size: 2rem;
+      }
+      @include md_767 {
+        font-size: 2rem;
+      }
+      @include sm_567 {
         font-size: 2rem;
       }
     }
   }
 }
 .ptxtsm {
+  @include lg_900 {
+    font-size: 1.4rem !important;
+  }
+  @include md_767 {
+    font-size: 1.3rem !important;
+  }
+  @include sm_567 {
+    font-size: 1.2rem !important;
+  }
   & p {
     @include lg_900 {
       font-size: 1.4rem;
@@ -261,7 +315,7 @@ summary {
     @include md_767 {
       font-size: 1.3rem;
     }
-    @include sm-567 {
+    @include sm_567 {
       font-size: 1.2rem;
     }
     & span {
@@ -271,7 +325,7 @@ summary {
       @include md_767 {
         font-size: 1.3rem;
       }
-      @include sm-567 {
+      @include sm_567 {
         font-size: 1.2rem;
       }
     }
@@ -284,7 +338,7 @@ summary {
   @include md_767 {
     font-size: 1.7rem;
   }
-  @include sm-567 {
+  @include sm_567 {
     font-size: 1.6rem;
   }
 }

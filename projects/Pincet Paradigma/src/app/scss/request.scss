@@ -99,6 +99,9 @@
 }
 @include lg_900 {
   .request {
+    &__title {
+      margin-bottom: 1rem;
+    }
     &__form {
       flex-wrap: wrap;
       padding: 2rem;
@@ -190,6 +193,9 @@
 }
 @include md_767 {
   .request {
+    &__title {
+      margin-bottom: 1rem;
+    }
     &__form {
       flex-wrap: wrap;
       padding: 2rem;
@@ -281,6 +287,9 @@
 }
 @include sm_567 {
   .request {
+    &__title {
+      margin-bottom: 1rem;
+    }
     &__form {
       flex-wrap: wrap;
       padding: 1.5rem;

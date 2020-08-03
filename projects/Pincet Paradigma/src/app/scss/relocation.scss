@@ -68,7 +68,6 @@
       right: -3vw;
       width: 8.802vw;
       & p {
-        //font: $fontMuseoSansCyrlLight_18;
         color: $colorRozeDark;
       }
     }
@@ -77,11 +76,6 @@
       right: -3vw;
       bottom: 5vw;
       width: 1.875vw;
-    }
-  }
-  &__title {
-    & h2 {
-      // font: $fontMuseoSansCyrlBold_48;
     }
   }
   &__mapBtn {
@@ -121,7 +115,6 @@
   &__descr {
     margin-top: $elemMarginTop_60;
     & p {
-      //font: $fontMuseoSansCyrlLight_24;
       & span {
         font: $fontMuseoSansCyrlBold_24;
       }

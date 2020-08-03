@@ -18,7 +18,28 @@
     position: relative;
     &-item {
       margin-right: 100px;
+      @include lg_900 {
+        margin-right: 0;
+      }
+      @include md_767 {
+        margin-right: 0;
+      }
+      @include sm_567 {
+        margin-right: 0;
+      }
     }
+    &-descr {
+      @include lg_900 {
+        text-align: center;
+      }
+      @include md_767 {
+        text-align: center;
+      }
+      @include sm_567 {
+        text-align: center;
+      }
+    }
+    text-align: left;
     &-card {
       text-align: center;
     }
@@ -36,6 +57,21 @@
       transform: skew(-11deg);
       box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
       z-index: 5;
+      @include lg_900 {
+        bottom: 12rem;
+        padding: 1rem 3rem;
+        right: 3rem;
+      }
+      @include md_767 {
+        bottom: 12rem;
+        padding: 1rem 3rem;
+        right: 3rem;
+      }
+      @include sm_567 {
+        bottom: 12rem;
+        padding: 1rem 3rem;
+        right: 3rem;
+      }
       & p {
         transform: skew(10deg);
         font-weight: 700;
@@ -48,6 +84,21 @@
       padding: 1.042vw 1.885vw;
       border-radius: 10px;
       background-color: #fdfdfd;
+      @include lg_900 {
+        bottom: 8rem;
+        width: 17rem;
+        right: 2rem;
+      }
+      @include md_767 {
+        bottom: 8rem;
+        width: 17rem;
+        right: 2rem;
+      }
+      @include sm_567 {
+        bottom: 8rem;
+        width: 17rem;
+        right: 2rem;
+      }
       & p {
         font: $fontMuseoSansCyrlMed_11;
       }
@@ -57,9 +108,33 @@
       margin-top: 1.563vw;
     }
     &-ul {
+      @include lg_900 {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+      }
+      @include md_767 {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+      }
+      @include sm_567 {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+      }
       & ul {
         margin-top: 2.083vw;
         list-style-image: url(../img/qualification/check.png);
+        @include lg_900 {
+          margin-left: 2rem;
+        }
+        @include md_767 {
+          margin-left: 2rem;
+        }
+        @include sm_567 {
+          margin-left: 2rem;
+        }
         & li {
           font: $fontMuseoSansCyrlLight_18;
         }
@@ -80,6 +155,15 @@
       &--title {
         margin-top: 4.167vw;
         margin-bottom: 1.5vw;
+        @include lg_900 {
+          text-align: center;
+        }
+        @include md_767 {
+          text-align: center;
+        }
+        @include sm_567 {
+          text-align: center;
+        }
       }
     }
   }
@@ -114,6 +198,15 @@
       left: -5vw;
       bottom: -1vw;
       width: 13.292vw;
+      @include lg_900 {
+        display: none;
+      }
+      @include md_767 {
+        display: none;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
     &-background {
       @include zoomBackground;
@@ -124,6 +217,15 @@
     &-item {
       position: relative;
       margin-right: 10px;
+      @include lg_900 {
+        margin-bottom: 1rem;
+      }
+      @include md_767 {
+        margin-bottom: 1rem;
+      }
+      @include sm_567 {
+        margin-bottom: 1rem;
+      }
       &:hover .master__certificate-background {
         opacity: 0.4;
       }

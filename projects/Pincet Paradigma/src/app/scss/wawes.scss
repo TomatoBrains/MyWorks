@@ -10,6 +10,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    @include lg_900 {
+      top: 3rem;
+    }
+    @include md_767 {
+      top: 3rem;
+    }
+    @include sm_567 {
+      top: 3rem;
+    }
   }
   &--margin {
     margin-top: 3.646vw;

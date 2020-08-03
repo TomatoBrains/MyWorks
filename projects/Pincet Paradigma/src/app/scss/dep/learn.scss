@@ -1,8 +1,10 @@
 .learn {
+  padding: 30px 0;
   &--wraper {
-    background-image: url(../img/dep/learn/background.png);
+    background-image: url(../img/dep/learn/back1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     display: flex;
   }
   &--flex {
@@ -12,14 +14,43 @@
     text-align: center;
     width: 85%;
     margin: 2vw auto;
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
+    }
   }
   &__diplom {
     position: relative;
+    @include lg_900 {
+      width: 60rem;
+      margin: 0 auto 2rem auto;
+    }
+    @include md_767 {
+      width: 50rem;
+      margin: 0 auto 2rem auto;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
+    }
     &-leave {
       position: absolute;
       bottom: -4vw;
       left: -10vw;
       width: 24vw;
+      @include lg_900 {
+        width: calc(100% / 1.5);
+      }
+      @include md_767 {
+        width: calc(100% / 1.5);
+      }
+      @include sm_567 {
+        width: calc(100% / 1.5);
+      }
     }
   }
   &__descr {
@@ -28,6 +59,15 @@
       text-align: center;
       & p {
         font: $fontMuseoSansCyrlLight_30;
+        @include lg_900 {
+          font-size: 1.8rem;
+        }
+        @include md_767 {
+          font-size: 1.7rem;
+        }
+        @include sm_567 {
+          font-size: 1.6rem;
+        }
       }
     }
     &-tabs {
@@ -50,6 +90,15 @@
         border-radius: 10px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        @include lg_900 {
+          width: 100%;
+        }
+        @include md_767 {
+          width: 100%;
+        }
+        @include sm_567 {
+          width: 100%;
+        }
       }
       &--first {
         margin-right: 20px;
@@ -60,6 +109,15 @@
         border-radius: 10px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        @include lg_900 {
+          width: 17rem;
+        }
+        @include md_767 {
+          width: 15rem;
+        }
+        @include sm_567 {
+          width: 12rem;
+        }
       }
     }
     &-content {
@@ -71,6 +129,15 @@
     &-text {
       width: 27.375vw;
       margin-right: 2.083vw;
+      @include lg_900 {
+        width: auto;
+      }
+      @include md_767 {
+        width: auto;
+      }
+      @include sm_567 {
+        width: auto;
+      }
       & p {
         font: $fontMuseoSansCyrlLight_16;
         margin-bottom: 1.875vw;
@@ -82,6 +149,18 @@
           background: url(../img/dep/learn/check.png) no-repeat left center;
           padding-left: 1.5vw;
           margin-bottom: 1vw;
+          @include lg_900 {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+          }
+          @include md_767 {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+          }
+          @include sm_567 {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
@@ -101,6 +180,15 @@
         & p {
           position: absolute;
           font: $fontMuseoSansCyrlBold_48;
+          @include lg_900 {
+            font-size: 4rem !important;
+          }
+          @include md_767 {
+            font-size: 4rem !important;
+          }
+          @include sm_567 {
+            font-size: 4rem !important;
+          }
           color: #fff;
           & span {
             font: $fontMuseoSansCyrlLight_18;
@@ -111,8 +199,8 @@
         display: flex;
         align-items: center;
         & p {
-          right: 3.5vw;
-          top: 1.5vw;
+          top: 30%;
+          right: 54%;
         }
         & .learn__descr-clarification--text {
           margin-right: 1vw;
@@ -122,9 +210,18 @@
         display: flex;
         margin-top: 2vw;
         text-align: center;
+        @include lg_900 {
+          align-items: center;
+        }
+        @include md_767 {
+          align-items: center;
+        }
+        @include sm_567 {
+          align-items: center;
+        }
         & p {
-          right: 7vw;
-          top: 1.5vw;
+          right: 59%;
+          top: 21%;
         }
         & .learn__descr-clarification--text {
           margin-top: 1vw;

@@ -1,18 +1,37 @@
 .complex {
   position: relative;
   &--background {
-    background-image: url(../img/dep/complex/background.png);
+    background-image: url(../img/dep/complex/back.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
   }
   &__title {
-    margin-top: 1vw;
+    margin-top: 6vw;
     text-align: center;
+    @include lg_900 {
+      margin-top: 5rem;
+    }
+    @include md_767 {
+      margin-top: 5rem;
+    }
+    @include sm_567 {
+      margin-top: 5rem;
+    }
   }
   &--flex {
     display: flex;
+    @include lg_900 {
+      justify-content: center;
+    }
+    @include md_767 {
+      justify-content: center;
+    }
+    @include sm_567 {
+      justify-content: center;
+    }
   }
   &--margin {
     margin-top: 3.125vw;
@@ -27,6 +46,15 @@
     border-radius: 20px;
     z-index: 1;
     position: relative;
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
+    }
     &-discount {
       position: absolute;
       top: -1vw;
@@ -35,20 +63,59 @@
       position: relative;
       font: $fontAppetite_30;
       color: #fff;
+      @include lg_900 {
+        font-size: 2rem;
+      }
+      @include md_767 {
+        font-size: 2rem;
+      }
+      @include sm_567 {
+        font-size: 2rem;
+      }
       &--img {
         position: absolute;
         right: -0.8vw;
         width: 4.271vw;
         z-index: -1;
         top: 0vw;
+        @include lg_900 {
+          width: 25%;
+        }
+        @include md_767 {
+          width: 25%;
+        }
+        @include sm_567 {
+          width: 25%;
+        }
       }
     }
     &-title {
       border-bottom: 1px solid #e6e5e5;
       width: 16.313vw;
+      @include lg_900 {
+        width: auto;
+        text-align: center;
+      }
+      @include md_767 {
+        width: auto;
+        text-align: center;
+      }
+      @include sm_567 {
+        width: auto;
+        text-align: center;
+      }
       & p {
         font: $fontMuseoSansCyrlBold_48;
         margin-bottom: 1.927vw;
+        @include lg_900 {
+          font-size: 2rem;
+        }
+        @include md_767 {
+          font-size: 2rem;
+        }
+        @include sm_567 {
+          font-size: 2rem;
+        }
       }
     }
     &-content {
@@ -58,6 +125,15 @@
       & ul {
         list-style-image: url(../img/dep/complex/check.png);
         font: $fontMuseoSansCyrlLight_24;
+        @include lg_900 {
+          margin-left: 2rem;
+        }
+        @include md_767 {
+          margin-left: 2rem;
+        }
+        @include sm_567 {
+          margin-left: 2rem;
+        }
       }
     }
     &-price {
@@ -76,17 +152,47 @@
     }
     &--smallUpT {
       font: $fontMuseoSansCyrlLight_16;
+      @include lg_900 {
+        font-size: 1.4rem;
+      }
+      @include md_767 {
+        font-size: 1.4rem;
+      }
+      @include sm_567 {
+        font-size: 1.4rem;
+      }
     }
     &--smallT {
       font: $fontMuseoSansCyrlLight_30;
       margin-left: -0.5vw;
+      @include sm_567 {
+        font-size: 2rem;
+      }
     }
     &--bigT {
       font: $fontMuseoSansCyrlBold_48;
+      @include lg_900 {
+        font-size: 3rem;
+      }
+      @include md_767 {
+        font-size: 3rem;
+      }
+      @include sm_567 {
+        font-size: 3rem;
+      }
     }
     &--bigerT {
       font: $fontMuseoSansCyrlBold_60;
       color: $colorRozeDark;
+      @include lg_900 {
+        font-size: 3.5rem;
+      }
+      @include md_767 {
+        font-size: 3.5rem;
+      }
+      @include sm_567 {
+        font-size: 3.5rem;
+      }
     }
     &-btn {
       @include mainBtn;
@@ -98,6 +204,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include lg_900 {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+        padding: 2rem 1rem;
+      }
+      @include md_767 {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+        padding: 2rem 1rem;
+      }
+      @include sm_567 {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+        padding: 2rem 1rem;
+      }
       & a {
         font: $fontMuseoSansCyrlBold_18;
         color: #fff;
@@ -112,6 +233,21 @@
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(237deg);
+      @include lg_900 {
+        width: 35%;
+        right: -12%;
+        top: 28%;
+      }
+      @include md_767 {
+        width: 35%;
+        right: -12%;
+        top: 28%;
+      }
+      @include sm_567 {
+        width: 35%;
+        right: -12%;
+        top: 28%;
+      }
     }
   }
   &__more {
@@ -123,10 +259,34 @@
     position: absolute;
     left: -9vw;
     top: 4vw;
+    @include lg_900 {
+      width: 20rem;
+      top: 50%;
+    }
+    @include md_767 {
+      width: 20rem;
+      top: 50%;
+    }
+    @include sm_567 {
+      width: 20rem;
+      top: 50%;
+    }
   }
   &__leaves {
     position: absolute;
     right: 0;
     top: 7vw;
+    @include lg_900 {
+      width: 10rem;
+      top: 29%;
+    }
+    @include md_767 {
+      width: 10rem;
+      top: 29%;
+    }
+    @include sm_567 {
+      width: 10rem;
+      top: 29%;
+    }
   }
 }

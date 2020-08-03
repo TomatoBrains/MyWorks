@@ -13,10 +13,40 @@
     width: 57vw;
     left: 4vw;
     top: 6.5vw;
+    @include lg_900 {
+      position: relative;
+      width: 100%;
+      top: unset;
+      left: unset;
+    }
+    @include md_767 {
+      position: relative;
+      width: 100%;
+      top: unset;
+      left: unset;
+    }
+    @include sm_567 {
+      position: relative;
+      width: 100%;
+      top: unset;
+      left: unset;
+    }
     &-btn {
       @include videoBtn;
       top: 12vw;
       left: 21vw;
+      @include lg_900 {
+        top: 31%;
+        left: 35%;
+      }
+      @include md_767 {
+        top: 31%;
+        left: 35%;
+      }
+      @include sm_567 {
+        top: 31%;
+        left: 35%;
+      }
       & span {
         padding: 1.5vw;
       }
@@ -29,21 +59,56 @@
       text-align: right;
       top: 5vw;
       right: 19vw;
+      @include lg_900 {
+        top: 16%;
+        left: 47%;
+        width: 14rem;
+      }
+      @include md_767 {
+        top: 13%;
+        left: 42%;
+        width: 14rem;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
     &-line {
       position: absolute;
       left: -6vw;
       top: 1vw;
       width: 7vw;
+      @include lg_900 {
+        width: 7rem;
+        top: 37%;
+        left: -39%;
+      }
+      @include md_767 {
+        display: none;
+      }
     }
   }
   &__content {
     &-row {
       display: flex;
+      @include lg_900 {
+        justify-content: space-around;
+      }
+      @include md_767 {
+        justify-content: space-around;
+      }
     }
     &-item {
       margin-right: 10px;
       margin-bottom: 10px;
+      @include lg_900 {
+        width: 45%;
+        margin-right: 0;
+      }
+      @include md_767 {
+        width: 45%;
+        margin-right: 0;
+      }
     }
   }
 }

@@ -8,8 +8,29 @@
   &__title {
     width: 16.4vw;
     position: relative;
+    @include lg_900 {
+      width: auto;
+      text-align: center;
+    }
+    @include md_767 {
+      width: auto;
+      text-align: center;
+    }
+    @include sm_567 {
+      width: auto;
+      text-align: center;
+    }
     &--smt {
       font: $fontMuseoSansCyrlLight_30;
+      @include lg_900 {
+        font-size: 2.6rem;
+      }
+      @include md_767 {
+        font-size: 2.4rem;
+      }
+      @include sm_567 {
+        font-size: 2.2rem;
+      }
     }
     &-img {
       position: absolute;
@@ -17,6 +38,18 @@
       z-index: -1;
       right: -16vw;
       width: 18.698vw;
+      @include lg_900 {
+        position: static;
+        margin: 1rem auto 0 auto;
+      }
+      @include md_767 {
+        position: static;
+        margin: 1rem auto 0 auto;
+      }
+      @include sm_567 {
+        position: static;
+        margin: 1rem auto 0 auto;
+      }
     }
   }
   &__request {
@@ -48,6 +81,18 @@
               font: $fontMuseoSansCyrlMed_12;
               width: 7.083vw;
             }
+          }
+        }
+        &-radio {
+          display: flex;
+          margin-top: 2vw;
+          justify-content: space-between;
+          & label {
+            width: 50%;
+          }
+          & label:nth-of-type(2) {
+            width: 40%;
+            text-align: left;
           }
         }
         &-btn {
@@ -120,5 +165,472 @@
     top: 0;
     right: 31vw;
     width: 11vw;
+  }
+  input[type="radio"]:checked + label,
+  input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 0;
+    cursor: pointer;
+    /*@include lg_900 {
+    padding-right: 0;
+  }
+  @include md_767 {
+    padding-right: 0;
+  }
+  @include sm_567 {
+    padding-right: 0;
+  }*/
+  }
+  input[type="radio"]:checked + label:before,
+  input[type="radio"]:not(:checked) + label:before {
+    border-radius: 50%;
+    left: 0px;
+  }
+  input[type="radio"]:not(:checked) + label:before {
+    border-radius: 50%;
+    left: 0px;
+  }
+  input[type="radio"]:checked + label:after,
+  input[type="radio"]:not(:checked) + label:after {
+    left: 3px;
+  }
+}
+@include lg_900 {
+  .online__title {
+    &-img {
+      width: 20rem;
+    }
+  }
+  .online__descr {
+    width: auto;
+    margin: 2rem 0;
+  }
+  .online__img {
+    display: none;
+  }
+  .online__leave {
+    display: none;
+  }
+  .online__leaves {
+    display: none;
+  }
+  .online__request {
+    z-index: 1;
+    & .request__form {
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      &-img {
+        margin-bottom: 2rem;
+        width: 100%;
+        position: relative;
+        margin-right: 0;
+        text-align: center;
+      }
+      &-inputs {
+        margin: 0;
+        width: 100%;
+      }
+      &-women {
+        width: 100%;
+        position: relative;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin: 0 auto 1rem auto;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem 1rem 3rem;
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin: 0 auto 1rem auto;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem 1rem 3rem;
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &-radio {
+        height: 4rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        & label:nth-of-type(2) {
+          width: 15rem;
+        }
+        & label {
+          font-size: 1.5rem;
+          width: 15rem;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        display: inline-block;
+        & button {
+          width: 35rem;
+          height: 7rem;
+          font-size: 1.6rem;
+          padding-left: 3rem;
+        }
+        & img {
+          width: 25rem;
+          right: -35%;
+          bottom: 13%;
+        }
+      }
+      &-women {
+        text-align: center;
+        width: auto;
+        position: relative;
+        display: inline-block;
+        &--name {
+          bottom: 23%;
+          right: 18%;
+          padding: 1rem;
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 12%;
+          right: 16%;
+          & p {
+            width: 14rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &-leftImg {
+        width: 15rem;
+        left: -2rem;
+        top: -4rem;
+      }
+      &-rightImg {
+        width: 9rem;
+        right: -2rem;
+        top: 1rem;
+        z-index: 1;
+      }
+      &__blur {
+        width: 20rem;
+        bottom: 29rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+@include md_767 {
+  .online__title {
+    &-img {
+      width: 20rem;
+    }
+  }
+  .online__descr {
+    width: auto;
+    margin: 2rem 0;
+  }
+  .online__img {
+    display: none;
+  }
+  .online__leave {
+    display: none;
+  }
+  .online__leaves {
+    display: none;
+  }
+  .online__request {
+    z-index: 1;
+    & .request__form {
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      &-img {
+        margin-bottom: 2rem;
+        width: 100%;
+        position: relative;
+        margin-right: 0;
+        text-align: center;
+      }
+      &-inputs {
+        margin: 0;
+        width: 100%;
+      }
+      &-women {
+        width: 100%;
+        position: relative;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin: 0 auto 1rem auto;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem 1rem 3rem;
+          &::placeholder {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin: 0 auto 1rem auto;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem 1rem 3rem;
+          &::placeholder {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &-radio {
+        height: 4rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        & label:nth-of-type(2) {
+          width: 15rem;
+        }
+        & label {
+          font-size: 1.5rem;
+          width: 15rem;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        display: inline-block;
+        & button {
+          width: 26rem;
+          height: 7rem;
+          font-size: 1.6rem;
+          padding-left: 3rem;
+        }
+        & img {
+          width: 25rem;
+          right: -35%;
+          bottom: 13%;
+        }
+      }
+      &-women {
+        text-align: center;
+        width: auto;
+        position: relative;
+        display: inline-block;
+        &--name {
+          bottom: 23%;
+          right: 18%;
+          padding: 1rem;
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 12%;
+          right: 16%;
+          & p {
+            width: 14rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &-leftImg {
+        width: 15rem;
+        left: -2rem;
+        top: -4rem;
+      }
+      &-rightImg {
+        width: 9rem;
+        right: -2rem;
+        top: 1rem;
+        z-index: 1;
+      }
+      &__blur {
+        width: 20rem;
+        bottom: 29rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+@include sm_567 {
+  .online__title {
+    &-img {
+      width: 20rem;
+    }
+  }
+  .online__descr {
+    width: auto;
+    margin: 2rem 0;
+  }
+  .online__img {
+    position: relative;
+    width: auto;
+    margin-top: -3rem;
+  }
+  .online__leave {
+    display: none;
+  }
+  .online__request {
+    z-index: 1;
+    & .request__form {
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      justify-content: center;
+      &-img {
+        margin-bottom: 2rem;
+        width: 100%;
+        position: relative;
+        margin-right: 0;
+        text-align: center;
+      }
+      &-inputs {
+        margin: 0;
+        width: 100%;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin: 0 auto 1rem auto;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem 1rem 3rem;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin: 0 auto 1rem auto;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem 1rem 3rem;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-radio {
+        height: 3rem;
+        margin-top: 1rem;
+        justify-content: center;
+        & label:nth-of-type(2) {
+          width: auto;
+        }
+        & label {
+          font-size: 1.4rem;
+          width: auto;
+          margin-right: 1rem;
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        display: inline-block;
+        & button {
+          width: 20rem;
+          height: 5rem;
+          font-size: 1.2rem;
+          padding-left: 2rem;
+        }
+        & img {
+          width: 16rem;
+          right: -35%;
+          bottom: 13%;
+        }
+      }
+      &-women {
+        text-align: center;
+        width: auto;
+        position: relative;
+        display: inline-block;
+        width: 25rem;
+        &--name {
+          bottom: 23%;
+          right: 18%;
+          padding: 1rem;
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 7%;
+          right: 16%;
+          & p {
+            width: 14rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &-leftImg {
+        width: 8rem;
+        left: -1rem;
+        top: -1rem;
+      }
+      &-rightImg {
+        width: 5rem;
+        right: -1rem;
+        top: 1rem;
+        z-index: 1;
+      }
+      &__blur {
+        width: 10rem;
+        bottom: 22rem;
+        z-index: 1;
+      }
+    }
   }
 }

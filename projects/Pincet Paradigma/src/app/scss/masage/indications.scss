@@ -19,13 +19,43 @@
       border: 1px dashed #fff;
       padding: 1.302vw 2.344vw;
       align-items: center;
+      @include lg_900 {
+        text-align: center;
+      }
+      @include md_767 {
+        text-align: center;
+      }
+      @include sm-567 {
+        text-align: center;
+      }
       & p:nth-of-type(1) {
         font: $fontMuseoSansCyrlBold_30;
         margin-right: 1.5vw;
+        @include lg_900 {
+          font-size: 2.5rem;
+        }
+        @include md_767 {
+          font-size: 2.5rem;
+        }
+        @include sm-567 {
+          font-size: 2rem;
+        }
       }
       & p:nth-of-type(2) {
         font: $fontMuseoSansCyrlLight_18;
         width: 60%;
+        @include lg_900 {
+          width: auto;
+          font-size: 2rem;
+        }
+        @include md_767 {
+          width: auto;
+          font-size: 2rem;
+        }
+        @include sm-567 {
+          width: auto;
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -42,6 +72,15 @@
       flex-direction: column;
       margin-right: 2vw;
       text-align: center;
+      @include lg_900 {
+        width: 45%;
+      }
+      @include md_767 {
+        width: 45%;
+      }
+      @include sm-567 {
+        width: 100%;
+      }
     }
     & div:nth-of-type(4) {
       margin-right: 0;
@@ -66,10 +105,28 @@
     position: absolute;
     top: 5vw;
     right: 13vw;
+    @include lg_900 {
+      width: 6.5rem;
+    }
+    @include md_767 {
+      width: 6.5rem;
+    }
+    @include sm-567 {
+      width: 5rem;
+    }
   }
   &__leaveL {
     position: absolute;
     top: 8vw;
     left: 0;
+    @include lg_900 {
+      width: 7rem;
+    }
+    @include md_767 {
+      width: 7rem;
+    }
+    @include sm-567 {
+      width: 5rem;
+    }
   }
 }
