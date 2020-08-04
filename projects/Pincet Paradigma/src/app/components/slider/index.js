@@ -139,6 +139,24 @@ $(".screenshots__slider-phoneSlide").slick({
   autoplay: false,
   pauseOnHover: true,
   fade: true,
+  responsive: [
+    {
+      breakpoint: 901,
+      settings: {},
+    },
+    {
+      breakpoint: 768,
+      settings: {},
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+      },
+    },
+  ],
 });
 //graduate slider
 $(".graduate__student-slider").slick({
@@ -155,8 +173,9 @@ $(".graduate__student-slider").slick({
     {
       breakpoint: 901,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
     {
@@ -164,6 +183,7 @@ $(".graduate__student-slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
     {
@@ -171,6 +191,7 @@ $(".graduate__student-slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
   ],

@@ -6,16 +6,73 @@
   }
   &__title {
     margin-bottom: 3vw;
+    @include lg_900 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    @include md_767 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    @include sm_567 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
   }
   &__slider {
     position: relative;
     width: 12.292vw;
+    z-index: 1;
+    @include lg_900 {
+      width: 60rem;
+      margin: 0 auto;
+    }
+    @include md_767 {
+      width: 50rem;
+      margin: 0 auto;
+    }
+    @include sm_567 {
+      width: 30rem;
+      margin: 0 auto;
+    }
+    &-phoneSlide {
+      z-index: 2;
+    }
     &-phone {
       position: absolute;
       width: 13.9vw;
       z-index: 2;
       left: -0.8vw;
       top: -0.8vw;
+      z-index: 1;
+      @include lg_900 {
+        width: 27rem;
+        top: -3%;
+        left: 27.5%;
+      }
+      @include md_767 {
+        width: 27rem;
+        top: -3%;
+        left: 22.5%;
+      }
+      @include sm_567 {
+        width: 27rem;
+        top: -3%;
+        left: 5.5%;
+      }
+    }
+    &-item {
+      & img {
+        @include lg_900 {
+          margin: 0 auto;
+        }
+        @include md_767 {
+          margin: 0 auto;
+        }
+        @include sm_567 {
+          margin: 0 auto;
+        }
+      }
     }
     &-flower {
       position: absolute;
@@ -23,24 +80,68 @@
       z-index: -1;
       right: -8vw;
       width: 19vw;
+      @include lg_900 {
+        width: 35rem;
+        top: 12%;
+        right: 5%;
+      }
+      @include md_767 {
+        width: 35rem;
+        top: 12%;
+        right: -3%;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
     &-arrowRight {
       position: absolute;
       right: -6vw;
       top: 50%;
       transform: translate(0, -50%);
+      z-index: 3;
+      @include lg_900 {
+        right: 5%;
+      }
+      @include md_767 {
+        right: 5%;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
-
     &-arrowLeft {
       position: absolute;
       left: -6vw;
       top: 50%;
       transform: translate(0, -50%);
+      z-index: 3;
+      @include lg_900 {
+        left: 5%;
+      }
+      @include md_767 {
+        left: 5%;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
     &-paging {
       font: $fontMuseoSansCyrlLight_36;
       margin-top: 2.3vw;
       text-align: center;
+      @include lg_900 {
+        margin-top: 3rem;
+        font-size: 2rem;
+      }
+      @include md_767 {
+        margin-top: 3rem;
+        font-size: 2rem;
+      }
+      @include sm_567 {
+        margin-top: 3rem;
+        font-size: 2rem;
+      }
     }
     & .slick-slide {
       width: 12.292vw;
@@ -51,9 +152,33 @@
   }
   &__message {
     margin-left: 10.417vw;
+    @include lg_900 {
+      margin-left: 0;
+    }
+    @include md_767 {
+      margin-left: 0;
+    }
+    @include sm_567 {
+      margin-left: 0;
+    }
     &-item {
       margin-right: 2.865vw;
       width: 12.292vw;
+      @include lg_900 {
+        width: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      @include md_767 {
+        width: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      @include sm_567 {
+        width: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
     }
   }
 }

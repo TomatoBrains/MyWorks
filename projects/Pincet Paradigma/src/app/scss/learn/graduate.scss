@@ -6,17 +6,63 @@
   }
   &__title {
     margin-bottom: 2vw;
+    @include lg_900 {
+      text-align: center;
+    }
+    @include md_767 {
+      text-align: center;
+    }
+    @include sm_567 {
+      text-align: center;
+    }
   }
   &__student {
     &-slider {
       & .slick-slide {
         width: 12.5vw;
         margin-right: 15px;
+        @include lg_900 {
+          width: auto;
+          margin: 0;
+        }
+        @include md_767 {
+          width: auto;
+          margin: 0;
+        }
+        @include sm_567 {
+          width: auto;
+          margin: 0;
+        }
       }
       &--wraper {
         position: relative;
+        @include lg_900 {
+          width: 60rem;
+          margin: 0 auto;
+        }
+        @include md_767 {
+          width: 50rem;
+          margin: 0 auto;
+        }
+        @include sm_567 {
+          width: 30rem;
+          margin: 0 auto;
+        }
         & .slick-disabled {
           opacity: 0.4;
+        }
+      }
+      &--item {
+        & img {
+          @include lg_900 {
+            margin: 0 auto;
+          }
+          @include md_767 {
+            margin: 0 auto;
+          }
+          @include sm_567 {
+            margin: 0 auto;
+          }
         }
       }
       &--arrowR {
@@ -25,6 +71,12 @@
         transform: translate(0, -50%);
         right: -2vw;
         cursor: pointer;
+        @include lg_900 {
+          right: -1%;
+        }
+        @include md_767 {
+          right: 15%;
+        }
       }
       &--arrowL {
         position: absolute;
@@ -32,6 +84,12 @@
         transform: translate(0, -50%);
         left: -3vw;
         cursor: pointer;
+        @include lg_900 {
+          left: -1%;
+        }
+        @include md_767 {
+          left: 15%;
+        }
       }
     }
   }
@@ -115,6 +173,183 @@
     }
     &-img {
       display: flex;
+    }
+  }
+}
+@include lg_900 {
+  .graduate {
+    flex-wrap: wrap;
+    &__clients {
+      margin: 0 auto;
+      &-title {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      &-head {
+        width: 100%;
+        margin: 0;
+      }
+      &-link {
+        margin: 1rem auto 0 auto;
+        width: auto;
+      }
+      &-video {
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-left {
+        width: 25rem;
+        margin-right: 1.5rem;
+        height: auto;
+      }
+      &-center {
+        width: 25rem;
+        height: auto;
+        margin-right: 0;
+      }
+      &-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-direction: row;
+      }
+      &-top {
+        width: 25rem;
+        margin-right: 1.5rem;
+        height: auto;
+      }
+      &-bottom {
+        width: 25rem;
+        height: auto;
+      }
+      &-videoBtn {
+        & span {
+          padding: 2rem;
+        }
+        & svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@include md_767 {
+  .graduate {
+    flex-wrap: wrap;
+    &__clients {
+      margin: 0 auto;
+      &-title {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      &-head {
+        width: 100%;
+        margin: 0;
+      }
+      &-link {
+        margin: 1rem auto 0 auto;
+        width: auto;
+      }
+      &-video {
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-left {
+        width: 25rem;
+        margin-right: 1.5rem;
+        height: auto;
+      }
+      &-center {
+        width: 25rem;
+        height: auto;
+        margin-right: 0;
+      }
+      &-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-direction: row;
+      }
+      &-top {
+        width: 25rem;
+        margin-right: 1.5rem;
+        height: auto;
+      }
+      &-bottom {
+        width: 25rem;
+        height: auto;
+      }
+      &-videoBtn {
+        & span {
+          padding: 2rem;
+        }
+        & svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@include sm_567 {
+  .graduate {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    &__clients {
+      &-title {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      &-head {
+        width: 100%;
+        margin: 0;
+      }
+      &-link {
+        margin: 1rem auto 0 auto;
+        width: auto;
+      }
+      &-video {
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-left {
+        width: 12rem;
+        margin-right: 1rem;
+        height: auto;
+      }
+      &-center {
+        width: 12rem;
+        height: auto;
+        margin-right: 0;
+      }
+      &-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-direction: row;
+      }
+      &-top {
+        width: 12rem;
+        margin-right: 1rem;
+        height: auto;
+      }
+      &-bottom {
+        width: 12rem;
+        height: auto;
+      }
+      &-videoBtn {
+        & span {
+          padding: 1rem;
+        }
+        & svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
     }
   }
 }

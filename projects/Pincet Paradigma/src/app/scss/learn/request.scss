@@ -3,8 +3,6 @@
   & .request__form {
     display: block;
     padding-left: 0;
-    overflow: hidden;
-
     &--wraper {
       display: flex;
       margin-top: 1.604vw;
@@ -65,7 +63,7 @@
       }
       & img {
         width: 12.063vw;
-        right: 5vw;
+        right: 2vw;
       }
     }
     &-call {
@@ -112,6 +110,15 @@
       top: 14vw;
       left: 26vw;
       width: 3vw;
+      @include lg_900 {
+        display: none;
+      }
+      @include md_767 {
+        display: none;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
   }
 }

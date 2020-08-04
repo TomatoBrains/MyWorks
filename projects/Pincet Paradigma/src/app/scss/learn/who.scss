@@ -1,10 +1,12 @@
 .who {
-  background-image: url(../img/learn/who/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
   position: relative;
   padding: 30px 0;
+  &--wraper {
+    background-image: url(../img/learn/who/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
   &__title {
     text-align: center;
     max-width: 65%;
@@ -19,13 +21,54 @@
   &__img {
     margin-right: 2vw;
     position: relative;
+    @include lg_900 {
+      width: 60rem;
+      margin: 0 auto;
+    }
+    @include md_767 {
+      width: 50rem;
+      margin: 0 auto;
+    }
+    @include sm_567 {
+      width: 30rem;
+      margin: 0 auto;
+    }
     & a {
       position: absolute;
       @include videoBtn;
       right: 13vw;
       bottom: 2vw;
+      @include lg_900 {
+        top: 46%;
+        bottom: unset;
+        left: 43%;
+        right: unset;
+      }
+      @include md_767 {
+        top: 46%;
+        bottom: unset;
+        left: 43%;
+
+        right: unset;
+      }
+      @include sm_567 {
+        top: 46%;
+        bottom: unset;
+        left: 43%;
+
+        right: unset;
+      }
       & span {
         padding: 1.5vw;
+        @include lg_900 {
+          padding: 1rem;
+        }
+        @include md_767 {
+          padding: 1rem;
+        }
+        @include sm_567 {
+          padding: 1rem;
+        }
       }
     }
     &--line {
@@ -33,6 +76,15 @@
       bottom: -4vw;
       right: 9vw;
       transform: rotate(99deg);
+      @include lg_900 {
+        display: none;
+      }
+      @include md_767 {
+        display: none;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
     &--text {
       position: absolute;
@@ -41,6 +93,24 @@
       font: $fontMuseoSansCyrlLight_18;
       color: $colorRozeDark;
       max-width: 14.792vw;
+      @include lg_900 {
+        right: 95%;
+        max-width: 100%;
+        top: 22%;
+        width: 10rem;
+      }
+      @include md_767 {
+        right: 85%;
+        max-width: 100%;
+        top: 22%;
+        width: 10rem;
+      }
+      @include sm_567 {
+        right: 66%;
+        max-width: 100%;
+        top: 22%;
+        width: 10rem;
+      }
     }
   }
   &__descr {
@@ -65,10 +135,28 @@
   &__leavesL {
     position: absolute;
     top: 0;
+    @include lg_900 {
+      width: 5rem;
+    }
+    @include md_767 {
+      width: 5rem;
+    }
+    @include sm_567 {
+      width: 5rem;
+    }
   }
   &__blur {
     position: absolute;
     right: -10vw;
     top: 16vw;
+    @include lg_900 {
+      width: 10rem;
+    }
+    @include md_767 {
+      width: 10rem;
+    }
+    @include sm_567 {
+      width: 10rem;
+    }
   }
 }

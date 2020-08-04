@@ -29,6 +29,15 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom;
+  @include lg_900 {
+    background-size: cover;
+  }
+  @include md_767 {
+    background-size: cover;
+  }
+  @include sm_567 {
+    background-size: cover;
+  }
 }
 h1 {
   font: $fontMuseoSansCyrlBold_48;

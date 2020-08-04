@@ -4,12 +4,14 @@
   background-size: auto;
   padding-top: 30px;
   position: relative;
+  z-index: 1;
   &__title {
     text-align: center;
     margin-bottom: 3vw;
   }
   &--flex {
     display: flex;
+    justify-content: space-around;
   }
   &--margin {
     margin-bottom: 8.854vw;
@@ -17,6 +19,27 @@
   &__box {
     width: 15.104vw;
     margin: 0 auto;
+    @include lg_900 {
+      width: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @include md_767 {
+      width: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @include sm_567 {
+      width: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     &-img {
       margin-bottom: 1.5vw;
     }
@@ -28,6 +51,24 @@
     &-time {
       @include daysPurple;
       margin-bottom: 1.5vw;
+      @include lg_900 {
+        width: 13rem;
+        & img {
+          display: none;
+        }
+      }
+      @include md_767 {
+        width: 13rem;
+        & img {
+          display: none;
+        }
+      }
+      @include sm_567 {
+        width: 11rem;
+        & img {
+          display: none;
+        }
+      }
     }
     &-price {
       display: flex;
@@ -39,16 +80,55 @@
       & p:nth-of-type(1) {
         color: $colorRozeDark;
         font: $fontMuseoSansCyrlBold_48;
+        @include lg_900 {
+          font-size: 2rem;
+        }
+        @include md_767 {
+          font-size: 2rem;
+        }
+        @include sm_567 {
+          font-size: 2rem;
+        }
         & span {
           font: $fontMuseoSansCyrlLight_30;
           margin-left: -15px;
+          @include lg_900 {
+            margin-left: 0;
+            font-size: 1.5rem;
+          }
+          @include md_767 {
+            margin-left: 0;
+            font-size: 1.5rem;
+          }
+          @include sm_567 {
+            margin-left: 0;
+            font-size: 1.5rem;
+          }
         }
       }
       & p:nth-of-type(2) {
         font: $fontMuseoSansCyrlBold_36;
         margin-left: 1vw;
+        @include lg_900 {
+          font-size: 1.6rem;
+        }
+        @include md_767 {
+          font-size: 1.6rem;
+        }
+        @include sm_567 {
+          font-size: 1.6rem;
+        }
         & span {
           font: $fontMuseoSansCyrlLight_24;
+          @include lg_900 {
+            font-size: 1.3rem;
+          }
+          @include md_767 {
+            font-size: 1.3rem;
+          }
+          @include sm_567 {
+            font-size: 1.3rem;
+          }
         }
       }
     }
@@ -57,11 +137,368 @@
     position: absolute;
     top: -2vw;
     right: 23vw;
+    @include lg_900 {
+      width: 9rem;
+    }
+    @include md_767 {
+      width: 7rem;
+    }
+    @include sm_567 {
+      width: 5rem;
+    }
   }
   &__leaves {
     position: absolute;
     bottom: 35vw;
     left: 0;
     width: 8vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
+  }
+}
+@include lg_900 {
+  .request-learn {
+    z-index: 1;
+    & .request__form {
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      border-radius: 110px;
+      &-title {
+        width: 80%;
+        margin: 0 auto;
+      }
+      &-img {
+        margin-bottom: 2rem;
+        width: 100%;
+        position: relative;
+        margin-right: 0;
+        text-align: center;
+      }
+      &-inputs {
+        margin: 0;
+        width: 100%;
+      }
+      &-women {
+        width: 100%;
+        position: relative;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 2rem;
+        margin-right: 25px;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 3rem 1rem 3rem;
+          font-size: 1.6rem;
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 2rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 3rem 1rem 3rem;
+          font-size: 1.6rem;
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        display: inline-block;
+        & button {
+          width: 35rem;
+          height: 7rem;
+          font-size: 1.6rem;
+          padding-left: 3rem;
+        }
+        & img {
+          width: 25rem;
+          right: -35%;
+          bottom: 13%;
+        }
+      }
+      &-women {
+        text-align: center;
+        &--name {
+          bottom: 10rem;
+          right: 19rem;
+
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 7rem;
+          right: 22rem;
+        }
+      }
+      &-leftImg {
+        width: 15rem;
+        left: -2rem;
+        top: -4rem;
+      }
+      &-rightImg {
+        width: 9rem;
+        right: -2rem;
+        top: 1rem;
+        z-index: 1;
+      }
+      &__blur {
+        width: 20rem;
+        bottom: 29rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+@include md_767 {
+  .request-learn {
+    z-index: 1;
+    & .request__form {
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      border-radius: 110px;
+      &-title {
+        width: 80%;
+        margin: 0 auto;
+      }
+      &-img {
+        margin-bottom: 2rem;
+        width: 100%;
+        position: relative;
+        margin-right: 0;
+        text-align: center;
+      }
+      &-inputs {
+        margin: 0;
+        width: 100%;
+      }
+      &-women {
+        width: 100%;
+        position: relative;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 2rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 3rem 1rem 3rem;
+          font-size: 1.5rem;
+          &::placeholder {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 2rem;
+        & label {
+          font-size: 1.6rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 3rem 1rem 3rem;
+          font-size: 1.5rem;
+          &::placeholder {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        display: inline-block;
+        & button {
+          width: 35rem;
+          height: 7rem;
+          font-size: 1.6rem;
+          padding-left: 3rem;
+        }
+        & img {
+          width: 25rem;
+          right: -35%;
+          bottom: 13%;
+        }
+      }
+      &-women {
+        text-align: center;
+        &--name {
+          bottom: 10rem;
+          right: 8rem;
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 7rem;
+          right: 11rem;
+        }
+      }
+      &-leftImg {
+        width: 15rem;
+        left: -2rem;
+        top: -4rem;
+      }
+      &-rightImg {
+        width: 9rem;
+        right: -2rem;
+        top: 1rem;
+        z-index: 1;
+      }
+      &__blur {
+        width: 20rem;
+        bottom: 29rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+@include sm_567 {
+  .request-learn {
+    z-index: 1;
+    & .request__form {
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      justify-content: center;
+      border-radius: 80px;
+      &-title {
+        width: 92%;
+        margin: 2rem auto;
+      }
+      &-img {
+        margin-bottom: 2rem;
+        width: 100%;
+        position: relative;
+        margin-right: 0;
+        text-align: center;
+      }
+      &-inputs {
+        margin: 0;
+        width: 100%;
+      }
+      &-women {
+        width: 100%;
+        position: relative;
+      }
+      &-name {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 3rem 1rem 3rem;
+          font-size: 1.4rem;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin-bottom: 2rem;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 3rem 1rem 3rem;
+          font-size: 1.4rem;
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &-btn {
+        margin-bottom: 2rem;
+        display: inline-block;
+        & button {
+          width: 20rem;
+          height: 5rem;
+          font-size: 1.2rem;
+          padding-left: 2rem;
+        }
+        & img {
+          width: 16rem;
+          right: -35%;
+          bottom: 13%;
+        }
+      }
+      &-women {
+        text-align: center;
+        &--name {
+          bottom: 6rem;
+          right: 2rem;
+          & p {
+            font-size: 1.6rem;
+          }
+        }
+        &--master {
+          bottom: 3rem;
+          right: 5rem;
+        }
+      }
+      &-leftImg {
+        width: 8rem;
+        left: -1rem;
+        top: -1rem;
+      }
+      &-rightImg {
+        display: none;
+      }
+      &__blur {
+        width: 10rem;
+        bottom: 22rem;
+        z-index: 1;
+      }
+    }
   }
 }

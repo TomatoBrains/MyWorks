@@ -5,17 +5,61 @@
   }
   &__present {
     position: relative;
+    &-title {
+      @include lg_900 {
+        text-align: center;
+        width: 80%;
+        margin: 1rem auto;
+      }
+      @include md_767 {
+        text-align: center;
+        width: 80%;
+        margin: 1rem auto;
+      }
+      @include sm_567 {
+        text-align: center;
+        width: 80%;
+        margin: 1rem auto;
+      }
+    }
     &-img {
       position: absolute;
       width: 45vw;
       left: -7vw;
       top: 9vw;
+      @include lg_900 {
+        position: static;
+        width: auto;
+        margin-top: 2rem;
+        margin-bottom: -10rem;
+      }
+      @include md_767 {
+        position: static;
+        width: auto;
+        margin-top: 2rem;
+        margin-bottom: -8rem;
+      }
+      @include sm_567 {
+        position: static;
+        width: auto;
+        margin-top: 2rem;
+        margin-bottom: -4rem;
+      }
     }
     &-line {
       position: absolute;
       top: 10vw;
       right: -3vw;
       z-index: 1;
+      @include lg_900 {
+        display: none;
+      }
+      @include md_767 {
+        display: none;
+      }
+      @include sm_567 {
+        display: none;
+      }
     }
   }
   &__form {
@@ -29,18 +73,88 @@
       font: $fontMuseoSansCyrlLight_16;
       margin: 0 auto;
       margin-bottom: 2.5vw;
+      @include lg_900 {
+        width: 80%;
+      }
+      @include md_767 {
+        width: 80%;
+      }
+      @include sm_567 {
+        width: 80%;
+      }
     }
     & .request__form {
       padding-bottom: 4.688vw;
       display: block;
+      &-name {
+        @include lg_900 {
+          margin: 1rem auto;
+        }
+        @include md_767 {
+          margin: 1rem auto;
+        }
+        @include sm_567 {
+          margin: 1rem auto;
+        }
+      }
+      &-tel {
+        @include lg_900 {
+          margin: 1rem auto;
+        }
+        @include md_767 {
+          margin: 1rem auto;
+        }
+        @include sm_567 {
+          margin: 1rem auto;
+        }
+      }
       &-inputs {
         margin: 0 auto;
         width: 26.042vw;
+        @include lg_900 {
+          width: auto;
+        }
+        @include md_767 {
+          width: auto;
+        }
+        @include sm_567 {
+          width: auto;
+        }
         & input {
           width: 100%;
+          @include lg_900 {
+            font-size: 1.6rem;
+            &::placeholder {
+              font-size: 1.6rem;
+            }
+          }
+          @include md_767 {
+            font-size: 1.5rem;
+            &::placeholder {
+              font-size: 1.5rem;
+            }
+          }
+          @include sm_567 {
+            font-size: 1.4rem;
+            &::placeholder {
+              font-size: 1.4rem;
+            }
+          }
         }
       }
       &-btn {
+        @include lg_900 {
+          margin: 1rem auto;
+          width: 35rem;
+        }
+        @include md_767 {
+          margin: 1rem auto;
+          width: 35rem;
+        }
+        @include sm_567 {
+          margin: 1rem auto;
+          width: 20rem;
+        }
         & button {
           width: 100%;
           padding-left: 3vw;
@@ -48,6 +162,19 @@
         & img {
           width: 13.063vw;
           right: -5vw;
+          @include lg_900 {
+            width: 23rem;
+            right: -29%;
+          }
+          @include md_767 {
+            width: 23rem;
+            right: -29%;
+          }
+          @include sm_567 {
+            width: 17rem;
+            right: -31%;
+            bottom: 1%;
+          }
         }
       }
     }
@@ -57,10 +184,28 @@
     top: 1vw;
     left: -8vw;
     z-index: -1;
+    @include lg_900 {
+      width: 10rem;
+    }
+    @include md_767 {
+      width: 10rem;
+    }
+    @include sm_567 {
+      width: 10rem;
+    }
   }
   &__leave {
     position: absolute;
     top: -8vw;
     left: 11vw;
+    @include lg_900 {
+      width: 10rem;
+    }
+    @include md_767 {
+      width: 10rem;
+    }
+    @include sm_567 {
+      width: 5rem;
+    }
   }
 }

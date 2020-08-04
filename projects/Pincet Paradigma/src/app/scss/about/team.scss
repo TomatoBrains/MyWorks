@@ -1,8 +1,21 @@
 .team {
-  background-image: url(../img/about/team/background.png);
   position: relative;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  &--wraper {
+    background-image: url(../img/about/team/background.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    @include lg_900 {
+      padding-top: 3rem;
+    }
+    @include md_767 {
+      padding-top: 3rem;
+    }
+    @include sm_567 {
+      padding-top: 3rem;
+    }
+  }
   &__title {
     text-align: center;
   }

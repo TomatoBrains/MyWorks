@@ -7,6 +7,7 @@
   &__insta {
     width: 31.25vw;
     position: relative;
+    z-index: 1;
     & img {
       position: absolute;
       left: -10vw;

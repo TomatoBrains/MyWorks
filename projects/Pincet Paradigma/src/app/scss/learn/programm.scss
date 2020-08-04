@@ -13,9 +13,11 @@
     margin-bottom: 3vw;
   }
   &__tabs {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3vw;
+    &--flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3vw;
+    }
     &-item {
       padding: 5px;
       background-color: #fff;
@@ -23,9 +25,21 @@
       position: relative;
       margin-right: 2vw;
       box-shadow: 1px -0.2px 109px 0 rgba(220, 178, 180, 0.25);
-      width: 20.729vw;
+      width: 18.4vw;
       cursor: pointer;
       transition: all 0.3s linear;
+      @include lg_900 {
+        width: auto;
+        margin: 0 1rem 1.5rem auto;
+      }
+      @include md_767 {
+        width: auto;
+        margin: 0 1rem 1.5rem auto;
+      }
+      @include sm_567 {
+        width: 30rem;
+        margin: 0 auto 1.5rem auto;
+      }
       &:hover {
         background: linear-gradient(to top, #ee858c, #fabcbc);
       }
@@ -47,17 +61,50 @@
       position: relative;
       height: 9.844vw;
       transition: all 0.2s linear;
+      @include lg_900 {
+        height: 13rem;
+        padding: 1rem;
+      }
+      @include md_767 {
+        height: 13rem;
+        padding: 1rem;
+      }
+      @include sm_567 {
+        height: 13rem;
+        padding: 1rem;
+      }
     }
     &-img {
       position: absolute;
       top: 1.5vw;
       width: 6vw;
       left: 0.5vw;
+      @include lg_900 {
+        width: 12rem;
+        position: static;
+      }
+      @include md_767 {
+        width: 12rem;
+        position: static;
+      }
+      @include sm_567 {
+        width: 12rem;
+        position: static;
+      }
     }
     &-descr {
       font: $fontMuseoSansCyrlLight_24;
       margin-left: 6vw;
       transition: all 0.2s linear;
+      @include lg_900 {
+        width: 13rem;
+      }
+      @include md_767 {
+        width: 13rem;
+      }
+      @include sm_567 {
+        width: 13rem;
+      }
     }
     &-sign {
       top: -1vw;
@@ -65,6 +112,21 @@
       @include daysPurple;
       position: absolute;
       width: 9vw;
+      @include lg_900 {
+        padding: 1rem;
+        width: auto;
+      }
+      @include md_767 {
+        padding: 1rem;
+        width: auto;
+      }
+      @include sm_567 {
+        padding: 1rem;
+        width: auto;
+        & img {
+          display: none;
+        }
+      }
     }
   }
   &__content {
@@ -86,6 +148,15 @@
       border-radius: 10px;
       padding: 3.385vw 4.688vw 0 4.688vw;
       margin-left: 3.854vw;
+      @include lg_900 {
+        width: auto;
+      }
+      @include md_767 {
+        width: auto;
+      }
+      @include sm_567 {
+        width: auto;
+      }
     }
     &-title {
       text-align: center;
@@ -103,13 +174,40 @@
           font: $fontMuseoSansCyrlMed_19;
           margin-right: 3vw;
           margin-bottom: 10px;
+          @include lg_900 {
+            width: auto;
+          }
+          @include md_767 {
+            width: auto;
+          }
+          @include sm_567 {
+            width: auto;
+          }
         }
         & p:nth-of-type(2) {
           font: $fontAppetite_100;
           color: $colorRozeLighter;
           line-height: 0;
+          @include lg_900 {
+            font-size: 6rem !important;
+          }
+          @include md_767 {
+            font-size: 6rem !important;
+          }
+          @include sm_567 {
+            font-size: 6rem !important;
+          }
           & span {
             font: $fontAppetite_55;
+            @include lg_900 {
+              font-size: 4rem !important;
+            }
+            @include md_767 {
+              font-size: 4rem !important;
+            }
+            @include sm_567 {
+              font-size: 4rem !important;
+            }
           }
         }
       }
@@ -123,9 +221,22 @@
             cursor: pointer;
             margin-bottom: 10px;
             justify-content: end;
+            align-items: center;
             & span {
               transform: rotate(270deg);
               margin-right: 10px;
+              @include lg_900 {
+                width: 2rem;
+                display: inline-table;
+              }
+              @include md_767 {
+                width: 2rem;
+                display: inline-table;
+              }
+              @include sm_567 {
+                width: 2rem;
+                display: inline-table;
+              }
             }
           }
         }
@@ -143,6 +254,12 @@
       &--result {
         border-bottom: 1px solid $colorRozeLighter;
         padding-bottom: 2.5vw;
+        @include lg_900 {
+          width: 60rem;
+        }
+        @include md_767 {
+          width: 50rem;
+        }
         & p:nth-of-type(1) {
           @include daysPurple;
           padding: 0.938vw 2.135vw;
@@ -152,6 +269,15 @@
           margin-right: 3vw;
           margin-bottom: 10px;
           width: 9.479vw;
+          @include lg_900 {
+            width: 12rem;
+          }
+          @include md_767 {
+            width: 10rem;
+          }
+          @include sm_567 {
+            width: 8.8rem;
+          }
         }
       }
       &--borderB {
@@ -161,11 +287,34 @@
     &-pluses {
       margin-left: 7.604vw;
       position: relative;
+      @include lg_900 {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+      @include md_767 {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+      @include sm_567 {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
       & > div:nth-child(2n) {
         flex-direction: row-reverse;
         & .programm__content-pluses--descr:nth-of-type(2n) {
           margin-right: 3vw;
           margin-left: 0;
+        }
+      }
+      &--img {
+        @include lg_900 {
+          width: 25rem;
+        }
+        @include md_767 {
+          width: 20rem;
+        }
+        @include sm_567 {
+          width: 15rem;
         }
       }
       &--item {
@@ -178,6 +327,18 @@
         font: $fontMuseoSansCyrlLight_24;
         max-width: 16.885vw;
         margin-left: 3vw;
+        @include lg_900 {
+          width: 15rem;
+          max-width: unset;
+        }
+        @include md_767 {
+          width: 15rem;
+          max-width: unset;
+        }
+        @include sm_567 {
+          width: 15rem;
+          max-width: unset;
+        }
       }
       &--number {
         position: absolute;
@@ -207,11 +368,29 @@
         position: absolute;
         top: 0;
         left: 5vw;
+        @include lg_900 {
+          width: 45rem;
+        }
+        @include md_767 {
+          width: 40rem;
+        }
+        @include sm_567 {
+          width: 35rem;
+        }
       }
       &--leaveR {
         top: 27vw;
         position: absolute;
         right: -5vw;
+        @include lg_900 {
+          width: 5rem;
+        }
+        @include md_767 {
+          width: 5rem;
+        }
+        @include sm_567 {
+          width: 5rem;
+        }
       }
     }
     &-master {
@@ -229,11 +408,40 @@
             background-repeat: no-repeat;
             background-position: left center;
             padding-left: 2vw;
+            @include lg_900 {
+              padding-left: 2rem;
+            }
+            @include md_767 {
+              padding-left: 2rem;
+            }
+            @include sm_567 {
+              padding-left: 2rem;
+            }
           }
         }
       }
       &--img {
         position: relative;
+        @include lg_900 {
+          display: inline-block;
+        }
+        @include md_767 {
+          display: inline-block;
+        }
+        @include sm_567 {
+          display: inline-block;
+        }
+      }
+      &--txtcenter {
+        @include lg_900 {
+          text-align: center;
+        }
+        @include md_767 {
+          text-align: center;
+        }
+        @include sm_567 {
+          text-align: center;
+        }
       }
       &--name {
         @include nameCard;
@@ -241,12 +449,36 @@
         bottom: 4vw;
         right: 1vw;
         padding: 0.538vw 2.719vw;
+        @include lg_900 {
+          bottom: 9rem;
+          right: 1rem;
+        }
+        @include md_767 {
+          bottom: 9rem;
+          right: 1rem;
+        }
+        @include sm_567 {
+          bottom: 9rem;
+          right: 1rem;
+        }
       }
       &--rank {
         @include masterCard;
         font: $fontMuseoSansCyrlMed_15;
         bottom: 1.5vw;
         right: -1vw;
+        @include lg_900 {
+          bottom: 6rem;
+          right: 0rem;
+        }
+        @include md_767 {
+          bottom: 6rem;
+          right: 0rem;
+        }
+        @include sm_567 {
+          bottom: 6rem;
+          right: 0rem;
+        }
       }
       &--title {
         text-align: left;
@@ -257,24 +489,60 @@
         right: -10vw;
         top: -8vw;
         width: 25vw;
+        @include lg_900 {
+          width: 33rem;
+        }
+        @include md_767 {
+          width: 23rem;
+        }
+        @include sm_567 {
+          width: 14rem;
+        }
       }
       &--leaves {
         position: absolute;
         top: 1vw;
         width: 5vw;
         right: -6vw;
+        @include lg_900 {
+          width: 5rem;
+        }
+        @include md_767 {
+          width: 5rem;
+        }
+        @include sm_567 {
+          width: 5rem;
+        }
       }
       &--blurR {
         position: absolute;
         right: -18vw;
         top: -8vw;
         width: 22vw;
+        @include lg_900 {
+          width: 30rem;
+        }
+        @include md_767 {
+          width: 25rem;
+        }
+        @include sm_567 {
+          width: 12rem;
+        }
       }
       &--leavesL {
         position: absolute;
         left: -10vw;
         top: 0vw;
         width: 6vw;
+        @include lg_900 {
+          width: 16rem;
+        }
+        @include md_767 {
+          width: 12rem;
+        }
+        @include sm_567 {
+          width: 7rem;
+        }
       }
     }
     &-diplom {
@@ -282,6 +550,15 @@
       &--title {
         text-align: left;
         margin-top: 11.198vw;
+        @include lg_900 {
+          text-align: center;
+        }
+        @include md_767 {
+          text-align: center;
+        }
+        @include sm_567 {
+          text-align: center;
+        }
         & p {
           margin-top: 3vw;
         }
@@ -291,32 +568,110 @@
         width: 70vw;
         top: -4vw;
         right: -26vw;
+        @include lg_900 {
+          width: 60rem;
+          margin: 1.5rem auto 1.5rem auto;
+          position: static;
+        }
+        @include md_767 {
+          width: 50rem;
+          margin: 1.5rem auto 1.5rem auto;
+          position: static;
+        }
+        @include sm_567 {
+          width: auto;
+          margin-top: 1.5rem;
+          position: static;
+        }
       }
       &--leavesC {
         position: absolute;
         top: 1vw;
         left: 23vw;
+        @include lg_900 {
+          width: 11rem;
+        }
+        @include md_767 {
+          width: 8rem;
+        }
+        @include sm_567 {
+          width: 5rem;
+        }
       }
       &--blur {
         position: absolute;
         top: -2vw;
         left: -19vw;
+        @include lg_900 {
+          width: 10rem;
+          z-index: -1;
+        }
+        @include md_767 {
+          width: 10rem;
+          z-index: -1;
+        }
+        @include sm_567 {
+          width: 10rem;
+          z-index: -1;
+        }
       }
     }
     &-discount {
       margin-top: 15.625vw;
+      @include lg_900 {
+        margin-top: 2rem;
+      }
+      @include md_767 {
+        margin-top: 2rem;
+      }
+      @include sm_567 {
+        margin-top: 2rem;
+      }
       &--img {
         position: relative;
+        @include lg_900 {
+          width: 30rem;
+          margin: 0 auto;
+        }
+        @include md_767 {
+          width: 30rem;
+          margin: 0 auto;
+        }
+        @include sm_567 {
+          width: 30rem;
+          margin: 0 auto;
+        }
       }
       &--number {
         @include bigNumber;
         position: absolute;
         right: -3vw;
         bottom: 4vw;
+        @include lg_900 {
+          font-size: 6rem;
+        }
+        @include md_767 {
+          font-size: 6rem;
+        }
+        @include sm_567 {
+          font-size: 6rem;
+        }
       }
       &--title {
         text-align: left;
         width: 75%;
+        @include lg_900 {
+          text-align: center;
+          width: auto;
+        }
+        @include md_767 {
+          text-align: center;
+          width: auto;
+        }
+        @include sm_567 {
+          text-align: center;
+          width: auto;
+        }
         & p {
           margin-top: 3vw;
         }

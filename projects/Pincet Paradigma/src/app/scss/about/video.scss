@@ -15,6 +15,21 @@
     &-item {
       width: 13.438vw;
       position: relative;
+      @include lg_900 {
+        width: auto;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+      }
+      @include md_767 {
+        width: auto;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+      }
+      @include sm_567 {
+        width: auto;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+      }
     }
     &-btn {
       top: 50%;
@@ -35,10 +50,28 @@
     bottom: 4vw;
     left: -11vw;
     z-index: 1;
+    @include lg_900 {
+      width: 31rem;
+    }
+    @include md_767 {
+      width: 23rem;
+    }
+    @include sm_567 {
+      width: 10rem;
+    }
   }
   &__leaves {
     position: absolute;
     top: -12vw;
     right: 0;
+    @include lg_900 {
+      width: 8rem;
+    }
+    @include md_767 {
+      width: 5rem;
+    }
+    @include sm_567 {
+      width: 4rem;
+    }
   }
 }

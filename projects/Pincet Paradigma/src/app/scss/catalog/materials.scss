@@ -17,5 +17,14 @@
     position: absolute;
     bottom: -2vw;
     right: 0;
+    @include lg_900 {
+      width: 4rem;
+    }
+    @include md_767 {
+      width: 4rem;
+    }
+    @include sm_567 {
+      width: 4rem;
+    }
   }
 }
