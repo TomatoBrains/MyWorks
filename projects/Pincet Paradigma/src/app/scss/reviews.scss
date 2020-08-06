@@ -2,7 +2,7 @@
   padding-left: 6.25vw;
   padding-bottom: 4.167vw;
   display: flex;
-
+  position: relative;
   &__clients {
     margin-right: 5.979vw;
     &-title {
@@ -123,11 +123,13 @@
       position: absolute;
       right: -4vw;
       top: 50%;
+      cursor: pointer;
     }
     &-arrowLeft {
       position: absolute;
       left: -4vw;
       top: 50%;
+      cursor: pointer;
     }
     &-phoneSlide {
       position: absolute;
@@ -147,10 +149,22 @@
       opacity: 0.4;
     }
   }
+  &__blur {
+    position: absolute;
+    left: -14vw;
+    z-index: -1;
+    bottom: -12vw;
+  }
+  &__leave {
+    position: absolute;
+    right: 47%;
+    top: 14vw;
+  }
 }
 @include lg_900 {
   .reviews {
     flex-wrap: wrap;
+    padding-left: 0;
     &__clients {
       margin: 0 auto;
       &-title {
@@ -171,14 +185,16 @@
         justify-content: center;
       }
       &-left {
-        width: 25rem;
+        width: 45%;
         margin-right: 1.5rem;
         height: auto;
+        justify-content: center;
       }
       &-center {
-        width: 25rem;
+        width: 45%;
         height: auto;
         margin-right: 0;
+        justify-content: center;
       }
       &-right {
         width: 100%;
@@ -187,12 +203,12 @@
         flex-direction: row;
       }
       &-top {
-        width: 25rem;
+        width: 45%;
         margin-right: 1.5rem;
         height: auto;
       }
       &-bottom {
-        width: 25rem;
+        width: 45%;
         height: auto;
       }
       &-videoBtn {
@@ -249,11 +265,18 @@
         right: -12rem;
         top: 11rem;
       }
+    }
+    &__blur {
+      width: 40rem;
+    }
+    &__leave {
+      width: 10rem;
     }
   }
 }
 @include md_767 {
   .reviews {
+    padding-left: 0;
     flex-wrap: wrap;
     &__clients {
       margin: 0 auto;
@@ -275,14 +298,16 @@
         justify-content: center;
       }
       &-left {
-        width: 25rem;
+        width: 45%;
         margin-right: 1.5rem;
         height: auto;
+        justify-content: center;
       }
       &-center {
-        width: 25rem;
+        width: 45%;
         height: auto;
         margin-right: 0;
+        justify-content: center;
       }
       &-right {
         width: 100%;
@@ -291,12 +316,12 @@
         flex-direction: row;
       }
       &-top {
-        width: 25rem;
+        width: 45%;
         margin-right: 1.5rem;
         height: auto;
       }
       &-bottom {
-        width: 25rem;
+        width: 45%;
         height: auto;
       }
       &-videoBtn {
@@ -354,10 +379,19 @@
         top: 11rem;
       }
     }
+    &__blur {
+      width: 30rem;
+    }
+    &__leave {
+      right: 71%;
+      top: 2vw;
+      width: 10rem;
+    }
   }
 }
 @include sm_567 {
   .reviews {
+    padding-left: 0;
     margin: 0 auto;
     flex-wrap: wrap;
     &__clients {
@@ -379,14 +413,16 @@
         justify-content: center;
       }
       &-left {
-        width: 12rem;
+        width: 45%;
         margin-right: 1rem;
         height: auto;
+        justify-content: center;
       }
       &-center {
-        width: 12rem;
+        width: 45%;
         height: auto;
         margin-right: 0;
+        justify-content: center;
       }
       &-right {
         width: 100%;
@@ -395,12 +431,12 @@
         flex-direction: row;
       }
       &-top {
-        width: 12rem;
+        width: 45%;
         margin-right: 1rem;
         height: auto;
       }
       &-bottom {
-        width: 12rem;
+        width: 45%;
         height: auto;
       }
       &-videoBtn {
@@ -457,6 +493,14 @@
         right: -2rem;
         top: 11rem;
       }
+    }
+    &__blur {
+      width: 18rem;
+    }
+    &__leave {
+      width: 5rem;
+      right: 80%;
+      top: 11vw;
     }
   }
 }

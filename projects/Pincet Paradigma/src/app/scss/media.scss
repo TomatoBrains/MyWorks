@@ -91,10 +91,10 @@
     font-size: $mobFont_22 !important;
   }
   p {
-    font-size: $mobFont_20;
+    font-size: 1.6rem;
   }
   .linkColorRoze {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 568px) and (max-width: 767px) {
@@ -145,10 +145,10 @@
     font-size: $mobFont_20 !important;
   }
   p {
-    font-size: $mobFont_16;
+    font-size: 1.5rem;
   }
   .linkColorRoze {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 320px) and (max-width: 567px) {
@@ -202,6 +202,6 @@
     font-size: $mobFont_14;
   }
   .linkColorRoze {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

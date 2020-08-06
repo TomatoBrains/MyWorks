@@ -6,8 +6,21 @@
     align-items: center;
     justify-content: space-between;
   }
+  &__logo {
+    width: 14.583vw;
+    @include lg_900 {
+      width: auto;
+    }
+    @include md_767 {
+      width: auto;
+    }
+    @include sm_567 {
+      width: auto;
+    }
+  }
   &__descr {
-    margin-left: 2vw;
+    margin-left: -4vw;
+    margin-right: 4vw;
     & p {
       max-width: 7.5vw;
       font: $fontMuseoSansCyrlLight_14;
@@ -17,16 +30,12 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    &:hover {
-      .header__map-descr_hover {
-        color: $colorRozeDark;
-        border-bottom: 1px dashed $colorRozeDark;
-        transition: 0.2s ease;
-      }
+    &-link {
+      display: none;
     }
     &-icon {
-      width: 4.063vw;
-      height: 4.063vw;
+      width: 5.063vw;
+      height: 5.063vw;
     }
     &-descr {
       &_bold {
@@ -36,9 +45,12 @@
         font: $fontMuseoSansCyrlLight_16;
       }
       &_hover {
-        font: $fontMuseoSansCyrlLight_16;
-        margin-top: 0.885vw;
+        font: $fontMuseoSansCyrlMed_12;
+        margin-top: 0.521vw;
         padding-bottom: 0.313vw;
+        color: $colorRozeDark;
+        border-bottom: 1px dashed $colorRozeDark;
+        transition: 0.2s ease;
       }
     }
   }
@@ -193,6 +205,15 @@
     height: 0.365vw;
     background-color: #fff;
     opacity: 0.5;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
   }
 }
 //media
@@ -204,8 +225,9 @@
     }
     &__descr {
       text-align: center;
+      display: none;
       & p {
-        font-size: 2.2rem;
+        font-size: 2rem;
         max-width: none;
       }
     }
@@ -213,13 +235,21 @@
       margin-top: 2rem;
       display: flex;
       justify-content: center;
-      margin-right: 6rem;
-      & p {
-        font-size: 2.2rem;
+      text-align: center;
+      & a,
+      p {
+        font-size: 2rem;
+      }
+      &--none {
+        display: none;
+      }
+      &-link {
+        display: block;
       }
       &-icon {
         width: 8rem;
         height: auto;
+        display: none;
       }
       &-iframe {
         width: 40rem;
@@ -236,10 +266,10 @@
       justify-content: center;
       & p,
       span {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
       & a {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
       &-phone {
         margin-right: 2rem;
@@ -252,20 +282,27 @@
             height: 3px;
           }
           & p {
-            font-size: 2rem;
+            font-size: 1.8rem;
           }
         }
       }
       &-icon {
-        width: 4rem;
-        height: 4rem;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        & a {
+          display: flex;
+        }
+        & img {
+          max-width: unset;
+        }
       }
     }
     &__rec {
       margin-top: 1rem;
-
+      padding: 1rem;
       & span {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
     }
     &__menu {
@@ -284,8 +321,9 @@
     }
     &__descr {
       margin-left: 1rem;
+      display: none;
       & p {
-        font-size: 2.2rem;
+        font-size: 2rem;
         max-width: none;
       }
     }
@@ -293,13 +331,21 @@
       margin-top: 2rem;
       display: flex;
       justify-content: center;
-      margin-right: 6rem;
-      & p {
-        font-size: 2.2rem;
+      text-align: center;
+      & a,
+      p {
+        font-size: 2rem;
+      }
+      &--none {
+        display: none;
+      }
+      &-link {
+        display: block;
       }
       &-icon {
         width: 8rem;
         height: auto;
+        display: none;
       }
       &-iframe {
         width: 40rem;
@@ -313,12 +359,13 @@
     &__contact {
       margin-top: 1.5rem;
       display: flex;
+      justify-content: center;
       & p,
       span {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
       }
       & a {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
       &-phone {
         margin-right: 2rem;
@@ -331,20 +378,27 @@
             height: 3px;
           }
           & p {
-            font-size: 2rem;
+            font-size: 1.6rem;
           }
         }
       }
       &-icon {
-        width: 4rem;
-        height: 4rem;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        & a {
+          display: flex;
+        }
+        & img {
+          max-width: unset;
+        }
       }
     }
     &__rec {
       margin-top: 1rem;
-
+      padding: 1rem;
       & span {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
     }
     &__menu {
@@ -364,6 +418,7 @@
     }
     &__descr {
       margin-left: 1rem;
+      display: none;
       & p {
         font-size: 1.2rem;
         max-width: none;
@@ -373,13 +428,21 @@
       margin-top: 1rem;
       display: flex;
       justify-content: center;
-      margin-right: 3rem;
-      & p {
+      text-align: center;
+      & a,
+      p {
         font-size: 2.2rem;
+      }
+      &--none {
+        display: none;
+      }
+      &-link {
+        display: block;
       }
       &-icon {
         width: 8rem;
         height: auto;
+        display: none;
       }
       &-iframe {
         width: 20rem;
@@ -396,7 +459,7 @@
       justify-content: center;
       & p,
       span {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
       & a {
         font-size: 1.5rem;
@@ -412,18 +475,25 @@
             height: 3px;
           }
           & p {
-            font-size: 1rem;
+            font-size: 1.4rem;
           }
         }
       }
       &-icon {
-        width: 2rem;
-        height: 2rem;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        & a {
+          display: flex;
+        }
+        & img {
+          max-width: unset;
+        }
       }
     }
     &__rec {
       margin-top: 1rem;
-
+      padding: 1rem;
       & span {
         font-size: 1.2rem;
       }

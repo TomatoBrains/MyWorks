@@ -9,6 +9,16 @@
     margin-bottom: 3.125vw;
   }
   &__descr {
+    width: 75%;
+    @include lg_900 {
+      width: auto;
+    }
+    @include md_767 {
+      width: auto;
+    }
+    @include sm_567 {
+      width: auto;
+    }
     &-title {
       margin-bottom: 2vw;
     }

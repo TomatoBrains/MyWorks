@@ -1,5 +1,9 @@
 .facts {
   padding: 60px 0 120px 0;
+  background-image: url(../img/dep/facts/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   @include lg_900 {
     padding: 60px 0;
   }
@@ -122,9 +126,9 @@
     }
     &-blur {
       position: absolute;
-      bottom: 11vw;
-      right: -12vw;
-      width: 30vw;
+      bottom: 12vw;
+      right: -9vw;
+      width: 23vw;
       z-index: -2;
       @include md_767 {
         width: 21rem;
@@ -144,7 +148,7 @@
     }
   }
   &__descr {
-    margin-top: 6vw;
+    margin-top: 2vw;
     @include md_767 {
       margin-top: -1rem;
       display: flex;
@@ -160,9 +164,15 @@
       flex-wrap: wrap;
     }
     &-item {
-      width: 50%;
+      width: 45%;
       display: flex;
       align-items: center;
+      margin-right: 2vw;
+      margin-bottom: 2vw;
+      @include sm_567 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
     }
     &-number {
       @include bigNumber;
@@ -188,9 +198,10 @@
     &-btn {
       @include mainBtn;
       @include mainBtnBlick;
+      @include mainBtnHover;
       padding: 1.302vw 7.917vw 1.302vw 2.135vw;
       font: $fontMuseoSansCyrlBold_18;
-      letter-spacing: 0.45px;
+      letter-spacing: 1.4px;
       @include md_767 {
         padding: 2rem 0 2rem 5rem;
         width: 25rem;
@@ -206,8 +217,8 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
-        margin-right: 10vw;
-        margin-top: 5.208vw;
+        margin-right: 7vw;
+        margin-top: 3.208vw;
         @include lg_900 {
         }
         @include md_767 {
@@ -227,6 +238,7 @@
       width: 13vw;
       bottom: 0.5vw;
       right: -5vw;
+      pointer-events: none;
       @include md_767 {
         right: -28%;
         width: 17rem;

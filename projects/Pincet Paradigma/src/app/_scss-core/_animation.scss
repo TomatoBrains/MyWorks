@@ -9,6 +9,19 @@
     box-shadow: 0 0 0 0 rgba(209, 119, 122, 0);
   }
 }
+@keyframes pulseicon {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
 @keyframes blink {
   0% {
     left: -30px;
@@ -23,5 +36,35 @@
   100% {
     left: 110%;
     margin-left: 80px;
+  }
+}
+@keyframes jump {
+  0% {
+    margin-top: 0.5rem;
+  }
+  40% {
+    margin-top: 1rem;
+  }
+  60% {
+    margin-top: 1.5rem;
+  }
+  80% {
+    margin-top: 1rem;
+  }
+  100% {
+    margin-top: 0.5rem;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
   }
 }

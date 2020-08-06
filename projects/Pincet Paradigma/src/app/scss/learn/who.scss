@@ -6,6 +6,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    @include lg_900 {
+      background-position: unset;
+    }
+    @include md_767 {
+      background-position: unset;
+    }
+    @include sm_567 {
+      background-position: unset;
+    }
   }
   &__title {
     text-align: center;
@@ -115,11 +124,23 @@
   }
   &__descr {
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    @include lg_900 {
+      width: auto;
+    }
+    @include md_767 {
+      width: auto;
+    }
+    @include sm_567 {
+      width: auto;
+    }
     & p {
       margin-bottom: 2vw;
     }
     &--bottom {
       text-align: left;
+      margin: auto 0;
     }
   }
   &--flex {

@@ -2,10 +2,20 @@
   position: relative;
   overflow-x: hidden;
   &--wraper {
-    background-image: url(../img/wait/background.png);
-    background-size: 100% 100%;
+    background-image: url(../img/learn/joy/background.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 3.125vw;
+    background-position: bottom;
+    padding-top: 7.125vw;
+    @include lg_900 {
+      padding-top: 5rem;
+    }
+    @include md_767 {
+      padding-top: 5rem;
+    }
+    @include sm_567 {
+      padding-top: 5rem;
+    }
   }
   &__title {
     margin-top: 7.552vw;
@@ -36,6 +46,23 @@
   &__descr {
     & h3 {
       margin-bottom: 1.302vw;
+    }
+    & p {
+      font: $fontMuseoSansCyrlLight_18;
+      width: 17.979vw;
+      margin: 0 auto;
+      @include lg_900 {
+        width: 90%;
+        font-size: 1.6rem;
+      }
+      @include md_767 {
+        width: 90%;
+        font-size: 1.5rem;
+      }
+      @include sm_567 {
+        width: 90%;
+        font-size: 1.4rem;
+      }
     }
   }
   &--margin {

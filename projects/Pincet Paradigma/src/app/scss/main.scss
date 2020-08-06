@@ -3,7 +3,7 @@
   padding-top: 5.521vw;
   overflow: hidden;
   &__descr {
-    margin-left: 5.99vw;
+    margin-left: 2.094vw;
     position: relative;
     z-index: 1;
     &-list {
@@ -20,9 +20,10 @@
     }
     &-btn {
       position: relative;
-      padding: 1.302vw 7.917vw 1.302vw 2.135vw;
-      margin-top: 4.583vw;
+      padding: 1.702vw 7.917vw 1.702vw 2.135vw;
+      margin-top: 3.125vw;
       letter-spacing: 2.16px;
+      @include mainBtnHover;
       display: inline-block;
       overflow: hidden;
       cursor: pointer;
@@ -42,7 +43,7 @@
         font: $fontMuseoSansCyrlBold_14;
         color: #fff;
         text-shadow: 0px 1px 5px rgba(210, 110, 116, 0.49);
-        max-width: 10.323vw;
+        max-width: 11.323vw;
         text-align: center;
       }
       &::after {
@@ -74,7 +75,8 @@
       position: absolute;
       position: absolute;
       bottom: 1vh;
-      left: 12vw;
+      left: 13vw;
+      pointer-events: none;
       & img {
         max-width: 10.885vw;
       }
@@ -82,7 +84,7 @@
     &-card {
       right: -29vw;
       position: absolute;
-      bottom: -9vw;
+      bottom: -12vw;
       width: 44.427vw;
     }
     &-info {
@@ -130,8 +132,8 @@
   &__women {
     position: absolute;
     right: 0;
-    top: 9.354vw;
-    max-width: 45.408vw;
+    top: 3.354vw;
+    max-width: 52.408vw;
   }
   &__wawe {
     display: flex;
@@ -163,6 +165,7 @@
       align-items: center;
       &-title {
         order: 1;
+        width: 32rem;
         & h1 {
           & span {
             font-size: 2.2rem;
@@ -171,7 +174,7 @@
       }
       &-list {
         order: 3;
-        margin-top: -10rem;
+        margin-top: -14rem;
         & ul {
           & li {
             font-size: 1.4rem;
@@ -181,9 +184,11 @@
       }
       &-btn {
         padding: 1rem 9rem 1rem 1rem;
+        width: 30rem;
+        margin-top: 0;
         &--wraper {
           order: 4;
-          margin-top: 2rem;
+          margin-top: 3rem;
         }
         & p {
           max-width: none;
@@ -192,7 +197,7 @@
       }
       &-img {
         right: -1rem;
-        top: 1.5rem;
+        top: 5%;
         left: auto;
         width: 12rem;
         & img {
@@ -202,6 +207,7 @@
       &-info {
         left: 19rem;
         top: 11rem;
+        right: unset;
         & img {
           width: 3rem;
           height: auto;
@@ -220,7 +226,7 @@
         position: relative;
         width: 50rem;
         right: -8rem;
-        top: 4rem;
+        top: 1rem;
       }
     }
     &__wawe {
@@ -248,6 +254,7 @@
       align-items: center;
       &-title {
         order: 1;
+        width: 85%;
         & h1 {
           & span {
             font-size: 2.2rem;
@@ -256,7 +263,6 @@
       }
       &-list {
         order: 3;
-        margin-top: -10rem;
         & ul {
           & li {
             font-size: 1.4rem;
@@ -266,9 +272,11 @@
       }
       &-btn {
         padding: 2rem 9rem 2rem 1rem;
+        width: 30rem;
+        margin-top: 0;
         &--wraper {
           order: 4;
-          margin-top: 2rem;
+          margin-top: 3rem;
         }
         & p {
           max-width: none;
@@ -277,23 +285,24 @@
       }
       &-img {
         right: -6rem;
-        top: 2.5rem;
         left: auto;
-        width: 16rem;
+        width: 18rem;
+        top: 12%;
         & img {
           max-width: 100%;
         }
       }
       &-info {
-        left: 31rem;
-        top: 17rem;
+        left: 27rem;
+        top: 15rem;
+        right: unset;
         & img {
           width: 3rem;
           height: auto;
         }
         &_hover {
           top: -14rem;
-          left: 1rem;
+          left: -11rem;
           & p {
             font-size: 1.2rem;
             width: 10rem;
@@ -302,10 +311,9 @@
       }
       &-card {
         order: 2;
-        position: relative;
-        width: 80rem;
-        right: -15rem;
-        top: 10rem;
+        width: 70rem;
+        right: -57rem;
+        top: 12rem;
       }
     }
     &__wawe {
@@ -317,10 +325,12 @@
     }
     &__women {
       position: relative;
-      bottom: -4rem;
+      bottom: -5rem;
       right: -2rem;
       top: unset;
       max-width: 100%;
+      width: 70%;
+      right: -32%;
     }
   }
 }
@@ -334,6 +344,7 @@
       align-items: center;
       &-title {
         order: 1;
+        width: 79%;
         & h1 {
           & span {
             font-size: 2.2rem;
@@ -342,7 +353,6 @@
       }
       &-list {
         order: 3;
-        margin-top: -10rem;
         & ul {
           & li {
             font-size: 1.4rem;
@@ -352,9 +362,11 @@
       }
       &-btn {
         padding: 2rem 9rem 2rem 2rem;
+        width: 40rem;
+        margin-top: 0;
         &--wraper {
           order: 4;
-          margin-top: 2rem;
+          margin-top: 3rem;
         }
         & p {
           max-width: none;
@@ -362,10 +374,11 @@
         }
       }
       &-img {
-        right: -6rem;
-        top: 5.5rem;
+        right: -5rem;
+        top: 2.5rem;
         left: auto;
-        width: 16rem;
+        width: 20rem;
+        top: 1%;
         & img {
           max-width: 100%;
         }
@@ -373,12 +386,13 @@
       &-info {
         left: 31rem;
         top: 17rem;
+        right: unset;
         & img {
           width: 3rem;
           height: auto;
         }
         &_hover {
-          top: -14rem;
+          top: -16rem;
           left: 1rem;
           & p {
             font-size: 1.2rem;
@@ -388,10 +402,9 @@
       }
       &-card {
         order: 2;
-        position: relative;
         width: 80rem;
-        right: -15rem;
-        top: 10rem;
+        right: -61rem;
+        top: 9rem;
       }
     }
     &__wawe {
@@ -403,10 +416,12 @@
     }
     &__women {
       position: relative;
-      bottom: -4rem;
+      bottom: -5rem;
       right: -2rem;
       top: unset;
       max-width: 100%;
+      width: 70%;
+      right: -32%;
     }
   }
 }

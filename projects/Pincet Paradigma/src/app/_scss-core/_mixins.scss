@@ -227,6 +227,7 @@
   padding: 1.042vw 0.885vw;
   border-radius: 10px;
   background-color: #fdfdfd;
+  transform: skew(-11deg);
   @include sm_567 {
     padding: 1rem;
     & p {

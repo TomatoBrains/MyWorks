@@ -57,11 +57,12 @@
       cursor: pointer;
       margin-top: 2.083vw;
       @include mainBtn;
+      @include mainBtnHover;
       &--margin {
         margin-top: 0.5vw;
       }
       &--position {
-        top: 1.5vw !important;
+        top: 1vw !important;
       }
       &--wraper {
         position: relative;
@@ -97,10 +98,11 @@
         transform: rotate(45deg);
       }
       &-img {
-        width: 9.063vw;
+        width: 12.063vw;
         position: absolute;
-        right: -4vw;
-        top: 3vw;
+        right: -6vw;
+        top: 2.5vw;
+        pointer-events: none;
       }
     }
     &-sign {
@@ -137,9 +139,6 @@
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
-    &--padding {
-      padding-bottom: 2.344vw;
-    }
     &--wraper {
       margin-top: 2.865vw;
       padding: 4px;
@@ -160,6 +159,7 @@
         color: #fff;
       }
       &:hover .services__other-btn {
+        display: block;
         opacity: 1;
       }
     }
@@ -192,6 +192,7 @@
       transition: all 0.3s ease;
       opacity: 0;
       cursor: pointer;
+      display: none;
       & a {
         color: #000;
         font: $fontMuseoSansCyrlMed_13;
@@ -263,37 +264,6 @@
     z-index: -1;
   }
 }
-@keyframes jump {
-  0% {
-    margin-top: 0.5rem;
-  }
-  40% {
-    margin-top: 1rem;
-  }
-  60% {
-    margin-top: 1.5rem;
-  }
-  80% {
-    margin-top: 1rem;
-  }
-  100% {
-    margin-top: 0.5rem;
-  }
-}
-@keyframes pulse {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
-  }
-}
-
 @include lg_900 {
   .services {
     padding-top: 4rem;
@@ -399,6 +369,7 @@
         opacity: 1;
         padding: 1.5rem;
         margin-top: 2rem;
+        display: block;
         & a {
           font-size: $mobFont_16;
         }
@@ -523,6 +494,7 @@
         opacity: 1;
         padding: 1rem;
         margin-top: 1.5rem;
+        display: block;
         & a {
           font-size: $mobFont_14;
         }
@@ -645,6 +617,7 @@
       }
       &-btn {
         width: auto;
+        display: block;
         opacity: 1;
         padding: 0.5rem;
         margin-top: 1rem;

@@ -6,17 +6,17 @@
   }
   &-wraper {
     background: no-repeat url(../img/masage/effect/back.png);
-    background-position: top left;
+    background-position: bottom;
     background-size: cover;
-    padding-top: 2vw;
+    padding-top: 8vw;
     @include lg_900 {
-      background-position: top;
+      padding-top: 5rem;
     }
     @include md_767 {
-      background-position: top;
+      padding-top: 5rem;
     }
     @include sm_567 {
-      background-position: top;
+      padding-top: 5rem;
     }
   }
   &__content {

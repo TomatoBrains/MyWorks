@@ -5,6 +5,15 @@
   background-size: 100% 100%;
   &__title {
     text-align: center;
+    @include lg_900 {
+      margin-top: 2rem;
+    }
+    @include md_767 {
+      margin-top: 2rem;
+    }
+    @include sm_567 {
+      margin-top: 2rem;
+    }
   }
   &__workers {
     margin-top: $elemMarginTop_60;
@@ -54,6 +63,7 @@
     & ul {
       margin-top: 2.083vw;
       list-style-image: url(../img/qualification/check.png);
+      margin-left: 1vw;
       & li {
         font: $fontMuseoSansCyrlLight_18;
       }
@@ -61,6 +71,16 @@
     &-link {
       display: inline-block;
       margin-top: 1.563vw;
+      margin-left: 1vw;
+      @include lg_900 {
+        margin-left: 2rem;
+      }
+      @include md_767 {
+        margin-left: 2rem;
+      }
+      @include sm_567 {
+        margin-left: 2rem;
+      }
     }
     & .slick-disabled {
       opacity: 0.3;
@@ -71,13 +91,14 @@
     position: relative;
     display: flex;
     margin-top: 4.792vw;
+    align-items: center;
     &-descr {
       text-align: left;
-      width: 14.323vw;
+      width: 18.523vw;
       padding-right: 3.906vw;
     }
     &-items {
-      width: 81%;
+      width: 62.5vw;
       position: relative;
       margin-left: 4vw;
       & .slick-disabled {
@@ -94,9 +115,10 @@
     &-img {
       position: absolute;
       z-index: 2;
-      left: -8vw;
+      left: -7vw;
       bottom: -1vw;
-      width: 20.292vw;
+      width: 17.292vw;
+      pointer-events: none;
     }
     &-background {
       @include zoomBackground;
@@ -106,13 +128,15 @@
     }
     &-item {
       position: relative;
-      padding-right: 10px;
       &:hover .qualification__certificate-background {
         opacity: 0.4;
       }
       &:hover .qualification__certificate-zoom {
         opacity: 1;
       }
+    }
+    & .slick-slide {
+      padding-right: 10px;
     }
   }
   &__number {
@@ -166,12 +190,36 @@
   position: absolute;
   top: 50%;
   left: -7vw;
+  cursor: pointer;
+  z-index: 2;
+  @include lg_900 {
+    left: 0%;
+    top: 40%;
+  }
+  @include md_767 {
+    left: 0%;
+    top: 40%;
+  }
+  @include sm_567 {
+    left: 0%;
+    top: 40%;
+  }
 }
 .arrowRightBot {
   position: absolute;
   top: 50%;
   right: -3.5vw;
   transform: translate(0, -50%);
+  cursor: pointer;
+  @include lg_900 {
+    right: -10%;
+  }
+  @include md_767 {
+    right: -10%;
+  }
+  @include sm_567 {
+    right: -10%;
+  }
 }
 .arrowLeftBot {
   position: absolute;
@@ -179,11 +227,34 @@
   left: -6.5vw;
   transform: translate(0, -50%);
   z-index: 3;
+  cursor: pointer;
+  @include lg_900 {
+    left: -15%;
+  }
+  @include md_767 {
+    left: -15%;
+  }
+  @include sm_567 {
+    left: -15%;
+  }
 }
 .arrowRight {
   position: absolute;
   top: 50%;
   right: -7vw;
+  cursor: pointer;
+  @include lg_900 {
+    right: 0%;
+    top: 40%;
+  }
+  @include md_767 {
+    right: 0%;
+    top: 40%;
+  }
+  @include sm_567 {
+    right: 0%;
+    top: 40%;
+  }
 }
 .purple {
   color: #9770b6;
@@ -210,6 +281,7 @@
         }
       }
       & ul {
+        margin-left: 2rem;
         & li {
           font-size: 1.6rem;
         }
@@ -252,7 +324,7 @@
       }
       &-img {
         width: 24rem;
-        left: 0rem;
+        left: -9rem;
         bottom: -1rem;
         & img {
           margin: 0 auto;
@@ -271,18 +343,6 @@
       width: 8rem;
       bottom: -4rem;
     }
-  }
-  .arrowRight {
-    display: none;
-  }
-  .arrowLeft {
-    display: none;
-  }
-  .arrowRightBot {
-    display: none;
-  }
-  .arrowLeftBot {
-    display: none;
   }
 }
 @include md_767 {
@@ -307,6 +367,7 @@
         }
       }
       & ul {
+        margin-left: 2rem;
         & li {
           font-size: 1.6rem;
         }
@@ -370,22 +431,12 @@
       bottom: -4rem;
     }
   }
-  .arrowRight {
-    display: none;
-  }
-  .arrowLeft {
-    display: none;
-  }
-  .arrowRightBot {
-    display: none;
-  }
-  .arrowLeftBot {
-    display: none;
-  }
 }
 @include sm_567 {
   .qualification {
     &__workers {
+      width: 30rem;
+      margin: 0 auto;
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
@@ -405,6 +456,7 @@
         }
       }
       & ul {
+        margin-left: 2rem;
         & li {
           font-size: 1.6rem;
         }
@@ -469,17 +521,5 @@
       width: 8rem;
       bottom: -4rem;
     }
-  }
-  .arrowRight {
-    display: none;
-  }
-  .arrowLeft {
-    display: none;
-  }
-  .arrowRightBot {
-    display: none;
-  }
-  .arrowLeftBot {
-    display: none;
   }
 }

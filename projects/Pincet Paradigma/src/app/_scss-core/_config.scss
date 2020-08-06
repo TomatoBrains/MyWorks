@@ -22,7 +22,6 @@
 .learn-wraper {
   background-image: url(../img/learn/main/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .about-wraper {
   background-image: url(../img/about/back1.png);
@@ -49,7 +48,7 @@ h3 {
   font: $fontMuseoSansCyrlBold_30;
 }
 p {
-  font: $fontMuseoSansCyrlLight_24;
+  font: $fontMuseoSansCyrlLight_18;
 }
 
 .bold {
@@ -157,6 +156,9 @@ summary {
     display: inline-block;
     transition: transform 0.2s;
   }
+}
+.show {
+  display: block;
 }
 .flexWrap {
   @include lg_900 {

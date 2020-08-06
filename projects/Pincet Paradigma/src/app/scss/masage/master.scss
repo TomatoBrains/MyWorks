@@ -1,10 +1,21 @@
 .master {
   padding: 30px 0;
+  position: relative;
   &--wraper {
-    background-image: url(../img/masage/master/back.png);
+    background-image: url(../img/masage/master/back2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    padding-top: 8vw;
+    @include lg_900 {
+      padding-top: 5rem;
+    }
+    @include md_767 {
+      padding-top: 5rem;
+    }
+    @include sm_567 {
+      padding-top: 5rem;
+    }
   }
   &__title {
     text-align: center;
@@ -198,6 +209,7 @@
       left: -5vw;
       bottom: -1vw;
       width: 13.292vw;
+      pointer-events: none;
       @include lg_900 {
         display: none;
       }
@@ -233,5 +245,16 @@
         opacity: 1;
       }
     }
+  }
+  &__blur {
+    position: absolute;
+    top: 8vw;
+    right: -10vw;
+    width: 22vw;
+  }
+  &__leave {
+    position: absolute;
+    top: 10vw;
+    width: 4vw;
   }
 }

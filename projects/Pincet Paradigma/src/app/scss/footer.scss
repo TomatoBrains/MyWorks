@@ -64,6 +64,7 @@
     }
     &-mesanger {
       margin-top: 3.125vw;
+      margin-left: 2.5vw;
       &--text {
         width: 11.823vw;
         & p {
@@ -84,6 +85,7 @@
     }
     &-social {
       margin-top: 2.083vw;
+      margin-left: 2.5vw;
       &--text {
         & p {
           font: $fontMuseoSansCyrlBold_20;
@@ -331,11 +333,11 @@
         text-align: center;
         margin-top: 1rem;
         & a {
-          font-size: 1.8rem;
+          font-size: 1.2rem;
         }
       }
       & p {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -492,11 +494,11 @@
         text-align: center;
         margin-top: 1rem;
         & a {
-          font-size: 1.6rem;
+          font-size: 1.2rem;
         }
       }
       & p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -571,6 +573,7 @@
         margin: 1rem auto 0 auto;
       }
       &-mesanger {
+        margin-left: 0;
         &--text {
           width: auto;
           & p {
@@ -583,6 +586,7 @@
         }
       }
       &-social {
+        margin-left: 0;
         &--text {
           & p {
             font-size: 1.6rem;
@@ -634,11 +638,11 @@
         text-align: center;
         margin-top: 1rem;
         & a {
-          font-size: 1.6rem;
+          font-size: 1rem;
         }
       }
       & p {
-        font-size: 1.6rem;
+        font-size: 1rem;
       }
     }
   }

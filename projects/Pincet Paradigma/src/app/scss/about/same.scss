@@ -120,8 +120,8 @@
         @include sm_567 {
           width: auto;
         }
-        & input {
-          width: 100%;
+        & select {
+          width: 85%;
           @include lg_900 {
             font-size: 1.6rem;
             &::placeholder {
@@ -135,7 +135,31 @@
             }
           }
           @include sm_567 {
+            font-size: 1.2rem;
+            &::placeholder {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        & input {
+          width: 85%;
+          @include lg_900 {
+            font-size: 1.6rem;
+            width: auto;
+            &::placeholder {
+              font-size: 1.6rem;
+            }
+          }
+          @include md_767 {
+            font-size: 1.5rem;
+            width: auto;
+            &::placeholder {
+              font-size: 1.5rem;
+            }
+          }
+          @include sm_567 {
             font-size: 1.4rem;
+            width: auto;
             &::placeholder {
               font-size: 1.4rem;
             }
@@ -143,6 +167,8 @@
         }
       }
       &-btn {
+        width: 85%;
+        margin: 0 auto;
         @include lg_900 {
           margin: 1rem auto;
           width: 35rem;

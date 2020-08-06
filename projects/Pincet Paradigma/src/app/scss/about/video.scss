@@ -74,4 +74,19 @@
       width: 4rem;
     }
   }
+  &__leave {
+    position: absolute;
+    bottom: 7vw;
+    left: 2vw;
+    width: 3vw;
+    @include lg_900 {
+      width: 6rem;
+    }
+    @include md_767 {
+      width: 4rem;
+    }
+    @include sm_567 {
+      width: 3rem;
+    }
+  }
 }

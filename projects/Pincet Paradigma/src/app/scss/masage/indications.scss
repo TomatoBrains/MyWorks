@@ -66,6 +66,7 @@
   &__content {
     display: flex;
     padding: 0 7.083vw;
+    margin-top: 2vw;
     &-item {
       width: 25%;
       display: flex;
@@ -90,7 +91,9 @@
     }
     &-subtitle {
       margin-bottom: 1.5vw;
-      flex-basis: 27%;
+      flex-basis: 22%;
+      width: 79%;
+      margin: 0 auto 1.5vw auto;
     }
     &-text {
       font: $fontMuseoSansCyrlLight_18;

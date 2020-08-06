@@ -13,3 +13,5 @@ import "./components/slider";
 import "./components/maskInput";
 import "./components/burger";
 import "./components/prodCount";
+import "./components/acordeonClose";
+import "./components/adressOpen";

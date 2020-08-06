@@ -15,15 +15,13 @@ $(".qualification__workers-slider").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false,
       },
     },
     {
@@ -31,7 +29,6 @@ $(".qualification__workers-slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
       },
     },
   ],
@@ -50,7 +47,6 @@ $(".qualification__certificate-slider").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false,
       },
     },
     {
@@ -58,7 +54,6 @@ $(".qualification__certificate-slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
       },
     },
     {
@@ -66,7 +61,6 @@ $(".qualification__certificate-slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
       },
     },
   ],

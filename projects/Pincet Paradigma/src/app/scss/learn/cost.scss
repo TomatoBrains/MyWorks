@@ -139,12 +139,15 @@
     right: 23vw;
     @include lg_900 {
       width: 9rem;
+      top: -2rem;
     }
     @include md_767 {
       width: 7rem;
+      top: -2rem;
     }
     @include sm_567 {
       width: 5rem;
+      top: -2rem;
     }
   }
   &__leaves {

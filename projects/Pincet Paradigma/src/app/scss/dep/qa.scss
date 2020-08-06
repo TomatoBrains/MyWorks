@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 2.604vw;
+  position: relative;
   &--flex {
     display: flex;
     align-items: center;
@@ -42,6 +43,14 @@
     &-item {
       & details {
         margin-bottom: 20px;
+      }
+      details[open] {
+        & summary {
+          padding-bottom: 0;
+          & span {
+            transform: rotate(180deg) translate(0, -2rem);
+          }
+        }
       }
       & summary {
         cursor: pointer;
@@ -112,6 +121,51 @@
           }
         }
       }
+    }
+  }
+  &__blur {
+    position: absolute;
+    right: 1vw;
+    top: 0vw;
+    width: 20vw;
+    @include lg_900 {
+    }
+    @include md_767 {
+    }
+    @include sm_567 {
+      width: 10rem;
+      top: 6rem;
+      z-index: -1;
+    }
+  }
+  &__leaves {
+    position: absolute;
+    top: 8vw;
+    right: 53vw;
+    width: 8vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
+  }
+  &__flower {
+    position: absolute;
+    right: 9vw;
+    top: 4vw;
+    width: 8vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
     }
   }
 }

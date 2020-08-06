@@ -1,8 +1,12 @@
 .request-learn {
   padding-bottom: 0;
+  & .request--overflow {
+    overflow: hidden;
+  }
   & .request__form {
     display: block;
     padding-left: 0;
+    padding-top: 2.6vw;
     &--wraper {
       display: flex;
       margin-top: 1.604vw;
@@ -12,10 +16,15 @@
     &-img {
       width: 22.042vw;
       position: absolute;
-      left: 0;
-      bottom: 0;
+      left: 2vw;
+      bottom: -1.5vw;
     }
-
+    &-rightImg {
+      &--pos {
+        right: 4vw;
+        top: 2vw;
+      }
+    }
     &-title {
       text-align: center;
     }
@@ -67,8 +76,8 @@
       }
     }
     &-call {
-      margin-top: 3.385vw;
-      margin-bottom: 3.125vw;
+      margin-top: 2.385vw;
+      margin-bottom: 2.125vw;
       &--boldT {
         font: $fontMuseoSansCyrlBold_24;
       }
@@ -120,5 +129,9 @@
         display: none;
       }
     }
+  }
+  &__phoneImg {
+    left: 0vw;
+    bottom: 0vw;
   }
 }

@@ -93,9 +93,24 @@
           & label:nth-of-type(2) {
             width: 40%;
             text-align: left;
+            @include lg_900 {
+              margin-top: 1rem;
+            }
+            @include md_767 {
+              margin-top: 1rem;
+            }
           }
         }
         &-btn {
+          @include lg_900 {
+            margin-top: 1rem;
+          }
+          @include md_767 {
+            margin-top: 1rem;
+          }
+          @include sm_567 {
+            margin-top: 1rem;
+          }
           & button {
             height: 4.6vw;
             font-size: 0.9vw;
@@ -150,9 +165,9 @@
   }
   &__img {
     position: absolute;
-    right: 0;
-    bottom: -15vw;
-    width: 32vw;
+    right: -1vw;
+    bottom: -18vw;
+    width: 42vw;
     z-index: -1;
   }
   &__leave {
@@ -170,23 +185,16 @@
   input[type="radio"]:not(:checked) + label {
     display: inline-block;
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-right: 0;
     cursor: pointer;
-    /*@include lg_900 {
-    padding-right: 0;
-  }
-  @include md_767 {
-    padding-right: 0;
-  }
-  @include sm_567 {
-    padding-right: 0;
-  }*/
   }
   input[type="radio"]:checked + label:before,
   input[type="radio"]:not(:checked) + label:before {
     border-radius: 50%;
     left: 0px;
+    width: 25px;
+    height: 25px;
   }
   input[type="radio"]:not(:checked) + label:before {
     border-radius: 50%;
@@ -194,7 +202,9 @@
   }
   input[type="radio"]:checked + label:after,
   input[type="radio"]:not(:checked) + label:after {
-    left: 3px;
+    left: 5px;
+    width: 13px;
+    height: 7px;
   }
 }
 @include lg_900 {
@@ -293,7 +303,7 @@
         margin-bottom: 2rem;
         display: inline-block;
         & button {
-          width: 35rem;
+          width: 27rem;
           height: 7rem;
           font-size: 1.6rem;
           padding-left: 3rem;

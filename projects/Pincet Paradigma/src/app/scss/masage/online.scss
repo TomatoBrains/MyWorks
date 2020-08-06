@@ -1,0 +1,13 @@
+.online-mas {
+  background-image: url(../img/masage/online/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  & .online__img {
+    position: absolute;
+    right: -1vw;
+    bottom: -12vw;
+    width: 35vw;
+    z-index: 1;
+  }
+}

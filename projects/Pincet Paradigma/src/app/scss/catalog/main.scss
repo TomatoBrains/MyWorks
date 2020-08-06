@@ -3,24 +3,36 @@
     &__descr {
       &-img {
         bottom: 0vh;
-        left: 7vw;
+        left: 10vw;
         @include lg_900 {
           right: -6rem;
-          top: 2.8rem;
+          top: 0.2rem;
           left: auto;
           width: 16rem;
         }
         @include md_767 {
           right: -6rem;
-          top: 2.8rem;
+          top: 0.2rem;
           left: auto;
           width: 16rem;
         }
         @include sm_567 {
-          right: -1rem;
-          top: 1.5rem;
+          right: -6rem;
+          top: 1.2rem;
           left: auto;
-          width: 10rem;
+          width: 13rem;
+        }
+        & img {
+          max-width: 12.885vw;
+          @include lg_900 {
+            max-width: 100%;
+          }
+          @include md_767 {
+            max-width: 100%;
+          }
+          @include sm_567 {
+            max-width: 100%;
+          }
         }
       }
       &-list {
@@ -32,6 +44,32 @@
         }
         @include sm_567 {
           margin-top: 2rem;
+        }
+      }
+      &-btn {
+        padding-right: 11.9vw;
+        @include lg_900 {
+          width: 30rem;
+          padding: 2rem;
+        }
+        @include md_767 {
+          padding: 2rem;
+        }
+        @include sm_567 {
+          width: 20rem;
+          padding: 2rem;
+        }
+        & p {
+          font-size: 0.938vw;
+          @include lg_900 {
+            font-size: 1.6rem;
+          }
+          @include md_767 {
+            font-size: 1.5rem;
+          }
+          @include sm_567 {
+            font-size: 1.4rem;
+          }
         }
       }
     }

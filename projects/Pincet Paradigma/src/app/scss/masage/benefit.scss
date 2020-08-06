@@ -35,10 +35,10 @@
   &__list {
     margin-left: 2vw;
     @include lg_900 {
-      margin-left: 10%;
+      margin-left: 25%;
     }
     @include md_767 {
-      margin-left: 10%;
+      margin-left: 25%;
     }
     @include sm-567 {
       margin-left: 10%;
@@ -50,6 +50,8 @@
         align-items: center;
         font: $fontMuseoSansCyrlLight_24;
         margin-bottom: 2.24vw;
+        width: 90%;
+
         & span {
           & img {
             max-width: unset;

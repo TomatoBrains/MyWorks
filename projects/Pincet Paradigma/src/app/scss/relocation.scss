@@ -10,6 +10,20 @@
     display: flex;
     justify-content: space-between;
   }
+  &__descr {
+    & p {
+      font: $fontMuseoSansCyrlLight_24;
+      @include lg_900 {
+        font-size: 1.6rem;
+      }
+      @include md_767 {
+        font-size: 1.5rem;
+      }
+      @include sm_567 {
+        font-size: 1.4rem;
+      }
+    }
+  }
   &__women {
     &-wraper {
       position: relative;
@@ -69,6 +83,7 @@
       width: 8.802vw;
       & p {
         color: $colorRozeDark;
+        font: $fontMuseoSansCyrlLight_18;
       }
     }
     &-line {
@@ -91,7 +106,7 @@
       &--border {
         border: 1px dashed #fff;
         border-radius: 15px;
-        padding: 1.302vw 3.802vw 1.302vw 2.188vw;
+        padding: 1.302vw 3.802vw 1.302vw 3.188vw;
       }
       & p {
         color: #fff;
@@ -114,6 +129,7 @@
   }
   &__descr {
     margin-top: $elemMarginTop_60;
+    width: 38vw;
     & p {
       & span {
         font: $fontMuseoSansCyrlBold_24;
@@ -158,20 +174,6 @@
     width: 7.448vw;
   }
 }
-@keyframes pulseicon {
-  0% {
-    transform: translate(-50%, -50%) scale(0.7);
-  }
-
-  50% {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(0.7);
-  }
-}
-
 @include lg_900 {
   .relocation {
     &__women {
@@ -212,6 +214,7 @@
     }
     &__descr {
       margin-top: 2.5rem;
+      width: auto;
       & p {
         & span {
           font-size: $mobFont_20;
@@ -314,6 +317,7 @@
     &__descr {
       text-align: left;
       margin-top: 2rem;
+      width: auto;
       & p {
         & span {
           font-size: $mobFont_16;
@@ -419,6 +423,7 @@
     &__descr {
       text-align: left;
       margin-top: 1rem;
+      width: auto;
       & p {
         & span {
           font-size: $mobFont_14;

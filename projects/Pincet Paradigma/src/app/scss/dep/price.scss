@@ -28,6 +28,29 @@
     &-wraper {
       position: relative;
       display: inline-flex;
+      position: absolute;
+      top: -8vw;
+      @include lg_900 {
+        position: static;
+      }
+      @include md_767 {
+        position: static;
+      }
+      @include sm_567 {
+        position: static;
+      }
+      & img {
+        width: 23vw;
+        @include lg_900 {
+          width: auto;
+        }
+        @include md_767 {
+          width: auto;
+        }
+        @include sm_567 {
+          width: auto;
+        }
+      }
     }
     @include lg_900 {
       text-align: center;
@@ -53,7 +76,7 @@
     &-action {
       position: absolute;
       display: flex;
-      top: 0;
+      top: 4vw;
       left: 0;
       & p {
         width: 5.208vw;
@@ -111,8 +134,9 @@
         right: 33%;
       }
       &.dot2 {
-        top: 13%;
+        top: 12%;
         right: 22%;
+        z-index: 3;
       }
       &.dot3 {
         top: 14%;
@@ -123,8 +147,8 @@
         left: 29%;
       }
       &.dot5 {
-        top: 23%;
-        right: 6%;
+        top: 24%;
+        right: 2%;
       }
       &.dot6 {
         top: 31%;
@@ -259,6 +283,9 @@
       border-radius: 10px;
       margin-top: 2vw;
       position: relative;
+      & > div:nth-last-of-type(2) {
+        border: none;
+      }
     }
     &-switch {
       display: flex;
@@ -293,7 +320,7 @@
     }
     &-row {
       display: flex;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.136);
       padding-left: 2vw;
       &-title {
         border-bottom: none;
@@ -340,7 +367,7 @@
         }
       }
       & p:nth-of-type(2) {
-        width: 25%;
+        width: 21%;
         @include lg_900 {
           width: 25%;
         }
@@ -388,7 +415,7 @@
         }
       }
       & div:nth-of-type(2) {
-        width: 15%;
+        width: 17%;
         @include lg_900 {
           width: 25%;
         }
@@ -423,7 +450,7 @@
     &-total {
       display: flex;
       align-items: center;
-      margin: 2vw 4.375vw 0 4.375vw;
+      margin: 2vw 2.375vw 0 2.375vw;
       @include lg_900 {
         margin-right: 0;
         margin-bottom: 1rem;
@@ -562,7 +589,7 @@ input[type="radio"]:not(:checked) + label:before {
   width: 18px;
   height: 18px;
   border: 1px solid #dddddd;
-  background-color: $colorRozeDark;
+  background-color: $colorInputBtn;
 }
 input[type="radio"]:not(:checked) + label:before {
   background-color: #fff;
@@ -594,7 +621,7 @@ input[type="radio"]:not(:checked) + label:after {
   border-radius: 1px;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  background-color: $colorRozeDark;
+  background-color: $colorInputBtn;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);

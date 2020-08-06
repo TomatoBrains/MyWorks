@@ -116,7 +116,7 @@
       }
     }
     &-main {
-      padding: 1.823vw 0;
+      padding: 0.5vw 0 1.823vw 0;
       border-radius: 10px;
       position: relative;
     }
@@ -228,10 +228,10 @@
         @include dashedBtn;
         padding: 6px 7px;
         @include lg_900 {
-          width: 35rem;
+          width: 50rem;
         }
         @include md_767 {
-          width: 35rem;
+          width: 43rem;
         }
         @include sm_567 {
           width: 100%;
@@ -239,6 +239,10 @@
       }
       &-descr {
         display: flex;
+        @include sm_567 {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
       }
       &-full {
         margin-right: 0.5vw;
@@ -272,29 +276,40 @@
         background-color: #fff;
         border-radius: 15px;
         margin: 0.729vw 0.729vw 0.729vw 0;
-        padding: 1.042vw 1.563vw;
+        padding: 1.042vw 1.263vw;
         display: flex;
         align-items: center;
+        @include sm_567 {
+          flex-wrap: wrap;
+          justify-self: center;
+          & p {
+            text-align: center;
+          }
+          & p:first-of-type {
+            width: 100%;
+          }
+        }
         & p {
           font: $fontMuseoSansCyrlBold_16;
-          margin-right: 20px;
+          margin-right: 1vw;
           width: 10vw;
         }
         & .tbig {
-          font: $fontMuseoSansCyrlLight_30;
-          width: 4.844vw;
+          font: $fontMuseoSansCyrlBold_30;
+          width: 5.844vw;
           margin: 0;
           @include lg_900 {
             font-size: 2.4rem !important;
-            width: auto;
+            width: 11rem;
           }
           @include md_767 {
             font-size: 2.2rem !important;
-            width: auto;
+            width: 11rem;
           }
           @include sm_567 {
             font-size: 2rem !important;
-            width: auto;
+            width: 11rem;
+            margin: 0 auto;
           }
         }
       }
@@ -326,7 +341,7 @@
     border-radius: 10px;
     box-shadow: -0.8px 0.6px 150px 0 rgba(139, 117, 118, 0.1);
     background-color: #ffffff;
-    padding: 3.2vw 1.4vw 2.2vw 1.4vw;
+    padding: 1.8vw 1.4vw 1.85vw 1.4vw;
     position: relative;
     &-title {
       text-align: center;
@@ -485,17 +500,21 @@
       }
       &--wraper {
         position: relative;
-        padding: 1.2vw 0 1.2vw 1vw;
+        padding: 1.4vw 0 1.4vw 1vw;
         & p {
           width: 20.531vw;
+          font: $fontMuseoSansCyrlLight_24;
           @include lg_900 {
             width: 35rem;
+            font-size: 1.6rem;
           }
           @include md_767 {
             width: 35rem;
+            font-size: 1.5rem;
           }
           @include sm_567 {
-            width: auto;
+            width: 31rem;
+            font-size: 1.4rem;
           }
         }
         & img {
@@ -568,6 +587,34 @@
     }
     @include sm_567 {
       right: 25px;
+    }
+  }
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    @include lg_900 {
+      right: 28px;
+    }
+    @include md_767 {
+      right: 28px;
+    }
+    @include sm_567 {
+      right: 28px;
+    }
+  }
+  &__blur {
+    position: absolute;
+    top: 0vw;
+    width: 25vw;
+    left: -5vw;
+    z-index: -1;
+    @include lg_900 {
+      width: 10rem;
+    }
+    @include md_767 {
+      width: 10rem;
+    }
+    @include sm_567 {
+      width: 10rem;
     }
   }
 }

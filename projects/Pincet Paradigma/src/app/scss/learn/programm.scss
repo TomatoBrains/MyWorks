@@ -3,6 +3,7 @@
   background-image: url(../img/learn/programm/background.png);
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: bottom;
   &--flex {
     display: flex;
     align-items: center;
@@ -46,6 +47,7 @@
       &:hover .programm__tabs-inner {
         background: linear-gradient(to top, #ee858c, #fabcbc);
         border-color: #fff;
+        box-shadow: 1px -0.2px 109px 0 rgba(220, 178, 180, 0.55);
       }
       &:hover .programm__tabs-descr {
         color: #fff;
@@ -307,6 +309,7 @@
         }
       }
       &--img {
+        width: 13vw;
         @include lg_900 {
           width: 25rem;
         }
@@ -348,15 +351,15 @@
           top: 4vw;
         }
         &-2 {
-          right: 10vw;
-          bottom: 2vw;
+          right: 8vw;
+          bottom: 1vw;
         }
         &-3 {
           left: -1vw;
           top: 4vw;
         }
         &-4 {
-          right: 13vw;
+          right: 10vw;
           top: 2vw;
         }
         &-5 {
@@ -408,14 +411,18 @@
             background-repeat: no-repeat;
             background-position: left center;
             padding-left: 2vw;
+            background-size: 3%;
             @include lg_900 {
               padding-left: 2rem;
+              background-size: auto;
             }
             @include md_767 {
               padding-left: 2rem;
+              background-size: auto;
             }
             @include sm_567 {
               padding-left: 2rem;
+              background-size: auto;
             }
           }
         }
@@ -596,6 +603,7 @@
         }
         @include sm_567 {
           width: 5rem;
+          top: -1rem;
         }
       }
       &--blur {

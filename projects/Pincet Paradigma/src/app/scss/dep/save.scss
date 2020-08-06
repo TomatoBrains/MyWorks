@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 5.573vw;
+  background-position: bottom;
   &--flex {
     display: flex;
     @include lg_900 {
@@ -43,6 +44,8 @@
       & p {
         padding: 1.354vw 2.76vw;
         font: $fontMuseoSansCyrlBold_24;
+        border: 1px dashed #fff;
+        border-radius: 15px;
       }
       @include lg_900 {
         width: 85%;
@@ -85,7 +88,7 @@
     }
     &-img {
       margin-right: 1.823vw;
-      width: 25vw;
+      width: 100%;
       position: relative;
       text-align: center;
       @include lg_900 {
@@ -140,6 +143,16 @@
     &-text {
       & h3 {
         font: $fontMuseoSansCyrlBold_24;
+        width: 18.76vw;
+        @include lg_900 {
+          width: auto;
+        }
+        @include md_767 {
+          width: auto;
+        }
+        @include sm_567 {
+          width: auto;
+        }
       }
       & p {
         font: $fontMuseoSansCyrlLight_16;
@@ -176,7 +189,7 @@
   }
   &__master {
     position: relative;
-    margin: 0 25px;
+    margin: 5vw 25px 0 25px;
     text-align: center;
     @include lg_900 {
       margin: 3rem 2rem;
@@ -206,21 +219,21 @@
     &-name {
       @include nameCard;
       color: $colorPurple;
-      left: 2vw;
+      left: 1vw;
       top: 0;
       right: unset;
       bottom: unset;
       box-shadow: 1px -0.2px 90px 0 rgba(122, 122, 122, 0.38);
       @include lg_900 {
-        width: 23rem;
+        width: 25rem;
         left: 0;
       }
       @include md_767 {
-        width: 20rem;
+        width: 22rem;
         left: 0;
       }
       @include sm-567 {
-        width: 19rem;
+        width: 21rem;
         left: 0;
       }
       & p {
@@ -230,7 +243,7 @@
     }
     &-rank {
       @include masterCard;
-      left: 0vw;
+      left: -1vw;
       top: 2.5vw;
       bottom: unset;
       right: unset;

@@ -11,13 +11,13 @@
     display: flex;
     justify-content: space-between;
     @include lg_900 {
-      justify-content: center;
+      justify-content: space-evenly;
     }
     @include md_767 {
-      justify-content: center;
+      justify-content: space-evenly;
     }
     @include sm_567 {
-      justify-content: center;
+      justify-content: space-evenly;
     }
   }
   &__catalog {
@@ -418,36 +418,51 @@
         }
         & label {
           padding-top: 3px;
+          font: $fontMuseoSansCyrlLight_14;
+          @include lg_900 {
+            font-size: 1.4rem;
+          }
+          @include md_767 {
+            font-size: 1.4rem;
+          }
+          @include sm_567 {
+            font-size: 1.4rem;
+          }
           &::before {
             border-radius: 50% !important;
           }
         }
-        & input[type="radio"]:checked + label:before,
-        & input[type="radio"]:checked + label:after {
-          background-color: $colorRozeDarker;
+        & input[type="radio"]:not(:checked) + label:after,
+        input[type="radio"]:checked + label:after {
+          left: 3px;
+        }
+        & input[type="radio"]:not(:checked) + label:before,
+        input[type="radio"]:checked + label:before {
+          left: 0px;
+          right: unset;
         }
         & input[type="radio"]:not(:checked) + label {
-          padding-left: 1.302vw;
+          padding-left: 2.302vw;
           @include lg_900 {
-            padding-right: 25px;
+            padding-left: 25px;
           }
           @include md_767 {
-            padding-right: 25px;
+            padding-left: 25px;
           }
           @include sm_567 {
-            padding-right: 25px;
+            padding-left: 25px;
           }
         }
         & input[type="radio"]:checked + label {
-          padding-left: 1.302vw;
+          padding-left: 2.302vw;
           @include lg_900 {
-            padding-right: 25px;
+            padding-left: 25px;
           }
           @include md_767 {
-            padding-right: 25px;
+            padding-left: 25px;
           }
           @include sm_567 {
-            padding-right: 25px;
+            padding-left: 25px;
           }
         }
       }
@@ -476,6 +491,19 @@
           letter-spacing: 2.16px;
         }
       }
+      &--adress {
+        margin-top: 1vw;
+        display: none;
+        @include lg_900 {
+          margin-top: 1rem;
+        }
+        @include md_767 {
+          margin-top: 1rem;
+        }
+        @include sm_567 {
+          margin-top: 1rem;
+        }
+      }
     }
   }
   &__blur {
@@ -496,7 +524,7 @@
   &__leaveLeft {
     position: absolute;
     left: 3vw;
-    top: 7vw;
+    top: 11vw;
     @include lg_900 {
       width: 5rem;
     }

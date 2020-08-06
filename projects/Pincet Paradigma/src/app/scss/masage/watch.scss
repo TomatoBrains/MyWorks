@@ -55,10 +55,10 @@
       position: absolute;
       font: $fontMuseoSansCyrlLight_18;
       color: $colorRozeDark;
-      width: 7.854vw;
+      width: 8.4vw;
       text-align: right;
-      top: 5vw;
-      right: 19vw;
+      top: 7vw;
+      right: 21vw;
       @include lg_900 {
         top: 16%;
         left: 47%;
@@ -75,9 +75,9 @@
     }
     &-line {
       position: absolute;
-      left: -6vw;
-      top: 1vw;
-      width: 7vw;
+      left: -4vw;
+      top: 0.5vw;
+      width: 6vw;
       @include lg_900 {
         width: 7rem;
         top: 37%;

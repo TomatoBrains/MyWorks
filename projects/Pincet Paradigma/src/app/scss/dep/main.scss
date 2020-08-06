@@ -6,6 +6,7 @@
         left: 4vw;
         & img {
           max-width: 18vw;
+          pointer-events: none;
         }
       }
     }
@@ -33,6 +34,11 @@
           margin-top: 2rem;
         }
       }
+      &-btn {
+        &--DEP {
+          width: 30rem;
+        }
+      }
       &-leaves {
         &--DEP {
           width: 20rem;
@@ -51,8 +57,8 @@
       &-img {
         &--DEP {
           width: 24rem;
-          top: 1rem;
-          right: -4rem;
+          top: -3rem;
+          right: -3rem;
         }
       }
     }
@@ -92,8 +98,8 @@
       &-img {
         &--DEP {
           width: 24rem;
-          top: 0rem;
-          right: -5rem;
+          top: -3rem;
+          right: -2rem;
         }
       }
     }
@@ -117,23 +123,30 @@
       }
       &-leaves {
         &--DEP {
-          width: 10rem;
+          width: 6rem;
           top: 18rem;
           right: -1rem;
         }
       }
       &-blur {
         &--DEP {
-          width: 10rem;
+          width: 8rem;
           left: -6rem;
           bottom: -1rem;
           top: unset;
+        }
+      }
+      &-btn {
+        &--DEP {
+          width: 20rem;
+          padding: 2rem;
         }
       }
       &-img {
         &--DEP {
           width: 17rem;
           top: -1rem;
+          right: -6rem;
         }
       }
     }
