@@ -98,7 +98,7 @@
         }
       }
       @include md_767 {
-        width: 100%;
+        width: auto;
         & p {
           font-size: unset;
         }
@@ -141,6 +141,12 @@
       }
     }
     &-text {
+      @include md_767 {
+        width: 60%;
+      }
+      @include sm_567 {
+        width: 90%;
+      }
       & h3 {
         font: $fontMuseoSansCyrlBold_24;
         width: 18.76vw;
@@ -235,6 +241,7 @@
       @include sm-567 {
         width: 21rem;
         left: 0;
+        padding: 1rem 0.5rem;
       }
       & p {
         font: $fontMuseoSansCyrlBold_19;
@@ -270,7 +277,7 @@
       }
       @include sm-567 {
         width: 22rem;
-        top: 38px;
+        top: 30px;
         left: -30px;
         & p {
           width: 100%;

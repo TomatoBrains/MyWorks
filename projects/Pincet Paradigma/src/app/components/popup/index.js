@@ -2,12 +2,15 @@ import $ from "jquery";
 
 let popup = $(".main__popup");
 let completePopup = $(".main__popup-complete");
-let btn = $(".main__descr-btn");
+let btn = $(".main__descr-btn--popup");
 let btnComplete = $(".main__popup-submit");
 let onlineBtn = $(".header__rec");
 let background = $(".main__popup_background");
 let closePopup = $(".main__popup-close");
 let closeCompletePopup = $(".main__popup-complete_close");
+let popupLeave = $(".popup__leave");
+let popupLeaveClose = $(".popup__leave-close");
+let exit = true;
 
 function openClosePopup() {
   function togglePopup() {
@@ -23,6 +26,7 @@ function openClosePopup() {
     popup.removeClass("show");
     completePopup.removeClass("show");
     background.removeClass("show");
+    popupLeave.removeClass("show");
     $("html").toggleClass("overflowToggle");
   }
   btn.on("click", function () {
@@ -43,5 +47,14 @@ function openClosePopup() {
   closeCompletePopup.on("click", function () {
     closePopups();
   });
+  popupLeaveClose.on("click", function () {
+    closePopups();
+  });
 }
 openClosePopup();
+
+$("html").one("mouseleave", function () {
+  popupLeave.addClass("show");
+  background.addClass("show");
+  $("html").addClass("overflowToggle");
+});

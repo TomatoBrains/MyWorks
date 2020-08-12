@@ -10,14 +10,17 @@
     @include lg_900 {
       text-align: center;
       margin-bottom: 3rem;
+      margin-top: 2rem;
     }
     @include md_767 {
       text-align: center;
       margin-bottom: 3rem;
+      margin-top: 2rem;
     }
     @include sm_567 {
       text-align: center;
       margin-bottom: 3rem;
+      margin-top: 2rem;
     }
   }
   &__slider {

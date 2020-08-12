@@ -543,6 +543,7 @@
       &-descr {
         width: auto;
         margin-top: 1rem;
+        padding: 0 0.5rem;
         & h3 {
           font-size: $mobFont_18;
         }
@@ -606,7 +607,7 @@
         width: 12rem;
       }
       &-descr {
-        width: auto;
+        width: 22rem;
         color: #fff;
         & p {
           font-size: $mobFont_14;
@@ -616,7 +617,7 @@
         }
       }
       &-btn {
-        width: auto;
+        width: 12rem;
         display: block;
         opacity: 1;
         padding: 0.5rem;

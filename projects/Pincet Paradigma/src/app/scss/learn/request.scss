@@ -27,6 +27,21 @@
     }
     &-title {
       text-align: center;
+      @include lg_900 {
+        & p {
+          margin-top: 1rem;
+        }
+      }
+      @include md_767 {
+        & p {
+          margin-top: 1rem;
+        }
+      }
+      @include sm_567 {
+        & p {
+          margin-top: 1rem;
+        }
+      }
     }
     &-inputs {
       width: 32.031vw;

@@ -13,12 +13,15 @@
     text-align: center;
     @include lg_900 {
       margin-top: 5rem;
+      margin-bottom: 2rem;
     }
     @include md_767 {
       margin-top: 5rem;
+      margin-bottom: 3rem;
     }
     @include sm_567 {
       margin-top: 5rem;
+      margin-bottom: 4rem;
     }
   }
   &--flex {
@@ -51,9 +54,12 @@
     }
     @include md_767 {
       margin-bottom: 2rem;
+      padding: 2rem 4rem 4rem 4rem;
     }
     @include sm_567 {
       margin-bottom: 2rem;
+      padding: 3rem;
+      padding-top: 1.5rem;
     }
     &-discount {
       position: absolute;

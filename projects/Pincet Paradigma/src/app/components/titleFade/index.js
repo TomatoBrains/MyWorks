@@ -2,7 +2,7 @@ import $ from "jquery";
 
 $("h2").each(anime);
 $("h3").each(anime);
-
+$(".wait__img").each(anime);
 function anime(anim) {
   var thisTitle = $(this);
   $(window).scroll(function (event) {

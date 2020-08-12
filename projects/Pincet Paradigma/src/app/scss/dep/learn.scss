@@ -84,6 +84,15 @@
   &__descr {
     &-title {
       text-align: center;
+      @include lg_900 {
+        margin-bottom: 3rem;
+      }
+      @include md_767 {
+        margin-bottom: 3rem;
+      }
+      @include sm_567 {
+        margin-bottom: 3rem;
+      }
       & p {
         font: $fontMuseoSansCyrlLight_30;
         @include lg_900 {
@@ -107,13 +116,12 @@
       & a {
         font: $fontMuseoSansCyrlLight_18;
         text-align: center;
-        color: #fff;
         padding: 0.7vw 0;
         width: 19.063vw;
-        background: $btnGradient;
-        border-top: 1px dashed #fff;
-        border-right: 1px dashed #fff;
-        border-left: 1px dashed #fff;
+        background: #fff;
+        border-top: 1px dashed $colorRozeDark;
+        border-right: 1px dashed $colorRozeDark;
+        border-left: 1px dashed $colorRozeDark;
         display: inline-block;
         border-radius: 10px;
         border-bottom-left-radius: 0;
@@ -133,15 +141,21 @@
       }
       &--wraper {
         padding: 7px 7px 0 7px;
-        background: $btnGradient;
+        background-color: #fff;
         border-radius: 10px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         @include lg_900 {
-          width: 17rem;
+          width: 24rem;
+          & a {
+            padding: 1rem 0.5rem;
+          }
         }
         @include md_767 {
-          width: 15rem;
+          width: 22rem;
+          & a {
+            padding: 1rem 0.5rem;
+          }
         }
         @include sm_567 {
           width: 12rem;
@@ -153,22 +167,47 @@
       border-radius: 15px;
       padding: 2.448vw 2.813vw;
       display: flex;
+      @include lg_900 {
+        padding: 2rem;
+        width: 55rem;
+        margin: 0 auto;
+      }
+      @include md_767 {
+        padding: 2rem;
+        width: 55rem;
+        margin: 0 auto;
+      }
+      @include sm_567 {
+        padding: 2rem;
+      }
     }
     &-text {
       width: 27.375vw;
       margin-right: 1.083vw;
       @include lg_900 {
         width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       @include md_767 {
         width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       @include sm_567 {
         width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       & p {
         font: $fontMuseoSansCyrlLight_16;
         margin-bottom: 1.875vw;
+        @include sm_567 {
+          margin-bottom: 2rem;
+        }
       }
       & ul {
         font: $fontMuseoSansCyrlBold_16;
@@ -197,6 +236,10 @@
       border-width: 2px;
       border-radius: 15px;
       padding: 1.302vw 1.302vw 0 1.302vw;
+      @include sm_567 {
+        margin-top: 2rem;
+        padding: 1rem 1rem 0 1rem;
+      }
       &--text {
         & p {
           font: $fontMuseoSansCyrlLight_14;
@@ -258,6 +301,46 @@
       }
       &--lineH {
         line-height: 0.4 !important;
+      }
+    }
+  }
+  &__active {
+    background: linear-gradient(to top, #ee858c, #fabcbc) !important;
+    border-color: #fff !important;
+    color: #fff !important;
+  }
+  & .request__form-btn {
+    display: inline-block;
+    @include lg_900 {
+      text-align: center;
+      & button {
+        width: 25rem;
+      }
+    }
+    @include md_767 {
+      text-align: center;
+      & button {
+        width: 25rem;
+      }
+    }
+    @include sm_567 {
+      text-align: center;
+    }
+    & img {
+      @include lg_900 {
+        width: 21rem;
+        right: -8rem;
+        bottom: 0.5rem;
+      }
+      @include md_767 {
+        width: 21rem;
+        right: -8rem;
+        bottom: 0.5rem;
+      }
+      @include sm_567 {
+        width: 16rem;
+        right: -5rem;
+        bottom: 0.5rem;
       }
     }
   }

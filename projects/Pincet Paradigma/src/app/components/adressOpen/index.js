@@ -8,8 +8,6 @@ inputYes.change(function adressOpen() {
     adress.addClass("show");
   }
 });
-inputNo.change(function adressClose() {
-  if (inputYes.prop("checked")) {
-    adress.removeClass("show");
-  }
+inputNo.click(function adressClose() {
+  adress.removeClass("show");
 });

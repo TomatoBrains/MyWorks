@@ -198,7 +198,7 @@
         flex-direction: column;
         width: 35rem;
         height: 8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         margin-right: 25px;
         & label {
           font-size: 1.6rem;
@@ -218,7 +218,7 @@
         flex-direction: column;
         width: 35rem;
         height: 8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         & label {
           font-size: 1.6rem;
         }
@@ -313,7 +313,7 @@
         flex-direction: column;
         width: 35rem;
         height: 8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         & label {
           font-size: 1.6rem;
         }
@@ -332,7 +332,7 @@
         flex-direction: column;
         width: 35rem;
         height: 8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         & label {
           font-size: 1.6rem;
         }
@@ -412,6 +412,7 @@
         position: relative;
         margin-right: 0;
         text-align: center;
+        display: none;
       }
       &-inputs {
         margin: 0;
@@ -426,7 +427,7 @@
         flex-direction: column;
         width: 20rem;
         height: 5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         margin-right: 0;
         & label {
           font-size: 1.4rem;
@@ -446,7 +447,7 @@
         flex-direction: column;
         width: 20rem;
         height: 5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         & label {
           font-size: 1.4rem;
         }

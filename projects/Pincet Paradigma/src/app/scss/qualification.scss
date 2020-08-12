@@ -218,7 +218,7 @@
     right: -10%;
   }
   @include sm_567 {
-    right: -10%;
+    right: -13%;
   }
 }
 .arrowLeftBot {
@@ -411,7 +411,7 @@
       }
       &-img {
         width: 24rem;
-        left: 0rem;
+        left: -5rem;
         bottom: -1rem;
         & img {
           margin: 0 auto;
@@ -465,6 +465,11 @@
         & img {
           margin: 0 auto;
         }
+      }
+    }
+    &__certificate {
+      & .slick-slide {
+        padding-right: 0;
       }
     }
     &__leaveLeft {

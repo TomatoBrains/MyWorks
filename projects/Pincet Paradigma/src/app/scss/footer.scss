@@ -533,9 +533,11 @@
     }
     &__descr {
       text-align: center;
+      width: 30rem;
+      margin: 0 auto;
       &-phones {
         margin-top: 2rem;
-        justify-content: center;
+        justify-content: end;
         &--icon {
           margin-right: 1rem;
         }
@@ -554,7 +556,7 @@
         }
       }
       &-time {
-        justify-content: center;
+        justify-content: end;
         &--text {
           & p {
             font-size: 1.6rem;
@@ -600,8 +602,9 @@
     }
     &__map {
       margin-top: 2rem;
+      order: 2;
       &--flex {
-        display: block;
+        flex-direction: column;
       }
       &-img {
         position: relative;
@@ -609,6 +612,7 @@
         left: unset;
         top: unset;
         margin: 0 auto;
+        order: 1;
       }
       &-illustration {
         flex-wrap: wrap;

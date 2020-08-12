@@ -33,12 +33,15 @@
     position: relative;
     @include lg_900 {
       margin-bottom: 2rem;
+      margin-top: 2rem;
     }
     @include md_767 {
       margin-bottom: 2rem;
+      margin-top: 2rem;
     }
     @include sm_567 {
       margin-bottom: 2rem;
+      margin-top: 2rem;
     }
     &-proc {
       display: flex;
@@ -52,16 +55,19 @@
           width: 100%;
           margin-bottom: 2rem;
           text-align: center;
+          margin-top: 1rem;
         }
         @include md_767 {
           width: 100%;
           margin-bottom: 2rem;
           text-align: center;
+          margin-top: 1rem;
         }
         @include sm_567 {
           width: 100%;
           margin-bottom: 2rem;
           text-align: center;
+          margin-top: 1rem;
         }
       }
       &--icons {
@@ -220,6 +226,15 @@
       display: flex;
       align-items: center;
       margin: 0 2.375vw;
+      @include lg_900 {
+        margin-top: 2rem;
+      }
+      @include md_767 {
+        margin-top: 2rem;
+      }
+      @include sm_567 {
+        margin-top: 2rem;
+      }
       & > p {
         font: $fontMuseoSansCyrlBold_30;
         margin-right: 20px;
@@ -282,6 +297,8 @@
         @include sm_567 {
           flex-wrap: wrap;
           justify-self: center;
+          padding: 0.5rem;
+          margin: 0.5rem;
           & p {
             text-align: center;
           }
@@ -400,6 +417,7 @@
         }
         @include sm_567 {
           width: 35%;
+          margin-right: 2rem;
         }
       }
       &--text {
@@ -501,19 +519,22 @@
       &--wraper {
         position: relative;
         padding: 1.4vw 0 1.4vw 1vw;
+        @include sm_567 {
+          padding: 1rem;
+        }
         & p {
           width: 20.531vw;
           font: $fontMuseoSansCyrlLight_24;
           @include lg_900 {
-            width: 35rem;
+            width: 32rem;
             font-size: 1.6rem;
           }
           @include md_767 {
-            width: 35rem;
+            width: 32rem;
             font-size: 1.5rem;
           }
           @include sm_567 {
-            width: 31rem;
+            width: 23rem;
             font-size: 1.4rem;
           }
         }
@@ -550,7 +571,7 @@
         width: 5rem;
       }
       @include sm_567 {
-        width: 5rem;
+        width: 3rem;
       }
     }
     &-line {

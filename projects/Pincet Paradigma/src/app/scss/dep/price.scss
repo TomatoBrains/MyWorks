@@ -31,13 +31,13 @@
       position: absolute;
       top: -8vw;
       @include lg_900 {
-        position: static;
+        position: relative;
       }
       @include md_767 {
-        position: static;
+        position: relative;
       }
       @include sm_567 {
-        position: static;
+        position: relative;
       }
       & img {
         width: 23vw;
@@ -149,6 +149,9 @@
       &.dot5 {
         top: 24%;
         right: 2%;
+        @include sm_567 {
+          z-index: 20;
+        }
       }
       &.dot6 {
         top: 31%;
@@ -283,6 +286,10 @@
       border-radius: 10px;
       margin-top: 2vw;
       position: relative;
+      @include sm_567 {
+        width: 29rem;
+        margin: 2rem auto;
+      }
       & > div:nth-last-of-type(2) {
         border: none;
       }
@@ -290,31 +297,51 @@
     &-switch {
       display: flex;
       align-items: center;
+      margin-left: 5vw;
       @include lg_900 {
         justify-content: center;
+        margin-left: 0;
       }
       @include md_767 {
         justify-content: center;
+        margin-left: 0;
       }
       @include sm_567 {
         justify-content: center;
+        margin-left: 0;
       }
       &--women {
-        border-bottom: 1px dashed #000;
-        margin-right: 4.167vw;
-        cursor: pointer;
         & a {
           font: $fontMuseoSansCyrlLight_48;
+          border-bottom: 1px dashed #000;
+          margin-right: 4.167vw;
+          cursor: pointer;
+          @include lg_900 {
+            font-size: 2rem;
+          }
+          @include md_767 {
+            font-size: 2rem;
+          }
+          @include sm_567 {
+            font-size: 1.8rem;
+          }
         }
       }
       &--men {
-        @include mainBtn;
-        padding: 1.875vw 4.427vw;
-        border-radius: 57.5px;
-        cursor: pointer;
         & a {
           font: $fontMuseoSansCyrlLight_48;
-          color: #fff;
+          border-bottom: 1px dashed #000;
+          margin-right: 4.167vw;
+          cursor: pointer;
+          @include lg_900 {
+            font-size: 2rem;
+          }
+          @include md_767 {
+            font-size: 2rem;
+          }
+          @include sm_567 {
+            font-size: 1.8rem;
+          }
         }
       }
     }
@@ -357,13 +384,13 @@
       & p:nth-of-type(1) {
         width: 45%;
         @include lg_900 {
-          width: 25%;
+          width: 31%;
         }
         @include md_767 {
           width: 25%;
         }
         @include sm_567 {
-          width: 27%;
+          width: 8rem;
         }
       }
       & p:nth-of-type(2) {
@@ -375,7 +402,7 @@
           width: 25%;
         }
         @include sm_567 {
-          width: 18%;
+          width: 5rem;
         }
       }
       & p:nth-of-type(3) {
@@ -387,7 +414,7 @@
           width: 25%;
         }
         @include sm_567 {
-          width: 27%;
+          width: 8rem;
         }
       }
       & p:nth-of-type(4) {
@@ -399,7 +426,7 @@
           width: 25%;
         }
         @include sm_567 {
-          width: 27%;
+          width: 7rem;
         }
       }
       & div:nth-of-type(1) {
@@ -411,7 +438,7 @@
           width: 25%;
         }
         @include sm_567 {
-          width: 30%;
+          width: 7rem;
         }
       }
       & div:nth-of-type(2) {
@@ -423,7 +450,10 @@
           width: 25%;
         }
         @include sm_567 {
-          width: 30%;
+          width: 7rem;
+          & label {
+            margin-left: 1rem;
+          }
         }
       }
       & p {
@@ -456,18 +486,16 @@
         margin-bottom: 1rem;
       }
       @include md_767 {
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin: 2rem 0;
       }
       @include sm_567 {
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
       }
       & > p {
         font: $fontMuseoSansCyrlBold_30;
         margin-right: 20px;
         @include lg_900 {
-          margin-right: 0;
+          margin-right: 1rem;
           margin-bottom: 1rem;
         }
         @include md_767 {
@@ -482,6 +510,12 @@
       &--wraper {
         @include dashedBtn;
         padding: 6px 7px;
+        @include md_767 {
+          width: 50rem;
+        }
+        @include sm_567 {
+          width: 34rem;
+        }
       }
       &-descr {
         display: flex;
@@ -518,14 +552,24 @@
         padding: 1.042vw 1.563vw;
         display: flex;
         align-items: center;
+        @include sm_567 {
+          margin-right: 0;
+          text-align: center;
+          padding: 0.5rem;
+          margin: 0.5rem;
+        }
         & p {
           font: $fontMuseoSansCyrlBold_16;
           margin-right: 20px;
           width: 10vw;
+          @include sm_567 {
+            margin-right: 0;
+            width: 25rem;
+          }
         }
         & .tbig {
-          font: $fontMuseoSansCyrlLight_30;
-          width: 4.844vw;
+          font: $fontMuseoSansCyrlBold_30;
+          width: 5.844vw;
           margin: 0;
           @include lg_900 {
             font-size: 2rem;
@@ -533,11 +577,13 @@
           }
           @include md_767 {
             font-size: 2rem;
-            width: auto;
+            width: 100%;
+            text-align: center;
           }
           @include sm_567 {
             font-size: 2rem;
-            width: auto;
+            width: 100%;
+            text-align: center;
           }
         }
       }
@@ -554,6 +600,25 @@
     top: -10vw;
     left: 0;
     width: 6.552vw;
+  }
+  &__tab {
+    &-target {
+      @include mainBtn;
+      padding: 1.875vw 2.427vw;
+      border-radius: 57.5px;
+      cursor: pointer;
+      font: $fontMuseoSansCyrlLight_48;
+      color: #fff;
+      @include lg_900 {
+        font-size: 2rem;
+      }
+      @include md_767 {
+        font-size: 2rem;
+      }
+      @include sm_567 {
+        font-size: 1.8rem;
+      }
+    }
   }
 }
 
@@ -590,6 +655,12 @@ input[type="radio"]:not(:checked) + label:before {
   height: 18px;
   border: 1px solid #dddddd;
   background-color: $colorInputBtn;
+  @include md_767 {
+    right: -15px;
+  }
+  @include sm_567 {
+    right: -14px;
+  }
 }
 input[type="radio"]:not(:checked) + label:before {
   background-color: #fff;
@@ -627,6 +698,12 @@ input[type="radio"]:not(:checked) + label:after {
   -o-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  @include md_767 {
+    right: -11px;
+  }
+  @include sm_567 {
+    right: -10px;
+  }
 }
 input[type="radio"]:not(:checked) + label:after {
   opacity: 0;

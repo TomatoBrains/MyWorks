@@ -12,17 +12,40 @@
   }
   &__filter {
     text-align: center;
+    @include lg_900 {
+      margin-bottom: 1.5rem;
+    }
+    @include md_767 {
+      margin-bottom: 1.5rem;
+    }
+    @include sm_567 {
+      margin-bottom: 1.5rem;
+    }
     &-title {
       margin-bottom: 1.3vw;
       font: $fontMuseoSansCyrlLight_24;
       @include lg_900 {
         font-size: 1.6rem;
+        margin-bottom: 1rem;
       }
       @include md_767 {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
       }
       @include sm_567 {
         font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+    }
+    &__content {
+      @include lg_900 {
+        margin-bottom: 1rem;
+      }
+      @include md_767 {
+        margin-bottom: 1rem;
+      }
+      @include sm_567 {
+        margin-bottom: 1rem;
       }
     }
     &-item {
@@ -78,7 +101,7 @@
     }
     &__filter {
       &-item {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -90,7 +113,7 @@
     }
     &__filter {
       &-item {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
     & .papers__content {
@@ -106,8 +129,11 @@
     }
     &__filter {
       &-item {
-        font-size: 2rem;
-        width: 100%;
+        font-size: 1.4rem;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
       }
     }
     & .papers__content {

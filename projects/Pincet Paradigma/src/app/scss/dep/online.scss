@@ -514,12 +514,14 @@
     margin: 2rem 0;
   }
   .online__img {
-    position: relative;
-    width: auto;
-    margin-top: -3rem;
+    display: none;
   }
   .online__leave {
     display: none;
+  }
+  .online__leaves {
+    top: 4rem;
+    right: 2rem;
   }
   .online__request {
     z-index: 1;
@@ -527,6 +529,10 @@
       flex-wrap: wrap;
       padding: 1.5rem;
       justify-content: center;
+      & .request__title {
+        width: 70%;
+        margin: 2rem auto;
+      }
       &-img {
         margin-bottom: 2rem;
         width: 100%;
@@ -576,7 +582,7 @@
       }
       &-radio {
         height: 3rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         justify-content: center;
         & label:nth-of-type(2) {
           width: auto;

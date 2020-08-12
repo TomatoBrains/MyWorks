@@ -353,3 +353,120 @@ summary {
     font-size: 1.6rem;
   }
 }
+.select__header {
+  background-color: #fff;
+  padding: 1.198vw 0 1.198vw 1.719vw;
+  width: 16.146vw;
+  color: #989797;
+  margin-top: 0.833vw;
+  border-radius: 40px;
+  border: none;
+  border: solid 1px #fbeeef;
+  font: 300 0.833vw "MuseoSansCyrl";
+}
+.select__item {
+  background-color: #fff;
+  padding: 1.198vw 0 1.198vw 1.719vw;
+  width: 16.146vw;
+  color: #989797;
+  margin-top: 0.833vw;
+  border-radius: 40px;
+  border: none;
+  border: solid 1px #fbeeef;
+  font: 300 0.833vw "MuseoSansCyrl";
+}
+.select__btn {
+  @include lg_900 {
+    width: 35rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  @include md_767 {
+    width: 35rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  @include sm_567 {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.2rem;
+    padding-top: 1.8rem;
+    padding-left: 2.5rem;
+  }
+}
+.select__list {
+  @include lg_900 {
+    width: 0;
+    height: 0;
+    font-size: 1.5rem;
+    left: 0rem;
+  }
+  @include md_767 {
+    width: 0;
+    height: 0;
+    font-size: 1.5rem;
+    left: 0rem;
+  }
+  @include sm_567 {
+    width: 0;
+    height: 0;
+    font-size: 1.4rem;
+    left: 0rem;
+  }
+}
+.select__list {
+  & li {
+    @include lg_900 {
+      width: 35rem;
+      height: 8rem;
+      font-size: 1.5rem;
+      padding-top: 3rem;
+      padding-left: 2.5rem;
+      border: 1px dashed #ef8c92;
+      margin-bottom: 1.4rem;
+    }
+    @include md_767 {
+      width: 35rem;
+      height: 8rem;
+      font-size: 1.5rem;
+      padding-top: 3rem;
+      padding-left: 2.5rem;
+      border: 1px dashed #ef8c92;
+      margin-bottom: 1.4rem;
+    }
+    @include sm_567 {
+      width: 20rem;
+      height: 5rem;
+      font-size: 1.2rem;
+      padding-top: 1.5rem;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      border: 1px dashed $colorRozeDarkText;
+    }
+  }
+}
+.upBtn {
+  position: fixed;
+  background: #fff;
+  border-radius: 50%;
+  width: 2rem;
+  padding: 1.5rem;
+  bottom: 12%;
+  right: 5%;
+  background-image: linear-gradient(to top, #ee858c, #fabcbc);
+  z-index: 100;
+  display: none;
+  cursor: pointer;
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+  }
+  animation: bounce linear 3s infinite;
+}

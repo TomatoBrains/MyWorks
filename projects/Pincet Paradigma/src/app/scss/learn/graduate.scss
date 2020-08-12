@@ -8,12 +8,18 @@
     margin-bottom: 2vw;
     @include lg_900 {
       text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
     @include md_767 {
       text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
     @include sm_567 {
       text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
   }
   &__student {

@@ -19,41 +19,21 @@
     &-inputs {
       margin-right: 3.125vw;
       text-align: center;
+      & > div {
+        margin-bottom: 1vw;
+        @include lg_900 {
+          margin-bottom: 3rem;
+        }
+        @include md_767 {
+          margin-bottom: 3rem;
+        }
+        @include sm_567 {
+          margin-bottom: 3rem;
+        }
+      }
       & label {
         font: $fontMuseoSansCyrlMed_16;
         color: #000;
-      }
-      & select {
-        background-color: #fff;
-        padding: 1.198vw 0 1.198vw 1.719vw;
-        width: 16.146vw;
-        color: #989797;
-        margin-top: 0.833vw;
-        border-radius: 40px;
-        border: none;
-        border: solid 1px #fbeeef;
-        font: $fontMuseoSansCyrlLight_16;
-        @include lg_900 {
-          font-size: 1.6rem;
-        }
-        @include md_767 {
-          font-size: 1.5rem;
-        }
-        @include sm_567 {
-          font-size: 1.4rem;
-        }
-        &::placeholder {
-          font: $fontMuseoSansCyrlLight_16;
-          @include lg_900 {
-            font-size: 1.6rem;
-          }
-          @include md_767 {
-            font-size: 1.5rem;
-          }
-          @include sm_567 {
-            font-size: 1.4rem;
-          }
-        }
       }
       & input {
         background-color: #fff;
@@ -88,8 +68,64 @@
         }
       }
     }
+    &-select {
+      display: flex;
+      flex-direction: column;
+      @include lg_900 {
+        margin-bottom: 2rem !important;
+      }
+      @include md_767 {
+        margin-bottom: 2rem !important;
+      }
+      @include sm_567 {
+        margin-bottom: 1rem !important;
+      }
+      & .select__list {
+        left: 1.5vw;
+        @include lg_900 {
+          left: 0;
+        }
+        @include md_767 {
+          left: 0;
+        }
+        & li {
+          @include lg_900 {
+            height: 6rem;
+            padding-top: 1.8rem;
+            margin-bottom: 4.1rem;
+          }
+          @include md_767 {
+            height: 6rem;
+            padding-top: 1.8rem;
+            margin-bottom: 4.1rem;
+          }
+        }
+      }
+      & .select__btn {
+        @include lg_900 {
+          height: 5.5rem;
+          padding-top: 2rem;
+        }
+        @include md_767 {
+          height: 5.5rem;
+          padding-top: 2rem;
+        }
+      }
+      & label {
+        font: $fontMuseoSansCyrlMed_16;
+        color: #000;
+        @include lg_900 {
+          font-size: 1.6rem;
+        }
+        @include md_767 {
+          font-size: 1.5rem;
+        }
+        @include sm_567 {
+          font-size: 1.4rem;
+        }
+      }
+    }
     &-tel {
-      margin-top: 1.042vw;
     }
     &-btn {
       position: relative;
@@ -142,6 +178,28 @@
         }
       }
     }
+    &--flex {
+      @include sm_567 {
+        flex-wrap: wrap;
+      }
+    }
+    &-phone {
+      @include sm_567 {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    & .smallIcon {
+      @include lg_900 {
+        margin-right: 1rem;
+      }
+      @include md_767 {
+        margin-right: 1rem;
+      }
+      @include sm_567 {
+        margin-right: 1rem;
+      }
+    }
   }
   &__blur {
     position: absolute;
@@ -158,6 +216,11 @@
       flex-wrap: wrap;
       padding: 2rem;
       justify-content: center;
+      border-radius: 80px;
+      &-title {
+        width: 50%;
+        margin: 2rem auto;
+      }
       &-img {
         margin-bottom: 2rem;
       }
@@ -166,12 +229,7 @@
       }
       &-select {
         display: flex;
-        & select {
-          width: 35rem !important;
-          height: 8rem;
-          margin: 1rem auto;
-          font-size: 1.6rem;
-        }
+        justify-content: center;
       }
       &-name {
         display: flex;
@@ -182,8 +240,7 @@
         & label {
           font-size: 1.6rem;
         }
-        & input,
-        select {
+        & input {
           width: 100%;
           height: 100%;
           padding-left: 3rem;
@@ -199,8 +256,7 @@
         & label {
           font-size: 1.6rem;
         }
-        & input,
-        select {
+        & input {
           width: 100%;
           height: 100%;
           padding-left: 3rem;
@@ -225,7 +281,6 @@
         &--name {
           bottom: 10rem;
           right: 19rem;
-
           & p {
             font-size: 1.6rem;
           }
@@ -263,6 +318,11 @@
       flex-wrap: wrap;
       padding: 2rem;
       justify-content: center;
+      border-radius: 80px;
+      &-title {
+        width: 50%;
+        margin: 1rem auto;
+      }
       &-img {
         margin-bottom: 2rem;
       }
@@ -270,13 +330,8 @@
         margin: 0;
       }
       &-select {
-        & select {
-          width: 35rem !important;
-          height: 8rem;
-          margin: 1rem auto;
-          font-size: 1.5rem;
-        }
         display: flex;
+        justify-content: center;
       }
       &-name {
         display: flex;
@@ -287,8 +342,7 @@
         & label {
           font-size: 1.6rem;
         }
-        & input,
-        select {
+        & input {
           width: 100%;
           height: 100%;
           padding-left: 3rem;
@@ -329,7 +383,6 @@
         &--name {
           bottom: 10rem;
           right: 8rem;
-
           & p {
             font-size: 1.6rem;
           }
@@ -349,6 +402,7 @@
         right: -2rem;
         top: 1rem;
         z-index: 1;
+        display: none;
       }
     }
     &__blur {
@@ -367,6 +421,11 @@
       flex-wrap: wrap;
       padding: 1.5rem;
       justify-content: center;
+      border-radius: 80px;
+      &-title {
+        width: 80%;
+        margin: 1rem auto;
+      }
       &-img {
         margin-bottom: 2rem;
       }
@@ -378,41 +437,33 @@
         flex-direction: column;
         width: 20rem;
         height: 5rem;
-        margin-bottom: 1rem;
-        & label {
-          font-size: 1.4rem;
-        }
-        & input,
-        select {
-          width: 100%;
-          height: 100%;
-          padding-left: 3rem;
-          padding-right: 3rem;
-        }
-      }
-      &-select {
-        display: flex;
-        & select {
-          width: 20rem !important;
-          height: 5rem;
-          margin: 1rem auto;
-          font-size: 1.2rem;
-        }
-      }
-      &-tel {
-        display: flex;
-        flex-direction: column;
-        width: 20rem;
-        height: 5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         & label {
           font-size: 1.4rem;
         }
         & input {
           width: 100%;
           height: 100%;
-          padding-left: 3rem;
-          padding-right: 3rem;
+          padding: 2rem;
+        }
+      }
+      &-select {
+        display: flex;
+        justify-content: center;
+      }
+      &-tel {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 5rem;
+        margin-bottom: 3rem;
+        & label {
+          font-size: 1.4rem;
+        }
+        & input {
+          width: 100%;
+          height: 100%;
+          padding: 2rem;
         }
       }
       &-btn {
@@ -430,16 +481,19 @@
         }
       }
       &-women {
+        width: 31rem;
         &--name {
-          bottom: 6rem;
+          bottom: 5rem;
           right: 2rem;
+          padding: 1rem 2.5rem;
           & p {
             font-size: 1.6rem;
           }
         }
         &--master {
-          bottom: 3rem;
-          right: 5rem;
+          bottom: 2rem;
+          right: 3rem;
+          width: 19rem;
         }
       }
       &-leftImg {
@@ -452,6 +506,7 @@
         right: -1rem;
         top: 1rem;
         z-index: 1;
+        display: none;
       }
     }
     &__blur {

@@ -52,6 +52,9 @@
         border-bottom: 1px dashed $colorRozeDark;
         transition: 0.2s ease;
       }
+      @include sm_567 {
+        display: none;
+      }
     }
   }
   &__contact {
@@ -73,6 +76,9 @@
     &-days {
       display: flex;
       align-items: center;
+      @include sm_567 {
+        display: none;
+      }
     }
     &-tel {
       & a {
@@ -90,28 +96,6 @@
           -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
           margin-right: 0.469vw;
-        }
-        @-webkit-keyframes pulse {
-          0% {
-            box-shadow: 0 0 0 0 rgba(140, 231, 5, 0.4);
-          }
-          70% {
-            box-shadow: 0 0 0 10px rgba(140, 231, 52, 0);
-          }
-          100% {
-            box-shadow: 0 0 0 0 rgba(140, 231, 52, 0);
-          }
-        }
-        @keyframes pulse {
-          0% {
-            box-shadow: 0 0 0 0 rgba(140, 231, 5, 0.4);
-          }
-          70% {
-            box-shadow: 0 0 0 10px rgba(140, 231, 52, 0);
-          }
-          100% {
-            box-shadow: 0 0 0 0 rgba(140, 231, 52, 0);
-          }
         }
         & p {
           font: $fontMuseoSansCyrlMed_12;
@@ -429,6 +413,7 @@
       display: flex;
       justify-content: center;
       text-align: center;
+      display: none;
       & a,
       p {
         font-size: 2.2rem;
@@ -468,15 +453,11 @@
         margin-right: 1rem;
       }
       &-tel {
+        & a {
+          font-size: 1.2rem;
+        }
         &_wraper {
-          & span {
-            border-radius: 50%;
-            width: 3px;
-            height: 3px;
-          }
-          & p {
-            font-size: 1.4rem;
-          }
+          display: none;
         }
       }
       &-icon {
@@ -495,7 +476,7 @@
       margin-top: 1rem;
       padding: 1rem;
       & span {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
     &__menu {

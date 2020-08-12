@@ -20,6 +20,15 @@
   &__title {
     text-align: center;
     margin-bottom: 2vw;
+    @include lg_900 {
+      margin-top: 5rem;
+    }
+    @include md_767 {
+      margin-top: 5rem;
+    }
+    @include sm_567 {
+      margin-top: 5rem;
+    }
   }
   &--flex {
     display: flex;
@@ -41,13 +50,13 @@
     }
     &-descr {
       @include lg_900 {
-        text-align: center;
+        text-align: left;
       }
       @include md_767 {
-        text-align: center;
+        text-align: left;
       }
       @include sm_567 {
-        text-align: center;
+        text-align: left;
       }
     }
     text-align: left;
@@ -117,21 +126,30 @@
     &-link {
       display: inline-block;
       margin-top: 1.563vw;
+      @include lg_900 {
+        margin-left: 2rem;
+      }
+      @include md_767 {
+        margin-left: 2rem;
+      }
+      @include sm_567 {
+        margin-left: 2rem;
+      }
     }
     &-ul {
       @include lg_900 {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         text-align: left;
       }
       @include md_767 {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         text-align: left;
       }
       @include sm_567 {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         text-align: left;
       }
       & ul {
@@ -237,6 +255,7 @@
       }
       @include sm_567 {
         margin-bottom: 1rem;
+        margin-right: 0;
       }
       &:hover .master__certificate-background {
         opacity: 0.4;

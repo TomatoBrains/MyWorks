@@ -15,3 +15,8 @@ import "./components/burger";
 import "./components/prodCount";
 import "./components/acordeonClose";
 import "./components/adressOpen";
+import "./components/fancySelect";
+import "./components/scrollTop";
+import "./components/tabs";
+import "./components/paperFilter";
+import "./components/priceCalc";

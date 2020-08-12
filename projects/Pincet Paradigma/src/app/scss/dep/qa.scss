@@ -43,12 +43,20 @@
     &-item {
       & details {
         margin-bottom: 20px;
+        @include lg_900 {
+          width: 55rem;
+          margin: 2rem auto;
+        }
+        @include md_767 {
+          width: 45rem;
+          margin: 2rem auto;
+        }
       }
       details[open] {
         & summary {
           padding-bottom: 0;
           & span {
-            transform: rotate(180deg) translate(0, -2rem);
+            transform: rotate(180deg) translate(0, -2.5rem);
           }
         }
       }
@@ -62,6 +70,15 @@
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 6.8px -1.6px 57px 0 rgba(40, 40, 40, 0.1);
+        @include lg_900 {
+          padding: 1.5rem 0.5rem;
+        }
+        @include md_767 {
+          padding: 1.5rem 0.5rem;
+        }
+        @include sm_567 {
+          padding: 1.5rem 0.5rem;
+        }
         & span {
           font: $fontMuseoSansCyrlBold_16;
           margin-right: 2vw;

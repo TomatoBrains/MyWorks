@@ -64,6 +64,8 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "custom-select": "^1.1.15",
+    "fancyselect": "^1.0.3",
     "handlebars": "^4.0.11",
     "imagemin": "^7.0.1",
     "imagemin-pngquant": "^9.0.0",

@@ -38,12 +38,15 @@
       &-list {
         @include lg_900 {
           margin-top: 2rem;
+          margin-right: 5rem;
         }
         @include md_767 {
           margin-top: 2rem;
+          margin-right: 5rem;
         }
         @include sm_567 {
           margin-top: 2rem;
+          margin-right: 5rem;
         }
       }
       &-btn {

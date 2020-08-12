@@ -73,7 +73,7 @@
       }
       @include sm_567 {
         height: 13rem;
-        padding: 1rem;
+        padding: 2rem;
       }
     }
     &-img {
@@ -215,6 +215,15 @@
       }
       &--accordeon {
         margin-bottom: 1.5vw;
+        @include lg_900 {
+          margin: 2rem 0;
+        }
+        @include md_767 {
+          margin: 2rem 0;
+        }
+        @include sm_567 {
+          margin: 2rem 0;
+        }
         & details {
           font: $fontMuseoSansCyrlLight_20;
           margin-bottom: 10px;
@@ -225,7 +234,6 @@
             justify-content: end;
             align-items: center;
             & span {
-              transform: rotate(270deg);
               margin-right: 10px;
               @include lg_900 {
                 width: 2rem;
@@ -245,7 +253,7 @@
         & details[open] {
           & summary {
             span {
-              transform: rotate(360deg);
+              transform: none;
             }
           }
         }
@@ -339,8 +347,9 @@
           max-width: unset;
         }
         @include sm_567 {
-          width: 15rem;
+          width: 10rem;
           max-width: unset;
+          margin: 0 2rem;
         }
       }
       &--number {
@@ -401,6 +410,15 @@
       &--descr {
         width: 75%;
         margin-left: 9.115vw;
+        @include lg_900 {
+          margin-top: 2rem;
+        }
+        @include md_767 {
+          margin-top: 2rem;
+        }
+        @include sm_567 {
+          margin-top: 2rem;
+        }
       }
       &--ul {
         & ul {
@@ -646,7 +664,7 @@
           margin: 0 auto;
         }
         @include sm_567 {
-          width: 30rem;
+          width: 20rem;
           margin: 0 auto;
         }
       }

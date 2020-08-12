@@ -75,6 +75,11 @@
 @include md_767 {
   .main {
     &__descr {
+      &-title {
+        &--DEP {
+          text-align: center;
+        }
+      }
       &-list {
         &--DEP {
           margin-top: 2rem;
@@ -119,6 +124,7 @@
       &-list {
         &--DEP {
           margin-top: 2rem;
+          margin-right: 7rem;
         }
       }
       &-leaves {

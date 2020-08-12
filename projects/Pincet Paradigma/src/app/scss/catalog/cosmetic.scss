@@ -6,6 +6,18 @@
   &__title {
     text-align: center;
     margin-bottom: 2.5vw;
+    @include lg_900 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
   }
   &--flex {
     display: flex;
@@ -339,11 +351,38 @@
     border-radius: 20px;
     text-align: center;
     padding: 1.719vw 3.385vw;
+    @include lg_900 {
+      padding: 2rem 1rem;
+    }
+    @include md_767 {
+      padding: 2rem 1rem;
+    }
+    @include sm_567 {
+      padding: 2rem 1rem;
+    }
     &-title {
       font: $fontMuseoSansCyrlBold_30;
       margin-bottom: 1.5vw;
+      @include lg_900 {
+        margin-bottom: 1.5rem;
+      }
+      @include md_767 {
+        margin-bottom: 1.5rem;
+      }
+      @include sm_567 {
+        margin-bottom: 1.5rem;
+      }
     }
     &-item {
+      @include lg_900 {
+        margin-bottom: 2rem;
+      }
+      @include md_767 {
+        margin-bottom: 2rem;
+      }
+      @include sm_567 {
+        margin-bottom: 2rem;
+      }
       &--title {
         font: $fontMuseoSansCyrlLight_20;
         margin-bottom: 0.781vw;
@@ -365,6 +404,15 @@
       background-color: $colorRozeVeryLight;
       border-radius: 10px;
       margin-bottom: 2vw;
+      @include lg_900 {
+        margin-bottom: 1.5rem;
+      }
+      @include md_767 {
+        margin-bottom: 1.5rem;
+      }
+      @include sm_567 {
+        margin-bottom: 1.5rem;
+      }
       & p:nth-of-type(1) {
         font: $fontMuseoSansCyrlLight_18;
       }
@@ -379,6 +427,15 @@
       &--title {
         font: $fontMuseoSansCyrlBold_24;
         margin-bottom: 1vw;
+        @include lg_900 {
+          margin-bottom: 1rem;
+        }
+        @include md_767 {
+          margin-bottom: 1rem;
+        }
+        @include sm_567 {
+          margin-bottom: 1rem;
+        }
       }
       &--inputs {
         & input {
@@ -390,12 +447,15 @@
           font: $fontMuseoSansCyrlLight_18;
           @include lg_900 {
             font-size: 1.6rem;
+            padding: 1rem;
           }
           @include md_767 {
             font-size: 1.5rem;
+            padding: 1rem;
           }
           @include sm_567 {
             font-size: 1.4rem;
+            padding: 1rem;
           }
           &::placeholder {
             font: $fontMuseoSansCyrlLight_18;
@@ -478,14 +538,17 @@
         @include lg_900 {
           padding: 1rem;
           width: 20rem;
+          margin-top: 1.5rem;
         }
         @include md_767 {
           padding: 1rem;
           width: 20rem;
+          margin-top: 1.5rem;
         }
         @include sm_567 {
           padding: 1rem;
           width: 20rem;
+          margin-top: 1.5rem;
         }
         & button {
           letter-spacing: 2.16px;

@@ -66,6 +66,15 @@
     &-title {
       text-align: center;
       margin-bottom: 1.5vw;
+      @include lg_900 {
+        margin-top: 2rem;
+      }
+      @include md_767 {
+        margin-top: 2rem;
+      }
+      @include sm_567 {
+        margin-top: 2rem;
+      }
     }
     &-descr {
       width: 27.083vw;

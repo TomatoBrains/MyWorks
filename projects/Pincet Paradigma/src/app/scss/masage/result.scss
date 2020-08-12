@@ -5,6 +5,15 @@
   &__title {
     text-align: center;
     margin-bottom: 6.771vw;
+    @include lg_900 {
+      margin-top: 5rem;
+    }
+    @include md_767 {
+      margin-top: 5rem;
+    }
+    @include sm_567 {
+      margin-top: 5rem;
+    }
   }
   &__content {
     display: flex;

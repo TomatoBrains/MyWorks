@@ -7,15 +7,15 @@
   &__title {
     margin-bottom: 3vw;
     @include lg_900 {
-      margin-top: 2rem;
+      margin-top: 5rem;
       text-align: center;
     }
     @include md_767 {
-      margin-top: 2rem;
+      margin-top: 5rem;
       text-align: center;
     }
     @include sm_567 {
-      margin-top: 2rem;
+      margin-top: 5rem;
       text-align: center;
     }
   }
@@ -32,6 +32,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include sm_567 {
+        flex-wrap: wrap;
+      }
     }
     & > p {
       font: $fontMuseoSansCyrlMed_24;
@@ -43,11 +46,25 @@
         @include callDot;
       }
     }
+    &-icons {
+      @include lg_900 {
+        margin-top: 1rem;
+      }
+      @include md_767 {
+        margin-top: 1rem;
+      }
+      @include sm_567 {
+        margin-top: 1rem;
+      }
+    }
     &-phone {
       display: flex;
       align-items: center;
       margin-right: 2vw;
       margin-top: 1.302vw;
+      @include sm_567 {
+        margin-bottom: 2rem;
+      }
       & a {
         font: $fontMuseoSansCyrlBold_30;
       }
@@ -105,6 +122,9 @@
       &--text {
         font: $fontMuseoSansCyrlBold_18;
       }
+    }
+    & .smallIcon {
+      margin-right: 1rem;
     }
   }
   &__item {

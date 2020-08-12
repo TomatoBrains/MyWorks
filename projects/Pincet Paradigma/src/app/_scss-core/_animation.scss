@@ -68,3 +68,20 @@
     opacity: 0;
   }
 }
+@keyframes bounce {
+  0% {
+    bottom: 12%;
+  }
+  25% {
+    bottom: 12.5%;
+  }
+  50% {
+    bottom: 13%;
+  }
+  75% {
+    bottom: 12.5%;
+  }
+  100% {
+    bottom: 12%;
+  }
+}

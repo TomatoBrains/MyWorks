@@ -8,6 +8,15 @@
     &-title {
       display: flex;
       align-items: end;
+      @include lg_900 {
+        margin-top: 3rem;
+      }
+      @include md_767 {
+        margin-top: 3rem;
+      }
+      @include sm_567 {
+        margin-top: 3rem;
+      }
     }
     &-link {
       width: 11.677vw;
@@ -395,6 +404,7 @@
     margin: 0 auto;
     flex-wrap: wrap;
     &__clients {
+      margin: 0 auto;
       &-title {
         flex-wrap: wrap;
         text-align: center;
@@ -500,7 +510,7 @@
     &__leave {
       width: 5rem;
       right: 80%;
-      top: 11vw;
+      top: 17vw;
     }
   }
 }
