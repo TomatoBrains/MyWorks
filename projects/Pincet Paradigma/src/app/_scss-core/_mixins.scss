@@ -317,6 +317,28 @@
     font: $fontMuseoSansCyrlMed_14;
   }
 }
+@mixin beforeLine {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0%;
+    height: 1px;
+    opacity: 0.4;
+    border-bottom: 1px dashed $colorRozeDark;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
+
 @mixin sm_567 {
   @media (max-width: $mediaSm) {
     @content;

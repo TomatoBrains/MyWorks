@@ -1,16 +1,16 @@
 import $ from "jquery";
 
-let popup = $(".main__popup");
+let popup = $(".card__popup");
 let completePopup = $(".main__popup-complete");
 let btn = $(".main__descr-btn--popup");
 let btnComplete = $(".main__popup-submit");
-let onlineBtn = $(".header__rec");
 let background = $(".main__popup_background");
 let closePopup = $(".main__popup-close");
 let closeCompletePopup = $(".main__popup-complete_close");
 let popupLeave = $(".popup__leave");
 let popupLeaveClose = $(".popup__leave-close");
-let exit = true;
+let popupName = $(".main__popup-name input");
+let popupPhone = $(".main__popup-tel input");
 
 function openClosePopup() {
   function togglePopup() {
@@ -32,11 +32,11 @@ function openClosePopup() {
   btn.on("click", function () {
     togglePopup();
   });
-  onlineBtn.on("click", function () {
-    togglePopup();
-  });
   btnComplete.on("click", function () {
-    toggleCompletePopup();
+    if (popupName.val().length > 0 && popupPhone.val().length > 0) {
+      debugger;
+      toggleCompletePopup();
+    }
   });
   background.on("click", function () {
     closePopups();
@@ -53,8 +53,10 @@ function openClosePopup() {
 }
 openClosePopup();
 
-$("html").one("mouseleave", function () {
-  popupLeave.addClass("show");
-  background.addClass("show");
-  $("html").addClass("overflowToggle");
+$(document).one("mouseleave", function (e) {
+  if (e.clientY < 0) {
+    popupLeave.addClass("show");
+    background.addClass("show");
+    $("html").addClass("overflowToggle");
+  }
 });

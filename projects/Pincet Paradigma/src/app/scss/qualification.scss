@@ -72,6 +72,23 @@
       display: inline-block;
       margin-top: 1.563vw;
       margin-left: 1vw;
+      padding-bottom: 5px;
+      & a {
+        position: relative;
+        @include beforeLine;
+        transition: all 0.2s ease;
+        &::before {
+          width: 100%;
+          color: #ff6078;
+          top: 115%;
+        }
+        &:hover::before {
+          width: 40%;
+        }
+        &:hover {
+          text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
+        }
+      }
       @include lg_900 {
         margin-left: 2rem;
       }
@@ -92,6 +109,25 @@
     display: flex;
     margin-top: 4.792vw;
     align-items: center;
+    &-link {
+      & a {
+        position: relative;
+        @include beforeLine;
+        transition: all 0.2s ease;
+        &::before {
+          width: 100%;
+          color: #ff6078;
+          top: 115%;
+          opacity: 1;
+        }
+        &:hover::before {
+          width: 40%;
+        }
+        &:hover {
+          text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
+        }
+      }
+    }
     &-descr {
       text-align: left;
       width: 18.523vw;
@@ -104,10 +140,6 @@
       & .slick-disabled {
         opacity: 0.3;
       }
-    }
-    &-link {
-      display: inline-block;
-      margin-top: 1.302vw;
     }
     &-wraper {
       position: relative;
@@ -193,15 +225,15 @@
   cursor: pointer;
   z-index: 2;
   @include lg_900 {
-    left: 0%;
+    left: 10%;
     top: 40%;
   }
   @include md_767 {
-    left: 0%;
+    left: 10%;
     top: 40%;
   }
   @include sm_567 {
-    left: 0%;
+    left: 10%;
     top: 40%;
   }
 }
@@ -262,6 +294,8 @@
 @include lg_900 {
   .qualification {
     &__workers {
+      margin-left: -1.5rem;
+      margin-top: 2rem;
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
@@ -308,6 +342,7 @@
     }
     &__certificate {
       flex-wrap: wrap;
+      margin-top: 3rem;
       &-descr {
         margin: 0 auto;
         padding: 0;
@@ -332,22 +367,25 @@
       }
     }
     &__number {
+      margin-top: 5rem;
       & p {
-        font-size: 1.4rem;
+        font-size: 2.4rem;
         & span {
-          font-size: 3rem;
+          font-size: 4rem;
         }
       }
     }
     &__blurRight {
-      width: 8rem;
-      bottom: -4rem;
+      width: 14rem;
+      bottom: -7rem;
     }
   }
 }
 @include md_767 {
   .qualification {
     &__workers {
+      margin-left: -1.5rem;
+      margin-top: 2rem;
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
@@ -394,6 +432,7 @@
     }
     &__certificate {
       flex-wrap: wrap;
+      margin-top: 3rem;
       &-descr {
         margin: 0 auto;
         padding: 0;
@@ -419,16 +458,17 @@
       }
     }
     &__number {
+      margin-top: 5rem;
       & p {
-        font-size: 1.4rem;
+        font-size: 2.4rem;
         & span {
-          font-size: 3rem;
+          font-size: 4rem;
         }
       }
     }
     &__blurRight {
-      width: 8rem;
-      bottom: -4rem;
+      width: 14rem;
+      bottom: -7rem;
     }
   }
 }
@@ -436,7 +476,8 @@
   .qualification {
     &__workers {
       width: 30rem;
-      margin: 0 auto;
+      margin: 2rem auto 0 auto;
+      margin-left: -1.5rem;
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
@@ -468,6 +509,7 @@
       }
     }
     &__certificate {
+      margin-top: 3rem;
       & .slick-slide {
         padding-right: 0;
       }
@@ -515,16 +557,17 @@
       }
     }
     &__number {
+      margin-top: 5rem;
       & p {
-        font-size: 1.4rem;
+        font-size: 2.4rem;
         & span {
-          font-size: 3rem;
+          font-size: 4rem;
         }
       }
     }
     &__blurRight {
-      width: 8rem;
-      bottom: -4rem;
+      width: 14rem;
+      bottom: -7rem;
     }
   }
 }

@@ -2,6 +2,10 @@
   &__burger {
     display: none;
     text-align: end;
+    &-logo {
+      width: 15rem;
+      margin-right: 2rem;
+    }
     & p {
       font-size: 1.6rem;
       font-weight: 700;
@@ -30,6 +34,7 @@
         margin: 1rem 1rem 0 1rem;
         border-radius: 15px;
         padding: 5px;
+        font-size: 1.6rem;
       }
     }
     &-close {
@@ -66,5 +71,33 @@
       justify-content: flex-end;
       align-items: center;
     }
+  }
+}
+.menu-show {
+  display: block !important;
+}
+.menu-show--flex {
+  display: flex !important;
+}
+.menu-hidden {
+  display: none !important;
+}
+.menu__rec {
+  width: 50%;
+  margin: 1rem auto 0 auto;
+  @include lg_900 {
+    width: 60%;
+  }
+  @include md_767 {
+    width: 60%;
+  }
+  & span {
+    margin-left: 1rem;
+  }
+}
+.menu-icon {
+  & a {
+    margin: 0;
+    margin-left: 2rem;
   }
 }

@@ -20,6 +20,24 @@
     }
     &-link {
       width: 11.677vw;
+      padding-bottom: 5px;
+      & a {
+        position: relative;
+        @include beforeLine;
+        transition: all 0.2s ease;
+        &::before {
+          width: 100%;
+          color: #ff6078;
+          top: 115%;
+          opacity: 1;
+        }
+        &:hover::before {
+          width: 40%;
+        }
+        &:hover {
+          text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
+        }
+      }
     }
     &-head {
       width: 23.292vw;

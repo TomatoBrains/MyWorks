@@ -65,6 +65,16 @@
           width: 13vw;
           position: absolute;
           right: 1vw;
+          top: 5vw;
+          @include lg_900 {
+            top: unset;
+          }
+          @include md_767 {
+            top: unset;
+          }
+          @include sm_567 {
+            top: unset;
+          }
           &--name {
             bottom: 1vw;
             right: 1vw;

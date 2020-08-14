@@ -376,6 +376,12 @@ summary {
   font: 300 0.833vw "MuseoSansCyrl";
 }
 .select__btn {
+  color: #000;
+  font-weight: 500;
+  background-image: url(../img/request/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 92%;
   @include lg_900 {
     width: 35rem;
     height: 8rem;
@@ -454,7 +460,7 @@ summary {
   background: #fff;
   border-radius: 50%;
   width: 2rem;
-  padding: 1.5rem;
+  padding: 2.5rem;
   bottom: 12%;
   right: 5%;
   background-image: linear-gradient(to top, #ee858c, #fabcbc);
@@ -469,4 +475,8 @@ summary {
     width: 2rem;
   }
   animation: bounce linear 3s infinite;
+}
+.menu--active {
+  color: $colorRozeDark;
+  text-shadow: 0 0 0.65px #ff6078, 0 0 0.65px #ff6078;
 }

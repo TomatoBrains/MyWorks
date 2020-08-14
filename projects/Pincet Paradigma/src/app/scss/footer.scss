@@ -1,13 +1,28 @@
 .footer {
+  background-image: url(../img/footer/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   &--flex {
     display: flex;
     justify-content: space-between;
     padding: 5.208vw 0;
   }
   &__insta {
-    width: 31.25vw;
+    width: 38.25vw;
     position: relative;
     z-index: 1;
+    left: -5vw;
+    cursor: pointer;
+    @include lg_900 {
+      left: unset;
+    }
+    @include md_767 {
+      left: unset;
+    }
+    @include sm_567 {
+      left: unset;
+    }
     & img {
       position: absolute;
       left: -10vw;

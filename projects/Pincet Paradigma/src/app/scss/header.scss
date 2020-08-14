@@ -45,12 +45,22 @@
         font: $fontMuseoSansCyrlLight_16;
       }
       &_hover {
-        font: $fontMuseoSansCyrlMed_12;
+        font: $fontMuseoSansCyrlMed_16;
         margin-top: 0.521vw;
         padding-bottom: 0.313vw;
         color: $colorRozeDark;
-        border-bottom: 1px dashed $colorRozeDark;
-        transition: 0.2s ease;
+        transition: all 0.2s ease;
+        position: relative;
+        @include beforeLine;
+        &::before {
+          width: 100%;
+        }
+        &:hover::before {
+          width: 40%;
+        }
+        &:hover {
+          text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px $colorRozeDark;
+        }
       }
       @include sm_567 {
         display: none;
@@ -83,6 +93,26 @@
     &-tel {
       & a {
         font: $fontMuseoSansCyrlMed_24;
+        position: relative;
+        &:hover::before {
+          width: 100%;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          width: 0%;
+          height: 1px;
+          opacity: 0.4;
+          border-bottom: 1px solid $colorRozeDark;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          -webkit-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+        }
       }
       &_wraper {
         display: flex;
@@ -179,8 +209,9 @@
     & a {
       font: $fontMuseoSansCyrlLight_15;
       &:hover {
-        text-shadow: 0 0 0.65px rgb(75, 75, 75), 0 0 0.65px rgb(75, 75, 75);
+        text-shadow: 0 0 0.65px $colorRozeDark, 0 0 0.65px $colorRozeDark;
         transition: 0.2s ease;
+        color: $colorRozeDark;
       }
     }
   }
@@ -444,7 +475,7 @@
       justify-content: center;
       & p,
       span {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
       & a {
         font-size: 1.5rem;

@@ -9,34 +9,38 @@
                     <img src="img/request/ipad.png" alt="ipad">
                 </div>
                 <div class="request__form-inputs">
-                    <div class="request__form--wraper flexWrap">
-                        <div class="request__form-name">
-                            <label for="namedep">Как Вас зовут</label>
-                            <input type="text" id="namedep" placeholder="Имя">
-                        </div>
-                        <div class="request__form-tel">
-                            <label for="teldep">Ваш номер телефона</label>
-                            <input class="inputTel" type="tel" id="teldep" placeholder="+375 -- --- -- --">
-                        </div>
-                    </div>
-                    <div class="request__form-btn">
-                        <button>Записаться со скидой</button>
-                        <img src="img/request/plant.png" alt="растение">
-                    </div>
-                    <div class="request__form-call mtxt">
-                        <p class="request__form-call--boldT">ИЛИ ЗВОНИТЕ</p>
-                        <p class="request__form-call--smallT"><span></span> Звоните мы сейчас работаем</p>
-                        <div class="request__form--flex flexWrap">
-                            <div class="request__form-phone">
-                                <span class="smallIcon"><img src="img/dep/request/phone.png" alt=""></span>
-                                <a class="request__form-phone--link" href="tel:375333822499">+375 33 382 24 99</a>
+                    <form action="">
+                        <input type="hidden" name="title" value="Запишитесь на 1-ую процедуру через сайт">
+                        <div class="request__form--wraper flexWrap">
+                            <div class="request__form-name">
+                                <label for="namedep">Как Вас зовут</label>
+                                <input required type="text" id="namedep" name="name" placeholder="Имя">
                             </div>
-                            <div class="request__form-work">
-                                <span class="smallIcon"><img src="img/dep/request/time.png" alt=""></span>
-                                <p class="request__form-work--text">Пн-Вс 9:00-21:00</p>
+                            <div class="request__form-tel">
+                                <label for="teldep">Ваш номер телефона</label>
+                                <input required class="inputTel" type="tel" name="phone" id="teldep"
+                                    placeholder="+375 -- --- -- --">
                             </div>
                         </div>
-                    </div>
+                        <div class="request__form-btn">
+                            <button>Записаться со скидой</button>
+                            <img src="img/request/plant.png" alt="растение">
+                        </div>
+                        <div class="request__form-call mtxt">
+                            <p class="request__form-call--boldT">ИЛИ ЗВОНИТЕ</p>
+                            <p class="request__form-call--smallT"><span></span> Звоните мы сейчас работаем</p>
+                            <div class="request__form--flex flexWrap">
+                                <div class="request__form-phone">
+                                    <span class="smallIcon"><img src="img/dep/request/phone.png" alt=""></span>
+                                    <a class="request__form-phone--link" href="tel:375333822499">+375 33 382 24 99</a>
+                                </div>
+                                <div class="request__form-work">
+                                    <span class="smallIcon"><img src="img/dep/request/time.png" alt=""></span>
+                                    <p class="request__form-work--text">Пн-Вс 9:00-21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="request__form-women">
                     <img src="img/request/women.png" alt="женщина">

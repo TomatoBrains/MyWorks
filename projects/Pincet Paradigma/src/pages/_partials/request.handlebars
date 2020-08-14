@@ -2,8 +2,7 @@
     <div class="container">
         <div class="request__title">
             <h2>Оставьте заявку через сайт <span class="light">
-                    на первую процедур
-                    и получите карту гостя
+                    и получите карту гостя и скидку 15% на первую процедуру
                 </span> </h2>
         </div>
         <div class="request__form">
@@ -11,26 +10,29 @@
                 <img src="img/request/ipad.png" alt="ipad">
             </div>
             <div class="request__form-inputs">
-                <div class="request__form-select">
-                    <label for="select">Выберите услугу</label>
-                    <select class="basic" name="select" id="">
-                        <option value="1">Шугаринг 1</option>
-                        <option value="2">Шугаринг 2</option>
-                        <option value="3">Шугаринг 3</option>
-                    </select>
-                </div>
-                <div class="request__form-name">
-                    <label for="name">Как Вас зовут</label>
-                    <input type="text" id="name" placeholder="Ваше имя">
-                </div>
-                <div class="request__form-tel">
-                    <label for="tel">Ваш номер телефона</label>
-                    <input id="inputTel" type="tel" id="tel" placeholder="+375 -- --- -- --">
-                </div>
-                <div class="request__form-btn">
-                    <button>ОСТАВИТЬ ЗАЯВКУ</button>
-                    <img src="img/request/plant.png" alt="растение">
-                </div>
+                <form action="">
+                    <input type="hidden" name="title" value="Первая заявка">
+                    <div class="request__form-select">
+                        <label for="select">Выберите услугу</label>
+                        <select required class="basic" name="group" id="">
+                            <option value="Шугаринг 1">Шугаринг 1</option>
+                            <option value="Шугаринг 2">Шугаринг 2</option>
+                            <option value="Шугаринг 3">Шугаринг 3</option>
+                        </select>
+                    </div>
+                    <div class="request__form-name">
+                        <label for="name">Как Вас зовут</label>
+                        <input required type="text" id="name" name="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="request__form-tel">
+                        <label for="tel">Ваш номер телефона</label>
+                        <input required id="inputTel" type="tel" id="tel" name="phone" placeholder="+375 -- --- -- --">
+                    </div>
+                    <div class="request__form-btn">
+                        <button class="btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                        <img src="img/request/plant.png" alt="растение">
+                    </div>
+                </form>
             </div>
             <div class="request__form-women">
                 <img src="img/request/women.png" alt="женщина">

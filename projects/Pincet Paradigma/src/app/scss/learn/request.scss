@@ -7,6 +7,7 @@
     display: block;
     padding-left: 0;
     padding-top: 2.6vw;
+    padding-right: 0;
     &--wraper {
       display: flex;
       margin-top: 1.604vw;
@@ -51,7 +52,7 @@
     &-women {
       width: 20.073vw;
       position: absolute;
-      right: -2vw;
+      right: 3vw;
       &--name {
         bottom: 3vw;
         right: 1vw;
@@ -146,7 +147,16 @@
     }
   }
   &__phoneImg {
-    left: 0vw;
-    bottom: 0vw;
+    left: 0vw !important;
+    bottom: 0vw !important;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
   }
 }

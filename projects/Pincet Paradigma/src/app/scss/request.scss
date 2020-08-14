@@ -3,6 +3,17 @@
   position: relative;
   &__title {
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    @include lg_900 {
+      width: 100%;
+    }
+    @include md_767 {
+      width: 100%;
+    }
+    @include sm_567 {
+      width: 100%;
+    }
   }
   &__form {
     position: relative;
@@ -12,23 +23,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px;
-    padding: 3.646vw 4.427vw 0 2.865vw;
+    padding: 2.646vw 4.427vw 0 2.865vw;
     &-img {
       margin-right: 3.125vw;
+      margin-bottom: -0.2vw;
     }
     &-inputs {
       margin-right: 3.125vw;
       text-align: center;
-      & > div {
-        margin-bottom: 1vw;
-        @include lg_900 {
-          margin-bottom: 3rem;
-        }
-        @include md_767 {
-          margin-bottom: 3rem;
-        }
-        @include sm_567 {
-          margin-bottom: 3rem;
+      & form {
+        & > div {
+          margin-bottom: 1vw;
+          @include lg_900 {
+            margin-bottom: 3rem;
+          }
+          @include md_767 {
+            margin-bottom: 3rem;
+          }
+          @include sm_567 {
+            margin-bottom: 3rem;
+          }
         }
       }
       & label {
@@ -39,7 +53,7 @@
         background-color: #fff;
         padding: 1.198vw 0 1.198vw 1.719vw;
         width: 16.146vw;
-        color: #989797;
+        color: #000;
         margin-top: 0.833vw;
         border-radius: 40px;
         border: none;
@@ -82,6 +96,9 @@
       }
       & .select__list {
         left: 1.5vw;
+        &--opened {
+          top: 17px;
+        }
         @include lg_900 {
           left: 0;
         }
@@ -124,8 +141,6 @@
           font-size: 1.4rem;
         }
       }
-    }
-    &-tel {
     }
     &-btn {
       position: relative;

@@ -573,17 +573,19 @@
                                 Оформить заказ
                             </div>
                             <form action="">
+                                <input type="hidden" name="title" value="оформление заказа косметики">
                                 <div class="cosmetic__cart-request--inputs">
-                                    <input type="text" placeholder="Ваше имя">
-                                    <input class="inputTel" type="tel" required placeholder="Ваш телефон">
-                                    <input class="inputMail" type="email" required placeholder="Ваш e-mail">
+                                    <input required type="text" placeholder="Ваше имя" name="name">
+                                    <input class="inputTel" type="tel" required placeholder="Ваш телефон" name="phone">
+                                    <input class="inputMail" type="email" required placeholder="Ваш e-mail"
+                                        name="email">
                                 </div>
                                 <div class="cosmetic__cart-request--delivery mtxt">
                                     <p>Нужна ли доставка</p>
                                     <div class="cosmetic--flex">
-                                        <input type="radio" name="delivery" id="delivery-yes">
+                                        <input required type="radio" name="delivery" id="delivery-yes">
                                         <label for="delivery-yes">Да</label>
-                                        <input type="radio" name="delivery" id="delivery-no">
+                                        <input required type="radio" name="delivery" id="delivery-no">
                                         <label for="delivery-no">Самывовоз</label>
                                     </div>
                                     <div class="cosmetic__cart-request--adress cosmetic__cart-request--inputs">

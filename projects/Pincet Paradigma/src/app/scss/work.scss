@@ -95,6 +95,18 @@
     opacity: 0;
     transition: all 0.3s ease;
     cursor: pointer;
+    & svg {
+      width: 2.396vw;
+      @include sm_567 {
+        width: 30px;
+      }
+      @include md_767 {
+        width: 35px;
+      }
+      @include lg_900 {
+        width: 40px;
+      }
+    }
   }
   &__more {
     display: flex;

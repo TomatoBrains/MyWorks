@@ -6,11 +6,11 @@ $(".qualification__workers-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
-  infinite: false,
+  infinite: true,
   nextArrow: $(".arrowRight"),
   prevArrow: $(".arrowLeft"),
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 901,
@@ -40,11 +40,11 @@ $(".qualification__certificate-slider").slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   dots: false,
-  infinite: false,
+  infinite: true,
   nextArrow: $(".arrowRightBot"),
   prevArrow: $(".arrowLeftBot"),
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 901,
@@ -77,7 +77,7 @@ $(".reviews__screenshots-phoneSlide").slick({
   fade: true,
   asNavFor: ".reviews__screenshots-slider",
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
 });
 $(".reviews__screenshots-slider").slick({
   slidesToShow: 3,
@@ -87,7 +87,7 @@ $(".reviews__screenshots-slider").slick({
   nextArrow: $(".reviews__screenshots-arrowRight"),
   prevArrow: $(".reviews__screenshots-arrowLeft"),
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   pauseOnHover: true,
   variableWidth: true,
   asNavFor: ".reviews__screenshots-phoneSlide",
@@ -138,7 +138,7 @@ $(".screenshots__slider-phoneSlide").slick({
   nextArrow: $(".screenshots__slider-arrowRight"),
   prevArrow: $(".screenshots__slider-arrowLeft"),
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   pauseOnHover: true,
   fade: true,
   responsive: [
