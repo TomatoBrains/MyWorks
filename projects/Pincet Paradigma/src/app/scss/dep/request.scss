@@ -2,6 +2,11 @@
   z-index: 1;
   & .request__form {
     display: block;
+    &-title {
+      & h3 {
+        font-size: 1.875vw;
+      }
+    }
     &--wraper {
       display: flex;
       margin-top: 1.604vw;
@@ -11,8 +16,8 @@
     &-img {
       width: 22.042vw;
       position: absolute;
-      left: 0;
-      bottom: 0;
+      left: -1vw;
+      bottom: 2px;
     }
 
     &-title {

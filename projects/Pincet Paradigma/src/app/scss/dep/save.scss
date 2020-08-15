@@ -1,9 +1,5 @@
 .save {
-  background-image: url(../img/dep/save/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 60px 5.573vw;
-  background-position: bottom;
   &--flex {
     display: flex;
     @include lg_900 {

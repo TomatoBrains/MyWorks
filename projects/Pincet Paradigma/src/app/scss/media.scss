@@ -1,7 +1,10 @@
 @media (min-width: 901px) {
   .container {
-    padding: 0 9.375vw;
+    padding: 0 6.375vw;
     margin: 0 auto;
+  }
+  .container-main {
+    padding: 0 9.3vw;
   }
   .col-xl-12 {
     width: 100%;
@@ -42,9 +45,18 @@
   .col-xl-1 {
     width: 8.333333333333334%;
   }
+  .col-xl-27 {
+    width: 27%;
+  }
+  .col-xl-52 {
+    width: 52%;
+  }
 }
 @media (min-width: 768px) and (max-width: 900px) {
   .container {
+    padding: 0 15px;
+  }
+  .container-main {
     padding: 0 15px;
   }
   .col-lg-12 {
@@ -101,6 +113,9 @@
   .container {
     padding: 0 15px;
   }
+  .container-main {
+    padding: 0 15px;
+  }
   .col-md-12 {
     width: 100%;
   }
@@ -153,6 +168,9 @@
 }
 @media (min-width: 320px) and (max-width: 567px) {
   .container {
+    padding: 0 15px;
+  }
+  .container-main {
     padding: 0 15px;
   }
   .col-sm-12 {

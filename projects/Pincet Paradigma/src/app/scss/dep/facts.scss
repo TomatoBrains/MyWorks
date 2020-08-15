@@ -1,9 +1,6 @@
 .facts {
   padding: 60px 0 120px 0;
-  background-image: url(../img/dep/facts/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  position: relative;
   @include lg_900 {
     padding: 60px 0;
   }
@@ -113,8 +110,8 @@
       position: absolute;
       z-index: -1;
       bottom: 11vw;
-      right: -12vw;
-      width: 33.802vw;
+      right: -15vw;
+      width: 43.802vw;
       @include md_767 {
         width: 23rem;
         bottom: 22vw;
@@ -199,7 +196,7 @@
       @include mainBtn;
       @include mainBtnBlick;
       @include mainBtnHover;
-      padding: 1.302vw 7.917vw 1.302vw 2.135vw;
+      padding: 1.802vw 7.917vw 1.802vw 2.135vw;
       font: $fontMuseoSansCyrlBold_18;
       letter-spacing: 1.4px;
       @include md_767 {
@@ -235,9 +232,9 @@
     }
     &-clockImg {
       position: absolute;
-      width: 13vw;
+      width: 15vw;
       bottom: 0.5vw;
-      right: -5vw;
+      right: -7vw;
       pointer-events: none;
       @include md_767 {
         right: -28%;
@@ -247,6 +244,21 @@
         width: 15rem;
         right: -21%;
       }
+    }
+  }
+  &__leaves {
+    position: absolute;
+    right: -1vw;
+    top: 8vw;
+    width: 9vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
     }
   }
 }

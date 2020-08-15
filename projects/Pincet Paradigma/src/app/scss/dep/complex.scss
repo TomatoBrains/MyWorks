@@ -260,6 +260,23 @@
     text-align: center;
     margin-top: 3.646vw;
     cursor: pointer;
+    & a {
+      position: relative;
+      @include beforeLine;
+      transition: all 0.2s ease;
+      &::before {
+        width: 100%;
+        color: #ff6078;
+        top: 115%;
+        opacity: 1;
+      }
+      &:hover::before {
+        width: 40%;
+      }
+      &:hover {
+        text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
+      }
+    }
   }
   &__blur {
     position: absolute;
@@ -280,7 +297,7 @@
   }
   &__leaves {
     position: absolute;
-    right: 0;
+    right: -3vw;
     top: 7vw;
     @include lg_900 {
       width: 10rem;

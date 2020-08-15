@@ -25,6 +25,11 @@
       }
     }
   }
+  &__women {
+    &--DEP {
+      right: 9vw;
+    }
+  }
 }
 @include lg_900 {
   .main {

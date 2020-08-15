@@ -4,6 +4,12 @@
   background-size: cover;
   overflow-x: hidden;
 }
+.save-fact--wraper {
+  background-image: url(../img/dep/backSave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
 .masage-wraper {
   background-image: url(../img/masage/main/back.png);
   background-repeat: no-repeat;
@@ -397,7 +403,7 @@ summary {
     padding-left: 3rem;
   }
   @include sm_567 {
-    width: 20rem;
+    width: 25rem;
     height: 5rem;
     font-size: 1.2rem;
     padding-top: 1.8rem;
@@ -445,12 +451,12 @@ summary {
       margin-bottom: 1.4rem;
     }
     @include sm_567 {
-      width: 20rem;
-      height: 5rem;
+      width: 25rem;
+      height: 5.5rem;
       font-size: 1.2rem;
-      padding-top: 1.5rem;
+      padding-top: 2rem;
       padding-left: 1.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
       border: 1px dashed $colorRozeDarkText;
     }
   }
@@ -473,8 +479,8 @@ summary {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 2rem;
+    animation: bounce linear 3s infinite;
   }
-  animation: bounce linear 3s infinite;
 }
 .menu--active {
   color: $colorRozeDark;

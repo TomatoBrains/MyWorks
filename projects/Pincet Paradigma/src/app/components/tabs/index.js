@@ -1,12 +1,14 @@
 //dep learn tabs
 $(function () {
   var tab = $(".learn__tabs > div");
-  tab.hide().filter(":first").show();
+  //tab.hide().filter(":first").show();
+  tab.hide().filter(":first").fadeIn(800, "linear");
 
   $(".learn__descr-btns--wraper a")
     .click(function () {
       tab.hide();
-      tab.filter(this.hash).show();
+      // tab.filter(this.hash).show();
+      tab.filter(this.hash).fadeIn(800, "linear");
       $(".learn__descr-btns--wraper a").removeClass("active");
       $(".learn__descr-btns--wraper a").removeClass("learn__active");
       $(this).addClass("active");
@@ -32,11 +34,11 @@ $(function () {
 //dep price tabs
 $(function () {
   var priceTab = $(".price__tabs > div");
-  priceTab.hide().filter(":first").show();
+  priceTab.hide().filter(":first").fadeIn(800, "linear");
   $(".price__calc-tabBtn a")
     .click(function () {
       priceTab.hide();
-      priceTab.filter(this.hash).show();
+      priceTab.filter(this.hash).fadeIn(800, "linear");
       $(".price__calc-tabBtn a").removeClass("active");
       $(".price__calc-tabBtn a").removeClass("price__tab-target");
       $(this).addClass("active");
@@ -50,11 +52,11 @@ $(function () {
 //programm tabs
 $(function () {
   var priceTab = $(".programm__tabs--items > div");
-  priceTab.hide().filter(":first").show();
+  priceTab.hide().filter(":first").fadeIn(800, "linear");
   $(".programm__tabs-item a")
     .click(function () {
       priceTab.hide();
-      priceTab.filter(this.hash).show();
+      priceTab.filter(this.hash).fadeIn(800, "linear");
       $(".programm__tabs-item a").removeClass("active");
       $(this).addClass("active");
       return false;

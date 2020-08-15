@@ -9,27 +9,39 @@ $(".clear").click(function () {
     $(this).prop("checked", false);
   });
 });
-$(".price__calc-row input").each(function () {
+//price calc
+$(".price__calc-row input").change(function () {
   let totalSum = 0;
-  $(this).change(function () {
-    total = [];
-    $(".price__calc-row input:checked").each(function () {
-      total.push(Number($(this).val()));
-    });
-    console.log(total);
-    function totalSumFunc() {
-      for (let i = 0; i < total.length; i++) {
-        totalSum += total[i];
-      }
-    }
-    totalSumFunc();
-    $(".price__calc-total--js").html(totalSum + "руб");
-    let discount = totalSum - (totalSum / 100) * 15;
-    discount = discount.toFixed(1);
-    $(".price__calc-discount--js").html(discount + "руб");
-    totalSum = 0;
+  total = [];
+  $(".price__calc-row input:checked").each(function () {
+    total.push(Number($(this).val()));
   });
+  let index = total.indexOf(Number($(this).val()));
+  function totalSumFunc() {
+    for (let i = 0; i < total.length; i++) {
+      totalSum += total[i];
+    }
+  }
+  totalSumFunc();
+  $(".price__calc-total--js").html(totalSum + "руб");
+  let discount = totalSum - (totalSum / 100) * 15;
+  discount = discount.toFixed(1);
+  $(".price__calc-discount--js").html(discount + "руб");
+  totalSum = 0;
 });
+
+/*$(".price__calc-row input").click(function () {
+  debugger;
+  if ($(this).prop("checked")) {
+    debugger;
+    $(this).prop("checked", false);
+  } else {
+    debugger;
+    $(this).prop("checked", true);
+  }
+  $(this).prop("checked", true);
+});*/
+
 //calc for masage
 $(".costMas__calc-row input").each(function () {
   let totalSum = 0;
@@ -38,7 +50,6 @@ $(".costMas__calc-row input").each(function () {
     $(".costMas__calc-row input:checked").each(function () {
       total.push(Number($(this).val()));
     });
-    console.log(total);
     function totalSumFunc() {
       for (let i = 0; i < total.length; i++) {
         totalSum += total[i];

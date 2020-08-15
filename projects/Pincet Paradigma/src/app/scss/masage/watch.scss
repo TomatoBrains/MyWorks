@@ -8,11 +8,15 @@
   &--flex {
     display: flex;
   }
+  &--rel {
+    position: relative;
+  }
   &__macbook {
     position: absolute;
-    width: 57vw;
-    left: 4vw;
-    top: 6.5vw;
+    width: 64vw;
+    left: -8vw;
+    top: -3.5vw;
+    pointer-events: none;
     @include lg_900 {
       position: relative;
       width: 100%;
@@ -33,19 +37,19 @@
     }
     &-btn {
       @include videoBtn;
-      top: 12vw;
-      left: 21vw;
+      top: 10vw;
+      left: 15.5vw;
       @include lg_900 {
-        top: 31%;
-        left: 35%;
+        top: 33%;
+        left: 36%;
       }
       @include md_767 {
-        top: 31%;
-        left: 35%;
+        top: 33%;
+        left: 36%;
       }
       @include sm_567 {
-        top: 31%;
-        left: 35%;
+        top: 33%;
+        left: 36%;
       }
       & span {
         padding: 1.5vw;
@@ -57,8 +61,8 @@
       color: $colorRozeDark;
       width: 8.4vw;
       text-align: right;
-      top: 7vw;
-      right: 21vw;
+      top: 8vw;
+      right: 25vw;
       @include lg_900 {
         top: 16%;
         left: 47%;

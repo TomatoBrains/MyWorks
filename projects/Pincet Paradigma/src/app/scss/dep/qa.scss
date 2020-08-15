@@ -70,6 +70,18 @@
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 6.8px -1.6px 57px 0 rgba(40, 40, 40, 0.1);
+        transition: all 0.2s ease;
+        & p {
+          transition: all 0.2s ease;
+        }
+        &:hover p:nth-of-type(2) {
+          color: $colorRozeDark;
+        }
+        /* & p:nth-of-type(2) {
+          &:hover {
+            color: $colorRozeDark;
+          }
+        }*/
         @include lg_900 {
           padding: 1.5rem 0.5rem;
         }
@@ -142,7 +154,7 @@
   }
   &__blur {
     position: absolute;
-    right: 1vw;
+    right: 3vw;
     top: 0vw;
     width: 20vw;
     @include lg_900 {

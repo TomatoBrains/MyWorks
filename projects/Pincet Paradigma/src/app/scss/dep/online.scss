@@ -193,7 +193,8 @@
   }
   input[type="radio"]:checked + label,
   input[type="radio"]:not(:checked) + label {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     position: relative;
     padding-left: 35px;
     padding-right: 0;
@@ -215,6 +216,7 @@
     left: 5px;
     width: 13px;
     height: 7px;
+    top: 6px;
   }
 }
 @include lg_900 {

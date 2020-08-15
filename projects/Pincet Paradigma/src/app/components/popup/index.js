@@ -11,6 +11,12 @@ let popupLeave = $(".popup__leave");
 let popupLeaveClose = $(".popup__leave-close");
 let popupName = $(".main__popup-name input");
 let popupPhone = $(".main__popup-tel input");
+let formName = $(".request__form-name input");
+let formTel = $(".request__form-tel input");
+let presentBtn = $(".presentBtn");
+let presentBtnOnline = $(".presentBtnOnline");
+let formNameOnline = $(".online__form-name input");
+let formTelOnline = $(".online__form-tel input");
 
 function openClosePopup() {
   function togglePopup() {
@@ -55,6 +61,20 @@ openClosePopup();
 
 $(document).one("mouseleave", function (e) {
   if (e.clientY < 0) {
+    popupLeave.addClass("show");
+    background.addClass("show");
+    $("html").addClass("overflowToggle");
+  }
+});
+presentBtn.click(function () {
+  if (formName.val().length > 0 && formTel.val().length > 0) {
+    popupLeave.addClass("show");
+    background.addClass("show");
+    $("html").addClass("overflowToggle");
+  }
+});
+presentBtnOnline.click(function () {
+  if (formNameOnline.val().length > 0 && formTelOnline.val().length > 0) {
     popupLeave.addClass("show");
     background.addClass("show");
     $("html").addClass("overflowToggle");

@@ -16,6 +16,7 @@
   &__img {
     position: absolute;
     left: 1vw;
+    width: 48vw;
     @include lg_900 {
       position: static;
       width: 70rem;
@@ -34,6 +35,9 @@
   }
   &__list {
     margin-left: 2vw;
+    & p {
+      font: $fontMuseoSansCyrlLight_24;
+    }
     & ul {
       list-style: none;
       & li {

@@ -94,8 +94,10 @@
 }
 @include lg_900 {
   .paper {
+    padding-top: 3rem;
     &__title {
       flex-direction: column;
+      margin-bottom: 2rem;
       & a {
         margin-top: 1rem;
       }
@@ -127,8 +129,10 @@
 }
 @include md_767 {
   .paper {
+    padding-top: 3rem;
     &__title {
       flex-direction: column;
+      margin-bottom: 2rem;
       & a {
         margin-top: 1rem;
       }
@@ -160,8 +164,10 @@
 }
 @include sm_567 {
   .paper {
+    padding-top: 3rem;
     &__title {
       flex-direction: column;
+      margin-bottom: 2rem;
       & a {
         margin-top: 1rem;
       }

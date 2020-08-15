@@ -4,6 +4,7 @@
   background: none;
   &--flex {
     display: flex;
+    justify-content: center;
   }
   &__title {
     text-align: center;
@@ -128,7 +129,7 @@
     }
     &-row {
       display: flex;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       padding-left: 2vw;
       @include lg_900 {
         justify-content: center;
@@ -307,7 +308,7 @@
           }
         }
         & p {
-          font: $fontMuseoSansCyrlBold_16;
+          font: $fontMuseoSansCyrlLight_16;
           margin-right: 1vw;
           width: 10vw;
         }
@@ -358,8 +359,21 @@
     border-radius: 10px;
     box-shadow: -0.8px 0.6px 150px 0 rgba(139, 117, 118, 0.1);
     background-color: #ffffff;
-    padding: 1.8vw 1.4vw 1.85vw 1.4vw;
+    padding: 2.3vw 1.4vw 2.6vw 1.4vw;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    @include lg_900 {
+      width: auto;
+    }
+    @include md_767 {
+      width: auto;
+    }
+    @include sm_567 {
+      width: auto;
+    }
     &-title {
       text-align: center;
       margin-bottom: 1vw;
@@ -516,6 +530,40 @@
         width: 25rem;
         margin: 2rem auto 0 auto;
       }
+      &--img {
+        position: absolute;
+        right: 0;
+        top: -1.5vw;
+        width: 9vw;
+        @include lg_900 {
+          width: 10rem;
+          right: -10%;
+          top: -20%;
+        }
+        @include md_767 {
+          right: -6%;
+          top: -39%;
+          width: 10rem;
+        }
+        @include sm_567 {
+          display: none;
+        }
+      }
+      &--anim {
+        position: absolute;
+        position: absolute;
+        top: -1vw;
+        right: 3.5vw;
+        animation: boxAnim 2s infinite linear;
+        @include lg_900 {
+          width: 5rem;
+          right: 3rem;
+        }
+        @include md_767 {
+          width: 5rem;
+          right: 3rem;
+        }
+      }
       &--wraper {
         position: relative;
         padding: 1.4vw 0 1.4vw 1vw;
@@ -536,25 +584,6 @@
           @include sm_567 {
             width: 23rem;
             font-size: 1.4rem;
-          }
-        }
-        & img {
-          position: absolute;
-          right: 0;
-          top: -1.5vw;
-          width: 9vw;
-          @include lg_900 {
-            width: 10rem;
-            right: -10%;
-            top: -20%;
-          }
-          @include md_767 {
-            right: -6%;
-            top: -39%;
-            width: 10rem;
-          }
-          @include sm_567 {
-            display: none;
           }
         }
       }
@@ -662,7 +691,8 @@ input[type="checkbox"]:not(:checked) + label:before {
   width: 18px;
   height: 18px;
   border: 1px solid #dddddd;
-  background-color: $colorRozeDark;
+  background-color: $colorInputBtn;
+  border-radius: 5px;
 }
 input[type="checkbox"]:not(:checked) + label:before {
   background-color: #fff;
@@ -698,7 +728,7 @@ input[type="checkbox"]:not(:checked) + label:after {
   border-radius: 1px;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  background-color: $colorRozeDark;
+  background-color: $colorInputBtn;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);

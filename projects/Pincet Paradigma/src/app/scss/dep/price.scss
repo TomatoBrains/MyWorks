@@ -112,6 +112,35 @@
     &-descr {
       position: absolute;
       z-index: 2;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        border: 1px solid #ee858c;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        border-radius: 50%;
+        -webkit-animation: smPulse 1.8s linear infinite;
+        animation: smPulse 1.8s linear infinite;
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border: 1px solid #ee858c86;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        border-radius: 50%;
+        -webkit-animation: smPulse 1.8s linear infinite;
+        animation: smPulse 1.8s linear infinite;
+        opacity: 0;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
       & > img {
         width: 2.5vw;
         cursor: pointer;
@@ -266,7 +295,7 @@
     }
     &-leave {
       position: absolute;
-      bottom: 15vw;
+      bottom: -35vw;
       left: -5vw;
     }
   }

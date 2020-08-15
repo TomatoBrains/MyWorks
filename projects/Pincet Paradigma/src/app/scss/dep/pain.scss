@@ -1,16 +1,16 @@
 .pain {
   padding: 30px 0 0 0;
+  background-image: url(../img/dep/pain/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   @include md_767 {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   @include sm_567 {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
   }
   &-wraper {
-    background-image: url(../img/dep/pain/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
   }
   &--flex {
     display: flex;
@@ -60,6 +60,23 @@
           margin-bottom: 10px;
         }
       }
+    }
+  }
+  &__leaves {
+    position: absolute;
+    right: 7vw;
+    bottom: 8vw;
+    @include lg_900 {
+      width: 5rem;
+      bottom: 3rem;
+    }
+    @include md_767 {
+      width: 5rem;
+      bottom: 3rem;
+    }
+    @include sm_567 {
+      width: 5rem;
+      bottom: 3rem;
     }
   }
 }
