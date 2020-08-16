@@ -35,13 +35,13 @@
         & > div {
           margin-bottom: 1vw;
           @include lg_900 {
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
           }
           @include md_767 {
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
           }
           @include sm_567 {
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
           }
         }
       }

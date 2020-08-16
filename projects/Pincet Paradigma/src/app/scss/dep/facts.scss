@@ -147,12 +147,12 @@
   &__descr {
     margin-top: 2vw;
     @include md_767 {
-      margin-top: -1rem;
+      margin-top: -3rem;
       display: flex;
       flex-direction: column;
     }
     @include sm_567 {
-      margin-top: -1rem;
+      margin-top: -3rem;
       display: flex;
       flex-direction: column;
     }

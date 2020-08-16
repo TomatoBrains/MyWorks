@@ -3,14 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  z-index: 1;
   & .online__img {
     position: absolute;
     right: -1vw;
     bottom: -12vw;
     width: 35vw;
     z-index: 1;
-  }
-  & .request__form-radio {
-    display: none;
   }
 }

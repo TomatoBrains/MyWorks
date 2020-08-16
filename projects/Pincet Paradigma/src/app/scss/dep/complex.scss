@@ -60,6 +60,7 @@
       margin-bottom: 2rem;
       padding: 3rem;
       padding-top: 1.5rem;
+      width: 29rem;
     }
     &-discount {
       position: absolute;
@@ -70,13 +71,16 @@
       font: $fontAppetite_30;
       color: #fff;
       @include lg_900 {
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
       @include md_767 {
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
       @include sm_567 {
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
       &--img {
         position: absolute;
@@ -85,13 +89,16 @@
         z-index: -1;
         top: 0vw;
         @include lg_900 {
-          width: 25%;
+          width: 40%;
+          right: -1rem;
         }
         @include md_767 {
-          width: 25%;
+          width: 40%;
+          right: -1rem;
         }
         @include sm_567 {
-          width: 25%;
+          width: 33%;
+          right: -1rem;
         }
       }
     }
@@ -260,6 +267,15 @@
     text-align: center;
     margin-top: 3.646vw;
     cursor: pointer;
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
+    }
     & a {
       position: relative;
       @include beforeLine;

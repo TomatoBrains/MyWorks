@@ -1,0 +1,15 @@
+.reviews-masage {
+  & .reviews__clients {
+    @include xl {
+      margin-right: 9vw;
+    }
+  }
+  & .reviews__clients-title {
+    display: block;
+  }
+  & .reviews__clients-head {
+    @include xl {
+      width: 30vw;
+    }
+  }
+}

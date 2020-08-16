@@ -83,7 +83,7 @@ $(".reviews__screenshots-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
-  infinite: false,
+  infinite: true,
   nextArrow: $(".reviews__screenshots-arrowRight"),
   prevArrow: $(".reviews__screenshots-arrowLeft"),
   autoplay: true,
@@ -96,6 +96,82 @@ $(".reviews__screenshots-slider").slick({
       breakpoint: 901,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+//masasge sliders
+$(".master__workers-slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  infinite: true,
+  nextArrow: $(".arrowRight"),
+  prevArrow: $(".arrowLeft"),
+  autoplay: true,
+  autoplaySpeed: 3000,
+  asNavFor: ".master__descr-slider",
+  responsive: [
+    {
+      breakpoint: 901,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+$(".master__descr-slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  fade: true,
+  asNavFor: ".master__workers-slider",
+});
+$(".master__certificate-slider").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  infinite: true,
+  nextArrow: $(".arrowRightBot"),
+  prevArrow: $(".arrowLeftBot"),
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 901,
+      settings: {
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },

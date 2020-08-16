@@ -1,5 +1,14 @@
 .save {
   padding: 60px 5.573vw;
+  @include lg_900 {
+    padding: 3rem 2rem;
+  }
+  @include md_767 {
+    padding: 3rem 2rem;
+  }
+  @include sm-567 {
+    padding: 3rem 2rem;
+  }
   &--flex {
     display: flex;
     @include lg_900 {
@@ -163,6 +172,15 @@
       &--marginR {
         margin-right: 1.823vw;
         text-align: right;
+        @include lg_900 {
+          margin-right: 0;
+        }
+        @include md_767 {
+          margin-right: 0;
+        }
+        @include sm-567 {
+          margin-right: 0;
+        }
       }
       @include lg_900 {
         text-align: center;

@@ -57,9 +57,9 @@
     margin-right: 4.063vw;
     & .request {
       &__form {
-        padding-bottom: 2.448vw;
+        padding: 2.5vw;
         &-inputs {
-          width: 15.063vw;
+          width: 19.063vw;
         }
         &-women {
           width: 13vw;
@@ -97,6 +97,8 @@
           display: flex;
           margin-top: 2vw;
           justify-content: space-between;
+          width: 83%;
+          margin: 2rem auto 0 auto;
           & label {
             width: 50%;
           }
@@ -127,7 +129,7 @@
           }
           & img {
             width: 12.063vw;
-            right: -5vw;
+            right: -2vw;
             bottom: 1vw;
           }
         }
@@ -344,6 +346,7 @@
           right: 16%;
           & p {
             width: 14rem;
+            margin: 0 auto;
             font-size: 1.2rem;
           }
         }
@@ -492,6 +495,7 @@
           right: 16%;
           & p {
             width: 14rem;
+            margin: 0 auto;
             font-size: 1.2rem;
           }
         }
@@ -559,7 +563,7 @@
       &-name {
         display: flex;
         flex-direction: column;
-        width: 20rem;
+        width: 25rem;
         height: 5rem;
         margin: 0 auto 1rem auto;
         & label {
@@ -577,7 +581,7 @@
       &-tel {
         display: flex;
         flex-direction: column;
-        width: 20rem;
+        width: 25rem;
         height: 5rem;
         margin: 0 auto 1rem auto;
         & label {
@@ -609,14 +613,14 @@
         margin-bottom: 2rem;
         display: inline-block;
         & button {
-          width: 20rem;
+          width: 25rem;
           height: 5rem;
           font-size: 1.2rem;
           padding-left: 2rem;
         }
         & img {
           width: 16rem;
-          right: -35%;
+          right: -10%;
           bottom: 13%;
         }
       }
@@ -639,6 +643,7 @@
           right: 16%;
           & p {
             width: 14rem;
+            margin: 0 auto;
             font-size: 1.2rem;
           }
         }

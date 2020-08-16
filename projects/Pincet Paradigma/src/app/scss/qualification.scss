@@ -233,7 +233,7 @@
     top: 40%;
   }
   @include sm_567 {
-    left: 10%;
+    left: 0%;
     top: 40%;
   }
 }
@@ -477,7 +477,7 @@
     &__workers {
       width: 30rem;
       margin: 2rem auto 0 auto;
-      margin-left: -1.5rem;
+
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
@@ -492,7 +492,7 @@
       }
       &-slider {
         & .slick-slide {
-          margin-left: 2rem;
+          margin-left: 0rem;
           margin-right: 0;
         }
       }
@@ -503,6 +503,7 @@
         }
       }
       &-img {
+        width: 25rem;
         & img {
           margin: 0 auto;
         }
@@ -516,7 +517,7 @@
     }
     &__leaveLeft {
       width: 6rem;
-      top: 6rem;
+      top: 1rem;
     }
     &__leaveRight {
       width: 12rem;

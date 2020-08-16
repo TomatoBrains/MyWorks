@@ -163,13 +163,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-left: 0;
       &-title {
         order: 1;
         min-width: 30rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         & h1 {
           & span {
-            font-size: 2.2rem;
+            font-size: 2.6rem;
           }
         }
       }
@@ -253,12 +254,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-left: 0;
       &-title {
         order: 1;
         width: 85%;
         & h1 {
           & span {
-            font-size: 2.4rem;
+            font-size: 2.6rem;
           }
         }
       }
@@ -343,6 +345,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-left: 0;
       &-title {
         order: 1;
         width: 79%;

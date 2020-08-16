@@ -37,6 +37,15 @@
     margin-left: 2vw;
     & p {
       font: $fontMuseoSansCyrlLight_24;
+      @include lg_900 {
+        font-size: 1.6rem;
+      }
+      @include md_767 {
+        font-size: 1.5rem;
+      }
+      @include sm_567 {
+        font-size: 1.4rem;
+      }
     }
     & ul {
       list-style: none;
@@ -48,12 +57,15 @@
         width: 90%;
         @include lg_900 {
           margin: 1rem 0 !important;
+          font-size: 1.6rem;
         }
         @include md_767 {
           margin: 1rem 0 !important;
+          font-size: 1.5rem;
         }
         @include sm_567 {
           margin: 1rem 0 !important;
+          font-size: 1.4rem;
         }
         & span {
           & img {

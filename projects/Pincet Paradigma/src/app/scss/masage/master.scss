@@ -32,66 +32,37 @@
   }
   &--flex {
     display: flex;
+    justify-content: space-around;
   }
   &__workers {
-    margin-top: $elemMarginTop_60;
     position: relative;
+    &-slider {
+      & .slick-slide {
+        margin-left: 2.0835vw;
+        margin-right: 2.0835vw;
+      }
+    }
     &-item {
       margin-right: 100px;
-      @include lg_900 {
-        margin-right: 0;
-      }
-      @include md_767 {
-        margin-right: 0;
-      }
-      @include sm_567 {
-        margin-right: 0;
-      }
     }
-    &-descr {
-      @include lg_900 {
-        text-align: left;
-      }
-      @include md_767 {
-        text-align: left;
-      }
-      @include sm_567 {
-        text-align: left;
-      }
-    }
-    text-align: left;
     &-card {
       text-align: center;
     }
     &-img {
       display: inline-block;
       position: relative;
+      width: 22vw;
     }
     &-name {
       position: absolute;
       bottom: 3vw;
       right: 1vw;
-      padding: 0.538vw 2.719vw;
+      padding: 0.938vw 1.719vw;
       background-color: #fff;
       border-radius: 10px;
       transform: skew(-11deg);
       box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
       z-index: 5;
-      @include lg_900 {
-        bottom: 12rem;
-        padding: 1rem 3rem;
-        right: 3rem;
-      }
-      @include md_767 {
-        bottom: 12rem;
-        padding: 1rem 3rem;
-        right: 3rem;
-      }
-      @include sm_567 {
-        bottom: 12rem;
-        padding: 1rem 3rem;
-        right: 3rem;
-      }
       & p {
         transform: skew(10deg);
         font-weight: 700;
@@ -100,32 +71,43 @@
     &-master {
       position: absolute;
       bottom: 1vw;
-      right: 3vw;
-      padding: 1.042vw 1.885vw;
+      right: 4vw;
+      padding: 1.042vw 0.885vw;
       border-radius: 10px;
       background-color: #fdfdfd;
-      @include lg_900 {
-        bottom: 8rem;
-        width: 17rem;
-        right: 2rem;
-      }
-      @include md_767 {
-        bottom: 8rem;
-        width: 17rem;
-        right: 2rem;
-      }
-      @include sm_567 {
-        bottom: 8rem;
-        width: 17rem;
-        right: 2rem;
-      }
       & p {
         font: $fontMuseoSansCyrlMed_11;
+      }
+    }
+    & ul {
+      margin-top: 2.083vw;
+      list-style-image: url(../img/qualification/check.png);
+      margin-left: 1vw;
+      & li {
+        font: $fontMuseoSansCyrlLight_18;
       }
     }
     &-link {
       display: inline-block;
       margin-top: 1.563vw;
+      margin-left: 1vw;
+      padding-bottom: 5px;
+      & a {
+        position: relative;
+        @include beforeLine;
+        transition: all 0.2s ease;
+        &::before {
+          width: 100%;
+          color: #ff6078;
+          top: 115%;
+        }
+        &:hover::before {
+          width: 40%;
+        }
+        &:hover {
+          text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
+        }
+      }
       @include lg_900 {
         margin-left: 2rem;
       }
@@ -136,38 +118,74 @@
         margin-left: 2rem;
       }
     }
-    &-ul {
-      @include lg_900 {
-        display: flex;
-        justify-content: end;
-        text-align: left;
-      }
-      @include md_767 {
-        display: flex;
-        justify-content: end;
-        text-align: left;
-      }
-      @include sm_567 {
-        display: flex;
-        justify-content: end;
-        text-align: left;
-      }
-      & ul {
-        margin-top: 2.083vw;
-        list-style-image: url(../img/qualification/check.png);
-        @include lg_900 {
-          margin-left: 2rem;
+    & .slick-disabled {
+      opacity: 0.3;
+    }
+  }
+  &__certificate {
+    position: relative;
+    display: flex;
+    margin-top: 2.792vw;
+    align-items: center;
+    &-link {
+      & a {
+        position: relative;
+        @include beforeLine;
+        transition: all 0.2s ease;
+        &::before {
+          width: 100%;
+          color: #ff6078;
+          top: 115%;
+          opacity: 1;
         }
-        @include md_767 {
-          margin-left: 2rem;
+        &:hover::before {
+          width: 40%;
         }
-        @include sm_567 {
-          margin-left: 2rem;
-        }
-        & li {
-          font: $fontMuseoSansCyrlLight_18;
+        &:hover {
+          text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
         }
       }
+    }
+    &-descr {
+      text-align: left;
+      width: 18.523vw;
+      padding-right: 3.906vw;
+    }
+    &-items {
+      width: 49.5vw;
+      position: relative;
+      & .slick-disabled {
+        opacity: 0.3;
+      }
+    }
+    &-wraper {
+      position: relative;
+    }
+    &-img {
+      position: absolute;
+      z-index: 2;
+      left: -6vw;
+      bottom: -1vw;
+      width: 14.292vw;
+      pointer-events: none;
+    }
+    &-background {
+      @include zoomBackground;
+    }
+    &-zoom {
+      @include zoomIcon;
+    }
+    &-item {
+      position: relative;
+      &:hover .qualification__certificate-background {
+        opacity: 0.4;
+      }
+      &:hover .qualification__certificate-zoom {
+        opacity: 1;
+      }
+    }
+    & .slick-slide {
+      padding-right: 10px;
     }
   }
   &__descr {
@@ -196,84 +214,330 @@
       }
     }
   }
-  &__certificate {
-    padding: 0 6.25vw;
-    position: relative;
-    display: flex;
-    margin-top: 4.792vw;
-    &--wraper {
-      display: flex;
-    }
-    &-descr {
-      text-align: left;
-      width: 14.323vw;
-      padding-right: 3.906vw;
-    }
-    &-items {
-      width: 81%;
-      position: relative;
-      margin-left: 4vw;
-    }
-    &-link {
-      display: inline-block;
-      margin-top: 1.302vw;
-    }
-    &--wraper {
-      position: relative;
-    }
-    &-img {
-      position: absolute;
-      z-index: 2;
-      left: -5vw;
-      bottom: -1vw;
-      width: 13.292vw;
-      pointer-events: none;
-      @include lg_900 {
-        display: none;
-      }
-      @include md_767 {
-        display: none;
-      }
-      @include sm_567 {
-        display: none;
-      }
-    }
-    &-background {
-      @include zoomBackground;
-    }
-    &-zoom {
-      @include zoomIcon;
-    }
-    &-item {
-      position: relative;
-      margin-right: 10px;
-      @include lg_900 {
-        margin-bottom: 1rem;
-      }
-      @include md_767 {
-        margin-bottom: 1rem;
-      }
-      @include sm_567 {
-        margin-bottom: 1rem;
-        margin-right: 0;
-      }
-      &:hover .master__certificate-background {
-        opacity: 0.4;
-      }
-      &:hover .master__certificate-zoom {
-        opacity: 1;
-      }
-    }
-  }
   &__blur {
     position: absolute;
     top: 8vw;
     right: -10vw;
     width: 22vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
   }
   &__leave {
     position: absolute;
     top: 10vw;
     width: 4vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
+  }
+  &__leaveC {
+    position: absolute;
+    top: 25vw;
+    width: 4vw;
+    left: 15vw;
+    @include lg_900 {
+      display: none;
+    }
+    @include md_767 {
+      display: none;
+    }
+    @include sm_567 {
+      display: none;
+    }
+  }
+  & .arrowLeft {
+    position: absolute;
+    top: 40%;
+    left: 0vw;
+    cursor: pointer;
+    z-index: 2;
+    @include lg_900 {
+      left: 0%;
+      top: 40%;
+    }
+    @include md_767 {
+      left: 10%;
+      top: 40%;
+    }
+    @include sm_567 {
+      left: 00%;
+      top: 40%;
+    }
+  }
+  & .arrowRightBot {
+    position: absolute;
+    top: 50%;
+    right: -3.5vw;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    @include lg_900 {
+      right: -10%;
+    }
+    @include md_767 {
+      right: -10%;
+    }
+    @include sm_567 {
+      right: -13%;
+    }
+  }
+  & .arrowLeftBot {
+    position: absolute;
+    top: 50%;
+    left: -6.5vw;
+    transform: translate(0, -50%);
+    z-index: 3;
+    cursor: pointer;
+    @include lg_900 {
+      left: -15%;
+    }
+    @include md_767 {
+      left: -15%;
+    }
+    @include sm_567 {
+      left: -15%;
+    }
+  }
+  & .arrowRight {
+    position: absolute;
+    top: 40%;
+    right: 0vw;
+    cursor: pointer;
+    @include lg_900 {
+      right: 0%;
+      top: 40%;
+    }
+    @include md_767 {
+      right: 0%;
+      top: 40%;
+    }
+    @include sm_567 {
+      right: 0%;
+      top: 40%;
+    }
+  }
+}
+@include lg_900 {
+  .master {
+    &__workers {
+      margin-left: -1.5rem;
+      margin-top: 2rem;
+      &-img {
+        width: auto;
+      }
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+      &-slider {
+        & .slick-slide {
+          margin-left: 2rem;
+          margin-right: 0;
+        }
+      }
+      & ul {
+        margin-left: 2rem;
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__descr {
+      &-diploms {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &__certificate {
+      flex-wrap: wrap;
+      margin-top: 0rem;
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 24rem;
+        left: -9rem;
+        bottom: -1rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+@include md_767 {
+  .master {
+    &__workers {
+      margin-left: -1.5rem;
+      margin-top: 2rem;
+      &-img {
+        width: auto;
+      }
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+      &-slider {
+        & .slick-slide {
+          margin-left: 2rem;
+          margin-right: 0;
+        }
+      }
+      & ul {
+        margin-left: 2rem;
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__descr {
+      &-diploms {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &__certificate {
+      flex-wrap: wrap;
+      margin-top: 0rem;
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        padding: 0;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 24rem;
+        left: -5rem;
+        bottom: -1rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+@include sm_567 {
+  .master {
+    &__workers {
+      width: 29rem;
+      margin: 2rem auto;
+
+      &-img {
+        width: auto;
+      }
+      &-name {
+        bottom: 5rem;
+        padding: 1.5rem 3.5rem;
+      }
+      &-master {
+        bottom: 2rem;
+        padding: 1rem 1rem;
+        right: 2rem;
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+      &-slider {
+        & .slick-slide {
+          margin-left: 0rem;
+          margin-right: 0;
+        }
+      }
+      & ul {
+        margin-left: 2rem;
+        & li {
+          font-size: 1.6rem;
+        }
+      }
+      &-img {
+        width: 25rem;
+        & img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__descr {
+      &-diploms {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &__certificate {
+      margin-top: 0rem;
+      & .slick-slide {
+        padding-right: 0;
+      }
+    }
+    &__certificate {
+      flex-wrap: wrap;
+      &-descr {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        text-align: center;
+      }
+      &-items {
+        margin: 2rem auto 0 auto;
+      }
+      &-item {
+        padding: 0;
+        & img {
+          margin: 0 auto;
+        }
+      }
+      &-img {
+        width: 17rem;
+        left: -6rem;
+        bottom: -1rem;
+      }
+    }
   }
 }

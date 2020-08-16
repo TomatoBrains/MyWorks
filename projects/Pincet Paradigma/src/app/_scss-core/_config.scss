@@ -304,13 +304,13 @@ summary {
   & ul {
     & li {
       @include lg_900 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       @include md_767 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       @include sm_567 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
   }

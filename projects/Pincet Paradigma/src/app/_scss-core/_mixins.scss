@@ -75,6 +75,14 @@
     background-color: rgba(241, 241, 241, 0.44);
     border-radius: 100%;
     animation: pulseicon 3.3s infinite linear;
+    @include md_767 {
+      width: 180%;
+      height: 180%;
+    }
+    @include sm-567 {
+      width: 180%;
+      height: 180%;
+    }
   }
   &::after {
     position: absolute;
@@ -88,6 +96,14 @@
     background-color: rgba(241, 241, 241, 0.3);
     border-radius: 100%;
     animation: pulseicon 3.3s infinite linear;
+    @include md_767 {
+      width: 210%;
+      height: 210%;
+    }
+    @include sm-567 {
+      width: 210%;
+      height: 210%;
+    }
   }
 }
 //background for zoomed img
@@ -351,6 +367,11 @@
 }
 @mixin lg_900 {
   @media (min-width: 768px) and (max-width: $mediaLg) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 901px) {
     @content;
   }
 }
