@@ -73,6 +73,17 @@
         transition: all 0.2s ease;
         & p {
           transition: all 0.2s ease;
+          & span {
+            @include lg_900 {
+              font-size: 1.2rem !important;
+            }
+            @include md_767 {
+              font-size: 1.1rem !important;
+            }
+            @include sm_567 {
+              font-size: 1rem !important;
+            }
+          }
         }
         &:hover p:nth-of-type(2) {
           color: $colorRozeDark;

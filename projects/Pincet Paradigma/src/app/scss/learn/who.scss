@@ -21,6 +21,15 @@
     max-width: 65%;
     margin: 0 auto;
     margin-bottom: 2.5vw;
+    @include lg_900 {
+      max-width: unset;
+    }
+    @include md_767 {
+      max-width: unset;
+    }
+    @include sm_567 {
+      max-width: unset;
+    }
     &--bottom {
       width: 80%;
       text-align: left;
@@ -39,7 +48,7 @@
       margin: 0 auto;
     }
     @include sm_567 {
-      width: 30rem;
+      width: auto;
       margin: 0 auto;
     }
     & a {
@@ -107,18 +116,21 @@
         max-width: 100%;
         top: 22%;
         width: 10rem;
+        font-size: 1.2rem;
       }
       @include md_767 {
         right: 85%;
         max-width: 100%;
         top: 22%;
         width: 10rem;
+        font-size: 1.2rem;
       }
       @include sm_567 {
         right: 66%;
         max-width: 100%;
         top: 22%;
         width: 10rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -156,6 +168,7 @@
   &__leavesL {
     position: absolute;
     top: 0;
+    left: -2vw;
     @include lg_900 {
       width: 5rem;
     }
@@ -163,7 +176,7 @@
       width: 5rem;
     }
     @include sm_567 {
-      width: 5rem;
+      width: 4rem;
     }
   }
   &__blur {

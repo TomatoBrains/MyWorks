@@ -16,6 +16,15 @@
     display: flex;
   }
   &__text {
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
+    }
     &-title {
       @include md_767 {
         text-align: center;
@@ -60,6 +69,17 @@
           margin-bottom: 10px;
         }
       }
+    }
+  }
+  &__img {
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
     }
   }
   &__leaves {

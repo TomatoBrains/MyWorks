@@ -28,22 +28,49 @@
       left: -7vw;
       top: 9vw;
       @include lg_900 {
-        position: static;
+        position: relative;
         width: auto;
         margin-top: 2rem;
         margin-bottom: -10rem;
+        left: 4rem;
+        top: 0;
       }
       @include md_767 {
-        position: static;
+        position: relative;
         width: auto;
         margin-top: 2rem;
         margin-bottom: -8rem;
+        left: 4rem;
+        top: 0;
       }
       @include sm_567 {
-        position: static;
+        position: relative;
         width: auto;
         margin-top: 2rem;
         margin-bottom: -4rem;
+        left: 4rem;
+        top: 0;
+      }
+    }
+    &-leaveC {
+      position: absolute;
+      top: 6vw;
+      right: 14vw;
+      width: 5vw;
+      @include lg_900 {
+        width: 8rem;
+        right: 29%;
+        top: 15%;
+      }
+      @include md_767 {
+        width: 7rem;
+        right: 29%;
+        top: 15%;
+      }
+      @include sm_567 {
+        width: 4rem;
+        right: 29%;
+        top: 15%;
       }
     }
     &-line {

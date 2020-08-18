@@ -10,6 +10,11 @@
         }
       }
     }
+    &-btn {
+      & a {
+        color: #fff;
+      }
+    }
     &-leaves {
       &--DEP {
         position: absolute;

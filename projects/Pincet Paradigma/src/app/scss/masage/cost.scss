@@ -365,6 +365,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
     @include lg_900 {
       width: auto;
     }
@@ -592,7 +593,7 @@
       position: absolute;
       top: 45%;
       width: 5vw;
-      right: 0;
+      right: -1.8vw;
       @include lg_900 {
         width: 5rem;
       }
@@ -626,6 +627,15 @@
     color: $colorRozeDark;
     width: 60%;
     text-align: center;
+    @include lg_900 {
+      width: 100%;
+    }
+    @include md_767 {
+      width: 100%;
+    }
+    @include sm_567 {
+      width: 100%;
+    }
   }
   input[type="checkbox"]:checked + label:before,
   input[type="checkbox"]:not(:checked) + label:before {

@@ -1,6 +1,24 @@
 .learn-main {
   & .main {
     &__descr {
+      &-title {
+        & h1 {
+          width: 70%;
+          margin-bottom: 1vw;
+          @include lg_900 {
+            width: auto;
+          }
+          @include md_767 {
+            width: auto;
+          }
+          @include sm_567 {
+            width: auto;
+          }
+        }
+        & p {
+          font: $fontMuseoSansCyrlLight_30;
+        }
+      }
       &-btn {
         width: 19.792vw;
         padding: 1.7vw 0;
@@ -72,6 +90,7 @@
     &__women {
       max-width: 50.408vw;
       top: 0vw;
+      right: 3vw;
       @include lg_900 {
         max-width: 100%;
         bottom: -7rem;

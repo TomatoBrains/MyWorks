@@ -101,6 +101,9 @@
       @include md_767 {
         justify-content: space-around;
       }
+      @include sm_567 {
+        justify-content: space-around;
+      }
     }
     &-item {
       margin-right: 10px;

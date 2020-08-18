@@ -1,6 +1,15 @@
 .papers {
-  padding: 30px 0;
+  padding: 5vw 0 2vw 0;
   position: relative;
+  @include lg_900 {
+    padding: 3rem 0 1rem 0;
+  }
+  @include md_767 {
+    padding: 3rem 0 1rem 0;
+  }
+  @include sm_567 {
+    padding: 3rem 0 1rem 0;
+  }
   &--flex {
     display: flex;
     justify-content: space-around;
@@ -37,17 +46,6 @@
         margin-bottom: 1rem;
       }
     }
-    &__content {
-      @include lg_900 {
-        margin-bottom: 1rem;
-      }
-      @include md_767 {
-        margin-bottom: 1rem;
-      }
-      @include sm_567 {
-        margin-bottom: 1rem;
-      }
-    }
     &-item {
       @include mainBtn;
       background-image: linear-gradient(to top, #fff, #fff);
@@ -64,11 +62,44 @@
       }
     }
   }
+  &__content {
+    @include lg_900 {
+      margin-bottom: 2rem;
+    }
+    @include md_767 {
+      margin-bottom: 2rem;
+    }
+    @include sm_567 {
+      margin-bottom: 2rem;
+    }
+  }
   .paper {
     &__item {
-      margin-bottom: 2vw;
+      margin-bottom: 3vw;
+      @include lg_900 {
+        margin-bottom: 3rem;
+      }
+      @include md_767 {
+        margin-bottom: 2rem;
+      }
+      @include sm_567 {
+        margin-bottom: 1rem;
+      }
       &-descr {
         text-align: center;
+        margin-top: 0;
+        & p {
+          font: $fontMuseoSansCyrlBold_24;
+          @include lg_900 {
+            font-size: 1.6rem;
+          }
+          @include md_767 {
+            font-size: 1.5rem;
+          }
+          @include sm_567 {
+            font-size: 1.4rem;
+          }
+        }
       }
     }
   }
@@ -80,7 +111,7 @@
   }
   &__leavesR {
     position: absolute;
-    right: 0;
+    right: -2vw;
     bottom: 1vw;
     width: 6vw;
     @include lg_900 {

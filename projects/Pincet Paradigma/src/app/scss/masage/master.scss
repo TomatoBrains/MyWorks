@@ -127,6 +127,15 @@
     display: flex;
     margin-top: 2.792vw;
     align-items: center;
+    &-item {
+      position: relative;
+      &:hover .master__certificate-background {
+        opacity: 0.4;
+      }
+      &:hover .master__certificate-zoom {
+        opacity: 1;
+      }
+    }
     &-link {
       & a {
         position: relative;

@@ -53,12 +53,14 @@ $(function () {
 $(function () {
   var priceTab = $(".programm__tabs--items > div");
   priceTab.hide().filter(":first").fadeIn(800, "linear");
-  $(".programm__tabs-item a")
+  $(".programm__tabs-item")
     .click(function () {
       priceTab.hide();
       priceTab.filter(this.hash).fadeIn(800, "linear");
-      $(".programm__tabs-item a").removeClass("active");
+      $(".programm__tabs-item").removeClass("active");
+      $(".programm__tabs-item").removeClass("programm__tabs-active");
       $(this).addClass("active");
+      $(this).addClass("programm__tabs-active");
       return false;
     })
     .filter(":first")

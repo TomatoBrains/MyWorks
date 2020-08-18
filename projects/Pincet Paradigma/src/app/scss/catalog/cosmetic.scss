@@ -39,7 +39,6 @@
         margin-bottom: 2vw;
         cursor: pointer;
         @include lg_900 {
-          width: 50rem;
           margin: 0 auto 2rem auto;
         }
         @include md_767 {
@@ -59,10 +58,10 @@
           justify-content: end;
           align-items: center;
           @include lg_900 {
-            padding: 1rem;
+            padding: 1.5rem;
           }
           @include md_767 {
-            padding: 1rem;
+            padding: 1.5rem;
           }
           @include sm_567 {
             padding: 1rem;
@@ -109,28 +108,32 @@
       padding: 1vw 0;
       align-items: center;
       @include lg_900 {
-        flex-wrap: wrap;
         justify-content: center;
-        width: 50rem;
         margin: 1rem auto;
       }
       @include md_767 {
         flex-wrap: wrap;
         justify-content: center;
-        width: 40rem;
-        margin: 1rem auto;
+        margin-left: 0;
+        align-items: stretch;
+        position: relative;
+        padding-bottom: 6rem;
       }
       @include sm_567 {
         flex-wrap: wrap;
         justify-content: center;
+        margin-left: 0;
+        align-items: stretch;
+        position: relative;
+        padding-bottom: 6rem;
       }
     }
     &-img {
       width: 4.583vw;
       margin-left: 2.5vw;
       @include lg_900 {
-        width: 100%;
-        margin: 0 0 1rem 0;
+        width: auto;
+        margin: 0 2rem 1rem 0;
         text-align: center;
       }
       @include md_767 {
@@ -149,6 +152,7 @@
       @include lg_900 {
         text-align: center;
         margin-bottom: 1rem;
+        margin-right: 2rem;
       }
       @include md_767 {
         text-align: center;
@@ -189,17 +193,17 @@
     &-amount {
       margin-right: 5vw;
       @include lg_900 {
-        width: 100%;
+        width: auto;
         margin-bottom: 1rem;
-        margin-right: 0;
+        margin-right: 2rem;
       }
       @include md_767 {
-        width: 100%;
+        width: 45%;
         margin-bottom: 1rem;
         margin-right: 0;
       }
       @include sm_567 {
-        width: 100%;
+        width: 45%;
         margin-bottom: 1rem;
         margin-right: 0;
       }
@@ -220,15 +224,15 @@
       }
       &--count {
         @include lg_900 {
-          width: 20rem;
+          width: 17rem;
           margin: 0 auto;
         }
         @include md_767 {
-          width: 20rem;
+          width: auto;
           margin: 0 auto;
         }
         @include sm_567 {
-          width: 20rem;
+          width: auto;
           margin: 0 auto;
         }
       }
@@ -299,12 +303,26 @@
     }
     &-price {
       text-align: center;
+      @include md_767 {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+      }
+      @include sm_567 {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
       &--title {
         font: $fontMuseoSansCyrlLight_16;
       }
       &--main {
         font: $fontMuseoSansCyrlBold_36;
         margin: 9px 0;
+        @include md_767 {
+          margin-top: 2.5rem;
+        }
         & span {
           font: $fontMuseoSansCyrlBold_18;
           margin-left: -5px;
@@ -334,10 +352,18 @@
         @include md_767 {
           padding: 1rem;
           width: 15rem;
+          position: absolute;
+          bottom: 2rem;
+          left: 50%;
+          transform: translate(-50%);
         }
         @include sm_567 {
           padding: 1rem;
           width: 15rem;
+          position: absolute;
+          bottom: 2rem;
+          left: 50%;
+          transform: translate(-50%);
         }
         & a {
           color: #fff;

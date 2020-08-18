@@ -1,5 +1,15 @@
 .request-learn {
   padding-bottom: 0;
+  padding-bottom: 3vw;
+  @include lg_900 {
+    padding-bottom: 3rem;
+  }
+  @include md_767 {
+    padding-bottom: 3rem;
+  }
+  @include sm_567 {
+    padding-bottom: 3rem;
+  }
   & .request--overflow {
     overflow: hidden;
   }
@@ -15,14 +25,14 @@
       justify-content: center;
     }
     &-img {
-      width: 22.042vw;
+      width: 25.042vw;
       position: absolute;
       left: 2vw;
       bottom: -1.5vw;
     }
     &-rightImg {
       &--pos {
-        right: 4vw;
+        right: 0vw;
         top: 2vw;
       }
     }
@@ -53,6 +63,15 @@
       width: 20.073vw;
       position: absolute;
       right: 3vw;
+      @include lg_900 {
+        right: 0;
+      }
+      @include md_767 {
+        right: 0;
+      }
+      @include sm_567 {
+        right: 0;
+      }
       &--name {
         bottom: 3vw;
         right: 1vw;
@@ -82,13 +101,14 @@
     }
     &-btn {
       & button {
-        width: 60%;
+        width: 50%;
         letter-spacing: 1.92px;
         text-transform: uppercase;
+        margin-top: 0.5vw;
       }
       & img {
         width: 12.063vw;
-        right: 2vw;
+        right: 5vw;
       }
     }
     &-call {
@@ -117,7 +137,7 @@
       display: flex;
       align-items: center;
       margin-right: 10px;
-      margin-top: 1.302vw;
+      margin-top: 0.5vw;
       &--link {
         font: $fontMuseoSansCyrlBold_18;
       }
@@ -125,7 +145,7 @@
     &-work {
       display: flex;
       align-items: center;
-      margin-top: 1.302vw;
+      margin-top: 0.5vw;
       &--text {
         font: $fontMuseoSansCyrlBold_18;
       }
@@ -159,4 +179,7 @@
       display: none;
     }
   }
+}
+.learn__request--marT {
+  margin-top: 1.5vw;
 }

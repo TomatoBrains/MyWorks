@@ -18,9 +18,24 @@
     }
   }
   &__title {
-    margin-top: 7.552vw;
-    margin-bottom: 2.604vw;
     text-align: center;
+    width: 45%;
+    margin: 7.5vw auto 2.5vw auto;
+    @include lg_900 {
+      width: auto;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    @include md_767 {
+      width: auto;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    @include sm_567 {
+      width: auto;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
   }
   &__wawe {
     display: flex;

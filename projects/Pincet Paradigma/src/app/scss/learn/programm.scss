@@ -1,6 +1,6 @@
 .programm {
   padding: 30px 0;
-  background-image: url(../img/learn/programm/background.png);
+  background-image: url(../img/learn/programm/backgroundBot.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom;
@@ -18,8 +18,10 @@
       display: flex;
       align-items: center;
       margin-bottom: 3vw;
+      justify-content: space-around;
     }
     &-item {
+      display: block;
       padding: 5px;
       background-color: #fff;
       border-radius: 10px;
@@ -38,7 +40,7 @@
         margin: 0 1rem 1.5rem auto;
       }
       @include sm_567 {
-        width: 30rem;
+        width: 29rem;
         margin: 0 auto 1.5rem auto;
       }
       &:hover {
@@ -132,6 +134,29 @@
     }
   }
   &__content {
+    &-sign {
+      top: -1vw;
+      transform: translate(-50%, 0);
+      left: 50%;
+      @include daysPurple;
+      position: absolute;
+      width: 9vw;
+      @include lg_900 {
+        padding: 1rem;
+        width: auto;
+      }
+      @include md_767 {
+        padding: 1rem;
+        width: auto;
+      }
+      @include sm_567 {
+        padding: 1rem;
+        width: auto;
+        & img {
+          display: none;
+        }
+      }
+    }
     &-descr {
       display: flex;
       justify-content: space-between;
@@ -139,11 +164,24 @@
       &--title {
         margin: 0 auto;
         margin-bottom: 2vw;
-        width: 60%;
+        width: 65%;
         text-align: center;
+        @include lg_900 {
+          margin-top: 5rem;
+          width: auto;
+        }
+        @include md_767 {
+          margin-top: 5rem;
+          width: auto;
+        }
+        @include sm_567 {
+          margin-top: 5rem;
+          width: auto;
+        }
       }
     }
     &-course {
+      position: relative;
       width: 48%;
       background-color: #fff;
       box-shadow: 1px -0.2px 150px 0 rgba(139, 117, 118, 0.1);
@@ -152,12 +190,15 @@
       margin-left: 3.854vw;
       @include lg_900 {
         width: auto;
+        margin-left: 0;
       }
       @include md_767 {
         width: auto;
+        margin-left: 0;
       }
       @include sm_567 {
         width: auto;
+        margin-left: 0;
       }
     }
     &-title {
@@ -253,7 +294,7 @@
         & details[open] {
           & summary {
             span {
-              transform: none;
+              transform: rotate(-90deg);
             }
           }
         }
@@ -412,12 +453,18 @@
         margin-left: 9.115vw;
         @include lg_900 {
           margin-top: 2rem;
+          width: auto;
+          margin-left: 0;
         }
         @include md_767 {
           margin-top: 2rem;
+          width: auto;
+          margin-left: 0;
         }
         @include sm_567 {
           margin-top: 2rem;
+          width: auto;
+          margin-left: 0;
         }
       }
       &--ul {
@@ -429,18 +476,18 @@
             background-repeat: no-repeat;
             background-position: left center;
             padding-left: 2vw;
-            background-size: 3%;
+            background-size: 4%;
             @include lg_900 {
               padding-left: 2rem;
-              background-size: auto;
+              background-size: 3%;
             }
             @include md_767 {
               padding-left: 2rem;
-              background-size: auto;
+              background-size: 4%;
             }
             @include sm_567 {
               padding-left: 2rem;
-              background-size: auto;
+              background-size: 6%;
             }
           }
         }
@@ -470,10 +517,13 @@
       }
       &--name {
         @include nameCard;
-        font: $fontMuseoSansCyrlBold_30;
         bottom: 4vw;
         right: 1vw;
         padding: 0.538vw 2.719vw;
+        & p {
+          transform: skew(11deg);
+          font: $fontMuseoSansCyrlBold_30;
+        }
         @include lg_900 {
           bottom: 9rem;
           right: 1rem;
@@ -489,9 +539,12 @@
       }
       &--rank {
         @include masterCard;
-        font: $fontMuseoSansCyrlMed_15;
         bottom: 1.5vw;
         right: -1vw;
+        & p {
+          transform: skew(11deg);
+          font: $fontMuseoSansCyrlMed_15;
+        }
         @include lg_900 {
           bottom: 6rem;
           right: 0rem;
@@ -501,7 +554,8 @@
           right: 0rem;
         }
         @include sm_567 {
-          bottom: 6rem;
+          width: 18rem;
+          bottom: 4rem;
           right: 0rem;
         }
       }
@@ -556,7 +610,7 @@
       }
       &--leavesL {
         position: absolute;
-        left: -10vw;
+        left: -7vw;
         top: 0vw;
         width: 6vw;
         @include lg_900 {
@@ -575,6 +629,7 @@
       &--title {
         text-align: left;
         margin-top: 11.198vw;
+
         @include lg_900 {
           text-align: center;
         }
@@ -586,6 +641,7 @@
         }
         & p {
           margin-top: 3vw;
+          font: $fontMuseoSansCyrlLight_30;
         }
       }
       &--img {
@@ -658,14 +714,20 @@
         @include lg_900 {
           width: 30rem;
           margin: 0 auto;
+          position: relative;
+          left: -3rem;
         }
         @include md_767 {
           width: 30rem;
           margin: 0 auto;
+          position: relative;
+          left: -3rem;
         }
         @include sm_567 {
           width: 20rem;
           margin: 0 auto;
+          position: relative;
+          left: -3rem;
         }
       }
       &--number {
@@ -674,13 +736,16 @@
         right: -3vw;
         bottom: 4vw;
         @include lg_900 {
-          font-size: 6rem;
+          font-size: 8rem;
+          right: -8rem;
         }
         @include md_767 {
-          font-size: 6rem;
+          font-size: 8rem;
+          right: -8rem;
         }
         @include sm_567 {
-          font-size: 6rem;
+          font-size: 8rem;
+          right: -8rem;
         }
       }
       &--title {
@@ -700,11 +765,23 @@
         }
         & p {
           margin-top: 3vw;
+          font: $fontMuseoSansCyrlLight_30;
         }
       }
       & .programm--flex {
         justify-content: space-between;
       }
     }
+  }
+}
+.programm__tabs-active {
+  background: linear-gradient(to top, #ee858c, #fabcbc);
+  & .programm__tabs-inner {
+    background: linear-gradient(to top, #ee858c, #fabcbc);
+    border-color: #fff;
+    box-shadow: 1px -0.2px 109px 0 rgba(220, 178, 180, 0.55);
+  }
+  & .programm__tabs-descr {
+    color: #fff;
   }
 }

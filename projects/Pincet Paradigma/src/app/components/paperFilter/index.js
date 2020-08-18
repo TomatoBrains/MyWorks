@@ -30,3 +30,8 @@ $(".f-all").click(function () {
   $("div").slideDown();
   fActive = "all";
 });
+
+$(".papers__filter-item").on("click", function () {
+  $(".papers__filter-item").removeClass("tagActive");
+  $(this).addClass("tagActive");
+});

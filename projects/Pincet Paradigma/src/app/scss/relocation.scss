@@ -1,7 +1,7 @@
 .relocation {
   padding: $blockPadding_55 0;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   &--flex {
     display: flex;
     justify-content: space-between;

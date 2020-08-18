@@ -16,7 +16,7 @@
   &__leaves {
     position: absolute;
     bottom: -2vw;
-    right: 0;
+    right: -2vw;
     @include lg_900 {
       width: 4rem;
     }

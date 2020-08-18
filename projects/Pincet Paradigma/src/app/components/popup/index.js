@@ -40,7 +40,6 @@ function openClosePopup() {
   });
   btnComplete.on("click", function () {
     if (popupName.val().length > 0 && popupPhone.val().length > 0) {
-      debugger;
       toggleCompletePopup();
     }
   });
@@ -66,17 +65,8 @@ $(document).one("mouseleave", function (e) {
     $("html").addClass("overflowToggle");
   }
 });
-presentBtn.click(function () {
-  if (formName.val().length > 0 && formTel.val().length > 0) {
-    popupLeave.addClass("show");
-    background.addClass("show");
-    $("html").addClass("overflowToggle");
-  }
-});
-presentBtnOnline.click(function () {
-  if (formNameOnline.val().length > 0 && formTelOnline.val().length > 0) {
-    popupLeave.addClass("show");
-    background.addClass("show");
-    $("html").addClass("overflowToggle");
-  }
+$("form").on("submit", function () {
+  popupLeave.addClass("show");
+  background.addClass("show");
+  $("html").addClass("overflowToggle");
 });

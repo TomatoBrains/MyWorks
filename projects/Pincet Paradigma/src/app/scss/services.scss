@@ -166,7 +166,7 @@
     border: 1px dashed #fff;
     height: 10vw;
     &--wraper {
-      margin-top: 2.865vw;
+      margin: 2.5vw auto 0 auto;
       padding: 4px;
       border-radius: 10px;
       margin-right: 1.563vw;
@@ -277,7 +277,7 @@
   }
   &__leaves {
     position: absolute;
-    right: 0;
+    right: -2vw;
     top: 50%;
     z-index: -1;
   }

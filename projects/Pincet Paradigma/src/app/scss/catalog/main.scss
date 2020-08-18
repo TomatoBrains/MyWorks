@@ -78,15 +78,19 @@
     }
     &__women {
       top: 0;
-      max-width: 39.408vw;
+      max-width: 35.408vw;
+      right: 8vw;
       @include lg_900 {
         max-width: 100%;
+        right: 0;
       }
       @include md_767 {
         max-width: 100%;
+        right: 0;
       }
       @include sm_567 {
         max-width: 100%;
+        right: 0;
       }
     }
   }

@@ -36,7 +36,7 @@
       margin: 0 auto;
     }
     @include sm_567 {
-      width: 30rem;
+      width: 25rem;
       margin: 0 auto;
     }
     &-phoneSlide {
@@ -44,7 +44,7 @@
     }
     &-phone {
       position: absolute;
-      width: 13.9vw;
+      width: 14vw;
       z-index: 2;
       left: -0.8vw;
       top: -0.8vw;
@@ -62,7 +62,7 @@
       @include sm_567 {
         width: 27rem;
         top: -3%;
-        left: 5.5%;
+        left: -4.5%;
       }
     }
     &-item {
@@ -104,6 +104,7 @@
       top: 50%;
       transform: translate(0, -50%);
       z-index: 3;
+      cursor: pointer;
       @include lg_900 {
         right: 5%;
       }
@@ -111,7 +112,7 @@
         right: 5%;
       }
       @include sm_567 {
-        display: none;
+        right: -10vw;
       }
     }
     &-arrowLeft {
@@ -120,6 +121,7 @@
       top: 50%;
       transform: translate(0, -50%);
       z-index: 3;
+      cursor: pointer;
       @include lg_900 {
         left: 5%;
       }
@@ -127,7 +129,7 @@
         left: 5%;
       }
       @include sm_567 {
-        display: none;
+        left: -10vw;
       }
     }
     &-paging {
@@ -135,15 +137,15 @@
       margin-top: 2.3vw;
       text-align: center;
       @include lg_900 {
-        margin-top: 3rem;
+        margin-top: 5rem;
         font-size: 2rem;
       }
       @include md_767 {
-        margin-top: 3rem;
+        margin-top: 5rem;
         font-size: 2rem;
       }
       @include sm_567 {
-        margin-top: 3rem;
+        margin-top: 5rem;
         font-size: 2rem;
       }
     }
@@ -158,12 +160,15 @@
     margin-left: 10.417vw;
     @include lg_900 {
       margin-left: 0;
+      display: none;
     }
     @include md_767 {
       margin-left: 0;
+      display: none;
     }
     @include sm_567 {
       margin-left: 0;
+      display: none;
     }
     &-item {
       margin-right: 2.865vw;
@@ -184,11 +189,15 @@
         text-align: center;
       }
     }
+    & .slick-slide {
+      width: 12.292vw;
+      margin-right: 3.4vw;
+    }
   }
   &__leavesR {
     position: absolute;
     top: -7vw;
-    right: 0;
+    right: -2vw;
     width: 5vw;
     @include lg_900 {
       width: 4rem;

@@ -2,8 +2,9 @@
   background-image: url(../img/learn/cost/background.png);
   background-repeat: no-repeat;
   background-size: auto;
-  padding-top: 30px;
+  background-position: bottom;
   position: relative;
+  padding-top: 4vw;
   z-index: 1;
   &__title {
     text-align: center;
@@ -80,6 +81,7 @@
       & p:nth-of-type(1) {
         color: $colorRozeDark;
         font: $fontMuseoSansCyrlBold_48;
+        font-weight: 900;
         @include lg_900 {
           font-size: 2rem;
         }
@@ -135,7 +137,7 @@
   }
   &__leavesTop {
     position: absolute;
-    top: -2vw;
+    top: 1vw;
     right: 23vw;
     @include lg_900 {
       width: 9rem;
@@ -153,7 +155,7 @@
   &__leaves {
     position: absolute;
     bottom: 35vw;
-    left: 0;
+    left: -2vw;
     width: 8vw;
     @include lg_900 {
       display: none;
@@ -206,7 +208,7 @@
         & input {
           width: 100%;
           height: 100%;
-          padding: 2rem 3rem 1rem 3rem;
+          padding: 2rem 3rem 2rem 3rem;
           font-size: 1.6rem;
           &::placeholder {
             font-size: 1.6rem;
@@ -225,7 +227,7 @@
         & input {
           width: 100%;
           height: 100%;
-          padding: 2rem 3rem 1rem 3rem;
+          padding: 2rem 3rem 2rem 3rem;
           font-size: 1.6rem;
           &::placeholder {
             font-size: 1.6rem;
@@ -320,7 +322,7 @@
         & input {
           width: 100%;
           height: 100%;
-          padding: 2rem 3rem 1rem 3rem;
+          padding: 2rem 3rem 2rem 3rem;
           font-size: 1.5rem;
           &::placeholder {
             font-size: 1.5rem;
@@ -339,7 +341,7 @@
         & input {
           width: 100%;
           height: 100%;
-          padding: 2rem 3rem 1rem 3rem;
+          padding: 2rem 3rem 2rem 3rem;
           font-size: 1.5rem;
           &::placeholder {
             font-size: 1.5rem;
@@ -435,7 +437,7 @@
         & input {
           width: 100%;
           height: 100%;
-          padding: 2rem 3rem 1rem 3rem;
+          padding: 2rem 3rem 2rem 3rem;
           font-size: 1.4rem;
           &::placeholder {
             font-size: 1.4rem;
@@ -454,7 +456,7 @@
         & input {
           width: 100%;
           height: 100%;
-          padding: 2rem 3rem 1rem 3rem;
+          padding: 2rem 3rem 2rem 3rem;
           font-size: 1.4rem;
           &::placeholder {
             font-size: 1.4rem;

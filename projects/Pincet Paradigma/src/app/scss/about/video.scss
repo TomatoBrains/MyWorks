@@ -63,7 +63,7 @@
   &__leaves {
     position: absolute;
     top: -12vw;
-    right: 0;
+    right: -2vw;
     @include lg_900 {
       width: 8rem;
     }

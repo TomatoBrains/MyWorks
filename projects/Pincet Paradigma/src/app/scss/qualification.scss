@@ -6,13 +6,13 @@
   &__title {
     text-align: center;
     @include lg_900 {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
     @include md_767 {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
     @include sm_567 {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   }
   &__workers {
@@ -196,7 +196,7 @@
   &__leaveRight2 {
     position: absolute;
     top: -8vw;
-    right: 0;
+    right: -2vw;
   }
   &__leaveRight {
     position: absolute;
@@ -206,7 +206,7 @@
   }
   &__blurRight {
     position: absolute;
-    right: 0;
+    right: -2vw;
     bottom: -6vw;
     width: 11.146vw;
     z-index: 1;
@@ -221,7 +221,7 @@
 .arrowLeft {
   position: absolute;
   top: 50%;
-  left: -7vw;
+  left: -2vw;
   cursor: pointer;
   z-index: 2;
   @include lg_900 {
@@ -273,7 +273,7 @@
 .arrowRight {
   position: absolute;
   top: 50%;
-  right: -7vw;
+  right: -2vw;
   cursor: pointer;
   @include lg_900 {
     right: 0%;
