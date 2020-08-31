@@ -57,7 +57,7 @@
     "svgo-loader": "^2.0.0",
     "swiper": "^4.1.6",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.4",
+    "webpack-dev-server": "^3.1.11",
     "webpack-shell-plugin": "^0.5.0",
     "webpack-svgstore-plugin": "^4.0.1",
     "yargs": "^11.0.0"
