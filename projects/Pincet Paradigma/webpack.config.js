@@ -11,6 +11,7 @@ require("dotenv").config();
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const SvgStore = require("webpack-svgstore-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const PostCSSAssetsPlugin = require("postcss-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
@@ -81,6 +82,7 @@ let webpackPlugins = [
     template: "./src/pages/index.handlebars",
   }),
   extractCss,
+
   new SvgStore({
     prefix: "icon-",
     svgoOptions: {
@@ -100,7 +102,6 @@ let webpackPlugins = [
       ],
     },
   }),
-
   new CopyWebpackPlugin(
     [
       {
@@ -118,6 +119,11 @@ let webpackPlugins = [
     log: true,
     plugins: postCssPlugins,
   }),
+  /*new ImageminPlugin({
+    pngquant: {
+      quality: "95-100",
+    },
+  }),*/
   ...htmlPagesGenerated,
 ];
 

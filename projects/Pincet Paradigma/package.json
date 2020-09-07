@@ -31,9 +31,10 @@
     "file-loader": "^1.1.5",
     "fs": "0.0.1-security",
     "glob": "^7.1.2",
+    "handlebars-loader": "^1.7.0",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^3.0.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "json-loader": "^0.5.7",
     "jstransformer-escape-html": "^1.1.0",
     "jstransformer-markdown-it": "^2.0.0",
@@ -56,11 +57,10 @@
     "svgo-loader": "^2.0.0",
     "swiper": "^4.1.6",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^3.1.11",
+    "webpack-dev-server": "^2.9.4",
     "webpack-shell-plugin": "^0.5.0",
     "webpack-svgstore-plugin": "^4.0.1",
-    "yargs": "^11.0.0",
-    "handlebars-loader": "^1.7.0"
+    "yargs": "^11.0.0"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
@@ -72,6 +72,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery.maskedinput": "^1.4.1",
     "lightbox2": "^2.11.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

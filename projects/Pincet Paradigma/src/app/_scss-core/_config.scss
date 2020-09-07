@@ -5,7 +5,7 @@
   overflow-x: hidden;
 }
 .save-fact--wraper {
-  background-image: url(../img/dep/backSave.png);
+  background-image: url(../img/dep/backSave2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -149,7 +149,9 @@ details > summary {
 }
 details[open] {
   & summary {
-    padding-bottom: 0;
+    & + div {
+      animation: sweepin 0.5s ease-in-out;
+    }
     & span {
       transform: rotate(180deg);
     }

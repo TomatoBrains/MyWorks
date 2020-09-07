@@ -48,7 +48,6 @@ $(function () {
     .filter(":first")
     .click();
 });
-
 //programm tabs
 $(function () {
   var priceTab = $(".programm__tabs--items > div");

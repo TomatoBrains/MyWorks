@@ -8,17 +8,24 @@ $(".complex__item").each(anime);
 $(".fade__content").each(mainAnime);
 $(".animat").each(anime);
 function anime(anim) {
-  var thisTitle = $(this);
+  let thisTitle = $(this);
   $(window).scroll(function (event) {
-    var offsetTop = thisTitle.offset().top - $(window).height() - 10;
-    if ($(document).scrollTop() > offsetTop) {
-      thisTitle.addClass("fade_in");
+    if ($(window).width() <= "600") {
+      let offsetTop = thisTitle.offset().top - $(window).height() - 50;
+      if ($(document).scrollTop() > offsetTop) {
+        thisTitle.addClass("fade_in");
+      }
+    } else {
+      let offsetTopBig = thisTitle.offset().top - $(window).height() - 30;
+      if ($(document).scrollTop() > offsetTopBig) {
+        thisTitle.addClass("fade_in");
+      }
     }
   });
 }
 
 function mainAnime(anim) {
-  var thisAnime = $(this);
+  let thisAnime = $(this);
   $(document).ready(function () {
     if ($(document).ready()) {
       thisAnime.addClass("fade_in");

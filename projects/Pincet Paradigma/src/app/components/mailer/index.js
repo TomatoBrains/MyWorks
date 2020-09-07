@@ -1,4 +1,4 @@
-var nForm = false;
+/*var nForm = false;
 $(function () {
   "use strict";
   var action = "./assets/mailer/send.php";
@@ -118,4 +118,4 @@ var defaultOptions = {
   metaKey: false,
   bubbles: true,
   cancelable: true,
-};
+};*/

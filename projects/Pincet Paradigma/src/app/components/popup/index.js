@@ -65,8 +65,8 @@ $(document).one("mouseleave", function (e) {
     $("html").addClass("overflowToggle");
   }
 });
-$("form").on("submit", function () {
+/*$("form").on("submit", function () {
   popupLeave.addClass("show");
   background.addClass("show");
   $("html").addClass("overflowToggle");
-});
+});*/

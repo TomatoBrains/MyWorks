@@ -47,5 +47,4 @@ $(".price__calc-main input").on("change input", function () {
   let discount = totalSum - (totalSum / 100) * 15;
   discount = discount.toFixed(1);
   $(".price__calc-discount--js").html(discount + "руб");
-  console.log(totalSum);
 });

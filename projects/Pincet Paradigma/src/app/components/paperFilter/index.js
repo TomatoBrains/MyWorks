@@ -1,4 +1,4 @@
-var fActive = "";
+/*var fActive = "";
 function filterColor(tag) {
   if (fActive != tag) {
     $(".sort")
@@ -29,7 +29,7 @@ $(".other").click(function () {
 $(".f-all").click(function () {
   $("div").slideDown();
   fActive = "all";
-});
+});*/
 
 $(".papers__filter-item").on("click", function () {
   $(".papers__filter-item").removeClass("tagActive");

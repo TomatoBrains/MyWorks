@@ -17,3 +17,51 @@
     }
   }
 }
+@keyframes transform-shiver {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+    transform: translate(-5px, 0px) rotate(0deg);
+  }
+
+  75% {
+    -webkit-transform: translate(5px, 0px) rotate(0deg);
+    transform: translate(5px, 0px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+@keyframes transform-shiver2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: translate(5px, 0px) rotate(0deg);
+    transform: translate(5px, 0px) rotate(0deg);
+  }
+
+  75% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+    transform: translate(-5px, 0px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+.blur {
+  animation: transform-shiver 4000ms linear 0ms infinite normal both;
+}
+.blur2 {
+  animation: transform-shiver2 3000ms linear 0ms infinite normal both;
+}

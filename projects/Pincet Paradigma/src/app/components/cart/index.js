@@ -1,5 +1,6 @@
 //add html to cart
-$(".cosmetic__catalog-item a").on("click", function () {
+$(".cosmetic__catalog-item a").on("click", function (e) {
+  e.stopPropagation();
   let it = $(this);
   $(".cosmetic__cart-item").each(function () {
     if ($(this).data("id") == it.data("id")) {
@@ -31,7 +32,8 @@ $(".cosmetic__catalog-item").each(function () {
   let price = $(this).find(".cosmetic__catalog-price--main");
   let inCartBtn = $(this).find(".cosmetic__catalog-price--btn a");
   let dataPrice = $(this).find(".cosmetic__catalog-price--btn a").data("price");
-  plusBtn.on("click", function () {
+  plusBtn.on("click", function (e) {
+    e.stopPropagation();
     let inputVal = $(this).siblings("input").val();
     let btnId = $(this).data("id");
     $(this)
@@ -43,7 +45,8 @@ $(".cosmetic__catalog-item").each(function () {
     cartRecount(btnId, inputVal, dataPrice);
     totalSumCount();
   });
-  minusBtn.on("click", function () {
+  minusBtn.on("click", function (e) {
+    e.stopPropagation();
     let inputVal = $(this).siblings("input").val();
     let btnId = $(this).data("id");
     if (inputVal <= 1) {
@@ -76,6 +79,7 @@ let totalSumCount = function () {
   });
   //change number of total sum in cart
   $(".cosmetic__cart-total--sum").html(`${totalSum} <span>руб</span>`);
+  $(".cosmetic__cart-total input").val(totalSum);
 };
 // cart count and price recount
 let cartRecount = function (btnId, inputVal, dataPrice) {

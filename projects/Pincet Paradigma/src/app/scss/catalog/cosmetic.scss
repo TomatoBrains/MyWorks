@@ -34,6 +34,15 @@
   }
   &__catalog {
     margin-right: 1.5vw;
+    @include lg_900 {
+      margin-right: 0;
+    }
+    @include md_767 {
+      margin-right: 0;
+    }
+    @include sm_567 {
+      margin-right: 0;
+    }
     &-accordeon {
       & details {
         margin-bottom: 2vw;
@@ -42,11 +51,10 @@
           margin: 0 auto 2rem auto;
         }
         @include md_767 {
-          width: 40rem;
           margin: 0 auto 2rem auto;
         }
         @include sm_567 {
-          width: 28rem;
+          width: auto;
           margin: 0 auto 2rem auto;
         }
         & summary {
@@ -96,6 +104,9 @@
             background-image: linear-gradient(to top, #ee858c, #fabcbc);
           }
         }
+      }
+      & details[open] SUMMARY ~ * {
+        animation: sweepin 0.5s ease-in-out;
       }
     }
     &-item {
@@ -263,6 +274,7 @@
         background-color: #fff;
         border-top: 1px solid #f6f6f6;
         border-bottom: 1px solid #f6f6f6;
+        pointer-events: none;
         @include lg_900 {
           font-size: 1.6rem;
         }
@@ -344,13 +356,10 @@
         @include mainBtn;
         @include mainBtnBlick;
         @include mainBtnHover;
-        padding: 0.677vw 1.302vw;
         @include lg_900 {
-          padding: 1rem;
           width: 15rem;
         }
         @include md_767 {
-          padding: 1rem;
           width: 15rem;
           position: absolute;
           bottom: 2rem;
@@ -358,7 +367,6 @@
           transform: translate(-50%);
         }
         @include sm_567 {
-          padding: 1rem;
           width: 15rem;
           position: absolute;
           bottom: 2rem;
@@ -367,6 +375,17 @@
         }
         & a {
           color: #fff;
+          padding: 0.677vw 1.302vw;
+          display: block;
+          @include lg_900 {
+            padding: 1rem;
+          }
+          @include md_767 {
+            padding: 1rem;
+          }
+          @include sm_567 {
+            padding: 1rem;
+          }
         }
       }
     }
@@ -400,14 +419,16 @@
       }
     }
     &-item {
+      position: relative;
+      margin-bottom: 2vw;
       @include lg_900 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
       @include md_767 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
       @include sm_567 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
       &--title {
         font: $fontMuseoSansCyrlLight_20;
@@ -425,16 +446,43 @@
         }
       }
     }
+    &-delete {
+      @include mainBtn;
+      @include mainBtnHover;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      & a {
+        color: #fff;
+        padding: 0.5vw;
+        display: block;
+        @include lg_900 {
+          padding: 0.5rem;
+          font: 1.2rem;
+        }
+        @include md_767 {
+          padding: 0.5rem;
+          font: 1.1rem;
+        }
+        @include sm_567 {
+          padding: 0.5rem;
+          font: 1rem;
+        }
+      }
+    }
     &-total {
       padding: 0.7vw 0;
       background-color: $colorRozeVeryLight;
       border-radius: 10px;
       margin-bottom: 2vw;
       @include lg_900 {
-        margin-bottom: 1.5rem;
+        width: 50%;
+        margin: 1.5rem auto;
       }
       @include md_767 {
-        margin-bottom: 1.5rem;
+        width: 50%;
+        margin: 1.5rem auto;
       }
       @include sm_567 {
         margin-bottom: 1.5rem;
@@ -450,6 +498,14 @@
       }
     }
     &-request {
+      @include lg_900 {
+        width: 50%;
+        margin: 1.5rem auto;
+      }
+      @include md_767 {
+        width: 50%;
+        margin: 1.5rem auto;
+      }
       &--title {
         font: $fontMuseoSansCyrlBold_24;
         margin-bottom: 1vw;
