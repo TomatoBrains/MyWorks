@@ -1,0 +1,159 @@
+.about
+    position: relative
+    &__cont
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__left
+        width: 62%
+    &-list
+        display: flex
+        justify-content: space-between
+        &-col
+            position: relative
+            &.v1
+                width: 60%
+            &.v2
+                width: 38%
+        &__item
+            position: relative
+            margin-left: 2vw
+        &__sub
+            color: #868585
+            &-wr
+                display: flex
+                span
+                    &:nth-child(1)
+                        width: 20%
+                    &:nth-child(2)
+                        width: 80%
+    &__right
+        width: 35%
+        position: relative
+    &-books
+        width: 20vw
+        bottom: 20%
+        left: -80%
+        position: absolute
+        background: url(../img/about/bg-i.png) center no-repeat
+        background-size: cover
+        box-shadow: 0 0 152px #000000
+        border-radius: 10px
+        padding: 2vw 2.5vw
+        
+        &__cont
+            display: flex
+            justify-content: space-between
+        &__item
+            width: 48%
+            
+        &__img
+            
+            max-width: none
+            max-height: none
+            width: 5vw
+    &__wo
+        max-width: none
+        max-height: none
+        width: 27vw
+        transform: translate(-15%, 2%) scale(1.1)
+    &__bf
+        z-index: -1
+        position: absolute
+        top: 10%
+        right: 0
+        max-width: none
+        max-height: none
+        width: 20vw
+        animation: transform-shiver 4000ms linear 0ms infinite normal both
+    &-spec
+        &-list
+            width: 120%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-wrap: wrap
+            &__item
+                width: 28%
+                margin-bottom: 1vw
+                display: inline-flex
+                align-items: center
+                cursor: pointer
+                position: relative
+                &:hover
+                    .inverse
+                        color: #e6b453
+                    // color: #e6b453
+                    z-index: 55
+                    
+                        
+
+                    .tooltip
+                        opacity: 1
+                        transform: scale(1) translateX(0)
+                &:nth-child(3), &:nth-child(6)
+                    width: 40%
+                    
+
+
+
+.tooltip
+    background-color: #fff
+    border-radius: 10px
+    padding: 0.75vw 1vw
+    width: 20vw
+    position: absolute
+    opacity: 0
+    transform: scale(0) translateX(-50%)
+    bottom: 1.5vw
+    left: 0 
+    transition: all 0.3s             
+
+
+.crc-c
+    position: absolute
+    left: -2vw
+    top: 50%
+    transform: translateY(-50%)
+    max-width: none
+    max-height: none
+    width: 1vw
+.about-cr-1
+    position: absolute
+    top: 5%
+    left: -10%
+    max-width: none
+    max-height: none
+    width: 4vw
+    animation: transform-shiver 4000ms linear 0ms infinite normal both
+
+.check2
+    max-width: none
+    max-height: none
+    width: 0.8vw
+    margin-right: 0.4vw
+.info
+    margin-left: 0.5vw
+    max-width: none
+    max-height: none
+    width: 1vw
+
+.program__tabs
+    position: relative
+    &-cir
+        &.v1
+            display: none
+            left: -5%
+            top: -15%
+        &.v2
+            display: none
+            left: -5%
+            top: -15%
+.program__tab.v2.active
+    .program__tabs-cir.v2
+        display: block
+.program__tab.v1.active
+    .program__tabs-cir.v1
+        display: block
+
+    

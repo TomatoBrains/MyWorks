@@ -1,0 +1,157 @@
+<div class="cost" id="learn-cost">
+    <div class="container">
+        <div class="cost__title">
+            <h2>Стоимость обучения</h2>
+        </div>
+        <div class="row">
+            <div class="cost--flex cost--margin flexWrap">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 cost--flex ">
+                    <div class="cost--flex">
+                        <div class="cost__box animat">
+                            <div class="cost__box-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/box1.png" alt="">
+                            </div>
+                            <div class="cost__box-descr mtxt">
+                                Базовый экспресс курс <span class="bold">по шугарингу</span>
+                            </div>
+                            <div class="cost__box-time mtxt">
+                                <p>2 дня обучения</p>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/watch.png" alt="">
+                            </div>
+                            <div class="cost__box-price">
+                                <p>250 <span>руб</span></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 cost--flex">
+                    <div class="cost--flex">
+                        <div class="cost__box animat">
+                            <div class="cost__box-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/box2.png" alt="">
+                            </div>
+                            <div class="cost__box-descr mtxt">
+                                Базовый экспресс курс <span class="bold">по воску</span>
+                            </div>
+                            <div class="cost__box-time mtxt">
+                                <p>2 дня обучения</p>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/watch.png" alt="">
+                            </div>
+                            <div class="cost__box-price">
+                                <p>250 <span>руб</span></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 cost--flex">
+                    <div class="cost--flex">
+                        <div class="cost__box animat">
+                            <div class="cost__box-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/box3.png" alt="">
+                            </div>
+                            <div class="cost__box-descr mtxt">
+                                Микс <br> <span class="bold">шугаринг + воск</span>
+                            </div>
+                            <div class="cost__box-time mtxt">
+                                <p>2 дня обучения</p>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/watch.png" alt="">
+                            </div>
+                            <div class="cost__box-price">
+                                <p>400 <span>руб</span></p>
+                                <p><s>500 <span>руб</spa></s></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 cost--flex">
+                    <div class="cost--flex">
+                        <div class="cost__box animat">
+                            <div class="cost__box-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/box4.png" alt="">
+                            </div>
+                            <div class="cost__box-descr mtxt">
+                                Повышение <span class="bold">квалификации</spn>
+                            </div>
+                            <div class="cost__box-time mtxt">
+                                <p>2 дня обучения</p>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/watch.png" alt="">
+                            </div>
+                            <div class="cost__box-price">
+                                <p>400 <span>руб</span></p>
+                                <p><s>500 <span>руб</span></s></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="request request-learn" id="learnRequest">
+            <div class="request__form">
+                <div class="request__form-title">
+                    <h3>Оставьте заявку через сайт <span class="light">и получите подарк</span></h3>
+                    <p class="mtxt">Заполните форму и мы перезвоним Вам и проконсультируем по обучение</p>
+                </div>
+                <form class="form" action="">
+                    <input type="hidden" name="title" value="Заполните форму и мы перезвоним Вам и проконсультируем по обучению">
+                    <div class="request__form--wraper flexWrap">
+                        <div class="request__form-img">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/request/ipad.png" alt="ipad">
+                        </div>
+                        <div class="request__form-inputs">
+                            <div class="request__form--wraper flexWrap">
+                                <div class="request__form-name">
+                                    <label for="nameCost">Как Вас зовут</label>
+                                    <input required type="text" id="nameCost" placeholder="Имя" name="name">
+                                </div>
+                                <div class="request__form-tel">
+                                    <label for="telCost">Ваш номер телефона</label>
+                                    <input required id="inputTel" type="telCost" id="tel" placeholder="+375 -- --- -- --" name="phone">
+                                </div>
+                            </div>
+                            <div class="request__form-btn learn__request--marT">
+                                <button>ОТПРАВИТЬ</button>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/request/plant.png" alt="растение">
+                            </div>
+                            <div class="request__form-call mtxt">
+                                <p class="request__form-call--boldT">или чтобы попасть к нам обучение - звоните</p>
+                                <p class="request__form-call--smallT"><span></span> Звоните мы сейчас работаем</p>
+                                <div class="request__form--flex">
+                                    <div class="request__form-phone mtxt">
+                                        <span class="smallIcon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/request/phone.png" alt=""></span>
+                                        <a class="request__form-phone--link" href="tel:375333822499">+375 33 382 24
+                                            99</a>
+                                    </div>
+                                    <div class="request__form-work mtxt">
+                                        <span class="smallIcon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/request/time.png" alt=""></span>
+                                        <p class="request__form-work--text">Пн-Вс 9:00-21:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="request__form-women">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/request/women.png" alt="женщина">
+                            <div class="request__form-women--name">
+                                <p class="purple">ЕКАТЕРИНА</p>
+                            </div>
+                            <div class="request__form-women--master">
+                                <p>Руководитель студии PINCET</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="request__form-rightImg blur">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/request/branch.png" alt="лепестки">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cost__leavesTop blur2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/leavesTop.png" alt="">
+    </div>
+    <div class="cost__leaves blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/learn/cost/leaves.png" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>

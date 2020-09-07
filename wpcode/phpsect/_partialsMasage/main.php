@@ -1,0 +1,69 @@
+<div class="main masage-main">
+    <div class="container-main">
+        <div class="row">
+            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                <div class="main__descr">
+                    <div class="main__descr-title">
+                        <h1>Антицеллюлитный массаж
+                            <br>
+                            <span class="light">
+                                в Бресте - эффективный способ
+                                борьбы с “апельсиновой коркой”
+                            </span>
+
+                            <br>
+                            <span class="light roze tlism">
+                                Работаем и с женщинами, и с мужчинами </span></h1>
+                    </div>
+                    <div class="main__descr-list fade__content">
+                        <ul>
+                            <li>профессиональный мастер в сутдии, а не на дому;</li>
+                            <li>доступные цены;</li>
+                            <li>результаты уже после 1-ой процедуры;</li>
+                            <li>програма лояльности.</li>
+                        </ul>
+                    </div>
+                    <div class="main__descr-btn--wraper fade__content">
+                        <div class="main__descr-btn">
+                            <p>ПОСМОТРЕТЬ ЦЕНЫ</p>
+                        </div>
+                        <div class="main__descr-img">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/main/flower.png" alt="растение">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                <div class="main__women fade__content">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/main/women.png" alt="девушка">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__wawe">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/wawe.png" alt="волна">
+        <div class="main__wawe-scroll">
+            <a href="#indications" class="main__wawe-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+                    <image id="Стрелка" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAj0lEQVQYlXXKsarBcRzG4edwI2cw+ltcgElSFkyms7gBk+tRZJFk4exnsrkCNnXYlME5Rd/6kdT/s7zD+3xkWTbGAjP59dAu4IQJajm0jhH2gQeYY4nKG6ymb4ph4Bu+sMEanwmWsMIP+uECR1d0cMA3yml36OIv0ANHZzRRxBb/aOHyAK84+kUj4djj88Ed/kAeVaDDcdwAAAAASUVORK5CYII=" />
+                </svg>
+            </a>
+            <div class="main__wawe-img">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/scrollDown.png" alt="скролл">
+            </div>
+        </div>
+    </div>
+    <div class="main__blur blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/main/blur.png" alt="">
+    </div>
+    <div class="main__leaveR blur2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/main/leaveR.png" alt="">
+    </div>
+    <div class="main__leaveC blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/main/leaveC.png" alt="">
+    </div>
+    <div class="main__leaveL blur2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/main/leaveL.png" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>

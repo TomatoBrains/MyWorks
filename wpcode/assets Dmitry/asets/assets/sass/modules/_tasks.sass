@@ -1,0 +1,74 @@
+.tasks-list
+    width: 100%
+    position: relative
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    flex-wrap: wrap
+    &__img
+        width: 30vw
+        max-width: none
+        max-height: none
+    &__item
+        // border: 1px solid red
+        align-items: flex-end
+        width: 16%
+        position: relative
+        margin-bottom: 2vw
+        transition: all 0.4s
+        opacity: 0
+        transform: translateX(-10%)
+        &.active
+            opacity: 1
+            transform: translateX(0)
+    &__ten
+        align-self: center
+        position: relative
+        width: 32%
+        transition: all 0.4s
+        opacity: 0
+        transform: translateY(10%)
+        &.active
+            opacity: 1
+            transform: translateY(0)
+    &__text
+        padding-left: 5vw
+    &__img
+        padding-top: 1vw
+        position: relative
+        width: 100%
+    &__label
+        position: absolute
+        right: 0
+        bottom: 0
+        color: #7a7e83
+        letter-spacing: 0.45px
+    &__line
+        display: block
+        position: absolute
+        top: -13%
+        right: 40%
+        width: 1px
+        height: 5vw
+        
+    &__num
+        position: absolute
+        top: 0
+        left: 2.5vw
+        width: 2vw
+        height: 5vw
+        img
+            width: 100%
+        &.one
+            width: 1.5vw
+            height: 4vw
+        &.big
+            width: 3vw
+    &__im
+        position: relative
+        width: 10vw
+        margin: auto
+        img
+            width: 100%
+
+

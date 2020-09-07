@@ -1,0 +1,10 @@
+form.addUser {
+    width: 50%;
+    height: 50vh;
+    background: white;
+    padding: 12px; 
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

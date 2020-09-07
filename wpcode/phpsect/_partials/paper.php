@@ -1,0 +1,97 @@
+<div class="paper">
+    <div class="container">
+        <div class="paper__title">
+            <h2>Полезные <span class="light">статьи</span></h2>
+            <a class="linkColorRoze" href="papers.html">СМОТРЕТЬ ВСЕ ПОЛЕЗНЫЕ СТАТЬИ</a>
+        </div>
+        <div class="paper__content">
+            <div class="row">
+                <div class="paper--flex">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 paper--flex">
+                        <div class="paper__item">
+                            <div class="paper__item-img animat">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/paper1.png" alt="статья">
+                                <div class="paper__item-like">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/like.png" alt="лайк">
+                                    18586
+                                </div>
+                            </div>
+                            <div class="paper__item-descr">
+                                <h3>Подготовка к депиляции</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt distinctio
+                                    maxime
+                                    dicta soluta, facere omnis praesentium beatae nihil odio.</p>
+                                <div class="paper__item-descr--link">
+                                    <a href="paperName.html" class="linkColorRoze">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 paper--flex">
+                        <div class="paper__item">
+                            <div class="paper__item-img animat">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/paper2.png" alt="статья">
+                                <div class="paper__item-like">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/like.png" alt="лайк">
+                                    14537
+                                </div>
+                            </div>
+                            <div class="paper__item-descr">
+                                <h3>Уход после депиляции</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt distinctio
+                                    maxime
+                                    dicta soluta, facere omnis praesentium beatae nihil odio.</p>
+                                <div class="paper__item-descr--link">
+                                    <a href="paperName.html" class="linkColorRoze ">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 paper--flex">
+                        <div class="paper__item">
+                            <div class="paper__item-img animat">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/paper3.png" alt="статья">
+                                <div class="paper__item-like">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/like.png" alt="лайк">
+                                    14537
+                                </div>
+                            </div>
+                            <div class="paper__item-descr">
+                                <h3>Как быстро отрастают волосы</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt distinctio
+                                    maxime
+                                    dicta soluta, facere omnis praesentium beatae nihil odio.</p>
+                                <div class="paper__item-descr--link">
+                                    <a href="paperName.html" class="linkColorRoze ">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 paper--flex">
+                        <div class="paper__item">
+                            <div class="paper__item-img animat">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/paper4.png" alt="статья">
+                                <div class="paper__item-like">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/like.png" alt="лайк">
+                                    14537
+                                </div>
+                            </div>
+                            <div class="paper__item-descr">
+                                <h3>Шугаринг или воск, что выбрать?</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt distinctio
+                                    maxime
+                                    dicta soluta, facere omnis praesentium beatae nihil odio.</p>
+                                <div class="paper__item-descr--link">
+                                    <a href="paperName.html" class="linkColorRoze ">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paper__leaves blur2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paper/leaves.png" alt="листики">
+    </div>
+</div>

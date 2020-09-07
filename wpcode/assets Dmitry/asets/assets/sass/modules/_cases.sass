@@ -1,0 +1,134 @@
+.cases
+    position: relative
+    &__block
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+    &__item
+        width: 32%
+        margin-right: 2%
+        margin-bottom: 2vw
+        
+        &:nth-child(3n)
+            margin-right: 0
+    &__itemin
+        border-radius: 15px
+        overflow: hidden
+        position: relative
+        height: 26vw
+        padding: 2vw
+        box-shadow: 0 0 92px rgba(0, 0, 0, 0.5)
+        
+    &__logo
+        position: absolute
+        top: 11%
+        left: 2vw
+        width: 8vw
+        
+        max-width: none
+        max-height: none
+        &.center
+            top: 15%
+            width: 10vw
+            left: 50%
+            transform: translateX(-50%)
+    &__img
+        z-index: -1
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        object-fit: cover
+    &__play
+        position: relative
+        top: auto
+        left: auto
+        transform: none
+        margin-bottom: 1.5vw
+        &:hover
+            transform: scale(1.1)
+    &__top
+        position: relative
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        flex-direction: column
+        align-items: flex-end
+    &__label
+        margin-bottom: 0.25vw
+        padding: 0.5vw
+        border-radius: 5px
+        background-color: #0f0e13
+    &__bottom
+        margin-top: 15%
+        width: 100%
+    &__desc
+        display: flex
+        justify-content: space-between
+    &__text
+        width: 48%
+        padding-left: 1.2vw
+        position: relative
+        &:before
+            position: absolute
+            content: ''
+            top: 0.3vw
+            left: 0
+            width: 0.5vw
+            height: 0.5vw
+            background: url(../img/cases/q2.png) center no-repeat
+            background-size: cover
+    &__itemout
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__btn
+        padding: 1.2vw 1vw
+        width: 53%
+    &__link
+        width: 45%
+    &__more
+        padding: 1.2vw 1.5vw
+        border-radius: 15px
+        border: 1px solid #e6b453
+        transition: all 0.3s
+        &:hover
+            background-color: #e6b453
+            color: #0f0e13
+
+        &-wr
+            width: 100%
+        
+       
+
+.program-list
+    &__text
+        width: 100%
+    &__item
+        position: relative
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            .program-list__btns
+                // display: flex
+                opacity: 1
+                transform: translateY(0%) 
+            .program-list__text-wr
+                margin-bottom: 20%
+    &__bottom
+        position: relative
+
+    &__btns
+        transition: all 0.35s
+        width: 100%
+        position: absolute
+        left: 0
+        bottom: 0
+        // display: none
+        opacity: 0
+        transform: translateY(200%)
+
+
+    

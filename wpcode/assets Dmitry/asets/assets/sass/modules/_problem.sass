@@ -1,0 +1,38 @@
+.problem
+    position: relative
+    &-list
+        display: flex
+        align-items: center
+        
+        flex-wrap: wrap
+        // justify-content: space-between
+        &__item
+            text-align: center
+            position: relative
+            padding: 1vw 2vw
+            padding-left: 3vw
+            width: 23.5%
+            margin-right: 2%
+            background: url(../img/problem/bg.png) center no-repeat
+            background-size: cover
+            border-radius: 10px
+            height: 8vw
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 2vw
+            transition: all 0.3s
+            &:nth-child(4n)
+                margin-right: 0
+            &:hover
+                box-shadow: 0 0 24px rgba(#e6b453, 0.3)
+        &__img
+            position: absolute
+            width: 4vw
+            max-width: none
+            max-height: none
+            top: 50%
+            left: 0
+            transform: translate(-50%, -50%)
+            
+

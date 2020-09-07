@@ -1,0 +1,286 @@
+.garant
+    &__cont
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        
+    &__item
+        position: relative
+        &.v1
+            width: 30vw
+    &-form
+        background: url(../img/garant/bg.png) top center no-repeat
+        background-size: cover
+        padding: 2vw
+        border-radius: 15px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        width: 100%
+        .mb
+            margin-bottom: 1vw
+        .mbm
+            margin-bottom: 0.5vw
+    &__wo
+        position: absolute
+        top: 0
+        left: -90%
+        width: 30vw
+        max-width: none
+        max-height: none
+    &__bf
+        position: absolute
+        bottom: 10%
+        right: -90%
+        max-width: none
+        max-height: none
+        width: 20vw
+        animation: transform-shiver 4000ms linear 0ms infinite normal both
+    &__book
+        position: absolute
+        top: 20%
+        right: -70vw
+        width: 73vw
+        max-width: none
+        max-height: none
+        animation: transform-shiver 3000ms linear 0ms infinite normal both
+
+.garant-cr-1
+    position: absolute
+    top: 5%
+    right: -32%
+    max-width: none
+    max-height: none
+    width: 4vw
+    animation: transform-shiver 4000ms linear 0ms infinite normal both
+
+div.fancy-select
+    height: 3.8vw
+    padding: 0
+    border-radius: 5px
+    background-color: transparent
+    align-self: center
+    width: 100%
+    position: relative
+    border: none
+    border-radius: 15px
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    padding-left: 0
+    margin-bottom: 1vw
+
+
+// l
+
+.tiem
+    position: relative
+    width: 31%
+    padding: 0 0.7vw
+
+    cursor: pointer
+    display: inline-block
+    z-index: 2
+    &:hover
+        z-index: 12
+
+    &-img
+        height: 8.5vw
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 1vw
+        //opacity: 0.5
+        border: 1px solid #dddddd
+        position: relative
+        border-radius: 5px
+        &.v2
+            height: 21vw
+.tqw6-block
+	width: 100%
+	margin-right: 40%
+
+.tool
+	position: absolute
+	transition: all 0.4s
+	transform: scale(0)
+	opacity: 0
+	right: 0
+	bottom: 1.1vw
+	padding: 0.8vw
+	z-index: 12
+	box-shadow: 0 3px 18px rgba(137, 137, 152, 0.21)
+	border-radius: 7px
+	border: 1px dashed #bababa
+	background-color: #fcfcfc
+	display: flex
+	transition: all 0.4s ease-in
+
+
+			top: 78%
+
+
+.tiem-before-mod
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    // border: 1px solid #e8e8e8
+    background-color: #fff
+    transition: all 0.4s
+
+.img-soc-end
+    width: 1.1vw
+    height: 1.2vw
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    margin-right: 0.5vw
+    img
+        max-width: none
+        width: 100%
+.ph-end
+	position: absolute
+	left: 0
+	bottom: -0.5vw
+	width: 25vw
+	max-width: none
+	max-height: none
+.end-soc
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 55%
+	margin-left: 0
+	margin-right: 0
+	.end-soc-i
+		width: 10vw
+		padding: .6vw
+		padding-left: 0
+
+
+.tiems
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+.checkbox-block
+	position: relative
+	display: flex
+	
+	justify-content: center
+	align-items: center
+	// opacity: 0.5
+	.small-text, .tsm13, .tsm12
+		opacity: 0.6
+	&.t2
+		flex-direction: row
+		justify-content: flex-start
+		.checkbox-psevdo
+			margin-top: 0 !important
+	&.t3
+		flex-direction: row
+		justify-content: center
+		height: 3.8vw
+		// width: 30%
+		.checkbox-psevdo
+			margin-top: 0 !important
+			margin-left: 1.3vw
+			margin-right: 1.4vw
+.checkbox-inp
+	display: none
+.qw9-social
+	width: 1.58vw
+	margin-right: 0.5vw
+	filter: grayscale(1)
+.checkbox-psevdo
+	border-radius: 100%
+	box-shadow: 0 5px 10px rgba(43, 43, 51, 0.1)
+	border: 1px solid #e8e8e8
+	background-color: #fff
+	width: 1.8vw
+	height: 1.8vw
+	padding: 0.2vw
+	// padding: 0.2vw
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: -1vw
+	margin-bottom: 0.1vw
+	flex-shrink: 0
+	&.t2
+		margin-right: 0.5vw
+		border: 1px solid #e8e8e8
+	&.t3
+		border-radius: 2px
+		margin-top: -1.5vw
+		background-color: #fff
+		.checkbox-psevdo-active
+			border-radius: 2px
+			background-color: #dddddd
+	&.t9
+		margin-right: 0.5vw
+		border: 1px solid #dddddd
+		
+	&-active
+		width: .8vw
+		height: .8vw
+		border-radius: 100%
+		padding: 0.2vw
+		display: flex
+		align-items: center
+		opacity: 1
+		justify-content: center
+		background-image: linear-gradient(to top, #e8e8e8 0%, #e8e8e8 98%, #e8e8e8 100%)
+		img
+			// width: 100%
+			align-self: center
+			transform: scale(0)
+			transition: all 0.3s
+.checkbox-inp:checked ~ .tiem-img
+	box-shadow: 0 0 40px rgba(220, 191, 139, 0.1)
+	border: 2px solid #36c14a
+	opacity: 1
+.checkbox-inp:checked ~	.checkbox-block
+	opacity: 1
+	.small-text, .tsm13, .tsm12
+		opacity: 1
+.checkbox-inp:checked.vib ~	.tiem-before-mod
+	background-color: #6a5cb0
+.checkbox-inp:checked ~	.checkbox-block
+    color: #fff
+.checkbox-inp:checked.teg ~	.tiem-before-mod
+	background-color: #009ce8
+.checkbox-inp:checked.wa ~	.tiem-before-mod
+	background-color: #00af47
+.checkbox-inp:checked ~	.checkbox-block
+	svg
+        path
+            fill: #fff
+
+.checkbox-inp:checked ~ span .qw9-social
+	filter: grayscale(0)
+.checkbox-inp:checked ~ span .checkbox-psevdo
+	// box-shadow: 0 2px 2rem rgba(#166aac, 0.2)
+	background-color: #56d56b
+	&-active
+		background-color: #fff
+		opacity: 1
+		width: .7vw
+		height: .7vw
+		img
+			transform: scale(1)
+	&.t3
+		.checkbox-psevdo-active
+			background-color: #e0c592
+.checkbox-inp:checked ~ .soc-item
+	.small-text
+		color: #36c14a
+.checkbox-inp:checked ~ .checkbox-block.t2
+	.small-text
+		color: #4389e6
+

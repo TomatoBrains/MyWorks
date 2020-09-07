@@ -1,0 +1,166 @@
+<div class="complex">
+    <div class=" waweTop">
+        <div class="waweTop__scroll">
+            <a href="#complex__title" class="waweTop-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+                    <image id="Стрелка" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAj0lEQVQYlXXKsarBcRzG4edwI2cw+ltcgElSFkyms7gBk+tRZJFk4exnsrkCNnXYlME5Rd/6kdT/s7zD+3xkWTbGAjP59dAu4IQJajm0jhH2gQeYY4nKG6ymb4ph4Bu+sMEanwmWsMIP+uECR1d0cMA3yml36OIv0ANHZzRRxBb/aOHyAK84+kUj4djj88Ed/kAeVaDDcdwAAAAASUVORK5CYII=" />
+                </svg>
+            </a>
+            <div class="waweTop-img">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/services/scrollDown.png" alt="скролл">
+            </div>
+        </div>
+    </div>
+    <div class="complex--background">
+        <div class="container">
+            <div class="complex__title" id="complex__title">
+                <h2>В комплексе дешевле! <br>
+                    <span class="light">Самые популярные комплексы</span> </h2>
+            </div>
+            <div class="row">
+                <div class="complex--flex complex--margin flexWrap">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 complex--flex">
+                        <div class="complex__item">
+                            <div class="complex__item-discount mbtxt">
+                                -10%
+                                <div class="complex__item-discount--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/blur.png" alt="">
+                                </div>
+                            </div>
+                            <div class="complex__item-title mbtxt">
+                                <p class="bold">Комлпекс 1</p>
+                            </div>
+                            <div class="complex__item-content mbtxt">
+                                <ul>
+                                    <li>Подмышки</li>
+                                    <li>Глубокое бикини</li>
+                                    <li>Голени</li>
+                                </ul>
+                            </div>
+                            <div class="complex__item-price">
+                                <div class="complex__item-price--text">
+                                    <p class="complex__item--smallUpT">Стоимость</p>
+                                    <p class="complex__item--smallUpT">Цена отдельно</p>
+                                </div>
+                                <div class="complex__item-price--number">
+                                    <p class="complex__item--bigerT">35 <span class="complex__item--smallT">руб</span>
+                                    </p>
+                                    <p class="complex__item--bigT"><s>38</s> <span class="complex__item--smallT"><s>руб</s></span></p>
+                                </div>
+                            </div>
+                            <div class="complex__item-btn mbtxt">
+                                <a>ЗАПИСАТЬСЯ</a>
+                            </div>
+                            <div class="complex__item--img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/branch.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 complex--flex">
+                        <div class="complex__item complex__item--marR">
+                            <div class="complex__item-discount mbtxt">
+                                -10%
+                                <div class="complex__item-discount--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/blur.png" alt="">
+                                </div>
+                            </div>
+                            <div class="complex__item-title mbtxt">
+                                <p class="bold">Комлпекс 1</p>
+                            </div>
+                            <div class="complex__item-content mbtxt">
+                                <ul>
+                                    <li>Подмышки</li>
+                                    <li>Глубокое бикини</li>
+                                    <li>Ноги полностью</li>
+                                    <li>Руки до локтя</li>
+                                </ul>
+                            </div>
+                            <div class="complex__item-price">
+                                <div class="complex__item-price--text">
+                                    <p class="complex__item--smallUpT">Стоимость</p>
+                                    <p class="complex__item--smallUpT">Цена отдельно</p>
+                                </div>
+                                <div class="complex__item-price--number">
+                                    <p class="complex__item--bigerT">35 <span class="complex__item--smallT">руб</span>
+                                    </p>
+                                    <p class="complex__item--bigT"><s>38</s> <span class="complex__item--smallT"><s>руб</s></span></p>
+                                </div>
+                            </div>
+                            <div class="complex__item-btn mbtxt">
+                                <a>ЗАПИСАТЬСЯ</a>
+                            </div>
+                            <div class="complex__item--img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/branch.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 complex--flex">
+                        <div class="complex__item">
+                            <div class="complex__item-discount mbtxt">
+                                -10%
+                                <div class="complex__item-discount--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/blur.png" alt="">
+                                </div>
+                            </div>
+                            <div class="complex__item-title mbtxt">
+                                <p class="bold">Комлпекс 1</p>
+                            </div>
+                            <div class="complex__item-content mbtxt">
+                                <ul>
+                                    <li>Верхняя губа</li>
+                                    <li>Подбородок</li>
+                                    <li>Бакенбарды</li>
+                                    <li>Брови</li>
+                                    <li>Уход в подарок</li>
+                                </ul>
+                                <div class="complex__item-content--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/" alt="">
+                                </div>
+                            </div>
+                            <div class="complex__item-price">
+                                <div class="complex__item-price--text">
+                                    <p class="complex__item--smallUpT">Стоимость</p>
+                                    <p class="complex__item--smallUpT">Цена отдельно</p>
+                                </div>
+                                <div class="complex__item-price--number">
+                                    <p class="complex__item--bigerT">35 <span class="complex__item--smallT">руб</span>
+                                    </p>
+                                    <p class="complex__item--bigT"><s>38</s> <span class="complex__item--smallT"><s>руб</s></span></p>
+                                </div>
+                            </div>
+                            <div class="complex__item-btn mbtxt">
+                                <a>ЗАПИСАТЬСЯ</a>
+                            </div>
+                            <div class="complex__item--img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/branch.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="complex__more">
+                <a class="linkColorRoze">ПОКАЗАТЬ ВСЕ</a>
+            </div>
+        </div>
+        <div class="waweBot">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/wawe.png" alt="волна">
+            <div class="waweBot__scroll">
+                <a href="#qualification" class="main__wawe-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+                        <image id="Стрелка" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAj0lEQVQYlXXKsarBcRzG4edwI2cw+ltcgElSFkyms7gBk+tRZJFk4exnsrkCNnXYlME5Rd/6kdT/s7zD+3xkWTbGAjP59dAu4IQJajm0jhH2gQeYY4nKG6ymb4ph4Bu+sMEanwmWsMIP+uECR1d0cMA3yml36OIv0ANHZzRRxBb/aOHyAK84+kUj4djj88Ed/kAeVaDDcdwAAAAASUVORK5CYII=" />
+                    </svg>
+                </a>
+                <div class="waweBot-img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/scrollDown.png" alt="скролл">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="complex__blur blur2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/leftBlur.png" alt="">
+    </div>
+    <div class="complex__leaves blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/complex/leaves.png" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>

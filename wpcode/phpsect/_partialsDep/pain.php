@@ -1,0 +1,67 @@
+<div class="pain">
+    <div class="pain-wraper">
+        <div class="container">
+            <div class="row">
+                <div class="pain--flex flexWrap">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="pain__text">
+                            <div class="pain__text-title">
+                                <h2>
+                                    <span class="light">Самый популярный вопрос: <br></span>
+                                    А это больно?
+                                </h2>
+                                <p>Если <span class="bold">вы впервые собрались на процедуру депиляции</span> и, скорее
+                                    всего пока пользуетесь
+                                    бритвой, то конечно на 1-ой процедуре вы будете испытывать некоторые ощущения. НО:
+                                </p>
+                                <ul class="mtxt">
+                                    <li>болевые ощущения <span class="bold">очень котроткие</span>, длятся от 1 до 3
+                                        секунд;
+                                    </li>
+                                    <li>т.к. волос скорее всего жесткий, <span class="bold">длительность процедуры
+                                            немного
+                                            увеличивается;</span></li>
+                                    <li>мастер в нашей студии делает все для комфорта клиента, Вашего комфорта! Поэтому
+                                        процедура<span class="bold">
+                                            процедура проходит в удобном
+                                            для Вас ритме и скорости;
+                                            процедура</span></li>
+                                    <li>обычно девушки, которые приходят на процедуру, отмечают, что ожидали, что будет
+                                        намного больнее, а <span class="bold">оказывается все намного легче и
+                                            приятнее;</span></li>
+                                    <li>для самых чувствительных <span class="bold">посоветуем обезбаливающие
+                                            средства</span>, если будет такая
+                                        необходимость;</li>
+                                    <li>с каждой процедурой депиляции <span class="bold">болевые ощущения
+                                            уменьшаются.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="pain__img animat">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/pain/women.png" alt="женщина">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__wawe">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/wawe.png" alt="волна">
+            <div class="main__wawe-scroll">
+                <a href="#work" class="main__wawe-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+                        <image id="Стрелка" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAj0lEQVQYlXXKsarBcRzG4edwI2cw+ltcgElSFkyms7gBk+tRZJFk4exnsrkCNnXYlME5Rd/6kdT/s7zD+3xkWTbGAjP59dAu4IQJajm0jhH2gQeYY4nKG6ymb4ph4Bu+sMEanwmWsMIP+uECR1d0cMA3yml36OIv0ANHZzRRxBb/aOHyAK84+kUj4djj88Ed/kAeVaDDcdwAAAAASUVORK5CYII=" />
+                    </svg>
+                </a>
+                <div class="main__wawe-img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/scrollDown.png" alt="скролл">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pain__leaves blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/pain/leaves.png" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>

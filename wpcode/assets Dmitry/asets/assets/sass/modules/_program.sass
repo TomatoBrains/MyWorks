@@ -1,0 +1,193 @@
+.program
+    position: relative
+    &__cont
+        position: relative
+        display: flex
+        justify-content: space-between
+    &-weeks
+        width: 37%
+        &__title
+            // width: 100%
+            
+        &-list
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            &__item
+                cursor: pointer
+                position: relative
+                padding: 0.5vw
+                padding-top: 1.5vw
+                padding-bottom: 1vw
+                width: 47%
+                border-radius: 10px
+                border: 1px solid #1a1921
+                background-color: #1a1921
+                background-image: linear-gradient(to top, #1a1921 0%, #25242f 100%)
+                transition: all 0.5s ease
+                margin-bottom: 2vw
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 5vw
+                .small-text
+                    font-size: 0.8vw
+                &.active
+                    color: #0f0e13
+                    box-shadow: -9px 33px 57px rgba(0, 0, 0, 0.75)
+                    background-color: #e6b553
+                    background-image: none
+                    .program-weeks-list__label
+                        color: #e6b452
+                &:hover
+                    color: #0f0e13
+                    box-shadow: -9px 33px 57px rgba(0, 0, 0, 0.75)
+                    background-color: #e6b553
+                    background-image: none
+                    .program-weeks-list__label
+                        color: #e6b452
+            &__label
+                width: 60%
+                display: inline-block
+                padding: 0.2vw 1.5vw
+                border-radius: 5px
+                background-color: #0f0e13
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translate(-50%, -50%)
+    &__chess
+        position: absolute
+        top: 0%
+        right: -2%
+        max-width: none
+        max-height: none
+        width: 10vw
+        animation: transform-shiver 4000ms linear 0ms infinite normal both
+
+
+    &-desc
+        width: 60%
+        &__title
+            // width: 60%
+            
+        &__cont
+            border-radius: 15px
+            position: relative
+            padding: 2vw 3vw
+            background: url(../img/program/bg-i.png) center no-repeat
+            background-size: cover
+        &-list
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            
+            &__item
+                width: 48%
+                display: flex
+                align-items: center
+                margin-bottom: 0.25vw
+    &-res
+        width: 100%
+        background-color: #0f0e13
+        border-radius: 15px
+        padding: 2vw 1.5vw
+        &-list
+            display: flex
+            justify-content: space-between
+            &__item
+                width: 49%
+    &-label
+        position: absolute
+        top: 2vw
+        left: 41%
+        color: #58575b
+        .crc-ar
+            left: -1.1vw
+            width: 9vw
+            bottom: -2.5vw
+    &__tabs
+        display: flex
+        justify-content: space-between
+        
+    &__tab   
+        transition: all 0.3s
+        // padding: 1.5vw 2vw
+        padding: 1.25vw 2vw 
+        text-align: center
+        // margin-left: auto
+        // margin-right: auto
+        border-radius: 10px
+        background-color: #c49f5e
+        background-image: linear-gradient(to top, #1a1921 0%, #25242f 100%)
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+        &.active
+            color: #0f0e13
+            box-shadow: 0 0 79px rgba(230, 180, 83, 0.1), inset 0 0 20px rgba(248, 213, 129, 0.35)
+            background-color: #0d0d10
+            background-image: linear-gradient(to top, #e6b453 0%, #ffd266 100%)
+
+        &:hover
+            color: #0f0e13
+            box-shadow: 0 0 79px rgba(230, 180, 83, 0.1), inset 0 0 20px rgba(248, 213, 129, 0.35)
+            background-color: #0d0d10
+            background-image: linear-gradient(to top, #e6b453 0%, #ffd266 100%)
+            display: flex
+            align-items: center
+            justify-content: center
+        
+        &.v1
+            width: 37%
+        &.v2
+            width: 37%
+            margin-left: 13%
+            margin-right: 13%
+    
+    &-list
+        &__item
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+        &__bottom
+            align-items: flex-end
+        &__text
+            &-wr
+                transition: all 0.3s
+            // margin-bottom: 20%
+        &__top
+            display: flex
+            align-items: center
+            // justify-content: space-between
+            &.v2
+                justify-content: space-between
+        &__img
+            max-width: none
+            max-height: none
+            width: 13vw
+        &__end
+            padding: 2vw
+        
+    &__btn
+        width: 65%
+    
+            
+
+.check
+    border-radius: 100%
+    background-color: #0f0e13
+    width: 1.4vw
+    height: 1.4vw
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    img
+        width: 50%
+
+
+
+
+                                

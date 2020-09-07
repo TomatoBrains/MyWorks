@@ -1,0 +1,91 @@
+.contacts
+    &__cont
+        display: flex
+        justify-content: space-between
+    &__item
+        &.v1
+            width: 30%
+        &.v2
+            width: 30%
+        &.v3
+            width: 40%
+    &__text
+        display: flex
+        align-items: center
+        .social-item
+            display: block
+            margin-right: 1vw
+    &__block
+        .phones__block-work, .social
+            justify-content: flex-start
+    &-gallery
+        display: flex
+        justify-content: space-between
+        &__item
+            width: 32%
+        &__img
+            display: block
+            width: 100%
+            height: 20vw
+            border-radius: 10px
+            overflow: hidden
+            position: relative
+            img
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                object-fit: cover
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__save
+        display: flex
+        align-items: center
+    &__saim
+        width: 2vw
+        max-width: none
+        max-height: none
+    &__but
+        display: flex
+        align-items: center
+    &__butt
+        background-color: #fff
+        padding: 0.5vw 1vw
+        border-radius: 10px
+
+.seob
+	position: relative
+	padding: 4vw 0
+	.ware__item__img 
+		width: 4vw
+		height: 4vw
+	&__btn
+		width: 3vw
+		height: 3vw
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-left: auto
+		margin-right: auto
+		cursor: pointer
+	&__text
+		text-align: center
+		color: #747474
+		position: relative
+		height: 3.4vw
+		overflow: hidden
+		&-wrap
+			padding-bottom: 2vw
+		&.act
+			height: 3.4vw !important
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 2vw
+			background-image: linear-gradient(to bottom, transparent 0% , #0f0e13 100% )

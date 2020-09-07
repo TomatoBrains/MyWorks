@@ -1,0 +1,135 @@
+.start
+    position: relative
+    padding-bottom: 0
+    &-form
+        position: relative
+        width: 100%
+        padding: 4vw 2vw
+        &-wrap
+            position: relative
+    &__btn
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 40%)
+    &__cont
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__left
+        // width: 40%
+        position: absolute
+        left: -64%
+        top: -8%
+    &__right
+        position: relative
+        margin-left: 40%
+        width: 55%
+    &-label
+        position: absolute
+        top: 10%
+        right: -10%
+    &-bf
+        top: 0
+        left: 0%
+        z-index: -1
+    &__img
+        width: 24vw
+        max-width: none
+        max-height: none
+
+
+.start-cr1
+	z-index: 3
+	position: absolute
+	left: -3vw
+	width: 8.5vw
+	top: 15%
+	pointer-events: none
+	animation: transform-shiver 3000ms linear 0ms infinite normal both
+.start-cr2
+	z-index: 3
+	position: absolute
+	right: -2%
+	width: 5vw
+	top: 25%
+	animation: transform-shiver 4000ms linear 0ms infinite normal both
+	pointer-events: none
+
+.start-play
+    left: 70%
+    top: 38%
+    width: 6vw
+    height: 6vw
+
+    img
+        width: 40%
+    &:before
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 9vw
+        height: 9vw
+        border-radius: 100%
+        transform: translate(-50%,-50%)
+        background: url(../img/start/cc.png) no-repeat center
+        background-size: 100% 100%
+        animation: rotate 3.8s infinite linear
+
+.start-subtitle
+    position: relative
+    padding-left: 5vw
+    &:before
+        content: ''
+        position: absolute
+        left: 0%
+        top: 50%
+        width: 3.5vw
+        height: 1px
+        transform: translateY(-50%)
+        background-color: #e6b453
+.start-list
+    &__item
+        display: flex
+        align-items: center
+    &__num
+    &__sign
+        position: relative
+        margin-left: 60%
+    &__s
+        position: absolute
+        width: 8vw
+        max-width: none
+        max-height: none
+        top: -11vw
+        right: -1vw
+
+
+.start-bf
+    position: absolute
+    right: 0
+    bottom: 0%
+    width: 30vw
+    // height: 30vw
+    top: 5%
+    left: -20%
+    max-width: none
+    max-height: none
+.start-cir1
+    position: absolute
+    width: 3.5vw
+    top: 5%
+    left: 5%
+    max-width: none
+    max-height: none
+    animation: transform-shiver 4000ms linear 0ms infinite normal both
+
+.start-bf2
+    position: absolute
+    width: 20vw
+    bottom: 5%
+    right: -10%
+    max-width: none
+    max-height: none
+    animation: transform-shiver 4000ms linear 0ms infinite normal both

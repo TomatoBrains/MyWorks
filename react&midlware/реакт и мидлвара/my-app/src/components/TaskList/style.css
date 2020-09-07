@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.btn {
+    border: 1px solid burlywood;
+    padding: 5px 10px;
+    background: burlywood;
+    margin-left: 15px;
+
+}
+.btn:hover{
+    background: transparent;
+    color: burlywood;
+}

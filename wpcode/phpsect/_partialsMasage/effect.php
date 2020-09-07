@@ -1,0 +1,123 @@
+<div class="effect" id="effect">
+    <div class=" waweTop">
+        <div class="waweTop__scroll">
+            <a href="#effect__title" class="waweTop-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+                    <image id="Стрелка" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAj0lEQVQYlXXKsarBcRzG4edwI2cw+ltcgElSFkyms7gBk+tRZJFk4exnsrkCNnXYlME5Rd/6kdT/s7zD+3xkWTbGAjP59dAu4IQJajm0jhH2gQeYY4nKG6ymb4ph4Bu+sMEanwmWsMIP+uECR1d0cMA3yml36OIv0ANHZzRRxBb/aOHyAK84+kUj4djj88Ed/kAeVaDDcdwAAAAASUVORK5CYII=" />
+                </svg>
+            </a>
+            <div class="waweTop-img">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/services/scrollDown.png" alt="скролл">
+            </div>
+        </div>
+    </div>
+    <div class="effect-wraper">
+        <div class="container">
+            <div class="effect__title" id="effect__title">
+                <h2>Для достижения максимально эффекта <span class="light">мы комбинируем антицеллюлитный массаж тремя
+                        способами</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="effect__content flexWrap">
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
+                        <div class="effect__content-item animat">
+                            <div class="effect__content-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/img1.png" alt="">
+                                <div class="effect__content-img--absolute">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/form.png" alt="">
+                                    <span class="bold mtxt">Ручной</span>
+                                </div>
+                            </div>
+                            <div class="effect__content-text mtxt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nemo quidem at laboriosam
+                                nihil
+                                nulla
+                                voluptate consequuntur officiis earum praesentium nobis rem ea dignissimos, optio soluta
+                                quasi
+                                dolor
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
+                        <div class="effect__content-item animat">
+                            <div class="effect__content-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/img2.png" alt="">
+                                <div class="effect__content-img--absolute">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/form.png" alt="">
+                                    <span class="bold mtxt">С медом</span>
+                                </div>
+                            </div>
+                            <div class="effect__content-text mtxt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nemo quidem at laboriosam
+                                nihil
+                                nulla
+                                voluptate consequuntur officiis earum praesentium nobis rem ea dignissimos, optio soluta
+                                quasi
+                                dolor
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
+                        <div class="effect__content-item animat">
+                            <div class="effect__content-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/img3.png" alt="">
+                                <div class="effect__content-img--absolute">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/form.png" alt="">
+                                    <span class="bold mtxt">С банками</span>
+                                </div>
+                            </div>
+                            <div class="effect__content-text mtxt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nemo quidem at laboriosam
+                                nihil
+                                nulla
+                                voluptate consequuntur officiis earum praesentium nobis rem ea dignissimos, optio soluta
+                                quasi
+                                dolor
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
+                        <div class="effect__content-item animat">
+                            <div class="effect__content-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/img4.png" alt="">
+                                <div class="effect__content-img--absolute">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/form.png" alt="">
+                                    <span class="bold mtxt">Со скребком</span>
+                                </div>
+                            </div>
+                            <div class="effect__content-text mtxt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nemo quidem at laboriosam
+                                nihil
+                                nulla
+                                voluptate consequuntur officiis earum praesentium nobis rem ea dignissimos, optio soluta
+                                quasi
+                                dolor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="waweBot">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/wawe.png" alt="волна">
+            <div class="waweBot__scroll">
+                <a href="#result" class="main__wawe-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+                        <image id="Стрелка" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAj0lEQVQYlXXKsarBcRzG4edwI2cw+ltcgElSFkyms7gBk+tRZJFk4exnsrkCNnXYlME5Rd/6kdT/s7zD+3xkWTbGAjP59dAu4IQJajm0jhH2gQeYY4nKG6ymb4ph4Bu+sMEanwmWsMIP+uECR1d0cMA3yml36OIv0ANHZzRRxBb/aOHyAK84+kUj4djj88Ed/kAeVaDDcdwAAAAASUVORK5CYII=" />
+                    </svg>
+                </a>
+                <div class="waweBot-img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main/scrollDown.png" alt="скролл">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="effect__blur blur2">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/blur.png" alt="">
+    </div>
+    <div class="effect__leave blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/effect/leave.png" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>

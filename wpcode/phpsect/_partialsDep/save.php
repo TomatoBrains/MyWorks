@@ -1,0 +1,158 @@
+<div class="save" id="save">
+    <div class="save__title">
+        <h2><span class="light">Почему депиляцию воском и шугарнинг считают</span>
+            самым безопасным способом <span class="light">удаления волос?</span></h2>
+    </div>
+    <div class="row">
+        <div class="save--flex">
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                <div class="save__descr">
+                    <div class="save__descr-title">
+                        <p>Депиляция воском</p>
+                    </div>
+                    <div class="save__descr-content">
+                        <div class="save__descr-item">
+                            <div class="save__descr-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/img1.png" alt="">
+                                <div class="save__descr-img--number save__descr-img--number-1">
+                                    01
+                                </div>
+                            </div>
+                            <div class="save__descr-text">
+                                <h3>Используем только
+                                    одноразовые материалы
+                                </h3>
+                                <p>Для каждой процедуры используются одноразовые перчатки, шпатели, простыни
+                                    и др. После процедуры все расходники выкидываются и больше не используются.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="save__descr-item">
+                            <div class="save__descr-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/img2.png" alt="">
+                                <div class="save__descr-img--number save__descr-img--number-2">
+                                    02
+                                </div>
+                            </div>
+                            <div class="save__descr-text">
+                                <h3>100% натуральная
+                                    и гипоаллергенная
+                                    косметика
+                                </h3>
+                                <p>Все воски, сахарная паста и уходовая косметика имеют практически 100% натуральный
+                                    состав.
+                                    Работаем на известных проверенных марках. Все для Вашего комфорта, красоты и
+                                    здоровья.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="save__descr-item">
+                            <div class="save__descr-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/img3.png" alt="">
+                                <div class="save__descr-img--number save__descr-img--number-3">
+                                    03
+                                </div>
+                            </div>
+                            <div class="save__descr-text">
+                                <h3>Все поверхности
+                                    обрабатываются
+                                </h3>
+                                <p>До и после каждого клиента все поверхности, с которыми соприкасался клиент
+                                    обрабатываются
+                                    специальными антисептическими средствами. Вероятность распространения инфекций -
+                                    0%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                <div class="save__master animat">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/women.png" alt="девушка">
+                    <div class="save__master-title">
+                        <div class="save__master-name">
+                            <p>Виктория Фамилия</p>
+                        </div>
+                        <div class="save__master-rank">
+                            <p>Сертифицированный мастер
+                                по депиляции и шугарингу</p>
+                        </div>
+                    </div>
+                    <div class="save__master-btn">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                                    <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAkCAYAAABxE+FXAAADMUlEQVRYhb2YTYiVVRzGf/fOm7PQQghGhFr15YSkYRptKiTdBG6MQlxEGqEoMpSYWgkGEUNamZWKgVAaLnTRxlLGNglBhomIH4tqo2A1hWIoM808Txz9v3Acprwf750HHu49z3nP+d//xznvObc2PDAAUAOWA6uBXuAf4EegH/iaDqEehr8AdgOzgEnAZOAp4BBwALinE+br2Muxl2ITHMS+mrUXY5/F7sMuMr1t1m2vsE3wDdvTgm/ZHgp9iu0PbP9ge172fFusDX1zeChC/RswHXAWmfuAHcCCTEv9O4ENwJV2wz4pwncp3MjD+TP2Quwl0Z+0GvZK7POhtxz+OhINcD/SDKRPkBzPT0P6EukI0v0NznML603k7Irt1bYft/1Tpi+wfdr2JtvdzdRAo57nPI40F6kP6Wro3UibkU4hzW/cc5kWOGp5m+Veywez8Q9aPmp5r+We283biuc5LyI9h/Qs0q+ZvhTpPNIrSP9po26JCnjI0kxL71oaifmmWtpl6ZilR8az0a7nOa8hbUSahXQs059AOoG0BWnyLZ4jUzHPID+JvAz5z5i7C/k15LPIi0p7VYV9LG1pj6UZ8Vn232vpK0v9qV3cCEHnMAgsA/bElvxwWFqXXtmFRztqvMR3wGzg/TgzJKwp8IQYJw4ofcAS4G5gbpEW+wQiGRsNc7VO5zxHOjW9DfSEdrJgYjx/NApuXqZ9XLizOb8rvE1F1pXpnwF7O+n588CHcToq8QewFvg8tQtXn/N09PoUWJhpDm/XA3+V4s3TaDXoBl4HNsb3EqeAFcD3Y61UFfZnwtsHMu1vYBOwHRgZb1C7BZfyuTU2jhwHY0O58H+DW/U8Ve5K4J2o6BK/RGU3dMVqJeePxZqdk2nDwHvxY643OlGzxpNX22K3KvEtsAo418xEtLDUXswM/w68Cuxr1miJdGMZiRvEdOz6bW4Z/djnsLdjP4S9r70bi30yGj3Ym7G7sKdgv4DdO2bAgdDWYF9u+5aK+ejG/nOTb2IGMZcw+zHHMXdm/ZWysJ3+GHg6jjsJU7O03DHmhVApyhy/jP0S9gnsUexh7AHs+VWEd1za/Av8UwSwFAUvvAAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                <div class="save__descr">
+                    <div class="save__descr-title">
+                        <p>Шугарнинг</p>
+                    </div>
+                    <div class="save__descr-content">
+                        <div class="save__descr-item save__descr-item--revers">
+                            <div class="save__descr-img save__descr-img--margin">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/img4.png" alt="">
+                                <div class="save__descr-img--number save__descr-img--number-4">
+                                    01
+                                </div>
+                            </div>
+                            <div class="save__descr-text save__descr-text--marginR">
+                                <h3>Воздействие на волос
+                                    не несет последствий
+                                </h3>
+                                <p>Депиляцию воском и сахаром по-другому можно назвать биодепиляцией. Никакого
+                                    излучения
+                                    на
+                                    кожу, после процедуры никакого раздражения.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="save__descr-item save__descr-item--revers">
+                            <div class="save__descr-img save__descr-img--margin">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/img5.png" alt="">
+                                <div class="save__descr-img--number save__descr-img--number-5">
+                                    02
+                                </div>
+                            </div>
+                            <div class="save__descr-text save__descr-text--marginR">
+                                <h3>Можно делать
+                                    даже беременным
+
+
+                                </h3>
+                                <p>Если депиляция разрешена беременным, то так же можно говорить о ее безопасности,
+                                    в
+                                    грамотных
+                                    руках мастера, конечно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="save__descr-item save__descr-item--revers">
+                            <div class="save__descr-img save__descr-img--margin">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dep/save/img6.png" alt="">
+                                <div class="save__descr-img--number save__descr-img--number-6">
+                                    03
+                                </div>
+                            </div>
+                            <div class="save__descr-text save__descr-text--marginR">
+                                <h3>Волос удаляется с луковицей
+                                </h3>
+                                <p>Полное удаление волоса, а не только его поверхностной части. Это дает замедленный
+                                    рост
+                                    волоскам и отсутствие щетины вообще.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>

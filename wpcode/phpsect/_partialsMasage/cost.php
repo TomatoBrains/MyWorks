@@ -1,0 +1,210 @@
+<div class="costMas">
+    <div class="container">
+        <div class="costMas__title">
+            <h2>Стоимость <span class="light">антицеллюлитного масажа</span></h2>
+            <div class="costMas__title-leave blur2">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/leave.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="costMas--flex flexWrap">
+                <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 costMas--flex">
+                    <div class="costMas__calc">
+                        <div class="costMas-row">
+                            <div class="costMas__calc-proc flexWrap">
+                                <div class="costMas__calc-proc--number mbtxt">
+                                    1 процедура
+                                </div>
+                                <div class="costMas__calc-proc--icons mtxt">
+                                    <span>
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/icon1.png" alt="">
+                                        <span class="ptxtsm">Ручной массаж</span>
+                                    </span>
+                                    +
+                                    <span>
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/icon2.png" alt="">
+                                        <span class="ptxtsm">Банки</span>
+                                    </span>
+                                    +
+                                    <span>
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/icon3.png" alt="">
+                                        <span class="ptxtsm">Мед</span>
+                                    </span>
+                                    +
+                                    <span>
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/icon4.png" alt="">
+                                        <span class="ptxtsm">Скребок</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="costMas-row">
+                            <div class="costMas__calc-main">
+                                <div class="costMas__calc-row costMas__calc-row-title mtxt">
+                                    <p class="bold">Название</p>
+                                    <p class="bold">Время</p>
+                                    <p class="bold">Стоимость <br> <span class="light">(выберите)</span></p>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Ягодицы</p>
+                                    <p>5-10 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="1" id="Mas-1" value="8" />
+                                        <label for="Mas-1">8 руб</label>
+                                    </div>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Бедра</p>
+                                    <p>10-20 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="2" id="Mas-2" value="16" />
+                                        <label for="Mas-2">16 руб</label>
+                                    </div>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Бедра+ягодицы</p>
+                                    <p>10-20 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="3" id="Mas-3" value="18" />
+                                        <label for="Mas-3">18 руб</label>
+                                    </div>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Живот+бока</p>
+                                    <p>15-45 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="4" id="Mas-4" value="22" />
+                                        <label for="Mas-4">22 руб</label>
+                                    </div>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Спина+бока</p>
+                                    <p>10-20 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="5" id="Mas-5" value="17" />
+                                        <label for="Mas-5">17 руб</label>
+                                    </div>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Бедра+ягодицы+живот+бока</p>
+                                    <p>15-25 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="6" id="Mas-6" value="17" />
+                                        <label for="Mas-6">17 руб</label>
+                                    </div>
+                                </div>
+                                <div class="costMas__calc-row mtxt">
+                                    <p>Бедра+ягодицы+живот+бока+спина</p>
+                                    <p>25-45 минут</p>
+                                    <div>
+                                        <input type="checkbox" name="7" id="Mas-7" value="28" />
+                                        <label for="Mas-7">28 руб</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="costMas-row">
+                            <div class="costMas__calc-total flexWrap mtxt">
+                                <p>Итоговая стоимость:</p>
+                                <div class="costMas__calc-total--wraper">
+                                    <div class="costMas__calc-total-descr">
+                                        <div class="costMas__calc-total-full mtxt">
+                                            <p>Стандартная стоимость</p>
+                                            <p class=" tbig"><s class="price__calc-total--js">0 руб</s></p>
+                                        </div>
+                                        <div class="costMas__calc-total-discount mtxt">
+                                            <p>Со скидкой на первую
+                                                процедуру - 15%</p>
+                                            <p class="tbig roze price__calc-discount--js">0 руб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="costMas__calc-line">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/lineL.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 costMas--flex">
+                    <div class="costMas__cards">
+                        <div class="costMas__cards-title">
+                            <h3>Абонементы </h3>
+                        </div>
+                        <div class="costMas__cards-content">
+                            <div class="costMas__cards-item">
+                                <div class="costMas__cards-item--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/card1.png" alt="">
+                                </div>
+                                <div class="costMas__cards-item--text">
+                                    <div class="costMas__cards-item--flex">
+                                        <p class="costMas__cards-item--bgtext">5 <span>процедур</span>
+                                            <div class="costMas__cards-item--wraper">Скидка 10%</div>
+                                    </div>
+                                    </p>
+                                    <p class="costMas__cards-item--smtext">Бедра + ягодицы + живот + бока + спина
+                                        <span>28
+                                            руб</span>
+                                    </p>
+                                    <p class="costMas__cards-item--smtext">Бедра + ягодицы + живот + бока + спина
+                                        <span>28
+                                            руб</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="costMas__cards-item">
+                                <div class="costMas__cards-item--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/card1.png" alt="">
+                                </div>
+                                <div class="costMas__cards-item--text">
+                                    <p class="costMas__cards-item--bgtext">10 <span>процедур</span> </p>
+                                    <div class="costMas__cards-item--wraper">
+                                        В подарок + 1 процедура
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="costMas__cards-item">
+                                <div class="costMas__cards-item--img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/card1.png" alt="">
+                                </div>
+                                <div class="costMas__cards-item--text">
+                                    <p class="costMas__cards-item--bgtext">15 <span>процедур</spa>
+                                    </p>
+                                    <div class="costMas__cards-item--wraper">
+                                        В подарок + 1 процедура
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="costMas__cards-present">
+                                <div class="costMas__cards-present--wraper">
+                                    <p>При покупке любого абонемента <span class="bold">- обертывание в подарок</span>
+                                    </p>
+                                    <div class="costMas__cards-present--img">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/present.png" alt="">
+                                        <div class="costMas__cards-present--anim">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/presentBox.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="costMas__cards-leaves blur">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/leaves.png" alt="">
+                        </div>
+                        <div class="costMas__cards-line">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/lineR.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="costMas__sign mtxt">
+            *оплачивать можно за 1 процедуру, необязательно покупать абонемент сразу
+            <br>*бонусы по абонементам сохраняются по факту записи
+        </div>
+    </div>
+    <div class="costMas__blur blur">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masage/costMas/blur.png" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="./js/app.js"></script>
