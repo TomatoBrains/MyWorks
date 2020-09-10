@@ -121,7 +121,7 @@ let webpackPlugins = [
   }),
   /*new ImageminPlugin({
     pngquant: {
-      quality: "95-100",
+      quality: "80-80",
     },
   }),*/
   ...htmlPagesGenerated,

@@ -11,10 +11,25 @@
       & ul {
         list-style: none;
         & li {
-          font: $fontMuseoSansCyrlLight_18;
-          margin-top: 1.094vw;
-          background: url(../img/catalog/main/marker.png) no-repeat left center;
-          padding-left: 2vw;
+          font: 300 0.938vw "MuseoSansCyrl";
+    margin-top: 1.094vw;
+    position: relative;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+          &:before {
+            content: url(../img/main/circle.svg);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    display: inline;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: -2vw;
+          }
         }
       }
     }

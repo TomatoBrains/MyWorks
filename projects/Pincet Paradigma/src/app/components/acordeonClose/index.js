@@ -16,5 +16,10 @@ $(".qa__content-item").on("click", function () {
 
 $(".cosmetic__catalog-accordeon details").on("click", function () {
   let scrollTo = $(this).offset().top;
+  $("body, html").animate({ scrollTop: scrollTo }, 300);
+});
+$(".programm__content-days--accordeon details").on("click", function () {
+  let scrollTo = $(this).parent().parent().offset().top;
   $("body, html").animate({ scrollTop: scrollTo }, 200);
 });
+

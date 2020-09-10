@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
   if ($(window).width() <= "990") {
     $("body").prepend(`<div class="preloader">
     <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -8,15 +8,20 @@ $(document).ready(function () {
     </svg>
 </div>`);
   }
-});
-$(window).on("load", function () {
+});*/
+/*$(document).ready(function(){
   if ($(window).width() >= "991") {
+    $('.preloader').css('display', 'none')
+  }
+})*/
+$(window).on("load", function () {
+  /*if ($(window).width() >= "991") {
     return;
-  } else {
+  } else {*/
     $("body").addClass("loaded_hiding");
     window.setTimeout(function () {
       $("body").addClass("loaded");
       $("body").removeClass("loaded_hiding");
     }, 500);
-  }
+  //}
 });
