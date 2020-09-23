@@ -4,62 +4,75 @@
   background-size: cover;
   padding-bottom: 2.604vw;
   position: relative;
+
   &--flex {
     display: flex;
     align-items: center;
     z-index: 1;
     position: relative;
+
     @include lg_900 {
       width: 100%;
     }
+
     @include md_767 {
       width: 100%;
     }
+
     @include sm_567 {
       width: 100%;
     }
   }
+
   &__title {
     text-align: center;
     margin-bottom: 6.25vw;
   }
+
   &__img {
     position: absolute;
     left: -10vw;
     top: -4vw;
     width: 64.75vw;
     z-index: -1;
+
     @include lg_900 {
       display: none;
     }
+
     @include md_767 {
       display: none;
     }
+
     @include sm_567 {
       display: none;
     }
   }
+
   &__content {
     &-item {
       & details {
         margin-bottom: 20px;
+
         @include lg_900 {
           width: 55rem;
           margin: 2rem auto;
         }
+
         @include md_767 {
           width: 45rem;
           margin: 2rem auto;
         }
       }
-      details[open] {
-        & summary {
-          /*padding-bottom: 0;*/
-          & span {
-            transform: rotate(180deg) translate(0, -2.5rem);
-          }
-        }
-      }
+
+      //details[open] {
+      //& summary {
+      /*padding-bottom: 0;*/
+      // & span {
+      //   transform: rotate(180deg) translate(0, -2.5rem);
+      // }
+      ///}
+      //     } 
       & summary {
         cursor: pointer;
         display: flex;
@@ -71,87 +84,110 @@
         border-radius: 5px;
         box-shadow: 6.8px -1.6px 57px 0 rgba(40, 40, 40, 0.1);
         transition: all 0.2s ease;
+
         & p {
           transition: all 0.2s ease;
+
           & span {
             @include lg_900 {
               font-size: 1.2rem !important;
             }
+
             @include md_767 {
               font-size: 1.1rem !important;
             }
+
             @include sm_567 {
               font-size: 1rem !important;
             }
           }
         }
+
         &:hover p:nth-of-type(2) {
           color: $colorRozeDark;
         }
+
         @include lg_900 {
           padding: 1.5rem 0.5rem;
         }
+
         @include md_767 {
           padding: 1.5rem 0.5rem;
         }
+
         @include sm_567 {
           padding: 1.5rem 0.5rem;
         }
+
         & span {
           font: $fontMuseoSansCyrlBold_16;
           margin-right: 2vw;
         }
+
         & p {
           font: $fontMuseoSansCyrlBold_24;
         }
+
         & p:nth-of-type(1) {
           @include lg_900 {
             margin-right: 1rem;
           }
+
           @include md_767 {
             margin-right: 1rem;
           }
+
           @include sm_567 {
             margin-right: 1rem;
           }
         }
       }
+
       &--line {
         border-top: 1px dotted #fabcbc;
         width: 80%;
         margin-bottom: 15px;
         border-width: 1.5px;
       }
+
       &--hidden {
         background-color: #fff;
         padding-top: 16px;
         padding-left: 2.396vw;
-        padding-bottom: 2.031vw;
+        //padding-bottom: 2.031vw;
         margin-top: -2vw;
+
         & p:nth-of-type(1) {
           margin-right: 2vw;
           font: $fontMuseoSansCyrlBold_16;
           color: $colorRozeSubText;
+
           @include lg_900 {
             margin-right: 5%;
           }
+
           @include md_767 {
             margin-right: 5%;
           }
+
           @include sm_567 {
             margin-right: 6%;
           }
         }
+
         & p:nth-of-type(2) {
           width: 27.708vw;
           font: $fontMuseoSansCyrlLight_14;
           color: #747474;
+
           @include lg_900 {
             width: 80%;
           }
+
           @include md_767 {
             width: 80%;
           }
+
           @include sm_567 {
             width: 80%;
           }
@@ -159,47 +195,57 @@
       }
     }
   }
+
   &__blur {
     position: absolute;
     right: 3vw;
     top: 0vw;
     width: 20vw;
-    @include lg_900 {
-    }
-    @include md_767 {
-    }
+
+    @include lg_900 {}
+
+    @include md_767 {}
+
     @include sm_567 {
       width: 10rem;
       top: 6rem;
       z-index: -1;
     }
   }
+
   &__leaves {
     position: absolute;
     top: 8vw;
     right: 53vw;
     width: 8vw;
+
     @include lg_900 {
       display: none;
     }
+
     @include md_767 {
       display: none;
     }
+
     @include sm_567 {
       display: none;
     }
   }
+
   &__flower {
     position: absolute;
     right: 9vw;
     top: 4vw;
     width: 8vw;
+
     @include lg_900 {
       display: none;
     }
+
     @include md_767 {
       display: none;
     }
+
     @include sm_567 {
       display: none;
     }

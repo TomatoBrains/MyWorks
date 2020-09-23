@@ -1,0 +1,36 @@
+.col-6 {
+  width: 50%;
+}
+.col-12 {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .main {
+    &__content {
+      &-plans {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .col-lg-2 {
+    width: 16.67%;
+  }
+  .col-lg-4 {
+    width: 33.34%;
+  }
+  .main {
+    &__content {
+      &-plans {
+        justify-content: center;
+      }
+    }
+  }
+}

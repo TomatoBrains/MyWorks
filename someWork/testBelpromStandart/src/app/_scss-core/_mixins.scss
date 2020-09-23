@@ -1,4 +1,17 @@
-@mixin box($w, $h: $w) {
-  width: $w;
-  height: $h;
+@mixin sm {
+  @media (max-width: 567px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 568px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width:901px) {
+    @content;
+  }
 }

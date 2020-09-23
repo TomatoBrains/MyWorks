@@ -25,3 +25,4 @@ import "./components/cart";
 import "./components/smoothScrollPolifyl";
 import "./components/iphoneFlexFix";
 import "./components/preloader";
+import "./components/doomDay";

@@ -1,13 +1,14 @@
-
-
 img {
   max-width: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import "app/_scss-core/_core";
 
-@import "scss/helpers";
-@import "scss/typography";
-
-
-
+@import "scss/main.scss";
+@import "scss/svgShadow.scss";

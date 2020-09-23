@@ -3,37 +3,47 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
   &__title {
     text-align: center;
+
     @include lg_900 {
       margin-top: 3rem;
     }
+
     @include md_767 {
       margin-top: 3rem;
     }
+
     @include sm_567 {
       margin-top: 3rem;
     }
   }
+
   &__workers {
     margin-top: $elemMarginTop_60;
     position: relative;
+
     &-slider {
       & .slick-slide {
         margin-left: 2.0835vw;
         margin-right: 2.0835vw;
       }
     }
+
     &-item {
       margin-right: 100px;
     }
+
     &-card {
       text-align: center;
     }
+
     &-img {
       display: inline-block;
       position: relative;
     }
+
     &-name {
       position: absolute;
       bottom: 3vw;
@@ -44,11 +54,13 @@
       transform: skew(-11deg);
       box-shadow: 0px 9px 90px 0 rgba(122, 122, 122, 0.3);
       z-index: 5;
+
       & p {
         transform: skew(10deg);
         font-weight: 700;
       }
     }
+
     &-master {
       position: absolute;
       bottom: 1vw;
@@ -56,94 +68,116 @@
       padding: 1.042vw 0.885vw;
       border-radius: 10px;
       background-color: #fdfdfd;
+
       & p {
         font: $fontMuseoSansCyrlMed_11;
       }
     }
+
     & ul {
       margin-top: 2.083vw;
-      list-style-image: url(../img/qualification/check.png);
+      list-style-image: url(../img/qualification/check.svg);
       margin-left: 1vw;
+
       & li {
         font: $fontMuseoSansCyrlLight_18;
       }
     }
+
     &-link {
       display: inline-block;
       margin-top: 1.563vw;
       margin-left: 1vw;
       padding-bottom: 5px;
+
       & a {
         position: relative;
         @include beforeLine;
         transition: all 0.2s ease;
+
         &::before {
           width: 100%;
           color: #ff6078;
           top: 115%;
         }
+
         &:hover::before {
           width: 40%;
         }
+
         &:hover {
           text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
         }
       }
+
       @include lg_900 {
         margin-left: 2rem;
       }
+
       @include md_767 {
         margin-left: 2rem;
       }
+
       @include sm_567 {
         margin-left: 2rem;
       }
     }
+
     & .slick-disabled {
       opacity: 0.3;
     }
   }
+
   &__certificate {
     padding: 0 6.25vw;
     position: relative;
     display: flex;
     margin-top: 4.792vw;
     align-items: center;
+
     &-link {
       & a {
         position: relative;
         @include beforeLine;
         transition: all 0.2s ease;
+
         &::before {
           width: 100%;
           color: #ff6078;
           top: 115%;
           opacity: 1;
         }
+
         &:hover::before {
           width: 40%;
         }
+
         &:hover {
           text-shadow: 0 0 0.65px #e07c89, 0 0 0.65px #ff6078;
         }
       }
     }
+
     &-descr {
       text-align: left;
       width: 18.523vw;
       padding-right: 3.906vw;
     }
+
     &-items {
       width: 62.5vw;
       position: relative;
       margin-left: 4vw;
+
       & .slick-disabled {
         opacity: 0.3;
       }
     }
+
     &-wraper {
       position: relative;
     }
+
     &-img {
       position: absolute;
       z-index: 2;
@@ -152,25 +186,32 @@
       width: 17.292vw;
       pointer-events: none;
     }
+
     &-background {
       @include zoomBackground;
     }
+
     &-zoom {
       @include zoomIcon;
     }
+
     &-item {
       position: relative;
+
       &:hover .qualification__certificate-background {
         opacity: 0.4;
       }
+
       &:hover .qualification__certificate-zoom {
         opacity: 1;
       }
     }
+
     & .slick-slide {
       padding-right: 10px;
     }
   }
+
   &__number {
     display: flex;
     justify-content: flex-end;
@@ -178,10 +219,12 @@
     margin-top: 3vw;
     position: relative;
     color: #fff;
+
     & p {
       font: $fontMuseoSansCyrlMed_19;
       z-index: 2;
       margin-right: 1vw;
+
       & span {
         font-size: 3.021vw;
         font-family: "Lust";
@@ -194,17 +237,20 @@
     top: -6vw;
     left: -2vw;
   }
+
   &__leaveRight2 {
     position: absolute;
     top: -8vw;
     right: -2vw;
   }
+
   &__leaveRight {
     position: absolute;
     top: 11vw;
     right: 30%;
     z-index: -1;
   }
+
   &__blurRight {
     position: absolute;
     right: -2vw;
@@ -212,6 +258,7 @@
     width: 11.146vw;
     z-index: 1;
   }
+
   &__leaveCenter {
     position: absolute;
     top: 11vw;
@@ -219,41 +266,50 @@
     z-index: -1;
   }
 }
+
 .arrowLeft {
   position: absolute;
   top: 50%;
   left: -2vw;
   cursor: pointer;
   z-index: 2;
+
   @include lg_900 {
     left: 10%;
     top: 40%;
   }
+
   @include md_767 {
     left: 10%;
     top: 40%;
   }
+
   @include sm_567 {
     left: 0%;
     top: 40%;
   }
 }
+
 .arrowRightBot {
   position: absolute;
   top: 50%;
   right: -3.5vw;
   transform: translate(0, -50%);
   cursor: pointer;
+
   @include lg_900 {
     right: -10%;
   }
+
   @include md_767 {
     right: -10%;
   }
+
   @include sm_567 {
     right: -13%;
   }
 }
+
 .arrowLeftBot {
   position: absolute;
   top: 50%;
@@ -261,218 +317,270 @@
   transform: translate(0, -50%);
   z-index: 3;
   cursor: pointer;
+
   @include lg_900 {
     left: -15%;
   }
+
   @include md_767 {
     left: -15%;
   }
+
   @include sm_567 {
     left: -15%;
   }
 }
+
 .arrowRight {
   position: absolute;
   top: 50%;
   right: -2vw;
   cursor: pointer;
+
   @include lg_900 {
     right: 0%;
     top: 40%;
   }
+
   @include md_767 {
     right: 0%;
     top: 40%;
   }
+
   @include sm_567 {
     right: 0%;
     top: 40%;
   }
 }
+
 .purple {
   color: #9770b6;
 }
+
 @include lg_900 {
   .qualification {
     &__workers {
       margin-left: -1.5rem;
       margin-top: 2rem;
+
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
       }
+
       &-master {
         bottom: 2rem;
         padding: 1rem 1rem;
         right: 2rem;
+
         & p {
           font-size: 1.4rem;
         }
       }
+
       &-slider {
         & .slick-slide {
           margin-left: 2rem;
           margin-right: 0;
         }
       }
+
       & ul {
         margin-left: 2rem;
+
         & li {
           font-size: 1.6rem;
         }
       }
     }
+
     &__leaveLeft {
       width: 8rem;
       top: 6rem;
     }
+
     &__leaveRight {
       width: 16rem;
       top: 7rem;
       right: 13rem;
     }
+
     &__leaveRight2 {
       width: 8rem;
       top: 0;
       z-index: -1;
     }
+
     &__leaveCenter {
       width: 16rem;
       left: 9rem;
       top: 15rem;
     }
+
     &__certificate {
       flex-wrap: wrap;
       margin-top: 3rem;
+
       &-descr {
         margin: 0 auto;
         padding: 0;
         width: auto;
         text-align: center;
       }
+
       &-items {
         margin: 2rem auto 0 auto;
       }
+
       &-item {
         & img {
           margin: 0 auto;
         }
       }
+
       &-img {
         width: 24rem;
         left: -9rem;
         bottom: -1rem;
+
         & img {
           margin: 0 auto;
         }
       }
     }
+
     &__number {
       margin-top: 5rem;
+
       & p {
         font-size: 2.4rem;
+
         & span {
           font-size: 4rem;
         }
       }
     }
+
     &__blurRight {
       width: 14rem;
       bottom: -7rem;
     }
   }
 }
+
 @include md_767 {
   .qualification {
     &__workers {
       margin-left: -1.5rem;
       margin-top: 2rem;
+
       &-name {
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
       }
+
       &-master {
         bottom: 2rem;
         padding: 1rem 1rem;
         right: 2rem;
+
         & p {
           font-size: 1.4rem;
         }
       }
+
       &-slider {
         & .slick-slide {
           margin-left: 2rem;
           margin-right: 0;
         }
       }
+
       & ul {
         margin-left: 2rem;
+
         & li {
           font-size: 1.6rem;
         }
       }
     }
+
     &__leaveLeft {
       width: 8rem;
       top: 6rem;
     }
+
     &__leaveRight {
       width: 16rem;
       top: 7rem;
       right: 13rem;
     }
+
     &__leaveRight2 {
       width: 8rem;
       top: 0;
       z-index: -1;
     }
+
     &__leaveCenter {
       width: 16rem;
       left: 9rem;
       top: 15rem;
     }
+
     &__certificate {
       flex-wrap: wrap;
       margin-top: 3rem;
+
       &-descr {
         margin: 0 auto;
         padding: 0;
         width: auto;
         text-align: center;
       }
+
       &-items {
         margin: 2rem auto 0 auto;
       }
+
       &-item {
         padding: 0;
+
         & img {
           margin: 0 auto;
         }
       }
+
       &-img {
         width: 24rem;
         left: -5rem;
         bottom: -1rem;
+
         & img {
           margin: 0 auto;
         }
       }
     }
+
     &__number {
       margin-top: 5rem;
+
       & p {
         font-size: 2.4rem;
+
         & span {
           font-size: 4rem;
         }
       }
     }
+
     &__blurRight {
       width: 14rem;
       bottom: -7rem;
     }
   }
 }
+
 @include sm_567 {
   .qualification {
     &__workers {
@@ -483,90 +591,113 @@
         bottom: 5rem;
         padding: 1.5rem 3.5rem;
       }
+
       &-master {
         bottom: 2rem;
         padding: 1rem 1rem;
         right: 2rem;
+
         & p {
           font-size: 1.2rem;
         }
       }
+
       &-slider {
         & .slick-slide {
           margin-left: 0rem;
           margin-right: 0;
         }
       }
+
       & ul {
         margin-left: 2rem;
+
         & li {
           font-size: 1.6rem;
         }
       }
+
       &-img {
         width: 25rem;
+
         & img {
           margin: 0 auto;
         }
       }
     }
+
     &__certificate {
       margin-top: 3rem;
+
       & .slick-slide {
         padding-right: 0;
       }
     }
+
     &__leaveLeft {
       width: 6rem;
       top: 1rem;
     }
+
     &__leaveRight {
       width: 12rem;
       top: 7rem;
       right: 0rem;
     }
+
     &__leaveRight2 {
       width: 5rem;
       top: 0;
       z-index: -1;
     }
+
     &__leaveCenter {
       width: 14rem;
       left: 1rem;
       top: 15rem;
     }
+
     &__certificate {
       flex-wrap: wrap;
+
       &-descr {
         margin: 0 auto;
         padding: 0;
         width: auto;
         text-align: center;
       }
+
       &-items {
         margin: 2rem auto 0 auto;
       }
+
       &-item {
         padding: 0;
+
         & img {
           margin: 0 auto;
         }
       }
+
       &-img {
         width: 17rem;
         left: -6rem;
         bottom: -1rem;
       }
     }
+
     &__number {
       margin-top: 5rem;
+
       & p {
         font-size: 2.4rem;
+
         & span {
           font-size: 4rem;
         }
       }
     }
+
     &__blurRight {
       width: 14rem;
       bottom: -7rem;

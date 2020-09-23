@@ -12,8 +12,7 @@ $(".qualification__workers-slider").slick({
   autoplay: true,
   autoplaySpeed: 3000,
   lazyLoad: "progressive",
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 2,
@@ -47,8 +46,7 @@ $(".qualification__certificate-slider").slick({
   autoplay: true,
   autoplaySpeed: 3000,
   lazyLoad: "progressive",
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 2,
@@ -78,9 +76,9 @@ $(".reviews__screenshots-phoneSlide").slick({
   arrows: false,
   fade: true,
   asNavFor: ".reviews__screenshots-slider",
-  autoplay: true,
-  autoplaySpeed: 3000,
-  lazyLoad: "progressive",
+  //variableWidth: true,
+  cssEase: 'linear',
+  //lazyLoad: "progressive",
 });
 $(".reviews__screenshots-slider").slick({
   slidesToShow: 3,
@@ -94,9 +92,8 @@ $(".reviews__screenshots-slider").slick({
   pauseOnHover: true,
   variableWidth: true,
   asNavFor: ".reviews__screenshots-phoneSlide",
-  lazyLoad: "progressive",
-  responsive: [
-    {
+  //lazyLoad: "progressive",
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 1,
@@ -131,8 +128,7 @@ $(".master__workers-slider").slick({
   autoplaySpeed: 3000,
   asNavFor: ".master__descr-slider",
   lazyLoad: "progressive",
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 2,
@@ -174,8 +170,7 @@ $(".master__certificate-slider").slick({
   autoplay: true,
   autoplaySpeed: 3000,
   lazyLoad: "progressive",
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 2,
@@ -226,8 +221,7 @@ $(".screenshots__slider-phoneSlide").slick({
   variableWidth: true,
   asNavFor: ".screenshots__mesage-items",
   lazyLoad: "progressive",
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 1,
@@ -278,8 +272,7 @@ $(".graduate__student-slider").slick({
   pauseOnHover: true,
   variableWidth: true,
   lazyLoad: "progressive",
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 901,
       settings: {
         slidesToShow: 2,

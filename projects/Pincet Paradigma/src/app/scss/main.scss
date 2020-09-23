@@ -2,37 +2,28 @@
   position: relative;
   padding-top: 4vw;
   overflow: hidden;
+
   &__descr {
     margin-left: 2.094vw;
     position: relative;
     z-index: 1;
+
     &-list {
       margin-top: 2.125vw;
+
       & ul {
         list-style: none;
+
         & li {
           font: 300 0.938vw "MuseoSansCyrl";
-    margin-top: 1.094vw;
-    position: relative;
-    margin-left: 2vw;
-    display: flex;
-    align-items: center;
-          &:before {
-            content: url(../img/main/circle.svg);
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 4px;
-    display: inline;
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    left: -2vw;
-          }
+          margin-top: 1.094vw;
+          background: url(../img/main/circle2.svg) no-repeat left center;
+          padding-left: 2vw;
+          background-size: 6%;
         }
       }
     }
+
     &-btn {
       position: relative;
       padding: 1.702vw 7.917vw 1.702vw 2.135vw;
@@ -46,14 +37,13 @@
       border-radius: 55px;
       border-image-source: linear-gradient(to top, $colorRozeLighter, #ffffff);
       border-image-slice: 1;
-      background-image: linear-gradient(
-          to top,
+      background-image: linear-gradient(to top,
           rgba(241, 153, 157, 0.47),
-          rgba(252, 182, 182, 0.99)
-        ),
+          rgba(252, 182, 182, 0.99)),
         linear-gradient(to top, $colorRozeLighter, #ffffff);
       box-shadow: 0 8px 13px $colorRozeLighter,
         inset 0 -4px 1px $colorRozeDarker;
+
       & p {
         font: $fontMuseoSansCyrlBold_14;
         color: #fff;
@@ -61,6 +51,7 @@
         max-width: 11.323vw;
         text-align: center;
       }
+
       &::after {
         margin-left: -30px;
         content: " ";
@@ -81,46 +72,55 @@
         animation-iteration-count: infinite;
         transform: rotate(45deg);
       }
+
       &--wraper {
         position: relative;
         display: flex;
       }
     }
+
     &-img {
       position: absolute;
       position: absolute;
       bottom: 1vh;
       left: 13vw;
       pointer-events: none;
+
       & img {
         max-width: 10.885vw;
       }
     }
+
     &-card {
       right: -29vw;
       position: absolute;
       bottom: -12vw;
       width: 44.427vw;
     }
+
     &-info {
       position: absolute;
       top: 9.5vw;
       right: 25.5vw;
       cursor: pointer;
       z-index: 11;
+
       & img {
         width: 2.083vw;
         height: 2.083vw;
       }
+
       &:hover .main__descr-info_hover {
         opacity: 1;
         transition: 0.3s ease;
       }
+
       & img {
         border-radius: 50%;
         -webkit-animation: pulseInfo 2s infinite;
         animation: pulseInfo 2s infinite;
       }
+
       &_hover {
         opacity: 0;
         transition: 0.3s ease;
@@ -136,6 +136,7 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         box-shadow: 8px -10px 0px 1px rgba(203, 210, 223, 0.18);
+
         & p {
           width: 6.354vw;
           margin: 2vw 2vw;
@@ -144,20 +145,24 @@
       }
     }
   }
+
   &__women {
     position: absolute;
     right: 0;
     top: 1.354vw;
     max-width: 45.408vw;
   }
+
   &__wawe {
     display: flex;
     position: relative;
     margin-top: 3.125vw;
     max-height: 100%;
+
     &-svg {
       @include scrollIcon;
     }
+
     &-img {
       position: absolute;
       top: 3.5vw;
@@ -167,11 +172,13 @@
     }
   }
 }
+
 //mdeia
 @include sm_567 {
   .container {
     padding: 0 15px;
   }
+
   .main {
     &__descr {
       display: flex;
@@ -179,19 +186,23 @@
       justify-content: center;
       align-items: center;
       margin-left: 0;
+
       &-title {
         order: 1;
         min-width: 30rem;
         margin-left: 1rem;
+
         & h1 {
           & span {
             font-size: 2.6rem;
           }
         }
       }
+
       &-list {
         order: 3;
         margin-top: -14rem;
+
         & ul {
           & li {
             font-size: 1.4rem;
@@ -199,45 +210,55 @@
           }
         }
       }
+
       &-btn {
         padding: 1rem 9rem 1rem 1rem;
         width: 30rem;
         margin-top: 0;
+
         &--wraper {
           order: 4;
           margin-top: 3rem;
         }
+
         & p {
           max-width: none;
           font-size: 1rem;
         }
       }
+
       &-img {
         right: -1rem;
         top: 5%;
         left: auto;
         width: 12rem;
+
         & img {
           max-width: 100%;
         }
       }
+
       &-info {
         left: 19rem;
         top: 11rem;
         right: unset;
+
         & img {
           width: 3rem;
           height: auto;
         }
+
         &_hover {
           top: -12rem;
           left: -9rem;
+
           & p {
             font-size: 1.2rem;
             width: 10rem;
           }
         }
       }
+
       &-card {
         order: 2;
         position: relative;
@@ -246,13 +267,16 @@
         top: 1rem;
       }
     }
+
     &__wawe {
       bottom: -2px;
       height: 5rem;
+
       &-img {
         top: 3rem;
       }
     }
+
     &__women {
       position: relative;
       bottom: -4rem;
@@ -262,6 +286,7 @@
     }
   }
 }
+
 @include md_767 {
   .main {
     &__descr {
@@ -270,17 +295,21 @@
       justify-content: center;
       align-items: center;
       margin-left: 0;
+
       &-title {
         order: 1;
         width: 85%;
+
         & h1 {
           & span {
             font-size: 2.6rem;
           }
         }
       }
+
       &-list {
         order: 3;
+
         & ul {
           & li {
             font-size: 1.4rem;
@@ -288,45 +317,55 @@
           }
         }
       }
+
       &-btn {
         padding: 2rem 9rem 2rem 1rem;
         width: 30rem;
         margin-top: 0;
+
         &--wraper {
           order: 4;
           margin-top: 3rem;
         }
+
         & p {
           max-width: none;
           font-size: 1.2rem;
         }
       }
+
       &-img {
         right: -6rem;
         left: auto;
         width: 18rem;
         top: 12%;
+
         & img {
           max-width: 100%;
         }
       }
+
       &-info {
         left: 27rem;
         top: 15rem;
         right: unset;
+
         & img {
           width: 3rem;
           height: auto;
         }
+
         &_hover {
           top: -14rem;
           left: -11rem;
+
           & p {
             font-size: 1.2rem;
             width: 10rem;
           }
         }
       }
+
       &-card {
         order: 2;
         width: 70rem;
@@ -334,13 +373,16 @@
         top: 12rem;
       }
     }
+
     &__wawe {
       bottom: -2px;
       height: 5rem;
+
       &-img {
         top: 3rem;
       }
     }
+
     &__women {
       position: relative;
       bottom: -5rem;
@@ -361,17 +403,21 @@
       justify-content: center;
       align-items: center;
       margin-left: 0;
+
       &-title {
         order: 1;
         width: 79%;
+
         & h1 {
           & span {
             font-size: 2.6rem;
           }
         }
       }
+
       &-list {
         order: 3;
+
         & ul {
           & li {
             font-size: 1.4rem;
@@ -379,46 +425,56 @@
           }
         }
       }
+
       &-btn {
         padding: 2rem 9rem 2rem 2rem;
         width: 40rem;
         margin-top: 0;
+
         &--wraper {
           order: 4;
           margin-top: 3rem;
         }
+
         & p {
           max-width: none;
           font-size: 1.2rem;
         }
       }
+
       &-img {
         right: -5rem;
         top: 2.5rem;
         left: auto;
         width: 20rem;
         top: 1%;
+
         & img {
           max-width: 100%;
         }
       }
+
       &-info {
         left: 31rem;
         top: 17rem;
         right: unset;
+
         & img {
           width: 3rem;
           height: auto;
         }
+
         &_hover {
           top: -16rem;
           left: 1rem;
+
           & p {
             font-size: 1.2rem;
             width: 10rem;
           }
         }
       }
+
       &-card {
         order: 2;
         width: 80rem;
@@ -426,13 +482,16 @@
         top: 9rem;
       }
     }
+
     &__wawe {
       bottom: -2px;
       height: 5rem;
+
       &-img {
         top: 3rem;
       }
     }
+
     &__women {
       position: relative;
       bottom: -5rem;

@@ -1,0 +1,13 @@
+.header {
+  &__map {
+    &-iframe {
+      position: absolute;
+      top: 8vw;
+      z-index: 2;
+      width: 21vw;
+      height: 17vw;
+      box-shadow: 0px 0px 4px 3px #f4a0a3;
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+svg defs stop {
+    transition: .4s;
+}
+
+svg:hover defs stop {
+    stop-color: rgba(0, 0, 0, 0.281);
+}
+
+svg defs feDropShadow {
+    transition: .4s;
+    flood-color: transparent;
+}
+
+svg:hover feDropShadow {
+    flood-color: rgba(0, 0, 0, 0.301);
+}
+
+svg path {
+    stroke: inherit;
+    stroke-width: inherit;
+    fill: inherit;
+}

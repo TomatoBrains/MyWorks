@@ -8,7 +8,7 @@ $(function () {
     .click(function () {
       tab.hide();
       // tab.filter(this.hash).show();
-      tab.filter(this.hash).fadeIn(800, "linear");
+      tab.filter($(this).data("id")).fadeIn(800, "linear");
       $(".learn__descr-btns--wraper a").removeClass("active");
       $(".learn__descr-btns--wraper a").removeClass("learn__active");
       $(this).addClass("active");
@@ -38,7 +38,7 @@ $(function () {
   $(".price__calc-tabBtn a")
     .click(function () {
       priceTab.hide();
-      priceTab.filter(this.hash).fadeIn(800, "linear");
+      priceTab.filter($(this).data("id")).fadeIn(800, "linear");
       $(".price__calc-tabBtn a").removeClass("active");
       $(".price__calc-tabBtn a").removeClass("price__tab-target");
       $(this).addClass("active");
@@ -55,7 +55,7 @@ $(function () {
   $(".programm__tabs-item")
     .click(function () {
       priceTab.hide();
-      priceTab.filter(this.hash).fadeIn(800, "linear");
+      priceTab.filter($(this).data("id")).fadeIn(800, "linear");
       $(".programm__tabs-item").removeClass("active");
       $(".programm__tabs-item").removeClass("programm__tabs-active");
       $(this).addClass("active");
