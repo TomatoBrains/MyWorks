@@ -1,6 +1,6 @@
 .main {
   min-height: 100vh;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
   &-wraper {
     background-image: url(../img/back.png);
     background-repeat: no-repeat;
@@ -46,6 +46,7 @@
     position: relative;
     &:after {
       content: "";
+      pointer-events: none;
       position: absolute;
       bottom: 0px;
       left: 0;
