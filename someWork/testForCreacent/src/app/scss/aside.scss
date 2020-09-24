@@ -1,0 +1,45 @@
+.aside {
+  min-width: 300px;
+  overflow-y: auto;
+  padding: 20px 0;
+  border: 2px solid #000;
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    &-item {
+      margin-bottom: 5px;
+      & ul {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        & li {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &-main {
+      &:focus ~ ul {
+        //display: block;
+        height: auto;
+        opacity: 1;
+      }
+      &:active ~ ul {
+        //display: block;
+        height: auto;
+        opacity: 1;
+      }
+    }
+    &-sub {
+      //display: none;
+      height: auto;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+      &:hover {
+        //display: block;
+        height: auto;
+        opacity: 1;
+      }
+    }
+  }
+}

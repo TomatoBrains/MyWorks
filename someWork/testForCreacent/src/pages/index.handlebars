@@ -10,8 +10,12 @@
 
 <body>
    {{> _partials/header}}
-   {{> _partials/aside}}
-   {{> _partials/bread}}
-   {{> _partials/main}}
+   <div class="content-wraper">
+       {{> _partials/aside}}
+       <div class="main-wraper">
+           {{> _partials/bread}}
+           {{> _partials/main}}
+       </div>
+   </div>
 </body>
 </html>

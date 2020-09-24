@@ -1,0 +1,27 @@
+.bread {
+  border: 2px solid #000;
+  &__menu {
+    height: 35px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    &-item {
+      padding-right: 10px;
+      & a {
+        text-decoration: underline;
+        color: royalblue;
+      }
+      &::after {
+        content: "\02C3";
+        color: #000;
+        margin-left: 5px;
+        text-decoration: none;
+      }
+      &:last-of-type {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

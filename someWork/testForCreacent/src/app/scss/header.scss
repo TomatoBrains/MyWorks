@@ -1,0 +1,22 @@
+.header {
+  border-bottom: 2px solid #000;
+  &__menu {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    &-item {
+      padding: 0 10px;
+      border-right: 1px solid #000;
+      text-decoration: underline;
+      & a {
+        color: royalblue;
+      }
+      &:last-of-type {
+        border: none;
+      }
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+}

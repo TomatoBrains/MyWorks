@@ -2,3 +2,14 @@
   width: $w;
   height: $h;
 }
+@mixin icon {
+  padding-left: 25px;
+  position: relative;
+  &:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+  }
+}

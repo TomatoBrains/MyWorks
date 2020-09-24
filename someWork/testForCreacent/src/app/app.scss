@@ -1,13 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
 
 img {
   max-width: 100%;
+  align-self: center;
 }
-
+.container {
+  padding: 0 10px;
+}
+.content-wraper {
+  display: flex;
+  height: calc(100vh - 39px);
+}
+.icon {
+  @include icon;
+}
+.icon-1 {
+  &::before {
+    background-image: url(../img/icon1.svg);
+  }
+}
+.icon-2 {
+  &::before {
+    background-image: url(../img/icon2.svg);
+  }
+}
+.icon-3 {
+  &::before {
+    background-image: url(../img/icon3.svg);
+  }
+}
 @import "app/_scss-core/_core";
 
 @import "scss/helpers";
 @import "scss/typography";
 
-
-
+@import "scss/header.scss";
+@import "scss/aside.scss";
+@import "scss/bread.scss";
+@import "scss/main.scss";
