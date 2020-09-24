@@ -5,6 +5,7 @@
     background-image: url(../img/back.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 40px;
     height: 73vh;
     display: flex;
     align-items: flex-end;
@@ -37,9 +38,14 @@
     }
     &-p {
       font-size: 12px;
+      font-weight: 500;
       color: $blackColorLight;
       line-height: 14px;
       text-decoration-line: underline;
+      margin-top: 18px;
+      & a {
+        color: $blackColorLight;
+      }
     }
   }
   &__content {
@@ -72,7 +78,7 @@
       color: $blackColorLight;
       line-height: 16px;
       letter-spacing: 0.442105px;
-      width: 50%;
+      width: 145px;
     }
     &-plans {
       padding: 10px 0 15px 0;
