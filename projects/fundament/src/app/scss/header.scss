@@ -1,0 +1,77 @@
+.header {
+	padding-top: get-vw(40px);
+
+	&--flex {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: get-vw(37px);
+	}
+
+	&__descr {
+		width: get-vw(188px);
+		margin-right: get-vw(105px);
+	}
+
+	&__menu {
+		& ul {
+			display: flex;
+			justify-content: space-around;
+
+			& li {
+				margin-right: get-vw(28px);
+				cursor: pointer;
+				transition: color 0.3s ease;
+
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+
+	&__map {
+		text-align: center;
+		cursor: pointer;
+		margin-right: get-vw(42px);
+
+		& img {
+			width: get-vw(50px);
+		}
+	}
+
+	&__social {
+		display: flex;
+		margin-right: get-vw(74px);
+	}
+
+	&__time {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		z-index: 3;
+
+		& p {
+			margin-left: get-vw(30px);
+			margin-bottom: get-vw(5px);
+		}
+
+		& a {
+			& img {
+				width: get-vw(17px);
+				margin-right: get-vw(13px);
+			}
+
+			&:nth-of-type(2) {
+				margin-left: get-vw(30px);
+				margin-top: get-vw(10px);
+			}
+		}
+	}
+
+	&__iframe {
+		display: none;
+	}
+}

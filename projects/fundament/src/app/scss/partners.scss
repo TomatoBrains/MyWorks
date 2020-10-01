@@ -1,0 +1,51 @@
+.partners {
+	&__title {
+		text-align: center;
+		margin-bottom: get-vw(70px);
+	}
+
+	&__content {
+		text-align: center;
+		width: get-vw(993px);
+		margin: 0 auto;
+
+		& p {
+			margin-bottom: get-vw(40px);
+		}
+	}
+
+	&-wrap {
+		display: flex;
+		justify-content: space-between;
+		padding: get-vw(60px) get-vw(80px);
+		background-color: $back;
+		border-radius: 10px;
+	}
+
+	&__item {
+		text-align: center;
+
+		&-title {
+			margin-top: get-vw(30px);
+		}
+
+		&-cost {
+			margin-top: get-vw(15px);
+		}
+
+		&-more {
+			margin-top: get-vw(20px);
+		}
+	}
+
+	&__slider {
+		&-wrap {
+			position: relative;
+		}
+	}
+
+
+	&__slider {
+		width: get-vw(440px);
+	}
+}

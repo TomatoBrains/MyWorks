@@ -1,0 +1,88 @@
+.main {
+	padding-top: get-vw(90px);
+	position: relative;
+	z-index: 1;
+
+	&__title {
+		width: get-vw(687px);
+		margin-bottom: get-vw(45px);
+	}
+
+	&__descr {
+		width: get-vw(551px);
+		margin-bottom: get-vw(45px);
+	}
+
+	&__download {
+		position: relative;
+		display: inline-block;
+
+		& img {
+			position: absolute;
+			top: -43%;
+			left: 87%;
+		}
+	}
+
+	&__cards {
+		margin-top: get-vw(75px);
+		display: flex;
+
+		&-item {
+			margin-right: get-vw(20px);
+			border-radius: 10px;
+			box-shadow: 0px 4px 24px 0 rgba(137, 164, 204, 0.06);
+			background-color: $white;
+			width: get-vw(222px);
+			height: get-vw(139px);
+			text-align: center;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			& p:nth-of-type(1) {
+				z-index: 1;
+			}
+
+			& p:nth-of-type(2) {
+				position: absolute;
+				@include transTxt;
+				right: 0;
+				bottom: -12%;
+			}
+		}
+	}
+
+	&-leftTreeBack {
+		position: absolute;
+		left: 0;
+		top: 11%;
+		z-index: -1;
+		width: get-vw(222px);
+	}
+
+	&-leftTreeUp {
+		position: absolute;
+		left: 0;
+		top: 40%;
+		z-index: -1;
+		width: get-vw(222px);
+	}
+
+	&-rightTreeUp {
+		position: absolute;
+		right: 0;
+		top: -20%;
+		z-index: -1;
+		width: get-vw(177px);
+	}
+
+	&-rightTreeDown {
+		position: absolute;
+		right: 0;
+		bottom: -50%;
+		z-index: -1;
+		width: get-vw(183px);
+	}
+}

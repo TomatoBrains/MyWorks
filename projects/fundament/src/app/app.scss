@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Gilroy";
+	font-size: 10px;
+}
+
+body {}
+
+a {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+}
+
+input {
+	outline: none;
+}
+
+button {
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	align-self: center;
+}
+
+.first {
+	background-image: url(../img/main/back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/fonts";
+
+@import "scss/header.scss";
+@import "scss/main.scss";
+@import "scss/steps.scss";
+@import "scss/types.scss";
+@import "scss/reviews.scss";
+@import "scss/objects.scss";
+@import "scss/cost.scss";
+@import "scss/partners.scss";
+@import "scss/qa.scss";
+@import "scss/contacts.scss";
+@import "scss/footer.scss";
+@import "scss/popupForm.scss";
+@import "scss/popupMore.scss";
+@import "scss/animations.scss";
+//plugins styles
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

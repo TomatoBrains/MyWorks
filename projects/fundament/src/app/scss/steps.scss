@@ -1,0 +1,70 @@
+.steps {
+	background-image: url(../img/steps/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+
+	&__title {
+		text-align: center;
+		width: get-vw(1343px);
+		margin: 0 auto;
+	}
+
+	&__cards {
+		margin-top: get-vw(125px);
+		display: flex;
+		justify-content: space-between;
+
+		&-item {
+			position: relative;
+			width: get-vw(297px);
+			border-radius: 10px;
+			border: solid 1px rgba(176, 183, 199, 0.35);
+			text-align: center;
+			padding-bottom: get-vw(35px);
+
+
+			& p:nth-of-type(1) {
+				@include transTxt;
+				margin-top: get-vw(51px);
+			}
+
+			& p:nth-of-type(2) {
+				width: 80%;
+				margin: 0 auto;
+				margin-top: get-vw(16px);
+			}
+
+			&>span {
+				width: get-vw(60px);
+				height: get-vw(60px);
+				border-radius: 50%;
+				background: #ff7c00;
+				display: flex;
+				justify-content: center;
+
+				& img {
+					border-radius: unset;
+					background: unset;
+				}
+			}
+		}
+	}
+
+	&__payment {
+		display: flex;
+		justify-content: space-between;
+		padding: get-vw(120px) get-vw(140px) 0 get-vw(140px);
+
+		&-descrL {
+			width: get-vw(352px);
+			margin-top: get-vw(115px);
+		}
+
+		&-descrR {
+			width: get-vw(383px);
+			margin-top: get-vw(234px);
+		}
+	}
+
+}

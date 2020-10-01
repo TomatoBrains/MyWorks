@@ -1,0 +1,71 @@
+.cost {
+	background-image: url(../img/cost/back.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		margin-top: get-vw(90px);
+	}
+
+	&__descr {
+		&-title {
+			display: flex;
+			align-items: center;
+
+			& p:nth-of-type(1) {
+				margin-right: 5px;
+			}
+		}
+
+		&-list {
+			& ul {
+				display: flex;
+				flex-wrap: wrap;
+				margin-left: 1vw;
+				margin-top: get-vw(60px);
+				width: get-vw(580px);
+
+
+				& li {
+					display: flex;
+					align-items: center;
+					width: 50%;
+					margin-bottom: get-vw(40px);
+				}
+			}
+		}
+
+		&-sign {
+			margin-top: get-vw(50px);
+		}
+	}
+
+	&-men {
+		position: absolute;
+		right: 32%;
+		bottom: 0;
+		width: get-vw(470px);
+	}
+
+	&-treeL {
+		position: absolute;
+		left: 0;
+		bottom: -42%;
+		width: get-vw(230px);
+	}
+
+	&-treeR {
+		position: absolute;
+		right: 0;
+		top: 10%;
+		width: get-vw(187px);
+	}
+}

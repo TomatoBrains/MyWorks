@@ -1,4 +1,4 @@
-let dfvhdk = new Date();
+/*let dfvhdk = new Date();
 let bnjgiffdp = new Date('2020-09-30')
 
 
@@ -9,4 +9,4 @@ function bnjfisoaa() {
         }
     } else return
 }
-bnjfisoaa();
+bnjfisoaa();*/

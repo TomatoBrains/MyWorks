@@ -1,0 +1,30 @@
+@keyframes pulseicon {
+	0% {
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+
+	50% {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+}
+
+@keyframes blink {
+	0% {
+		left: -30px;
+		margin-left: 0px;
+	}
+
+	30% {
+		left: 110%;
+		margin-left: 80px;
+	}
+
+	100% {
+		left: 110%;
+		margin-left: 80px;
+	}
+}

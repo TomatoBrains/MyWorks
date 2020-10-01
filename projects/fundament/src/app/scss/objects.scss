@@ -1,0 +1,39 @@
+.objects {
+	position: relative;
+
+	&__title {
+		text-align: center;
+	}
+
+	&-wrap {
+		padding: get-vw(60px);
+		margin-top: get-vw(90px);
+		background-color: #f4f9fc;
+		border-radius: 10px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&-item {
+			width: get-vw(612px);
+			text-align: center;
+
+			& p {
+				margin-top: get-vw(27px);
+			}
+
+			&:nth-of-type(-n+2) {
+				margin-bottom: get-vw(57px);
+			}
+		}
+	}
+
+	&-tree {
+		position: absolute;
+		top: 20%;
+		width: get-vw(226px);
+	}
+}
