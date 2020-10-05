@@ -9,7 +9,9 @@ html {
 	font-size: 10px;
 }
 
-body {}
+body {
+	color: #444d65;
+}
 
 a {
 	text-decoration: none;
@@ -43,6 +45,100 @@ img {
 	background-image: url(../img/main/back.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.second {
+	background-image: url(../img/types/back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+details {
+	margin-bottom: get-vw(-30px);
+}
+
+details>summary {
+	outline: none;
+	border: none;
+	position: relative;
+}
+
+details summary::-webkit-details-marker {
+	display: none
+}
+
+.pad {
+	padding-bottom: get-vw(30px);
+}
+
+details>div {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+
+.showDet {
+	& summary {
+		& span>div {
+
+			&:before {
+				transform: rotate(180deg);
+				background: #FFF;
+			}
+
+			&:after {
+				transform: rotate(180deg);
+				background: #FFF;
+			}
+		}
+	}
+}
+
+.cl-btn-4 {
+	width: 20px;
+	height: 20px;
+	box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+	background: linear-gradient(to top, #02ad02, #74d16b);
+	padding: 16px;
+	margin: 20px auto;
+	position: relative;
+	display: block;
+	z-index: 200;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.cl-btn-4:before,
+.cl-btn-4:after {
+	content: '';
+	width: 50%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	top: 48%;
+	left: 25%;
+	transform: rotate(0deg);
+	transition: all 0.3s ease-out;
+}
+
+.cl-btn-4:after {
+	transform: rotate(-90deg);
+	transition: all 0.3s ease-out;
+}
+
+.fade-in {
+	opacity: 1;
+	-webkit-animation-delay: 0ms;
+	animation-delay: 0ms;
+	-webkit-animation-duration: 1500ms;
+	animation-duration: 1500ms;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: slide-up-in;
+	animation-name: slide-up-in;
 }
 
 @import "app/_scss-core/_core";
@@ -63,7 +159,10 @@ img {
 @import "scss/footer.scss";
 @import "scss/popupForm.scss";
 @import "scss/popupMore.scss";
+@import "scss/popupTerms.scss";
+@import "scss/endForm.scss";
 @import "scss/animations.scss";
 //plugins styles
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";

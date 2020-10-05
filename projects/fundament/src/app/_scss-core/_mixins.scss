@@ -21,7 +21,7 @@
 }
 
 @mixin mainBtn {
-	padding: get-vw(24px) get-vw(60px);
+	padding: get-vw(24px) get-vw(50px);
 	background: $orangeGrad;
 	border-radius: 12px;
 	position: relative;
@@ -30,8 +30,16 @@
 	transition: all 0.3s ease;
 	box-shadow: inset 0 -4px 1px #d76a03;
 
+	@include xs_500 {
+		padding: 13px 20px;
+	}
+
 	& p:nth-of-type(1) {
-		margin-bottom: get-vw(9px);
+		margin-bottom: get-vw(4px);
+
+		@include xs_500 {
+			margin-bottom: 4px;
+		}
 	}
 
 }
@@ -72,9 +80,10 @@
 @mixin underline {
 	position: relative;
 	transition: all 0.3s ease;
+	text-shadow: 0 0 0.65px $blue, 0 0 0.65px $blue;
 
 	&:hover {
-		text-shadow: 0 0 0.65px $blue, 0 0 0.65px $blue;
+		text-shadow: 0 0 0.9px $blue, 0 0 0.9px $blue;
 
 		&::before {
 			width: 50%;
@@ -106,9 +115,20 @@
 	height: get-vw(40px);
 	transition: box-shadow 0.3s ease;
 
+	@include xs_500 {
+		padding: 5px;
+		height: 25px;
+		width: 25px;
+	}
+
 	& img {
 		width: get-vw(20px);
 		height: get-vw(20px);
+
+		@include xs_500 {
+			width: 17.5px;
+			height: 17.5px;
+		}
 	}
 
 	&:nth-of-type(1) {
@@ -183,18 +203,35 @@
 	background-color: #fff;
 	text-align: center;
 	width: get-vw(414px);
-	padding: get-vw(72px) get-vw(62px) get-vw(62px) get-vw(62px);
+	padding: get-vw(65px) get-vw(45px);
+
+	@include xs_500 {
+		width: auto;
+		padding: 25px 20px;
+	}
 
 	& h3 {
 		margin-bottom: get-vw(20px);
+
+		@include xs_500 {
+			margin-bottom: 10px;
+		}
 	}
 
 	& p {
 		margin-bottom: get-vw(35px);
+
+		@include xs_500 {
+			margin-bottom: 0;
+		}
 	}
 
 	& button {
 		margin-bottom: get-vw(20px);
+
+		@include xs_500 {
+			margin-bottom: 10px;
+		}
 	}
 
 	& form {
@@ -216,9 +253,20 @@
 		padding-right: get-vw(20px);
 		border-right: 1px solid #d8dce4;
 
+		@include xs_500 {
+			padding-right: 4px;
+			margin-left: 10px;
+			top: 12px;
+		}
+
 		& img {
 			width: get-vw(20px);
 			height: get-vw(20px);
+
+			@include xs_500 {
+				width: 20px;
+				height: 20px;
+			}
 		}
 	}
 }
@@ -233,9 +281,19 @@
 	border-radius: 12px;
 	position: relative;
 
+	@include xs_500 {
+		padding: 15px;
+		padding-left: 40px;
+		margin-bottom: 10px;
+	}
+
 	&::placeholder {
 		font-size: get-vw(14px);
 		color: $smTxt;
+
+		@include md_900 {
+			font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (992 - 320)));
+		}
 	}
 }
 
@@ -261,6 +319,12 @@
 		position: relative;
 		cursor: pointer;
 
+		@include xs_500 {
+			padding: 15px 0;
+			padding-left: 11px;
+			margin-bottom: 7px;
+		}
+
 		& strong {
 			position: absolute;
 			right: 0;
@@ -273,6 +337,11 @@
 			justify-content: center;
 			align-items: center;
 			transition: box-shadow 0.3s ease;
+
+			@include xs_500 {
+				width: 40px;
+				height: 40px;
+			}
 
 			& img {
 				width: 20px;

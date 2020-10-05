@@ -1,16 +1,21 @@
 .partners {
 	&__title {
 		text-align: center;
-		margin-bottom: get-vw(70px);
+		margin-bottom: get-vw(50px);
 	}
 
 	&__content {
 		text-align: center;
 		width: get-vw(993px);
 		margin: 0 auto;
+		margin-bottom: get-vw(75px);
 
 		& p {
 			margin-bottom: get-vw(40px);
+		}
+
+		& p:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 

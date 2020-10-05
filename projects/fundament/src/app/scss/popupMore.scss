@@ -1,0 +1,118 @@
+.more {
+	padding: get-vw(65px);
+	background-color: #fff;
+	width: 85%;
+	margin: 0 auto;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2222;
+	overflow-y: scroll;
+	height: 93vh;
+
+	border-radius: 10px;
+
+	&::-webkit-scrollbar {
+		/* chrome based */
+		width: 0px;
+		/* ширина scrollbar'a */
+		background: transparent;
+		/* опционально */
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: get-vw(35px);
+	}
+
+	&__descr {
+		display: flex;
+
+		& p {
+			line-height: 1.33;
+			margin-bottom: get-vw(20px);
+			width: 95%;
+		}
+
+		& img {
+			margin-right: get-vw(45px);
+			width: get-vw(612px);
+		}
+	}
+
+	&__features {
+		margin-top: get-vw(60px);
+
+		&-title {
+			text-align: center;
+		}
+
+		&-content {
+			margin-top: get-vw(45px);
+			display: flex;
+			justify-content: space-between;
+			padding: 0 5vw;
+		}
+
+		&-ul {
+			margin-right: get-vw(55px);
+
+			& ul {
+				margin-left: get-vw(20px);
+			}
+
+			& li {
+				margin-bottom: get-vw(15px);
+				list-style-image: url(../img/svg/dot.svg);
+
+				&::before {
+					content: "";
+				}
+			}
+		}
+
+		&-subtitle {
+			margin-bottom: get-vw(31px);
+			text-align: left;
+		}
+
+		&-form {
+			width: get-vw(350px);
+
+			& button {
+				margin-bottom: get-vw(25px);
+				padding-left: get-vw(15px);
+				padding-right: get-vw(15px);
+			}
+		}
+	}
+
+	&-close {
+		width: get-vw(30px);
+		position: absolute;
+		right: 3%;
+		top: 3%;
+		cursor: pointer;
+	}
+
+	&-leftTree {
+
+		position: absolute;
+		left: 0;
+		bottom: -26%;
+		z-index: -1;
+	}
+
+	&-rightTree {
+		position: absolute;
+		right: 0;
+		bottom: -30%;
+		z-index: -1;
+	}
+}
+
+.overflowHidden {
+	overflow: hidden;
+}

@@ -1,0 +1,26 @@
+.endForm {
+	padding: get-vw(65px);
+	background-color: #fff;
+	width: 22%;
+	margin: 0 auto;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2222;
+
+	border-radius: 10px;
+
+	& p {
+		margin-bottom: 10px;
+	}
+
+	&-close {
+		position: absolute;
+		width: 23px;
+		top: 5%;
+		right: 5%;
+		cursor: pointer;
+	}
+}

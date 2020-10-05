@@ -1,0 +1,34 @@
+.form-popup {
+	position: relative;
+	z-index: 2222;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	& .form {
+		&-close {
+			position: absolute;
+			width: 23px;
+			top: 5%;
+			right: 5%;
+			cursor: pointer;
+		}
+	}
+}
+
+.popup-background {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	top: 0;
+	opacity: 0.5;
+	display: none;
+	position: fixed;
+	z-index: 1110;
+}
+
+.open {
+	display: block;
+}

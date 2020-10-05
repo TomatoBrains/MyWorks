@@ -1,5 +1,10 @@
 .header {
 	padding-top: get-vw(40px);
+	padding-bottom: get-vw(25px);
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
 
 	&--flex {
 		display: flex;
@@ -23,9 +28,12 @@
 			& li {
 				margin-right: get-vw(28px);
 				cursor: pointer;
-				transition: color 0.3s ease;
 
-				&:hover {
+				& a {
+					transition: color .3s ease;
+				}
+
+				&:hover a {
 					color: $blue;
 				}
 			}
@@ -36,6 +44,7 @@
 		text-align: center;
 		cursor: pointer;
 		margin-right: get-vw(42px);
+		position: relative;
 
 		& img {
 			width: get-vw(50px);
@@ -73,5 +82,16 @@
 
 	&__iframe {
 		display: none;
+		position: absolute;
+		top: get-vw(75px);
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		& iframe {
+			border: none;
+			width: get-vw(450px);
+			height: get-vw(350px);
+			border-radius: 10px;
+		}
 	}
 }

@@ -1,0 +1,153 @@
+.reviews {
+	position: relative;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__img {
+		width: get-vw(612px);
+
+		&-wrap {
+			position: relative;
+			margin-right: get-vw(50px);
+			width: get-vw(612px);
+		}
+
+		&-prev {
+			display: flex;
+			margin-top: get-vw(15px);
+
+			& a {
+				width: 23.8%;
+				margin-right: get-vw(10px);
+				cursor: pointer;
+			}
+
+			& a:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__tab {
+		display: flex !important;
+		padding: get-vw(60px);
+		background-color: $white;
+		border-radius: 10px;
+		margin-top: get-vw(60px);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 5px;
+	}
+
+	&__slider {
+		&-wrap {
+			position: relative;
+		}
+
+		&-pagin {
+			position: absolute;
+			right: 16%;
+			top: 5%;
+			z-index: 2222;
+
+			& p {
+				display: flex;
+				align-items: center;
+
+				& span:first-of-type {
+					margin-right: 5px;
+				}
+			}
+		}
+
+		&-main {
+			position: relative;
+
+			& .slick-track {
+				display: flex !important;
+			}
+
+			& .slick-slide {
+				transform: scale(0.8);
+				transition: all 0.3s ease;
+
+				width: 70vw !important;
+			}
+
+			.slick-current {
+				transform: scale(1) !important;
+			}
+		}
+	}
+
+	&__descr {
+		position: relative;
+
+		&-param {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: get-vw(30px);
+		}
+
+		&-item {
+			display: flex;
+			margin-bottom: get-vw(15px);
+			width: 50%;
+
+			& img {
+				width: get-vw(40px);
+				margin-right: get-vw(15px);
+				opacity: 0.48;
+			}
+
+			& p {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&-review {
+			margin-top: get-vw(45px);
+
+			& p {
+				margin-bottom: get-vw(17px);
+			}
+
+			& p:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		&-orderBtn {
+			margin-top: get-vw(50px);
+
+			& button {
+				width: get-vw(250px);
+			}
+		}
+
+		&-moreBtn {
+			cursor: pointer;
+		}
+
+		&-slideBtns {
+			position: absolute;
+			right: -10%;
+		}
+	}
+
+	&-leftTree {
+		position: absolute;
+		width: get-vw(211px);
+		left: 0;
+		top: 20%;
+	}
+
+	&-rightTree {
+		position: absolute;
+		width: get-vw(220px);
+		right: 0;
+		bottom: -40%;
+	}
+}

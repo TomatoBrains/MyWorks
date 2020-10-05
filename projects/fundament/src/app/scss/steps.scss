@@ -2,18 +2,29 @@
 	background-image: url(../img/steps/back.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
+	padding-top: 0;
 
 	&__title {
 		text-align: center;
 		width: get-vw(1343px);
 		margin: 0 auto;
+
+		@include xs_500 {
+			width: auto;
+		}
 	}
 
 	&__cards {
 		margin-top: get-vw(125px);
 		display: flex;
 		justify-content: space-between;
+
+		@include xs_500 {
+			margin-top: 50px;
+			flex-wrap: wrap;
+
+		}
 
 		&-item {
 			position: relative;
@@ -23,16 +34,26 @@
 			text-align: center;
 			padding-bottom: get-vw(35px);
 
+			@include xs_500 {
+				width: 250px;
+				padding-bottom: 12px;
+				margin-bottom: 25px;
+				margin: 0 auto 25px auto;
+			}
+
 
 			& p:nth-of-type(1) {
 				@include transTxt;
 				margin-top: get-vw(51px);
+
+				@include xs_500 {
+					margin-top: 20px;
+				}
 			}
 
 			& p:nth-of-type(2) {
 				width: 80%;
 				margin: 0 auto;
-				margin-top: get-vw(16px);
 			}
 
 			&>span {
@@ -42,6 +63,11 @@
 				background: #ff7c00;
 				display: flex;
 				justify-content: center;
+
+				@include xs_500 {
+					width: 30px;
+					height: 30px;
+				}
 
 				& img {
 					border-radius: unset;
@@ -56,14 +82,39 @@
 		justify-content: space-between;
 		padding: get-vw(120px) get-vw(140px) 0 get-vw(140px);
 
+		@include xs_500 {
+			padding: 0;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		&-descrL {
 			width: get-vw(352px);
 			margin-top: get-vw(115px);
+
+			@include xs_500 {
+				width: auto;
+				margin-top: 0px;
+				order: 1;
+			}
 		}
 
 		&-descrR {
 			width: get-vw(383px);
 			margin-top: get-vw(234px);
+
+			@include xs_500 {
+				width: auto;
+				margin-top: 0;
+				order: 2;
+			}
+		}
+	}
+
+	&__form {
+		@include xs_500 {
+			order: 3;
+			margin-top: 20px;
 		}
 	}
 

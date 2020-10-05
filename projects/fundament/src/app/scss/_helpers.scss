@@ -1,6 +1,5 @@
 .h60 {
 	@include vw(60px);
-	line-height: 72px;
 
 	@include md_900 {
 		font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (992 - 320)));
@@ -46,6 +45,14 @@
 
 	@include md_900 {
 		font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt34 {
+	@include vw(34px);
+
+	@include md_900 {
+		font-size: calc(20px + (34 - 20) * ((100vw - 320px) / (992 - 320)));
 	}
 }
 
@@ -108,7 +115,8 @@
 }
 
 .blockPad {
-	padding-top: get-vw(120px);
+	padding-top: get-vw(60px);
+	padding-bottom: get-vw(60px);
 
 	@include md_900 {
 		padding-top: calc(30px + (60 - 30) * ((100vw - 320px) / (992 - 320)));
@@ -165,6 +173,7 @@
 
 .underline {
 	@include underline;
+	cursor: pointer;
 }
 
 .mainBtn {
@@ -172,6 +181,8 @@
 	@include mainBtnBlick;
 	@include mainBtnHover;
 	text-transform: uppercase;
+	line-height: 1.6;
+	letter-spacing: 1.13px;
 }
 
 .centerIcon {
@@ -208,9 +219,65 @@
 	}
 }
 
+.centerIconArrowDet {
+	@include centerIcon(#5ac544, 0, 0, static);
+	width: get-vw(40px);
+	height: get-vw(40px);
+	cursor: pointer;
+	align-items: center;
+
+	& img {
+		width: get-vw(40px);
+		height: get-vw(40px);
+	}
+
+	position: absolute;
+	left: -7%;
+	top: 0%;
+	transform: translate(-50%, 0);
+}
+
+.centerIconArrowBig {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+	display: flex;
+	right: 8%;
+	background: linear-gradient(to top, #379de4, #a8d2ef);
+	box-shadow: inset 0 -4px 1px #2186cd;
+	border-radius: 50%;
+	transition: box-shadow .3s ease;
+	z-index: 1;
+	width: get-vw(70px);
+	height: get-vw(70px);
+	justify-content: center;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: inset 0px 4px 4px #2186cd;
+	}
+
+	&:nth-of-type(2) {
+		left: 11%;
+	}
+
+	& img {
+		width: get-vw(45px);
+		height: get-vw(45px);
+		padding: get-vw(9px);
+	}
+}
+
 
 .form-wrap {
 	@include form;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+.form-popup {
+	text-align: center;
 }
 
 .input {
@@ -227,4 +294,61 @@
 
 .input-file {
 	@include input-file;
+}
+
+.bigPag {
+	font-size: get-vw(26px);
+}
+
+//slider paging and arrows
+.slider__pagin {
+	display: flex;
+	align-items: center;
+
+	&>span {
+		cursor: pointer;
+	}
+
+	& span:nth-of-type(2) {
+		margin-right: get-vw(10px);
+	}
+
+}
+
+.types__tab-arrowL1 {
+	margin-right: get-vw(10px);
+
+	& path {
+		transition: fill 0.3s ease;
+	}
+
+	&:hover path {
+		fill: #379de4;
+	}
+}
+
+.types__tab-arrowR1 {
+	& path {
+		transition: fill 0.3s ease;
+	}
+
+	&:hover path {
+		fill: #379de4;
+	}
+}
+
+.slider__pagination {
+	display: flex;
+	align-items: center;
+
+	& span:first-of-type {
+		margin-right: get-vw(10px);
+	}
+}
+
+//end
+.tab-target {
+	background: $blueGrad;
+	box-shadow: inset 0 -4px 1px #2186cd;
+	color: #fff !important;
 }

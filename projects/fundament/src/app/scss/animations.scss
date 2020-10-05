@@ -28,3 +28,21 @@
 		margin-left: 80px;
 	}
 }
+
+@keyframes slide-up-in {
+	0% {
+		-webkit-transform: translate(0px, 100%);
+		transform: translateY(20px);
+		opacity: 0;
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0px, 0px);
+		transform: translateY(0px);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+}
