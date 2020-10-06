@@ -1,7 +1,7 @@
 .h60 {
 	@include vw(60px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -9,15 +9,15 @@
 .h44 {
 	@include vw(44px);
 
-	@include md_900 {
-		font-size: calc(22px + (44 - 22) * ((100vw - 320px) / (992 - 320)));
+	@include xs_500 {
+		font-size: calc(20px + (44 - 20) * ((100vw - 320px) / (992 - 320)));
 	}
 }
 
 .h34 {
 	@include vw(34px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(18px + (34 - 18) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -25,7 +25,7 @@
 .txt100 {
 	@include vw(100px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -33,7 +33,7 @@
 .txt72 {
 	@include vw(72px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(36px + (72 - 36) * ((100vw - 320px) / (992 - 320)));
 	}
 
@@ -43,7 +43,7 @@
 .txt50 {
 	@include vw(50px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -51,7 +51,7 @@
 .txt34 {
 	@include vw(34px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(20px + (34 - 20) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -59,7 +59,7 @@
 .txt28 {
 	@include vw(28px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -67,7 +67,7 @@
 .txt24 {
 	@include vw(24px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -75,7 +75,7 @@
 .txt20 {
 	@include vw(20px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(14.5px + (20 - 14.5) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -85,7 +85,7 @@
 	line-height: 1.33;
 	letter-spacing: 0.36px;
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -93,7 +93,7 @@
 .txt16 {
 	@include vw(16px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -101,7 +101,7 @@
 .txt14 {
 	@include vw(14px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -109,7 +109,7 @@
 .txt13 {
 	@include vw(13px);
 
-	@include md_900 {
+	@include xs_500 {
 		font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -118,7 +118,7 @@
 	padding-top: get-vw(60px);
 	padding-bottom: get-vw(60px);
 
-	@include md_900 {
+	@include xs_500 {
 		padding-top: calc(30px + (60 - 30) * ((100vw - 320px) / (992 - 320)));
 	}
 }
@@ -146,7 +146,7 @@
 .container {
 	padding: 0 get-vw(99px);
 
-	@include md_900 {
+	@include xs_500 {
 		padding: 0 15px;
 	}
 }
@@ -154,7 +154,7 @@
 .containerH {
 	padding-left: get-vw(240px);
 
-	@include md_900 {
+	@include xs_500 {
 		padding: 0 15px;
 	}
 }
@@ -162,7 +162,7 @@
 .containerB {
 	padding: 0 get-vw(240px);
 
-	@include md_900 {
+	@include xs_500 {
 		padding: 0 15px;
 	}
 }
@@ -194,8 +194,12 @@
 }
 
 .centerIconLi {
-	@include centerIcon(#5ac544, 0, 0, static);
+	@include centerIcon(#5ac544, 0, 0, relative);
 	width: 24px;
+
+	@include xs_500 {
+		width: 20px;
+	}
 }
 
 .centerIconArrow {
@@ -204,9 +208,19 @@
 	height: get-vw(40px);
 	cursor: pointer;
 
+	@include xs_500 {
+		width: 20px;
+		height: 20px;
+	}
+
 	& img {
 		width: get-vw(40px);
 		height: get-vw(40px);
+
+		@include xs_500 {
+			width: 20px;
+			height: 20px;
+		}
 	}
 
 	position: absolute;
@@ -225,16 +239,25 @@
 	height: get-vw(40px);
 	cursor: pointer;
 	align-items: center;
-
-	& img {
-		width: get-vw(40px);
-		height: get-vw(40px);
-	}
-
 	position: absolute;
 	left: -7%;
 	top: 0%;
 	transform: translate(-50%, 0);
+
+	@include xs_500 {
+		left: -20px;
+	}
+
+	& img {
+		width: get-vw(40px);
+		height: get-vw(40px);
+
+		@include xs_500 {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
 }
 
 .centerIconArrowBig {
@@ -254,6 +277,12 @@
 	justify-content: center;
 	cursor: pointer;
 
+	@include xs_500 {
+		width: 35px;
+		height: 35px;
+		display: none;
+	}
+
 	&:hover {
 		box-shadow: inset 0px 4px 4px #2186cd;
 	}
@@ -266,6 +295,13 @@
 		width: get-vw(45px);
 		height: get-vw(45px);
 		padding: get-vw(9px);
+
+		@include xs_500 {
+			width: 25px;
+			height: 25px;
+			padding: 5px;
+		}
+
 	}
 }
 
@@ -298,6 +334,10 @@
 
 .bigPag {
 	font-size: get-vw(26px);
+
+	@include xs_500 {
+		font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (992 - 320)));
+	}
 }
 
 //slider paging and arrows
@@ -305,12 +345,20 @@
 	display: flex;
 	align-items: center;
 
+	@include xs_500 {
+		justify-content: center;
+	}
+
 	&>span {
 		cursor: pointer;
 	}
 
 	& span:nth-of-type(2) {
 		margin-right: get-vw(10px);
+
+		@include xs_500 {
+			margin-right: 5px;
+		}
 	}
 
 }
@@ -343,6 +391,10 @@
 
 	& span:first-of-type {
 		margin-right: get-vw(10px);
+
+		@include xs_500 {
+			margin-right: 10px;
+		}
 	}
 }
 

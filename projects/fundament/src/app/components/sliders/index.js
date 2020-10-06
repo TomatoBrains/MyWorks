@@ -29,10 +29,16 @@ $('.reviews__slider-main').slick({
 	centerMode: true,
 	centerPadding: '20%',
 	variableWidth: true,
+	//infinite: false,
 	responsive: [{
-		breakpoint: 992,
+		breakpoint: 993,
 		settings: {
 			slidesToShow: 1,
+			centerMode: false,
+			centerPadding: '0%',
+			variableWidth: false,
+			dots: true,
+			arrows: false,
 		},
 	},
 	],
@@ -47,13 +53,6 @@ $('.partners__slider-1').slick({
 	lazyLoad: "progressive",
 	autoplay: true,
 	autoplaySpeed: 4000,
-	responsive: [{
-		breakpoint: 992,
-		settings: {
-			slidesToShow: 1,
-		},
-	},
-	],
 });
 $('.partners__slider-2').slick({
 	slidesToShow: 1,
@@ -64,13 +63,6 @@ $('.partners__slider-2').slick({
 	lazyLoad: "progressive",
 	autoplay: true,
 	autoplaySpeed: 4500,
-	responsive: [{
-		breakpoint: 992,
-		settings: {
-			slidesToShow: 1,
-		},
-	},
-	],
 });
 $('.partners__slider-3').slick({
 	slidesToShow: 1,
@@ -81,13 +73,8 @@ $('.partners__slider-3').slick({
 	lazyLoad: "progressive",
 	autoplay: true,
 	autoplaySpeed: 5000,
-	responsive: [{
-		breakpoint: 992,
-		settings: {
-			slidesToShow: 1,
-		},
-	},
-	],
 })
 
-
+//фикс фанси бокса и клонированный слайдов
+$('.slick-cloned a').removeAttr('data-fancybox');
+$('.slick-cloned a').attr('data-fancybox-trigger', 'gallery');

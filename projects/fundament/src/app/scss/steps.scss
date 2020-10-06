@@ -1,14 +1,20 @@
 .steps {
-	background-image: url(../img/steps/back.jpg);
+	background-image: url(../img/steps/back2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	padding-top: 0;
+	position: relative;
+	z-index: 1;
 
 	&__title {
 		text-align: center;
 		width: get-vw(1343px);
 		margin: 0 auto;
+
+		@include md_900 {
+			width: auto;
+		}
 
 		@include xs_500 {
 			width: auto;
@@ -19,6 +25,11 @@
 		margin-top: get-vw(125px);
 		display: flex;
 		justify-content: space-between;
+
+		@include md_900 {
+			margin-top: 50px;
+			flex-wrap: wrap;
+		}
 
 		@include xs_500 {
 			margin-top: 50px;
@@ -34,6 +45,13 @@
 			text-align: center;
 			padding-bottom: get-vw(35px);
 
+			@include md_900 {
+				width: 250px;
+				padding-bottom: 12px;
+				margin-bottom: 25px;
+				margin: 0 auto 25px auto;
+			}
+
 			@include xs_500 {
 				width: 250px;
 				padding-bottom: 12px;
@@ -45,6 +63,10 @@
 			& p:nth-of-type(1) {
 				@include transTxt;
 				margin-top: get-vw(51px);
+
+				@include md_900 {
+					margin-top: 20px;
+				}
 
 				@include xs_500 {
 					margin-top: 20px;
@@ -64,6 +86,11 @@
 				display: flex;
 				justify-content: center;
 
+				@include md_900 {
+					width: 30px;
+					height: 30px;
+				}
+
 				@include xs_500 {
 					width: 30px;
 					height: 30px;
@@ -82,6 +109,12 @@
 		justify-content: space-between;
 		padding: get-vw(120px) get-vw(140px) 0 get-vw(140px);
 
+		@include md_900 {
+			padding: 0;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		@include xs_500 {
 			padding: 0;
 			flex-wrap: wrap;
@@ -91,6 +124,13 @@
 		&-descrL {
 			width: get-vw(352px);
 			margin-top: get-vw(115px);
+			position: relative;
+
+			@include md_900 {
+				width: auto;
+				margin-top: 0px;
+				order: 1;
+			}
 
 			@include xs_500 {
 				width: auto;
@@ -102,6 +142,13 @@
 		&-descrR {
 			width: get-vw(383px);
 			margin-top: get-vw(234px);
+			position: relative;
+
+			@include md_900 {
+				width: auto;
+				margin-top: 0;
+				order: 2;
+			}
 
 			@include xs_500 {
 				width: auto;
@@ -112,10 +159,52 @@
 	}
 
 	&__form {
+		@include md_900 {
+			order: 3;
+			margin-top: 20px;
+		}
+
 		@include xs_500 {
 			order: 3;
 			margin-top: 20px;
 		}
 	}
 
+	&-cloud {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 20vw;
+		z-index: -1;
+
+		@include md_900 {
+			display: none;
+		}
+
+		@include xs_500 {
+			display: none;
+		}
+	}
+
+	&-left {
+		position: absolute;
+		left: 50%;
+		bottom: 57%;
+		width: get-vw(283px);
+
+		@include md_900 {
+			display: none;
+		}
+	}
+
+	&-right {
+		position: absolute;
+		bottom: 36%;
+		left: -31%;
+		width: get-vw(226px);
+
+		@include md_900 {
+			display: none;
+		}
+	}
 }

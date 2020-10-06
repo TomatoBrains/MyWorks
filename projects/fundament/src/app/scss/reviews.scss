@@ -3,25 +3,73 @@
 
 	&__title {
 		text-align: center;
+
+		@include md_900 {
+			padding: 0 15px;
+		}
+
+		@include xs_500 {
+			padding: 0 15px;
+		}
 	}
 
 	&__img {
 		width: get-vw(612px);
 
+		@include md_900 {
+			width: auto;
+			display: flex;
+			justify-content: center;
+		}
+
+		@include xs_500 {
+			width: auto;
+			display: flex;
+			justify-content: center;
+		}
+
 		&-wrap {
 			position: relative;
 			margin-right: get-vw(50px);
 			width: get-vw(612px);
+
+			@include md_900 {
+				width: auto;
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+
+			@include xs_500 {
+				width: auto;
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
 		}
 
 		&-prev {
 			display: flex;
 			margin-top: get-vw(15px);
 
+			@include md_900 {
+				margin-top: 10px;
+			}
+
+			@include xs_500 {
+				margin-top: 10px;
+			}
+
 			& a {
 				width: 23.8%;
 				margin-right: get-vw(10px);
 				cursor: pointer;
+
+				@include md_900 {
+					margin-right: 5px;
+				}
+
+				@include xs_500 {
+					margin-right: 5px;
+				}
 			}
 
 			& a:last-of-type {
@@ -38,6 +86,18 @@
 		margin-top: get-vw(60px);
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		margin-bottom: 5px;
+
+		@include md_900 {
+			flex-wrap: wrap;
+			padding: 15px 15px 40px 15px;
+			margin-top: 30px;
+		}
+
+		@include xs_500 {
+			flex-wrap: wrap;
+			padding: 15px 15px 40px 15px;
+			margin-top: 30px;
+		}
 	}
 
 	&__slider {
@@ -45,11 +105,22 @@
 			position: relative;
 		}
 
+
 		&-pagin {
 			position: absolute;
 			right: 16%;
 			top: 5%;
-			z-index: 2222;
+			z-index: 100;
+
+			@include md_900 {
+				right: 7%;
+				top: 2%;
+			}
+
+			@include xs_500 {
+				right: 7%;
+				top: 2%;
+			}
 
 			& p {
 				display: flex;
@@ -71,12 +142,29 @@
 			& .slick-slide {
 				transform: scale(0.8);
 				transition: all 0.3s ease;
-
 				width: 70vw !important;
+
+				@include md_900 {
+					transform: unset;
+					width: auto !important;
+				}
+
+				@include xs_500 {
+					transform: unset;
+					width: auto !important;
+				}
 			}
 
 			.slick-current {
 				transform: scale(1) !important;
+
+				@include md_900 {
+					transform: unset;
+				}
+
+				@include xs_500 {
+					transform: unset;
+				}
 			}
 		}
 	}
@@ -88,6 +176,14 @@
 			display: flex;
 			flex-wrap: wrap;
 			margin-top: get-vw(30px);
+
+			@include md_900 {
+				margin-top: 15px;
+			}
+
+			@include xs_500 {
+				margin-top: 15px;
+			}
 		}
 
 		&-item {
@@ -95,10 +191,30 @@
 			margin-bottom: get-vw(15px);
 			width: 50%;
 
+			@include md_900 {
+				margin-bottom: 10px;
+			}
+
+			@include xs_500 {
+				margin-bottom: 10px;
+			}
+
 			& img {
 				width: get-vw(40px);
 				margin-right: get-vw(15px);
 				opacity: 0.48;
+
+				@include md_900 {
+					width: 20px;
+
+					margin-right: 10px;
+				}
+
+				@include xs_500 {
+					width: 20px;
+
+					margin-right: 10px;
+				}
 			}
 
 			& p {
@@ -110,8 +226,24 @@
 		&-review {
 			margin-top: get-vw(45px);
 
+			@include md_900 {
+				margin-top: 20px;
+			}
+
+			@include xs_500 {
+				margin-top: 20px;
+			}
+
 			& p {
 				margin-bottom: get-vw(17px);
+
+				@include md_900 {
+					margin-bottom: 10px;
+				}
+
+				@include xs_500 {
+					margin-bottom: 10px;
+				}
 			}
 
 			& p:last-of-type {
@@ -122,8 +254,26 @@
 		&-orderBtn {
 			margin-top: get-vw(50px);
 
+			@include md_900 {
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			@include xs_500 {
+				margin-top: 20px;
+				text-align: center;
+			}
+
 			& button {
 				width: get-vw(250px);
+
+				@include md_900 {
+					width: auto;
+				}
+
+				@include xs_500 {
+					width: auto;
+				}
 			}
 		}
 

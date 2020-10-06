@@ -10,6 +10,17 @@
 		margin-top: get-vw(90px);
 		background-color: #f4f9fc;
 		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+		@include md_900 {
+			padding: 15px;
+			margin-top: 30px;
+		}
+
+		@include xs_500 {
+			padding: 15px;
+			margin-top: 30px;
+		}
 	}
 
 	&__content {
@@ -21,12 +32,38 @@
 			width: get-vw(612px);
 			text-align: center;
 
+			@include md_900 {
+				width: auto;
+			}
+
+			@include xs_500 {
+				width: auto;
+			}
+
 			& p {
 				margin-top: get-vw(27px);
+
+				@include md_900 {
+					margin-top: 15px;
+					margin-bottom: 15px;
+				}
+
+				@include xs_500 {
+					margin-top: 15px;
+					margin-bottom: 15px;
+				}
 			}
 
 			&:nth-of-type(-n+2) {
 				margin-bottom: get-vw(57px);
+
+				@include md_900 {
+					margin-bottom: 0;
+				}
+
+				@include xs_500 {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -35,5 +72,13 @@
 		position: absolute;
 		top: 20%;
 		width: get-vw(226px);
+
+		@include md_900 {
+			display: none;
+		}
+
+		@include xs_500 {
+			display: none;
+		}
 	}
 }

@@ -119,6 +119,7 @@
 		padding: 5px;
 		height: 25px;
 		width: 25px;
+		display: flex;
 	}
 
 	& img {
@@ -126,8 +127,8 @@
 		height: get-vw(20px);
 
 		@include xs_500 {
-			width: 17.5px;
-			height: 17.5px;
+			width: 20px;
+			height: 20px;
 		}
 	}
 
@@ -165,11 +166,16 @@
 	-webkit-transform: translate(-50%);
 	transform: translate(-50%);
 	display: flex;
+	background: $backGround;
+	border-radius: 50%;
+	justify-content: center;
 
 	& img {
 		padding: get-vw(9px);
-		background: $backGround;
-		border-radius: 50%;
+
+		@include xs_500 {
+			padding: 5px;
+		}
 	}
 
 	z-index: 1;
@@ -206,8 +212,8 @@
 	padding: get-vw(65px) get-vw(45px);
 
 	@include xs_500 {
-		width: auto;
 		padding: 25px 20px;
+		width: 280px;
 	}
 
 	& h3 {
@@ -237,12 +243,13 @@
 	& form {
 		display: flex;
 		flex-direction: column;
+
+		@include xs_500 {}
 	}
 }
 
 @mixin input-wrap {
 	position: relative;
-	display: grid;
 
 	&>span {
 		position: absolute;
@@ -280,6 +287,7 @@
 	margin-bottom: get-vw(15px);
 	border-radius: 12px;
 	position: relative;
+	width: 100%;
 
 	@include xs_500 {
 		padding: 15px;
@@ -291,7 +299,7 @@
 		font-size: get-vw(14px);
 		color: $smTxt;
 
-		@include md_900 {
+		@include xs_500 {
 			font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (992 - 320)));
 		}
 	}

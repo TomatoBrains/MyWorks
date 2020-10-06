@@ -141,6 +141,25 @@ details>div {
 	animation-name: slide-up-in;
 }
 
+.slick-dots {
+	bottom: 10px;
+}
+
+.slick-dots li button:before {
+	font-size: 60px;
+	color: $blue;
+}
+
+.slick-dots li.slick-active button:before {
+	color: $blue;
+}
+
+br {
+	@include md_900 {
+		display: none;
+	}
+}
+
 @import "app/_scss-core/_core";
 
 @import "scss/helpers";

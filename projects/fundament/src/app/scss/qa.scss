@@ -14,6 +14,14 @@
 	&__content {
 		margin-top: get-vw(90px);
 
+		@include md_900 {
+			margin-top: 30px;
+		}
+
+		@include xs_500 {
+			margin-top: 30px;
+		}
+
 		&-item {
 			width: get-vw(993px);
 			background-color: white;
@@ -23,10 +31,32 @@
 			border-radius: 12px;
 			cursor: pointer;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+			@include md_900 {
+				width: auto;
+				padding: 10px;
+				padding-left: 30px;
+				margin-bottom: 20px;
+			}
+
+			@include xs_500 {
+				width: auto;
+				padding: 10px;
+				padding-left: 30px;
+				margin-bottom: 20px;
+			}
 		}
 
 		&-hidden {
 			margin-top: get-vw(30px);
+
+			@include md_900 {
+				margin-top: 15px;
+			}
+
+			@include xs_500 {
+				margin-top: 15px;
+			}
 		}
 	}
 
@@ -36,6 +66,14 @@
 		top: -18%;
 		width: 48%;
 		z-index: -1;
+
+		@include md_900 {
+			display: none;
+		}
+
+		@include xs_500 {
+			display: none;
+		}
 	}
 
 	&-tree {
@@ -43,6 +81,14 @@
 		right: 0;
 		top: 0;
 		width: 30%;
+
+		@include md_900 {
+			display: none;
+		}
+
+		@include xs_500 {
+			display: none;
+		}
 	}
 
 	&-point {

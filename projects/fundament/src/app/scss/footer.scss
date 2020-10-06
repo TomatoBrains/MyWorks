@@ -5,16 +5,78 @@
 		display: flex;
 		justify-content: space-between;
 
+		@include md_900 {
+			flex-direction: column;
+
+			& br {
+				display: block;
+			}
+		}
+
+		@include xs_500 {
+			flex-direction: column;
+
+			& br {
+				display: block;
+			}
+		}
+
 		&>div {
-			flex: 1;
+			flex: 1 1 0%;
+
+			@include md_900 {
+				margin-bottom: 5px;
+				flex: unset;
+			}
+
+			@include xs_500 {
+				margin-bottom: 5px;
+				flex: unset;
+			}
+
+			& p {
+				@include md_900 {
+					font-size: 10px;
+				}
+
+				@include xs_500 {
+					font-size: 10px;
+				}
+			}
+		}
+
+		&-descr {
+			@include md_900 {
+				text-align: center;
+			}
+
+			@include xs_500 {
+				text-align: center;
+			}
 		}
 
 		&-unp {
 			text-align: center;
+
+			@include md_900 {
+				text-align: center;
+			}
+
+			@include xs_500 {
+				text-align: center;
+			}
 		}
 
 		&-site {
 			text-align: right;
+
+			@include md_900 {
+				text-align: center;
+			}
+
+			@include xs_500 {
+				text-align: center;
+			}
 		}
 	}
 }

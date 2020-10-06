@@ -6,15 +6,8 @@ window.$ = window.jQuery = require("jquery");
 
 const fancybox = require("@fancyapps/fancybox");
 
-$('[data-fancybox="gallery1"]').fancybox({
+$('[data-fancybox]').fancybox({
 	arrows: true,
 	thumbs: false,
-});
-$('[data-fancybox="gallery2"]').fancybox({
-	arrows: true,
-	thumbs: false,
-});
-$('[data-fancybox="gallery3"]').fancybox({
-	arrows: true,
-	thumbs: false,
-});
+	loop: true,
+}); 

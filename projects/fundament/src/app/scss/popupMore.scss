@@ -11,8 +11,15 @@
 	z-index: 2222;
 	overflow-y: scroll;
 	height: 93vh;
-
 	border-radius: 10px;
+
+	@include md_900 {
+		padding: 10px;
+	}
+
+	@include xs_500 {
+		padding: 10px;
+	}
 
 	&::-webkit-scrollbar {
 		/* chrome based */
@@ -25,25 +32,71 @@
 	&__title {
 		text-align: center;
 		margin-bottom: get-vw(35px);
+
+		@include md_900 {
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
+
+		@include xs_500 {
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
 	}
 
 	&__descr {
 		display: flex;
 
+		@include md_900 {
+			flex-wrap: wrap;
+		}
+
+		@include xs_500 {
+			flex-wrap: wrap;
+		}
+
 		& p {
 			line-height: 1.33;
 			margin-bottom: get-vw(20px);
 			width: 95%;
+
+			@include md_900 {
+				margin-bottom: 10px;
+			}
+
+			@include xs_500 {
+				margin-bottom: 10px;
+			}
 		}
 
 		& img {
 			margin-right: get-vw(45px);
 			width: get-vw(612px);
+
+			@include md_900 {
+				margin-right: 0;
+				width: auto;
+				margin-bottom: 10px;
+			}
+
+			@include xs_500 {
+				margin-right: 0;
+				width: auto;
+				margin-bottom: 10px;
+			}
 		}
 	}
 
 	&__features {
 		margin-top: get-vw(60px);
+
+		@include md_900 {
+			margin-top: 30px;
+		}
+
+		@include xs_500 {
+			margin-top: 30px;
+		}
 
 		&-title {
 			text-align: center;
@@ -54,18 +107,58 @@
 			display: flex;
 			justify-content: space-between;
 			padding: 0 5vw;
+
+			@include md_900 {
+				margin-top: 15px;
+				padding: 5px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			@include xs_500 {
+				margin-top: 15px;
+				padding: 5px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
 		}
 
 		&-ul {
 			margin-right: get-vw(55px);
 
+			@include md_900 {
+				margin-right: 0;
+			}
+
+			@include xs_500 {
+				margin-right: 0;
+			}
+
 			& ul {
 				margin-left: get-vw(20px);
+
+				@include md_900 {
+					margin-left: 0;
+				}
+
+				@include xs_500 {
+					margin-left: 0;
+				}
 			}
 
 			& li {
 				margin-bottom: get-vw(15px);
 				list-style-image: url(../img/svg/dot.svg);
+
+				@include md_900 {
+					margin-bottom: 10px;
+					margin-left: 15px;
+				}
+
+				@include xs_500 {
+					margin-bottom: 10px;
+					margin-left: 15px;
+				}
 
 				&::before {
 					content: "";
@@ -76,15 +169,41 @@
 		&-subtitle {
 			margin-bottom: get-vw(31px);
 			text-align: left;
+
+			@include md_900 {
+				margin-bottom: 15px;
+			}
+
+			@include xs_500 {
+				margin-bottom: 15px;
+			}
 		}
 
 		&-form {
 			width: get-vw(350px);
 
+			@include md_900 {
+				width: 280px;
+			}
+
+			@include xs_500 {
+				width: 280px;
+			}
+
 			& button {
 				margin-bottom: get-vw(25px);
 				padding-left: get-vw(15px);
 				padding-right: get-vw(15px);
+
+				@include md_900 {
+					margin-bottom: 15px;
+					padding: 5px 15px;
+				}
+
+				@include xs_500 {
+					margin-bottom: 15px;
+					padding: 5px 15px;
+				}
 			}
 		}
 	}
@@ -95,6 +214,14 @@
 		right: 3%;
 		top: 3%;
 		cursor: pointer;
+
+		@include md_900 {
+			width: 15px;
+		}
+
+		@include xs_500 {
+			width: 15px;
+		}
 	}
 
 	&-leftTree {
@@ -103,6 +230,14 @@
 		left: 0;
 		bottom: -26%;
 		z-index: -1;
+
+		@include md_900 {
+			display: none;
+		}
+
+		@include xs_500 {
+			display: none;
+		}
 	}
 
 	&-rightTree {
@@ -110,6 +245,14 @@
 		right: 0;
 		bottom: -30%;
 		z-index: -1;
+
+		@include md_900 {
+			display: none;
+		}
+
+		@include xs_500 {
+			display: none;
+		}
 	}
 }
 

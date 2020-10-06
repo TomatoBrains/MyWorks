@@ -27,6 +27,14 @@
 	display: none;
 	position: fixed;
 	z-index: 1110;
+
+	@include md_900 {
+		height: 101vh;
+	}
+
+	@include xs_500 {
+		height: 101vh;
+	}
 }
 
 .open {

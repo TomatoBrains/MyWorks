@@ -9,6 +9,11 @@
 		display: flex;
 		text-align: center;
 
+		@include md_900 {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
 		@include xs_500 {
 			flex-wrap: wrap;
 			justify-content: space-around;
@@ -29,9 +34,16 @@
 		color: black;
 		font-weight: 300;
 
-		@include xs_500 {
-			padding: 20px 0;
+		@include md_900 {
+			padding: 15px 5px;
 			width: 45%;
+			margin-top: 15px;
+		}
+
+		@include xs_500 {
+			padding: 15px 5px;
+			width: 45%;
+			margin-top: 15px;
 		}
 
 		&:hover {
@@ -49,16 +61,33 @@
 		margin-top: get-vw(80px);
 		border-radius: 10px;
 
+		@include md_900 {
+			flex-wrap: wrap;
+			padding: 0;
+			margin-top: 40px;
+			background-color: unset;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			justify-content: center;
+		}
+
 		@include xs_500 {
 			flex-wrap: wrap;
-			padding: 30px;
+			padding: 0;
 			margin-top: 40px;
+			background-color: unset;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			justify-content: center;
 		}
 	}
 
 	&__slider {
 		width: get-vw(612px);
 		height: get-vw(396px);
+
+		@include md_900 {
+			width: auto;
+			height: auto;
+		}
 
 		@include xs_500 {
 			width: auto;
@@ -71,30 +100,100 @@
 			display: flex;
 			align-items: center;
 
+			@include md_900 {
+				margin-right: 0;
+				margin-bottom: 20px;
+				padding: 5px 5px 0 5px;
+			}
+
+			@include xs_500 {
+				margin-right: 0;
+				margin-bottom: 20px;
+				padding: 5px 5px 0 5px;
+			}
+
 		}
 	}
 
 	&__descr {
 		position: relative;
 
+		@include md_900 {
+			padding: 0 5px;
+		}
+
+		@include xs_500 {
+			padding: 0 5px;
+		}
+
 		&-param {
 			margin: get-vw(35px) 0 get-vw(25px) 0;
+
+			@include md_900 {
+				margin: 15px 0 15px 0;
+				width: calc(290px + 2vw);
+			}
+
+			@include xs_500 {
+				margin: 15px 0 15px 0;
+				width: calc(290px + 2vw);
+			}
 		}
 
 		&-item {
 			display: flex;
 			margin-bottom: get-vw(15px);
 
+			@include md_900 {
+				margin-bottom: 10px;
+				justify-content: space-between;
+			}
+
+			@include xs_500 {
+				margin-bottom: 10px;
+				justify-content: space-between;
+			}
+
 
 			& p {
 				margin-right: get-vw(25px);
 				width: get-vw(220px);
+
+				@include md_900 {
+					margin-right: 10px;
+					width: auto;
+					flex: 1 1 0%;
+				}
+
+				@include xs_500 {
+					margin-right: 10px;
+					width: auto;
+					flex: 1 1 0%;
+				}
 			}
 		}
 
 		&-stars {
+			@include md_900 {
+				margin-right: 10px;
+			}
+
+			@include xs_500 {
+				margin-right: 10px;
+			}
+
 			& span {
 				margin-right: 5px;
+
+				& img {
+					@include md_900 {
+						width: 15px;
+					}
+
+					@include xs_500 {
+						width: 15px;
+					}
+				}
 			}
 		}
 
@@ -102,13 +201,41 @@
 			margin-top: get-vw(60px);
 			display: flex;
 			align-items: center;
+
+			@include md_900 {
+				margin-top: 30px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			@include xs_500 {
+				margin-top: 30px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
 		}
 
 		&-orderBtn {
 			margin-right: get-vw(40px);
 
+			@include md_900 {
+				margin-right: 20px;
+			}
+
+			@include xs_500 {
+				margin-right: 20px;
+			}
+
 			& button {
 				width: get-vw(220px);
+
+				@include md_900 {
+					width: auto;
+				}
+
+				@include xs_500 {
+					width: auto;
+				}
 			}
 		}
 
@@ -119,6 +246,20 @@
 		&-slideBtns {
 			position: absolute;
 			right: -10%;
+
+			@include md_900 {
+				width: 100%;
+				position: static;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			@include xs_500 {
+				width: 100%;
+				position: static;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 

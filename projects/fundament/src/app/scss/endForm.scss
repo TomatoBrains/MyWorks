@@ -9,11 +9,38 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2222;
-
 	border-radius: 10px;
+
+	@include md_900 {
+		width: 280px;
+		padding: 10px;
+	}
+
+	@include xs_500 {
+		width: 280px;
+		padding: 10px;
+	}
 
 	& p {
 		margin-bottom: 10px;
+
+		@include md_900 {
+			font-size: 28px;
+		}
+
+		@include xs_500 {
+			font-size: 28px;
+		}
+	}
+
+	& div {
+		@include md_900 {
+			font-size: 24px;
+		}
+
+		@include xs_500 {
+			font-size: 24px;
+		}
 	}
 
 	&-close {

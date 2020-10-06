@@ -23,6 +23,14 @@
 
 	& h2 {
 		text-align: center;
+
+		@include md_900 {
+			font-size: 20px;
+		}
+
+		@include xs_500 {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -32,4 +40,12 @@
 	right: 3%;
 	top: 3%;
 	cursor: pointer;
+
+	@include md_900 {
+		width: 15px;
+	}
+
+	@include xs_500 {
+		width: 15px;
+	}
 }

@@ -1,7 +1,17 @@
 .partners {
+	position: relative;
+
 	&__title {
 		text-align: center;
 		margin-bottom: get-vw(50px);
+
+		@include md_900 {
+			margin-bottom: 30px;
+		}
+
+		@include xs_500 {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__content {
@@ -10,8 +20,26 @@
 		margin: 0 auto;
 		margin-bottom: get-vw(75px);
 
+		@include md_900 {
+			width: auto;
+			margin-bottom: 30px;
+		}
+
+		@include xs_500 {
+			width: auto;
+			margin-bottom: 30px;
+		}
+
 		& p {
 			margin-bottom: get-vw(40px);
+
+			@include md_900 {
+				margin-bottom: 10px;
+			}
+
+			@include xs_500 {
+				margin-bottom: 10px;
+			}
 		}
 
 		& p:last-of-type {
@@ -25,21 +53,74 @@
 		padding: get-vw(60px) get-vw(80px);
 		background-color: $back;
 		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+		@include md_900 {
+			padding: 15px;
+			flex-wrap: wrap;
+		}
+
+		@include xs_500 {
+			padding: 15px;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
 		text-align: center;
 
+		@include md_900 {
+			width: 100%;
+			margin-bottom: 20px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		@include xs_500 {
+			width: 100%;
+			margin-bottom: 20px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
 		&-title {
 			margin-top: get-vw(30px);
+
+			@include md_900 {
+				margin-top: 5px;
+			}
+
+			@include xs_500 {
+				margin-top: 5px;
+			}
 		}
 
 		&-cost {
 			margin-top: get-vw(15px);
+
+			@include md_900 {
+				margin-top: 5px;
+			}
+
+			@include xs_500 {
+				margin-top: 5px;
+			}
 		}
 
 		&-more {
 			margin-top: get-vw(20px);
+
+			@include md_900 {
+				margin-top: 5px;
+			}
+
+			@include xs_500 {
+				margin-top: 5px;
+			}
 		}
 	}
 
@@ -52,5 +133,19 @@
 
 	&__slider {
 		width: get-vw(440px);
+
+		@include md_900 {
+			width: 100%;
+		}
+
+		@include xs_500 {
+			width: 100%;
+		}
+	}
+
+	&-tree {
+		position: absolute;
+		left: 0;
+		bottom: 0%;
 	}
 }
