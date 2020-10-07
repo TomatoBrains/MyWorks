@@ -15,17 +15,13 @@
 @keyframes blink {
 	0% {
 		left: -30px;
-		margin-left: 0px;
+		transform: translate(0, 0) rotate(45deg);
 	}
 
-	30% {
-		left: 110%;
-		margin-left: 80px;
-	}
 
 	100% {
 		left: 110%;
-		margin-left: 80px;
+		transform: translate(305px, 0) rotate(45deg);
 	}
 }
 

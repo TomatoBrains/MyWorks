@@ -13,12 +13,12 @@
 
 	@include md_900 {
 		width: 280px;
-		padding: 10px;
+		padding: 25px;
 	}
 
 	@include xs_500 {
-		width: 280px;
-		padding: 10px;
+		/* width: 280px; */
+		padding: 15px;
 	}
 
 	& p {
@@ -29,7 +29,7 @@
 		}
 
 		@include xs_500 {
-			font-size: 28px;
+			/* font-size: 28px; */
 		}
 	}
 
@@ -39,14 +39,14 @@
 		}
 
 		@include xs_500 {
-			font-size: 24px;
+			/* font-size: 24px; */
 		}
 	}
 
 	&-close {
 		position: absolute;
 		width: 23px;
-		top: 5%;
+		top: 8%;
 		right: 5%;
 		cursor: pointer;
 	}

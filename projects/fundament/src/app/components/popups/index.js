@@ -1,4 +1,14 @@
 import $ from 'jquery';
+$('.catalogBtn').on('click', function () {
+	$('.form-popupMainBtn').fadeIn();
+	$('.popup-background').fadeIn();
+	$('html').addClass('overflowHidden');
+});
+$(".form-popupMainBtn-close").on('click', function () {
+	$('.form-popupMainBtn').fadeOut();
+	$('.popup-background').fadeOut();
+	$('html').removeClass('overflowHidden');
+});
 $(".order").on('click', function () {
 	$('.form-popup').fadeIn();
 	$('.popup-background').fadeIn();
@@ -7,6 +17,7 @@ $(".order").on('click', function () {
 $(".popup-background").on('click', function () {
 	$('.form-popup').fadeOut();
 	$('.popup-background').fadeOut();
+	$('.form-popupMainBtn').fadeOut();
 	$('.more').fadeOut();
 	$('.popup-terms').fadeOut();
 	$('html').removeClass('overflowHidden');
@@ -44,6 +55,7 @@ $("form").on("submit", function (e) {
 	$('.popup-background').fadeIn();
 	$('.endForm').fadeIn();
 	$("html").addClass("overflowHidden");
+	$('.form-popup').fadeOut();
 });
 $('.endForm-close').on('click', function () {
 	$('.endForm').fadeOut();

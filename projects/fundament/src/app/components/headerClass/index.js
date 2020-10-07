@@ -5,10 +5,15 @@ $(window).on("scroll",
 	}
 ) */
 $(window).scroll(function () {
-	if ($(window).scrollTop() != 0) {
-		$('.header').addClass('header-back')
+	if ($(window).innerWidth() > 992) {
+		if ($(window).scrollTop() != 0) {
+			$('.header').addClass('header-back')
+		}
+		else {
+			$('.header').removeClass('header-back')
+		}
 	}
 	else {
-		$('.header').removeClass('header-back')
+		return
 	}
 });

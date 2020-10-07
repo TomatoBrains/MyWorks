@@ -17,10 +17,10 @@
 			margin-top: 30px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			padding: 15px;
 			margin-top: 30px;
-		}
+		} */
 	}
 
 	&__content {
@@ -31,13 +31,29 @@
 		&-item {
 			width: get-vw(612px);
 			text-align: center;
+			position: relative;
 
 			@include md_900 {
-				width: auto;
+				width: 45%;
 			}
 
 			@include xs_500 {
 				width: auto;
+			}
+
+			& button {
+				position: absolute;
+				bottom: 5vw;
+				left: 50%;
+				transform: translate(-50%);
+
+				@include md_900 {
+					bottom: 30%;
+				}
+
+				@include xs_500 {
+					bottom: 25%;
+				}
 			}
 
 			& p {

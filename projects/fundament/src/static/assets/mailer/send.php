@@ -6,12 +6,28 @@ require 'class.smtp.php';
 $phone = $_POST['phone'];
 $name = $_POST['name'];
 $title = $_POST['title'];
+$email = $_POST['email'];
 
 
 
-
-
+$tms = " <br> Выберите услугу: - ".$_POST['group'];
 $name = " <br> Имя - ".$_POST['name'];
+$rtime = "<br> В который раз: -".$_POST['time'];
+$email = "<br> Email - ".$_POST['email']; 
+$adress = "<br> Адрес -".$_POST['adress'];
+$delivery = "<br> Нужнали доставка -".$_POST['delivery'];
+
+
+
+
+$q1 = ( $_POST['group'] ? $tms : ' ');
+$q2 = ( $_POST['name'] ?  $name : ' ');
+$q3 = ( $_POST['time'] ? $rtime : ' ');
+$q4 = ( $_POST['email'] ? $email : ' ');
+$q5 = ( $_POST['adress'] ? $adress : ' ');
+$q6 = ( $_POST['delivery'] ? $delivery : ' ');
+
+
 
 // Настройки
 $mail = new PHPMailer;

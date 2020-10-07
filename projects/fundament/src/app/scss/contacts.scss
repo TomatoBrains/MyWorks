@@ -54,25 +54,26 @@
 			right: 10%;
 			top: 0;
 			padding: get-vw(26px) get-vw(62px) get-vw(26px) get-vw(62px);
+			width: get-vw(415px);
 
 			@include md_900 {
 				position: static;
 				height: auto;
 				padding: 15px 20px;
 				margin: 30px auto 0 auto;
-				width: 280px;
+				width: 350px;
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 				border-radius: 10px;
 			}
 
 			@include xs_500 {
-				position: static;
+				/* position: static;
 				height: auto;
 				padding: 15px 20px;
-				margin: 30px auto 0 auto;
+				margin: 30px auto 0 auto; */
 				width: 280px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-				border-radius: 10px;
+				/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				border-radius: 10px; */
 			}
 		}
 
@@ -205,6 +206,12 @@
 		}
 
 		&-form {
+			& .input-wrap {
+				& span {
+					top: -9px;
+				}
+			}
+
 			& button {
 				width: 100%;
 				margin-bottom: get-vw(20px);

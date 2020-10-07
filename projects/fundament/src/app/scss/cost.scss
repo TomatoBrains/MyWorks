@@ -5,6 +5,11 @@
 	background-size: cover;
 	position: relative;
 
+	@include xs_500 {
+		padding-bottom: 110px;
+		z-index: 1;
+	}
+
 	&__title {
 		text-align: center;
 	}
@@ -17,12 +22,12 @@
 		@include md_900 {
 			flex-wrap: wrap;
 			margin-top: 30px;
-			justify-content: center;
+			justify-content: flex-end;
 		}
 
 		@include xs_500 {
-			flex-wrap: wrap;
-			margin-top: 30px;
+			/* flex-wrap: wrap;
+			margin-top: 30px; */
 			justify-content: center;
 		}
 	}
@@ -49,16 +54,16 @@
 					width: auto;
 					margin-top: 15px;
 					margin-left: 0;
-					flex-direction: column;
+					flex-direction: row;
 					margin-left: 15px;
 				}
 
 				@include xs_500 {
-					width: auto;
+					/* width: auto;
 					margin-top: 15px;
-					margin-left: 0;
+					margin-left: 0; */
 					flex-direction: column;
-					margin-left: 15px;
+					/* margin-left: 15px; */
 				}
 
 
@@ -70,11 +75,11 @@
 
 					@include md_900 {
 						margin-bottom: 20px;
-						width: auto;
+						width: 50%;
 					}
 
 					@include xs_500 {
-						margin-bottom: 20px;
+						/* margin-bottom: 20px; */
 						width: auto;
 					}
 				}
@@ -86,39 +91,43 @@
 
 			@include md_900 {
 				margin-top: 15px;
-				margin-bottom: 15px;
+				margin-bottom: 25px;
 			}
 
 			@include xs_500 {
-				margin-top: 15px;
+				/* 	margin-top: 15px; */
 				margin-bottom: 15px;
 			}
 		}
 	}
 
+	&__form {
+		position: relative;
+
+		@include xs_500 {
+			margin-top: 350px;
+		}
+	}
+
 	&-men {
 		position: absolute;
-		right: 32%;
+		right: 92%;
 		bottom: 0;
 		width: get-vw(470px);
 
 		@include md_900 {
-			position: relative;
-			width: 280px;
-			margin: 20px auto 0 auto;
-			right: unset;
-			bottom: -7px;
-			display: block;
+			width: calc(220px + (400 - 220) * ((100vw - 320px) / (992 - 320)));
 		}
 
+
 		@include xs_500 {
-			position: relative;
-			width: 280px;
-			margin: 20px auto 0 auto;
-			right: unset;
-			bottom: -7px;
-			display: block;
+			top: -84%;
+			right: 0;
+			position: absolute;
+			width: 250px;
+			z-index: -1;
 		}
+
 	}
 
 	&-treeL {
@@ -127,6 +136,10 @@
 		bottom: -42%;
 		width: get-vw(230px);
 		z-index: 3;
+
+		@include md_900 {
+			display: none;
+		}
 	}
 
 	&-treeR {

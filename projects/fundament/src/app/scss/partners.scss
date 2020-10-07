@@ -56,13 +56,14 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 		@include md_900 {
-			padding: 15px;
+			padding: 20px;
 			flex-wrap: wrap;
+			justify-content: space-between;
 		}
 
 		@include xs_500 {
 			padding: 15px;
-			flex-wrap: wrap;
+			/* flex-wrap: wrap; */
 		}
 	}
 
@@ -70,11 +71,11 @@
 		text-align: center;
 
 		@include md_900 {
-			width: 100%;
+			width: 45%;
 			margin-bottom: 20px;
 
 			&:last-of-type {
-				margin-bottom: 0;
+				margin: 10px auto 0 auto;
 			}
 		}
 
@@ -147,5 +148,10 @@
 		position: absolute;
 		left: 0;
 		bottom: 0%;
+
+		@include md_900 {
+			width: 60px;
+		}
+
 	}
 }

@@ -60,6 +60,7 @@
 				<p class="txt18 grey">Заполните форму, и мы вышлем <br>
 					вам расчет в течение 5 минут</p>
 				<form action="" class="form">
+					<input type="hidden" name="title" value="Форма получения расчёта">
 					<span class="input-file">
 						<input type="file" name="file" id="input-file" class="inputfile"
 							data-multiple-caption="{count} файлов выбрано" multiple />
@@ -74,13 +75,14 @@
 					</span>
 					<span class="input-wrap">
 						<span><img src="img/svg/user.svg" alt=""></span>
-						<input required class="input" type="name" placeholder="Введите ваше имя"></span>
+						<input required name="name" class="input" type="name" placeholder="Введите ваше имя"></span>
 					<span class="input-wrap">
 						<span><img src="img/svg/phone1.svg" alt=""></span>
-						<input required class="input inputTel" type="tel" placeholder="Введите ваш номер"></span>
+						<input required name="phone" class="input inputTel" type="tel"
+							placeholder="Введите ваш номер"></span>
 					<button class="mainBtn txt16 bold">Получить рассчёт</button>
 				</form>
-				<p class="txt13">Нажимая на кнопку, вы соглашаетесь <br>
+				<p class="txt13 center">Нажимая на кнопку, вы соглашаетесь <br>
 					на <span class="blue underline terms">обработку персональных данных</span></p>
 			</div>
 			<div class="steps__payment-descrR">

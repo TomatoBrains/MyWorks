@@ -17,9 +17,9 @@
 		padding: 10px;
 	}
 
-	@include xs_500 {
+	/* @include xs_500 {
 		padding: 10px;
-	}
+	} */
 
 	&::-webkit-scrollbar {
 		/* chrome based */
@@ -38,10 +38,10 @@
 			margin-top: 20px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			margin-bottom: 10px;
 			margin-top: 20px;
-		}
+		} */
 	}
 
 	&__descr {
@@ -49,11 +49,12 @@
 
 		@include md_900 {
 			flex-wrap: wrap;
+			justify-content: center;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			flex-wrap: wrap;
-		}
+		} */
 
 		& p {
 			line-height: 1.33;
@@ -64,9 +65,9 @@
 				margin-bottom: 10px;
 			}
 
-			@include xs_500 {
+			/* @include xs_500 {
 				margin-bottom: 10px;
-			}
+			} */
 		}
 
 		& img {
@@ -79,11 +80,11 @@
 				margin-bottom: 10px;
 			}
 
-			@include xs_500 {
+			/* @include xs_500 {
 				margin-right: 0;
 				width: auto;
 				margin-bottom: 10px;
-			}
+			} */
 		}
 	}
 
@@ -183,11 +184,17 @@
 			width: get-vw(350px);
 
 			@include md_900 {
-				width: 280px;
+				width: 350px;
 			}
 
 			@include xs_500 {
 				width: 280px;
+			}
+
+			& .input-wrap {
+				& span {
+					top: -9px;
+				}
 			}
 
 			& button {
@@ -209,18 +216,21 @@
 	}
 
 	&-close {
-		width: get-vw(30px);
-		position: absolute;
-		right: 3%;
-		top: 3%;
+		position: sticky;
+		bottom: 100%;
+		left: 100%;
 		cursor: pointer;
 
-		@include md_900 {
-			width: 15px;
-		}
+		& img {
+			width: get-vw(30px);
 
-		@include xs_500 {
-			width: 15px;
+			@include md_900 {
+				width: 25px;
+			}
+
+			@include xs_500 {
+				width: 15px;
+			}
 		}
 	}
 

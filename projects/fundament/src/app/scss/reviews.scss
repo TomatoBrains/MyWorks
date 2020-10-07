@@ -39,11 +39,11 @@
 				margin-bottom: 15px;
 			}
 
-			@include xs_500 {
+			/* @include xs_500 {
 				width: auto;
 				margin-right: 0;
 				margin-bottom: 15px;
-			}
+			} */
 		}
 
 		&-prev {
@@ -54,9 +54,9 @@
 				margin-top: 10px;
 			}
 
-			@include xs_500 {
+			/* @include xs_500 {
 				margin-top: 10px;
-			}
+			} */
 
 			& a {
 				width: 23.8%;
@@ -67,9 +67,9 @@
 					margin-right: 5px;
 				}
 
-				@include xs_500 {
+				/* @include xs_500 {
 					margin-right: 5px;
-				}
+				} */
 			}
 
 			& a:last-of-type {
@@ -89,14 +89,14 @@
 
 		@include md_900 {
 			flex-wrap: wrap;
-			padding: 15px 15px 40px 15px;
+			padding: 20px 20px 50px 20px;
 			margin-top: 30px;
 		}
 
 		@include xs_500 {
-			flex-wrap: wrap;
+			/* flex-wrap: wrap; */
 			padding: 15px 15px 40px 15px;
-			margin-top: 30px;
+			/* margin-top: 30px; */
 		}
 	}
 
@@ -114,7 +114,7 @@
 
 			@include md_900 {
 				right: 7%;
-				top: 2%;
+				top: 0;
 			}
 
 			@include xs_500 {
@@ -172,17 +172,44 @@
 	&__descr {
 		position: relative;
 
+		@include md_900 {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		@include xs_500 {
+			display: block;
+		}
+
+		&-title {
+			@include md_900 {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			@include xs_500 {
+				width: auto;
+				text-align: left;
+				margin-bottom: 0;
+			}
+		}
+
 		&-param {
 			display: flex;
 			flex-wrap: wrap;
 			margin-top: get-vw(30px);
 
 			@include md_900 {
-				margin-top: 15px;
+				margin-top: 0;
+				width: 45%;
+				align-content: space-between;
 			}
 
 			@include xs_500 {
 				margin-top: 15px;
+				width: auto;
 			}
 		}
 
@@ -205,8 +232,7 @@
 				opacity: 0.48;
 
 				@include md_900 {
-					width: 20px;
-
+					width: 40px;
 					margin-right: 10px;
 				}
 
@@ -227,11 +253,13 @@
 			margin-top: get-vw(45px);
 
 			@include md_900 {
-				margin-top: 20px;
+				margin-top: 0;
+				width: 45%;
 			}
 
 			@include xs_500 {
 				margin-top: 20px;
+				width: auto;
 			}
 
 			& p {
@@ -257,6 +285,7 @@
 			@include md_900 {
 				margin-top: 20px;
 				text-align: center;
+				width: 100%;
 			}
 
 			@include xs_500 {

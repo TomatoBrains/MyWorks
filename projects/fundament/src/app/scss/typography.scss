@@ -1,0 +1,115 @@
+.h60 {
+	@include vw(60px);
+
+	@include md_900 {
+		font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.h44 {
+	@include vw(44px);
+
+	@include md_900 {
+		font-size: calc(20px + (44 - 20) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.h34 {
+	@include vw(34px);
+
+	@include md_900 {
+		font-size: calc(18px + (34 - 18) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt100 {
+	@include vw(100px);
+
+	@include md_900 {
+		font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt72 {
+	@include vw(72px);
+
+	@include md_900 {
+		font-size: calc(36px + (72 - 36) * ((100vw - 320px) / (992 - 320)));
+	}
+
+	font-weight: bold;
+}
+
+.txt50 {
+	@include vw(50px);
+
+	@include md_900 {
+		font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt34 {
+	@include vw(34px);
+
+	@include md_900 {
+		font-size: calc(20px + (34 - 20) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt28 {
+	@include vw(28px);
+
+	@include md_900 {
+		font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt24 {
+	@include vw(24px);
+
+	@include md_900 {
+		font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt20 {
+	@include vw(20px);
+
+	@include md_900 {
+		font-size: calc(14.5px + (20 - 14.5) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt18 {
+	@include vw(18px);
+	line-height: 1.33;
+	letter-spacing: 0.36px;
+
+	@include md_900 {
+		font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt16 {
+	@include vw(16px);
+
+	@include md_900 {
+		font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt14 {
+	@include vw(14px);
+
+	@include md_900 {
+		font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (992 - 320)));
+	}
+}
+
+.txt13 {
+	@include vw(13px);
+
+	@include md_900 {
+		font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (992 - 320)));
+	}
+}

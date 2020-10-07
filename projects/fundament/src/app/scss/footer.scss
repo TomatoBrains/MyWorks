@@ -1,13 +1,15 @@
 .footer {
 	padding: get-vw(50px) 0;
 
+	@include md_900 {
+		padding: 30px 0 20px 0;
+	}
+
 	&__content {
 		display: flex;
 		justify-content: space-between;
 
 		@include md_900 {
-			flex-direction: column;
-
 			& br {
 				display: block;
 			}
@@ -26,7 +28,6 @@
 
 			@include md_900 {
 				margin-bottom: 5px;
-				flex: unset;
 			}
 
 			@include xs_500 {

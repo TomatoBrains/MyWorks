@@ -21,10 +21,10 @@
 			margin-bottom: 20px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			width: auto;
 			margin-bottom: 20px;
-		}
+		} */
 	}
 
 	&__descr {
@@ -34,12 +34,19 @@
 		@include md_900 {
 			width: auto;
 			margin-bottom: 20px;
+
+			& p {
+				background-color: #ffffff7a;
+				border-radius: 20px;
+				background-clip: text;
+				padding: 10px;
+			}
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			width: auto;
 			margin-bottom: 20px;
-		}
+		} */
 	}
 
 	&__download {
@@ -50,7 +57,7 @@
 			padding: get-vw(20px) get-vw(55px);
 
 			@include md_900 {
-				padding: 10px 20px;
+				padding: 15px 35px;
 			}
 
 			@include xs_500 {
@@ -65,15 +72,15 @@
 			pointer-events: none;
 
 			@include md_900 {
-				width: 130px;
+				width: 170px;
 				top: -28%;
 				left: 90%;
 			}
 
 			@include xs_500 {
 				width: 130px;
-				top: -28%;
-				left: 90%;
+				/* top: -28%;
+				left: 90%; */
 			}
 		}
 	}
@@ -88,11 +95,11 @@
 			margin-top: 30px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			flex-wrap: wrap;
 			justify-content: space-between;
 			margin-top: 30px;
-		}
+		} */
 
 		&-item {
 			margin-right: get-vw(20px);
@@ -111,10 +118,9 @@
 			@include md_900 {
 				margin: 0;
 				margin-bottom: 15px;
-				width: auto;
-				height: 90px;
-				width: 45%;
-				padding: 0 2px;
+				width: 24%;
+				height: 120px;
+				padding: 0 10px;
 			}
 
 			@include xs_500 {
@@ -150,9 +156,9 @@
 			width: 111px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			width: 111px;
-		}
+		} */
 	}
 
 	&-leftTreeUp {
@@ -166,9 +172,9 @@
 			width: 111px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			width: 111px;
-		}
+		} */
 	}
 
 	&-rightTreeUp {
@@ -182,9 +188,9 @@
 			width: 90px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			width: 90px;
-		}
+		} */
 	}
 
 	&-rightTreeDown {
@@ -199,10 +205,10 @@
 			display: none;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			width: 80px;
 			display: none;
-		}
+		} */
 	}
 
 	&-cloud {
@@ -214,8 +220,8 @@
 			bottom: -1px;
 		}
 
-		@include xs_500 {
+		/* @include xs_500 {
 			bottom: -1px;
-		}
+		} */
 	}
 }
