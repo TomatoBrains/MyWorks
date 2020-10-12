@@ -30,7 +30,8 @@ $('.reviews__slider-main').slick({
 	centerPadding: '20%',
 	variableWidth: true,
 	//infinite: false,
-	responsive: [{
+	// Почему-то ломает кнопку внутри слайдера, она просто не нажимается
+	/* responsive: [{
 		breakpoint: 993,
 		settings: {
 			slidesToShow: 1,
@@ -40,8 +41,7 @@ $('.reviews__slider-main').slick({
 			dots: true,
 			arrows: false,
 		},
-	},
-	],
+	},] */
 });
 //partners slider
 $('.partners__slider-1').slick({

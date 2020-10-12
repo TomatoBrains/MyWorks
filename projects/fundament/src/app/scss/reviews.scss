@@ -105,7 +105,16 @@
 			position: relative;
 		}
 
-
+&-arrowR {
+	@include md_900 {
+		display: none !important;
+	}
+}
+&-arrowL {
+	@include md_900 {
+		display: none !important;
+	}
+}
 		&-pagin {
 			position: absolute;
 			right: 16%;
@@ -138,7 +147,11 @@
 			& .slick-track {
 				display: flex !important;
 			}
-
+& .slick-list {
+	@include md_900 {
+		padding: 0;
+	}
+}
 			& .slick-slide {
 				transform: scale(0.8);
 				transition: all 0.3s ease;
@@ -146,12 +159,12 @@
 
 				@include md_900 {
 					transform: unset;
-					width: auto !important;
+					 width: 100vw !important; 
 				}
 
 				@include xs_500 {
 					transform: unset;
-					width: auto !important;
+					/* width: auto !important; */
 				}
 			}
 

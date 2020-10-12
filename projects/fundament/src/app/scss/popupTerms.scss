@@ -35,17 +35,20 @@
 }
 
 .terms-close {
-	width: get-vw(30px);
-	position: absolute;
-	right: 3%;
-	top: 3%;
+	position: sticky;
+	bottom: 100%;
+	left: 100%;
 	cursor: pointer;
 
-	@include md_900 {
-		width: 15px;
-	}
+	& img {
+		width: get-vw(30px);
 
-	@include xs_500 {
-		width: 15px;
+		@include md_900 {
+			width: 25px;
+		}
+
+		@include xs_500 {
+			width: 15px;
+		}
 	}
 }

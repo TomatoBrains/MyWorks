@@ -12,7 +12,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SvgStore = require('webpack-svgstore-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 /* const imageminMozjpeg = require('imagemin-mozjpeg'); */
-const ImageminPlugin = require("imagemin-webpack-plugin").default;
+/* const ImageminPlugin = require("imagemin-webpack-plugin").default; */
 const PostCSSAssetsPlugin = require('postcss-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -117,17 +117,11 @@ let webpackPlugins = [
 		log: true,
 		plugins: postCssPlugins
 	}),
-	new ImageminPlugin({
+	/* new ImageminPlugin({
 		pngquant: {
-			quality: "65-80",
+			quality: "30-50",
 		},
-		/* plugins: [
-			imageminMozjpeg({
-				quality: 80,
-				progressive: true
-			})
-		] */
-	}),
+	}), */
 	...htmlPagesGenerated,
 ];
 

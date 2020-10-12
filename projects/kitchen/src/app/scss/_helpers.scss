@@ -1,0 +1,70 @@
+.padTop{
+	@include adap(padding-top,30px,$padTop)
+}
+.padTopBig {
+	@include adap(padding-top,40px,$padTopBig)
+}
+.padBot {
+	@include adap(padding-bottom,30px,$padBot)
+}
+.padBotBig {
+	@include adap(padding-bottom,40px,$padBotBig)
+}
+.marR {
+	@include adap(margin-right,10px,$marR)
+}
+.colorM {
+	color: $colorMain;
+}
+.colorM2 {
+	color: $colorMain2;
+}
+.ttlMarBot {
+	@include adap(margin-bottom,20px,$ttlMarBot)
+}
+.bold {
+	font-weight: bold;
+}
+.med {
+	font-weight: 500;
+}
+.container {
+	@include adap(padding-right,15px,180px);
+	@include adap(padding-left,15px,180px);
+}
+.fontG {
+	font-family: "Gilroy";
+}
+.fontO {
+	font-family: "Oranienbaum-Regular";
+}
+.fontAi {
+	font-family:"Athelas-Italic" ;
+	font-style: italic;
+}
+.fontAb {
+	font-family:"Athelas-Bold" ;
+	font-weight: bold;
+}
+.underline {
+	text-decoration: underline;
+}
+.mainBtn {
+	@include mainBtn;
+	@include mainBtnHover;
+	@include mainBtnBlick;
+}
+.paginColor {
+	color:$paginColor;
+}
+.paginBlack {
+	color: #28190b;
+}
+.paginFlex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.white {
+	color: #fff;
+}

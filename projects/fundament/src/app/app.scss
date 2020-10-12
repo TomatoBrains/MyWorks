@@ -165,6 +165,21 @@ br {
 	}
 }
 
+.slick-slide {
+	height: auto;
+}
+
+.cls-20 {
+	fill: #d5d5d5;
+	fill-rule: evenodd;
+	opacity: 0.48;
+}
+
+.cls-10 {
+	fill: #ff7c00;
+	fill-rule: evenodd;
+}
+
 @import "app/_scss-core/_core";
 
 @import "scss/helpers";

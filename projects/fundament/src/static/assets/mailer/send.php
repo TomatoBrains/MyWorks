@@ -35,8 +35,8 @@ $mail->CharSet = 'utf-8';
 // $mail->isSMTP(); 
 $mail->Host = 'smtp.gmail.com';  
 $mail->SMTPAuth = true;                      
-$mail->Username = 'pincetbrestbot@gmail.com'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-$mail->Password = 'gfhjkmlkzgbywtn,htcn,jn'; // Ваш пароль
+$mail->Username = 'apollonmailbot@gmail.com'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+$mail->Password = 'apollon321mail123bot'; // Ваш пароль
 $mail->SMTPSecure = 'ssl';                            
 $mail->Port = 465;
 $mail->setFrom('pincetbrestbot@gmail.com', 'Форма с сайта'); // Ваш Email

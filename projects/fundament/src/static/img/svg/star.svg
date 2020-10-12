@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
-  <defs>
-    <style>
-      .cls-1 {
+	<defs>
+		<style>
+      .cls-10 {
         fill: #ff7c00;
         fill-rule: evenodd;
       }
-    </style>
-  </defs>
-  <path id="Многоугольник_1" data-name="Многоугольник 1" class="cls-1" d="M1567,3230.17l-4.67,4.36,0.59,7.39-5.92-3.31-6.44,3.39,1.11-7.47-4.67-4.22,6.67-1.2,3.49-6.11,3.17,6.11Z" transform="translate(-1547 -3223)"/>
+		</style>
+	</defs>
+	<path id="Многоугольник_10" data-name="Многоугольник 10" class="cls-10" d="M1567,3230.17l-4.67,4.36,0.59,7.39-5.92-3.31-6.44,3.39,1.11-7.47-4.67-4.22,6.67-1.2,3.49-6.11,3.17,6.11Z" transform="translate(-1547 -3223)"/>
 </svg>

@@ -10,6 +10,7 @@ $(".form-popupMainBtn-close").on('click', function () {
 	$('html').removeClass('overflowHidden');
 });
 $(".order").on('click', function () {
+	debugger
 	$('.form-popup').fadeIn();
 	$('.popup-background').fadeIn();
 	$('html').addClass('overflowHidden');
@@ -28,16 +29,7 @@ $(".form-close").on('click', function () {
 	$('.popup-background').fadeOut();
 	$('html').removeClass('overflowHidden');
 });
-$(".more-btn").on('click', function () {
-	$('.more').fadeIn();
-	$('.popup-background').fadeIn();
-	$('html').addClass('overflowHidden');
-});
-$(".more-close").on('click', function () {
-	$('.more').fadeOut();
-	$('.popup-background').fadeOut();
-	$('html').removeClass('overflowHidden');
-});
+
 $('.terms').on('click', function () {
 	$('.popup-terms').fadeIn();
 	$('.popup-background').fadeIn();
@@ -50,15 +42,29 @@ $(".terms-close").on('click', function () {
 	$('.popup-background').fadeOut();
 	$('html').removeClass('overflowHidden');
 });
-$("form").on("submit", function (e) {
+/* $("form").on("submit", function (e) {
 	//$('.popup-background').fadeIn();
 	$('.popup-background').fadeIn();
 	$('.endForm').fadeIn();
 	$("html").addClass("overflowHidden");
 	$('.form-popup').fadeOut();
-});
+	$('.form-popupMainBtn').fadeOut();
+}); */
 $('.endForm-close').on('click', function () {
 	$('.endForm').fadeOut();
 	$('.popup-background').fadeOut();
 	$('html').removeClass('overflowHidden');
 });
+
+$(".more-close").on('click', function () {
+	$('.more').fadeOut();
+	$('.popup-background').fadeOut();
+	$('html').removeClass('overflowHidden');
+});
+
+let more = $(".more");
+$(".more-btn").on('click', function () {
+	more.filter($(this).data("more")).fadeIn();
+	$('.popup-background').fadeIn();
+	$('html').addClass('overflowHidden');
+})

@@ -106,21 +106,21 @@
 	}
 
 	@include xs_500 {
-		width: 25px;
-		height: 25px;
+		width: 30px;
+		height: 30px;
 	}
 
 	& img {
-		width: get-vw(40px);
-		height: get-vw(40px);
+		width: get-vw(30px);
+		height: get-vw(35px);
 
 		@include md_900 {
-			width: 35px;
+			width: 30px;
 			height: 35px;
 		}
 
 		@include xs_500 {
-			width: 25px;
+			width: 20px;
 			height: 25px;
 		}
 	}
@@ -194,12 +194,12 @@
 	}
 
 	& img {
-		width: get-vw(45px);
+		/* width: get-vw(45px); */
 		height: get-vw(45px);
 		padding: get-vw(9px);
 
 		@include xs_500 {
-			width: 25px;
+			/* width: 25px; */
 			height: 25px;
 			padding: 5px;
 		}

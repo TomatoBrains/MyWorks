@@ -1,18 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19" viewBox="0 0 20 19">
-  <defs>
-    <style>
-      .cls-1 {
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19" viewBox="0 0 20 19">
+	<defs>
+		<style>
+      .cls-20 {
         fill: #ff7c00;
         fill-rule: evenodd;
         opacity: 0.48;
         filter: url(#filter);
       }
-    </style>
-    <filter id="filter" x="1644" y="3223" width="20" height="19" filterUnits="userSpaceOnUse">
-      <feImage preserveAspectRatio="none" x="1644" y="3223" width="20" height="19" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAyMCAxOSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxMCIgeTE9IjE5IiB4Mj0iMTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSItMC4yNSIgc3RvcC1jb2xvcj0iI2Y1ZjlmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEuMjUiIHN0b3AtY29sb3I9IiNiNGQzZTkiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE5Ii8+Cjwvc3ZnPgo="/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
-  </defs>
-  <path id="Многоугольник_1" data-name="Многоугольник 1" class="cls-1" d="M1664,3230.17l-4.67,4.36,0.59,7.39-5.92-3.31-6.44,3.39,1.11-7.47-4.67-4.22,6.67-1.2,3.49-6.11,3.17,6.11Z" transform="translate(-1644 -3223)"/>
+		</style>
+		<filter id="filter" x="1644" y="3223" width="20" height="19" filterUnits="userSpaceOnUse">
+			<feImage preserveAspectRatio="none" x="1644" y="3223" width="20" height="19" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAyMCAxOSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxMCIgeTE9IjE5IiB4Mj0iMTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSItMC4yNSIgc3RvcC1jb2xvcj0iI2Y1ZjlmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEuMjUiIHN0b3AtY29sb3I9IiNiNGQzZTkiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE5Ii8+Cjwvc3ZnPgo="/>
+			<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+			<feBlend result="blend" in2="SourceGraphic"/>
+		</filter>
+	</defs>
+	<path id="Многоугольник_20" data-name="Многоугольник 10" class="cls-20" d="M1664,3230.17l-4.67,4.36,0.59,7.39-5.92-3.31-6.44,3.39,1.11-7.47-4.67-4.22,6.67-1.2,3.49-6.11,3.17,6.11Z" transform="translate(-1644 -3223)"/>
 </svg>
