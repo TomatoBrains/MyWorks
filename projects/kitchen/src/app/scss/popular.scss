@@ -1,0 +1,71 @@
+.popular {
+  &__title {
+    text-align: center;
+    & p {
+      @include adap(margin-top, 10px, 30px);
+    }
+  }
+  &__tabBtn {
+    @include adap(margin-top, 15px, 60px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & a {
+      @include adap(margin-right, 5px, 20px);
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  &__tabs {
+    position: relative;
+  }
+  &__slider {
+    padding: 0 vw(100px);
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: vw(10px) vw(10px) 0 vw(10px);
+      border-radius: 10px;
+      box-shadow: 6.9px 1.3px 22.3px 1.7px rgba(49, 49, 49, 0.1);
+      height: vw(680px);
+      & img {
+        height: vw(400px);
+        width: vw(500px);
+        border-radius: 10px;
+      }
+      & p {
+        @include adap(margin-top, 10px, 35px);
+        @include adap(margin-left, 5px, 40px);
+        &:last-of-type {
+          @include adap(margin-top, 5px, 15px);
+        }
+      }
+    }
+    &-more {
+      @include adap(margin-top, 25px, 50px);
+      text-align: center;
+      & button {
+        padding: vw(20px) vw(55px);
+        cursor: pointer;
+      }
+    }
+    & .slick-track {
+      @include adap(margin-bottom, 10px, 50px);
+      @include adap(margin-top, 10px, 50px);
+    }
+    & .slick-slide {
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+    }
+    & .slick-cloned {
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+    }
+    .slick-current {
+      transform: scale(1) !important;
+    }
+  }
+}

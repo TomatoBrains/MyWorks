@@ -1,0 +1,57 @@
+.about {
+  background-image: url(../img/about/back.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  &__title {
+    @include adap(margin-top, 30px, 150px);
+  }
+  &__descr {
+    padding: vw(10px);
+    background: #fff;
+    border-radius: 20px;
+    width: vw(890px);
+    @include adap(margin-top, 30px, 100px);
+    &-content {
+      background: #fff;
+      border-radius: 20px;
+      padding: vw(50px) vw(45px) vw(30px) vw(45px);
+      border: 1px solid #e8e8e8;
+      & > p {
+        @include adap(margin-bottom, 10px, 20px);
+      }
+      & span {
+        display: flex;
+        justify-content: flex-end;
+        @include adap(margin-top, 15px, 30px);
+        & p {
+          text-align: left;
+        }
+      }
+    }
+    &-sign {
+      position: absolute;
+      width: vw(420px);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 6.9px 1.3px 22.3px 1.7px rgba(49, 49, 49, 0.06);
+      transform: skew(-15deg);
+      padding: vw(15px);
+      right: 12%;
+      bottom: 9%;
+    }
+  }
+  &-men {
+    position: relative;
+    top: 0;
+    z-index: -1;
+    right: 23%;
+    height: 100%;
+  }
+  & .pagin {
+    right: vw(180px);
+  }
+}

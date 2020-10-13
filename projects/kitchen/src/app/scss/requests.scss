@@ -1,0 +1,64 @@
+.requests {
+	background-image: url(../img/requests/back.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&__title {
+		text-align: center;
+	}
+	&__cards {
+		position: relative;
+		margin: 0 auto;
+		@include adap(margin-top,30px,55px);
+		width: vw(1300px);
+		&-item {
+			padding:10px;
+			background-color:#f4efea;
+			border-radius: 30px;
+			box-shadow: 7.9px 1.5px 17.9px 3.2px rgba(0, 0, 0, 0.07);
+			position: relative;
+			@include adap(margin-bottom,15px,40px);
+			
+		}
+		&-content {
+			height: vw(180px);
+			background-color:#f4efea;
+			border-radius: 30px;
+			border: 1px solid #c4c4c4;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			@include adap(padding-top,10px,50px);
+			@include adap(padding-bottom,10px,60px);
+			@include adap(padding-left,10px,60px);
+			@include adap(padding-right,10px,50px);
+			& > img {
+				position: absolute;
+				bottom: 0;
+				left: 35%;
+			}
+		}
+		& form {
+			display: flex;
+			& span {
+				@include adap(margin-right,10px,30px);
+			}
+			& button {
+				@include adap(padding-left,10px,40px);
+				@include adap(padding-right,10px,40px);
+			}
+		}
+		&--absolute {
+			position: absolute;
+			left: -5%;
+			top: 0;
+			top:10%;
+		}
+		&--absolute2 {
+			bottom: -25% !important;
+		}
+	}
+}
+

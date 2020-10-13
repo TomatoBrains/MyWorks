@@ -1,70 +1,138 @@
-.padTop{
-	@include adap(padding-top,30px,$padTop)
+.padTop {
+  @include adap(padding-top, 30px, $padTop);
 }
 .padTopBig {
-	@include adap(padding-top,40px,$padTopBig)
+  @include adap(padding-top, 40px, $padTopBig);
 }
 .padBot {
-	@include adap(padding-bottom,30px,$padBot)
+  @include adap(padding-bottom, 30px, $padBot);
 }
 .padBotBig {
-	@include adap(padding-bottom,40px,$padBotBig)
+  @include adap(padding-bottom, 40px, $padBotBig);
 }
 .marR {
-	@include adap(margin-right,10px,$marR)
+  @include adap(margin-right, 10px, $marR);
 }
 .colorM {
-	color: $colorMain;
+  color: $colorMain;
 }
 .colorM2 {
-	color: $colorMain2;
+  color: $colorMain2;
 }
 .ttlMarBot {
-	@include adap(margin-bottom,20px,$ttlMarBot)
+  @include adap(margin-bottom, 20px, $ttlMarBot);
 }
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 .med {
-	font-weight: 500;
+  font-weight: 500;
 }
 .container {
-	@include adap(padding-right,15px,180px);
-	@include adap(padding-left,15px,180px);
+  @include adap(padding-right, 15px, 180px);
+  @include adap(padding-left, 15px, 180px);
 }
 .fontG {
-	font-family: "Gilroy";
+  font-family: "Gilroy";
 }
 .fontO {
-	font-family: "Oranienbaum-Regular";
+  font-family: "Oranienbaum-Regular";
+  font-weight: normal;
 }
 .fontAi {
-	font-family:"Athelas-Italic" ;
-	font-style: italic;
+  font-family: "Athelas-Italic";
+  font-style: italic;
+  font-weight: normal;
 }
 .fontAb {
-	font-family:"Athelas-Bold" ;
-	font-weight: bold;
+  font-family: "Athelas-Bold";
+  font-weight: bold;
 }
 .underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .mainBtn {
-	@include mainBtn;
-	@include mainBtnHover;
-	@include mainBtnBlick;
+  @include mainBtn;
+  @include mainBtnHover;
+  @include mainBtnBlick;
+}
+.pagin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 51%;
+  transform: translateY(-50%);
+  & a {
+    cursor: pointer;
+    @include adap(margin-bottom, 5px, 20px);
+    transition: text-shadow 0.3s ease;
+    &:hover {
+      text-shadow: 0 0 0.9px $paginColor, 0 0 0.9px $paginColor;
+    }
+    & span {
+      @include adap(margin-bottom, 5px, 20px);
+    }
+  }
+}
+.pagin-wrap {
+  position: relative;
 }
 .paginColor {
-	color:$paginColor;
+  color: $paginColor;
 }
 .paginBlack {
-	color: #28190b;
+  color: #28190b;
 }
 .paginFlex {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .white {
-	color: #fff;
+  color: #fff;
+}
+#input-file {
+  display: none;
+}
+.input-file {
+  @include input-file;
+}
+.tabBtn {
+  cursor: pointer;
+  background: unset;
+  border-radius: 10px;
+  border: 1px solid rgba(220, 150, 0, 0.67);
+  transition: all 0.3s ease;
+  @include adap(width, 75px, 250px);
+  @include adap(height, 35px, 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: $btnGrad;
+    box-shadow: inset 0 -4px 1px #d76a03;
+  }
+}
+.slider-pagin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > span {
+    border-radius: 50%;
+    background: $btnGrad;
+    width: vw(50px);
+    height: vw(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    &:hover {
+      box-shadow: inset 0px 4px 4px #fa8703;
+    }
+  }
+  & > p {
+    margin: 0 vw(45px);
+  }
 }

@@ -1,0 +1,57 @@
+.styles {
+  background-image: url(../img/styles/back.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &__title {
+    text-align: center;
+  }
+  &__cards {
+    position: relative;
+    @include adap(padding-left, 15px, 180px);
+    @include adap(padding-right, 15px, 180px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include adap(margin-top, 15px, 60px);
+
+    &-item {
+      position: relative;
+      width: vw(370px);
+      cursor: pointer;
+      @include adap(margin-right, 5px, 15px);
+      @include adap(margin-bottom, 5px, 15px);
+      transition: transform 0.3s ease;
+      z-index: 1;
+      &:hover {
+        transform: scale(1.15);
+        z-index: 2;
+      }
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+      &:nth-of-type(5n) {
+        background: $btnGrad;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        cursor: auto;
+        &:hover {
+          transform: unset;
+        }
+        & p {
+          text-align: center;
+          position: static;
+        }
+      }
+      & p {
+        position: absolute;
+        bottom: vw(30px);
+        left: vw(35px);
+      }
+    }
+  }
+}

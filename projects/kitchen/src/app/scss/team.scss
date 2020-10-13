@@ -1,0 +1,41 @@
+.team {
+  background-image: url(../img/team/back.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &__title {
+    text-align: center;
+  }
+  &__cards {
+    display: flex;
+    @include adap(margin-top, 30px, 50px);
+    padding: 0 vw(80px);
+    &-item {
+      background-color: #fff;
+      border-radius: 20px;
+      width: 33%;
+      padding-bottom: vw(20px);
+      @include adap(margin-right, 10px, 20px);
+      &:last-of-type {
+        margin-right: 0;
+      }
+      & img {
+        @include adap(margin-bottom, 10px, 25px);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+      }
+      & p {
+        @include adap(margin-left, 10px, 30px);
+        @include adap(margin-right, 10px, 30px);
+        &:nth-of-type(2) {
+          @include adap(margin-bottom, 10px, 15px);
+          @include adap(margin-top, 10px, 15px);
+        }
+      }
+    }
+    &-descr {
+    }
+  }
+}

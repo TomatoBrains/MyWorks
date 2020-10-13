@@ -20,9 +20,9 @@
 	}
 }
 @mixin mainBtn {
-	padding: get-vw(24px) get-vw(50px);
+	padding: vw(30px) vw(50px);
 	background: $btnGrad;
-	border-radius: 12px;
+	border-radius: 37.5px;
 	position: relative;
 	color: #000;
 	overflow: hidden;
@@ -79,5 +79,37 @@
 @mixin mainBtnHover {
 	&:hover {
 		box-shadow: inset 0px 4px 4px #fa8703;
+	}
+}
+@mixin input-file {
+	cursor: pointer;
+	& label {
+		display: flex;
+		justify-content: center;
+		outline: none;
+		border: none;
+		position: relative;
+		cursor: pointer;
+		padding: vw(30px) vw(50px);
+	border-radius: 37.5px;
+	position: relative;
+	color: #000;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	border: 1px solid rgba(135, 92, 1, 0.67);
+&:hover {
+	box-shadow: 0 0 0 2px #D2973D inset;
+}
+		 @include md_900 {
+			padding: 15px 0;
+			padding-left: 11px;
+			margin-bottom: 15px;
+		}
+
+		@include xs_500 {
+			 padding: 15px 0;
+			padding-left: 11px; 
+			margin-bottom: 10px;
+		} 
 	}
 }

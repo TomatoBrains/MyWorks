@@ -1,0 +1,25 @@
+.header {
+	@include adap(padding-top,20px,50px);
+	&--wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		@include adap(width,100px,150px);
+	}
+	&__phone {
+		display: flex;
+		align-items: center;
+		&-ico {
+			@include adap(margin-right,10px,15px)
+		}
+		&-num {
+			@include adap(margin-right,10px,35px)
+		}
+		&-txt {
+			@include adap(margin-right,10px,115px)
+		}
+	}
+
+}

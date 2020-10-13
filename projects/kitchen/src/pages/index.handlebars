@@ -9,8 +9,10 @@
 </head>
 
 <body>
-	{{> _partials/header}}
-	{{> _partials/main}}
+	<div class="first">
+		{{> _partials/header}}
+		{{> _partials/main}}
+	</div>
 	{{> _partials/requests}}
 	{{> _partials/styles}}
 	{{> _partials/quiz}}
@@ -18,8 +20,10 @@
 	{{> _partials/about}}
 	{{> _partials/today}}
 	{{> _partials/team}}
-	{{> _partials/cases}}
-	{{> _partials/footer}}
+	<div class="second">
+		{{> _partials/cases}}
+		{{> _partials/footer}}
+	</div>
 	{{> _partials/popupForm}}
 	{{> _partials/popupTy}}
 	{{> _partials/popupStyle}}
