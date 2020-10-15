@@ -18,6 +18,7 @@ a {
   text-decoration: none;
   color: #000;
   outline: none;
+  cursor: pointer;
 }
 
 /* h1,
@@ -33,8 +34,13 @@ input {
   outline: none;
   border: none;
   background: unset;
+  @include adap(font-size, 12px, 18px);
   &::placeholder {
     color: #111111;
+    @include adap(font-size, 12px, 18px);
+  }
+  @include xs_500 {
+    width: 100%;
   }
 }
 
@@ -57,7 +63,13 @@ img {
   padding-left: 10px;
   width: vw(201px);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  @include md_900 {
+    width: 30%;
+  }
+  @include xs_500 {
+    width: 100%;
+  }
   @include adap(margin-right, 10px, 50px);
   & img {
     width: 20px;
@@ -68,11 +80,35 @@ img {
   position: relative;
 
   & img {
+    pointer-events: none;
     position: absolute;
     top: 7%;
     right: -8%;
     z-index: 2;
     width: vw(96px);
+  }
+  @include md_900 {
+    & img {
+      width: 65px;
+      right: -35px;
+    }
+  }
+  @include sm_700 {
+    & img {
+      right: -10px;
+      top: 15px;
+    }
+  }
+  @include xs_500 {
+    width: 100%;
+    & img {
+      width: 50px;
+    }
+  }
+}
+br {
+  @include xs_500 {
+    display: none;
   }
 }
 .first {
@@ -87,6 +123,21 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.overflowHidden {
+  overflow: hidden;
+}
+.fade-in {
+  opacity: 1;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slide-up-in;
+  animation-name: slide-up-in;
+}
+
 @import "app/_scss-core/_core";
 
 @import "scss/helpers";
@@ -107,8 +158,10 @@ img {
 @import "scss/popupPopular.scss";
 @import "scss/popupStyle.scss";
 @import "scss/popupTy.scss";
+@import "scss/politic.scss";
 @import "scss/animations.scss";
 //plugins
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "scss/ion.scss";

@@ -1,0 +1,91 @@
+.main {
+  &__title {
+    @include adap(margin-bottom, 20px, 65px);
+    & h1 {
+      @include adap(margin-bottom, 10px, 35px);
+    }
+  }
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    @include md_900 {
+      justify-content: center;
+    }
+    &-item {
+      width: vw(350px);
+      @include adap(margin-right, 10px, 15px);
+      & img {
+        @include adap(width, 80px, 140px);
+      }
+      &:last-of-type {
+        & img {
+          @include adap(width, 60px, 92px);
+        }
+      }
+      @include md_900 {
+        width: 31%;
+      }
+      @include sm_700 {
+        width: 45%;
+        margin-bottom: 10px;
+      }
+      @include xs_500 {
+        width: 100%;
+      }
+    }
+    &--wrap {
+      @include adap(padding, 10px, 10px);
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    &-content {
+      height: vw(120px);
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: flex-end;
+      text-align: center;
+      @include adap(padding-right, 5px, 15px);
+      @include md_900 {
+        height: 100px;
+      }
+      @include xs_500 {
+        height: auto;
+      }
+      & img {
+        position: relative;
+        left: vw(-20px);
+        @include md_900 {
+          width: 50%;
+        }
+      }
+    }
+  }
+  &__request {
+    @include adap(margin-top, 20px, 60px);
+    &-form {
+      @include adap(margin-top, 20px, 40px);
+      & form {
+        display: flex;
+        align-items: flex-end;
+        @include sm_700 {
+          flex-wrap: wrap;
+          justify-content: center;
+          & > span {
+            width: 45%;
+          }
+        }
+      }
+      & button {
+        padding-right: vw(79px);
+        @include sm_700 {
+          width: 100%;
+          margin-top: 10px;
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+}

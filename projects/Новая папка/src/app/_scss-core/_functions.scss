@@ -1,0 +1,24 @@
+ @function vw($target) {
+	$vw-context: (1920 * 0.01) * 1px;
+	@return ($target/$vw-context) * 1vw;
+} 
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+	  @return $number / ($number * 0 + 1);
+	}
+  
+	@return $number;
+  }
+@mixin adap($properties, $min-value, $max-value) {
+	& {
+		@each $property in $properties {
+			#{$property}: #{vw($max-value)};
+		}
+
+		@media  (max-width: 992px) {
+			@each $property in $properties {
+				#{$property}: calc((#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - 320px) / #{992 - 320}) / 2));
+			}
+		}
+	}
+}

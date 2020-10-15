@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Gilroy";
+  font-size: 10px;
+}
+
+body {
+  color: #111111;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+}
+
+/* h1,
+h2 {
+	opacity: 0;
+} */
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: unset;
+  @include adap(font-size, 12px, 18px);
+  &::placeholder {
+    color: #111111;
+    @include adap(font-size, 12px, 18px);
+  }
+}
+
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  align-self: center;
+}
+.input-wrap {
+  border-bottom: 1px solid #5c5c5c;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: vw(201px);
+  display: flex;
+  /* align-items: center; */
+  @include md_900 {
+    width: 30%;
+  }
+  @include xs_500 {
+    width: 100%;
+  }
+  @include adap(margin-right, 10px, 50px);
+  & img {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+.btn-wrap {
+  position: relative;
+
+  & img {
+    pointer-events: none;
+    position: absolute;
+    top: 7%;
+    right: -8%;
+    z-index: 2;
+    width: vw(96px);
+  }
+  @include md_900 {
+    & img {
+      width: 65px;
+      right: -35px;
+    }
+  }
+  @include sm_700 {
+    & img {
+      right: -10px;
+      top: 15px;
+    }
+  }
+  @include xs_500 {
+    width: 100%;
+    & img {
+      width: 50px;
+    }
+  }
+}
+.first {
+  background-image: url(../img/main/back.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second {
+  background-image: url(../img/cases/back.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overflowHidden {
+  overflow: hidden;
+}
+.fade-in {
+  opacity: 1;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slide-up-in;
+  animation-name: slide-up-in;
+}
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/typography";
+@import "scss/fonts.scss";
+@import "scss/header.scss";
+@import "scss/main.scss";
+@import "scss/requests.scss";
+@import "scss/styles.scss";
+@import "scss/quiz.scss";
+@import "scss/popular.scss";
+@import "scss/about.scss";
+@import "scss/today.scss";
+@import "scss/team.scss";
+@import "scss/cases.scss";
+@import "scss/footer.scss";
+@import "scss/popupForm.scss";
+@import "scss/popupPopular.scss";
+@import "scss/popupStyle.scss";
+@import "scss/popupTy.scss";
+@import "scss/politic.scss";
+@import "scss/animations.scss";
+//plugins
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "scss/ion.scss";
