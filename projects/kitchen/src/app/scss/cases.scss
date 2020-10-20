@@ -5,11 +5,11 @@
   &__slider {
     @include adap(margin-bottom, 20px, 50px);
     &-wrap {
-      @include adap(margin-top, 30px, 50px);
+      @include adap(margin-top, 20px, 50px);
     }
     &-item {
       display: flex !important;
-      padding: vw(20px) vw(50px) vw(30px) vw(20px);
+      padding: vw(20px) vw(50px) vw(20px) vw(20px);
       background-color: #fff;
       border-radius: 20px;
       box-shadow: 6.9px 1.3px 22.3px 1.7px rgba(49, 49, 49, 0.06);
@@ -26,12 +26,14 @@
           width: 50%;
         }
       }
+      @include xs_500 {
+        & img {
+          width: 100%;
+        }
+      }
     }
     &-descr {
       @include adap(margin-left, 15px, 55px);
-      @include md_900 {
-        margin-top: 30px;
-      }
       & p:first-of-type {
         text-transform: uppercase;
         @include adap(margin-bottom, 15px, 60px);
@@ -44,16 +46,27 @@
           width: 35%;
           height: 1px;
           border-bottom: 1px solid #bd992d;
+          @include xs_500 {
+            bottom: -5px;
+          }
         }
       }
       & p {
         @include adap(margin-bottom, 10px, 25px);
       }
+      @include md_900 {
+        margin-top: 30px;
+      }
     }
   }
-  @include sm_700 {
-    & .pagin {
-      top: 40px;
-    }
+}
+@media (max-width: 769px) {
+  .cases .pagin {
+    top: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .cases .pagin {
+    top: 35px;
   }
 }

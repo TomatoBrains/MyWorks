@@ -12,8 +12,22 @@
   &__phone {
     display: flex;
     align-items: center;
+    @include xs_500 {
+      flex-direction: column;
+      justify-items: center;
+      align-items: flex-end;
+      & > span {
+        display: flex;
+        align-items: center;
+      }
+    }
     &-ico {
       @include adap(margin-right, 10px, 15px);
+
+      & img {
+        width: 20px;
+        height: 20px;
+      }
     }
     &-num {
       @include adap(margin-right, 10px, 35px);
@@ -26,8 +40,9 @@
     }
     &-txt {
       @include adap(margin-right, 10px, 115px);
-      & a {
+      & p {
         transition: all 0.3s ease-out;
+        cursor: pointer;
         &:hover {
           color: $colorMain;
         }

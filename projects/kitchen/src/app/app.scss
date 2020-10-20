@@ -7,13 +7,19 @@
 html {
   font-family: "Gilroy";
   font-size: 10px;
+  margin-right: calc(-1 * (100vw - 100%));
+  @include md_900 {
+    margin-right: 0;
+  }
 }
 
 body {
   color: #111111;
   overflow-x: hidden;
 }
-
+.h2 {
+  opacity: 0;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -43,7 +49,20 @@ input {
     width: 100%;
   }
 }
-
+input[type="name"] {
+  width: 8vw;
+  @include md_900 {
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+input[type="tel"] {
+  width: 8vw;
+  @include md_900 {
+    width: 100%;
+    padding-right: 10px;
+  }
+}
 button {
   border: none;
   font: inherit;

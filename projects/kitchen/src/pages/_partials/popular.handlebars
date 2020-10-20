@@ -1,3 +1,182 @@
+<script>
+	function a_onClick(el) {
+		let popularPopup = {
+			new: {
+				id: "new",
+				title: "Кухня New York",
+				ul: [
+					"Фасады из Премиум пластика Fenix",
+					"Столешница МДФ+пластик",
+					"Фартук Шпон",
+					"Фурнитура BLUM",
+				],
+				cost: "17000",
+				bigImg: "img/popular/n1.jpg",
+				imgs: [
+					"img/popular/n2.jpg",
+					"img/popular/n3.jpg",
+					"img/popular/n4.jpg",
+					"img/popular/n5.jpg",
+					"img/popular/n1.jpg",
+				],
+			},
+			t: {
+				id: "t",
+				title: "Кухня Tokyo",
+				ul: [
+					"Фасады из Премиум акрила REHAU",
+					"Столешница и фартук из искусств",
+					"Подъемные механизмы AVENTOS",
+					"Фурнитура BLUM",
+				],
+				cost: "17000",
+				bigImg: "img/popular/t1.jpeg",
+				imgs: ["img/popular/t2.jpeg", "img/popular/t3.jpeg", "img/popular/t1.jpeg"],
+			},
+			s: {
+				id: "s",
+				title: "Кухня Stone",
+				ul: [
+					'Фасады "под дерево" из мдф в пластике ARPA',
+					'Фасады "бетон" из мдф в пластике Cleaf',
+					'Столешница ДСП+Пластик "Союз" с еврозапилом',
+					"Фурнитура BLUM и GRASS",
+					"Встроенная в столешницу розетка",
+					"Подъемные механизмы AVENTOS",
+					"Барная стойка из массива дуба",
+					"Стеллаж с фасадами из графитового стекла",
+				],
+				cost: "17000",
+				bigImg: 'img/popular/s5.jpg"',
+				imgs: [
+					"img/popular/s2.jpg",
+					"img/popular/s3.jpg",
+					"img/popular/s4.jpg",
+					"img/popular/s1.jpg",
+					"img/popular/s5.jpg",
+				],
+			},
+			c: {
+				id: "c",
+				title: "Кухня Cappuchino",
+				ul: [
+					"Фасады МДФ+Пластик Fenix",
+					"Столешница и фартук: МДФ+пластик",
+					"Фурнитура BLUM",
+				],
+				cost: "17000",
+				bigImg: "img/popular/c1.jpg",
+				imgs: [
+					"img/popular/c2.jpg",
+					"img/popular/c3.jpg",
+					"img/popular/c4.jpg",
+					"img/popular/c5.jpg",
+					"img/popular/c1.jpg",
+				],
+			},
+			sw: {
+				id: "sw",
+				title: "Кухня В шоуруме",
+				ul: [
+					"Фасады МДФ+Шпон ореха, МДФ+Пластик Fenix",
+					"Столешница из массива дуба",
+					"Фурнитура BLUM, Hettich",
+					"Подъемные механизмы AVENTOS",
+					`Барная стойка: Массив
+		дуба+стабилизированный мох`,
+				],
+				cost: "17000",
+				bigImg: "img/popular/sw1.jpg",
+				imgs: [
+					"img/popular/sw2.jpeg",
+					"img/popular/sw3.jpg",
+					"img/popular/sw4.jpg",
+					"img/popular/sw5.jpg",
+					"img/popular/sw1.jpg",
+				],
+			},
+			ci: {
+				id: "ci",
+				title: "Кухня Cinema",
+				ul: [
+					"Фасады МДФ+Пластик ARPA",
+					"Столешница МДФ+пластик",
+					"Подъемные механизмы AVENTOS",
+					"Фурнитура BLUM",
+				],
+				cost: "17000",
+				bigImg: "img/popular/si1.jpg",
+				imgs: [
+					"img/popular/si2.jpg",
+					"img/popular/si3.jpg",
+					"img/popular/si4.jpg",
+					"img/popular/si5.jpg",
+					"img/popular/si1.jpg",
+				],
+			},
+			w: {
+				id: "w",
+				title: "Кухня White&Wood",
+				ul: [
+					"Фасады МДФ+Эмаль, Массив дуба",
+					"Столешница Массив дуба",
+					"Фурнитура BLUM",
+				],
+				cost: "17000",
+				bigImg: 'img/popular/w1.jpg"',
+				imgs: [
+					"img/popular/w2.jpg",
+					"img/popular/w3.jpg",
+					"img/popular/w4.jpg",
+					"img/popular/w1.jpg",
+				],
+			},
+			wg: {
+				id: "wg",
+				title: "Кухня Wood gloss",
+				ul: [
+					"Фасады МДФ+пластик ARPA",
+					"Фурнитура Blum,",
+					"Столешница ДСП+пластик,",
+					"Фартук ДСП+пластик",
+				],
+				cost: "17000",
+				bigImg: "img/popular/wg1.jpeg",
+				imgs: [
+					"img/popular/wg2.jpg",
+					"img/popular/wg3.jpg",
+					"img/popular/wg1.jpeg",
+				],
+			},
+		};
+		let pop = el.data("obj");
+		console.log(popularPopup)
+		let imgs = popularPopup[pop].imgs;
+		let ul = popularPopup[pop].ul;
+		let id = `${popularPopup[pop].id}`;
+		$(".popupPop").attr("id", id);
+		$(
+			".popupPop__imgs-big"
+		).html(`<a href="${popularPopup[pop].bigImg}" data-fancybox="${pop}"><img 
+		src="${popularPopup[pop].bigImg}" alt=""></a>`);
+		$(".popupPop__imgs-sm").html("");
+		for (var i = 0; i < imgs.length; i++) {
+			$(".popupPop__imgs-sm")
+				.append(`<a href="${imgs[i]}" data-fancybox="${pop}"><img 
+					  src="${imgs[i]}" alt=""></a>`);
+		}
+		$(".popupPop__descr-title").html(`${popularPopup[pop].title}`);
+		$(".popupPop__descr-ul ul").html("");
+		for (var i = 0; i < ul.length; i++) {
+			$(".popupPop__descr-ul ul").append(`<li class="txt20 med">${ul[i]}</li>`);
+		}
+		let morePop = $(".popupPop");
+		morePop.filter(el.data("pop")).fadeIn();
+		$(".popup-background").fadeIn();
+		$("html").addClass("overflowHidden");
+		return false;
+	}
+</script>
 <section class="popular padTopBig padBot" id="block5">
 	<div class="container">
 		<div class="popular__title">
@@ -7,10 +186,10 @@
 			<p class="txt30">Вы можете выбрать понравившуюся модель или заказать индивидуальную разработку проекта</p>
 		</div>
 		<div class="popular__tabBtn">
-			<a class="txt28 tabBtn" data-id="#tab1" id="tabBtn1">Весь каталог</a>
-			<a class="txt28 tabBtn" data-id="#tab2" id="tabBtn1">Кухни студии</a>
-			<a class="txt28 tabBtn" data-id="#tab3" id="tabBtn1">Средний сегмент</a>
-			<a class="txt28 tabBtn" data-id="#tab4" id="tabBtn1">Эконом сегмент</a>
+			<a class="txt28 tabBtn fontO" data-id="#tab1" id="tabBtn1">Весь каталог</a>
+			<a class="txt28 tabBtn fontO" data-id="#tab2" id="tabBtn1">Кухни студии</a>
+			<a class="txt28 tabBtn fontO" data-id="#tab3" id="tabBtn1">Средний сегмент</a>
+			<a class="txt28 tabBtn fontO" data-id="#tab4" id="tabBtn1">Эконом сегмент</a>
 		</div>
 		<div class="popular__tabs">
 			<div class="popular__tab1 tab" id="tab1">
@@ -20,7 +199,8 @@
 						<p class="txt30 bold">Кухня New York</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#new">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#new" data-obj="new"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -28,7 +208,8 @@
 						<p class="txt30 bold">Кухня White&Wood</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#w">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#w" data-obj="w"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -36,7 +217,8 @@
 						<p class="txt30 bold">Кухня Cappuchino</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#c">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#c" data-obj="c"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -44,7 +226,8 @@
 						<p class="txt30 bold">Кухня в ShowRoom</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw" data-obj="sw"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -52,7 +235,8 @@
 						<p class="txt30 bold">Кухня Cinema</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci" data-obj="ci"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -60,7 +244,8 @@
 						<p class="txt30 bold">Кухня Stone</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#s">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#s" data-obj="s"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -68,7 +253,8 @@
 						<p class="txt30 bold">Кухня Tokyo</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#t">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#t" data-obj="t"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -76,7 +262,8 @@
 						<p class="txt30 bold">Кухня White gloss</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg" data-obj="wg"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -96,7 +283,8 @@
 						<p class="txt30 bold">Кухня New York</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#new">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#new" data-obj="new"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -104,7 +292,8 @@
 						<p class="txt30 bold">Кухня White&Wood</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#w">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#w" data-obj="w"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -112,7 +301,8 @@
 						<p class="txt30 bold">Кухня Cappuchino</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#c">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#c" data-obj="c"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -120,7 +310,8 @@
 						<p class="txt30 bold">Кухня в ShowRoom</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw" data-obj="sw"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -128,7 +319,8 @@
 						<p class="txt30 bold">Кухня Cinema</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci" data-obj="ci"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -136,7 +328,8 @@
 						<p class="txt30 bold">Кухня Stone</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#s">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#s" data-obj="s"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -144,7 +337,8 @@
 						<p class="txt30 bold">Кухня Tokyo</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#t">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#t" data-obj="t"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -152,7 +346,8 @@
 						<p class="txt30 bold">Кухня White gloss</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg" data-obj="wg"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -172,7 +367,8 @@
 						<p class="txt30 bold">Кухня New York</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#new">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#new" data-obj="new"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -180,7 +376,8 @@
 						<p class="txt30 bold">Кухня White&Wood</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#w">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#w" data-obj="w"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -188,7 +385,8 @@
 						<p class="txt30 bold">Кухня Cappuchino</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#c">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#c" data-obj="c"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -196,7 +394,8 @@
 						<p class="txt30 bold">Кухня в ShowRoom</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw" data-obj="sw"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -204,7 +403,8 @@
 						<p class="txt30 bold">Кухня Cinema</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci" data-obj="ci"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -212,7 +412,8 @@
 						<p class="txt30 bold">Кухня Stone</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#s">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#s" data-obj="s"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -220,7 +421,8 @@
 						<p class="txt30 bold">Кухня Tokyo</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#t">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#t" data-obj="t"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -228,7 +430,8 @@
 						<p class="txt30 bold">Кухня White gloss</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg" data-obj="wg"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -248,7 +451,8 @@
 						<p class="txt30 bold">Кухня New York</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#new">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#new" data-obj="new"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -256,7 +460,8 @@
 						<p class="txt30 bold">Кухня White&Wood</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#w">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#w" data-obj="w"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -264,7 +469,8 @@
 						<p class="txt30 bold">Кухня Cappuchino</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#c">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#c" data-obj="c"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -272,7 +478,8 @@
 						<p class="txt30 bold">Кухня в ShowRoom</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#sw" data-obj="sw"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -280,7 +487,8 @@
 						<p class="txt30 bold">Кухня Cinema</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#ci" data-obj="ci"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -288,7 +496,8 @@
 						<p class="txt30 bold">Кухня Stone</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#s">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#s" data-obj="s"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -296,7 +505,8 @@
 						<p class="txt30 bold">Кухня Tokyo</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#t">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#t" data-obj="t"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 					<div class="popular__slider-item">
@@ -304,7 +514,8 @@
 						<p class="txt30 bold">Кухня White gloss</p>
 						<p class="txt18">Цена за пог.м. от: <span class="txt25 bold">17 000 р.</span></p>
 						<div class="popular__slider-more">
-							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg">Подробнее</a>
+							<a class="txt28 fontO mainBtn popBtn" data-pop="#wg" data-obj="wg"
+								onClick="a_onClick($(this))">Подробнее</a>
 						</div>
 					</div>
 				</div>

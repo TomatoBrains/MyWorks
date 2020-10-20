@@ -5,9 +5,16 @@
   }
   &__content {
     display: flex;
+    @include xs_500 {
+      flex-direction: column;
+    }
   }
   &__map {
     width: 57.5%;
+    @include xs_500 {
+      width: 100%;
+      height: 25rem;
+    }
     & iframe {
       height: 100%;
       width: 100%;
@@ -18,6 +25,9 @@
     width: 42.5%;
     background-color: #f4efea;
     padding: vw(75px) vw(50px) vw(75px) vw(95px);
+    @include xs_500 {
+      width: 100%;
+    }
     & img {
       width: 30px;
       margin-left: vw(-41px);
@@ -79,7 +89,7 @@
     }
   }
   &__bot {
-    padding: vw(85px) vw(355px);
+    padding: vw(50px) vw(355px);
     background: $btnGrad;
     display: flex;
     justify-content: space-between;
@@ -87,8 +97,17 @@
     @include md_900 {
       padding: 30px 50px;
     }
+    @include xs_500 {
+      padding: 15px;
+      flex-direction: column;
+      text-align: center;
+    }
     & > div {
       flex: 1 1 0%;
+      @include xs_500 {
+        flex: unset;
+        margin-bottom: 10px;
+      }
     }
     &-phone {
       display: flex;
@@ -116,6 +135,9 @@
         padding-bottom: 5px;
         cursor: pointer;
         transition: color 0.3s ease;
+        @include xs_500 {
+          padding: 0;
+        }
         &:hover {
           color: #fff;
         }
@@ -123,6 +145,9 @@
     }
     &-site {
       text-align: right;
+      @include xs_500 {
+        text-align: center;
+      }
     }
   }
 }

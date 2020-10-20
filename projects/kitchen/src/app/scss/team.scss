@@ -9,12 +9,15 @@
   }
   &__cards {
     display: flex;
-    @include adap(margin-top, 30px, 50px);
+    @include adap(margin-top, 20px, 50px);
     padding: 0 vw(80px);
     @include md_900 {
       flex-wrap: wrap;
       padding: 0 30px;
       justify-content: center;
+    }
+    @include xs_500 {
+      padding: 0;
     }
     &-item {
       background-color: #fff;
@@ -29,6 +32,7 @@
       }
       @include xs_500 {
         width: 100%;
+        margin-right: 0;
       }
       &:last-of-type {
         margin-right: 0;

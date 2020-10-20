@@ -11,7 +11,7 @@
 		<div class="container-supm gl test-container">
 			<div class="test-scroll-js"></div>
 			<div class="test-wrap">
-				<form action="#" class="test-cont">
+				<form action="" class="test-cont">
 					<input type="hidden" name="title" value='Тест'>
 					<input type="hidden" name="formname" value='test'>
 					<div class="test__quests rel">
@@ -45,7 +45,7 @@
 										<input type="radio" class="checkbox-inp" name='qw1' id='qw1-1' value="Прямая">
 										<span class="checkbox-block">
 											<div class="checkbox-block__bg rel"
-												style="background: url(../img/quiz/q1-1.jpg) center no-repeat; background-size: cover;">
+												style="background: url(./img/quiz/q1-1.jpg) center no-repeat; background-size: cover;">
 
 											</div>
 											<span class="checkbox-psevdo">
@@ -65,7 +65,7 @@
 											value="Негабаритная">
 										<span class="checkbox-block">
 											<div class="checkbox-block__bg rel"
-												style="background: url(../img/quiz/q1-2.jpg) center no-repeat; background-size: cover;">
+												style="background: url(./img/quiz/q1-2.jpg) center no-repeat; background-size: cover;">
 
 											</div>
 											<span class="checkbox-psevdo">
@@ -84,7 +84,7 @@
 										<input type="radio" class="checkbox-inp" name='qw1' id='qw1-3' value="Угловая">
 										<span class="checkbox-block">
 											<div class="checkbox-block__bg rel"
-												style="background: url(../img/quiz/q1-3.jpg) center no-repeat; background-size: cover;">
+												style="background: url(./img/quiz/q1-3.jpg) center no-repeat; background-size: cover;">
 
 											</div>
 											<span class="checkbox-psevdo">
@@ -104,7 +104,7 @@
 											value="С островом">
 										<span class="checkbox-block">
 											<div class="checkbox-block__bg rel"
-												style="background: url(../img/quiz/q1-4.jpg) center no-repeat; background-size: cover;">
+												style="background: url(./img/quiz/q1-4.jpg) center no-repeat; background-size: cover;">
 											</div>
 											<span class="checkbox-psevdo">
 												<span class="checkbox-psevdo-active">
@@ -316,20 +316,25 @@
 							</div>
 
 							<!-- 4 -->
-							<div class="test-item" style="display: none;">
+							<div class="test-item test-item-4" style="display: none;">
 								<h5 class="txt24 fw7 tac mb test-item__title fontO txt35">
-									Какая именно кухня вам нужна?
+									Какой подарок вы хотите?
 								</h5>
-
 								<div class="tiem-block">
+									<div class="slider-pagin">
+										<span class="quiz__slider-arrowL-1"><img class="lazy"
+												data-src="img/svg/arrowL.svg" alt=""></span>
+										<span class="quiz__slider-arrowR-1"><img class="lazy"
+												data-src="img/svg/arrowR.svg" alt=""></span>
+									</div>
 									<div class="test-slider" id="test-slider">
 										<!-- 1 -->
 										<label for="qw4-1" class="tiem-block__item test-slider__item tiem mb">
 											<input type="radio" class="checkbox-inp" name='qw4' id='qw4-1'
-												value="Прямая">
+												value="Столешница">
 											<span class="checkbox-block">
 												<div class="checkbox-block__img mbs rel">
-													<img src="img/quiz/q4-1.png" alt="">
+													<img class="lazy" data-src="img/quiz/q4-1.png" alt="">
 												</div>
 												<span class="checkbox-psevdo">
 													<span class="checkbox-psevdo-active">
@@ -337,51 +342,51 @@
 												</span>
 
 												<span class="text tac fw5 txt20">
-													Прямая
+													Столешница
 												</span>
 											</span>
 										</label>
 										<!-- 2 -->
 										<label for="qw4-2" class="tiem-block__item test-slider__item tiem mb">
 											<input type="radio" class="checkbox-inp" name='qw4' id='qw4-2'
-												value="Негабаритная">
+												value="Раковина из гранита">
 											<span class="checkbox-block">
 												<div class="checkbox-block__img mbs rel">
-													<img src="img/quiz/q4-2.png" alt="">
+													<img class="lazy" data-src="img/quiz/q4-2.png" alt="">
 												</div>
 												<span class="checkbox-psevdo">
 													<span class="checkbox-psevdo-active">
 													</span>
 												</span>
 												<span class="text tac fw5 txt20">
-													Негабаритная
+													Раковина из гранита
 												</span>
 											</span>
 										</label>
 										<!-- 3 -->
 										<label for="qw4-3" class="tiem-block__item test-slider__item tiem mb">
 											<input type="radio" class="checkbox-inp" name='qw4' id='qw4-3'
-												value="Угловая">
+												value="Раковина из стали">
 											<span class="checkbox-block">
 												<div class="checkbox-block__img mbs rel">
-													<img src="img/quiz/q4-3.png" alt="">
+													<img class="lazy" data-src="img/quiz/q4-3.png" alt="">
 												</div>
 												<span class="checkbox-psevdo">
 													<span class="checkbox-psevdo-active">
 													</span>
 												</span>
 												<span class="text tac fw5 txt20">
-													Угловая
+													Раковина из стали
 												</span>
 											</span>
 										</label>
 										<!-- 4 -->
 										<label for="qw4-4" class="tiem-block__item test-slider__item tiem mb">
 											<input type="radio" class="checkbox-inp" name='qw4' id='qw4-4'
-												value="С островом">
+												value="Набор японских премиум ножей">
 											<span class="checkbox-block">
 												<div class="checkbox-block__img mbs rel">
-													<img src="img/quiz/q4-4.png" alt="">
+													<img class="lazy" data-src="img/quiz/q4-4.png" alt="">
 												</div>
 												<span class="checkbox-psevdo">
 													<span class="checkbox-psevdo-active">
@@ -389,17 +394,17 @@
 												</span>
 
 												<span class="text v fw5 txt20">
-													С островом
+													Набор японских премиум ножей
 												</span>
 											</span>
 										</label>
 										<!-- 5 -->
 										<label for="qw4-5" class="tiem-block__item test-slider__item tiem mb">
 											<input type="radio" class="checkbox-inp" name='qw5' id='qw4-5'
-												value="С островом">
+												value="Водоочиститель">
 											<span class="checkbox-block">
 												<div class="checkbox-block__img mbs rel">
-													<img src="img/quiz/q4-5.png" alt="">
+													<img class="lazy" data-src="img/quiz/q4-5.png" alt="">
 												</div>
 												<span class="checkbox-psevdo">
 													<span class="checkbox-psevdo-active">
@@ -407,18 +412,17 @@
 												</span>
 
 												<span class="text v fw5 txt20">
-													С островом
+													Водоочиститель
 												</span>
 											</span>
 										</label>
 										<!-- 6-->
 										<label for="qw4-6" class="tiem-block__item test-slider__item tiem mb">
-
 											<input type="radio" class="checkbox-inp" name='qw6' id='qw4-6'
-												value="С островом">
+												value="Вытяжка">
 											<span class="checkbox-block">
 												<div class="checkbox-block__img mbs rel">
-													<img src="img/quiz/q4-6.png" alt="">
+													<img class="lazy" data-src="img/quiz/q4-6.png" alt="">
 												</div>
 												<span class="checkbox-psevdo">
 													<span class="checkbox-psevdo-active">
@@ -426,7 +430,7 @@
 												</span>
 
 												<span class="text v fw5 txt20">
-													С островом
+													Вытяжка
 												</span>
 											</span>
 										</label>
@@ -444,10 +448,10 @@
 								</div>
 								<div class="t-end-block col-center">
 									<span class="input-wrap">
-										<input required class="txt18" type="name" placeholder="Ваше имя">
+										<input name="name" required class="txt18" type="name" placeholder="Ваше имя">
 									</span>
 									<span class="input-wrap">
-										<input class="inputTel" required class="txt18" type="tel"
+										<input name="phone" class="inputTel" required class="txt18" type="tel"
 											placeholder="Ваш телефон">
 									</span>
 									<span class="btn-wrap">
@@ -518,6 +522,19 @@
 						</div>
 					</div>
 				</form>
+			</div>
+			<div class="pagin paginColor txt24">
+				<a href="#block1" class="paginColor txt24">01</a>
+				<a href="#block2" class="paginColor txt24">02</a>
+				<a href="#block3" class="paginColor txt24">03</a>
+				<a href="#block4" class="paginFlex"><span class="paginBlack">
+						04</span> <img class="lazy" data-src="img/line.png" alt="">
+				</a>
+				<a href="#block5" class="paginColor txt24">05</a>
+				<a href="#block6" class="paginColor txt24">06</a>
+				<a href="#block7" class="paginColor txt24">07</a>
+				<a href="#block8" class="paginColor txt24">08</a>
+				<a href="#block9" class="paginColor txt24">09</a>
 			</div>
 		</div>
 	</div>

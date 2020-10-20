@@ -1,4 +1,4 @@
-<div class="popupForm">
+<div class="popupForm" id="popupForm">
 	<div class="popupForm--wrap">
 		<div class="popupForm__content">
 			<p class="txt24 med">
@@ -7,11 +7,49 @@
 				поля ниже
 			</p>
 			<form action="">
+				<input type="hidden" name="title" value="Форма заявки">
 				<span class="input-wrap">
-					<input required class="txt18" type="name" placeholder="Ваше имя">
+					<input name="name" required class="txt18" type="name" placeholder="Ваше имя">
 				</span>
 				<span class="input-wrap">
-					<input class="inputTel" required class="txt18" type="tel" placeholder="Ваш телефон">
+					<input name="phone" class="inputTel" required class="txt18" type="tel" placeholder="Ваш телефон">
+				</span>
+				<span class="btn-wrap">
+					<button class="txt20 fontAb mainBtn">ОСТАВИТЬ ЗАЯВКУ </button>
+				</span>
+			</form>
+			<span class="popupForm--close close"><svg id="Capa_1" enable-background="new 0 0 413.348 413.348"
+					height="512" viewBox="0 0 413.348 413.348" width="512" xmlns="http://www.w3.org/2000/svg">
+					<path fill="#eeab09"
+						d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z" />
+				</svg></span>
+		</div>
+	</div>
+</div>
+<div class="popupForm popupForm-file">
+	<div class="popupForm--wrap">
+		<div class="popupForm__content">
+			<p class="txt24 med">
+				Чтобы оставить заявку,
+				пожалуйста заполните
+				поля ниже
+			</p>
+			<form action="">
+				<input type="hidden" name="title" value="Форма заявки с файлом">
+				<span class="input-file input-wrap">
+					<input type="file" name="userfile[]" id="input-file3" class="inputfile"
+						data-multiple-caption="{count} файлов выбрано" multiple />
+					<label for="input-file3">
+						<span class="txt20 med fileName">
+							Прикрепить файл
+						</span>
+					</label>
+				</span>
+				<span class="input-wrap">
+					<input name="name" required class="txt18" type="name" placeholder="Ваше имя">
+				</span>
+				<span class="input-wrap">
+					<input name="phone" class="inputTel" required class="txt18" type="tel" placeholder="Ваш телефон">
 				</span>
 				<span class="btn-wrap">
 					<button class="txt20 bold mainBtn">ОСТАВИТЬ ЗАЯВКУ </button>

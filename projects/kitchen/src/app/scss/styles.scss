@@ -6,9 +6,9 @@
   position: relative;
   &__title {
     text-align: center;
-    @include sm_700 {
+    /* @include sm_700 {
       margin-bottom: 40px;
-    }
+    } */
   }
   &__cards {
     position: relative;

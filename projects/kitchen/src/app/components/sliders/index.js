@@ -26,10 +26,11 @@ $(".popular__slider-1").slick({
   prevArrow: $(".popular__slider-arrowL-1"),
   lazyLoad: "progressive",
   centerMode: true,
+  lazyLoad: "progressive",
   centerPadding: "10px",
   /* variableWidth: true, */
   //infinite: false,
-  // Почему-то ломает кнопку внутри слайдера, она просто не нажимается
+  // Почему-то ломает кнопку внутри слайдера, она просто не нажимается инлайн скрипт помогает, но это фигня какая-то
   responsive: [
     {
       breakpoint: 567,
@@ -64,6 +65,7 @@ $(".popular__slider-2").slick({
   prevArrow: $(".popular__slider-arrowL-2"),
   lazyLoad: "progressive",
   centerMode: true,
+  lazyLoad: "progressive",
   centerPadding: "10px",
   /* variableWidth: true, */
   //infinite: false,
@@ -102,6 +104,7 @@ $(".popular__slider-3").slick({
   prevArrow: $(".popular__slider-arrowL-3"),
   lazyLoad: "progressive",
   centerMode: true,
+  lazyLoad: "progressive",
   centerPadding: "10px",
   /* variableWidth: true, */
   //infinite: false,
@@ -202,9 +205,16 @@ $(".test-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
-  /* nextArrow: $(".cases__slider-arrowR"),
-	prevArrow: $(".cases__slider-arrowL"), */
-  arrows: false,
+  nextArrow: $(".quiz__slider-arrowR-1"),
+  prevArrow: $(".quiz__slider-arrowL-1"),
   lazyLoad: "progressive",
   autoplaySpeed: 4000,
+  /* responsive: [
+    {
+      breakpoint: 577,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ], */
 });

@@ -16,8 +16,12 @@
     padding: 25px;
     overflow-y: scroll;
   }
+  @include xs_500 {
+    height: 95%;
+  }
   &-wrap {
     display: flex;
+    align-items: center;
     @include md_900 {
       flex-wrap: wrap;
     }
@@ -35,6 +39,14 @@
     }
     &-big {
       @include adap(margin-bottom, 10px, 20px);
+      @include xs_500 {
+        height: 200px;
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
     }
     &-sm {
       display: flex;
@@ -44,6 +56,9 @@
         width: 20%;
         @include md_900 {
           height: 80px;
+        }
+        @include xs_500 {
+          height: 50px;
         }
         & img {
           width: 100%;
@@ -86,6 +101,9 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+    @include xs_500 {
+      flex-direction: column;
+    }
     & .input-wrap {
       border-bottom: none;
       width: 100%;
@@ -94,6 +112,9 @@
       margin-bottom: 15px;
       @include md_900 {
         width: 45%;
+      }
+      @include xs_500 {
+        width: 100%;
       }
     }
     & input {
@@ -122,6 +143,9 @@
       @include md_900 {
         padding: 20px 0;
         width: 45%;
+      }
+      @include xs_500 {
+        width: 100%;
       }
     }
   }

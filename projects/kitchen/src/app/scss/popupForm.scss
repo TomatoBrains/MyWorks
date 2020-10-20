@@ -1,5 +1,5 @@
 .popupForm {
-  @include adap(width, 200px, 360px);
+  @include adap(width, 250px, 360px);
   display: none;
   position: fixed;
   top: 50%;
@@ -44,6 +44,9 @@
         text-align: center;
         padding: vw(30px) 15px;
         width: 100%;
+        @include md_900 {
+          padding: 15px;
+        }
         &::placeholder {
           color: #a4a7a8;
         }
@@ -55,6 +58,9 @@
         width: 100%;
         padding: vw(30px) 0;
         text-align: center;
+        @include md_900 {
+          padding: 15px;
+        }
       }
     }
   }
@@ -87,7 +93,23 @@
     height: 101vh;
   }
 }
-
+.popupForm-file {
+  & .input-file {
+    & label {
+      width: 100%;
+      @include md_900 {
+        padding: 15px 0;
+      }
+      @include xs_500 {
+        padding: 15px 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 .open {
   display: block;
+}
+.form-inputFile {
+  display: none;
 }

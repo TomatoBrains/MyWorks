@@ -4,11 +4,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  & br {
+    @include xs_500 {
+      display: none;
+    }
+  }
   &__title {
     text-align: center;
-    @include sm_700 {
+    /* @include sm_700 {
       margin-bottom: 40px;
-    }
+    } */
   }
   &__cards {
     position: relative;
@@ -58,6 +63,9 @@
         flex-direction: column;
         height: auto;
       }
+      @include xs_500 {
+        min-height: 200px;
+      }
       & > img {
         position: absolute;
         bottom: 0;
@@ -71,12 +79,15 @@
         }
       }
     }
-    & form {
+    &-formWrap {
       display: flex;
       align-items: center;
       @include md_900 {
         justify-content: space-evenly;
         margin-top: 20px;
+      }
+      @include xs_500 {
+        flex-direction: column;
       }
       & > span {
         @include adap(margin-right, 10px, 30px);
@@ -90,6 +101,11 @@
           text-align: center;
           width: 45%;
         }
+        @include xs_500 {
+          width: 220px;
+          margin: 0;
+          padding: 0;
+        }
       }
       & a {
         @include adap(padding-left, 10px, 40px);
@@ -98,6 +114,10 @@
         @include md_900 {
           width: 45%;
           text-align: center;
+        }
+        @include xs_500 {
+          width: 220px;
+          padding: 15px;
         }
       }
     }

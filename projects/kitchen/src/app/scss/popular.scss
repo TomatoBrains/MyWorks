@@ -4,9 +4,9 @@
     & p {
       @include adap(margin-top, 10px, 30px);
     }
-    @include sm_700 {
+    /*  @include sm_700 {
       margin-bottom: 40px;
-    }
+    } */
   }
   &__tabBtn {
     @include adap(margin-top, 15px, 60px);
@@ -25,16 +25,17 @@
         width: 45%;
         margin: 0;
         margin-bottom: 10px;
+        text-align: center;
+      }
+      @include xs_500 {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 4rem;
       }
     }
   }
   &__tabs {
     position: relative;
-    @include sm_700 {
-      & .pagin {
-        @include adap(top, -130px, -150px);
-      }
-    }
   }
   &__slider {
     padding: 0 vw(100px);
@@ -74,7 +75,10 @@
     &-more {
       @include adap(margin-top, 25px, 50px);
       text-align: center;
-      & button {
+      width: vw(250px);
+      margin-left: auto;
+      margin-right: auto;
+      & a {
         padding: vw(20px) vw(55px);
         cursor: pointer;
         @include md_900 {
@@ -112,6 +116,36 @@
         width: 450px !important;
         display: block;
       } */
+    }
+  }
+}
+@media (max-width: 769px) {
+  .popular__tabs {
+    & .pagin {
+      @include adap(top, -130px, -150px);
+    }
+  }
+}
+@media (max-width: 575px) {
+  /* .popular__tabs {
+    & .pagin {
+      @include adap(top, -120px, -120px);
+    }
+  } */
+  .popular__slider-item img {
+    height: 15rem;
+    @include adap(height, 150px, 1000px);
+  }
+  .popular__slider-more {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .popular__slider-item p:last-of-type {
+    flex-direction: row;
+    align-items: center;
+    & span {
+      margin-left: 10px;
     }
   }
 }

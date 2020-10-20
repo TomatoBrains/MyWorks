@@ -3,7 +3,7 @@
 		<div class="pagin-wrap">
 			<div class="today__title">
 				<h2 class="h50 fontO">
-					Что мы имеем на сегодняшний момент
+					Что мы имеем на <br> сегодняшний момент
 				</h2>
 			</div>
 			<div class="today__cards">
@@ -13,7 +13,7 @@
 						представлено в нашем
 						шоу-руме для вашего удобства
 					</p>
-					<img src="img/today/img1.png" alt="">
+					<img class="lazy" data-src="img/today/img1.png" alt="">
 				</div>
 				<div class="today__cards-item">
 					<p class="txt24 bold">
@@ -22,7 +22,7 @@
 						квалификацию на мебельных
 						выставках и форумах
 					</p>
-					<img src="img/today/img22.png" alt="">
+					<img class="lazy" data-src="img/today/img22.png" alt="">
 				</div>
 				<div class="today__cards-item">
 					<p class="txt24 bold">
@@ -32,14 +32,14 @@
 						и сертифицированными
 						специалистами
 					</p>
-					<img src="img/today/img3.png" alt="">
+					<img class="lazy" data-src="img/today/img3.png" alt="">
 				</div>
 				<div class="today__cards-item">
 					<p class="txt24 bold">
 						170 - столько едениц мебели
 						выпускается ежемесячно
 					</p>
-					<img src="img/today/img4.png" alt="">
+					<img class="lazy" data-src="img/today/img4.png" alt="">
 				</div>
 				<div class="today__cards-item">
 					<p class="txt40 fontAb">
@@ -51,16 +51,17 @@
 					<img src="img/today/cata.png" class="today-cata" alt="">
 					<div class="today__cards-form">
 						<form action="">
+							<input type="hidden" name="title" value="Форма на подборку 3 кухонь и дизайн-проект">
 							<span class="input-wrap">
 								<img src="img/svg/user.svg" alt="">
-								<input required class="txt18" type="name" placeholder="Ваше имя">
+								<input name="name" required class="txt18" type="name" placeholder="Ваше имя">
 							</span>
 							<span class="input-wrap">
 								<img src="img/svg/phone1.svg" alt="">
-								<input class="inputTel" required class="txt18" type="tel" placeholder="Ваш телефон">
+								<input name="phone" class="inputTel" required class="txt18" type="tel"
+									placeholder="Ваш телефон">
 							</span>
-							<button class="txt22 fontAb mainBtn">ОСТАВИТЬ ЗАЯВКУ <span><img src="img/main/img4.png"
-										alt=""></span></button>
+							<button class="txt22 fontAb mainBtn">ОСТАВИТЬ ЗАЯВКУ</button>
 						</form>
 					</div>
 				</div>
@@ -73,7 +74,7 @@
 				<a href="#block5" class="paginColor txt24">05</a>
 				<a href="#block6" class="paginColor txt24">06</a>
 				<a href="#block7" class="paginFlex"><span class="paginBlack">
-						07</span> <img src="img/line.png" alt="">
+						07</span> <img class="lazy" data-src="img/line.png" alt="">
 				</a>
 				<a href="#block8" class="paginColor txt24">08</a>
 				<a href="#block9" class="paginColor txt24">09</a>

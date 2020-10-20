@@ -99,11 +99,25 @@
     width: 45%;
   }
 }
-@media (max-width: 569px) {
+@media (max-width: 575px) {
   .main__features-item {
     width: 250px;
+    margin-right: 0;
   }
   .main__request-form form > span {
-    width: 100%;
+    width: 60%;
+    margin-bottom: 10px;
   }
+  .btn-wrap {
+    & button {
+      padding: 15px 20px;
+    }
+    & img {
+      right: -28px;
+      top: 14px;
+    }
+  }
+}
+.time {
+  color: $colorMain2;
 }

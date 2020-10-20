@@ -17,6 +17,9 @@
     padding: 25px;
     overflow-y: scroll;
   }
+  @include xs_500 {
+    height: 95%;
+  }
   &-wrap {
     display: flex;
     align-items: center;
@@ -40,6 +43,14 @@
       & img {
         @include adap(height, 330px, 335px);
         width: 100%;
+        object-fit: cover;
+      }
+      @include xs_500 {
+        height: 200px;
+        & img {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
     &-sm {
@@ -50,6 +61,9 @@
         width: 25%;
         @include md_900 {
           height: auto;
+        }
+        @include xs_500 {
+          height: 50px;
         }
         & img {
           width: 100%;
@@ -74,8 +88,9 @@
   & form {
     display: flex;
     flex-wrap: wrap;
-    @include md_900 {
-      justify-content: center;
+    justify-content: center;
+    @include xs_500 {
+      flex-direction: column;
     }
     & .input-wrap {
       border-bottom: none;
@@ -83,6 +98,18 @@
       margin-right: 15px;
       padding: 0;
       margin-bottom: 15px;
+      &:nth-of-type(2) {
+        margin-right: 0;
+      }
+      @include md_900 {
+        width: 45%;
+        &:nth-of-type(2) {
+          margin-right: 0;
+        }
+      }
+      @include xs_500 {
+        width: 100%;
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -102,6 +129,9 @@
     }
     & .btn-wrap {
       width: 47%;
+      @include xs_500 {
+        width: 100%;
+      }
     }
     & button {
       width: 100%;

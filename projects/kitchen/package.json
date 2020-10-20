@@ -65,7 +65,10 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "handlebars": "^4.0.11",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "ion-rangeslider": "^2.3.1",
+    "jquery-lazy": "^1.7.11",
     "jquery.maskedinput": "^1.4.1",
     "slick-carousel": "^1.8.1"
   }

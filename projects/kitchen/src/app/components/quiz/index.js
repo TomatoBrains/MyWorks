@@ -128,56 +128,6 @@ $.fn.hasAttr = function (name) {
   return this.attr(name) !== undefined;
 };
 
-var nForm = false;
-$(function () {
-  "use strict";
-  var action = "./assets/mailer/send.php";
-  $("form").on("submit", function (e) {
-    e.preventDefault();
-    var formThis = $(this);
-    var fd = new FormData(this);
-
-    formThis.find(".btn").attr({
-      disabled: "true",
-    });
-
-    if (formThis.find('input[name="formname"]').val() === "call") {
-      $("html").addClass("stop");
-      $(".overlay").fadeOut();
-      $("#modal-thank").fadeIn();
-    } else if (formThis.find('input[name="formname"]').val() === "modal-good") {
-      $("html").addClass("stop");
-      $(".overlay").fadeOut();
-      $("#modal-thank").fadeIn();
-    } else if (formThis.find('input[name="formname"]').val() === "test") {
-      formThis.find("input").attr({
-        disabled: "true",
-      });
-      formThis.find("button").attr({
-        disabled: "true",
-      });
-      $(".overlay").fadeOut();
-      $("html").addClass("stop");
-      $("#modal-thank").fadeIn();
-    } else {
-      $(".overlay").fadeOut();
-      $("html").addClass("stop");
-      $("#modal-thank").fadeIn();
-    }
-    $.ajax({
-      url: action,
-      type: "POST",
-      contentType: false,
-      processData: false,
-      data: fd,
-      success: function (msg) {
-        formThis.find(".btn").removeAttr("disabled");
-        $("form").trigger("reset");
-      },
-    });
-  });
-});
-
 $(".js-range-slider").ionRangeSlider({
   min: 0,
   max: 150,

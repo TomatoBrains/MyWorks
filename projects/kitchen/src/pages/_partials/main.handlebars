@@ -42,23 +42,26 @@
 		<div class="main__request">
 			<div class="main__request-title">
 				<p class="txt24 med">
-					Оставьте заявку до (таймер) и получите фирменный торт ручной работы <br>
+					Оставьте заявку до <span class="time bold"></span> и
+					получите фирменный торт ручной работы <br>
 					весом до 2кг в подарок + дизайн проект и сборку!
 				</p>
 			</div>
 			<div class="main__request-form">
 				<form action="">
+					<input type="hidden" name="title" value="Форма на главной">
 					<span class="input-wrap">
 						<img src="img/svg/user.svg" alt="">
-						<input required class="txt18" type="name" placeholder="Ваше имя">
+						<input name="name" required class="txt18" type="name" placeholder="Ваше имя">
 					</span>
 					<span class="input-wrap">
 						<img src="img/svg/phone1.svg" alt="">
-						<input class="inputTel" required class="txt18" type="tel" placeholder="Ваш телефон">
+						<input name="phone" class="inputTel" required class="txt18" type="tel"
+							placeholder="Ваш телефон">
 					</span>
 					<span class="btn-wrap">
 						<img src="img/main/btnImg.png" alt="">
-						<button class="txt20 bold mainBtn">ОСТАВИТЬ ЗАЯВКУ </button>
+						<button class="txt20 mainBtn fontAb">ОСТАВИТЬ ЗАЯВКУ </button>
 					</span>
 				</form>
 			</div>

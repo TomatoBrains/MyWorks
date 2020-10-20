@@ -13,6 +13,7 @@
     @include adap(margin-top, 30px, 150px);
   }
   &__descr {
+    position: relative;
     padding: vw(10px);
     background: #fff;
     border-radius: 20px;
@@ -49,10 +50,25 @@
       box-shadow: 6.9px 1.3px 22.3px 1.7px rgba(49, 49, 49, 0.06);
       transform: skew(-15deg);
       padding: vw(15px);
-      right: 12%;
-      bottom: 9%;
+      right: -31vw;
+      bottom: -5vw;
       @include md_900 {
         display: none;
+      }
+    }
+    &-quotes {
+      position: absolute;
+      top: -3vw;
+      left: 3vw;
+      @include md_900 {
+        top: -4rem;
+        width: 70px;
+        left: 3rem;
+      }
+      @include xs_500 {
+        top: -2rem;
+        width: 45px;
+        left: 3rem;
       }
     }
   }
@@ -68,15 +84,22 @@
     @include md_900 {
       right: 2%;
     }
-    @include sm_700 {
-      right: unset;
-      top: calc(100px + 1vh);
-    }
   }
   & > img {
     width: vw(835px);
     @include md_900 {
       display: none;
     }
+  }
+}
+@media (max-width: 769px) {
+  .about .pagin {
+    right: unset;
+    top: calc(100px + 1vh);
+  }
+}
+@media (max-width: 575px) {
+  .about .pagin {
+    @include adap(top, 65px, 200px);
   }
 }
