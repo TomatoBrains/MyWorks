@@ -1,0 +1,60 @@
+.faq
+	padding: 4vw 0
+
+	&-cont
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&-right
+		width: 30%
+		position: relative
+	&-left
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: flex-start
+		align-self: flex-start
+		width: 60%
+		&-block
+			width: 47%
+	&-acr
+		box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.06)
+		border-radius: 6px
+		background-color: #ffffff
+		padding: 0.5vw
+		position: relative
+		z-index: 5
+		&-head
+			padding: 1vw 1.5vw
+			display: flex
+			justify-content: space-between
+			align-items: center
+			cursor: pointer
+		&-wrap
+			width: 100%
+			position: relative
+		&-body
+			padding: 1vw 1.5vw
+			padding-top: 0.4vw
+			display: none
+.vgbn
+	bottom: 5vw
+	left: 14vw
+	.cost-four-text
+		padding: 1vw 3vw
+
+.crcv
+	flex-shrink: 0
+	background-color: #44b759
+	background-image: linear-gradient(to top, #3fab53 0%, #48e364 100%)
+	width: 18px
+	height: 18px
+	padding: 5px
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 100%
+	transition: all 0.4s
+	transform: rotate(180deg)
+	&.active
+		transform: rotate(0)

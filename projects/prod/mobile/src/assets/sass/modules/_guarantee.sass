@@ -1,0 +1,64 @@
+.guarantee
+	position: relative
+	&-cont
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&-item
+		display: flex
+		align-items: center
+		padding-top: 2vw
+		padding-right: 2vw
+		width: 100%
+		position: relative
+		box-shadow: 0 0 31px 1px rgba(0, 0, 0, 0.05)
+		border-radius: 20px
+		&-wrap
+			position: relative
+			width: 31%
+			.bord
+				border-radius: 20px
+		&-img
+			width: 8vw
+			height: 8vw
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-shrink: 0
+			&.v1
+				transform: translate(-10%, 0)
+			&.v3
+				transform: translate(-1%, 5%) scale(1.1)
+				margin-right: 2vw
+			&.v4
+				transform: translate(4%, 3%) scale(1.1)
+				align-items: flex-end
+			&.v5
+				transform: translate(-5%, -2%) scale(1.1)
+				align-items: flex-end
+			&.v6
+				transform: translate(-6%, -4%) scale(1.1)
+				align-items: flex-end
+	&-px
+		position: absolute
+		right: 0
+		bottom: -2.5vw
+		width: 7vw
+.gsp
+	position: absolute
+	width: 5.3vw
+	right: 2.5vw
+	top: 1.7vw
+.thj
+	position: relative
+	display: inline-block
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		height: 1px
+		width: 100%
+		background-color: #ff0000

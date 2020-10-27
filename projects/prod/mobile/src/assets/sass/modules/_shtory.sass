@@ -1,0 +1,201 @@
+.shtory
+	position: relative
+	&-tab
+		display: flex
+		justify-content: space-between
+
+		&__item
+			width: 17%
+			position: relative
+			cursor: pointer
+			&-block
+				width: 100%
+				position: relative
+				box-shadow: 0 7px 26px 9px rgba(34, 30, 31, 0.04)
+				border-radius: 12px
+				background-color: #ffffff
+				padding: 1.7vw 1vw
+				text-align: center
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				transition: all 0.4s
+			&:hover, &.active
+				.shtory-tab__item-block
+					box-shadow: 0 7px 26px 9px rgba(34, 30, 31, 0.04)
+					border-radius: 16px
+					color: #fff
+					background-color: #44b759
+					background-image: linear-gradient(to top, #3fab53 0%, #48e364 100%)
+				.bord
+					box-shadow: 0 7px 26px 9px rgba(34, 30, 31, 0.04)
+					border-radius: 17px
+					background: #e7f4ea
+
+	&-arr
+		position: absolute
+		right: 8vw
+		top: 1.2vw
+		img
+			position: absolute
+			top: 2vw
+			left: -0.3vw
+			max-height: none
+			max-width: none
+			width: 5vw
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&-left
+		width: 30%
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&-item
+			width: 100%
+			height: 24vw
+			border-radius: 30px
+			display: block
+			position: relative
+			&.v2
+				width: 23%
+				height: 5vw
+				img
+					border-radius: 14px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 30px
+	&-advas
+		position: absolute
+		top: 0
+		right: 0
+		transform: translateX(50%)
+		height: 100%
+		display: flex
+		justify-content: space-around
+		flex-direction: column
+		padding: 1.5vw 0
+		&-item
+			width: 6.2vw
+			padding: 1vw 0.4vw
+			display: flex
+			flex-direction: column
+			align-items: center
+			box-shadow: 0 0 31px 1px rgba(0, 0, 0, 0.05)
+			border-radius: 10px
+			background-color: #ffffff
+			color: #282828
+			&__img
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				width: 1.5vw
+				height: 1.5vw
+				padding: 0.3vw
+				background-color: #44b759
+				border-radius: 100%
+				&:before
+					content: ''
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+					width: 130%
+					height: 130%
+					border: 1px solid #44b759
+					border-radius: 100%
+
+	&-right
+		width: 64%
+		box-shadow: 0 0 25px 4px rgba(0, 0, 0, 0.03)
+		border-radius: 12px
+		background-color: #ffffff
+		padding: 2vw 3vw
+		display: flex
+		justify-content: space-between
+		&-one
+			width: 75%
+			padding-left: 1.4vw
+			&-wrap
+				width: 73%
+		&-two
+			width: 23%
+
+	&-list
+		li
+			display: flex
+			position: relative
+
+	&-line
+		display: flex
+		justify-content: space-between
+		&-item
+
+			.tsm13
+				position: relative
+				.hover-title-img
+					top: -0.4vw
+					max-height: none
+	&-btns
+		display: flex
+		justify-content: space-between
+.zamer
+	box-shadow: 0 0 31px 1px rgba(0, 0, 0, 0.05)
+	border-radius: 7px
+	background-color: #ffffff
+	position: relative
+	height: 9vw
+	padding: 1.5vw
+	&-img
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+.link-dark
+	display: inline-block
+	color: #000000
+	transition: all 0.4s
+	position: relative
+	z-index: 4
+	&:hover
+		color: #ff0000
+.sh-cr
+	position: absolute
+	width: 1.1vw
+	height: 1.1vw
+	padding: 0.3vw
+	left: -1.5vw
+	top: 0.1vw
+	border-radius: 100%
+	background-color: #f24841
+	display: flex
+	align-items: center
+	justify-content: center
+
+.th-tool
+	position: relative
+	padding: 2.5vw 3vw 1.5vw 3vw
+	&-bg
+		max-height: none
+		width: 100%
+		position: absolute
+		left: 0
+		top: 47%
+		transform: translateY(-50%)
+	.tsm12
+		position: relative
+		z-index: 4
+
+.sba-link
+	display: flex
+	align-items: center
+	&__img
+		width: 6vw
+
+
+

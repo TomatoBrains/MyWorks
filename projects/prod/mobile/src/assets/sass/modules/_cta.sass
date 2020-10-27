@@ -1,0 +1,146 @@
+.cta
+	position: relative
+	&-img
+		position: absolute
+		right: 1vw
+		top: 9vw
+		width: 52vw
+		img
+			position: relative
+			z-index: 14
+	&-form
+		padding: 3vw 2.2vw
+		width: 100%
+		box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.08)
+		border-radius: 12px
+		background-color: #ffffff
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: -2px
+			top: 5vw
+			transform: translateY(-50%)
+			border-radius: 1px
+			background-color: #44b759
+			width: 4px
+			height: 7vw
+			border-radius: 3px
+
+		&-block
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&-wrap
+			position: relative
+			width: 64%
+			z-index: 22
+	&-px
+		position: absolute
+		width: 9vw
+		bottom: -12vw
+		left: 0
+.inp-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+.inp-flex2
+	display: flex
+	align-items: center
+	justify-content: center
+.social-item
+	display: inline-flex
+	align-items: center
+	flex-direction: column
+	padding: 0.4vw 0.6vw
+	margin: 0 0.1vw
+	border-radius: 10px
+	border: 1px solid #e6e6e6
+	color: #aeaeae
+	transition: all 0.4s
+	width: 30%
+	cursor: pointer
+	background-color: #fff
+	svg
+		fill: #aeaeae
+		width: 1.5vw
+		height: 1.5vw
+		transform: scale(1.2)
+		transition: all 0.3s
+		path
+			fill: #aeaeae
+			transition: all 0.3s
+		g
+			fill: #aeaeae
+	&:hover, &.act
+		transform: scale(1.1)
+		color: #fff
+		svg
+			fill: #fff
+			path
+				fill: #fff
+		&.wa
+			background-color: #00af47
+			// background-color: #00af47
+		&.vi
+			background-color: #6a5cb0
+			// background-color: #6a5cb0
+		&.teg
+			background-color: #6dd2f4
+			// background-color: #2c72a2
+	&__img
+		width: 0.9vw
+		height: 0.9vw
+		flex-shrink: 0
+		display: flex
+		align-items: center
+		justify-content: center
+
+.social-inp
+	display: none
+
+
+@keyframes animPulse 
+	0% 
+		transform: scale(1)
+	
+	10% 
+		opacity: .9
+	
+	100% 
+		opacity: 0
+		transform: scale(1.7)
+
+
+.ab-city_item-pulse    
+	position: absolute
+	transform: translate(-50%, -50%)
+	border: none
+	border-radius: 50%
+	background-color: transparent
+	height: 27vw 
+	width: 27vw
+	top: 44% 
+	left: 60%
+	z-index: -1
+.ab-item__pulse 
+	position: absolute
+	top: 0px
+	left: 0px
+	height: 27vw 
+	width: 27vw
+	border: 1px solid rgba(#44b759,0.35)
+	border-radius: 50%
+	opacity: .4
+	animation: animPulse 6s linear infinite
+.ab-city_item-pulse_1 
+    animation-delay: 0s
+
+.ab-city_item-pulse_2 
+    animation-delay: 2s
+
+.ab-city_item-pulse_3 
+    animation-delay: 4s
+
+.ab-city_item-pulse_4 
+    animation-delay: 6s

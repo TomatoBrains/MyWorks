@@ -1,0 +1,240 @@
+@keyframes opas
+	0%
+		opacity: 0.4
+	60%
+		opacity: 1
+	100%
+		opacity: 0.4
+@keyframes fadeOpas
+	0%
+		transform: translateY(110%)
+		opacity: 0
+	100%
+		transform: translateY(0)
+		opacity: 1
+@keyframes tooltipShow
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+
+@keyframes rotate
+	0%
+		transform: translate(-50%, -50%) rotate(0deg)
+	100%
+		transform: translate(-50%, -50%) rotate(-360deg)
+
+
+@keyframes rotate2
+	0%
+		transform: translate(-50%, -50%) rotate(0deg)
+	100%
+		transform: translate(-50%, -50%) rotate(360deg)
+@keyframes deg
+	0%
+		transform: rotate(0)
+	60%
+		transform: rotate(-45deg)
+	100%
+		transform: rotate(0)
+
+@keyframes jamp
+	0%
+		margin-top: 0
+	15%
+		margin-top: -1rem
+	25%
+		margin-top: 0
+	35%
+		margin-top: -0.5rem
+	45%
+		margin-top: 0
+	100%
+		margin-top: 0
+@keyframes jampTrf
+	0%
+		transform: translateY(0)
+	15%
+		transform: translateY(-7%)
+	25%
+		transform: translateY(0)
+	35%
+		transform: translateY(-3%)
+	45%
+		transform: translateY(0)
+	100%
+		transform: translateY(0)
+@keyframes slideme
+   0%
+       left: -30px
+       margin-left: 0px
+
+   30%
+       left: 110%
+       margin-left: 80px
+   100%
+       left: 110%
+       margin-left: 80px
+@keyframes pulseicon-a
+	0%
+		transform: translate(0,0) scale(0.85)
+	50%
+		transform: translate(0,0) scale(1)
+	100%
+		transform: translate(0,0) scale(0.85)
+@keyframes pulseicon
+	0%
+		transform: translate(-50%,-50%) scale(0.8)
+	50%
+		transform: translate(-50%,-50%) scale(1)
+	100%
+		transform: translate(-50%,-50%) scale(0.8)
+@keyframes phone
+	0%
+		transform: translate(-50%,-50%) rotate(15deg) scale(0.9)
+	50%
+		transform: translate(-50%,-50%) rotate(0deg) scale(1.01)
+	100%
+		transform: translate(-50%,-50%) rotate(15deg) scale(0.9)
+
+@keyframes pulseiconLine
+	0%
+		transform: translateX(-55%) scale(0.7)
+	50%
+		transform: translateX(-65%) scale(1)
+	100%
+		transform: translateX(-55%) scale(0.7)
+@keyframes scale-before
+	0%
+		transform: translate(-50%, -50%) scale(0.8)
+		opacity: 0
+	50%
+		transform: translate(-50%, -50%) scale(1)
+		opacity: 0.7
+	100%
+		transform: translate(-50%, -50%) scale(0.8)
+		opacity: 0
+@keyframes transform-shiver
+	0%
+		transform: translate(0px,0px) rotate(0deg)
+	25%
+		transform: translate(-5px,0px) rotate(0deg)
+	75%
+		transform: translate(5px,0px) rotate(0deg)
+	100%
+		transform: translate(0px,0px) rotate(0deg)
+@keyframes transform-shiver2
+	0%
+		transform: translate(0px,0px) rotate(0deg)
+	25%
+		transform: translate(0,-5px) rotate(0deg)
+	75%
+		transform: translate(0,5px) rotate(0deg)
+	100%
+		transform: translate(0px,0px) rotate(0deg)
+@keyframes car1
+	0%
+		transform: translate(0px,0px) scale(1)
+	100%
+		transform: translate(-200px,10px) scale(0)
+// animation: pulse 2s infinite
+@keyframes pulse
+	0%
+		box-shadow: 0 0 0 0 rgba(#ff0000,0.5)
+	70%
+		box-shadow: 0 0 0 8px rgba(#ff0000,0)
+	100%
+		box-shadow: 0 0 0 0 rgba(#ff0000,0)
+@keyframes pulse2
+	0%
+		box-shadow: 0 0 0 0 rgba(#44cc5d,0.5)
+	70%
+		box-shadow: 0 0 0 28px rgba(#44cc5d,0)
+	100%
+		box-shadow: 0 0 0 0 rgba(#44cc5d,0)
+@keyframes pulse3
+	0%
+		box-shadow: 0 0 0 0 rgba(#fff,1)
+	70%
+		box-shadow: 0 0 0 11px rgba(#fff,0)
+	100%
+		box-shadow: 0 0 0 0 rgba(#fff,0)
+@keyframes sbs-anim
+	0%
+		opacity: 1
+		transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1)
+		animation-timing-function: linear
+	50%
+		opacity: 1
+		transform: translateX(-2px)translateY(-8px)rotate(-5deg)scale(1,1)
+		animation-timing-function: linear
+	100%
+		opacity: 1
+		transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1)
+// animation: transform-shiver 5000ms linear 0ms infinite normal both
+// .production-complect__img-main
+// 	animation: jamp 5.5s infinite linear
+// .production-complect__img::before
+// 	animation: opas 2.8s infinite linear
+// .production-info__content-info-img-line
+// 	animation: pulseiconLine 5.2s infinite linear
+// .block-img
+// 	animation: jampTrf 4.5s infinite linear
+// .place__tab-item-img:before
+// 	animation: scale-before 4s infinite linear
+// .work__content-item-icon:before
+// 	animation: scale-before 4s infinite linear
+// .modal__img:before
+// 	animation: rotate 3.8s infinite linear
+// animation: pop 2000ms linear 0ms infinite normal both
+@keyframes pop
+	0%
+		transform: perspective(1px) rotateX(0deg) scale3d(1,1,1)
+	100%
+		transform: perspective(1px) rotateX(0deg) scale3d(1.2,1.2,1.2)
+@keyframes puff-out
+	0%
+		transform: translate(-50%, -50%) rotate(0deg) scale(1,1)
+		transform-origin: 50% 50%
+			opacity: 1
+	100%
+		transform: translate(-50%, -50%) rotate(0deg) scale(2,2)
+		transform-origin: 50% 50%
+		opacity: 0
+
+@keyframes slide-up-in
+	0%
+		transform: translate(0px,100%) rotate(1deg)
+		opacity: 0
+		transform-origin: 0 0
+	100%
+		opacity: 1
+		transform: translate(0px,0px) rotate(0deg)
+		transform-origin: 0 0
+
+.fade_in
+	opacity: 1
+	animation-delay: 0ms
+	animation-duration: 1500ms
+	animation-fill-mode: both
+	animation-name: slide-up-in
+
+.title-first
+	animation-delay: 0ms
+	animation-duration: 1500ms
+	animation-fill-mode: both
+	animation-name: slide-up-in
+
+.subtitle-first
+	animation-delay: 0ms
+	animation-duration: 1500ms
+	animation-fill-mode: both
+	animation-name: slide-up-in
+
+
+
+@keyframes main
+	0%
+		transform: translateY(-100%)
+	100%
+		transform: translateY(0)

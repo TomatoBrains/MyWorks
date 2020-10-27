@@ -1,0 +1,462 @@
+.header
+	padding: 1.3vw 0
+	padding-top: 1vw
+	position: relative
+	z-index: 4
+	&-row
+		display: flex
+		align-items: center
+	&-block
+		width: 77%
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-scroll
+		z-index: 155
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		transition: all 0.4s
+		&.hdn
+			opacity: 0
+			pointer-events: none
+	*
+		transition: all 0.55s
+	&__cont
+		display: flex
+		justify-content: space-between
+		align-items: center
+		// padding-right: 7vw
+	&-item
+		display: flex
+		align-items: center
+
+	&-right
+		display: flex
+		align-items: center
+
+	&.light 
+		background: #EBEDF2
+		.link-a
+			color: #2C4B9A
+			&:hover
+				color: #95A2C4
+		.burger
+			span
+				background-color: #2C4B9A
+				&:before, &:after
+					background-color: #2C4B9A
+				&:hover
+					background-color: #95A2C4
+					&:before, &:after
+						background-color: #95A2C4
+.item-light.hdn, .item-dark.hdn
+	opacity: 0
+	width: 0
+	display: none
+
+.ops
+	opacity: 0
+.trs
+	transition: all 0.8s
+.trs0
+	transition: all 0s !important
+.ops2
+	opacity: 0
+	transform: translateY(-50px)
+.trs-c
+	transition: all 3.4s
+.ops-c
+	opacity: 0
+.antiscale
+	transform: translate(-50%,-50%) scale(1)
+	transition: all 0.75s
+.scale
+	transform: translate(-50%,-50%) scale(0) !important
+.img-anim
+	transform: translate(-40px)
+	opacity: 0
+.logo
+	margin-right: 4vw
+	&__img
+		max-width: 5vw
+		display: inline-block
+		svg
+			width: 100%
+	&__block
+		display: flex
+		flex-direction: column
+		align-items: center
+.items
+	display: flex
+	align-items: center
+	&-img
+		width: 2vw
+		height: 2.2vw
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-shrink: 0
+.circ
+	width: 1.5vw
+	height: 1.5vw
+	padding: 0.3vw
+	border: 1px solid rgba(#ff0000, 0.5)
+	background-color: #ffffff
+	border-radius: 100%
+	opacity: 0.79
+	transition: all 0.4s
+	flex-shrink: 0
+	&.v2
+		width: 1.8vw
+		height: 1.8vw
+		padding: 0.34vw
+		cursor: pointer
+		&:hover
+			transform: scale(1.2)
+	&.v3
+		width: 2.2vw
+		height: 2.2vw
+		padding: 0.45vw
+		margin-top: 0.3vw
+.soc
+	display: flex
+	justify-content: flex-end
+.green-text
+	background-color: #44b759
+	color: #fff
+	padding: .3vw .5vw
+	border-radius: 20px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 300
+	&__cir
+		width: .3vw
+		height: .3vw
+		margin-top: .1vw
+		border-radius: 100%
+		background-color: #fff
+		animation: opas 1.5s infinite linear
+		display: flex
+		justify-content: center
+		align-items: center
+.link-a
+	color: #fff
+	transition: all 0.4s
+	&:hover
+		color: #95A2C4
+
+.block-i
+	display: flex
+	align-items: center
+	&.v1
+		margin-right: 3vw
+	&-img
+		width: 3.3vw
+.links
+	color: #000000
+	transition: all 0.4s
+	&:hover
+		color: #ff0000
+.main
+	position: relative
+	z-index: 91
+	// background-color: #040a20
+	overflow: hidden
+	// animation-delay: 1150ms
+	// animation-duration: 1500ms
+	// animation-fill-mode: both
+	// animation-name: main
+	padding-bottom: 5vw
+	&-px
+		position: absolute
+		width: 7vw
+		left: 0
+		top: 15vw
+
+	&-row
+		display: flex
+		width: 45%
+		justify-content: space-between
+		&-item
+			position: relative
+			width: 47%
+			&-block
+				position: relative
+				box-shadow: 0 3px 18px 4px rgba(34, 30, 31, 0.07)
+				border-radius: 6px
+				background-image: radial-gradient(circle 40px at center, #ffffff 0%, #ffffff 100%)
+				padding: 1.5vw 2vw
+				width: 100%
+
+
+			&-img
+				position: absolute
+				right: -0.7vw
+				top: -1vw
+				width: 2.7vw
+				height: 2.7vw
+				display: flex
+				align-items: center
+				justify-content: center
+	&-btn
+		padding-right: 5.6vw
+		&.mrs
+			margin-right: 4vw		
+		&-img
+			position: absolute
+			right: -1vw
+			top: -1vw
+			width: 5.5vw
+			max-height: none
+			&.v2
+				width: 7vw
+				right: -2vw
+		&-wrap
+			display: flex
+			margin-top: 6vw
+.bord
+	box-shadow: 0 3px 18px 4px rgba(34, 30, 31, 0.07)
+	border-radius: 12px
+	background-image: radial-gradient(circle 45px at center, #ffffff 0%, #ffffff 100%)
+	opacity: 0.4
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	width: calc(100% + 16px)
+	height: calc(100% + 16px)
+.slide-line
+	display: flex
+	&-item
+		background: #213159
+		height: 4px
+		width: 9vw
+		border-radius: 2px
+		cursor: pointer
+		position: relative
+		overflow: hidden
+		&.active
+			.slide-line-act
+				width: 70%
+	&-act
+		position: absolute
+		left: 0
+		top: 0
+		width: 0
+		height: 100%
+		background: #2C4B9A
+		border-radius: 2px
+	
+.main-px-2
+	position: absolute
+	right: -11vw
+	top: -2vw
+	width: 24vw
+	animation: transform-shiver 4000ms linear 0ms infinite normal both
+
+
+
+
+.close-img
+	width: 1.7vw
+	cursor: pointer
+	transition: all 0.4s
+	&:hover
+		opacity: 0.4
+.nav-overlay
+	background: rgba(0, 0, 0, 0.3)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100vh
+	z-index: 400
+	display: flex
+	align-items: center
+	display: none
+	// transform: translateX(-100%)
+	// transition: all 0.35s ease-in
+	overflow: hidden
+	&.active
+		// transform: translateX(0)
+		.nav
+			// width: 26vw
+			transform: translateX(0%)
+		.nav-first-head, .nav-social
+			opacity: 1
+
+
+
+.nav-list
+	transition: 0.65s ease-out
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+
+	li
+		a
+			opacity: 0
+			pointer-events: none
+			transition: 0.55s ease-out
+			&.active
+				opacity: 1
+				pointer-events: auto
+				// transition: 0.35s ease-in-out
+
+
+
+.nav
+	// box-shadow: 0 7px 50px rgba(43, 43, 43, 0.1)
+	border-radius: 6px
+	background-color: #ffffff
+	display: flex
+	justify-content: space-around
+	position: relative
+	z-index: 16
+	padding: 0 1vw
+	&__wrap
+		position: relative
+		width: 100%
+	&-shadow
+		box-shadow: 0 3px 18px 4px rgba(34, 30, 31, 0.03)
+		border-radius: 17px
+		background-color: #ffffff
+		opacity: 0.32
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: calc(80vw + 16px)
+		height: calc(100% + 16px)
+	&:before , &:after
+		content: ''
+		position: absolute
+		left: -2px
+		top: 50%
+		transform: translateY(-50%)
+		border-radius: 1px
+		background-color: #44b759
+		width: 4px
+		height: 60%
+	&:after
+		right: -2px
+		left: auto
+	li
+		position: relative
+		transition: all 0.4s
+
+	a
+		color: #000
+		padding: 1vw 0.5vw
+		position: relative
+		display: inline-block
+		transition: all 0.4s
+		position: relative
+		font-weight: 500
+
+		&:hover, &:active
+			color: #44b759
+		&.mia
+			color: #44b759
+			font-weight: 800
+
+
+.hover-title
+	display: inline-block
+	position: relative
+	cursor: pointer
+	&-img
+		width: 1.1vw
+		position: absolute
+		top: 0.4vw
+		right: -0.4vw
+		transform: translate(80%, -10%)
+		z-index: 4
+		border-radius: 100%
+		animation: pulse 2s infinite
+.tooltip-t1
+	position: absolute
+	right: 0
+	top: 0
+	transform: translate(102%, -93%) scale(0)
+	opacity: 0
+	transition: all 0.4s ease-in
+	width: 16vw
+	padding: 1.5vw
+	box-shadow: 0 3px 18px rgba(137, 137, 152, 0.21)
+	border-radius: 7px
+	background-color: #f7f7fb
+	z-index: 3
+.hover-title
+	&:hover
+		.tooltip-t1
+			transform: translate(102%, -93%) scale(1)
+			opacity: 1
+
+
+.mblock
+	position: absolute
+	right: -5vw
+	top: -1vw
+	width: 30vw
+	height: 30vw
+	&-item
+		display: inline-block
+		position: relative
+		padding: 1.2vw
+		box-shadow: 0 3px 18px 4px rgba(34, 30, 31, 0.05)
+		border-radius: 6px
+		background-image: radial-gradient(circle 55px at center, #ffffff 0%, #ffffff 100%)
+		&:before
+			content: ''
+			position: absolute
+			width: 13px
+			height: 13px
+			background-color: #ff0000
+			border-radius: 100%
+			left: 0
+			top: 0
+			transform: translate(-50%, -50%)
+			animation: pulse 2s infinite
+		&:after
+			content: ''
+			position: absolute
+			box-shadow: 0 3px 18px 4px rgba(34, 30, 31, 0.05)
+			border-radius: 0 0 6px 6px
+			background-image: radial-gradient(circle 55px at center, #ffffff 0%, #ffffff 100%)
+			opacity: 0.4
+			width: 93%
+			height: 0.5vw
+			top: 100%
+			left: 50%
+			transform: translatex(-50%)
+		&-1
+			position: absolute
+			left: 8vw
+			top: -0.7vw
+		&-2
+			position: absolute
+			left: 16vw
+			top: 7vw
+			&:before
+				left: auto
+				right: 0
+				transform: translate(50%, -50%)
+		&-3
+			position: absolute
+			left: 10vw
+			top: 15vw
+
+
+.green-cr
+	position: absolute
+	right: 0
+	top: 0.9vw
+	width: 8px
+	height: 8px
+	border-radius: 100%
+	background-color: #44b759
+	animation: opas 1.5s infinite linear

@@ -1,0 +1,126 @@
+.quality
+	padding-top: 3vw
+	padding-bottom: 3vw
+	position: relative
+	&-title
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+
+	&-cont
+		display: flex
+		justify-content: flex-end
+		&.v2
+			justify-content: flex-start
+	&-right
+		width: 35%
+
+	&-item
+		padding: 1.5vw 2vw
+		display: flex
+		align-items: center
+		width: 100%
+		position: relative
+		z-index: 5
+		box-shadow: 0 6px 21px 6px rgba(0, 0, 0, 0.05)
+		border-radius: 6px
+		background-color: #ffffff
+		&-wrap
+			width: 100%
+			position: relative
+		&__img
+			width: 3vw
+			flex-shrink: 0
+
+	&-serts
+		display: flex
+		justify-content: space-between
+
+	&-sert
+		width: 17%
+		height: 6.5vw
+		display: inline-block
+		position: relative
+		box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.08)
+		border: 4px solid #ffffff
+		&-img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		&-plus
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 1.8vw
+			transform: translate(50%, 50%)
+			transition: all 0.4s
+			border-radius: 100%
+			animation: pulse3 2.5s infinite
+			// border: 2px solid #fff
+		&:hover &
+			&-plus
+				transform: translate(50%, 50%) scale(1.1)
+	&-left
+		position: absolute
+		width: 52%
+		left: 0
+		top: 5vw
+		&-play
+			position: absolute
+			right: -2vw
+			top: 14vw
+			&-text
+				position: absolute
+				display: flex
+				flex-direction: column
+				justify-content: flex-end
+				align-items: flex-end
+				img
+					width: 1.5vw
+	&-qw
+		position: absolute
+		right: -10vw
+		top: -6vw
+		width: 65%
+	&-px
+		position: absolute
+		right: 0
+		bottom: -8vw
+		width: 9vw
+.video-b
+	padding: 1.8vw
+	border-radius: 100px
+	width: 5.3vw
+	height: 5.3vw
+	// animation: pulse2 2s infinite
+	&:after
+		border-radius: 100px
+		width: 100%
+		height: 100%
+		content: ''
+		left: 0
+		top: 0
+		animation: pulse2 2s infinite
+		position: absolute
+.vmd
+	position: absolute
+	left: -7vw
+	top: 60%
+	transform: translateY(-50%)
+	width: 15vw
+	&-item
+		flex-direction: column
+		align-items: center
+		padding: 2vw 1vw
+
+.num
+	font-size: 3.3vw
+	background-image: linear-gradient(to top, #3fab53 0%, #48e364 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	line-height: 0.9
+
+.qwr
+	padding: 3vw 4vw
+	padding-right: 7vw
+	align-items: center
