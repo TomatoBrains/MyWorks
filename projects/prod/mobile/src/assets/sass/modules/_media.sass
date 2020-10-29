@@ -1,6 +1,8 @@
 .mobs
 	display: none
 @media (max-width: 900px)
+	.mobs
+		display: block
 	.title-lg
 		font-size: 3.2rem
 	.title-mslg
@@ -518,8 +520,8 @@
 		width: 8px
 		height: 8px
 	.items-img
-		width: 20px
-		height: 20px
+		width: 4rem
+		height: 4rem
 	.items-pr
 		width: 10rem
 	.cost-four-b
@@ -741,8 +743,15 @@
 		margin-bottom: 3rem
 	.contacts-three
 		width: 30%
+	.modal__block
+		padding: 1.5rem
+		.fade_in
+			margin-top: 2rem
 	.modal-sm
 		width: 65vw
+		.fade_in
+			br
+				display: none
 	.num
 		font-size: 4rem
 	.header-block
@@ -753,7 +762,93 @@
 	.checkbox-psevdo-active
 		width: 1.5rem
 		height: 1.5rem
-
+	.m-img
+		width: 20rem
+		margin-bottom: 2rem
+	.thank
+		.header-block
+			width: auto
+			.block-i
+				width: 100%
+	.header-block
+		width: auto
+		.block-i
+			margin-right: 3rem
+	.header
+		z-index: 7
+	.close-nav
+		display: block
+	.header-menu
+		& > img
+			width: 3rem
+		.logo
+			margin-right: 0
+		.nav
+			flex-direction: column
+			align-items: center
+			height: 85%
+			font-size: 1.4rem
+			justify-content: space-evenly
+		.nav__wrap
+			z-index: 1002
+			position: fixed
+			height: 101vh
+			width: 100%
+			background: #fff
+			top: 0
+			left: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 15px
+			display: none
+			justify-content: space-evenly
+			padding: 2rem
+			transition: unset
+	.soc
+		margin-top: 3px
+	.ab-city_item-pulse
+		display: none
+	.crcv
+		width: 2.5rem
+		height: 2.5rem
+	.cta2-form
+		button ~ div
+			width: 100%
+	.header
+		.green-text__cir
+			display: inline-table
+	.thank
+		.logo__block
+			.items
+				display: none
+		.block-i
+			margin-right: 0
+		.block-i-text
+			text-align: center
+		.soc
+			justify-content: center
+		.mb
+			margin-bottom: 2.5rem
+		.mbm
+			margin-bottom: 2rem
+	.btn-lbs
+		&:before
+			font-size: 1.2rem
+			top: -2rem
+	.quiz__next
+		img
+			margin-left: 1rem
+	.sh-cr
+		img
+			padding: 2px
+	.cta-form
+		padding: 2rem
+	.zakaz-line
+		height: 2rem
+	.zakaz-line-act:before
+		height: 2rem
+		width: 2rem
 // /////////////////////////////////////////////////////////////////////////////////////////////
 
 @media (max-width: 767px)
@@ -965,7 +1060,7 @@
 	.test-form-left
 		width: 100%
 	.quiz__next-wrap
-		width: 10rem
+		width: 12rem
 	.checkbox-psevdo
 		width: 3rem
 		height: 3rem
@@ -975,15 +1070,20 @@
 		height: 9rem
 	.guarantee-item-img
 		width: 90px
+	.guarantee-item
+		padding: 1rem 1rem 0 0
 	.guarantee-item-img.v1
-		bottom: -38px
+		display: flex
+		align-items: flex-end
+		bottom: 0
 	.guarantee-item-img.v4
-		bottom: -45px
+		bottom: 2px
 	.guarantee-item-img.v5
-		bottom: -43px
+		bottom: 0
 	.guarantee-item-img.v6
-		bottom: -28px
+		// bottom: -33px
 		position: relative
+		width: 9rem
 	.mlg
 		margin-bottom: 3rem
 	.th-tool-bg
@@ -1013,7 +1113,7 @@
 	.cost-three
 		width: 43%
 	.btn.min
-		padding: 1.3rem 1rem
+		padding: 1.5rem 1rem
 	.quality-title .items
 		width: 55%
 	.quality-right
@@ -1051,7 +1151,7 @@
 	.arrs.t2
 		width: 7rem
 	.gsp
-		right: 0rem
+		right: -2rem
 		top: 5rem
 	.zakaz-block-item
 		.green-text
@@ -1079,6 +1179,19 @@
 	.contacts-three
 		width: 100%
 		margin-top: 2rem
+	.m-img
+		width: 20rem
+		margin-bottom: 2rem
+	.thank
+		.header-block
+			width: auto
+			.block-i
+				width: 100%
+	.guarantee-item
+		height: 18rem
+	.politic
+		.inp-min
+			width: 45%
 //////////////////////////////////////////////////////////////
 @media (max-width: 567px)
 
@@ -1439,6 +1552,12 @@
 	.contacts-four-item
 		width: 100%
 		margin-right: 0
+		display: flex
+		justify-content: space-between
+		& a
+			width: 48%
+			height: auto
+			margin-bottom: 0
 	.footer-left
 		width: 100%
 		text-align: center
@@ -1464,12 +1583,12 @@
 	.qn-img
 		width: 2rem
 	.tiem
-		width: 90%
+		width: 47%
 		margin-bottom: 1rem
 	.tiem-img.v2
-		height: 15rem
+		height: 9rem
 	.tiem-img
-		height: 15rem
+		height: 9rem
 	.tqw5-block
 		width: 90%
 		.tiem.t9
@@ -1488,19 +1607,28 @@
 		padding: 3rem 0
 	.guarantee-item-wrap
 		width: 100%
-	.guarantee-item-img.v1
-		bottom: -4px
-	.guarantee-item-img.v4
-		bottom: -15px
+	// .guarantee-item-img.v1
+	// 	bottom: -4px
+	// .guarantee-item-img.v4
+	// 	bottom: -15px
 	.gsp
-		right: -1rem
-		top: 0rem
-	.guarantee-item-img.v5
-		bottom: -15px
-	.guarantee-item-img.v6
-		bottom: -11px
+		right: -2rem
+		top: 1.5rem
+	// .guarantee-item-img.v5
+	// 	bottom: -15px
+	// .guarantee-item-img.v6
+	// 	bottom: -11px
+	.guarantee-item
+		justify-content: space-around
 	.shtory-tab__item
-		width: 100%
+		width: 45%
+		.text
+			font-size: 13px
+		.tsm13
+			font-size: 1.1rem
+		.bord
+			width: calc(100% + 9px)
+			height: calc(100% + 9px)
 	.shtory-left
 		width: 100%
 	.shtory-advas
@@ -1520,10 +1648,12 @@
 		width: 100%
 	.shtory-line
 		flex-wrap: wrap
-		justify-content: center
+		justify-content: space-between
 		& > div
-			width: 100%
-			margin-bottom: 2rem
+			width: 48%
+			margin-bottom: 1rem
+		.text18
+			font-size: 1.3rem
 	.shtory-btns
 		width: auto
 		flex-direction: column
@@ -1532,4 +1662,323 @@
 	.sba-link__img
 		width: 6rem
 	.zamer
-		height: 15rem
+		height: 10rem
+		width: 48%
+		& a
+			color: #ff0000
+	.text21
+		font-size: 1.3rem
+	.block-i-img
+		display: none
+	.header-block
+		.block-i
+			width: 70%
+	.cta-form-block
+		flex-direction: column
+		justify-content: center
+	.cta-form-block input, .cta-form-block button
+		width: auto
+		margin-bottom: 1.5rem
+	.inp-flex
+		margin-bottom: 1.5rem
+	.check-line
+		margin-bottom: 1rem
+		text-align: center
+	.check-label
+		left: 2rem
+	.cta-img
+		width: 12rem
+		top: 25%
+	.cost-one
+		width: 100%
+		margin-bottom: 3rem
+	.cost-two
+		width: 100%
+		margin-bottom: 3rem
+	.cost-three
+		width: 100%
+		width: 28rem
+		margin: 0 auto 3rem auto
+		.small-text
+			margin-bottom: 2rem
+	.cost-four
+		width: 100%
+		left: 0
+	.cost-four-b
+		left: 5rem
+		bottom: 0rem
+	.cost-one .cost-head
+		width: 75%
+	.items-gar
+		width: 10rem
+	.cost-block
+		padding: 1.5rem
+	.cost-four-img
+		transform: scale(1)
+	.quality-left
+		width: 111%
+		top: 13%
+		position: relative
+		margin-left: -3rem
+		margin-right: -3rem
+	.quality-left-play
+		right: unset
+		left: 50%
+		transform: translate(-50%,-50%)
+		top: 50%
+	.quality-left-play-text
+		right: -5rem
+		top: 7.5rem
+		& > div
+			font-size: 1.4rem
+			color: #000
+	.quality-right
+		margin-top: 2rem
+		.text21
+			font-size: 1.4rem
+	.quality-title
+		position: relative
+		.items
+			position: absolute
+			bottom: -3rem
+	.quality-item__img
+		width: 4rem
+	.quality-serts
+		flex-wrap: wrap
+		justify-content: space-around
+	.quality-sert
+		width: 26%
+		height: auto
+		margin-bottom: 2rem
+	.quality-cont.v2 .quality-right
+		margin-top: 3rem
+	.quality-qw
+		width: 111%
+		margin-left: -3rem
+		margin-right: -3rem
+		position: relative
+		top: unset
+		right: unset
+	.vmd
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+	.qwr
+		padding: 2rem
+	.works-cont
+		.works-item
+			width: 100%
+	.works-item.big .works-item-img
+		height: 25rem
+	.works .works-item-img.v2
+		height: 11.2rem
+	.works-item-left.v2
+		.works-item-img
+			height: 30rem
+	.zakaz-block-row
+		flex-wrap: wrap
+		justify-content: space-around
+	.zakaz-block-wrap
+		&:nth-of-type(1)
+			& .zakaz-block-item
+				&:nth-of-type(1)
+					width: 100%
+	.zakaz-block-item
+		width: 49%
+		margin-bottom: 3rem
+		&:nth-of-type(2)
+			.mb2
+				margin-bottom: 0
+		.mb2
+			margin-bottom: 1rem
+	.zakaz-block-item .green-text
+		margin: 1rem auto 1rem auto
+	.arrs
+		display: none
+	.faq-left-block
+		width: 100%
+	.faq-acr-body
+		padding: 0.5rem 1.5rem
+	.crcv
+		width: 2.5rem
+		height: 2.5rem
+	.cta2-form
+		input, button
+			width: auto
+		.inp-md
+			width: auto
+			.check-label
+				left: 0
+	.cta2-man .cost-four-b
+		bottom: unset
+		left: 50%
+		top: 85%
+		transform: translate(-50%,-50%)
+	.wom-m
+		display: block
+		top: -25px
+	.modal-sm
+		width: 90vw
+		top: 3rem
+		.check-label
+			left: 0
+		.w80
+			width: 90%
+	.modal-norm
+		width: 90vw
+		top: 3rem
+		.check-label
+			left: 1rem
+			margin-right: 2rem
+		.w90
+			width: 100%
+		.modal__inp-bl
+			input,button
+				width: auto
+			.inp-md
+				margin-top: 0
+				margin-bottom: 2rem
+				width: 20rem
+			.inp-md.mb2
+				width: auto
+
+	.modal-wh
+		width: 100%
+		padding: 1rem 1rem 1rem 2rem
+	.modal
+		.cost-four-b
+			left: 0
+			margin-bottom: 2rem
+	.m-img
+		width: 15rem
+		margin-bottom: 2rem
+	.thank
+		.header-block .block-i
+			width: 100%
+	.header
+		.green-text__cir
+			// width: 10px
+			// height: 6px
+	.test-item-form
+		.inp-flex
+			margin-bottom: 2rem
+		.check-label
+			left: 0rem
+	.shtory-right-two
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		.tsm12
+			font-size: 14px
+			margin-top: 0.5rem
+	.cta
+		.cta-form-block
+			&:nth-of-type(3)
+				.inp-min
+					width: auto
+	.check-line
+		width: 28rem
+	.faq-left
+		margin-top: 4rem
+	.cta2
+		.check-line
+			width: 23rem
+	.contacts-one
+		.block-i-img
+			display: block
+	.test-item
+		h5
+			order: -2
+		.tqw5-block-2
+			order: -1
+			margin-bottom: 2rem
+
+	.title-b
+		br
+			display: none
+	.bend-img
+		width: 6rem
+	.test-item.end
+		br
+			display: none
+	.check-line
+		text-align: left
+	.test-item-form .check-label
+		margin-right: 1rem
+	.test-item.end
+		padding-left: 1rem
+	.shtory-advas-item__img
+		width: 2.5rem
+		height: 2.5rem
+		img
+			padding: 3px
+	.shtory-right-one-wrap
+		.text24
+			font-size: 1.6rem
+
+	.cta
+		.check-line
+			width: 22rem
+		.check-label
+			left: -1rem
+			margin-right: 0
+	.cost-block
+		width: 100%
+		br
+			display: none
+	.check-label
+		margin-right: 1rem
+	.cost-three
+		.check-label
+			left: 0
+	.logo
+		.items
+			display: none
+	.header-block
+		.green-text
+			display: none
+	.soc
+		justify-content: center
+	.main-btn-wrap
+		margin-top: 6rem
+		.small-text
+			text-align: center
+	.guarantee-item
+		height: 14rem
+	.guarantee-item-img
+		width: 10rem
+		height: 100%
+	.shtory-tab__item
+		height: 7rem
+	// .shtory-tab__item-block
+	// 	height: 7rem
+	.shtory-tab__item
+		margin-bottom: 2rem
+	.quality-item
+		.small-text
+			font-size: 1.4rem
+	.quality-cont
+		.text21
+			font-size: 1.8rem
+	.quality
+		.test-form-wrap
+			.small-text
+				br
+					display: none
+	.quality-item
+		padding: 1rem
+	.faq-right
+		width: 26rem
+	.cta2-man
+		width: 18rem
+	.cost-four-text
+		padding: 1rem
+	.contacts
+		.title
+			text-align: left
+		.block-i.mod2
+			flex-direction: column
+	.block-i-img
+		width: 6rem
+	.footer
+		padding: 2rem 0
