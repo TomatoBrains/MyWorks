@@ -222,51 +222,51 @@ $.fn.hasAttr = function(name) {
         });
         fd.append('qw4', dopT4);
 
-        if(formThis.find('input[name="formname"]').val() === "price" ){
-            var link = document.createElement('a');
-            link.setAttribute('href', 'docs/price.pdf');
-            link.setAttribute('target', "_blank");
-            link.setAttribute('download','');
+        // if(formThis.find('input[name="formname"]').val() === "price" ){
+        //     var link = document.createElement('a');
+        //     link.setAttribute('href', 'docs/price.pdf');
+        //     link.setAttribute('target', "_blank");
+        //     link.setAttribute('download','');
 
-            if(navigator.userAgent.indexOf('Mac') > 0){
-              window.location = 'docs/price.pdf';
-            }else{
-              simulate( link, "click");
-            }
+        //     if(navigator.userAgent.indexOf('Mac') > 0){
+        //       window.location = 'docs/price.pdf';
+        //     }else{
+        //       simulate( link, "click");
+        //     }
 
-            $('html').addClass('stop');
-            $(".overlay").fadeOut();
-            $("#modal-thank").fadeIn();
-            formThis.find('.btn').removeAttr('disabled');
+        //     $('html').addClass('stop');
+        //     $(".overlay").fadeOut();
+        //     $("#modal-thank").fadeIn();
+        //     formThis.find('.btn').removeAttr('disabled');
 
-          }else if(formThis.find('input[name="formname"]').val() === "test"){
+        //   }else if(formThis.find('input[name="formname"]').val() === "test"){
 
             
-            formThis.find('input').attr({
-              'disabled': 'true',
-            });
-            formThis.find('button').attr({
-              'disabled': 'true',
-            });
+        //     formThis.find('input').attr({
+        //       'disabled': 'true',
+        //     });
+        //     formThis.find('button').attr({
+        //       'disabled': 'true',
+        //     });
 
-            $(".overlay").fadeOut();
-            $('html').addClass('stop');
-            $("#modal-thank").fadeIn();
-          }else if(formThis.find('input[name="formname"]').val() === "proj"){
+        //     $(".overlay").fadeOut();
+        //     $('html').addClass('stop');
+        //     $("#modal-thank").fadeIn();
+        //   }else if(formThis.find('input[name="formname"]').val() === "proj"){
 
-           // $('.mn-right-it-1').show();
-           // $('.mn-right-it-2').hide();
-           // $('.mn-right-it-3').fadeIn();
-          }else{
-            $(".overlay").fadeOut();
-            $('html').addClass('stop');
-            $("#modal-thank").fadeIn();
-            formThis.find('.btn').removeAttr('disabled');
+        //    // $('.mn-right-it-1').show();
+        //    // $('.mn-right-it-2').hide();
+        //    // $('.mn-right-it-3').fadeIn();
+        //   }else{
+        //     $(".overlay").fadeOut();
+        //     $('html').addClass('stop');
+        //     $("#modal-thank").fadeIn();
+        //     formThis.find('.btn').removeAttr('disabled');
 
-          }
+        //   }
 
           // formThis.find('.btn').removeAttr('disabled');
-          $('form').trigger('reset');
+          // $('form').trigger('reset');
       
       $.ajax({
         url: action,
@@ -276,8 +276,9 @@ $.fn.hasAttr = function(name) {
         data: fd,
         success: function(msg){
 
-      
-
+      $('form').trigger('reset');
+      // window.location.href = "http://profhelp.com.ua";
+        window.location.replace("./thanks.html");
         },
 
       });

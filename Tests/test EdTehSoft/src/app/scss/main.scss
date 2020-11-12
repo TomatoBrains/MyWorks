@@ -1,0 +1,255 @@
+.mainBack {
+  background: $colorMainGrad;
+}
+.main {
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+  z-index: 1;
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    &-subtitle {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+    }
+    &--pulse {
+      @include pulse;
+      padding: 1.2rem 1rem;
+      margin-right: 1.6rem;
+      display: flex;
+      align-items: center;
+    }
+    &--absolute {
+      position: absolute;
+      right: -1.2rem;
+    }
+    &-action {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    &-reqBtn {
+      margin-top: 35px;
+      text-align: center;
+      & button {
+        @include btn(2.2rem, 2.5rem, $mainColorYell);
+        box-shadow: 0px 0px 30px rgba(255, 222, 0, 0.35),
+          inset 0px -2px 2px rgba(0, 0, 0, 0.25);
+      }
+    }
+    &-item {
+      &:nth-of-type(2) {
+        margin-top: 5rem;
+      }
+    }
+    &-list {
+      border-left: 3px solid $colorOrange;
+      padding-left: 8px;
+      &:nth-of-type(2) {
+        margin-top: 2.5rem;
+      }
+
+      margin-top: 1.5rem;
+      & li {
+        margin-top: 1rem;
+        & br {
+          display: none;
+        }
+      }
+    }
+  }
+  &__separation {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+@include xs_500 {
+  .main {
+    padding-bottom: 0;
+    &__content {
+      display: flex;
+      margin-top: 5rem;
+      justify-content: center;
+      &-item {
+        &:nth-of-type(1) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-right: 2rem;
+        }
+        &:nth-of-type(2) {
+          margin-top: 0;
+        }
+      }
+      &-subtitle {
+        flex-direction: column;
+        margin-top: 0;
+      }
+      &-action {
+        margin-top: 6rem;
+      }
+      &-list {
+        &:nth-of-type(1) {
+          margin-top: 0;
+        }
+        & li {
+          & br {
+            display: block;
+          }
+        }
+      }
+    }
+    &__image {
+      bottom: 8%;
+    }
+    &__separation {
+      position: relative;
+    }
+  }
+}
+@include sm_700 {
+  .main {
+    &__content {
+      justify-content: end;
+    }
+    &__image {
+      width: 40vw;
+      max-width: 32rem;
+      image-rendering: -webkit-optimize-contrast;
+      &-back {
+        top: 0;
+        z-index: -1;
+      }
+      &-quotL {
+        bottom: -1rem;
+        left: -4rem;
+      }
+      &-quotR {
+        top: -3rem;
+        right: 1rem;
+      }
+    }
+    &-rect {
+      top: 0%;
+      left: 7%;
+    }
+    &-dots {
+      top: 2%;
+      left: 22%;
+      width: 10rem;
+      z-index: -1;
+    }
+    &-cross {
+      bottom: 33%;
+      left: 3%;
+    }
+  }
+}
+@include md_128 {
+  .main {
+    padding-top: 10rem;
+    &__title {
+      text-align: left;
+      max-width: 53rem;
+    }
+    &__content {
+      margin-top: 6rem;
+      &-item {
+        text-align: left;
+        &:nth-of-type(1) {
+          margin-right: 5rem;
+        }
+      }
+      &-subtitle {
+        display: block;
+        padding-left: 0;
+      }
+      &-action {
+        margin-top: 3rem;
+        margin-left: 1rem;
+      }
+      &-list {
+        padding-left: 1.6rem;
+        & li {
+          margin-top: 1.5rem;
+          & br {
+            display: none;
+          }
+        }
+      }
+      &-reqBtn {
+        margin-top: 0;
+        & button {
+          padding: 2.2rem 2.5rem;
+        }
+      }
+      &--absolute {
+        right: -1.5rem;
+      }
+    }
+    &__image {
+      width: vw(523px);
+      right: vw(330px);
+      bottom: vw(80px);
+      max-width: unset;
+      &-back {
+        right: vw(-160px);
+        top: vw(-30px);
+        width: vw(581px);
+      }
+      &-quotR {
+        top: -7rem;
+        right: 5rem;
+      }
+      &-quotL {
+        bottom: 4rem;
+        left: -6rem;
+      }
+    }
+    &-dots {
+      width: auto;
+      top: 4rem;
+      left: vw(152px);
+    }
+    &-rect {
+      left: vw(30px);
+      top: 6rem;
+    }
+    &-cross {
+      left: vw(30px);
+      bottom: vw(200px);
+    }
+    &__separation {
+      margin-top: 2rem;
+    }
+  }
+}
+@include xl_172 {
+  .main {
+    &-dots {
+      left: 35rem;
+    }
+    &-rect {
+      left: 24rem;
+    }
+    &-cross {
+      left: 15rem;
+      bottom: 18rem;
+    }
+  }
+}

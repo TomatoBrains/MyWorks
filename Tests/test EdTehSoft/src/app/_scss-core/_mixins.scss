@@ -1,0 +1,64 @@
+@mixin btn($padLR, $padTB, $color) {
+  padding: $padTB $padLR;
+  background-color: $color;
+  color: #000;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $mainColorYell;
+    box-shadow: unset;
+  }
+}
+@mixin pulse {
+  border-radius: 50%;
+  background-color: $colorOrange;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid $colorOrange;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    -webkit-animation: pulse 1.8s linear infinite;
+    animation: pulse 1.8s linear infinite;
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border: 1px solid $colorOrange;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    -webkit-animation: pulse 1.8s linear infinite;
+    animation: pulse 1.8s linear infinite;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+}
+@mixin xs_500 {
+  @media (min-width: 577px) {
+    @content;
+  }
+}
+@mixin sm_700 {
+  @media (min-width: 778px) {
+    @content;
+  }
+}
+@mixin md_128 {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin xl_172 {
+  @media (min-width: 1720px) {
+    @content;
+  }
+}

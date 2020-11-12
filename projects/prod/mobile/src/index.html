@@ -56,7 +56,7 @@
           <div class="header-block">
             <div class="header-row mrs">
               <div class="items mrs">
-                <div class="items-img mr">
+                <div class="items-img mr edit_ico">
                   <img src="assets/img/icons/calc.svg" alt="" />
                 </div>
                 <a href="#test" class="fw5 link-dark link-scroll tsm12 tdu">
@@ -66,7 +66,7 @@
               </div>
 
               <div class="items mrs">
-                <div class="items-img mr">
+                <div class="items-img mr edit_ico">
                   <img src="assets/img/icons/zam.svg" alt="" />
                 </div>
                 <a href="#" class="fw5 link-dark btn-zamer-js tsm12 tdu">
@@ -76,7 +76,7 @@
               </div>
 
               <div class="items mrs">
-                <div class="items-img mr">
+                <div class="items-img mr edit_ico">
                   <img src="assets/img/icons/bo.svg" alt="" />
                 </div>
                 <a href="#" class="fw5 btn-call-js link-dark tsm12 tdu">
@@ -201,7 +201,7 @@
             размерам</span
           >
           <span class="hover-title"
-            ><span class="tgc tdu">под ключ</span>
+            ><span class="tgc tdu underLine">под ключ</span>
             <img
               src="assets/img/icons/info.png"
               alt=""
@@ -5932,7 +5932,24 @@
         $(".right-m-block").slideToggle();
         $(".right-m .bord").toggle();
         $(".right-m ").toggleClass("active");
+        /// если уже нажали, то не всплывёт снова
+        clearInterval(womTime);
       });
+      ///всплытие звонку консультатнта
+      let womTime = setTimeout(womUp, 10000);
+      function womUp() {
+        $(".right-m-block").slideToggle();
+        $(".right-m .bord").toggle();
+        $(".right-m ").toggleClass("active");
+      }
+      //// клик по квиз-некст поднимает вверх
+      function quizTopScroll() {
+        let scrollTo = $(".test-form-left").offset().top;
+        $("body, html").animate({ scrollTop: scrollTo }, 300);
+      }
+      $(".quiz__next-wrap").on("click", quizTopScroll);
+      $(".test-item label").on("click", quizTopScroll);
+      ////
       $("input[type='tel']").mask("+7-(999)-999-99-99");
       if ($("body").find(".contacts").length > 0) {
         var offsetHeight = $(".cta2").offset().top - $(window).height() - 300;

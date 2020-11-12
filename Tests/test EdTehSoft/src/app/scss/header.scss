@@ -1,0 +1,98 @@
+.header {
+  padding-top: 1.3rem;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 13rem;
+  }
+  &__login {
+    & button {
+      @include btn(2rem, 1.4rem, #fff);
+      border: 1px solid $mainColorYell;
+    }
+  }
+  &__descr {
+    margin-top: 2.8rem;
+    display: flex;
+    padding: 0 8px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    &-item {
+      text-align: center;
+    }
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+      &:nth-of-type(1) {
+        padding-left: 1.5rem;
+      }
+      &:nth-of-type(2) {
+        padding-right: 1.5rem;
+        margin-top: 2.5rem;
+      }
+    }
+    &-txt {
+      & span {
+        margin: 0 4px;
+      }
+    }
+  }
+}
+@include xs_500 {
+  .header {
+    &__logo {
+      width: auto;
+    }
+    &__descr {
+      justify-content: center;
+      flex-direction: row;
+      &-item {
+        margin-right: 1.5rem;
+      }
+      &--marR {
+        margin-right: 0;
+      }
+      &--flex {
+        &:nth-of-type(2) {
+          margin-top: 0;
+          padding: 0;
+        }
+        &:nth-of-type(1) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+@include md_128 {
+  .header {
+    padding-top: 2rem;
+    &__wrap {
+      align-items: center;
+    }
+    &__logo {
+      order: 1;
+    }
+    &__login {
+      order: 3;
+      & button {
+        padding: 1.8rem 2.5rem;
+      }
+    }
+    &__descr {
+      order: 2;
+      width: auto;
+      margin-top: 0;
+      &-item {
+        margin-right: 6.5rem;
+      }
+      &--marR {
+        margin-right: 0;
+      }
+    }
+  }
+}

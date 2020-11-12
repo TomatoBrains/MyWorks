@@ -1,0 +1,24 @@
+.h1 {
+  font-size: 2.4rem;
+  @include md_128 {
+    font-size: 4.8rem;
+  }
+}
+.t24 {
+  font-size: 2.4rem;
+}
+.t14 {
+  font-size: 1.4rem;
+}
+.t16 {
+  font-size: 1.6rem;
+}
+.t36 {
+  font-size: 3.6rem;
+}
+.bold {
+  font-weight: 700;
+}
+.semiBold {
+  font-weight: 600;
+}

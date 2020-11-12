@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Open Sans";
+  font-size: 10px;
+  color: #fff;
+  line-height: 1;
+}
+body {
+  text-rendering: optimizeSpeed;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+img {
+  max-width: 100%;
+  align-self: center;
+  display: block;
+}
+.display {
+  display: none;
+  @include sm_700 {
+    display: block;
+    position: absolute;
+  }
+}
+.grayT {
+  color: $colorGray;
+}
+.colorYell {
+  color: $mainColorYell;
+}
+.container {
+  padding: 0 8px;
+  @include sm_700 {
+    padding: 0 2.5rem;
+  }
+  @include md_128 {
+    padding: 0 10rem;
+  }
+  @include xl_172 {
+    padding: 0 vw(350px);
+  }
+}
+
+@import "app/_scss-core/_core";
+@import "scss/fonts.scss";
+@import "scss/typography.scss";
+
+@import "scss/header.scss";
+@import "scss/main.scss";
+
+@import "scss/animations.scss";
+@import "scss/helpers";

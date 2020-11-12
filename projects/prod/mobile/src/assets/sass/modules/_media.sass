@@ -402,6 +402,7 @@
 		width: 4rem
 	.main-btn-img.v2
 		right: -3.5rem
+		top: -3rem
 		width: 6rem
 	.test-wh .hover-title-img
 		right: -1rem
@@ -849,6 +850,10 @@
 	.zakaz-line-act:before
 		height: 2rem
 		width: 2rem
+	.to_top.act
+		right: unset
+		left: 2rem
+		bottom: 2rem
 // /////////////////////////////////////////////////////////////////////////////////////////////
 
 @media (max-width: 767px)
@@ -1050,8 +1055,8 @@
 		font-size: 4rem
 	.block-i.v1
 		width: 17rem
-	.mblock
-		display: none
+	.main-btn-wrap
+		margin-top: 0rem
 	.main-row-item-img
 		right: -1.5rem
 		top: -2.5rem
@@ -1192,6 +1197,35 @@
 	.politic
 		.inp-min
 			width: 45%
+	.mblock
+		position: relative
+		height: auto
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		width: auto
+		justify-content: space-evenly
+		right: 0
+		& > div
+			position: relative
+			padding: 1rem
+			margin-bottom: 2rem
+			& br
+				display: none
+	.mblock-item-1
+		left: 0rem
+		top: 0rem
+		width: 48%
+	.mblock-item-2
+		left: 0rem
+		top: 0rem
+		width: 48%
+	.mblock-item-3
+		left: 0rem
+		top: 0rem
+		width: 50%
+	.main-row
+		width: 100%
 //////////////////////////////////////////////////////////////
 @media (max-width: 567px)
 
@@ -1600,7 +1634,15 @@
 	.input.phone
 		background-position-x: 1rem
 	.hand
-		display: none !important
+		top: 20%
+		width: 12rem
+		height: 16rem
+		right: unset
+		left: 50%
+		transform: translateX(-50%)
+	.test-item
+		.mlg
+			margin-bottom: 20rem
 	.social-item
 		margin-bottom: 0
 	.section
@@ -1687,11 +1729,15 @@
 	.check-label
 		left: 2rem
 	.cta-img
-		width: 12rem
+		position: relative
+		width: 30rem
 		top: 25%
+		left: 50%
+		transform: translateX(-50%)
 	.cost-one
 		width: 100%
 		margin-bottom: 3rem
+		order: -2
 	.cost-two
 		width: 100%
 		margin-bottom: 3rem
@@ -1704,6 +1750,8 @@
 	.cost-four
 		width: 100%
 		left: 0
+		order: -1
+		margin-bottom: 2rem
 	.cost-four-b
 		left: 5rem
 		bottom: 0rem
@@ -1816,7 +1864,7 @@
 		transform: translate(-50%,-50%)
 	.wom-m
 		display: block
-		top: -25px
+		top: -35px
 	.modal-sm
 		width: 90vw
 		top: 3rem
@@ -1940,13 +1988,13 @@
 	.soc
 		justify-content: center
 	.main-btn-wrap
-		margin-top: 6rem
+		margin-top: 2rem
 		.small-text
 			text-align: center
 	.guarantee-item
 		height: 14rem
 	.guarantee-item-img
-		width: 10rem
+		width: 35%
 		height: 100%
 	.shtory-tab__item
 		height: 7rem
@@ -1979,6 +2027,44 @@
 		.block-i.mod2
 			flex-direction: column
 	.block-i-img
-		width: 6rem
+		width: 7rem
+		& > img
+			width: 7rem
 	.footer
 		padding: 2rem 0
+	.hover-title-img
+		width: 1.5rem
+	.mblock
+		flex-direction: column
+	.mblock-item-1
+		left: 1rem
+		top: 0rem
+	.mblock-item-2
+		left: 14rem
+		top: 0rem
+	.mblock-item-3
+		left: 1rem
+		top: 0rem
+	.guarantee-item-text
+		width: 65%
+		& br
+			display: none
+	.guarantee-item-img.v6
+		width: 35%
+	.quality
+		.circ
+			& img
+				padding: 1px
+	.qwr .items .items-img
+		width: 4rem
+		height: 4rem
+	.arr2
+		display: block
+		left: 50%
+		transform: translateX(-50%)
+		top: 21rem
+	.arrs.t2.arr2
+		display: block
+		left: 50%
+		transform: translateX(-50%)
+		top: 3rem

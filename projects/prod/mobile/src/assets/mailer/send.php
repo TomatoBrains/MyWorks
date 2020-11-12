@@ -44,14 +44,12 @@ $mail->CharSet = 'utf-8';
 // $mail->isSMTP(); 
 $mail->Host = 'smtp.gmail.com';  
 $mail->SMTPAuth = true;                      
-$mail->Username = 'dinastiasends@gmail.com'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-$mail->Password = '473-Ghd-%sasd'; // Ваш пароль
+$mail->Username = 'formsajt987@gmail.com'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+$mail->Password = '473-Ghd-%sasd121'; // Ваш пароль
 $mail->SMTPSecure = 'ssl';                            
 $mail->Port = 465;
-$mail->setFrom('dinastiasends@gmail.com', 'Форма с сайта'); // Ваш Email
-$mail->addAddress('bg@skytend.ru'); // Email получателя
-$mail->addAddress('kirill.droznik@gmail.com');
-//$mail->addAddress('Okna@domio.ru'); // Email получателя
+$mail->setFrom('formsajt987@gmail.com', 'Форма с сайта'); // Ваш Email
+$mail->addAddress('diman.b95@mail.ru'); // Email получателя
 //$mail->addAddress('kirill.droznik@gmail.com'); // Email получателя
 // $mail->addAddress('example@gmail.com'); // Еще один email, если нужно.
 
@@ -69,7 +67,7 @@ $mail->addAddress('kirill.droznik@gmail.com');
 // Письмо
 $mail->isHTML(true); 
 // 1. Срок действия?:  ' . $qw1 . ' <br> 
-$mail->Subject = 'Форма с сайта  skytend'; // Заголовок письма
+$mail->Subject = 'Форма с сайта  '; // Заголовок письма
  if($_POST['formname'] == 'test'){
         $mail->Body    = '
             Пользователь прошёл тест: <br>
