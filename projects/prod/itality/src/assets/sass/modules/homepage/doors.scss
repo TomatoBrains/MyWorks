@@ -1,0 +1,83 @@
+.doors {
+  @include adap(padding-top, 30px, 110px);
+  &--flex {
+    justify-content: space-between;
+  }
+  &__tabBtns {
+    @include adap(margin-right, 30px, 110px);
+    width: vw(327px);
+    flex: none;
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: vw(20px);
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background-color: #eaeaea;
+        & img {
+          transition: all 0.3s ease;
+          margin-right: vw(40px);
+        }
+        &::after {
+          opacity: 1;
+        }
+        &::before {
+          opacity: 0;
+        }
+      }
+      & img {
+        margin-right: vw(20px);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        width: 13px;
+        height: 13px;
+        background-color: #272f42;
+        border-radius: 3px;
+        right: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &::before {
+        content: "";
+        width: 65%;
+        transition: opacity 0.3s ease;
+        height: 1px;
+        background-color: #eaeaea;
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+      }
+      &:last-of-type {
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &__tabs {
+    margin-right: -2vw;
+    &-tab {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      width: 25%;
+      @include adap(margin-bottom, 20px, 40px);
+      & img {
+        @include adap(margin-bottom, 10px, 20px);
+      }
+    }
+  }
+  &__more {
+    text-align: center;
+    & a {
+      padding: vw(33px) vw(70px);
+    }
+  }
+}

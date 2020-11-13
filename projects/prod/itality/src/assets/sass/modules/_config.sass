@@ -1,0 +1,558 @@
+*
+	box-sizing: border-box
+html
+	font-size: 10px
+	overflow-x: hidden
+body
+	font-family: 'Muller', sans-serif
+	line-height: 1.2
+	font-weight: normal
+	overflow-x: hidden
+	color: #282828
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+a, button, input, textarea, select
+	outline: none
+	cursor: pointer
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	color: inherit
+p
+	margin: 0
+img
+	max-width: 100%
+	max-height: 100%
+
+.lh08
+	line-height: 0.8
+.lh1
+	line-height: 1
+.lh15
+	line-height: 1.5
+.lsp
+	letter-spacing: 0.05vw
+.tgc
+	color: #ff0000
+a.tgc
+	transition: all 0.4s
+	&:hover
+		color: #000
+.gray
+	color: #b7b6b7
+
+.fw1
+	font-weight: 100
+.fw3
+	font-weight: 100
+.fw5
+	font-weight: 500
+.fw4
+	font-weight: 400
+.fw7
+	font-weight: 700
+.fw8
+	font-weight: 800
+.fwb
+	font-weight: bold
+.fw9
+	font-weight: 900
+
+.fsi
+	font-style: italic
+.tar
+	text-align: right
+.tdt
+	text-decoration: line-through
+.tdu
+	text-decoration: underline
+.tac
+	text-align: center
+.ttu
+	text-transform: uppercase
+
+.title
+	font-size: 2.55vw
+	line-height: 1.1
+.t36
+	font-size: 1.9vw
+.t34
+	font-size: 1.77vw
+.t32
+	font-size: 1.67vw
+.t30
+	font-size: 1.56vw
+.t28
+	font-size: 1.46vw
+.t26
+	font-size: 1.35vw
+.t24
+	font-size: 1.25vw
+.t23
+	font-size: 1.2vw
+.t22
+	font-size: 1.15vw
+.t21
+	font-size: 1.1vw
+.t20
+	font-size: 1.04vw
+.t18
+	font-size: 0.94vw
+.t16
+	font-size: 0.83vw
+.t14
+	font-size: 0.73vw
+
+.t13
+	font-size: 0.68vw
+.t12
+	font-size: 0.63vw
+.t10
+	font-size: 0.52vw
+.t8
+	font-size: 0.42vw
+.t7
+	font-size: 0.37vw
+
+// .container
+// 	max-width: 80vw
+// 	margin: 0 auto
+// 	width: 100%
+// 	&-big
+// 		max-width: 85vw
+// 		margin: 0 auto
+// 	&-min
+// 		max-width: 56vw
+// 		margin: 0 auto
+
+.mlg2
+	margin-bottom: 4.5vw
+.mlg
+	margin-bottom: 3.5vw
+.msm
+	margin-bottom: 2.4vw
+.mb
+	margin-bottom: 2vw
+.mb2
+	margin-bottom: 1.4vw
+.mbm
+	margin-bottom: 0.7vw
+.mbs
+	margin-bottom: 0.41vw
+.mrm
+	margin-right: 0.5vw
+.mr
+	margin-right: 1vw
+.mrs
+	margin-right: 1.7vw
+
+.stop
+	overflow: hidden
+
+.section
+	padding: 6vw 0
+	position: relative
+.dib
+	display: inline-block
+.fsi
+	font-style: italic
+
+.poe
+	pointer-events: none
+.whsp
+	white-space: nowrap
+
+.btn
+	// padding: vw(32px) vw(55px)
+	// display: inline-flex
+	// align-items: center
+	// justify-content: center
+	// transition: all 0.3s
+	// z-index: 6
+	// cursor: pointer
+	// border: none
+	// position: relative
+	// box-shadow: inset 0 -4px 1px rgba(#f96f77,1), inset 0 0 24px rgba(#fcaf87,0.15)
+	// // text-shadow: 0 1px 5px rgba(210, 110, 116, 0.49)
+	// // width: 100%
+	// // padding-top: 1.5vw
+	// // padding-bottom: 1.5vw
+	// color: #ffffff
+	// // box-shadow: inset 0 0 24px rgba(252, 160, 80, 0.15)
+	// border-radius: 7px
+	// &:hover
+	// 	box-shadow: inset 0 4px 1px  rgba(#f96f77,1), inset 0 0 24px rgba(#fcaf87,0.15)
+
+	// &:not(:disabled) .btn-blick
+	// 	position: absolute
+	// 	left: 0
+	// 	top: 0
+	// 	width: 100%
+	// 	height: 100%
+	// 	border-radius: 7px
+	// 	overflow: hidden
+	// 	&:after
+	// 		margin-left: -30px
+	// 		content: " "
+	// 		width: 30px
+	// 		height: 300px
+	// 		background: #fff
+	// 		animation-delay: 0.05s
+	// 		position: absolute
+	// 		left: -40px
+	// 		top: -150px
+	// 		animation-timing-function: ease-in-out
+	// 		transition: all 0.1s
+	// 		animation-name: slideme
+	// 		animation-duration: 3.5s
+	// 		animation-iteration-count: infinite
+	// 		transform: rotate(45deg)
+	// &:hover
+	// 	//box-shadow: inset 0 4px 1px rgba(#99151d,1)
+	// // &.green
+	// // 	box-shadow: inset 0 -4px 1px rgba(#2d7e3c,1), inset 0 0 24px rgba(252, 160, 80, 0.15)
+	// // 	background-image: linear-gradient(to top, #3fab53 0%, #48e364 100%), linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%)
+	// // 	&:hover
+	// // 		box-shadow: inset 0 4px 1px rgba(#2d7e3c,1)
+	// &.bord
+	// 	border: 1px solid #5f8bce
+	// 	background: #ffffff
+	// 	color: #5f8bce
+	// 	&:hover
+	// 		box-shadow: 0px 5px 20px #5f8bce
+	// 		// color: #fff
+
+	// &.big
+	// 	padding: 1.5vw 1vw
+	// &.min
+	// 	padding-top: 1.6vw
+	// 	padding-bottom: 1.6vw
+	// &.min-l
+	// 	padding-left: 1.5vw
+	// 	padding-right: 1.5vw
+	// &.max
+	// 	width: 100%
+	// &-img
+	// 	width: 1.7vw
+.burger
+	width: 1.7vw
+	height: 2vw
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	span
+		display: block
+		width: 100%
+		height: 3px
+		// border-radius: 4px
+		position: relative
+		background-color: #fff
+		transition: all 0.4s
+		&:before, &:after
+			content: ''
+			position: absolute
+			display: block
+			width: 100%
+			height: 3px
+			left: 0
+			background-color: #fff
+			// border-radius: 4px
+			transition: all 0.4s
+		&:before
+			top: -0.55vw
+		&:after
+			bottom: -0.55vw
+	&__wrap
+		text-transform: uppercase
+		font-size: 1.3rem
+		color: #fff
+		display: flex
+		align-items: center
+		font-weight: 600
+		line-height: 0.8
+		cursor: pointer
+		&:hover .burger
+			span
+				background-color: #95A2C4
+				&:before, &:after
+					background-color: #95A2C4
+.close-nav
+	display: none
+
+.link
+	transition: all 0.4s
+	position: relative
+	display: inline-block
+	color: #ff0000
+	z-index: 4
+	&:before
+		content: ""
+		position: absolute
+		left: 50%
+		top: 100%
+		width: 100%
+		height: 1px
+		border-bottom: 1px solid #ff0000
+		transform: translateX(-50%)
+		transition: all 0.4s
+	&:hover
+		color: #ff0000
+		&:before
+			width: 40%
+	&.dsh
+		&:before
+			border-bottom: 1px dashed #ff0000
+
+input::-webkit-input-placeholder
+  color: #000000
+input:-ms-input-placeholder
+  color: #000000
+input::-ms-input-placeholder
+  color: #000000
+input::placeholder
+  color: #000000
+textarea::-webkit-input-placeholder
+  color: #000000
+textarea:-ms-input-placeholder
+  color: #000000
+textarea::-ms-input-placeholder
+  color: #000000
+textarea::placeholder
+  color: #000000
+.area
+	padding-left: 2vw
+	height: 7vw
+.input
+	padding: 1.6vw 1vw
+	background-color: transparent
+	align-self: center
+	width: 100%
+	position: relative
+	box-shadow: 0 6px 84px 25px rgba(0, 0, 0, 0.03)
+	border-radius: 7px
+	background-color: #ffffff
+	padding-left: 3vw
+	font-weight: 400
+	border: none
+	&.phone
+		// padding-left: 3.5vw
+		background: url(../img/icons/phone.png) no-repeat center left 1.4vw, #ffffff
+		background-size: 1vw
+	// &.name
+	// 	padding-left: 3.5vw
+	// 	background: url(../img/main/name.png) no-repeat center left 1.4vw, #f7f7f7
+	// 	background-size: 1vw
+	&.v2
+		border-radius: 5px
+		border: 1px solid #dddddd
+		background-color: #fff
+.inp-min
+	width: 31.5%
+.inp-md
+	width: 48%
+.inp-big
+	width: 100%
+.inp-c
+	width: 40%
+
+.arrows
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	width: 4vw
+	height: 4vw
+	z-index: 18
+	transition: all 0.4s
+	cursor: pointer
+	border: none
+	background: transparent
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 0.7vw
+	&.t2
+		width: 3vw
+		height: 3vw
+		padding: 1vw
+	&.t4
+		width: 3.5vw
+		height: 3.5vw
+	&.t6
+		box-shadow: 0 5px 54px rgba(0, 0, 0, 0.5)
+		background-color: #ffffff
+		border-radius: 100%
+		filter: grayscale(1)
+	&:hover
+		opacity: 0.7
+		transform: translateY(-50%) scale(1.1)
+		&.t6
+			filter: grayscale(0)
+			opacity: 1
+	&.v2
+		// background: url(../img/steps/bg-i-3.png) no-repeat center top
+		// background-size: 100% 100%
+		// width: 3.6vw
+		// height: 4vw
+		// padding-bottom: 1vw
+		// &:hover
+		// 	background: url(../img/steps/bg-i-1.png) no-repeat center top
+		// 	background-size: 100% 100%
+		&.slidePrev
+			left: 18.5vw
+			padding-right: 0.8vw
+		&.slideNext
+			right: 18.5vw
+// .slidePrev
+// 	left: 3.5rem
+// 	&.t2
+// 		left: -2.5vw
+// 	&.t4
+// 		left: -1.1vw
+// 	&.t3
+// 		left: 50%
+// 		top: 0
+// 		transform: translateX(-50%)
+// 		&:hover
+// 			opacity: 0.7
+// 			transform: translateX(-50%) scale(1.1)
+// .slideNext
+// 	right: 3.5rem
+// 	&.t2
+// 		right: -2.5vw
+// 	&.t4
+// 		right: -1.1vw
+// 	&.t3
+// 		left: 50%
+// 		bottom: -1vw
+// 		top: auto
+// 		right: auto
+// 		transform: translateX(-50%)
+// 		&:hover
+// 			opacity: 0.7
+// 			transform: translateX(-50%) scale(1.1)
+
+.check
+	&-box
+		cursor: pointer
+		display: block
+	&-line
+		display: flex
+		align-items: center
+	&-label
+		width: 1.1vw
+		height: 1.1vw
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0.2vw
+		position: relative
+		flex-shrink: 0
+		margin-right: .5vw
+		box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.08)
+		border-radius: 2px
+		background-color: #ffffff
+		&.v2
+			border-radius: 100%
+			box-shadow: 0 5px 10px rgba(43, 43, 51, 0.1)
+			border: 1px solid #e8e8e8
+			background-color: #ffffff
+			width: 1.5vw
+			height: 1.5vw
+			padding: 0.2vw
+			.check-label-act
+				width: 1vw
+				height: 1vw
+				border-radius: 100%
+				padding: 0.2vw
+				display: flex
+				align-items: center
+				justify-content: center
+				background-color: #4ca352
+		&-act
+			transition: all 0.4s
+			transform: scale(0)
+			border-radius: 2px
+			// background-color: #ffc24f
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70%
+			height: 70%
+		&.min
+			width: 1vw
+			height: 1vw
+			border-radius: 2px
+
+.rhide
+	display: none
+	&:checked ~ span
+		.check-label
+			&-act
+				transform: scale(1)
+			&.min
+				background-color: #5bd273
+	&:checked ~
+		.block-imp-bf
+			background-color: #4ca352
+			border: 1px solid #4ca352
+		.tsm13
+			color: #fff
+			position: relative
+		.times-block div.fancy-select div.trigger
+			color: #fff !important
+.wac
+	color: #3fbf3f !important
+.vic
+	color: #8173c7 !important
+// .tgc
+// 	color: #5fcff2 !important
+.emc
+	color: #fbc855 !important
+
+.text-rotate
+	position: absolute
+	left: 0
+	top: 0
+	width: 8vw
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	z-index: 71
+	&.right
+		left: auto
+		right: 0
+	&-item
+		position: relative
+		transform: rotate(-90deg)
+		white-space: nowrap
+		display: inline-block
+		color: rgba(#b3b3b3, 0.5)
+		&:before
+			content: ''
+			position: absolute
+			left: -3.4vw
+			top: 50%
+			transform: translateY(-50%)
+			border-top: 1px solid #d1d1d1
+			width: 3vw
+			height: 1px
+		&:after
+			content: ''
+			position: absolute
+			right: -3.4vw
+			top: 50%
+			transform: translateY(-50%)
+			border-top: 1px solid #d1d1d1
+			width: 3vw
+			height: 1px
+		&.wh
+			color: #ffff

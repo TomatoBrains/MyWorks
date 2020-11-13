@@ -1,0 +1,137 @@
+@function vw($target) {
+  $vw-context: (1920 * 0.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+@mixin adap($properties, $min-value, $max-value) {
+  & {
+    @each $property in $properties {
+      #{$property}: #{vw($max-value)};
+    }
+
+    @media (max-width: 992px) {
+      @each $property in $properties {
+        #{$property}: calc(
+          (
+            #{$min-value} +
+              #{strip-unit($max-value - $min-value)} *
+              ((100vw - 320px) / #{992 - 320}) /
+              2
+          )
+        );
+      }
+    }
+  }
+}
+@mixin videoBtn {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  & span {
+    padding: 2vw;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    z-index: -1;
+    background-color: rgba(241, 241, 241, 0.44);
+    border-radius: 100%;
+    animation: pulseicon 3.3s infinite linear;
+    //   @include md_767 {
+    // 	width: 180%;
+    // 	height: 180%;
+    //   }
+    //   @include sm-567 {
+    // 	width: 180%;
+    // 	height: 180%;
+    //   }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 170%;
+    height: 170%;
+    z-index: -2;
+    background-color: rgba(241, 241, 241, 0.3);
+    border-radius: 100%;
+    animation: pulseicon 3.3s infinite linear;
+    //   @include md_767 {
+    // 	width: 210%;
+    // 	height: 210%;
+    //   }
+    //   @include sm-567 {
+    // 	width: 210%;
+    // 	height: 210%;
+    //   }
+  }
+}
+@mixin mainBtn {
+  padding: vw(32px) vw(55px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  overflow: hidden;
+  z-index: 6;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  //   box-shadow: inset 0 -4px 1px rgba(#f96f77, 1),
+  //     inset 0 0 24px rgba(#fcaf87, 0.15);
+  color: #ffffff;
+  border-radius: 7px;
+  &:hover {
+    box-shadow: inset 0 4px 1px rgba(#f96f77, 1),
+      inset 0 0 24px rgba(#fcaf87, 0.15);
+  }
+
+  //   @include md_900 {
+  //     padding: 20px 30px;
+  //   }
+
+  //   @include xs_500 {
+  //     padding: 13px 20px;
+  //   }
+}
+
+@mixin mainBtnBlick {
+  &::after {
+    margin-left: -30px;
+    content: " ";
+    width: 30px;
+    height: 300px;
+    background: #fff;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+}

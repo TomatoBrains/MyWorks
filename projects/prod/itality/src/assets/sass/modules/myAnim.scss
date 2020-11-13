@@ -1,0 +1,11 @@
+@keyframes blink {
+  0% {
+    left: -30px;
+    transform: translate(0, 0) rotate(45deg);
+  }
+
+  100% {
+    left: 110%;
+    transform: translate(305px, 0) rotate(45deg);
+  }
+}

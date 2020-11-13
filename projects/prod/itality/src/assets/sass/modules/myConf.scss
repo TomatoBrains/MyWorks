@@ -1,0 +1,45 @@
+.container {
+  @include adap(padding-left, 15px, 120px);
+  //@include adap(padding-right, 15px, 120px);
+}
+.cw {
+  color: #fff;
+}
+.btnGrad {
+  background: linear-gradient(to right, #f96f77, #fcaf87);
+}
+.co {
+  color: #fa817c;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  width: vw(1800px);
+}
+h2 {
+  @include adap(font-size, 26px, 48px);
+  font-weight: 300;
+  & span {
+    font-weight: 500;
+  }
+}
+.videoBtn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include videoBtn;
+
+  & span {
+    padding: 1vw;
+  }
+
+  & svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.btn {
+  @include mainBtn;
+  @include mainBtnBlick;
+}

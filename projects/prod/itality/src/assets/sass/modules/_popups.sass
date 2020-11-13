@@ -1,0 +1,609 @@
+.overlay
+	//display: none
+	z-index: 999
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.7)
+	overflow-x: hidden
+.modal-wrap
+	position: absolute
+	top: 2vw
+	left: 50%
+	border-radius: 1rem
+	transform: translateX(-50%)
+	margin-bottom: 1vw
+.modal_pol
+	padding: 3vw 2vw
+	
+.modal
+	&-min
+		width: 26vw
+	&-smin
+		width: 21vw
+	&-norm
+		width: 38vw
+	&-big
+		width: 60.2vw
+	&-sm
+		width: 31vw
+	&-test
+		width: 69.271vw
+.modal-wh
+	padding: 1vw 2vw
+	border-radius: 13px
+	background-color: #ffffff
+	width: 70%
+	margin-left: auto
+	margin-right: auto
+	.shtory-list
+		padding-left: 3vw	
+	.sh-cr
+		background-color: #74b65f
+
+.modal
+	position: relative
+	&__block
+		padding: 3vw 3.3vw
+		z-index: 31
+		border-radius: 15px
+		background-color: #f0f1f1
+		position: relative
+		z-index: 5
+	&__bl
+		display: flex
+		align-items: center
+	
+#modal-end
+	.modal
+		&__block
+			padding: 3vw 5vw
+
+.mc
+	display: flex
+	align-items: center
+	&-img
+		width: 7.5vw
+		flex-shrink: 0
+
+	&-text
+.modal-ctg
+	width: 80%
+	display: block
+	margin-left: auto
+	margin-right: auto
+.modal__inp-bl
+	margin-left: auto
+	margin-right: auto
+.w80
+	width: 68%
+.w90
+	width: 94%
+.mc2
+	position: relative
+	&-arr
+		position: absolute
+		max-width: none
+		max-height: none
+		width: 3.4vw
+		left: 102%
+		top: 8.5vw
+
+.file-wrap
+	display: flex
+	justify-content: space-between
+	width: 100%
+	box-shadow: 0 0 131px rgba(40, 40, 40, 0.1)
+	border-radius: 10px
+	background-color: #ffffff
+.file-text
+	// box-shadow: 0 0 131px rgba(40, 40, 40, 0.1)
+	// border-radius: 10px 0 0 10px
+	// background-color: #ffffff
+	padding: 1vw
+.file-link	
+	box-shadow: 0 0 131px rgba(40, 40, 40, 0.1)
+	border-radius: 0 10px 10px 0
+	background-color: #bdbdbd
+	color: #ffffff
+	padding: 1.2vw 1.7vw
+	cursor: pointer
+.m-one
+	border-radius: 10px
+	background-color: #faeb42
+	padding: 0.9vw
+.input-hidden			
+	display: none
+// САМИ МОДАЛКИ v
+.modal-call
+	align-items: center
+	// padding-right: 3vw
+	overflow: hidden
+.modal-call__form
+	width: 23vw
+.modal-call__inp-bl
+	width: 70%
+	margin-left: auto
+	margin-right: auto	
+.modal-call__house
+	position: absolute
+	bottom: 0
+	left: -.5vw
+	width: 22vw
+	img
+		max-width: none
+		width: 100%
+	&.v2
+		width: 34vw
+		img
+			max-width: none
+			width: 100%
+
+.modal-thank__link
+	transition: all .3s
+	&:hover
+		color: #fff
+
+.modal-thank
+	padding-bottom: 16vw
+
+.modal-thank__phone
+	position: absolute
+	bottom: 0
+	width: 100%
+
+.mp-block
+	width: 100%
+	text-align: left
+
+// САМИ МОДАЛКИ
+
+.ml-test
+	position: fixed
+	left: 2vw
+	bottom: 2vw
+	width: 28vw
+	padding: 2vw
+	padding-left: 0
+	display: flex
+	align-items: center
+	justify-content: space-between
+	border-radius: 15px
+	background-color: #f0f1f1
+	z-index: 133
+	&-img
+		width: 53%
+
+	&-text
+		width: 45%
+
+.close
+	position: absolute
+	right: 0
+	top: 0
+	width: 1.7vw
+	height: 1.7vw
+	transform: translate(-50%, 50%)
+	cursor: pointer
+	z-index: 99
+	&-modals
+		top: 1vw
+.close:before, .close:after
+	position: absolute
+	left: 50%
+	content: ' '
+	height: 100%
+	width: 2px
+	background-color: #c7cbcf
+	transition: all 0.4s
+	border-radius: 3px
+.close:before
+	transform: rotate(45deg)
+.close:after
+	transform: rotate(-45deg)
+.close:hover 
+	&:before, &:after
+		background-color: #282828
+
+
+.mbc-bg
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+.modal-mbc
+	background-color: #fff
+	padding: 3vw 5.5vw
+	&__form
+		width: 64%
+	&__right
+		width: 31%
+		.phones
+			justify-content: center
+		.phones__item
+			color: #2b2b33
+		.block-c__img
+			width: 1vw
+			height: 1vw
+		.block-c
+			justify-content: center
+	&__block
+		display: flex
+		justify-content: space-between
+		position: relative
+		z-index: 5
+.cg
+	color: #999ca9
+.kvm
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	img
+		margin-right: 0.5vw
+		flex-shrink: 0
+		width: 1vw
+.th-text
+	line-height: 1.8
+
+.th-block
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 13vw
+	margin-left: 43%
+.back-close
+	display: flex
+	align-items: center
+	img
+		width: 0.9vw
+		flex-shrink: 0
+
+.btn-yout
+	
+.mts-img
+	left: 0
+	bottom: -3vw
+	width: 9vw
+	overflow: hidden
+	position: absolute
+	img
+		margin-bottom: -5vw
+		width: 100%
+
+.mn
+	display: flex
+	align-items: center
+	justify-content: center
+	&-left
+		width: 21vw
+		padding-right: 3vw
+		margin-right: -3vw
+		margin-top: 2vw
+		img
+			margin-top: -7vw
+			transform: scale(1.1) translateX(7%)
+	&-right
+		width: 30vw
+
+	&__form-block
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		.inp-md
+			margin-right: 1%
+			margin-left: 1%
+
+
+	&-name
+		position: absolute
+		bottom: -1.5vw
+		left: -0.3vw
+		.hp
+			font-variant: small-caps
+
+.close-b
+	right: 1vw
+	top: -0.5vw
+
+.strd-s
+	display: flex
+	align-items: center
+	width: 100%
+	position: relative
+	justify-content: space-between
+	padding: 0 !important
+	padding-right: 0 !important
+	&-item
+		width: 35%
+		position: relative
+		select
+			padding-left: .7vw
+			padding-right: .7vw
+		&.v1
+			width: 63%
+			&:before
+				content: ''
+				position: absolute
+				right: 0.7vw
+				top: 50%
+				height: 2vw
+				width: 1px
+				transform: translateY(-50%)
+				background-color: #dbdad8
+
+
+
+.end-soc-mod
+	flex-wrap: nowrap
+	width: 90%
+	.tiem
+		padding: 0.6vw
+	.checkbox-block.t3 .checkbox-psevdo
+		margin-left: -1.4vw
+		margin-right: 0.6vw
+.bg-block
+	width: 55%
+	margin-left: 45%
+
+.soc-bef
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	border-radius: 5px
+	transition: all 0.4s
+	background-color: #00af47
+	opacity: 0
+	z-index: -1
+.hrd-soc
+	display: none
+
+	&:checked ~
+		
+		.soc-bef
+			opacity: 1
+		.tsm13
+			color: #fff
+.maq
+	position: relative
+	cursor: pointer
+	z-index: 3
+
+.me-img
+	position: absolute
+	bottom: 2vw
+	right: 0
+	width: 10vw
+
+.overlay
+	.mbrn
+		left: 50%
+		bottom: -1vw
+		transform: translateX(-50%)
+		width: 14vw
+		color: #fff
+
+.mdescr
+	position: relative
+	padding-left: 1.2vw
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 3px
+		height: 100%
+		background-color: #3fb450
+
+.btn-w1
+	width: 13vw
+
+.mw1-img
+	position: absolute
+	width: 27vw
+	right: 0
+	bottom: 0
+	max-width: auto
+	max-height: auto
+
+.w2-block
+	display: flex
+	justify-content: space-between
+
+	&__left
+		width: 46%
+
+	&__right
+		width: 46%
+
+.w2-list
+	li
+		display: flex
+		margin: 0.3vw 0
+		img
+			width: 1.5vw
+			height: 1.5vw
+			flex-shrink: 0
+
+.thank-block
+	display: flex
+	justify-content: space-between
+	width: 100%
+	&-right
+		width: 60%
+		&-row
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			.vid-slider__item
+				width: 47%
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 1vw
+				&.v2
+					width: 100%
+	&-left
+		width: 35%
+		.vid-slider__item
+			position: relative
+
+.vid-slider__img2
+	height: 9vw
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 10px
+.right-menu
+	position: fixed
+	right: 2vw
+	top: 40%
+	box-shadow: 0 1px 57px rgba(0, 0, 0, 0.1), inset 0 0 24px rgba(255, 255, 255, 0.15)
+	border-radius: 3px
+	background-color: #ffffff
+	background-image: linear-gradient(to top, #a6b84f 0%, #a6b84f 100%)
+	z-index: 333
+	&__item
+		width: 3vw
+		height: 3vw
+		padding: 0.4vw
+		display: flex
+		align-items: center
+		justify-content: center
+		border-bottom: 1px solid #ffffff
+		position: relative
+		z-index: 3
+		&:last-child
+			border: none
+		&-hover
+			position: absolute
+			padding: 0.6vw
+			padding-right: 4vw
+			padding-left: 2vw
+			white-space: nowrap
+			right: 0
+			top: 0
+			height: 100%
+			z-index: -1
+			box-shadow: 0 1px 57px rgba(0, 0, 0, 0.1), inset 0 0 24px rgba(255, 255, 255, 0.15)
+			border-radius: 3px
+			background-color: #a6b84f
+			// background-image: linear-gradient(to top, #007dc8 0%, #60cffe 100%)			
+			color: #fff
+			display: flex
+			align-items: center
+			overflow: hidden
+			transform: translateX(10%) scale(0)
+			opacity: 0
+			transition: all 0.4s ease
+			pointer-events: none
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: url(../img/modal/layer.png) center no-repeat
+				background-size: cover
+				z-index: 2
+
+		&:hover &-hover
+			transform: translateX(0) scale(1)
+			opacity: 1
+	.img2
+		width: 1.2vw
+	.img1
+		width: 1vw
+
+.to_top
+	background-image: linear-gradient(to top, #a6b84f 0%,#a6b84f 100%)
+	right: 2vw
+
+.fsc
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+.mdis
+	position: relative
+	left: auto
+	top: auto
+	bottom: auto
+	right: auto
+	margin-left: auto
+	margin-right: auto
+	display: inline-block
+	margin-top: -1vw
+	z-index: 5
+.mod-z
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 10vw
+
+
+.right-m
+	position: fixed
+	right: 2vw
+	bottom: 2vw
+	z-index: 333
+	transition: all 0.4s
+	width: 14.5vw
+	transform: translatex(45%)
+	&.active
+		// width: 14.5vw
+		transform: translatex(0)
+	
+	&-block
+		position: relative
+		border-radius: 10px
+		background-color: #ffffff
+		display: none
+		&-row
+			padding: 2vw 1vw 1vw 1vw
+			border-bottom: 1px solid rgba(#000, 0.04)
+		&-row2
+			padding: 1vw 1vw 1vw 1vw
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+
+.close-b
+	position: absolute
+	right: 0.5vw
+	top: 0.5vw
+	width: 1vw
+	transition: all 0.4s
+	cursor: pointer
+	&:hover
+		opacity: 0.5
+.wom-m
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 33
+	cursor: pointer
+.m-img
+	width: 10vw
+.insta-btn
+	margin-top: -1vw
+
+.thank-block
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+.thank
+	padding-bottom: 0
+
+.test-mod
+	padding: 3vw 0

@@ -1,0 +1,42 @@
+.main {
+  @include adap(padding-bottom, 30px, 100px);
+  &-wrap {
+    margin-left: vw(60px);
+    &--flex {
+      @include adap(padding-top, 100px, 250px);
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    @include adap(margin-bottom, 30px, 75px);
+  }
+  &__descr {
+    display: flex;
+    @include adap(margin-top, 30px, 170px);
+    &-item {
+      @include adap(margin-right, 20px, 75px);
+      display: flex;
+      align-items: center;
+      & p {
+        @include adap(margin-right, 5px, 15px);
+        &:nth-of-type(2) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__pluses {
+    margin-right: vw(135px);
+    margin-top: vw(30px);
+    &-item {
+      display: flex;
+      align-items: center;
+      @include adap(margin-bottom, 10px, 55px);
+      & p {
+        &:nth-of-type(1) {
+          @include adap(margin-right, 10px, 30px);
+        }
+      }
+    }
+  }
+}
