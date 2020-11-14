@@ -1,0 +1,8 @@
+.download {
+  @include adap(margin-top, 30px, 80px);
+  display: flex;
+  align-items: center;
+  &-wrap {
+    flex-direction: column;
+  }
+}

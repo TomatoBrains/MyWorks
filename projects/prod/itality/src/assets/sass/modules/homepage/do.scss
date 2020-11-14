@@ -1,0 +1,35 @@
+.do {
+  @include adap(padding-top, 30px, 125px);
+  &__content {
+    @include adap(margin-top, 30px, 55px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+      border: 1px solid #e6e6e6;
+      border-radius: 3px;
+      padding: vw(27px) vw(27px) vw(15px) vw(48px);
+      width: 15%;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      @include adap(margin-right, 10px, 25px);
+      margin-bottom: 20px;
+      &:nth-of-type(6n) {
+        margin-right: 0;
+      }
+      & img {
+        margin-bottom: 10px;
+      }
+    }
+    &-descr {
+      text-align: left;
+      width: 100%;
+      & p:nth-of-type(1) {
+        @include adap(margin-bottom, 10px, 15px);
+      }
+    }
+  }
+}

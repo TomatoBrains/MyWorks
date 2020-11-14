@@ -1,0 +1,62 @@
+.works {
+  @include adap(padding-top, 30px, 105px);
+  &__title {
+    & h2 {
+      @include adap(margin-bottom, 10px, 30px);
+    }
+  }
+  &__tabBtns {
+    @include adap(margin-top, 15px, 38px);
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      @include adap(margin-right, 10px, 20px);
+      &:last-of-type {
+        margin-right: 0;
+      }
+      & a {
+        padding: vw(18px) vw(28px);
+        min-width: vw(100px);
+        background: #f5f7f6;
+        color: #282828;
+        transition: all 0.3s ease;
+        border-radius: 3px;
+        display: inline-block;
+        &:hover {
+          color: #fff;
+          background: linear-gradient(to right, #f96f77, #fcaf87);
+        }
+      }
+    }
+  }
+  &__tabs {
+    @include adap(margin-top, 30px, 50px);
+    &-item {
+      display: flex;
+    }
+    &-big {
+      width: 50%;
+      @include adap(margin-right, 10px, 20px);
+    }
+    &-sm {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      &-item {
+        @include adap(margin-bottom, 10px, 15px);
+        @include adap(margin-right, 10px, 20px);
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__more {
+    @include adap(margin-top, 30px, 90px);
+    text-align: center;
+    & a {
+      max-width: vw(255px);
+      width: 100%;
+    }
+  }
+}
