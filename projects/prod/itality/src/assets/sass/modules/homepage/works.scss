@@ -36,6 +36,7 @@
     }
     &-big {
       width: 50%;
+      display: inline-flex;
       @include adap(margin-right, 10px, 20px);
     }
     &-sm {
@@ -43,10 +44,18 @@
       display: flex;
       flex-wrap: wrap;
       &-item {
+        width: 48.6%;
+        display: inline-flex;
         @include adap(margin-bottom, 10px, 15px);
         @include adap(margin-right, 10px, 20px);
         &:nth-of-type(2n) {
           margin-right: 0;
+        }
+        &:nth-of-type(3) {
+          margin-bottom: 0;
+        }
+        &:nth-of-type(4) {
+          margin-bottom: 0;
         }
       }
     }

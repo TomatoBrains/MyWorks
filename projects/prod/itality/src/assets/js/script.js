@@ -145,12 +145,12 @@ $(document).ready(function ($) {
         }
       }
       // console.log('22');
-      if ($(this).parents('.nav__wrap').find('.close').hasClass("close-nav")) {
+      if ($(this).parents(".nav__wrap").find(".close").hasClass("close-nav")) {
         if ($(window).width() < 900) {
-         $(".nav__wrap").removeClass("active");
-         $(".nav-overlay, .nav__wrap").fadeOut();
+          $(".nav__wrap").removeClass("active");
+          $(".nav-overlay, .nav__wrap").fadeOut();
           $("html").removeClass("stop");
-         }
+        }
       }
       var id = $(this).attr("href"),
         top = $(id).offset().top;
@@ -229,73 +229,103 @@ $(document).ready(function ($) {
 // var offsetTop = $(".zakaz-line").outerHeight();
 // var thisTitle = $(".header-scroll");
 
-var darkSection = $(".zakaz-line").offset().top - $(window).height();
-var darkSection2 = $(".zakaz").offset().top - $(window).height();
+// var darkSection = $(".zakaz-line").offset().top - $(window).height();
+// var darkSection2 = $(".zakaz").offset().top - $(window).height();
 
 // var thisTitleH = $(".header").outerHeight();
-$(window).scroll(function (event) {
-  darkSection = $(".zakaz-line").offset().top - $(window).height();
-  darkSection2 = $(".zakaz").offset().top - $(window).height();
+// $(window).scroll(function (event) {
+//   darkSection = $(".zakaz-line").offset().top - $(window).height();
+//   darkSection2 = $(".zakaz").offset().top - $(window).height();
 
-  if (
-    $(window).scrollTop() > darkSection &&
-    $(window).scrollTop() < darkSection2 + $(".zakaz").outerHeight()
-  ) {
-    $(".zakaz-line-act").addClass("active");
-  }
-});
+//   if (
+//     $(window).scrollTop() > darkSection &&
+//     $(window).scrollTop() < darkSection2 + $(".zakaz").outerHeight()
+//   ) {
+//     $(".zakaz-line-act").addClass("active");
+//   }
+// });
 
-
-
-$(".ivvv1").on('change input', function() {
-
-  if($(this).hasClass('tg')){
-    $('.inp-enp-ph1').attr('placeholder', 'Ваш телефон в Telegram');
+$(".ivvv1").on("change input", function () {
+  if ($(this).hasClass("tg")) {
+    $(".inp-enp-ph1").attr("placeholder", "Ваш телефон в Telegram");
     // $('.eml').hide();
-  }else if($(this).hasClass('ws')){
-    $('.inp-enp-ph1').attr('placeholder', 'Ваш телефон в WhatsApp');
+  } else if ($(this).hasClass("ws")) {
+    $(".inp-enp-ph1").attr("placeholder", "Ваш телефон в WhatsApp");
     // $('.eml').hide();
-  }else if($(this).hasClass('vb')){
-    $('.inp-enp-ph1').attr('placeholder', 'Ваш телефон в Viber');
+  } else if ($(this).hasClass("vb")) {
+    $(".inp-enp-ph1").attr("placeholder", "Ваш телефон в Viber");
     // $('.eml').hide();
-  }else if($(this).hasClass('mail')){
-    $('.inp-enp-ph1').attr('placeholder', 'Ваш телефон ');
+  } else if ($(this).hasClass("mail")) {
+    $(".inp-enp-ph1").attr("placeholder", "Ваш телефон ");
     // $('.eml').fadeIn();
   }
-
 });
-$(".ivvv2").on('change input', function() {
-
-  if($(this).hasClass('tg')){
-    $('.inp-enp-ph2').attr('placeholder', 'Ваш телефон в Telegram');
+$(".ivvv2").on("change input", function () {
+  if ($(this).hasClass("tg")) {
+    $(".inp-enp-ph2").attr("placeholder", "Ваш телефон в Telegram");
     // $('.eml').hide();
-  }else if($(this).hasClass('ws')){
-    $('.inp-enp-ph2').attr('placeholder', 'Ваш телефон в WhatsApp');
+  } else if ($(this).hasClass("ws")) {
+    $(".inp-enp-ph2").attr("placeholder", "Ваш телефон в WhatsApp");
     // $('.eml').hide();
-  }else if($(this).hasClass('vb')){
-    $('.inp-enp-ph2').attr('placeholder', 'Ваш телефон в Viber');
+  } else if ($(this).hasClass("vb")) {
+    $(".inp-enp-ph2").attr("placeholder", "Ваш телефон в Viber");
     // $('.eml').hide();
-  }else if($(this).hasClass('mail')){
-    $('.inp-enp-ph2').attr('placeholder', 'Ваш телефон ');
+  } else if ($(this).hasClass("mail")) {
+    $(".inp-enp-ph2").attr("placeholder", "Ваш телефон ");
     // $('.eml').fadeIn();
   }
-
 });
 
-$(".ivvv3").on('change input', function() {
-
-  if($(this).hasClass('tg')){
-    $('.inp-enp-ph3').attr('placeholder', 'Ваш телефон в Telegram');
+$(".ivvv3").on("change input", function () {
+  if ($(this).hasClass("tg")) {
+    $(".inp-enp-ph3").attr("placeholder", "Ваш телефон в Telegram");
     // $('.eml').hide();
-  }else if($(this).hasClass('ws')){
-    $('.inp-enp-ph3').attr('placeholder', 'Ваш телефон в WhatsApp');
+  } else if ($(this).hasClass("ws")) {
+    $(".inp-enp-ph3").attr("placeholder", "Ваш телефон в WhatsApp");
     // $('.eml').hide();
-  }else if($(this).hasClass('vb')){
-    $('.inp-enp-ph3').attr('placeholder', 'Ваш телефон в Viber');
+  } else if ($(this).hasClass("vb")) {
+    $(".inp-enp-ph3").attr("placeholder", "Ваш телефон в Viber");
     // $('.eml').hide();
-  }else if($(this).hasClass('mail')){
-    $('.inp-enp-ph3').attr('placeholder', 'Ваш телефон ');
+  } else if ($(this).hasClass("mail")) {
+    $(".inp-enp-ph3").attr("placeholder", "Ваш телефон ");
     // $('.eml').fadeIn();
   }
-
 });
+let acordeon = document.getElementsByClassName("acordeon");
+let acordeon2 = document.getElementsByClassName("acordeon2");
+let openClass = "showDet";
+let paddingClass = "pad";
+let last;
+let last2;
+function detOpen(acordeon, last) {
+  for (let i = 0; i < acordeon.length; i++) {
+    acordeon[i].addEventListener("click", function (e) {
+      console.log(1);
+      e.preventDefault();
+      let panel = this.children[1];
+      if (this.classList.contains(openClass)) {
+        this.classList.toggle(openClass);
+        this.children[1].classList.toggle(paddingClass);
+        panel.style.maxHeight = null;
+      } else {
+        this.classList.add(openClass);
+        this.children[1].classList.add(paddingClass);
+        panel.style.maxHeight = panel.scrollHeight + 20 + "px";
+        if (last) {
+          let panels = last.children[1];
+          panels.style.maxHeight = null;
+          last.classList.toggle(openClass, false);
+          last.children[1].classList.toggle(paddingClass, false);
+        }
+        last = this;
+        if (last.classList.contains(openClass) === false) {
+          last.classList.add(openClass);
+          last.children[1].classList.add(paddingClass);
+          panel.style.maxHeight = panel.scrollHeight + 20 + "px";
+        }
+      }
+    });
+  }
+}
+detOpen(acordeon, last);
+detOpen(acordeon2, last2);

@@ -1,0 +1,102 @@
+.schema {
+  @include adap(padding-top, 30px, 95px);
+  &__title {
+    & p {
+      @include adap(margin-top, 10px, 25px);
+    }
+  }
+  &__content {
+    @include adap(margin-top, 30px, 40px);
+  }
+  &__stages {
+    display: flex;
+    align-items: center;
+    width: 57%;
+    background-color: #f5f7f6;
+    @include adap(padding-left, 30px, 120px);
+    @include adap(padding-right, 30px, 75px);
+    @include adap(margin-right, 30px, 65px);
+    position: relative;
+    justify-content: space-between;
+    & > span {
+      position: absolute;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      text-align: center;
+      @include adap(margin-right, 30px, 125px);
+      &:last-of-type {
+        margin-right: 0;
+      }
+      //   @include adap(margin-right, 20px, 50px);
+      //   @include adap(margin-left, 10px, 25px);
+      //   &:last-of-type {
+      //     margin-right: 0;
+      //   }
+      //   &:first-of-type {
+      //     margin-left: 0;
+      //   }
+      & img {
+        @include adap(margin-bottom, 15px, 25px);
+        max-width: vw(85px);
+      }
+    }
+  }
+  &__form {
+    &-title {
+      text-align: center;
+      & p {
+        &:nth-of-type(1) {
+          @include adap(margin-bottom, 10px, 15px);
+        }
+        &:nth-of-type(2) {
+          @include adap(margin-bottom, 10px, 25px);
+        }
+      }
+      & span {
+        & img {
+          width: 20px;
+        }
+      }
+    }
+    &-content {
+      @include adap(margin-top, 15px, 25px);
+    }
+    &-descr {
+      max-width: vw(250px);
+      @include adap(margin-right, 20px, 45px);
+      &-item {
+        display: flex;
+        align-items: center;
+        @include adap(margin-bottom, 15px, 15px);
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        & p {
+          &:nth-of-type(1) {
+            @include adap(margin-right, 10px, 15px);
+          }
+        }
+      }
+    }
+    &-form {
+      & form {
+        display: flex;
+        flex-direction: column;
+        max-width: vw(250px);
+      }
+      & input {
+        @include adap(margin-bottom, 10px, 10px);
+        background-color: #f5f7f6;
+        height: 50px;
+      }
+      & button {
+        max-height: vw(60px);
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

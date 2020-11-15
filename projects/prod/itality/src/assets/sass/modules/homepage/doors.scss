@@ -71,6 +71,7 @@
       @include adap(margin-bottom, 20px, 40px);
       & img {
         @include adap(margin-bottom, 10px, 20px);
+        width: 14.323vw;
       }
     }
   }

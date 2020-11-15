@@ -2,7 +2,39 @@
   @include adap(margin-top, 30px, 80px);
   display: flex;
   align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  @include adap(padding-top, 50px, 140px);
+  @include adap(padding-bottom, 50px, 140px);
   &-wrap {
     flex-direction: column;
+    @include adap(margin-right, 30px, 150px);
+  }
+  &__title {
+    & p {
+      @include adap(margin-top, 20px, 40px);
+    }
+  }
+  &__form {
+    @include adap(margin-top, 20px, 40px);
+    & form {
+      display: flex;
+    }
+    & input {
+      margin-right: 10px;
+      width: 50%;
+    }
+    & button {
+      width: 50%;
+    }
+    & > span {
+      @include adap(margin-top, 10px, 40px);
+    }
+  }
+  &__cata {
+    position: absolute;
+    left: -7vw;
+    top: -1vw;
+    width: vw(1100px);
   }
 }

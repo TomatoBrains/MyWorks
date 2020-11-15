@@ -39,15 +39,17 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 1.6vw;
+    right: 1.3vw;
     top: 45%;
     &-item {
       background: #ddd;
       border-radius: 50%;
-      width: 55px;
-      height: 55px;
-      display: inline-block;
-      padding: 20px 18px;
+      width: vw(55px);
+      height: vw(55px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: vw(20px) vw(18px);
       margin-bottom: 10px;
       & img {
         width: 20px;

@@ -1,0 +1,107 @@
+.qa {
+  @include adap(margin-top, 30px, 75px);
+  @include adap(padding-top, 30px, 110px);
+  @include adap(padding-right, 30px, 75px);
+  @include adap(padding-bottom, 30px, 110px);
+  &--flex {
+    display: flex;
+  }
+  &__subtitle {
+    @include adap(margin-top, 20px, 35px);
+    & p {
+      @include adap(margin-bottom, 10px, 25px);
+    }
+  }
+  &__left {
+    @include adap(margin-right, 30px, 90px);
+  }
+  &__form {
+    &-wrap {
+      width: vw(500px);
+      display: flex;
+      position: relative;
+      background-color: #444c5d;
+      @include adap(padding-top, 10px, 25px);
+      @include adap(padding-left, 10px, 30px);
+      @include adap(padding-bottom, 10px, 25px);
+      & input {
+        height: vw(60px);
+        width: 100%;
+        margin-bottom: 15px;
+        max-width: vw(251px);
+      }
+      & button {
+        width: 100%;
+        padding: vw(25px) 0;
+        max-width: vw(251px);
+      }
+      & form > span {
+        @include adap(margin-top, 15px, 15px);
+      }
+    }
+    &-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: inline-flex;
+      &-wrap {
+        position: absolute;
+        bottom: vw(10px);
+        right: vw(50px);
+        text-align: center;
+        z-index: 1;
+        & p {
+          &:nth-of-type(1) {
+            background-color: #fff;
+            padding: 10px 15px;
+            border-radius: 3px;
+            z-index: 2;
+            position: relative;
+          }
+          &:nth-of-type(2) {
+            background-color: #272f42;
+            padding: 10px 15px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-right: -20px;
+            margin-top: -5px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    max-width: vw(990px);
+    & > div {
+      width: 50%;
+      &:nth-of-type(1) {
+        @include adap(margin-right, 30px, 60px);
+      }
+    }
+    & summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(#d7d7d7, 0.2);
+      @include adap(margin-bottom, 15px, 35px);
+      @include adap(padding-bottom, 10px, 25px);
+      & span {
+        transition: all 0.3s ease;
+      }
+    }
+    &-item {
+      &-hidden {
+        transition: all 0.3s ease;
+        & p {
+          @include adap(margin-bottom, 10px, 30px);
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

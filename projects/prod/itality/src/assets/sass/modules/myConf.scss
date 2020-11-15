@@ -29,17 +29,60 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   @include videoBtn;
-
-  & span {
-    padding: 1vw;
-  }
-
   & svg {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
   }
 }
 .btn {
   @include mainBtn;
   @include mainBtnBlick;
+}
+.input-black {
+  border-radius: 3px;
+  @include adap(padding-left, 20px, 40px);
+  background-color: #444c5d;
+  color: #fff;
+  &::placeholder {
+    color: #fff;
+  }
+}
+.input-w {
+  border-radius: 3px;
+  @include adap(padding-left, 20px, 25px);
+  background-color: #fff;
+  color: rgba(68, 76, 93, 0.58);
+}
+.slider-arrow {
+  cursor: pointer;
+}
+
+details > summary {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  //position: relative;
+  & span {
+    color: #fa817c;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details > div {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.showDet {
+  summary {
+    & > span {
+      transform: rotateZ(-315deg);
+      color: #fff;
+    }
+  }
+}
+.pad {
+  @include adap(padding-bottom, 10px, 35px);
 }

@@ -1,0 +1,62 @@
+.rew {
+  @include adap(padding-top, 30px, 80px);
+  &__slider {
+    &-wrap {
+      @include adap(margin-top, 30px, 50px);
+    }
+    &-item {
+      @include adap(padding-left, 15px, 45px);
+      @include adap(padding-right, 15px, 45px);
+      @include adap(padding-top, 15px, 40px);
+      @include adap(padding-bottom, 15px, 55px);
+      background-color: #f5f7f6;
+      @include adap(margin-right, 20px, 20px);
+      outline: none;
+    }
+    &-imgs {
+      display: flex;
+      & span {
+        display: block;
+        &:nth-of-type(2) {
+          @include adap(margin-left, 10px, 10px);
+          position: relative;
+        }
+      }
+    }
+    &-descr {
+      @include adap(margin-top, 15px, 35px);
+      & > p {
+        &:nth-of-type(2) {
+          @include adap(margin-top, 10px, 40px);
+        }
+      }
+      &-sign {
+        display: flex;
+        justify-content: space-between;
+        @include adap(margin-top, 10px, 20px);
+      }
+    }
+    &-pag {
+      display: flex;
+      align-items: center;
+      & > div {
+        &:nth-of-type(2) {
+          @include adap(margin-right, 10px, 40px);
+          @include adap(margin-left, 10px, 40px);
+        }
+      }
+    }
+    &-btn {
+      & a {
+        background-color: #444c5d;
+        &:hover {
+          box-shadow: 0 0 0 2px #444c5d inset, 0 0 0 4px white inset;
+        }
+      }
+    }
+  }
+  &-wrap {
+    justify-content: space-between;
+    @include adap(margin-top, 30px, 30px);
+  }
+}
