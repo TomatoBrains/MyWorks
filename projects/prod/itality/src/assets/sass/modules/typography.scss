@@ -7,6 +7,9 @@
 .txt72 {
   @include adap(font-size, 32px, 72px);
 }
+.txt60 {
+  @include adap(font-size, 30px, 60px);
+}
 .txt48 {
   @include adap(font-size, 26px, 48px);
 }

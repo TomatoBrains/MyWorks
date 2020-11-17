@@ -15,6 +15,9 @@
     display: flex;
     &-item {
       margin-right: vw(60px);
+      &::before {
+        background-color: #272f42;
+      }
     }
   }
   &__work {
@@ -23,6 +26,11 @@
     & img {
       width: 20px;
       margin-right: 15px;
+    }
+    & a {
+      &::before {
+        background-color: #272f42;
+      }
     }
     &-txt {
       & p:nth-of-type(1) {
@@ -42,7 +50,7 @@
     right: 1.3vw;
     top: 45%;
     &-item {
-      background: #ddd;
+      background: #e8e9eb;
       border-radius: 50%;
       width: vw(55px);
       height: vw(55px);
@@ -51,6 +59,11 @@
       align-items: center;
       padding: vw(20px) vw(18px);
       margin-bottom: 10px;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        box-shadow: inset 0 0 0 3px #272f42, 0 0 0 4px #e8e9eb;
+      }
       & img {
         width: 20px;
         max-width: unset;

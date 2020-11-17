@@ -88,6 +88,10 @@
       border-bottom: 1px solid rgba(#d7d7d7, 0.2);
       @include adap(margin-bottom, 15px, 35px);
       @include adap(padding-bottom, 10px, 25px);
+      transition: color 0.3s ease;
+      &:hover {
+        color: #fa817c;
+      }
       & span {
         transition: all 0.3s ease;
       }

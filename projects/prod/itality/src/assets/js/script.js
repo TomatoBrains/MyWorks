@@ -300,7 +300,6 @@ let last2;
 function detOpen(acordeon, last) {
   for (let i = 0; i < acordeon.length; i++) {
     acordeon[i].addEventListener("click", function (e) {
-      console.log(1);
       e.preventDefault();
       let panel = this.children[1];
       if (this.classList.contains(openClass)) {

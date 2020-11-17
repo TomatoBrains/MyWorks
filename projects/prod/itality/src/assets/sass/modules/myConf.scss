@@ -86,3 +86,41 @@ details > div {
 .pad {
   @include adap(padding-bottom, 10px, 35px);
 }
+.ico {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 0 3px #272f42, 0 0 0 4px #fff;
+  }
+  & img {
+    display: block;
+    width: 50%;
+  }
+}
+.linkHover {
+  position: relative;
+  &::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+label {
+  cursor: pointer;
+}

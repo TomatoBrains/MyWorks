@@ -1,0 +1,36 @@
+.info {
+  @include adap(padding-top, 30px, 100px);
+  &__content {
+    display: flex;
+    position: relative;
+    @include adap(margin-top, 30px, 60px);
+    &-item {
+      margin-right: 15px;
+      display: inline-flex;
+      flex-direction: column;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    &-txt {
+      bottom: 1vw;
+      position: absolute;
+      width: 32.9%;
+      @include adap(padding-left, 30px, 60px);
+      @include adap(padding-right, 30px, 35px);
+    }
+    &-sign {
+      display: flex;
+      justify-content: space-between;
+      @include adap(margin-top, 15px, 35px);
+    }
+  }
+  &__more {
+    text-align: center;
+    @include adap(margin-top, 30px, 50px);
+    & a {
+      padding: vw(23px) vw(50px);
+      margin-left: 6vw;
+    }
+  }
+}

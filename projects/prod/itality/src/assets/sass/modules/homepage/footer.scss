@@ -1,0 +1,74 @@
+.footer {
+  background-color: #272f42;
+  @include adap(padding-top, 30px, 65px);
+  @include adap(padding-bottom, 30px, 30px);
+  @include adap(padding-right, 30px, 120px);
+  &-wrap {
+    justify-content: space-between;
+  }
+  &__logo {
+    @include adap(margin-right, 20px, 40px);
+    &-wrap {
+      display: flex;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__descr {
+    width: vw(240px);
+  }
+  &__right {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    & > div > p {
+      @include adap(margin-bottom, 10px, 20px);
+    }
+    & > div > div > p {
+      @include adap(margin-bottom, 5px, 10px);
+    }
+    & > div > div a {
+      @include adap(margin-bottom, 5px, 10px);
+    }
+    &-menu {
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        & a {
+          display: inline;
+        }
+      }
+    }
+    &-contacts {
+      & a {
+        @include adap(margin-bottom, 5px, 10px);
+      }
+      & p:nth-last-of-type(2) {
+        @include adap(margin-top, 5px, 10px);
+      }
+    }
+  }
+  &__bot {
+    display: flex;
+    justify-content: space-between;
+    @include adap(margin-top, 30px, 70px);
+    align-items: center;
+  }
+  &__soc {
+    display: flex;
+    align-items: center;
+    & p {
+      margin-right: 20px;
+    }
+    & a {
+      margin-right: 10px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

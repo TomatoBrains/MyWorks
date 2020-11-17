@@ -1,5 +1,5 @@
 .main {
-  @include adap(padding-bottom, 30px, 100px);
+  @include adap(padding-bottom, 30px, 70px);
   &-wrap {
     margin-left: vw(60px);
     &--flex {
@@ -23,6 +23,12 @@
           margin-right: 0;
         }
       }
+    }
+  }
+  &__btn {
+    & a {
+      text-transform: uppercase;
+      padding: vw(40px) vw(70px);
     }
   }
   &__pluses {

@@ -58,7 +58,7 @@
 .quiz__btn
 .quiz__next-wrap
 	position: relative
-	width: 13vw
+	width: vw(178px)
 .qn-img
 	width: 1.4vw
 	margin-left: 0.5vw
@@ -69,8 +69,12 @@
 	border: none
 	background: transparent
 	cursor: pointer
+	border: 1px solid #000
+	width: vw(178px)
+	border-radius: 5px
+	padding: vw(25px) 0
 	&:hover
-		color: #c24029
+		color: #fa817c
 .test__btns
 	display: flex
 	justify-content: center
@@ -78,8 +82,10 @@
 
 .quiz__next
 	width: 100%
+	padding: vw(25px) vw(58px)
+	background-image: linear-gradient(to top, #f96f77, #fcaf87)
 	&:disabled
-		background-image: linear-gradient(to top, #b61a2d 0%, #cd6027 100%), linear-gradient(to top, #d6848b 0%, #eabbbb 98%, #eabbbb 100%)
+		background: #ddd
 
 .test-item
 	display: flex
@@ -104,7 +110,7 @@
 			width: 70%
 .tiem
 	position: relative
-	width: 30%
+	width: 22%
 	margin: 0 1.4%
 	margin-bottom: 1.4vw
 	cursor: pointer
@@ -138,17 +144,16 @@
 		div.fancy-select div.trigger
 			height: 3.1vw
 	&-img
-		height: 9.5vw
+		//height: 9.5vw
 		display: flex
 		justify-content: center
 		align-items: center
 		padding: 1vw
 		opacity: 1
-		border: 1px solid #dddddd
 		position: relative
 		border-radius: 5px
 		&.v2
-			height: 21vw
+			//height: 21vw
 .slick-slide
 	outline: none
 
@@ -188,8 +193,8 @@
 	// box-shadow: 0 5px 10px rgba(43, 43, 51, 0.1)
 	border: 5px solid #ffffff
 	background-color: #ebebeb
-	width: 2.3vw
-	height: 2.3vw
+	width: 25px
+	height: 25px
 	padding: 0.2vw
 	// padding: 0.2vw
 	display: flex
@@ -221,15 +226,15 @@
 		border: 1px solid #dddddd
 
 	&-active
-		width: 1vw
-		height: 1vw
+		width: 25px
+		height: 25px
 		border-radius: 100%
-		padding: 0.3vw
+		padding: 7px
 		display: flex
 		align-items: center
 		opacity: 0
 		justify-content: center
-		background-color: #db0200
+		background-color: #fa817c
 		// border: 1px solid #e8e8e8
 		// background-image: linear-gradient(to top, #fad15f 0%, #feeebb 100%)
 		img
@@ -247,24 +252,30 @@
 		opacity: 1
 		font-weight: 900
 .checkbox-inp:checked ~	.tiem-before-mod
-	box-shadow: 1px -1px 30px rgba(#e0c592, 0.3)
+	//box-shadow: 1px -1px 30px rgba(#e0c592, 0.3)
 	border: 1px solid #e0c592
 .checkbox-inp:checked ~ span .qw9-social
 	filter: grayscale(0)
 .checkbox-inp:checked ~ span .checkbox-psevdo
 	// box-shadow: 0 2px 2rem rgba(#166aac, 0.2)
-	background: #f9d1d1
+	padding: 0
 	&-active
-		background-color: #db0200
+		background-color: #fa817c
 		opacity: 1
 		img
 			transform: scale(1)
 	&.t3
 		.checkbox-psevdo-active
 			background: #fff
+.checkbox-inp:checked ~ span
+	background: #272f42
+	& > span
+		&:nth-of-type(2)
+			color: #fa817c
+
 .checkbox-inp:checked ~ .checkbox-block.t2
 	.small-text
-		color: #2b2b33
+		color: #fa817c
 .btn-lbs
 	position: absolute
 	width: 15vw
@@ -416,11 +427,11 @@
 
 .hand
 	position: absolute
-	width: 26vw
+	width: vw(422px)
 	bottom: 0
-	right: 8vw
+	right: 28vw
 	display: none
 
 .check-box
 	&:hover
-		color: #44b759
+		//color: #44b759

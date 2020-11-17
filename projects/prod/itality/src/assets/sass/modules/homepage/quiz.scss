@@ -1,0 +1,281 @@
+.quiz {
+  &-inp {
+    height: vw(80px);
+    background: #fff;
+    border-radius: 5px;
+    & > span {
+      height: 100%;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      @include adap(padding-left, 10px, 30px);
+      & > span {
+        &:first-of-type {
+          margin-top: 0;
+          margin-right: 15px;
+          border: unset;
+        }
+      }
+    }
+  }
+  // текст в правй части
+  &-right {
+    &-txt {
+      position: absolute;
+      bottom: 35px;
+      @include adap(padding-left, 10px, 35px);
+    }
+  }
+  &__numbers {
+    display: flex;
+    justify-content: center;
+    @include adap(margin-bottom, 15px, 35px);
+    & span {
+      background-color: #fff;
+      border-radius: 50%;
+      width: vw(40px);
+      height: vw(40px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include adap(margin-right, 5px, 15px);
+    }
+  }
+}
+// общи стил для формы внутрри
+.test-form {
+  background-color: #e8e9eb;
+  padding-right: 0;
+  padding: 0;
+}
+// стил для левой части
+.test-form-left {
+  @include adap(padding-top, 30px, 40px);
+  @include adap(padding-bottom, 30px, 40px);
+  @include adap(padding-left, 30px, 100px);
+  height: 36.5vw;
+}
+.test__blocks {
+  height: 90%;
+}
+.test-item {
+  height: 100%;
+}
+// для правой части
+.test-form-right {
+  width: 28%;
+  height: 36.5vw;
+  box-shadow: unset;
+  border-radius: unset;
+  padding: unset;
+  padding-top: 0;
+  padding-bottom: unset;
+  position: relative;
+  display: inline-flex;
+}
+//заголовки формы
+.test-item__title {
+  @include adap(margin-bottom, 15px, 30px);
+}
+// кнопки
+.test__btns {
+  @include adap(margin-top, 30px, 50px);
+}
+//размер инпутов первого вопроса
+.q1 {
+  width: 47%;
+}
+// стили для вопросов с изображениями
+.test-item-imgs {
+  padding: 0 6vw;
+  & .checkbox-psevdo {
+    width: vw(33px);
+    height: vw(33px);
+    background-color: #d2d2d2;
+    border-color: #e8e9eb;
+  }
+  & .checkbox-block {
+    position: relative;
+    top: 6px;
+  }
+  & .tiem {
+    margin: 0;
+    margin-bottom: 0;
+    margin-right: 3%;
+    &-img {
+      height: 10vw;
+      width: 10vw;
+    }
+    & .checkbox-inp:checked + span {
+      border: solid 1px #fa817c;
+      & > img {
+        border: solid 1px #fa817c;
+      }
+    }
+    & .checkbox-inp:checked ~ span {
+      background: unset;
+      & > span {
+        &:nth-of-type(2) {
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+// для второго вопроса
+.test-item-2 {
+  & .tiem {
+    margin: 0;
+    margin-bottom: 15px;
+    &-img {
+      height: 8vw;
+      padding: 0;
+    }
+    & .checkbox-inp:checked + span {
+      border: unset;
+      & > img {
+        border: solid 1px #fa817c;
+      }
+    }
+  }
+  & .checkbox-block {
+    //top: -13px;
+  }
+  & .test__btns {
+    @include adap(margin-top, 10px, 25px);
+  }
+}
+// для третьего вопроса
+.test-item-3 {
+  & .tiem-img {
+    height: 10vw;
+    width: 10vw;
+  }
+  & .tiem {
+    margin-right: 3%;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  & .checkbox-block {
+    top: 6px;
+  }
+}
+// ждля 4го вопроса
+.test-item-4 {
+  & .tiem {
+    width: 18%;
+    margin-bottom: 1vw;
+  }
+  & .tiem-img {
+    height: vw(140px);
+    width: vw(140px);
+  }
+}
+// для 7го
+.test-item-7 {
+  flex-direction: column;
+  align-items: center;
+}
+// для предпоследней формы с инпутами теелфона
+.end {
+  & .social-item {
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #272f42;
+      & span {
+        color: #f9fbfd !important;
+      }
+    }
+    & input {
+      display: none;
+    }
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: vw(17px) vw(15px);
+    margin-right: vw(10px);
+    display: flex;
+    align-items: center;
+    &:first-of-type {
+      width: vw(166px);
+    }
+    &:nth-of-type(2) {
+      width: vw(110px);
+    }
+    &:nth-of-type(3) {
+      width: vw(150px);
+    }
+    &:nth-of-type(4) {
+      width: vw(127px);
+    }
+    & > span {
+      &:last-of-type {
+        margin-left: vw(10px);
+        color: #747474;
+      }
+    }
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  & .inp-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & button {
+    width: 100%;
+    background: linear-gradient(to right, #f96f77, #fcaf87);
+    @include adap(margin-top, 10px, 15px);
+  }
+}
+// убираем в предпоследней форме инпут мыла
+.inp-end-mail {
+  display: none;
+}
+// размер обёртки в предпоследней для инпутов и кнопкки
+.test-item-form {
+  width: vw(288px);
+}
+// стили для последнего экнрана
+
+// отступ всего квиза от заголовка
+.test-form-wrap {
+  @include adap(margin-top, 30px, 73px);
+}
+// чекнутые кнопки в предпоследнем эране
+.checked-end {
+  background: #272f42;
+  & span {
+    color: #f9fbfd !important;
+  }
+}
+.test-block-active {
+  background-color: #f96f77 !important;
+  color: #fff;
+}
+.test-block-prev {
+  background-color: #272f42 !important;
+}
+.end-ty {
+  text-align: center;
+  padding-left: 0 !important;
+}
+.quiz-end-ty {
+  @include videoBtn;
+  position: relative;
+  width: vw(100px);
+  height: vw(100px);
+  top: 5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  @include adap(margin-bottom, 30px, 50px);
+  background-color: #fa817c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: vw(33px);
+  }
+}

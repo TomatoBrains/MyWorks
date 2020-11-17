@@ -11,7 +11,7 @@
   &__stages {
     display: flex;
     align-items: center;
-    width: 57%;
+    width: 60%;
     background-color: #f5f7f6;
     @include adap(padding-left, 30px, 120px);
     @include adap(padding-right, 30px, 75px);
@@ -20,6 +20,18 @@
     justify-content: space-between;
     & > span {
       position: absolute;
+      &:nth-of-type(1) {
+        left: 12vw;
+        top: 6vw;
+      }
+      &:nth-of-type(2) {
+        left: 26vw;
+        top: 6vw;
+      }
+      &:nth-of-type(3) {
+        left: 40vw;
+        top: 6vw;
+      }
     }
     &-item {
       display: flex;
@@ -50,10 +62,13 @@
       text-align: center;
       & p {
         &:nth-of-type(1) {
-          @include adap(margin-bottom, 10px, 15px);
+          margin-bottom: 5px;
         }
         &:nth-of-type(2) {
           @include adap(margin-bottom, 10px, 25px);
+          & > span {
+            margin-right: 10px;
+          }
         }
       }
       & span {
