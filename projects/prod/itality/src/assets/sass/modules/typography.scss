@@ -16,6 +16,9 @@
 .txt40 {
   @include adap(font-size, 22.5px, 40px);
 }
+.txt37 {
+  @include adap(font-size, 21px, 37px);
+}
 .txt35 {
   @include adap(font-size, 20px, 35px);
 }
@@ -36,6 +39,9 @@
 }
 .txt20 {
   @include adap(font-size, 15px, 20px);
+}
+.txt19 {
+  @include adap(font-size, 14px, 19px);
 }
 .txt18 {
   @include adap(font-size, 14px, 18px);

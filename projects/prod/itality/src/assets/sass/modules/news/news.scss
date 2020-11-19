@@ -1,0 +1,103 @@
+.news {
+  &__title {
+    @include adap(margin-top, 50px, 250px);
+    width: 75%;
+    & p {
+      @include adap(margin-bottom, 20px, 55px);
+    }
+    &-block {
+      @include adap(padding-bottom, 30px, 100px);
+    }
+  }
+  &__main {
+    @include adap(margin-top, 30px, 50px);
+    &-row {
+      display: flex;
+      @include adap(margin-bottom, 30px, 52px);
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+        & > div {
+          padding-right: 0;
+          @include adap(padding-left, 30px, 90px);
+        }
+      }
+      & > div {
+        @include adap(padding-bottom, 20px, 43px);
+        @include adap(padding-top, 20px, 43px);
+        @include adap(padding-right, 30px, 90px);
+        width: 50%;
+        & p {
+          @include adap(margin-bottom, 10px, 20px);
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+      & img {
+        width: 50%;
+      }
+    }
+    &-back {
+      text-align: center;
+      & a {
+        width: vw(290px);
+      }
+    }
+  }
+}
+.news {
+  & .call {
+    @include adap(padding-right, 30px, 75px);
+    &__title {
+      & > p {
+        @include adap(margin-top, 15px, 30px);
+      }
+      &-sub {
+        justify-content: end;
+        & > p {
+          @include adap(margin-right, 10px, 30px);
+        }
+      }
+    }
+    &__form {
+      width: 34%;
+      & form {
+        max-width: unset;
+      }
+      & textarea {
+        height: vw(130px);
+      }
+      &-form {
+        width: 100%;
+      }
+      &-inputWrap {
+        display: flex;
+        & input {
+          @include adap(margin-right, 10px, 17px);
+          width: 28%;
+          &:nth-of-type(2) {
+            width: 44%;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+      &-botWrap {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        & > span {
+          @include adap(margin-right, 20px, 75px);
+        }
+        & button {
+          flex: auto;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

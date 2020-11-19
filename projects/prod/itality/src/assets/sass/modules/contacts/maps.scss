@@ -1,0 +1,87 @@
+.maps {
+  @include adap(padding-top, 30px, 75px);
+  @include adap(padding-bottom, 30px, 45px);
+  & > ymaps {
+    height: vw(600px) !important;
+  }
+  &__item {
+    position: relative;
+    @include adap(margin-bottom, 30px, 40px);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &-descr {
+      @include adap(padding-bottom, 20px, 45px);
+      @include adap(padding-top, 20px, 45px);
+      @include adap(padding-left, 20px, 90px);
+      @include adap(padding-right, 20px, 90px);
+      z-index: 1;
+      top: 50%;
+      position: absolute;
+      left: vw(120px);
+      transform: translateY(-50%);
+      background-color: #fff;
+      width: vw(695px);
+      & img {
+        width: vw(20px);
+      }
+      &-txt {
+        @include adap(margin-top, 20px, 35px);
+      }
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include adap(margin-top, 15px, 25px);
+      &:first-of-type {
+        margin-top: 0;
+      }
+      & p:first-of-type {
+        display: flex;
+        align-items: center;
+        & img {
+          margin-right: 10px;
+        }
+      }
+    }
+    &--wrap {
+      & p {
+        &:last-of-type {
+          @include adap(margin-top, 10px, 12px);
+        }
+      }
+      &:last-of-type {
+        margin-right: 1.8vw;
+      }
+    }
+    &-slider {
+      &--wrap {
+        @include adap(margin-top, 15px, 30px);
+        position: relative;
+        & .slider-arrow {
+          position: absolute;
+          left: -2vw;
+          top: 50%;
+          transform: translateY(-50%);
+          width: vw(13px);
+        }
+        & .slider-arrow-2 {
+          left: unset;
+          right: -2vw;
+        }
+      }
+      & .slick-list {
+        @include adap(margin-right, -5px, -15px);
+      }
+      & img {
+        @include adap(margin-right, 5px, 15px);
+      }
+    }
+  }
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+  -webkit-filter: grayscale(100%)
+    url(/path-to-svg/yellowfilter.svg#yellowfilter);
+  filter: grayscale(100%) url(/path-to-svg/yellowfilter.svg#yellowfilter);
+}

@@ -1,0 +1,21 @@
+.contacts {
+  &__title {
+    @include adap(margin-top, 30px, 70px);
+    & p {
+      @include adap(margin-top, 10px, 30px);
+    }
+    &-block {
+      @include adap(padding-bottom, 30px, 95px);
+      @include adap(padding-left, 30px, 60px);
+      & img {
+        @include adap(margin-top, 30px, 125px);
+      }
+      & .main__descr {
+        @include adap(margin-top, 30px, 120px);
+      }
+      & .bread {
+        margin-left: 0;
+      }
+    }
+  }
+}

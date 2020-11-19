@@ -3,11 +3,16 @@
   &__content {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
     @include adap(margin-top, 30px, 60px);
+    @include adap(margin-right, -30px, -45px);
     &-item {
-      margin-right: 15px;
+      @include adap(margin-right, 10px, 15px);
       display: inline-flex;
       flex-direction: column;
+      width: 32%;
+      position: relative;
+      @include adap(margin-bottom, 10px, 15px);
       &:last-of-type {
         margin-right: 0;
       }
@@ -15,7 +20,6 @@
     &-txt {
       bottom: 1vw;
       position: absolute;
-      width: 32.9%;
       @include adap(padding-left, 30px, 60px);
       @include adap(padding-right, 30px, 35px);
     }

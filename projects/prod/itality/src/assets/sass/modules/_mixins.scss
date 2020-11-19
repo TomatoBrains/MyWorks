@@ -141,3 +141,52 @@
     will-change: transform;
   }
 }
+@mixin tabBtn($content) {
+  @include adap(margin-top, 15px, 38px);
+  display: flex;
+  justify-content: $content;
+  & > div {
+    @include adap(margin-right, 10px, 20px);
+    &:last-of-type {
+      margin-right: 0;
+    }
+    & a {
+      padding: vw(18px) vw(28px);
+      min-width: vw(100px);
+      background: #f5f7f6;
+      color: #282828;
+      transition: all 0.3s ease;
+      border-radius: 3px;
+      display: inline-block;
+      &:hover {
+        color: #fff;
+        background: linear-gradient(to right, #f96f77, #fcaf87);
+      }
+    }
+  }
+}
+@mixin names($bot, $left) {
+  position: absolute;
+  bottom: $bot;
+  left: $left;
+  text-align: center;
+  z-index: 1;
+  & p {
+    &:nth-of-type(1) {
+      background-color: #fff;
+      padding: 10px 15px;
+      border-radius: 3px;
+      z-index: 2;
+      position: relative;
+    }
+    &:nth-of-type(2) {
+      background-color: #272f42;
+      padding: 10px 15px;
+      border-radius: 3px;
+      margin-left: 20px;
+      margin-right: -20px;
+      margin-top: -5px;
+      z-index: -1;
+    }
+  }
+}

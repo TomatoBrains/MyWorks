@@ -47,8 +47,9 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 1.3vw;
+    right: 1.56vw;
     top: 45%;
+    transition: transform 0.3s ease;
     &-item {
       background: #e8e9eb;
       border-radius: 50%;
@@ -69,6 +70,15 @@
         max-width: unset;
         max-height: unset;
       }
+    }
+  }
+  &--bottom {
+    //transform: translateY(45%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    & > div {
+      position: static;
     }
   }
 }

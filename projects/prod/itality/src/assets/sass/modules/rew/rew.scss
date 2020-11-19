@@ -1,0 +1,110 @@
+.newRew {
+  background-color: #f5f7f6;
+  @include adap(padding-top, 30px, 70px);
+  @include adap(padding-bottom, 30px, 70px);
+  &__title {
+    height: vw(150px);
+    text-align: center;
+  }
+  &__form {
+    text-align: center;
+    margin: 0 auto;
+    @include adap(margin-top, 30px, 58px);
+    width: vw(710px);
+    & > p {
+      @include adap(margin-bottom, 15px, 35px);
+    }
+    &--wrap {
+      display: flex;
+      justify-content: center;
+      & input[type="file"] {
+        display: none;
+      }
+      & label {
+        padding: vw(30px) vw(30px) vw(50px) vw(30px);
+        border: 1px dashed #444c5d;
+        @include adap(margin-right, 20px, 70px);
+        max-width: vw(195px);
+        text-overflow: ellipsis;
+        position: relative;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+    &-file {
+      & img {
+        @include adap(margin-bottom, 10px, 25px);
+      }
+      & p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    & textarea {
+      @include adap(margin-top, 30px, 70px);
+      width: 100%;
+    }
+    &-inputs {
+      display: flex;
+      @include adap(margin-top, 10px, 15px);
+      & input {
+        height: vw(60px);
+        width: 50%;
+        &::placeholder {
+          color: rgba(68, 76, 93, 0.58);
+        }
+        &:first-of-type {
+          margin-right: 10px;
+        }
+      }
+    }
+    & button {
+      @include adap(margin-top, 10px, 15px);
+      width: vw(325px);
+      padding: vw(23px) 0;
+    }
+    & .check-line {
+      justify-content: center;
+      @include adap(margin-top, 10px, 15px);
+    }
+    &-sub {
+      @include adap(margin-top, 15px, 45px);
+    }
+  }
+  &__dots {
+    &-item {
+      position: absolute;
+      cursor: pointer;
+      bottom: -1vw;
+      left: 50%;
+      transform: translateX(-50%);
+      & span {
+        &:nth-of-type(1) {
+          @include videoBtn;
+          position: relative;
+          padding: vw(10px);
+          padding-top: vw(12px);
+          background-color: #fa817c;
+          border-radius: 50%;
+          width: vw(30px);
+          height: vw(30px);
+          display: flex;
+          align-items: center;
+          transition: all 0.3s ease;
+          &:before {
+            background-color: rgba(#fa817c, 0.3);
+            transition: all 0.3s ease;
+            animation: pulseicon 3s infinite linear;
+          }
+          &:after {
+            background-color: rgba(#fa817c, 0.1);
+            transition: all 0.3s ease;
+            animation: pulseicon 3s infinite linear;
+          }
+        }
+      }
+    }
+  }
+}

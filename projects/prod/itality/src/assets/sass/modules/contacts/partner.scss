@@ -1,0 +1,16 @@
+.partner {
+  @include adap(padding-bottom, 30px, 120px);
+  @include adap(padding-top, 30px, 120px);
+  &__content {
+    width: 50%;
+    & h2 {
+      @include adap(margin-bottom, 20px, 40px);
+    }
+    & p {
+      @include adap(margin-bottom, 10px, 20px);
+      &:last-of-type {
+        @include adap(margin-bottom, 20px, 50px);
+      }
+    }
+  }
+}

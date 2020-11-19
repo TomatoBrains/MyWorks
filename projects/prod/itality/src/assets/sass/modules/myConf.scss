@@ -51,7 +51,10 @@ h2 {
   border-radius: 3px;
   @include adap(padding-left, 20px, 25px);
   background-color: #fff;
-  color: rgba(68, 76, 93, 0.58);
+  color: rgba(68, 76, 93, 1);
+  &::placeholder {
+    color: rgba(68, 76, 93, 0.58);
+  }
 }
 .slider-arrow {
   cursor: pointer;
@@ -123,4 +126,53 @@ details > div {
 }
 label {
   cursor: pointer;
+}
+.page__title {
+  @include adap(padding-top, 30px, 60px);
+}
+.bread {
+  display: flex;
+  align-items: baseline;
+  @include adap(margin-left, 30px, 60px);
+  & a {
+    font-weight: 300;
+  }
+  & a:last-of-type {
+    color: #fff;
+    font-weight: 500;
+  }
+  & span {
+    border-right: 1px solid #fff;
+    height: 12px;
+    @include adap(margin-right, 10px, 20px);
+    @include adap(margin-left, 10px, 20px);
+  }
+}
+.tabBtn {
+  @include tabBtn(start);
+}
+.pulseDot {
+  width: 0.313vw;
+  height: 0.313vw;
+  box-shadow: 0 0 7px 0 rgba(79, 160, 55, 0.61);
+  background-color: #27b24b;
+  border-radius: 50%;
+  -webkit-animation: pulseDot 2s infinite;
+  animation: pulseDot 2s infinite;
+  margin-right: 0.469vw;
+  display: inline-block;
+}
+.ml0 {
+  margin-left: 0 !important;
+}
+textarea {
+  @include adap(padding-left, 10px, 25px);
+  @include adap(padding-top, 10px, 20px);
+  @include adap(padding-right, 10px, 25px);
+  @include adap(padding-bottom, 10px, 20px);
+  border: none;
+  resize: none;
+  &::placeholder {
+    color: rgba(68, 76, 93, 0.58);
+  }
 }

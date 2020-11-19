@@ -14,7 +14,6 @@
     display: flex;
     @include adap(margin-top, 30px, 170px);
     &-item {
-      @include adap(margin-right, 20px, 75px);
       display: flex;
       align-items: center;
       & p {
@@ -23,6 +22,13 @@
           margin-right: 0;
         }
       }
+    }
+    & > span {
+      width: 1px;
+      background: #fff;
+      opacity: 0.15;
+      @include adap(margin-right, 10px, 35px);
+      @include adap(margin-left, 10px, 35px);
     }
   }
   &__btn {

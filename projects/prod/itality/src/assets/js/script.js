@@ -224,6 +224,19 @@ $(document).ready(function ($) {
       $(".shtory-block").hide().eq($(this).index()).fadeIn();
     }
   });
+  $(window).scroll(function () {
+    let target = $(".footer");
+    let targetPos = target.offset().top;
+    let targetHeight = target.height();
+    let winHeight = $(window).height();
+    let scrollToElem = targetPos - winHeight;
+    let winScrollTop = $(this).scrollTop();
+    if (winScrollTop - targetHeight / 2 > scrollToElem) {
+      $(".aside").addClass("aside--bottom");
+    } else {
+      $(".aside").removeClass("aside--bottom");
+    }
+  });
 });
 
 // var offsetTop = $(".zakaz-line").outerHeight();
