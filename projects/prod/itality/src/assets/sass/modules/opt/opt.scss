@@ -1,0 +1,24 @@
+.opt {
+  & .main {
+    @include adap(padding-bottom, 30px, 280px);
+    &__pluses {
+      margin-top: 0;
+      @include adap(margin-right, 30px, 193px);
+    }
+    &-wrap {
+      &--flex {
+        @include adap(padding-top, 30px, 289px);
+      }
+    }
+  }
+  & .do {
+    &__content {
+      &-item {
+        width: 23%;
+        flex-direction: row-reverse;
+        margin-right: 0;
+        @include adap(margin-bottom, 10px, 30px);
+      }
+    }
+  }
+}

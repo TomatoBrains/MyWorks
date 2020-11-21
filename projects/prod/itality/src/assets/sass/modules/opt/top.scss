@@ -1,0 +1,32 @@
+.tops {
+  &__title {
+    @include adap(margin-top, 30px, 80px);
+  }
+  &__content {
+    @include adap(margin-top, 30px, 80px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+      width: vw(400px);
+      @include adap(margin-bottom, 20px, 30px);
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        & > a {
+          opacity: 1;
+        }
+      }
+      & > a {
+        position: absolute;
+        width: vw(305px);
+        height: vw(80px);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: vw(50px);
+        text-align: center;
+        opacity: 0;
+      }
+    }
+  }
+}

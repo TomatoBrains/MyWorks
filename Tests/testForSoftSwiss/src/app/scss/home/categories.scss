@@ -1,0 +1,60 @@
+.categories {
+  &__title {
+    padding-top: 9.8em;
+    padding-bottom: 8.4em;
+  }
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.08),
+      0px 0.500862px 3.38082px rgba(0, 0, 0, 0.0376483);
+    border-radius: 16px;
+    padding: 0.8rem;
+    margin-bottom: 2.4em;
+    & > img {
+      width: 50%;
+      @include lg_9 {
+        width: 100%;
+      }
+    }
+    &-content {
+      margin-top: 2.8em;
+      margin-left: 2.5vw;
+    }
+    &-descr {
+      margin-top: 2.1em;
+      & > span:first-of-type {
+        & span {
+          margin-right: 3.7rem;
+        }
+      }
+      & > span:last-of-type {
+        margin-top: 1.4rem;
+        & span {
+          margin-right: 2.7rem;
+        }
+      }
+    }
+    &-more {
+      margin-bottom: 3em;
+      margin-top: 3em;
+      cursor: pointer;
+      & img {
+        transition: transform 0.3s ease;
+      }
+      & span {
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        & img {
+          transform: translateX(10px);
+        }
+        & span {
+          font-weight: 600;
+        }
+      }
+      & > span {
+        margin-right: 1em;
+      }
+    }
+  }
+}

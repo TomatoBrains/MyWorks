@@ -176,3 +176,6 @@ textarea {
     color: rgba(68, 76, 93, 0.58);
   }
 }
+.circleDone {
+  @include circleDone;
+}

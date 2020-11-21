@@ -1,0 +1,47 @@
+.comfort {
+  height: vw(610px);
+  &--flex {
+    display: flex;
+    align-items: center;
+  }
+  &__subtitle {
+    @include adap(margin-top, 10px, 30px);
+  }
+  &__descr {
+    @include adap(margin-top, 30px, 70px);
+    & > p {
+      @include adap(margin-bottom, 10px, 20px);
+    }
+    &-item {
+      & .manager__descr-item {
+        @include adap(margin-bottom, 10px, 20px);
+        & > div {
+          width: vw(39px);
+          height: vw(39px);
+        }
+        & > p {
+          @include adap(margin-left, 10px, 15px);
+        }
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    width: vw(825px);
+    right: -10vw;
+    bottom: -2vw;
+    & .manager-icon {
+      right: 37vw;
+      bottom: 15vw;
+      & > div {
+        text-align: center;
+      }
+    }
+    &-line {
+      position: absolute;
+      right: 16vw;
+      bottom: 21vw;
+      width: vw(406px);
+    }
+  }
+}

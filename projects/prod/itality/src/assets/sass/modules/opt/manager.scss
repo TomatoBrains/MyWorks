@@ -1,0 +1,44 @@
+.manager {
+  @include adap(padding-top, 30px, 30px);
+  @include adap(padding-right, 30px, 165px);
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img {
+    position: relative;
+    display: inline-flex;
+    bottom: -0.2vw;
+    & > div {
+      position: absolute;
+    }
+  }
+  &-icon {
+    position: absolute;
+    right: -7vw;
+    bottom: 6vw;
+    width: vw(150px);
+    height: vw(150px);
+    & > div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__descr {
+    @include adap(margin-top, 30px, 55px);
+    &-item {
+      display: flex;
+      align-items: center;
+      @include adap(margin-bottom, 30px, 55px);
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      & > p {
+        @include adap(margin-left, 20px, 30px);
+      }
+    }
+  }
+}

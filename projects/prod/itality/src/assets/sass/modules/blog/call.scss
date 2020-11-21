@@ -1,7 +1,9 @@
 .call {
   @include adap(margin-top, 30px, 65px);
   @include adap(padding-top, 30px, 60px);
+  @include adap(padding-bottom, 30px, 90px);
   @include adap(padding-right, 30px, 115px);
+  position: relative;
   background-color: #f5f7f6;
   &__title {
     &-wrap {
@@ -27,8 +29,13 @@
     }
   }
   &__men {
-    position: relative;
     display: flex;
+    bottom: 0vw;
+    position: absolute;
+    left: 37vw;
+    & img {
+      width: vw(320px);
+    }
     &-name {
       @include names(vw(70px), vw(-70px));
     }

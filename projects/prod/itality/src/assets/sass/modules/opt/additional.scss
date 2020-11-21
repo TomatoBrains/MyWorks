@@ -1,0 +1,50 @@
+.additionals {
+  background-color: #f5f7f6;
+  @include adap(margin-top, 30px, 60px);
+  @include adap(padding-bottom, 30px, 74px);
+  @include adap(padding-top, 30px, 70px);
+  &__title {
+  }
+  &__content {
+    display: flex;
+    @include adap(margin-top, 30px, 60px);
+    &-item {
+      @include adap(margin-right, 30px, 160px);
+      &:first-of-type {
+        @include adap(margin-left, 10px, 30px);
+      }
+      &:last-of-type {
+        @include adap(margin-right, 30px, 214px);
+      }
+    }
+    &-ico {
+    }
+    &-title {
+      position: relative;
+      @include adap(margin-top, 10px, 20px);
+      & p {
+        position: relative;
+        z-index: 2;
+      }
+      & p:last-of-type {
+        position: absolute;
+        top: -3.5vw;
+        left: -2vw;
+        z-index: 1;
+      }
+    }
+    &-descr {
+      @include adap(margin-top, 20px, 25px);
+    }
+  }
+  &__subtitle {
+    @include adap(margin-top, 30px, 70px);
+    display: flex;
+    & p:last-of-type {
+      @include adap(margin-left, 20px, 60px);
+    }
+    & img {
+      width: vw(32px);
+    }
+  }
+}

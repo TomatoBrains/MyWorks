@@ -1,0 +1,12 @@
+.main {
+  margin-top: 5.7em;
+  &--background {
+    background: url(../img/main/back.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 60rem;
+    border-radius: 16px;
+    @include lg_9 {
+      height: 40rem;
+    }
+  }
+}

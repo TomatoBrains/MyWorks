@@ -1,0 +1,95 @@
+.header {
+  padding-top: 3.2em;
+  &__menu {
+    &-mob {
+      display: none;
+      text-align: end;
+      height: 101vh;
+      position: fixed;
+      width: 100vw;
+      background: #fff;
+      top: 0;
+      z-index: 1000;
+      padding: 30px 15px;
+      &--wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        & .logo {
+          justify-content: center;
+        }
+      }
+      & .nav > a {
+        margin-bottom: 30px;
+      }
+    }
+    &-btn {
+      width: 30px;
+      display: none;
+      @include lg_9 {
+        display: block;
+      }
+    }
+    &-close {
+      text-align: right;
+      margin-bottom: 50px;
+      display: inline-flex;
+      & img {
+        width: 30px;
+      }
+    }
+  }
+  &--hidden {
+    @include lg_9 {
+      display: none !important;
+    }
+  }
+}
+.logo {
+  @include lg_9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.search {
+  margin-right: 5rem;
+  & a {
+    margin-right: 4.8em;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  @include lg_9 {
+    margin-right: 0;
+  }
+}
+.lang {
+  @include linkHover;
+  width: 7rem;
+  margin-right: 10rem;
+  & img {
+    max-width: 3.2em;
+    margin-right: 1.2em;
+  }
+  @include lg_9 {
+    width: 60px;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+.login {
+  @include linkHover;
+  & a:first-of-type {
+    margin-right: 2.4em;
+  }
+  @include lg_9 {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.nav {
+  margin-top: 5.6em;
+  @include linkHover;
+}

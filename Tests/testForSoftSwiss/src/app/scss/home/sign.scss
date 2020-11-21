@@ -1,0 +1,37 @@
+.sign {
+  padding: 13em 0;
+  &__title {
+    margin-right: 6em;
+    @include xs_5 {
+      margin-right: 0;
+      margin-bottom: 3em;
+    }
+    & span {
+      margin-right: 2rem;
+    }
+  }
+  &__form {
+    & form {
+      display: flex;
+    }
+    & input {
+      padding: 1.4rem 2.4rem;
+      border-radius: 16px;
+      border: 1px solid $bordColor;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    & button {
+      padding: 1.4rem 4.2rem;
+      background-color: #000;
+      color: $white;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+      border: 1px solid #000;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

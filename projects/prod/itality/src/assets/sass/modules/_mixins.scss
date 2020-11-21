@@ -190,3 +190,18 @@
     }
   }
 }
+@mixin circleDone {
+  width: vw(50px);
+  height: vw(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #f9817b;
+  position: relative;
+  z-index: 2;
+  & img {
+    width: vw(15px);
+    height: vw(15px);
+  }
+}

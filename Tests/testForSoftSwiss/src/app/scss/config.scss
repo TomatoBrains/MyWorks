@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: $font-base;
+  font-size: 10px;
+  color: $prim;
+  @include md_7 {
+    font-size: 5px;
+  }
+}
+img {
+  max-width: 100%;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+.container-fluid {
+  padding: 0 4rem;
+  @include lg_9 {
+    padding: 0 2rem;
+  }
+}
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+.colorSec {
+  color: $second;
+}
+.colorWhite {
+  color: $white;
+}
+.col,
+[class*="col-"] {
+  padding: 0 12px;
+}
+.show {
+  display: block !important;
+  animation: fadeIn 1s ease;
+}

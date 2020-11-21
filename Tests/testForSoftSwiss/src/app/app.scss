@@ -1,0 +1,14 @@
+@import "app/_scss-core/_core";
+@import "normalize.css";
+@import "bootstrap-grid.min.css";
+
+@import "scss/config.scss";
+@import "scss/animations.scss";
+@import "scss/home/header.scss";
+@import "scss/home/main.scss";
+@import "scss/home/categories.scss";
+@import "scss/home/sign.scss";
+@import "scss/home/footer.scss";
+
+@import "scss/helpers";
+@import "scss/typography";

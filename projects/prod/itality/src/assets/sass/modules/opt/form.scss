@@ -1,0 +1,63 @@
+.optForm {
+  position: relative;
+  @include adap(padding-top, 30px, 50px);
+  @include adap(padding-bottom, 30px, 50px);
+  @include adap(padding-right, 30px, 85px);
+  overflow: hidden;
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--left {
+    @include adap(margin-right, 30px, 100px);
+  }
+  &--center {
+    @include adap(margin-right, 30px, 110px);
+    @include adap(padding-top, 15px, 30px);
+    & .manager__descr-item {
+      @include adap(margin-bottom, 15px, 40px);
+      & > div {
+        width: vw(39px);
+        height: vw(39px);
+        flex-shrink: 0;
+      }
+      & > p {
+        @include adap(margin-left, 10px, 15px);
+      }
+    }
+  }
+  &--right {
+    & h3 {
+      text-align: center;
+    }
+    & form {
+      flex-direction: column;
+      width: vw(305px);
+      margin: 0 auto;
+      & > span {
+        margin-top: 15px;
+        text-align: left;
+      }
+      & input {
+        width: 100%;
+        height: vw(80px);
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+      & button {
+        width: 100%;
+        height: vw(80px);
+      }
+    }
+  }
+  &__img {
+    left: 0;
+    bottom: -8.5vw;
+    position: absolute;
+    & .manager-icon {
+      right: 24vw;
+      bottom: 17vw;
+    }
+  }
+}

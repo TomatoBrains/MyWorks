@@ -1,0 +1,193 @@
+.txt96 {
+  //   @include adap(font-size, 45px, 96px);
+  font-size: 9.6rem;
+  @include md_7 {
+    font-size: 18rem;
+  }
+}
+.txt75 {
+  //   @include adap(font-size, 35px, 75px);
+  font-size: 7.5rem;
+  @include md_7 {
+    font-size: 15rem;
+  }
+}
+.txt72 {
+  //   @include adap(font-size, 32px, 72px);
+  font-size: 7.2rem;
+  @include md_7 {
+    font-size: 14rem;
+  }
+}
+.txt60 {
+  //   @include adap(font-size, 30px, 60px);
+  font-size: 6rem;
+  @include md_7 {
+    font-size: 12rem;
+  }
+}
+.txt56 {
+  //   @include adap(font-size, 28px, 56px);
+  font-size: 5.6rem;
+  @include md_7 {
+    font-size: 11rem;
+  }
+}
+.txt48 {
+  //   @include adap(font-size, 26px, 48px);
+  font-size: 4.8rem;
+  @include md_7 {
+    font-size: 10rem;
+  }
+}
+.txt40 {
+  //   @include adap(font-size, 22.5px, 40px);
+  font-size: 4rem;
+  @include md_7 {
+    font-size: 8rem;
+  }
+}
+.txt37 {
+  //   @include adap(font-size, 21px, 37px);
+  font-size: 3.7rem;
+  @include md_7 {
+    font-size: 7rem;
+  }
+}
+.txt35 {
+  //   @include adap(font-size, 20px, 35px);
+  font-size: 3.5rem;
+  @include md_7 {
+    font-size: 7rem;
+  }
+}
+.txt33 {
+  //   @include adap(font-size, 19px, 33px);
+  font-size: 3.3rem;
+  @include md_7 {
+    font-size: 6.5rem;
+  }
+}
+.txt30 {
+  //   @include adap(font-size, 17px, 30px);
+  font-size: 3rem;
+  @include md_7 {
+    font-size: 6rem;
+  }
+}
+.txt28 {
+  //   @include adap(font-size, 17px, 28px);
+  font-size: 2.8rem;
+  @include md_7 {
+    font-size: 5.6rem;
+  }
+}
+.txt25 {
+  //   @include adap(font-size, 16.5px, 25px);
+  font-size: 2.5rem;
+  @include md_7 {
+    font-size: 5rem;
+  }
+}
+.txt24 {
+  //   @include adap(font-size, 16px, 24px);
+  font-size: 2.4rem;
+  @include md_7 {
+    font-size: 4.8rem;
+  }
+}
+.txt22 {
+  //   @include adap(font-size, 16px, 22px);
+  font-size: 2.2rem;
+  @include md_7 {
+    font-size: 4.4rem;
+  }
+}
+.txt20 {
+  //   @include adap(font-size, 20px, 20px);
+  font-size: 2rem;
+  @include md_7 {
+    font-size: 4rem;
+  }
+}
+.txt19 {
+  //   @include adap(font-size, 19px, 19px);
+  font-size: 1.9rem;
+  @include md_7 {
+    font-size: 3.8rem;
+  }
+}
+.txt18 {
+  //   @include adap(font-size, 18px, 18px);
+  font-size: 1.8rem;
+  @include md_7 {
+    font-size: 3.6rem;
+  }
+}
+.txt16 {
+  //   @include adap(font-size, 16px, 16px);
+  font-size: 1.6rem;
+  @include md_7 {
+    font-size: 3.2rem;
+  }
+}
+.txt15 {
+  //   @include adap(font-size, 15px, 15px);
+  font-size: 1.5rem;
+  @include md_7 {
+    font-size: 3rem;
+  }
+}
+.txt14 {
+  //   @include adap(font-size, 14px, 14px);
+  font-size: 1.4rem;
+  @include md_7 {
+    font-size: 2.8rem;
+  }
+}
+.txt13 {
+  //   @include adap(font-size, 13px, 13px);
+  font-size: 1.3rem;
+  @include md_7 {
+    font-size: 2.6rem;
+  }
+}
+.txt12 {
+  //   @include adap(font-size, 12px, 12px);
+  font-size: 1.2rem;
+  @include md_7 {
+    font-size: 2.4rem;
+  }
+}
+.txt11 {
+  //   @include adap(font-size, 11px, 11px);
+  font-size: 1.1rem;
+  @include md_7 {
+    font-size: 1.2rem;
+  }
+}
+/// font weight
+.fw1 {
+  font-weight: 100;
+}
+.fw3 {
+  font-weight: 300;
+}
+.fw5 {
+  font-weight: 500;
+}
+.fw6 {
+  font-weight: 600;
+}
+.fw4 {
+  font-weight: 400;
+}
+.fw7 {
+  font-weight: 700;
+}
+.fw8 {
+  font-weight: 800;
+}
+.fw9 {
+  font-weight: 900;
+}
