@@ -1,0 +1,279 @@
+.modal {
+  &__form {
+    & form {
+      display: flex;
+      flex-direction: column;
+      & input {
+        @include adap(margin-bottom, 10px, 18px);
+        height: vw(80px);
+      }
+      & button {
+        @include adap(margin-bottom, 10px, 18px);
+        height: vw(80px);
+      }
+    }
+  }
+}
+.modalMd {
+  width: vw(500px);
+  padding: vw(55px) vw(62px);
+  text-align: center;
+}
+.callModal {
+  padding: vw(55px) vw(62px);
+  & p {
+    @include adap(margin-bottom, 10px, 18px);
+  }
+}
+.tyModal {
+  padding: vw(47px) vw(66px) vw(62px) vw(66px);
+  & .modal__content {
+    & > p {
+      @include adap(margin-bottom, 10px, 30px);
+    }
+    &--wrap {
+      border: 1px solid #626b80;
+      border-left: none;
+      border-right: none;
+      padding: vw(30px) 0 vw(40px) 0;
+      & p {
+        &:first-of-type {
+          @include adap(margin-bottom, 10px, 30px);
+        }
+        &:nth-of-type(2) {
+          @include adap(margin-bottom, 10px, 15px);
+        }
+        &:nth-of-type(3) {
+          @include adap(margin-bottom, 10px, 20px);
+        }
+        &:nth-of-type(4) {
+          @include adap(margin-bottom, 10px, 10px);
+        }
+      }
+    }
+    &-soc {
+      display: flex;
+      justify-content: center;
+      & > span {
+        margin-right: 10px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+    &-gal {
+      @include adap(margin-top, 10px, 30px);
+      & > p {
+        @include adap(margin-bottom, 10px, 30px);
+      }
+      &--wrap {
+        display: flex;
+        flex-wrap: wrap;
+        @include adap(margin-right, -5px, -18px);
+        & a {
+          width: 33%;
+          height: vw(110px);
+          @include adap(padding-right, 5px, 18px);
+          @include adap(margin-bottom, 5px, 18px);
+        }
+      }
+    }
+  }
+}
+.orderModal {
+  padding: vw(55px) vw(62px);
+  & p {
+    @include adap(margin-bottom, 10px, 18px);
+  }
+}
+.downloadModal {
+  padding-left: vw(50px);
+  padding-right: vw(50px);
+  & img {
+    @include adap(margin-bottom, 20px, 40px);
+  }
+  & p:first-of-type {
+    @include adap(margin-bottom, 7px, 12px);
+  }
+}
+.rewModal {
+  padding-left: vw(50px);
+  padding-right: vw(50px);
+  & img {
+    @include adap(margin-bottom, 20px, 40px);
+  }
+  & p:first-of-type {
+    @include adap(margin-bottom, 7px, 12px);
+  }
+}
+.exitModal {
+  width: vw(850px);
+  display: flex;
+  text-align: left;
+  position: relative;
+  & .modal--wrap {
+    width: vw(417px);
+  }
+  & .modal__content {
+    & p {
+      &:first-of-type {
+        @include adap(margin-bottom, 10px, 18px);
+      }
+      &:nth-of-type(2) {
+        @include adap(margin-bottom, 10px, 18px);
+      }
+      &:nth-of-type(3) {
+        @include adap(margin-bottom, 10px, 18px);
+      }
+    }
+  }
+  & .modal__form {
+    & > p {
+      @include adap(margin-bottom, 10px, 16px);
+    }
+    &-socInp {
+      display: flex;
+      justify-content: space-between;
+      @include adap(margin-bottom, 10px, 16px);
+      & label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: solid 1px #4e5566;
+        height: vw(50px);
+        width: 32%;
+        padding: 0 vw(10px);
+        & > span:first-of-type {
+          margin-right: vw(10px);
+        }
+        & span {
+          color: rgba(255, 255, 255, 0.25);
+        }
+        &:hover {
+          background: #bc433e;
+          border: none;
+          & span {
+            color: #fff;
+          }
+        }
+        &:first-of-type {
+          &:hover {
+            background: #2c823d;
+            border: none;
+            & span {
+              color: #fff;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          &:hover {
+            background: #2e5c80;
+            border: none;
+            & span {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    & button {
+      width: 100%;
+    }
+    & .check-line {
+      justify-content: center;
+    }
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      align-items: center;
+      right: 7vw;
+      bottom: -6.5vw;
+      & > div {
+        display: flex;
+        align-items: center;
+        @include adap(margin-bottom, 10px, 15px);
+        & img {
+          @include adap(margin-right, 10px, 20px);
+        }
+      }
+      & > a {
+        width: vw(100px);
+        height: vw(44px);
+        padding: 0;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    right: -2vw;
+  }
+  & .manager-icon {
+    right: 4vw;
+    bottom: 12vw;
+    width: vw(90px);
+    height: vw(90px);
+    & > div {
+      & img {
+        width: vw(30px);
+      }
+    }
+  }
+}
+.startModal {
+  background: #fff;
+  width: vw(975px);
+  overflow: hidden;
+  & .modal {
+    &--flex {
+      display: flex;
+    }
+    &__content {
+      margin-right: vw(40px);
+      width: vw(350px);
+      &-title {
+        & p {
+          @include adap(margin-bottom, 10px, 24px);
+          &:last-of-type {
+            border: 1px dashed #ea8780;
+            padding: vw(22px) 0;
+          }
+        }
+      }
+    }
+    &__image {
+      display: flex;
+      margin-bottom: 2.4vw;
+      position: relative;
+      z-index: 2;
+      width: vw(435px);
+      &-dots {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
+  & form {
+    @include adap(margin-top, 15px, 45px);
+    & > p {
+      @include adap(margin-bottom, 10px, 18px);
+    }
+    & input {
+      background: #f5f7f6;
+      width: 100%;
+      height: vw(80px);
+      @include adap(margin-bottom, 10px, 18px);
+    }
+    & button {
+      width: 100%;
+      height: vw(80px);
+      @include adap(margin-bottom, 10px, 18px);
+    }
+  }
+  & .check-line {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.portfolio {
+  & .works {
+    &__tabBtns {
+      justify-content: end;
+      flex-wrap: wrap;
+      @include adap(margin-right, -10px, -21px);
+      &-item {
+        @include adap(margin-bottom, 10px, 20px);
+        @include adap(margin-right, 10px, 20.5px);
+        & a {
+          padding: vw(18px) vw(43.5px);
+        }
+      }
+    }
+    &__tabs {
+      @include adap(margin-top, 10px, 30px);
+    }
+  }
+}
