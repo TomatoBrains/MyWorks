@@ -74,38 +74,27 @@ $(document).ready(function ($) {
   //   $('html').addClass('stop');
   //   $('#modal-order').fadeIn();
   // });
-  $(".btn-call-js").on("click", function (event) {
+  $(".callModalBtn").on("click", function (event) {
     event.preventDefault();
     $("html").addClass("stop");
-    $("#modal-call").fadeIn();
+    $("#callModal").fadeIn();
   });
-  $(".btn-zamer-js").on("click", function (event) {
+  $(".orderModalBtn").on("click", function (event) {
     event.preventDefault();
     $("html").addClass("stop");
-    $("#modal-zamer").fadeIn();
+    $("#orderModal").fadeIn();
   });
-  $(".btn-zakaz-1-js").on("click", function (event) {
+  $(".startModalBtn").on("click", function (event) {
     event.preventDefault();
     $("html").addClass("stop");
-
-    var tlt = $(this)
-      .parents(".shtory-right")
-      .find(".tlt-one-js")
-      .text()
-      .trim();
-    $(".tlt-js").text(tlt);
-    $(".inp-js").val(tlt);
-    $("#modal-zakaz").fadeIn();
+    $("#startModal").fadeIn();
   });
-
-  // modal-call
-  // modal-zamer
-  // modal-zakaz
-
-  // tlt-js
-  // inp-js
-
-  $(".polit-js , .check-box").on("click", function (event) {
+  $(".styleModalBtn").on("click", function (event) {
+    event.preventDefault();
+    $("html").addClass("stop");
+    $("#styleModal").fadeIn();
+  });
+  $(".check-line").on("click", function (event) {
     event.preventDefault();
     $("html").addClass("stop");
     $("#politics").fadeIn();
@@ -118,14 +107,40 @@ $(document).ready(function ($) {
     $("body,html").animate({ scrollTop: top }, 1000);
   });
 
-  $(".fancy-class, .play, .gallery__item").fancybox({
+  $(".fancy-class, .play, .gallery__item, .rew__slider-imgs > a").fancybox({
     buttons: ["slideShow", "zoom", "fullScreen", "close"],
     animationEffect: "zoom-in-out",
     animationDuration: 600,
     transitionEffect: "circular",
     transitionDuration: 420,
   });
-
+  ///////// slic fix
+  $(".slick-cloned a").removeAttr("data-fancybox");
+  $(".slick-cloned a").attr("data-fancybox-trigger", "rew");
+  $(".small__slider-item").each(function (index, el) {
+    var ind = index;
+    $(this)
+      .find(".small__slider-gallery-item")
+      .each(function (index, el) {
+        // $(this).data('fancybox', 'small-g-'+ ind);
+        $(this).attr({
+          "data-fancybox": "small-g" + ind,
+        });
+      });
+  });
+  $('a[href^="#"]').click(function () {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      var t = $(this.hash);
+      if (
+        ((t = t.length ? t : $("[name=" + this.hash.slice(1) + "]")), t.length)
+      )
+        return $("html,body").animate({ scrollTop: t.offset().top }, 500), !1;
+    }
+  });
   d = new Date();
   monthA = "января,февраля,марта, апреля, мая, июня, июля, августа, сентября, октября, ноября, декабря".split(
     ","
@@ -236,6 +251,10 @@ $(document).ready(function ($) {
     } else {
       $(".aside").removeClass("aside--bottom");
     }
+  });
+  $(".seo__more").on("click", function () {
+    $(".seo__content").toggleClass("show__seo");
+    $(this).toggleClass("seo__more-show");
   });
 });
 

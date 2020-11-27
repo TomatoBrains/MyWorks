@@ -1,0 +1,22 @@
+.card {
+  &__item {
+    &--wrap {
+      display: flex;
+      & > div {
+        width: 50%;
+        &:first-of-type {
+          @include adap(padding-bottom, 30px, 80px);
+        }
+      }
+    }
+    &-title {
+      padding-left: vw(295px);
+      text-align: left;
+      width: 50%;
+      & > div {
+        position: sticky;
+        top: 2vw;
+      }
+    }
+  }
+}

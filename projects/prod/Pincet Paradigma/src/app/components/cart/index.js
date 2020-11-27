@@ -1,5 +1,5 @@
 //add html to cart
-$(".cosmetic__catalog-item a").on("click", function (e) {
+$(".cosmetic__catalog-price--btn a").on("click", function (e) {
   e.stopPropagation();
   let it = $(this);
   $(".cosmetic__cart-item").each(function () {

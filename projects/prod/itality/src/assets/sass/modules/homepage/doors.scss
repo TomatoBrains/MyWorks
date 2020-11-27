@@ -61,17 +61,44 @@
     }
   }
   &__tabs {
-    margin-right: -2vw;
     &-tab {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     &-item {
-      width: 25%;
+      position: relative;
+      width: vw(275px);
       @include adap(margin-bottom, 20px, 40px);
+      cursor: pointer;
       & img {
-        @include adap(margin-bottom, 10px, 20px);
         width: 14.323vw;
+        transition: opacity 0.3s linear;
+      }
+      & a {
+        position: absolute;
+        width: vw(200px);
+        height: vw(65px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+      &:hover {
+        & img {
+          opacity: 0.5;
+        }
+        & a {
+          opacity: 1;
+        }
+      }
+    }
+    &-img {
+      &--wrap {
+        background: #000;
+        display: flex;
+        @include adap(margin-bottom, 10px, 20px);
       }
     }
   }

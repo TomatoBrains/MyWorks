@@ -1,0 +1,49 @@
+.furni {
+  &__left {
+    background: linear-gradient(to right, #f96f77, #fcaf87);
+  }
+  &__title {
+    @extend .color__title;
+  }
+  &__right {
+    background: #f5f7f6;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      padding: vw(85px) vw(72px);
+    }
+    &-col {
+      width: 33%;
+      text-align: center;
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include adap(margin-bottom, 15px, 30px);
+      & p {
+        text-transform: uppercase;
+      }
+    }
+    &-imgs {
+      & img {
+        @include adap(margin-bottom, 10px, 15px);
+      }
+    }
+  }
+}
+.uni,
+.rad,
+.kvad {
+  width: vw(35px);
+  height: vw(35px);
+  border: solid 5px #f9817b;
+  display: block;
+  @include adap(margin-right, 10px, 15px);
+}
+.rad {
+  border-radius: 17.5px;
+}
+.uni {
+  border-radius: 7px;
+}

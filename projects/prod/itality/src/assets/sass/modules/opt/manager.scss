@@ -1,6 +1,7 @@
 .manager {
   @include adap(padding-top, 30px, 30px);
   @include adap(padding-right, 30px, 165px);
+  position: relative;
   &--flex {
     display: flex;
     align-items: center;
@@ -40,5 +41,10 @@
         @include adap(margin-left, 20px, 30px);
       }
     }
+  }
+  & > img {
+    bottom: -7vw;
+    right: 0;
+    z-index: -1;
   }
 }

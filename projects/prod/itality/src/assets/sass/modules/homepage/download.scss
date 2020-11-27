@@ -51,4 +51,9 @@
       }
     }
   }
+  & > img {
+    bottom: -7vw;
+    right: 0;
+    z-index: -1;
+  }
 }

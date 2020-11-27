@@ -228,7 +228,13 @@
 								</p>
 								<div class="call__title-wrap">
 									<p class="txt13"><span class="pulseDot"></span> В любой день с 10:00 до 21:00</p>
-									<p class="txt20 fwb"><img src="assets/img/svg/phone.svg" alt=""> +7 (499) 955-50-78</p>
+									<p class="txt20 fwb">
+										<img src="assets/img/svg/phone.svg" alt="" /><a
+										  class="txt20 fwb linkHover"
+										  href="tel:+74999555078"
+										  >+7 (499) 955-50-78</a
+										>
+									  </p>
 								</div>
 							</div>
 						</div>
@@ -298,23 +304,23 @@
 		</div>
 		<aside class="aside">
 			<div class="aside__soc">
-				<a href="#" class="aside__soc-item">
-					<img src="assets/img/svg/telega.svg" alt="" />
-				</a>
-				<a href="#" class="aside__soc-item">
-					<img src="assets/img/svg/telega.svg" alt="" />
-				</a>
-				<a href="#" class="aside__soc-item">
-					<img src="assets/img/svg/telega.svg" alt="" />
-				</a>
-				<a href="#" class="aside__soc-item">
-					<img src="assets/img/svg/telega.svg" alt="" />
-				</a>
-				<a href="#" class="aside__soc-item">
-					<img src="assets/img/svg/telega.svg" alt="" />
-				</a>
+			  <a href="#" class="aside__soc-item">
+				<img src="assets/img/svg/telega.svg" alt="" />
+			  </a>
+			  <a href="#" class="aside__soc-item">
+				<img src="assets/img/svg/whats.svg" alt="" />
+			  </a>
+			  <a href="#" class="aside__soc-item callModalBtn">
+				<img src="assets/img/svg/phone2.svg" alt="" />
+			  </a>
+			  <a href="#" class="aside__soc-item">
+				<img src="assets/img/svg/calc.svg" alt="" />
+			  </a>
+			  <a href="#" class="aside__soc-item">
+				<span class="fwb txt13">PDF</span>
+			  </a>
 			</div>
-		</aside>
+		  </aside>
 	</div>
 	<!-- footer -->
 	<footer class="footer">
@@ -331,12 +337,16 @@
 						</div>
 					  </div>
 					  <div class="footer__soc">
-						  <p class="txt18 fw5 cw">
-							Мы в социальных сетях
-						  </p>
-						  <a href="#" class="ico"><img src="assets/img/svg/telega.svg" alt=""></a>
-						  <a href="#" class="ico"><img src="assets/img/svg/telega.svg" alt=""></a>
-						  <a href="#" class="ico"><img src="assets/img/svg/telega.svg" alt=""></a>
+						<p class="txt18 fw5 cw">Мы в социальных сетях</p>
+						<a href="#" class="ico"
+						  ><img src="assets/img/svg/insta.svg" alt=""
+						/></a>
+						<a href="#" class="ico"
+						  ><img src="assets/img/svg/face.svg" alt=""
+						/></a>
+						<a href="#" class="ico"
+						  ><img src="assets/img/svg/vk.svg" alt=""
+						/></a>
 					  </div>
 				</div>
 				<div class="footer__right">
@@ -386,6 +396,607 @@
 			</div>
 		</div>
 	</footer>
+	<div class="overlay" id="callModal">
+		<div
+		  class="callModal modal-wrap modalMd"
+		  id="callModal"
+		  style="
+			background: url(assets/img/popups/back1.png) no-repeat bottom center;
+			background-size: cover;
+		  "
+		>
+		  <div class="close"></div>
+		  <div class="modal__content">
+			<p class="txt25 fw3 cw tac">
+			  <span class="fw5">Введите Ваш номер телефона</span> <br />
+			  и мы Вам перезвоним в <br />
+			  ближайшее время <br />
+			</p>
+			<div class="modal__form">
+			  <form action="" name="formname">
+				<input
+				  class="txt16 fw3 input-black"
+				  type="text"
+				  name="name"
+				  placeholder="Ваше имя"
+				/>
+				<input
+				  class="txt16 fw3 input-black"
+				  type="tel"
+				  name="phone"
+				  placeholder="+7 _ _ _   _ _ _   _ _"
+				/>
+				<button class="txt18 fw5 cw btnGrad btn">Перезвоните мне</button>
+			  </form>
+			  <span class="check-line terms">
+				<span class="check-label">
+				  <span class="check-label-act"
+					><img src="assets/img/svg/done.svg" alt=""
+				  /></span>
+				</span>
+				<span class="txt12 cw">
+				  Заполняя форму, Вы соглашаетесь с <br />
+				  <span class="tdu co">политикой конфиденциальности</span>
+				</span>
+			  </span>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="overlay" id="tyModal">
+		<div
+		  class="tyModal modal-wrap modaMd"
+		  id="tyModal"
+		  style="
+			background: url(assets/img/popups/back2.png) no-repeat bottom center;
+			background-size: cover;
+		  "
+		>
+		  <div class="close"></div>
+		  <div class="modal__content">
+			<p class="txt35 fw5 cw tac">Спасибо!</p>
+			<p class="txt18 tac cw">Мы свяжемся с Вами в ближайшее время</p>
+			<div class="modal__content--wrap">
+			  <p class="txt18 fw3 tac cw">Если у Вас срочный вопрос</p>
+			  <p class="txt24 fw5 tac cw">Звоните</p>
+			  <p class="txt20 fwb cw tac">
+				<span
+				  ><img class="phoneIco" src="assets/img/svg/phone.svg" alt=""
+				/></span>
+				+7 (499) 955-50-78
+			  </p>
+			  <p class="txt24 fw5 tac cw">или пишите в мессенджер:</p>
+			  <div class="modal__content-soc">
+				<span class="fw5 txt13 cw socInp">
+				  <img src="assets/img/homepage/quiz/whats.png" alt="" />
+				  WhatsApp
+				</span>
+				<span class="fw5 txt13 cw socInp">
+				  <img src="assets/img/homepage/quiz/whats.png" alt="" />
+				  WhatsApp
+				</span>
+			  </div>
+			</div>
+			<div class="modal__content-gal">
+			  <p class="txt24 fw5 cw tac">Посетите наш Instagram</p>
+			  <div class="modal__content-gal--wrap">
+				<a href="assets/img/popups/ty1.png" data-fancybox="modalTy">
+				  <img src="assets/img/popups/ty1.png" alt=""
+				/></a>
+				<a href="assets/img/popups/ty2.png" data-fancybox="modalTy"
+				  ><img src="assets/img/popups/ty2.png" alt=""
+				/></a>
+				<a href="assets/img/popups/ty3.png" data-fancybox="modalTy"
+				  ><img src="assets/img/popups/ty3.png" alt=""
+				/></a>
+				<a href="assets/img/popups/ty1.png" data-fancybox="modalTy">
+				  <img src="assets/img/popups/ty1.png" alt=""
+				/></a>
+				<a href="assets/img/popups/ty2.png" data-fancybox="modalTy"
+				  ><img src="assets/img/popups/ty2.png" alt=""
+				/></a>
+				<a href="assets/img/popups/ty3.png" data-fancybox="modalTy"
+				  ><img src="assets/img/popups/ty3.png" alt=""
+				/></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="overlay" id="orderModal">
+		<div
+		  class="orderModal modal-wrap modalMd"
+		  id="orderModal"
+		  style="
+			background: url(assets/img/popups/back3.png) no-repeat bottom center;
+			background-size: cover;
+		  "
+		>
+		  <div class="close"></div>
+		  <div class="modal__content">
+			<p class="txt25 fw5 cw tac">Заказать</p>
+			<div class="modal__form">
+			  <form action="" name="formname">
+				<input
+				  class="txt16 fw3 input-black"
+				  type="text"
+				  name="name"
+				  placeholder="Ваше имя"
+				/>
+				<input
+				  class="txt16 fw3 input-black"
+				  type="tel"
+				  name="phone"
+				  placeholder="+7 _ _ _   _ _ _   _ _"
+				/>
+				<button class="txt18 fw5 cw btnGrad btn">Перезвоните мне</button>
+			  </form>
+			  <span class="check-line terms">
+				<span class="check-label">
+				  <span class="check-label-act"
+					><img src="assets/img/svg/done.svg" alt=""
+				  /></span>
+				</span>
+				<span class="txt12 cw">
+				  Заполняя форму, Вы соглашаетесь с <br />
+				  <span class="tdu co">политикой конфиденциальности</span>
+				</span>
+			  </span>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="overlay" id="downloadModal">
+		<div
+		  class="downloadModal modal-wrap modalMd"
+		  id="downloadModal"
+		  style="
+			background: url(assets/img/popups/back45.png) no-repeat bottom center;
+			background-size: cover;
+		  "
+		>
+		  <div class="close"></div>
+		  <div class="modal__content">
+			<img src="assets/img/popups/load.png" alt="" />
+			<p class="txt25 fw5 tac cw">Скачивание уже началось</p>
+			<p class="txt18 tac fw3 cw">
+			  Если скачивание не началось, нажмите
+			  <a class="co">здесь</a>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="overlay" id="exitModal">
+		<div
+		  class="exitModal modal-wrap modalMd"
+		  id="exitModal"
+		  style="
+			background: url(assets/img/popups/back6.png) no-repeat bottom center;
+			background-size: cover;
+		  "
+		>
+		  <div class="close"></div>
+		  <div class="modal--wrap">
+			<div class="modal__content">
+			  <p class="txt25 fw5 co">Подождите пожалуйста!</p>
+			  <p class="txt18 fw3 cw">
+				Если у Вас еще нет душевого поддона, <br />
+				скачайте инструкцию
+			  </p>
+			  <p class="txt22 fw5 cw">
+				“Как сделать правильный трап <br />
+				для душевого ограждения"
+			  </p>
+			</div>
+			<div class="modal__form">
+			  <p class="txt18 fw3 cw">Вышлем Вам на:</p>
+			  <form action="" name="formname">
+				<div class="modal__form-socInp">
+				  <label for="exitWhat" class="social-item sicol act wa">
+					<input
+					  style="display: none"
+					  type="radio"
+					  class="social-inp phn"
+					  value="Phone"
+					  id="exitWhat"
+					  name="soc"
+					/>
+					<span class="social-item__img">
+					  <img src="assets/img/homepage/quiz/whats.png" alt="" />
+					</span>
+					<span class="cw fw5 txt13"> WhatsApp </span>
+				  </label>
+				  <label for="exitTeleg" class="social-item sicol act wa">
+					<input
+					  style="display: none"
+					  type="radio"
+					  class="social-inp phn"
+					  value="Phone"
+					  id="exitTeleg"
+					  name="soc"
+					/>
+					<span class="social-item__img">
+					  <img src="assets/img/homepage/quiz/telega.png" alt="" />
+					</span>
+					<span class="cw fw5 txt13"> WhatsApp </span>
+				  </label>
+				  <label for="exitMail" class="social-item sicol act wa">
+					<input
+					  style="display: none"
+					  type="radio"
+					  class="social-inp phn"
+					  value="Phone"
+					  id="exitMail"
+					  name="soc"
+					/>
+					<span class="social-item__img">
+					  <img src="assets/img/homepage/quiz/mail.png" alt="" />
+					</span>
+					<span class="cw fw5 txt13"> WhatsApp </span>
+				  </label>
+				</div>
+				<input
+				  class="txt16 fw3 input-black"
+				  type="tel"
+				  name="phone"
+				  placeholder="+7 _ _ _   _ _ _   _ _"
+				/>
+				<button class="txt18 fw5 cw btnGrad btn">Получить советы</button>
+				<span class="check-line terms">
+				  <span class="check-label">
+					<span class="check-label-act"
+					  ><img src="assets/img/svg/done.svg" alt=""
+					/></span>
+				  </span>
+				  <span class="txt12 cw">
+					Заполняя форму, Вы соглашаетесь с <br />
+					<span class="tdu co">политикой конфиденциальности</span>
+				  </span>
+				</span>
+			  </form>
+			</div>
+		  </div>
+		  <div class="exitModal__img">
+			<img src="assets/img/popups/book.png" alt="" />
+			<div class="manager-icon">
+			  <img src="assets/img/homepage/download/forma.png" alt="" />
+			  <div class="">
+				<img src="assets/img/homepage/download/icon.png" alt="" />
+				<p class="txt11 fw5 cw">0,8 Мб</p>
+			  </div>
+			</div>
+			<div class="modal__form--flex">
+			  <div>
+				<img src="assets/img/popups/heart.png" alt="" />
+				<p class="txt16 fw3 cw">
+				  И чтобы не потерять <br />
+				  наш сайт -
+				  <span class="fw5"
+					>добавьте <br />
+					его в избранное</span
+				  >
+				</p>
+			  </div>
+			  <a class="btn btnGrad txt18 cw">Ctrl + D</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="overlay" id="politics">
+		<div class="modal-wrap modal-wrap_pol modal-big" style="background: #fff">
+		  <div class="close"></div>
+  
+		  <div class="modal modal_pol">
+			<h2 class="text24 fw9 modal_pol-header mbm">
+			  ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+			</h2>
+			<div class="popup__subtitle_politics"></div>
+			<p class="txt14 mbm">
+			  Настоящая Политика конфиденциальности персональных данных (далее –
+			  Политика конфиденциальности) действует в отношении всей информации,
+			  которую данный сайт, на котором размещен текст этой Политики
+			  конфиденциальности, может получить о Пользователе, а также любых
+			  программ и продуктов, размещенных на нем.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</p>
+			<p class="txt14">
+			  1.1. В настоящей Политике конфиденциальности используются следующие
+			  термины:
+			</p>
+			<p class="txt14">
+			  1.1.1. «Администрация сайта» – уполномоченные сотрудники на
+			  управления сайтом, действующие от его имени, которые организуют и
+			  (или) осуществляет обработку персональных данных, а также определяет
+			  цели обработки персональных данных, состав персональных данных,
+			  подлежащих обработке, действия (операции), совершаемые с
+			  персональными данными.
+			</p>
+			<p class="txt14">
+			  1.1.2. «Персональные данные» — любая информация, относящаяся к прямо
+			  или косвенно определенному или определяемому физическому лицу
+			  (субъекту персональных данных).
+			</p>
+			<p class="txt14">
+			  1.1.3. «Обработка персональных данных» — любое действие (операция)
+			  или совокупность действий (операций), совершаемых с использованием
+			  средств автоматизации или без использования таких средств с
+			  персональными данными, включая сбор, запись, систематизацию,
+			  накопление, хранение, уточнение (обновление, изменение), извлечение,
+			  использование, передачу (распространение, предоставление, доступ),
+			  обезличивание, блокирование, удаление, уничтожение персональных
+			  данных.
+			</p>
+			<p class="txt14">
+			  1.1.4. «Конфиденциальность персональных данных» — обязательное для
+			  соблюдения Администрацией сайта требование не допускать их
+			  умышленного распространения без согласия субъекта персональных
+			  данных или наличия иного законного основания.
+			</p>
+			<p class="txt14">
+			  1.1.5. «Пользователь сайта (далее Пользователь)» – лицо, имеющее
+			  доступ к сайту, посредством сети Интернет и использующее данный сайт
+			  для своих целей.
+			</p>
+			<p class="txt14">
+			  1.1.6. «Cookies» — небольшой фрагмент данных, отправленный
+			  веб-сервером и хранимый на компьютере пользователя, который
+			  веб-клиент или веб-браузер каждый раз пересылает веб-серверу в
+			  HTTP-запросе при попытке открыть страницу соответствующего сайта.
+			</p>
+			<p class="txt14 mbm">
+			  1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной
+			  сети, построенной по протоколу IP.
+			</p>
+			<p class="txt14 mbm fw9">ОБЩИЕ ПОЛОЖЕНИЯ</p>
+			<p class="txt14">
+			  2.1. Использование Пользователем сайта означает согласие с настоящей
+			  Политикой конфиденциальности и условиями обработки персональных
+			  данных Пользователя.
+			</p>
+			<p class="txt14">
+			  2.2. В случае несогласия с условиями Политики конфиденциальности
+			  Пользователь должен прекратить использование сайта.
+			</p>
+			<p class="txt14">
+			  2.3. Настоящая Политика конфиденциальности применяется только к
+			  данному сайту. Администрация сайта не контролирует и не несет
+			  ответственность за сайты третьих лиц, на которые Пользователь может
+			  перейти по ссылкам, доступным на данном сайте.
+			</p>
+			<p class="txt14 mbm">
+			  2.4. Администрация сайта не проверяет достоверность персональных
+			  данных, предоставляемых Пользователем сайта.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">
+			  ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ
+			</p>
+			<p class="txt14">
+			  3.1. Настоящая Политика конфиденциальности устанавливает
+			  обязательства Администрации сайта по умышленному неразглашению
+			  персональных данных, которые Пользователь предоставляет по
+			  разнообразным запросам Администрации сайта (например, при
+			  регистрации на сайте, оформлении заказа, подписки на уведомления и
+			  т.п).
+			</p>
+			<p class="txt14">
+			  3.2. Персональные данные, разрешённые к обработке в рамках настоящей
+			  Политики конфиденциальности, предоставляются Пользователем путём
+			  заполнения специальных форм на Сайте и обычно включают в себя
+			  следующую информацию:
+			</p>
+			<p class="txt14">3.2.1. фамилию, имя, отчество Пользователя;</p>
+			<p class="txt14">3.2.2. контактный телефон Пользователя;</p>
+			<p class="txt14">3.2.3. адрес электронной почты (e-mail);</p>
+			<p class="txt14">
+			  3.2.4. место жительство Пользователя и другие данные.
+			</p>
+			<p class="txt14">
+			  3.3. Администрация сайта также принимает усилия по защите
+			  Персональных данных, которые автоматически передаются в процессе
+			  посещения страниц сайта:
+			</p>
+			<p class="txt14">IP адрес;</p>
+			<p class="txt14">информация из cookies;</p>
+			<p class="txt14">
+			  информация о браузере (или иной программе, которая осуществляет
+			  доступ к сайту);
+			</p>
+			<p class="txt14">время доступа;</p>
+			<p class="txt14">посещенные адреса страниц;</p>
+			<p class="txt14">реферер (адрес предыдущей страницы) и т.п.</p>
+			<p class="txt14">
+			  3.3.1. Отключение cookies может повлечь невозможность доступа к
+			  сайту.
+			</p>
+			<p class="txt14">
+			  3.3.2. Сайт осуществляет сбор статистики об IP-адресах своих
+			  посетителей. Данная информация используется с целью выявления и
+			  решения технических проблем, для контроля корректности проводимых
+			  операций.
+			</p>
+			<p class="txt14 mbm">
+			  3.4. Любая иная персональная информация неоговоренная выше (история
+			  заказов, используемые браузеры и операционные системы и т.д.) не
+			  подлежит умышленному разглашению, за исключением случаев,
+			  предусмотренных в п.п. 5.2. и 5.3. настоящей Политики
+			  конфиденциальности.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">
+			  4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+			</p>
+			<p class="txt14">
+			  4.1. Персональные данные Пользователя Администрация сайта может
+			  использовать в целях:
+			</p>
+			<p class="txt14">
+			  4.1.1. Идентификации Пользователя, зарегистрированного на сайте, для
+			  оформления заказа и (или) заключения Договора.
+			</p>
+			<p class="txt14">
+			  4.1.2. Предоставления Пользователю доступа к персонализированным
+			  ресурсам сайта.
+			</p>
+			<p class="txt14">
+			  4.1.3. Установления с Пользователем обратной связи, включая
+			  направление уведомлений, запросов, касающихся использования сайта,
+			  оказания услуг, обработка запросов и заявок от Пользователя.
+			</p>
+			<p class="txt14">
+			  4.1.4. Определения места нахождения Пользователя для обеспечения
+			  безопасности, предотвращения мошенничества.
+			</p>
+			<p class="txt14">
+			  4.1.5. Подтверждения достоверности и полноты персональных данных,
+			  предоставленных Пользователем.
+			</p>
+			<p class="txt14">
+			  4.1.6. Создания учетной записи для совершения заказов, если
+			  Пользователь дал согласие на создание учетной записи.
+			</p>
+			<p class="txt14">
+			  4.1.7. Уведомления Пользователя сайта о состоянии Заказа.
+			</p>
+			<p class="txt14">4.1.8. Обработки и получения платежей.</p>
+			<p class="txt14">
+			  4.1.9. Предоставления Пользователю эффективной клиентской и
+			  технической поддержки при возникновении проблем, связанных с
+			  использованием сайта.
+			</p>
+			<p class="txt14">
+			  4.1.10. Предоставления Пользователю с его согласия, обновлений
+			  продукции, специальных предложений, информации о ценах, новостной
+			  рассылки и иных сведений от имени сайта или от имени партнеров
+			  сайта.
+			</p>
+			<p class="txt14">
+			  4.1.11. Осуществления рекламной деятельности с согласия
+			  Пользователя.
+			</p>
+			<p class="txt14 mbm">
+			  4.1.12. Предоставления доступа Пользователю на сторонние сайты или
+			  сервисы партнеров данного сайта с целью получения их предложений,
+			  обновлений или услуг.
+			</p>
+			<p class="txt14 mbm fw9 modal_pol-header">
+			  5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+			</p>
+			<p class="txt14">
+			  5.1. Обработка персональных данных Пользователя осуществляется без
+			  ограничения срока, любым законным способом, в том числе в
+			  информационных системах персональных данных с использованием средств
+			  автоматизации или без использования таких средств.
+			</p>
+			<p class="txt14">
+			  5.2. Пользователь соглашается с тем, что Администрация сайта вправе
+			  передавать персональные данные третьим лицам, в частности,
+			  курьерским службам, организациями почтовой связи, операторам
+			  электросвязи, исключительно в целях выполнения заявок Пользователя,
+			  оформленных на сайте, в рамках Договора публичной оферты
+			</p>
+			<p class="txt14 mbm">
+			  5.3. Персональные данные Пользователя могут быть переданы
+			  уполномоченным органам государственной власти только по основаниям и
+			  в порядке, установленным действующим законодательством.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">6. ОБЯЗАТЕЛЬСТВА СТОРОН</p>
+			<p class="txt14">6.1. Пользователь обязуется:</p>
+			<p class="txt14">
+			  6.1.1. Предоставить корректную и правдивую информацию о персональных
+			  данных, необходимую для пользования сайтом.
+			</p>
+			<p class="txt14">
+			  6.1.2. Обновить или дополнить предоставленную информацию о
+			  персональных данных в случае изменения данной информации.
+			</p>
+			<p class="txt14">
+			  6.1.3. Принимать меры для защиты доступа к своим конфиденциальным
+			  данным, хранящимся на сайте.
+			</p>
+			<p class="txt14">6.2. Администрация сайта обязуется:</p>
+			<p class="txt14">
+			  6.2.1. Использовать полученную информацию исключительно для целей,
+			  указанных в п. 4 настоящей Политики конфиденциальности.
+			</p>
+			<p class="txt14">
+			  6.2.2. Не разглашать персональных данных Пользователя, за
+			  исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+			</p>
+			<p class="txt14 mbm">
+			  6.2.3. Осуществить блокирование персональных данных, относящихся к
+			  соответствующему Пользователю, с момента обращения или запроса
+			  Пользователя или его законного представителя либо уполномоченного
+			  органа по защите прав субъектов персональных данных на период
+			  проверки, в случае выявления недостоверных персональных данных или
+			  неправомерных действий.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">
+			  7. ОТВЕТСТВЕННОСТЬ СТОРОН
+			</p>
+			<p class="txt14">
+			  7.1. Администрация сайта несёт ответственность за умышленное
+			  разглашение Персональных данных Пользователя в соответствии с
+			  действующим законодательством, за исключением случаев,
+			  предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики
+			  Конфиденциальности
+			</p>
+			<p class="txt14">
+			  7.2. В случае утраты или разглашения Персональных данных
+			  Администрация сайта не несёт ответственность, если данная
+			  конфиденциальная информация:
+			</p>
+			<p class="txt14">
+			  7.2.1. Стала публичным достоянием до её утраты или разглашения.
+			</p>
+			<p class="txt14">
+			  7.2.2. Была получена от третьей стороны до момента её получения
+			  Администрацией сайта.
+			</p>
+			<p class="txt14">
+			  7.2.3. Была получена третьими лицами путем несанкционированного
+			  доступа к файлам сайта.
+			</p>
+			<p class="txt14">7.2.4. Была разглашена с согласия Пользователя.</p>
+			<p class="txt14 mbm">
+			  7.3. Пользователь несет ответственность за правомерность,
+			  корректность и правдивость предоставленной Персональных данных в
+			  соответствии с действующим законодательством.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">8. РАЗРЕШЕНИЕ СПОРОВ</p>
+			<p class="txt14">
+			  8.1. До обращения в суд с иском по спорам, возникающим из отношений
+			  между Пользователем сайта и Администрацией сайта, обязательным
+			  является предъявление претензии (письменного предложения о
+			  добровольном урегулировании спора).
+			</p>
+			<p class="txt14">
+			  8.2. Получатель претензии в течение 30 календарных дней со дня
+			  получения претензии, письменно уведомляет заявителя претензии о
+			  результатах рассмотрения претензии.
+			</p>
+			<p class="txt14">
+			  8.3. При не достижении соглашения спор будет передан на рассмотрение
+			  в судебный орган в соответствии с действующим законодательством.
+			</p>
+			<p class="txt14 mbm">
+			  8.4. К настоящей Политике конфиденциальности и отношениям между
+			  Пользователем и Администрацией сайта применяется действующее
+			  законодательство.
+			</p>
+			<p class="txt14 modal_pol-header mbm fw9">
+			  9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ
+			</p>
+			<p class="txt14">
+			  9.1. Администрация сайта вправе вносить изменения в настоящую
+			  Политику конфиденциальности без согласия Пользователя.
+			</p>
+			<p class="txt14">
+			  9.2. Новая Политика конфиденциальности вступает в силу с момента ее
+			  размещения на Сайте, если иное не предусмотрено новой редакцией
+			  Политики конфиденциальности.
+			</p>
+		  </div>
+		</div>
+	  </div>
 	<script src="assets/js/libs/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/fancy/jquery.fancybox.min.js"></script>
     <script src="assets/js/libs/jquery.maskedinput.js"></script>

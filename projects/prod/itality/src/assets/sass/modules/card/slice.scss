@@ -1,0 +1,13 @@
+.slice {
+  &__left {
+    background: #272f42;
+  }
+  &__title {
+    @extend .color__title;
+  }
+  &__right {
+    &-item {
+      @extend .color__right-item;
+    }
+  }
+}

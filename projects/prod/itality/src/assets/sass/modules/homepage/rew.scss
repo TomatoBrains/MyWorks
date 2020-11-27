@@ -15,12 +15,11 @@
     }
     &-imgs {
       display: flex;
-      & span {
-        display: block;
-        &:nth-of-type(2) {
-          @include adap(margin-left, 10px, 10px);
-          position: relative;
-        }
+      & > span {
+        // display: block;
+        position: relative;
+        @include adap(margin-left, 10px, 10px);
+        position: relative;
       }
     }
     &-descr {

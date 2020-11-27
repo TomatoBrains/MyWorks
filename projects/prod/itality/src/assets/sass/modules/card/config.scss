@@ -1,0 +1,29 @@
+.config {
+  @include adap(margin-top, 30px, 90px);
+  position: relative;
+  &__content {
+    position: relative;
+    &-title {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-50%);
+      background: rgba($color: #222b3e, $alpha: 0.9);
+      & > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: vw(120px);
+      }
+      & a {
+        @include adap(margin-top, 15px, 60px);
+      }
+    }
+  }
+  & > img {
+    right: 0;
+    bottom: -12vw;
+    z-index: -1;
+  }
+}

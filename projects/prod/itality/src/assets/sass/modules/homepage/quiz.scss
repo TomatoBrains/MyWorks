@@ -72,6 +72,11 @@
   padding-bottom: unset;
   position: relative;
   display: inline-flex;
+  & img:first-of-type {
+    position: absolute;
+    width: vw(605px);
+    top: -12vw;
+  }
 }
 //заголовки формы
 .test-item__title {

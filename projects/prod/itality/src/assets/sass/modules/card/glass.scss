@@ -1,0 +1,15 @@
+.glass {
+  &__left {
+  }
+  &__title {
+    @extend .color__title;
+  }
+  &__descr {
+    @extend .color__descr;
+  }
+  &__right {
+    &-item {
+      @extend .color__right-item;
+    }
+  }
+}

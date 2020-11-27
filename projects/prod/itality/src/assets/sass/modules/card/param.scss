@@ -1,0 +1,55 @@
+.param {
+  background: #edf2fb;
+  margin-top: 100vh;
+  &__top {
+    display: flex;
+    height: vw(600px);
+  }
+  &__title {
+    background: #272f42;
+    position: relative;
+    & p {
+      &:first-of-type {
+        @include adap(margin-top, 30px, 193px);
+      }
+      &:nth-of-type(3) {
+        @include adap(margin-top, 10px, 35px);
+      }
+    }
+    & > img {
+      position: absolute;
+      &:nth-of-type(1) {
+        width: vw(408px);
+        top: 11.2vw;
+        right: -0.5vw;
+        z-index: 2;
+      }
+      &:nth-of-type(2) {
+        width: vw(284px);
+        top: 15.5vw;
+        right: 4.5vw;
+        z-index: 2;
+      }
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: flex-end;
+    margin-left: -2px;
+    width: 50%;
+    &--move {
+      width: vw(590px);
+      display: inline-block;
+      & img {
+        position: relative;
+        bottom: -4px;
+      }
+    }
+  }
+  &__bot {
+    text-align: right;
+    z-index: 1;
+    & img {
+    }
+  }
+}

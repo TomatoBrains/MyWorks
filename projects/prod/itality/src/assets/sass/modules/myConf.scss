@@ -92,8 +92,8 @@ details > div {
 .ico {
   border-radius: 50%;
   background-color: #fff;
-  width: 40px;
-  height: 40px;
+  width: vw(40px);
+  height: vw(40px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,4 +198,8 @@ textarea {
   &:hover {
     background: #f96f77;
   }
+}
+.dotsBack {
+  position: absolute;
+  width: vw(605px);
 }

@@ -11,6 +11,11 @@
         & img {
           width: vw(20px);
         }
+        & a {
+          &::before {
+            background: #000;
+          }
+        }
       }
     }
     &-sub {

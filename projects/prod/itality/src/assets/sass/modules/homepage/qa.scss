@@ -3,6 +3,7 @@
   @include adap(padding-top, 30px, 110px);
   @include adap(padding-right, 30px, 75px);
   @include adap(padding-bottom, 30px, 110px);
+  position: relative;
   &--flex {
     display: flex;
   }
@@ -107,5 +108,10 @@
         }
       }
     }
+  }
+  & > img {
+    bottom: -7vw;
+    right: 0;
+    z-index: -1;
   }
 }

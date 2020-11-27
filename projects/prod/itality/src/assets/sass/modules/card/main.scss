@@ -1,0 +1,62 @@
+.card {
+  &__title {
+    @include adap(padding-bottom, 30px, 290px);
+    &-title {
+      @include adap(margin-left, 30px, 60px);
+      @include adap(margin-top, 60px, 170px);
+      & h1 {
+        @include adap(margin-bottom, 10px, 20px);
+      }
+      & > p {
+        &:first-of-type {
+          @include adap(margin-bottom, 10px, 17px);
+        }
+        &:last-of-type {
+          @include adap(margin-top, 30px, 75px);
+        }
+      }
+    }
+  }
+  &__order {
+    @include adap(margin-top, 30px, 75px);
+    @include adap(margin-left, 30px, 60px);
+    & a {
+      height: vw(100px);
+      width: vw(200px);
+      &:last-of-type {
+        background: #272f42;
+        width: vw(250px);
+        @include adap(margin-left, 20px, 30px);
+        &:hover {
+          box-shadow: inset 0 4px 1px rgba(#4a4a4a, 1),
+            inset 0 0 24px rgba(#424242, 0.15);
+        }
+      }
+    }
+  }
+  &__descr {
+    display: flex;
+    @include adap(margin-top, 30px, 530px);
+    &-img {
+      @include adap(margin-right, 30px, 150px);
+    }
+    &-feature {
+      @include adap(margin-right, 30px, 205px);
+      & p {
+        @include adap(margin-bottom, 10px, 25px);
+      }
+    }
+    &-complex {
+      & p {
+        @include adap(margin-bottom, 10px, 25px);
+      }
+    }
+  }
+}
+.card {
+  & .works__tabBtns-item {
+    & a {
+      padding: vw(18px) vw(34px);
+    }
+  }
+}

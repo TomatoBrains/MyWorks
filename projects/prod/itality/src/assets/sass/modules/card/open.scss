@@ -1,0 +1,33 @@
+.open {
+  &__left {
+    background: #f9817b;
+  }
+  &__title {
+    @include adap(margin-top, 30px, 95px);
+  }
+  &__descr {
+    @include adap(margin-top, 20px, 40px);
+    & p {
+      @include adap(margin-top, 10px, 25px);
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+    & ul {
+      @include adap(margin-top, 10px, 25px);
+    }
+  }
+  &__right {
+    background: #272f42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include adap(padding-bottom, 30px, 80px);
+    &-item {
+      @include adap(margin-top, 30px, 110px);
+      & img {
+        @include adap(margin-top, 10px, 20px);
+      }
+    }
+  }
+}

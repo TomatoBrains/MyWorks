@@ -1,0 +1,28 @@
+.alt {
+  @include adap(padding-top, 30px, 100px);
+  &__content {
+    @include adap(margin-top, 15px, 30px);
+    &-wrap {
+      @include adap(margin-top, 15px, 40px);
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      position: relative;
+      width: vw(543px);
+    }
+    &-descr {
+      position: absolute;
+      bottom: vw(40px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 vw(50px);
+      & a {
+        width: vw(200px);
+        height: vw(65px);
+      }
+    }
+  }
+}

@@ -21,4 +21,12 @@
       }
     }
   }
+  .main {
+    position: relative;
+    & > img {
+      bottom: -13vw;
+      right: 0;
+      z-index: -1;
+    }
+  }
 }

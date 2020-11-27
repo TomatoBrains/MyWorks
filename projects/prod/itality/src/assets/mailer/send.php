@@ -8,6 +8,7 @@ $email = $_POST['email'];
 $name = $_POST['name'];
 $title = $_POST['title'];
 $soc = $_POST['soc'];
+$telega = $_POST['telega'];
 
 
 
