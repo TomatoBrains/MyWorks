@@ -6,6 +6,10 @@
   justify-content: flex-end;
   @include adap(padding-top, 50px, 140px);
   @include adap(padding-bottom, 50px, 140px);
+  @include md_900 {
+    display: flex;
+    flex-direction: column;
+  }
   &-wrap {
     flex-direction: column;
     @include adap(margin-right, 30px, 150px);
@@ -36,15 +40,32 @@
     left: -7vw;
     top: -1vw;
     width: vw(1100px);
+    @include md_900 {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 2rem;
+    }
+    @include sm_700 {
+      width: 45rem;
+    }
     &-icon {
       position: absolute;
       bottom: 8vw;
       left: 43vw;
+      @include sm_700 {
+        left: 31rem;
+      }
       & > div {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        & img {
+          @include sm_700 {
+            width: 5rem;
+          }
+        }
       }
       & p {
         margin-top: 15px;

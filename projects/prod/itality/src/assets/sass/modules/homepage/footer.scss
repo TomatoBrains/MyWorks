@@ -5,25 +5,42 @@
   @include adap(padding-right, 30px, 120px);
   &-wrap {
     justify-content: space-between;
+    @include md_900 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__logo {
     @include adap(margin-right, 20px, 40px);
     &-wrap {
       display: flex;
+      @include md_900 {
+        align-items: center;
+      }
     }
   }
   &__left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include md_900 {
+      width: 100%;
+    }
   }
   &__descr {
     width: vw(240px);
+    @include md_900 {
+      width: 25rem;
+    }
   }
   &__right {
     display: flex;
     width: 50%;
     justify-content: space-between;
+    @include md_900 {
+      width: 100%;
+      margin-top: 3rem;
+    }
     & > div > p {
       @include adap(margin-bottom, 10px, 20px);
     }
@@ -57,10 +74,23 @@
     justify-content: space-between;
     @include adap(margin-top, 30px, 70px);
     align-items: center;
+    @include md_900 {
+      flex-wrap: wrap;
+      & > p {
+        width: 50%;
+        margin-bottom: 1rem;
+        &:last-of-type {
+          text-align: end;
+        }
+      }
+    }
   }
   &__soc {
     display: flex;
     align-items: center;
+    @include md_900 {
+      margin-top: 3rem;
+    }
     & p {
       margin-right: 20px;
     }

@@ -9,6 +9,12 @@
     margin-right: vw(30px);
     &-wrap {
       justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__descr {
+    @include md_900 {
+      display: none;
     }
   }
   &__menu {
@@ -18,6 +24,9 @@
       &::before {
         background-color: #272f42;
       }
+    }
+    @include md_900 {
+      display: none;
     }
   }
   &__work {
@@ -40,8 +49,10 @@
   }
 }
 .aside {
-  width: vw(120px);
+  @include adap(width, 60px, 120px);
   position: relative;
+  @include md_900 {
+  }
   &__soc {
     display: flex;
     flex-direction: column;
@@ -50,6 +61,10 @@
     right: 1.56vw;
     top: 45%;
     transition: transform 0.3s ease;
+    @include md_900 {
+      right: 0.5rem;
+      top: 35%;
+    }
     &-item {
       background: #e8e9eb;
       border-radius: 50%;
@@ -62,13 +77,20 @@
       margin-bottom: 10px;
       transition: box-shadow 0.3s ease;
       cursor: pointer;
+      @include md_900 {
+        width: 40px;
+        height: 40px;
+      }
       &:hover {
         box-shadow: inset 0 0 0 3px #272f42, 0 0 0 4px #e8e9eb;
       }
       & img {
-        width: 20px;
+        width: vw(20px);
         max-width: unset;
         max-height: unset;
+        @include md_900 {
+          width: 2rem;
+        }
       }
     }
   }
@@ -80,5 +102,15 @@
     & > div {
       position: static;
     }
+  }
+  @include md_900 {
+    background: red;
+  }
+  @include sm_700 {
+    background: green;
+    display: none;
+  }
+  @include xs_500 {
+    background: blue;
   }
 }

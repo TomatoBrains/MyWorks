@@ -205,3 +205,20 @@
     height: vw(15px);
   }
 }
+@mixin md_900 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin sm_700 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin xs_500 {
+  @media (max-width: 576px) {
+    @content;
+  }
+}

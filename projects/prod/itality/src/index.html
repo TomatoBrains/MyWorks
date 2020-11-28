@@ -794,11 +794,7 @@
                           >
                             <span class="btn-blick"></span>
                             <span class="text txt18 fw5">Далее</span>
-                            <img
-                              src="assets/img/test/rrr.png"
-                              alt=""
-                              class="qn-img"
-                            />
+                            
                           </button>
                         </div>
                       </div>
@@ -952,11 +948,7 @@
                           >
                             <span class="btn-blick"></span>
                             <span class="text txt18 fw5">Далее</span>
-                            <img
-                              src="assets/img/test/rrr.png"
-                              alt=""
-                              class="qn-img"
-                            />
+                           
                           </button>
                         </div>
                       </div>
@@ -1078,11 +1070,7 @@
 							>
 							  <span class="btn-blick"></span>
 							  <span class="text txt18 fw5">Далее</span>
-							  <img
-								src="assets/img/test/rrr.png"
-								alt=""
-								class="qn-img"
-							  />
+							  
 							</button>
 						  </div>
 						</div>
@@ -1349,11 +1337,7 @@
 							>
 							  <span class="btn-blick"></span>
 							  <span class="text txt18 fw5">Далее</span>
-							  <img
-								src="assets/img/test/rrr.png"
-								alt=""
-								class="qn-img"
-							  />
+							  
 							</button>
 						  </div>
 						</div>
@@ -1646,6 +1630,7 @@
                 </div>
               </div>
               <div class="complex__dots">
+				  <img src="assets/img/homepage/complex/mobImg.jpg" alt="">
                 <div class="complex__dots-item">
                   <span class="txt18 fwb cw">+</span>
                   <span class="txt18 btnGrad"><p>Петля</p></span>
@@ -2021,7 +2006,7 @@
 	                  ><img src="assets/img/svg/done.svg" alt=""
 	                /></span>
 	              </span>
-	              <span class="txt12">
+	              <span class="txt12 cw">
 	                Заполняя форму, Вы соглашаетесь с
 	                <span class="tdu co">политикой конфиденциальности</span>
 	              </span>
@@ -2569,7 +2554,7 @@
 					</div>
 					<div class="schema__form-form">
 						<form action="" name="formname">
-							<input class="input-w" type="tel" name="phone" placeholder="+7 ( _ _ _ )   _ _ _   _ _   _ _" />
+							<input class="input-w txt14 fw3" type="tel" name="phone" placeholder="+7 ( _ _ _ )   _ _ _   _ _   _ _" />
 							<button class="btnGrad btn txt14 fw5">Перезвоните мне</button>
 							<span class="check-line">
 							  <span class="check-label">
@@ -3412,7 +3397,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 		  </div>
 		</div>
 	  </div>
-	  <div class="overlay" id="productItem" style="display:block">
+	  <div class="overlay" id="productItem">
 		<div
 		  class="productItem modal-wrap"
 		>
@@ -3467,12 +3452,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </svg>
 						</div>
 						<div class="productItem__slider">
-							<img src="assets/img/popups/productImg.jpg" alt="">
-							<img src="assets/img/popups/productImg.jpg" alt="">
-							<img src="assets/img/popups/productImg.jpg" alt="">
-							<img src="assets/img/popups/productImg.jpg" alt="">
-							<img src="assets/img/popups/productImg.jpg" alt="">
+							<img data-fancybox="prodItem" href='assets/img/popups/productImg.jpg' src="assets/img/popups/productImg.jpg" alt="">
+							<img data-fancybox="prodItem" href='assets/img/popups/productImg.jpg' src="assets/img/popups/productImg.jpg" alt="">
+							<img data-fancybox="prodItem" href='assets/img/popups/productImg.jpg' src="assets/img/popups/productImg.jpg" alt="">
+							<img data-fancybox="prodItem" href='assets/img/popups/productImg.jpg' src="assets/img/popups/productImg.jpg" alt="">
+							<img data-fancybox="prodItem" href='assets/img/popups/productImg.jpg' src="assets/img/popups/productImg.jpg" alt="">
 						</div>
+						<div class="productItem__dots"></div>
 						<div class="productItem-arrow productItem-arrowR">
 							<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -3543,8 +3529,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						</a>
 				</div>
 		  </div>
-		  
 		</div>
+	  </div>
 	  </div>
 	<script src="assets/js/libs/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/libs/jquery.maskedinput.js"></script>
@@ -3596,9 +3582,9 @@ $slickElement.on("init reInit afterChange", function (
         nextArrow: $(".productItem-arrowR"),
   		prevArrow: $(".productItem-arrowL"),
 		autoplay: true,
-		dots:true,
+		dots: true,
+		dotsClass: 'productItem__dots',
         autoplaySpeed: 3000,
-        dots: false,
         responsive: [
           {
             breakpoint: 901,
@@ -3610,6 +3596,15 @@ $slickElement.on("init reInit afterChange", function (
         ],
         // fade: true
 	  });
+	  const mediaQuery = window.matchMedia('(max-width: 992px)')
+if (mediaQuery.matches) {
+  $('.complex-back').css({'background':'linear-gradient(to bottom, #677284, #434e62)'})
+}
+$('.tiem-img').each(function(){
+	if (mediaQuery.matches) {
+  $(this).css({'background-position':'top'});
+}
+})
 	</script>
   </body>
 </html>

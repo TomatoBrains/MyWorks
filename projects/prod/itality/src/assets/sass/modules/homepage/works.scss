@@ -9,10 +9,20 @@
     @include adap(margin-top, 15px, 38px);
     display: flex;
     justify-content: space-between;
+    @include md_900 {
+      flex-wrap: wrap;
+    }
     &-item {
       @include adap(margin-right, 10px, 20px);
+      @include md_900 {
+        width: 20%;
+        margin-bottom: 1.5rem;
+      }
       &:last-of-type {
         margin-right: 0;
+        @include md_900 {
+          margin: 0 auto;
+        }
       }
       & a {
         padding: vw(18px) vw(35.5px);
@@ -22,6 +32,15 @@
         transition: all 0.3s ease;
         border-radius: 3px;
         display: inline-block;
+        @include md_900 {
+          width: 100%;
+          height: 6rem;
+          text-align: center;
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         &:hover {
           color: #fff;
           background: linear-gradient(to right, #f96f77, #fcaf87);
@@ -37,18 +56,29 @@
       justify-content: flex-end;
       @include adap(margin-right, -10px, -22px);
       @include adap(margin-bottom, 10px, 22px);
+      @include md_900 {
+        margin-right: 0;
+      }
       &:first-of-type {
         margin-bottom: 0;
         & > div:first-of-type {
           width: 50%;
           height: auto;
           margin-bottom: -23.7%;
+          & > div:nth-of-type(2) {
+            @include md_900 {
+              height: 100%;
+            }
+          }
         }
         & > div:nth-of-type(5) {
           width: 25%;
           display: block;
           padding-right: vw(22px);
           height: vw(400px);
+          @include md_900 {
+            padding-right: 1rem;
+          }
         }
       }
       &:nth-of-type(even) {
@@ -58,7 +88,6 @@
         width: 25%;
         display: block;
         padding-right: vw(22px);
-        height: vw(400px);
         will-change: transform;
         cursor: pointer;
         position: relative;
@@ -74,6 +103,11 @@
             padding: 0;
             opacity: 0;
             transition: all 0.5s cubic-bezier(0, 1, 0.35, 1);
+            @include md_900 {
+              width: 13rem;
+              height: 5rem;
+              text-align: center;
+            }
           }
         }
         & > div:last-of-type {
@@ -101,23 +135,6 @@
           }
         }
       }
-      /* & img:first-of-type {
-        width: 50%;
-        height: auto;
-        margin-bottom: -23.7%;
-      }
-      &:nth-of-type(even) {
-        & img:first-of-type {
-          width: 25%;
-          margin-bottom: 0;
-        }
-      }
-      &:nth-of-type(odd) {
-        flex-direction: row-reverse;
-      }
-      &:nth-of-type(4n + 1) {
-        flex-direction: row;
-	  } */
       & > div:nth-of-type(-n + 4) {
         width: 25%;
         display: block;
@@ -129,6 +146,11 @@
         width: 50%;
         height: auto;
         margin-bottom: -23.7%;
+        & > div:nth-of-type(2) {
+          @include md_900 {
+            height: 100%;
+          }
+        }
       }
     }
     /* &-big {
@@ -163,6 +185,11 @@
     & a {
       max-width: vw(255px);
       width: 100%;
+      @include md_900 {
+        width: 18rem;
+        max-width: unset;
+        height: 7rem;
+      }
     }
   }
 }

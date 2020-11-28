@@ -39,6 +39,16 @@
       justify-content: center;
       align-items: center;
       @include adap(margin-right, 5px, 15px);
+      @include md_900 {
+        width: 2.5rem;
+        height: 2.5rem;
+        align-items: flex-end;
+      }
+      @include sm_700 {
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+      }
     }
   }
 }
@@ -54,12 +64,19 @@
   @include adap(padding-bottom, 30px, 40px);
   @include adap(padding-left, 30px, 100px);
   height: 36.5vw;
+  @include md_900 {
+    height: auto;
+    width: 100%;
+    @include adap(padding-right, 30px, 100px);
+  }
 }
 .test__blocks {
   height: 90%;
 }
 .test-item {
   height: 100%;
+  @include sm_700 {
+  }
 }
 // для правой части
 .test-form-right {
@@ -77,6 +94,9 @@
     width: vw(605px);
     top: -12vw;
   }
+  @include md_900 {
+    display: none;
+  }
 }
 //заголовки формы
 .test-item__title {
@@ -93,23 +113,48 @@
 // стили для вопросов с изображениями
 .test-item-imgs {
   padding: 0 6vw;
+  @include md_900 {
+    padding: 0;
+  }
   & .checkbox-psevdo {
     width: vw(33px);
     height: vw(33px);
     background-color: #d2d2d2;
     border-color: #e8e9eb;
+    @include md_900 {
+      width: auto;
+      height: auto;
+    }
   }
   & .checkbox-block {
     position: relative;
     top: 6px;
+    @include md_900 {
+      top: 0;
+      padding: 0;
+    }
+    @include sm_700 {
+      text-align: center;
+    }
   }
   & .tiem {
     margin: 0;
     margin-bottom: 0;
     margin-right: 3%;
+    @include md_900 {
+      width: 32%;
+      margin-bottom: 2rem;
+    }
+    @include sm_700 {
+      width: 33%;
+    }
     &-img {
       height: 10vw;
       width: 10vw;
+      @include md_900 {
+        width: auto;
+        height: 15rem;
+      }
     }
     & .checkbox-inp:checked + span {
       border: solid 1px #fa817c;
@@ -135,6 +180,9 @@
     &-img {
       height: 8vw;
       padding: 0;
+      @include md_900 {
+        height: auto;
+      }
     }
     & .checkbox-inp:checked + span {
       border: unset;
@@ -155,15 +203,28 @@
   & .tiem-img {
     height: 10vw;
     width: 10vw;
+    @include md_900 {
+      height: 15rem;
+      width: auto;
+    }
   }
   & .tiem {
     margin-right: 3%;
+    @include md_900 {
+      margin-bottom: 2rem;
+    }
     &:last-of-type {
       margin-right: 0;
+      @include md_900 {
+        margin-right: 3%;
+      }
     }
   }
   & .checkbox-block {
     top: 6px;
+    @include md_900 {
+      top: 0;
+    }
   }
 }
 // ждля 4го вопроса
@@ -171,16 +232,32 @@
   & .tiem {
     width: 18%;
     margin-bottom: 1vw;
+    @include md_900 {
+      width: 25%;
+      margin-bottom: 1.5rem;
+    }
+    @include sm_700 {
+      width: 30%;
+    }
   }
   & .tiem-img {
     height: vw(140px);
     width: vw(140px);
+    @include md_900 {
+      width: auto;
+      height: 15rem;
+    }
   }
 }
 // для 7го
 .test-item-7 {
   flex-direction: column;
   align-items: center;
+  & label {
+    @include sm_700 {
+      height: 7rem;
+    }
+  }
 }
 // для предпоследней формы с инпутами теелфона
 .end {
@@ -202,22 +279,40 @@
     margin-right: vw(10px);
     display: flex;
     align-items: center;
+    @include md_900 {
+      padding: 10px;
+    }
     &:first-of-type {
       width: vw(166px);
+      @include md_900 {
+        width: 49%;
+      }
     }
     &:nth-of-type(2) {
       width: vw(110px);
+      @include md_900 {
+        width: 49%;
+      }
     }
     &:nth-of-type(3) {
       width: vw(150px);
+      @include md_900 {
+        width: 49%;
+      }
     }
     &:nth-of-type(4) {
       width: vw(127px);
+      @include md_900 {
+        width: 49%;
+      }
     }
     & > span {
       &:last-of-type {
         margin-left: vw(10px);
         color: #747474;
+        @include md_900 {
+          margin-left: 1rem;
+        }
       }
     }
     &:nth-of-type(2n) {
@@ -241,6 +336,9 @@
 // размер обёртки в предпоследней для инпутов и кнопкки
 .test-item-form {
   width: vw(288px);
+  @include sm_700 {
+    width: 60%;
+  }
 }
 // стили для последнего экнрана
 
@@ -280,7 +378,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include md_900 {
+    width: 10rem;
+    height: 10rem;
+  }
   & img {
     width: vw(33px);
+    @include md_900 {
+      width: 3rem;
+    }
+  }
+}
+.quiz-inp {
+  @include md_900 {
+    height: 6rem;
+  }
+  @include sm_700 {
+    height: 10rem;
+  }
+}
+.checkbox-block {
+  @include md_900 {
+    text-align: left;
+    padding: 1rem 1rem 1rem 0;
+  }
+  @include sm_700 {
+  }
+}
+.quiz__next-wrap,
+.quiz__prev {
+  @include md_900 {
+    width: 15rem;
+    height: 5rem;
+  }
+}
+.hand {
+  @include md_900 {
+    width: 30rem;
+    right: 0;
+  }
+  @include sm_700 {
+    width: 22rem;
+  }
+}
+.test-item.end {
+  @include sm_700 {
+    padding-left: 0;
   }
 }

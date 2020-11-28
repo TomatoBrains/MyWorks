@@ -1,5 +1,12 @@
 .complex {
   position: relative;
+  @include md_900 {
+  }
+  &-back {
+    @include md_900 {
+      background: linear-gradient(to bottom, #677284, #434e62);
+    }
+  }
   &__title {
     @include adap(margin-bottom, 30px, 75px);
   }
@@ -11,24 +18,57 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    @include md_900 {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__left {
+    @include md_900 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      //   background: #677284;
+    }
   }
   &__right {
     @include adap(margin-right, 30px, 90px);
+    @include md_900 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0;
+      justify-content: space-between;
+      //   background: #434e62;
+      margin-top: 2rem;
+    }
   }
   &-item {
     display: flex;
     align-items: center;
     @include adap(margin-bottom, 20px, 70px);
+    @include md_900 {
+      width: 48%;
+    }
+    @include sm_700 {
+      width: 100%;
+    }
     & img {
       @include adap(margin-right, 10px, 30px);
     }
     &-descr {
       position: relative;
       max-width: vw(330px);
+      @include md_900 {
+        width: auto;
+        max-width: unset;
+      }
       & span {
         position: absolute;
         top: -1.5vw;
         color: rgba(255, 255, 255, 0.04);
+        @include md_900 {
+          top: -1rem;
+        }
       }
       & p:first-of-type {
         @include adap(margin-bottom, 10px, 20px);
@@ -36,6 +76,21 @@
     }
   }
   &__dots {
+    @include md_900 {
+      position: relative;
+      margin-left: -3rem;
+    }
+    @include sm_700 {
+      margin-left: -2rem;
+      margin-right: -2rem;
+    }
+    & > img {
+      display: none;
+      @include md_900 {
+        display: block;
+        width: 100%;
+      }
+    }
     &-item {
       position: absolute;
       cursor: pointer;
@@ -67,6 +122,13 @@
           display: flex;
           align-items: center;
           transition: all 0.3s ease;
+          @include md_900 {
+            width: 3rem;
+            height: 3rem;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+          }
           &:before {
             background-color: rgba(#fa817c, 0.3);
             transition: all 0.3s ease;
@@ -76,8 +138,6 @@
             background-color: rgba(#fa817c, 0.1);
             transition: all 0.3s ease;
             animation: pulseicon 3s infinite linear;
-          }
-          &:hover {
           }
         }
         &:nth-of-type(2) {
@@ -93,6 +153,13 @@
           align-items: center;
           justify-content: center;
           color: #fff;
+          @include md_900 {
+            width: 15rem;
+            height: 5rem;
+            top: -1rem;
+            left: -1rem;
+            right: unset;
+          }
           & p {
             margin-left: 20px;
             margin-top: 2px;
@@ -102,34 +169,76 @@
       &:nth-of-type(1) {
         top: -3%;
         right: 49%;
+        @include md_900 {
+          top: 7%;
+          right: 40%;
+        }
       }
       &:nth-of-type(2) {
         top: 10%;
         left: 38%;
+        @include md_900 {
+          top: 19%;
+          left: 30%;
+        }
       }
       &:nth-of-type(3) {
         top: 30%;
         left: 35%;
+        @include md_900 {
+          top: 38%;
+          left: 17%;
+        }
       }
       &:nth-of-type(4) {
         top: 30%;
         right: 39%;
+        @include md_900 {
+          top: 38%;
+          right: 13%;
+        }
+        @include sm_700 {
+          & > span:nth-of-type(2) {
+            left: unset;
+            right: -1rem;
+            & p {
+              margin-right: 2rem;
+              margin-left: 0;
+            }
+          }
+        }
       }
       &:nth-of-type(5) {
         top: 55%;
         right: 46%;
+        @include md_900 {
+          top: 58%;
+          right: 36%;
+        }
       }
       &:nth-of-type(6) {
         top: 56%;
         left: 31%;
+        @include md_900 {
+          top: 58%;
+          left: 10%;
+        }
       }
       &:nth-of-type(7) {
         bottom: 14%;
         left: 38%;
+        @include md_900 {
+          bottom: 21%;
+          left: 29%;
+        }
       }
       &:nth-of-type(8) {
         bottom: 0%;
         left: 47%;
+        @include md_900 {
+          bottom: 9%;
+          left: 53%;
+        }
       }
     }
   }

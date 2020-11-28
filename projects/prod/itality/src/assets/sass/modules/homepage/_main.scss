@@ -5,6 +5,12 @@
     &--flex {
       @include adap(padding-top, 100px, 250px);
       justify-content: space-between;
+      @include md_900 {
+        flex-direction: column;
+      }
+    }
+    @include md_900 {
+      margin-left: 0;
     }
   }
   &__title {
@@ -13,9 +19,11 @@
   &__descr {
     display: flex;
     @include adap(margin-top, 30px, 170px);
+
     &-item {
       display: flex;
       align-items: center;
+
       & p {
         @include adap(margin-right, 5px, 15px);
         &:nth-of-type(2) {
@@ -35,6 +43,11 @@
     & a {
       text-transform: uppercase;
       padding: vw(40px) vw(70px);
+      @include md_900 {
+        width: 31rem;
+        height: 7rem;
+        padding: 2rem;
+      }
     }
   }
   &__pluses {
@@ -49,6 +62,16 @@
           @include adap(margin-right, 10px, 30px);
         }
       }
+      @include md_900 {
+        width: 50%;
+      }
+    }
+    @include md_900 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 0;
+      margin-top: 3rem;
     }
   }
 }

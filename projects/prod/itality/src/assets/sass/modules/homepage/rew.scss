@@ -20,6 +20,21 @@
         position: relative;
         @include adap(margin-left, 10px, 10px);
         position: relative;
+        @include md_900 {
+          width: 100%;
+          & img {
+            width: 100%;
+          }
+        }
+      }
+      & > a {
+        @include md_900 {
+          width: 40%;
+          display: flex;
+          & img {
+            width: 100%;
+          }
+        }
       }
     }
     &-descr {
@@ -46,12 +61,21 @@
       }
       &-content {
         width: 4vw;
+        @include md_900 {
+          width: auto;
+        }
       }
     }
     &-btn {
       & a {
         background-color: #444c5d;
         padding: vw(28px) vw(65px);
+        @include md_900 {
+          padding: 1rem;
+          width: 22rem;
+          height: 5rem;
+          margin-right: 2rem;
+        }
         &:hover {
           box-shadow: 0 0 0 2px #444c5d inset, 0 0 0 4px white inset;
         }

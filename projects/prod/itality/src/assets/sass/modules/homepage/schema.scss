@@ -7,6 +7,9 @@
   }
   &__content {
     @include adap(margin-top, 30px, 40px);
+    @include md_900 {
+      flex-direction: column;
+    }
   }
   &__stages {
     display: flex;
@@ -18,19 +21,37 @@
     @include adap(margin-right, 30px, 65px);
     position: relative;
     justify-content: space-between;
+    @include md_900 {
+      width: 100%;
+      padding: 2rem;
+      align-items: baseline;
+      margin-bottom: 3rem;
+    }
     & > span {
       position: absolute;
       &:nth-of-type(1) {
         left: 12vw;
         top: 6vw;
+        @include md_900 {
+          left: 20%;
+          top: 40%;
+        }
       }
       &:nth-of-type(2) {
         left: 26vw;
         top: 6vw;
+        @include md_900 {
+          left: 46%;
+          top: 40%;
+        }
       }
       &:nth-of-type(3) {
         left: 40vw;
         top: 6vw;
+        @include md_900 {
+          left: 73%;
+          top: 40%;
+        }
       }
     }
     &-item {
@@ -40,6 +61,9 @@
       align-items: center;
       text-align: center;
       @include adap(margin-right, 30px, 125px);
+      @include md_900 {
+        flex: 1 0 0%;
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -54,10 +78,17 @@
       & img {
         @include adap(margin-bottom, 15px, 25px);
         max-width: vw(85px);
+        @include md_900 {
+          width: 6rem;
+          max-width: unset;
+        }
       }
     }
   }
   &__form {
+    @include md_900 {
+      padding: 0 3rem;
+    }
     &-title {
       text-align: center;
       & p {
@@ -78,11 +109,15 @@
       }
     }
     &-content {
-      @include adap(margin-top, 15px, 25px);
+      @include adap(margin-top, 20px, 25px);
     }
     &-descr {
       max-width: vw(250px);
       @include adap(margin-right, 20px, 45px);
+      @include md_900 {
+        width: auto;
+        max-width: unset;
+      }
       &-item {
         display: flex;
         align-items: center;
@@ -98,19 +133,33 @@
       }
     }
     &-form {
+      @include md_900 {
+        width: 50%;
+      }
       & form {
         display: flex;
         flex-direction: column;
         max-width: vw(250px);
+        @include md_900 {
+          max-width: unset;
+        }
       }
       & input {
         @include adap(margin-bottom, 10px, 10px);
         background-color: #f5f7f6;
         height: 50px;
+        @include md_900 {
+          max-height: unset;
+          height: 5rem;
+        }
       }
       & button {
         max-height: vw(60px);
         margin-bottom: 10px;
+        @include md_900 {
+          max-height: unset;
+          height: 5rem;
+        }
       }
     }
   }

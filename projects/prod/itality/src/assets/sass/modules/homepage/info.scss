@@ -6,6 +6,11 @@
     flex-wrap: wrap;
     @include adap(margin-top, 30px, 60px);
     @include adap(margin-right, -30px, -45px);
+    @include md_900 {
+      margin-right: 0;
+      justify-content: center;
+    }
+
     &-item {
       @include adap(margin-right, 10px, 15px);
       display: inline-flex;
@@ -13,6 +18,15 @@
       width: 32%;
       position: relative;
       @include adap(margin-bottom, 10px, 15px);
+      @include md_900 {
+        width: 48%;
+        margin-bottom: 1rem;
+      }
+      &:nth-of-type(2n) {
+        @include md_900 {
+          margin-right: 0;
+        }
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -35,6 +49,11 @@
     & a {
       padding: vw(23px) vw(50px);
       margin-left: 6vw;
+      @include md_900 {
+        padding: 1rem;
+        width: 20rem;
+        height: 6rem;
+      }
     }
   }
 }
