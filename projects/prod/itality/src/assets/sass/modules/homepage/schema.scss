@@ -27,6 +27,10 @@
       align-items: baseline;
       margin-bottom: 3rem;
     }
+    @include xs_500 {
+      flex-wrap: wrap;
+      margin-right: 0;
+    }
     & > span {
       position: absolute;
       &:nth-of-type(1) {
@@ -36,6 +40,10 @@
           left: 20%;
           top: 40%;
         }
+        @include xs_500 {
+          left: 43%;
+          top: 23%;
+        }
       }
       &:nth-of-type(2) {
         left: 26vw;
@@ -44,6 +52,10 @@
           left: 46%;
           top: 40%;
         }
+        @include xs_500 {
+          left: 43%;
+          top: 66%;
+        }
       }
       &:nth-of-type(3) {
         left: 40vw;
@@ -51,6 +63,9 @@
         @include md_900 {
           left: 73%;
           top: 40%;
+        }
+        @include xs_500 {
+          display: none;
         }
       }
     }
@@ -63,6 +78,14 @@
       @include adap(margin-right, 30px, 125px);
       @include md_900 {
         flex: 1 0 0%;
+      }
+      @include xs_500 {
+        width: 50%;
+        margin-right: 0;
+        flex: none;
+        &:nth-of-type(-1n + 2) {
+          margin-bottom: 2rem;
+        }
       }
       &:last-of-type {
         margin-right: 0;
@@ -89,6 +112,9 @@
     @include md_900 {
       padding: 0 3rem;
     }
+    @include xs_500 {
+      padding: 0 1.5rem;
+    }
     &-title {
       text-align: center;
       & p {
@@ -110,6 +136,9 @@
     }
     &-content {
       @include adap(margin-top, 20px, 25px);
+      @include xs_500 {
+        flex-direction: column;
+      }
     }
     &-descr {
       max-width: vw(250px);
@@ -117,6 +146,10 @@
       @include md_900 {
         width: auto;
         max-width: unset;
+      }
+      @include xs_500 {
+        margin-right: 0;
+        margin-bottom: 2rem;
       }
       &-item {
         display: flex;
@@ -135,6 +168,10 @@
     &-form {
       @include md_900 {
         width: 50%;
+      }
+      @include xs_500 {
+        width: 29rem;
+        margin: 2rem auto 0 auto;
       }
       & form {
         display: flex;

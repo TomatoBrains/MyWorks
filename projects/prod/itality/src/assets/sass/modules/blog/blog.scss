@@ -2,11 +2,23 @@
   &__title {
     height: vw(375px);
     @include adap(padding-left, 20px, 80px);
+    @include md_900 {
+      height: auto;
+    }
     & .bread {
       margin-left: 0;
     }
     &-title {
-      @include adap(margin-top, 30px, 110px);
+      @include adap(margin-top, 15px, 110px);
+    }
+  }
+  & .works__tabBtns {
+    justify-content: end;
+    @include xs_500 {
+      justify-content: space-between;
+      &-item {
+        margin-right: 0;
+      }
     }
   }
 }

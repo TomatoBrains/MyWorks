@@ -69,6 +69,9 @@
     width: 100%;
     @include adap(padding-right, 30px, 100px);
   }
+  @include xs_500 {
+    padding: 30px 15px;
+  }
 }
 .test__blocks {
   height: 90%;
@@ -148,12 +151,18 @@
     @include sm_700 {
       width: 33%;
     }
+    @include xs_500 {
+      width: 47%;
+    }
     &-img {
       height: 10vw;
       width: 10vw;
       @include md_900 {
         width: auto;
         height: 15rem;
+      }
+      @include xs_500 {
+        height: 12rem;
       }
     }
     & .checkbox-inp:checked + span {
@@ -238,6 +247,9 @@
     }
     @include sm_700 {
       width: 30%;
+    }
+    @include xs_500 {
+      width: 47%;
     }
   }
   & .tiem-img {
@@ -339,6 +351,9 @@
   @include sm_700 {
     width: 60%;
   }
+  @include xs_500 {
+    margin-right: 0;
+  }
 }
 // стили для последнего экнрана
 
@@ -396,6 +411,9 @@
   @include sm_700 {
     height: 10rem;
   }
+  @include xs_500 {
+    height: 8rem;
+  }
 }
 .checkbox-block {
   @include md_900 {
@@ -411,6 +429,9 @@
     width: 15rem;
     height: 5rem;
   }
+  @include xs_500 {
+    width: 10rem;
+  }
 }
 .hand {
   @include md_900 {
@@ -419,6 +440,9 @@
   }
   @include sm_700 {
     width: 22rem;
+  }
+  @include xs_500 {
+    width: 30rem;
   }
 }
 .test-item.end {

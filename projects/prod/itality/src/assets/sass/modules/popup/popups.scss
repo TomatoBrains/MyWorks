@@ -6,11 +6,29 @@
       & input {
         @include adap(margin-bottom, 10px, 18px);
         height: vw(80px);
+        @include md_900 {
+          height: 5rem;
+        }
       }
       & button {
         @include adap(margin-bottom, 10px, 18px);
         height: vw(80px);
+        @include md_900 {
+          height: 5rem;
+        }
       }
+    }
+  }
+  &-wrap {
+    @include md_900 {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      overflow: scroll;
+    }
+  }
+  &--wrap {
+    @include md_900 {
+      overflow: scroll;
     }
   }
 }
@@ -21,12 +39,29 @@
 }
 .callModal {
   padding: vw(55px) vw(62px);
+  @include md_900 {
+    padding: 2rem;
+    width: 30rem;
+  }
   & p {
     @include adap(margin-bottom, 10px, 18px);
+    @include md_900 {
+      & br {
+        display: none;
+      }
+    }
   }
 }
 .tyModal {
   padding: vw(47px) vw(66px) vw(62px) vw(66px);
+  @include md_900 {
+    padding: 2rem;
+  }
+  @include sm_700 {
+    width: 85vw;
+    height: 85vh;
+    overflow: scroll;
+  }
   & .modal__content {
     & > p {
       @include adap(margin-bottom, 10px, 30px);
@@ -54,8 +89,15 @@
     &-soc {
       display: flex;
       justify-content: center;
+      @include sm_700 {
+        flex-direction: column;
+      }
       & > span {
         margin-right: 10px;
+        @include sm_700 {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
         &:last-of-type {
           margin-right: 0;
         }
@@ -75,6 +117,13 @@
           height: vw(110px);
           @include adap(padding-right, 5px, 18px);
           @include adap(margin-bottom, 5px, 18px);
+          @include md_900 {
+            width: 50%;
+            height: auto;
+            & img {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -82,6 +131,10 @@
 }
 .orderModal {
   padding: vw(55px) vw(62px);
+  @include md_900 {
+    padding: 2rem;
+    width: 30rem;
+  }
   & p {
     @include adap(margin-bottom, 10px, 18px);
   }
@@ -89,6 +142,10 @@
 .downloadModal {
   padding-left: vw(50px);
   padding-right: vw(50px);
+  @include md_900 {
+    padding: 2rem;
+    width: 30rem;
+  }
   & img {
     @include adap(margin-bottom, 20px, 40px);
   }
@@ -99,6 +156,10 @@
 .rewModal {
   padding-left: vw(50px);
   padding-right: vw(50px);
+  @include md_900 {
+    padding: 2rem;
+    width: 30rem;
+  }
   & img {
     @include adap(margin-bottom, 20px, 40px);
   }
@@ -111,8 +172,15 @@
   display: flex;
   text-align: left;
   position: relative;
+  @include md_900 {
+    padding: 2rem;
+    width: 30rem;
+  }
   & .modal--wrap {
     width: vw(417px);
+    @include md_900 {
+      width: 100%;
+    }
   }
   & .modal__content {
     & p {
@@ -135,6 +203,9 @@
       display: flex;
       justify-content: space-between;
       @include adap(margin-bottom, 10px, 16px);
+      @include md_900 {
+        flex-direction: column;
+      }
       & label {
         display: flex;
         align-items: center;
@@ -144,6 +215,12 @@
         height: vw(50px);
         width: 32%;
         padding: 0 vw(10px);
+        @include md_900 {
+          width: 100%;
+          padding: 0 1rem;
+          margin-bottom: 1rem;
+          height: 4rem;
+        }
         & > span:first-of-type {
           margin-right: vw(10px);
         }
@@ -208,6 +285,9 @@
   &__img {
     position: absolute;
     right: -2vw;
+    @include md_900 {
+      display: none;
+    }
   }
   & .manager-icon {
     right: 4vw;
@@ -281,18 +361,34 @@
   & .modal--wrap {
     width: vw(1300px);
     background: #fff;
+    @include md_900 {
+      width: 90vw;
+      height: 80vh;
+    }
   }
   & .modal__content {
     display: flex;
     padding: vw(50px) 0 vw(50px) vw(50px);
     border-radius: 4.5px;
+    @include md_900 {
+      padding: 3rem 1rem 1rem 1rem;
+      flex-direction: column;
+      height: 100%;
+    }
   }
   &__right {
     @include adap(margin-left, 30px, 65px);
     @include adap(margin-top, 30px, 60px);
     display: flex;
+    @include xs_500 {
+      margin-left: 0;
+      position: relative;
+    }
     &--wrap {
       @include adap(margin-right, 30px, 65px);
+      @include xs_500 {
+        margin-right: 0;
+      }
     }
     & > a {
       height: 109%;
@@ -303,6 +399,16 @@
       text-align: center;
       width: vw(100px);
       transition: all 0.3s ease;
+      @include md_900 {
+        width: 9rem;
+        height: auto;
+      }
+      @include xs_500 {
+        position: absolute;
+        right: 0;
+        height: 12rem;
+        width: 8rem;
+      }
       &:hover {
         background: #dcdcdc;
       }
@@ -312,6 +418,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include xs_500 {
+      flex-direction: column;
+      align-items: baseline;
+      width: 19rem;
+    }
     & > div {
       & p:last-of-type {
         @include adap(margin-top, 5px, 10px);
@@ -321,6 +432,14 @@
       width: vw(215px);
       height: vw(65px);
       padding: vw(20px);
+      @include md_900 {
+        width: 15rem;
+        height: 5rem;
+        padding: 1rem;
+      }
+      @include xs_500 {
+        margin-top: 1rem;
+      }
     }
   }
   &__descr {
@@ -331,8 +450,18 @@
   }
   &__slider {
     width: vw(558px);
+    @include md_900 {
+      width: auto;
+    }
     &--wrap {
       position: relative;
+      @include md_900 {
+        width: 30rem;
+        margin: 0 auto;
+      }
+      @include xs_500 {
+        width: 27rem;
+      }
     }
   }
   &-arrow {
@@ -342,9 +471,19 @@
     left: vw(30px);
     z-index: 10000;
     cursor: pointer;
+    @include md_900 {
+      left: 2rem;
+    }
+    @include xs_500 {
+      left: 1rem;
+    }
     & svg {
       width: vw(34px);
       height: vw(34px);
+      @include md_900 {
+        width: 3rem;
+        height: 3rem;
+      }
     }
     &:first-of-type {
       transform: scale(-1, 1);
@@ -353,6 +492,12 @@
   &-arrowR {
     left: unset;
     right: vw(30px);
+    @include md_900 {
+      right: 2rem;
+    }
+    @include xs_500 {
+      right: 1rem;
+    }
   }
   &__dots {
     display: flex;
@@ -360,6 +505,9 @@
     bottom: 2vw;
     left: 50%;
     transform: translateX(-50%);
+    @include md_900 {
+      bottom: 2rem;
+    }
     & li {
       cursor: pointer;
       margin-right: 8px;
@@ -378,5 +526,10 @@
         background: #ea8780;
       }
     }
+  }
+}
+.modal-wrap_pol {
+  @include md_900 {
+    height: 80vh;
   }
 }

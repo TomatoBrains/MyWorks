@@ -27,6 +27,13 @@
         width: 32%;
         margin: 0 auto 2rem auto;
       }
+      @include xs_500 {
+        width: 45%;
+        margin-right: 0;
+        &:last-of-type {
+          margin: 0 auto 2rem auto;
+        }
+      }
       &:hover {
         background-color: #eaeaea;
         & img {
@@ -49,6 +56,9 @@
           margin-right: 1rem;
           width: 50%;
         }
+        @include xs_500 {
+          width: 40%;
+        }
       }
       &::after {
         content: "";
@@ -62,6 +72,10 @@
         right: -5px;
         top: 50%;
         transform: translateY(-50%);
+        @include xs_500 {
+          width: 8px;
+          height: 8px;
+        }
       }
       &::before {
         content: "";
@@ -98,6 +112,9 @@
         width: 32%;
         margin: 0 auto 2rem auto;
       }
+      @include xs_500 {
+        width: 45%;
+      }
       & img {
         width: 14.323vw;
         transition: opacity 0.3s linear;
@@ -118,6 +135,10 @@
           width: 15rem;
           height: 5rem;
           top: 45%;
+        }
+        @include xs_500 {
+          width: 11rem;
+          top: 40%;
         }
       }
       &:hover {

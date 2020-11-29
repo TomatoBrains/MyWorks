@@ -13,6 +13,10 @@
   &-wrap {
     flex-direction: column;
     @include adap(margin-right, 30px, 150px);
+    @include xs_500 {
+      margin-right: 0;
+      padding: 0 15px;
+    }
   }
   &__title {
     & p {
@@ -23,13 +27,26 @@
     @include adap(margin-top, 20px, 40px);
     & form {
       display: flex;
+      @include xs_500 {
+        flex-direction: column;
+      }
     }
     & input {
       margin-right: 10px;
       width: 50%;
+      @include xs_500 {
+        width: 29rem;
+        height: 6rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
     }
     & button {
       width: 50%;
+      @include xs_500 {
+        width: 29rem;
+        height: 6rem;
+      }
     }
     & > span {
       @include adap(margin-top, 10px, 40px);
@@ -49,6 +66,9 @@
     @include sm_700 {
       width: 45rem;
     }
+    @include xs_500 {
+      width: 28rem;
+    }
     &-icon {
       position: absolute;
       bottom: 8vw;
@@ -56,19 +76,32 @@
       @include sm_700 {
         left: 31rem;
       }
+      @include xs_500 {
+        left: 20rem;
+      }
       & > div {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include xs_500 {
+          width: 100%;
+          text-align: center;
+        }
         & img {
           @include sm_700 {
             width: 5rem;
+          }
+          @include xs_500 {
+            width: 3rem;
           }
         }
       }
       & p {
         margin-top: 15px;
+        @include xs_500 {
+          margin-top: 0;
+        }
       }
     }
   }

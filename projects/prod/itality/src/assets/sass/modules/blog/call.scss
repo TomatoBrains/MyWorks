@@ -5,11 +5,26 @@
   @include adap(padding-right, 30px, 115px);
   position: relative;
   background-color: #f5f7f6;
+  @include md_900 {
+    padding: 2rem;
+  }
+  @include xs_500 {
+    padding: 2rem 0;
+  }
   &__title {
+    @include md_900 {
+      text-align: left;
+      & br {
+        display: none;
+      }
+    }
     &-wrap {
       & p:last-of-type {
         & img {
           width: vw(20px);
+          @include md_900 {
+            width: 2rem;
+          }
         }
         & a {
           &::before {
@@ -22,6 +37,17 @@
       @include adap(margin-top, 10px, 70px);
       display: flex;
       justify-content: space-between;
+      @include md_900 {
+        justify-content: end;
+        & > p:first-of-type {
+          margin-right: 4rem;
+        }
+      }
+      @include xs_500 {
+        & > p:first-of-type {
+          margin-right: 1rem;
+        }
+      }
     }
     &-wrap {
       text-align: end;
@@ -38,8 +64,28 @@
     bottom: 0vw;
     position: absolute;
     left: 37vw;
+    @include md_900 {
+      bottom: 18.5rem;
+      left: unset;
+      right: 1rem;
+    }
+    @include xs_500 {
+      position: relative;
+      bottom: 0;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15rem;
+      margin-top: 2rem;
+    }
     & img {
       width: vw(320px);
+      @include md_900 {
+        width: 15rem;
+      }
+      @include sm_700 {
+        width: 15rem;
+      }
     }
     &-name {
       @include names(vw(70px), vw(-70px));
@@ -47,6 +93,9 @@
   }
   &--flex {
     justify-content: space-between;
+    @include md_900 {
+      flex-direction: column;
+    }
   }
   & .input-w {
     background-color: #fff;
@@ -54,6 +103,15 @@
   & form {
     & button {
       @include adap(margin-bottom, 10px, 40px);
+    }
+  }
+  & .schema__form {
+    @include md_900 {
+      margin-top: 2rem;
+      padding: 0;
+      &-title {
+        text-align: left;
+      }
     }
   }
 }

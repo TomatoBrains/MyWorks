@@ -1,17 +1,31 @@
 .contacts {
   &__title {
     @include adap(margin-top, 30px, 70px);
+    @include xs_500 {
+      & br {
+        display: none;
+      }
+    }
     & p {
       @include adap(margin-top, 10px, 30px);
     }
     &-block {
       @include adap(padding-bottom, 30px, 95px);
       @include adap(padding-left, 30px, 60px);
+      @include sm_700 {
+        padding-left: 0;
+      }
       & img {
         @include adap(margin-top, 30px, 125px);
       }
       & .main__descr {
         @include adap(margin-top, 30px, 120px);
+        @include md_900 {
+          flex-wrap: wrap;
+          &-item {
+            margin-bottom: 1rem;
+          }
+        }
       }
       & .bread {
         margin-left: 0;

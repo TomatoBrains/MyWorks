@@ -41,6 +41,9 @@
       width: 100%;
       margin-top: 3rem;
     }
+    @include xs_500 {
+      flex-wrap: wrap;
+    }
     & > div > p {
       @include adap(margin-bottom, 10px, 20px);
     }
@@ -67,6 +70,9 @@
       & p:nth-last-of-type(2) {
         @include adap(margin-top, 5px, 10px);
       }
+      @include xs_500 {
+        margin-top: 1rem;
+      }
     }
   }
   &__bot {
@@ -84,6 +90,18 @@
         }
       }
     }
+    @include xs_500 {
+      flex-direction: column;
+      align-items: baseline;
+      & a {
+        margin-bottom: 1rem;
+      }
+      & > p {
+        &:last-of-type {
+          text-align: left;
+        }
+      }
+    }
   }
   &__soc {
     display: flex;
@@ -91,8 +109,15 @@
     @include md_900 {
       margin-top: 3rem;
     }
+    @include xs_500 {
+      flex-wrap: wrap;
+    }
     & p {
       margin-right: 20px;
+      @include xs_500 {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
     }
     & a {
       margin-right: 10px;

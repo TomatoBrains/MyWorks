@@ -18,7 +18,9 @@
     }
   }
   &__menu {
-    display: flex;
+    & ul {
+      display: flex;
+    }
     &-item {
       margin-right: vw(60px);
       &::before {
@@ -32,6 +34,9 @@
   &__work {
     display: flex;
     align-items: center;
+    @include xs_500 {
+      display: none;
+    }
     & img {
       width: 20px;
       margin-right: 15px;
@@ -47,12 +52,85 @@
       }
     }
   }
+  &__burger {
+    display: none;
+    @include md_900 {
+      display: block;
+      width: 3rem;
+    }
+  }
+  &__mob {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    z-index: 1010;
+    &--wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 2rem;
+      height: 100%;
+    }
+    & .header__logo {
+      margin-right: 0;
+      & img {
+        width: 30rem;
+      }
+    }
+    & .header__work {
+      display: flex;
+      & > a {
+        & img {
+          width: 3rem;
+        }
+      }
+      &-txt {
+        & p {
+          font-size: 2.5rem;
+          @include xs_500 {
+            font-size: 1.5rem;
+          }
+        }
+        & a {
+          font-size: 3rem;
+          @include xs_500 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    & .header__menu {
+      display: block;
+      height: 50%;
+      & ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        & li {
+          & a {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+    & .close {
+      width: 4rem;
+      height: 4rem;
+    }
+    @include md_900 {
+      width: 3rem;
+    }
+  }
 }
 .aside {
   @include adap(width, 60px, 120px);
   position: relative;
-  @include md_900 {
-  }
   &__soc {
     display: flex;
     flex-direction: column;
@@ -62,8 +140,9 @@
     top: 45%;
     transition: transform 0.3s ease;
     @include md_900 {
-      right: 0.5rem;
+      right: 0.8rem;
       top: 35%;
+      z-index: 2000;
     }
     &-item {
       background: #e8e9eb;
@@ -103,14 +182,7 @@
       position: static;
     }
   }
-  @include md_900 {
-    background: red;
-  }
   @include sm_700 {
-    background: green;
     display: none;
-  }
-  @include xs_500 {
-    background: blue;
   }
 }

@@ -19,13 +19,18 @@
   &__descr {
     display: flex;
     @include adap(margin-top, 30px, 170px);
-
+    @include xs_500 {
+      flex-wrap: wrap;
+    }
     &-item {
       display: flex;
       align-items: center;
-
+      @include xs_500 {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
       & p {
-        @include adap(margin-right, 5px, 15px);
+        @include adap(margin-right, 10px, 15px);
         &:nth-of-type(2) {
           margin-right: 0;
         }
@@ -37,6 +42,9 @@
       opacity: 0.15;
       @include adap(margin-right, 10px, 35px);
       @include adap(margin-left, 10px, 35px);
+      @include xs_500 {
+        display: none;
+      }
     }
   }
   &__btn {
@@ -47,6 +55,9 @@
         width: 31rem;
         height: 7rem;
         padding: 2rem;
+      }
+      @include xs_500 {
+        width: 20rem;
       }
     }
   }
@@ -64,6 +75,9 @@
       }
       @include md_900 {
         width: 50%;
+      }
+      @include xs_500 {
+        width: 100%;
       }
     }
     @include md_900 {

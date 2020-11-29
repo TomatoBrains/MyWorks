@@ -13,10 +13,20 @@ $(document).ready(function ($) {
     $("html").removeClass("stop");
   });
   $(".header__menu-close").on("click", function () {
-    $(".header__menu-mobile").fadeOut();
+    $(".header__mob").fadeOut();
     $("html").removeClass("overflowHidden");
   });
-
+  $(".productItem__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: $(".productItem-arrowR"),
+    prevArrow: $(".productItem-arrowL"),
+    autoplay: true,
+    dots: true,
+    dotsClass: "productItem__dots",
+    autoplaySpeed: 3000,
+    // fade: true
+  });
   var offsetTop = $(window).height() * 2;
   $(window).scroll(function (event) {
     if ($(document).scrollTop() > offsetTop) {
@@ -98,6 +108,10 @@ $(document).ready(function ($) {
     event.preventDefault();
     $("html").addClass("stop");
     $("#politics").fadeIn();
+  });
+  $(".header__burger").on("click", function (e) {
+    $("html").addClass("stop");
+    $(".header__mob").fadeIn();
   });
 
   $(".link-scroll").on("click", function (event) {

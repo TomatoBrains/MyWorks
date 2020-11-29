@@ -7,6 +7,9 @@
   @include md_900 {
     padding-right: 2rem;
   }
+  @include xs_500 {
+    padding-right: 0;
+  }
   &--flex {
     display: flex;
     @include md_900 {
@@ -33,6 +36,9 @@
     }
   }
   &__form {
+    @include xs_500 {
+      margin-top: 28rem;
+    }
     &-wrap {
       width: vw(500px);
       display: flex;
@@ -44,6 +50,12 @@
       @include md_900 {
         width: auto;
         align-items: center;
+      }
+      @include xs_500 {
+        width: 29rem;
+      }
+      @include xs_500 {
+        @include adap(padding-right, 10px, 30px);
       }
       & form {
         @include sm_700 {
@@ -63,6 +75,10 @@
           height: 6rem;
           margin-right: 1rem;
         }
+        @include xs_500 {
+          width: 27rem;
+          margin-right: 0;
+        }
       }
       & button {
         width: 100%;
@@ -74,6 +90,9 @@
           width: 22rem;
           height: 6rem;
         }
+        @include xs_500 {
+          width: 27rem;
+        }
       }
       & form > span {
         @include adap(margin-top, 15px, 15px);
@@ -84,12 +103,21 @@
       right: 0;
       bottom: 0;
       display: inline-flex;
+      @include xs_500 {
+        transform: scale(-1, 1);
+        right: 8rem;
+        top: -24.8rem;
+        bottom: unset;
+      }
       &-wrap {
         position: absolute;
         bottom: vw(10px);
         right: vw(50px);
         text-align: center;
         z-index: 1;
+        @include xs_500 {
+          transform: scale(-1, 1);
+        }
         & p {
           &:nth-of-type(1) {
             background-color: #fff;
@@ -119,10 +147,20 @@
       max-width: unset;
       margin-top: 5rem;
     }
+    @include xs_500 {
+      flex-direction: column;
+    }
     & > div {
       width: 50%;
       &:nth-of-type(1) {
         @include adap(margin-right, 30px, 60px);
+        @include xs_500 {
+          margin-right: 0;
+          margin-bottom: 3rem;
+        }
+      }
+      @include xs_500 {
+        width: 100%;
       }
     }
     & summary {

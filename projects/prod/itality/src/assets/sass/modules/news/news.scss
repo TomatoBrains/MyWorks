@@ -64,20 +64,36 @@
     }
     &__form {
       width: 34%;
+      @include md_900 {
+        width: 100%;
+      }
       & form {
         max-width: unset;
       }
       & textarea {
         height: vw(130px);
+        @include md_900 {
+          height: 10rem;
+        }
       }
       &-form {
         width: 100%;
+        @include xs_500 {
+          width: 29rem;
+          margin: 1rem auto;
+        }
       }
       &-inputWrap {
         display: flex;
+        @include xs_500 {
+          flex-direction: column;
+        }
         & input {
           @include adap(margin-right, 10px, 17px);
           width: 28%;
+          @include xs_500 {
+            width: 100% !important;
+          }
           &:nth-of-type(2) {
             width: 44%;
           }
@@ -90,14 +106,34 @@
         display: flex;
         margin-top: 10px;
         align-items: center;
+        @include xs_500 {
+          & br {
+            display: none;
+          }
+        }
         & > span {
           @include adap(margin-right, 20px, 75px);
         }
         & button {
           flex: auto;
           margin-bottom: 0;
+          @include xs_500 {
+            width: 15rem;
+          }
         }
       }
+    }
+  }
+  & .call__men {
+    @include md_900 {
+      bottom: 24.2rem;
+    }
+    @include sm_700 {
+      right: 2rem;
+    }
+    @include xs_500 {
+      bottom: unset;
+      right: unset;
     }
   }
 }

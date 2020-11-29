@@ -3,6 +3,11 @@
   &__title {
     & h2 {
       @include adap(margin-bottom, 10px, 30px);
+      @include xs_500 {
+        & br {
+          display: none;
+        }
+      }
     }
   }
   &__tabBtns {
@@ -18,14 +23,14 @@
         width: 20%;
         margin-bottom: 1.5rem;
       }
+      @include xs_500 {
+        width: 45%;
+      }
       &:last-of-type {
         margin-right: 0;
-        @include md_900 {
-          margin: 0 auto;
-        }
       }
       & a {
-        padding: vw(18px) vw(35.5px);
+        padding: vw(18px) vw(30px);
         min-width: vw(100px);
         background: #f5f7f6;
         color: #282828;
@@ -97,6 +102,9 @@
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: 2;
+          @include xs_500 {
+            left: 47%;
+          }
           & a {
             width: vw(250px);
             height: vw(80px);
@@ -107,6 +115,9 @@
               width: 13rem;
               height: 5rem;
               text-align: center;
+            }
+            @include xs_500 {
+              width: 11rem;
             }
           }
         }
@@ -149,6 +160,25 @@
         & > div:nth-of-type(2) {
           @include md_900 {
             height: 100%;
+          }
+        }
+      }
+      &--wrap {
+        @include xs_500 {
+          width: 50% !important;
+          height: 13rem !important;
+          margin-bottom: 1rem !important;
+          padding-right: 1rem !important;
+          &:last-of-type {
+            margin: 0 auto 1rem auto;
+          }
+          & > div:nth-of-type(2) {
+            width: 100%;
+            height: 100%;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }

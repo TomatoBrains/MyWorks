@@ -26,6 +26,12 @@
         width: 48%;
         margin-right: 0;
       }
+      @include xs_500 {
+        width: 100%;
+        & br {
+          display: none;
+        }
+      }
       &:nth-of-type(6n) {
         margin-right: 0;
         @include md_900 {
@@ -39,6 +45,9 @@
       }
       & img {
         margin-bottom: 10px;
+        @include xs_500 {
+          width: 8rem;
+        }
       }
     }
     &-descr {
