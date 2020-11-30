@@ -8,16 +8,26 @@
   padding-left: vw(195px);
   padding-right: vw(195px);
   background: #ecefee;
+  @include md_900 {
+    position: static;
+    padding: 3rem !important;
+  }
   &__title {
     @include adap(margin-bottom, 30px, 60px);
   }
   &__content {
     display: flex;
     justify-content: space-between;
+    @include md_900 {
+      flex-wrap: wrap;
+    }
     &-item {
       padding: vw(30px) vw(25px);
       border-radius: 15px;
       background: #fff;
+      @include md_900 {
+        padding: 1rem 1rem 2rem 1rem;
+      }
       & > p {
         @include adap(margin-bottom, 10px, 15px);
         text-transform: uppercase;
@@ -26,6 +36,14 @@
         background: #272f42;
         padding-top: vw(15px);
         width: vw(520px);
+        @include md_900 {
+          width: 55%;
+          order: -1;
+          margin: 0 auto;
+        }
+        @include xs_500 {
+          width: 100%;
+        }
         & span {
           color: #fff;
         }
@@ -41,12 +59,22 @@
           width: 100%;
           margin-top: vw(20px);
           text-transform: uppercase;
+          @include md_900 {
+            height: 5rem;
+            margin-top: 2rem;
+          }
         }
       }
       &:nth-of-type(2n + 1) {
         @include adap(margin-top, 30px, 70px);
         width: vw(413px);
         height: 100%;
+        @include md_900 {
+          width: 48%;
+        }
+        @include xs_500 {
+          width: 100%;
+        }
       }
       &:last-of-type {
         border: 4px solid #000;
@@ -57,15 +85,33 @@
       justify-content: space-between;
       align-items: center;
       margin-top: vw(20px);
+      @include md_900 {
+        margin-top: 1rem;
+      }
+      @include sm_700 {
+        display: flex;
+        flex-direction: column;
+      }
       & a {
         width: vw(160px);
         height: vw(65px);
         text-transform: uppercase;
+        @include md_900 {
+          width: 14rem;
+          height: 5rem;
+        }
+        @include sm_700 {
+          margin-top: 1rem;
+          width: 20rem;
+        }
       }
     }
     &-list {
       margin-top: vw(20px);
       margin-left: vw(20px);
+      @include md_900 {
+        margin: 2rem 0 0 2rem;
+      }
       & ul {
         list-style-type: disc;
         color: #f9817b;

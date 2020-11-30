@@ -1,9 +1,15 @@
 .card {
   &__title {
     @include adap(padding-bottom, 30px, 290px);
+    @include md_900 {
+      padding-bottom: 0;
+    }
     &-title {
       @include adap(margin-left, 30px, 60px);
       @include adap(margin-top, 60px, 170px);
+      @include xs_500 {
+        margin-left: 0;
+      }
       & h1 {
         @include adap(margin-bottom, 10px, 20px);
       }
@@ -12,7 +18,7 @@
           @include adap(margin-bottom, 10px, 17px);
         }
         &:last-of-type {
-          @include adap(margin-top, 30px, 75px);
+          @include adap(margin-top, 30px, 50px);
         }
       }
     }
@@ -20,13 +26,32 @@
   &__order {
     @include adap(margin-top, 30px, 75px);
     @include adap(margin-left, 30px, 60px);
+    @include xs_500 {
+      margin-left: 0;
+    }
     & a {
       height: vw(100px);
       width: vw(200px);
+      @include md_900 {
+        width: 15rem;
+        height: 5rem;
+      }
+      @include xs_500 {
+        width: 29rem;
+      }
       &:last-of-type {
         background: #272f42;
         width: vw(250px);
         @include adap(margin-left, 20px, 30px);
+        @include md_900 {
+          width: 20rem;
+          height: 5rem;
+        }
+        @include xs_500 {
+          margin-left: 0;
+          width: 29rem;
+          margin-top: 2rem;
+        }
         &:hover {
           box-shadow: inset 0 4px 1px rgba(#4a4a4a, 1),
             inset 0 0 24px rgba(#424242, 0.15);
@@ -37,11 +62,26 @@
   &__descr {
     display: flex;
     @include adap(margin-top, 30px, 530px);
+    @include md_900 {
+      margin-top: 5rem;
+      flex-wrap: wrap;
+      padding-bottom: 5rem;
+    }
     &-img {
       @include adap(margin-right, 30px, 150px);
+      @include md_900 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
     }
     &-feature {
       @include adap(margin-right, 30px, 205px);
+      @include sm_700 {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
       & p {
         @include adap(margin-bottom, 10px, 25px);
       }

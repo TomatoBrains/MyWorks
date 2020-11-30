@@ -6,10 +6,23 @@
       @include adap(margin-top, 15px, 40px);
       display: flex;
       justify-content: space-between;
+      @include sm_700 {
+        flex-wrap: wrap;
+      }
     }
     &-item {
       position: relative;
       width: vw(543px);
+      @include md_900 {
+        width: 32%;
+      }
+      @include sm_700 {
+        width: 48%;
+        margin: 0 auto 1rem auto;
+      }
+      @include xs_500 {
+        width: 100%;
+      }
     }
     &-descr {
       position: absolute;
@@ -19,9 +32,18 @@
       justify-content: space-between;
       width: 100%;
       padding: 0 vw(50px);
+      @include md_900 {
+        padding: 0 2rem;
+        flex-direction: column;
+      }
       & a {
         width: vw(200px);
         height: vw(65px);
+        text-transform: uppercase;
+        @include md_900 {
+          width: 14rem;
+          height: 4rem;
+        }
       }
     }
   }

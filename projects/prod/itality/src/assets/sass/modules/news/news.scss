@@ -1,7 +1,10 @@
 .news {
   &__title {
-    @include adap(margin-top, 50px, 250px);
+    @include adap(margin-top, 30px, 250px);
     width: 75%;
+    @include md_900 {
+      width: 100%;
+    }
     & p {
       @include adap(margin-bottom, 20px, 55px);
     }
@@ -14,14 +17,24 @@
     &-row {
       display: flex;
       @include adap(margin-bottom, 30px, 52px);
+      @include md_900 {
+        flex-direction: column;
+        align-items: baseline;
+      }
       &:last-of-type {
         margin-bottom: 0;
       }
       &:nth-of-type(2n) {
         flex-direction: row-reverse;
+        @include md_900 {
+          flex-direction: column;
+        }
         & > div {
           padding-right: 0;
           @include adap(padding-left, 30px, 90px);
+          @include md_900 {
+            padding-left: 0;
+          }
         }
       }
       & > div {
@@ -29,6 +42,10 @@
         @include adap(padding-top, 20px, 43px);
         @include adap(padding-right, 30px, 90px);
         width: 50%;
+        @include md_900 {
+          width: 100%;
+          padding: 2rem 0;
+        }
         & p {
           @include adap(margin-bottom, 10px, 20px);
           &:last-of-type {
@@ -38,12 +55,18 @@
       }
       & img {
         width: 50%;
+        @include md_900 {
+          width: auto;
+        }
       }
     }
     &-back {
       text-align: center;
       & a {
         width: vw(290px);
+        @include md_900 {
+          width: 20rem;
+        }
       }
     }
   }
@@ -135,5 +158,55 @@
       bottom: unset;
       right: unset;
     }
+  }
+  & .info {
+    &__more {
+      & a {
+        width: vw(200px);
+        height: vw(60px);
+        @include md_900 {
+          width: 25rem;
+          height: 5rem;
+        }
+      }
+    }
+  }
+  & .call {
+    @include adap(padding-right, 30px, 70px);
+    @include xs_500 {
+      padding-right: 0;
+    }
+    &--flex {
+      @include xs_500 {
+        align-items: center;
+      }
+    }
+    &__title {
+      @include md_900 {
+        width: 75%;
+      }
+      @include xs_500 {
+        width: 100%;
+      }
+    }
+    &__men {
+      width: 14vw;
+      @include md_900 {
+        width: auto;
+      }
+      @include xs_500 {
+        left: unset;
+        transform: unset;
+      }
+    }
+    &__form {
+      width: 40%;
+      @include md_900 {
+        width: 100%;
+      }
+    }
+  }
+  & .schema__form {
+    @include adap(margin-top, 20px, 40px);
   }
 }

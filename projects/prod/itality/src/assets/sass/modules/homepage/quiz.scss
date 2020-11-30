@@ -60,10 +60,11 @@
 }
 // стил для левой части
 .test-form-left {
-  @include adap(padding-top, 30px, 40px);
-  @include adap(padding-bottom, 30px, 40px);
+  @include adap(padding-top, 30px, 60px);
+  @include adap(padding-bottom, 30px, 60px);
   @include adap(padding-left, 30px, 100px);
   height: 36.5vw;
+  width: 60%;
   @include md_900 {
     height: auto;
     width: 100%;
@@ -83,7 +84,7 @@
 }
 // для правой части
 .test-form-right {
-  width: 28%;
+  width: 35%;
   height: 36.5vw;
   box-shadow: unset;
   border-radius: unset;

@@ -204,6 +204,22 @@
     width: vw(15px);
     height: vw(15px);
   }
+  @include md_900 {
+    width: 4rem;
+    height: 4rem;
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  @include xs_500 {
+    width: 3rem;
+    height: 3rem;
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 }
 @mixin md_900 {
   @media (max-width: 992px) {

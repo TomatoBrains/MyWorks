@@ -16,4 +16,14 @@
       }
     }
   }
+  &__btn {
+    & a {
+      width: vw(250px);
+      height: vw(60px);
+      @include md_900 {
+        width: 25rem;
+        height: 6rem;
+      }
+    }
+  }
 }

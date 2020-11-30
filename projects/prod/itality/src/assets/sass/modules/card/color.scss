@@ -6,7 +6,7 @@
     @include adap(margin-top, 30px, 190px);
   }
   &__descr {
-    @include adap(margin-top, 20px, 55px);
+    @include adap(margin-top, 10px, 10px);
   }
   &__right {
     &-item {
@@ -24,6 +24,11 @@
         width: vw(255px);
         height: vw(85px);
         text-transform: uppercase;
+        @include md_900 {
+          padding: 1rem;
+          width: 18rem;
+          height: 5rem;
+        }
       }
     }
   }

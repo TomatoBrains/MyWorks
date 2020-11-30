@@ -103,8 +103,8 @@
                   </p>
                 </div>
                 <div class="main__btn">
-                  <a class="btn btnGrad txt14 fw5"
-                    >Пройти тест и узнать стоимость</a
+                  <a href="#optForm" class="btn btnGrad txt14 fw5"
+                    >Получить оптовый прайс-каталог</a
                   >
                 </div>
 				</div>
@@ -320,8 +320,8 @@
 				  <div class="additionals__subtitle">
 					  <p class="txt24 fw3">
 						Это лишь некоторые из условий. <span class="fwb">Все дополнительные условия уточняйте по телефону:</span>
+						<a class="txt30 fwb"><img src="assets/img/svg/phone.svg" alt=""> +7 (499) 955-50-78</a>
 					  </p>
-					  <p class="txt30 fwb"><img src="assets/img/svg/phone.svg" alt=""> +7 (499) 955-50-78</p>
 				  </div>
 			</div>
 		  </section>
@@ -1567,43 +1567,6 @@
     <script src="assets/js/test.js"></script>
     <script>
       $("input[type='tel']").mask("+7 ( 9 9 9 )  9 9 9  9 9  9 9");
-      var $status = $(".rew__slider-pag-content");
-      var $slickElement = $(".rew__slider");
-
-      $slickElement.on("init reInit afterChange", function (
-        event,
-        slick,
-        currentSlide,
-        nextSlide
-      ) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $status.html(
-          `<span class="txt24 fw5">0${i}</span> / 0${slick.slideCount}`
-        );
-      });
-      $(".rew__slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        nextArrow: $(".rew__slider-arrowR"),
-        prevArrow: $(".rew__slider-arrowL"),
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: false,
-        responsive: [
-          {
-            breakpoint: 901,
-            settings: {
-              slidesToShow: 1,
-              autoplay: false,
-            },
-          },
-        ],
-        // fade: true
-      });
-      $(".seo__more").on("click", function () {
-        $(".seo__content").toggleClass("show__seo");
-        $(this).toggleClass("seo__more-show");
-      });
     </script>
   </body>
 </html>

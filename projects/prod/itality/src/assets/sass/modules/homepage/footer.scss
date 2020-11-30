@@ -106,8 +106,10 @@
   &__soc {
     display: flex;
     align-items: center;
+    margin-bottom: vw(30px);
     @include md_900 {
       margin-top: 3rem;
+      margin-bottom: 0;
     }
     @include xs_500 {
       flex-wrap: wrap;

@@ -140,9 +140,10 @@
     top: 45%;
     transition: transform 0.3s ease;
     @include md_900 {
-      right: 0.8rem;
+      //right: 0.8rem;
       top: 35%;
       z-index: 2000;
+      position: sticky;
     }
     &-item {
       background: #e8e9eb;

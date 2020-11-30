@@ -2,6 +2,13 @@
   @include adap(padding-top, 30px, 30px);
   @include adap(padding-right, 30px, 165px);
   position: relative;
+  @include md_900 {
+    padding: 30px;
+  }
+  @include sm_700 {
+    padding: 15px;
+    padding-top: 32rem;
+  }
   &--flex {
     display: flex;
     align-items: center;
@@ -11,8 +18,35 @@
     position: relative;
     display: inline-flex;
     bottom: -0.2vw;
+    @include md_900 {
+      width: 50%;
+      left: -3rem;
+      bottom: -12rem;
+    }
+    @include sm_700 {
+      position: absolute;
+      bottom: unset;
+      top: 1rem;
+      width: 29rem;
+    }
     & > div {
       position: absolute;
+    }
+  }
+  &__content {
+    @include md_900 {
+      width: 50%;
+      & .circleDone {
+        width: 3rem;
+        height: 3rem;
+        flex-shrink: 0;
+        & img {
+          width: 1rem;
+        }
+      }
+    }
+    @include sm_700 {
+      width: 100%;
     }
   }
   &-icon {
@@ -21,6 +55,12 @@
     bottom: 6vw;
     width: vw(150px);
     height: vw(150px);
+    @include md_900 {
+      width: 9rem;
+      height: 9rem;
+      right: 2rem;
+      bottom: 9rem;
+    }
     & > div {
       position: absolute;
       top: 50%;

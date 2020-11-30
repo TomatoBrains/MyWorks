@@ -20,11 +20,11 @@
   }
   &__title {
     & p {
-      @include adap(margin-top, 20px, 40px);
+      @include adap(margin-top, 20px, 28px);
     }
   }
   &__form {
-    @include adap(margin-top, 20px, 40px);
+    @include adap(margin-top, 20px, 30px);
     & form {
       display: flex;
       @include xs_500 {
@@ -72,7 +72,7 @@
     &-icon {
       position: absolute;
       bottom: 8vw;
-      left: 43vw;
+      left: 40vw;
       @include sm_700 {
         left: 31rem;
       }

@@ -2,10 +2,18 @@
   &__item {
     &--wrap {
       display: flex;
+      @include xs_500 {
+        flex-direction: column;
+      }
       & > div {
-        width: 50%;
+        width: 65%;
+        @include xs_500 {
+          width: 100%;
+        }
         &:first-of-type {
           @include adap(padding-bottom, 30px, 80px);
+          @include md_900 {
+          }
         }
       }
     }
@@ -13,6 +21,14 @@
       padding-left: vw(295px);
       text-align: left;
       width: 50%;
+      @include md_900 {
+        padding-left: 3rem;
+        padding-right: 1rem;
+      }
+      @include sm_700 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
       & > div {
         position: sticky;
         top: 2vw;

@@ -19,7 +19,7 @@
     &-item {
       display: flex;
       align-items: center;
-      @include adap(margin-bottom, 20px, 20px);
+      @include adap(margin-bottom, 10px, 10px);
       transition: all 0.3s ease;
       position: relative;
       cursor: pointer;

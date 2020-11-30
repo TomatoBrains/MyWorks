@@ -7,6 +7,11 @@
   }
   &__descr {
     @include adap(margin-top, 20px, 40px);
+    @include md_900 {
+      & br {
+        display: none;
+      }
+    }
     & p {
       @include adap(margin-top, 10px, 25px);
       &:first-of-type {
@@ -25,6 +30,9 @@
     @include adap(padding-bottom, 30px, 80px);
     &-item {
       @include adap(margin-top, 30px, 110px);
+      @include md_900 {
+        padding: 0 2rem;
+      }
       & img {
         @include adap(margin-top, 10px, 20px);
       }

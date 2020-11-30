@@ -16,13 +16,14 @@
     <!-- <meta property="og:type" content="website">
 	<meta property="og:image" content="assets/img/prev.png"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/js/slick/slick.css" />
     <link rel="stylesheet" href="assets/js/fancy/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/new.css" />
   </head>
   <body>
     <div class="wrap--flex flex">
-      <div class="wrap portfolio">
+      <div class="wrap contacts">
         <header class="header">
           <div class="container">
             <div class="header--flex flex">
@@ -121,456 +122,595 @@
           </div>
         </header>
         <div
-          class="blog__title page__title"
+          class="contacts__title-block page__title"
           style="
-            background: url(assets/img/portfolio/back.jpg) no-repeat bottom
+            background: url(assets/img/contacts/back.jpg) no-repeat bottom
               center;
             background-size: cover;
           "
         >
           <div class="container">
             <div class="bread">
-              <a class="fw3 txt13 cw linkHover" href="#">Главная</a>
+              <a class="txt13 cw linkHover" href="#">Главная</a>
               <span></span>
-              <a class="fw5 txt13 cw linkHover" href="#">Наши работы</a>
+              <a class="txt13 cw linkHover" href="#">Контакты</a>
             </div>
-            <div class="blog__title-title">
-              <h1 class="cw txt72">Портфолио наших объектов</h1>
+            <img src="assets/img/contacts/logo.png" alt="" />
+            <div class="contacts__title">
+              <h1 class="txt48 fw5 cw">
+                Производитель душевых <br />
+                ограждений на заказ
+              </h1>
+              <p class="txt30 fw3 cw">
+                Оказываем полный комплекс услуг под ключ
+              </p>
+            </div>
+            <div class="main__descr">
+              <div class="main__descr-item cw">
+                <p class="txt75 fwb">10</p>
+                <p class="txt18 fw3">
+                  профессионалов <br />
+                  в штате
+                </p>
+              </div>
+              <span></span>
+              <div class="main__descr-item cw">
+                <p class="txt75 fwb">12+</p>
+                <p class="txt18 fw3">
+                  лет опыта на рынке <br />
+                  душевых ограждений
+                </p>
+              </div>
+              <span></span>
+              <div class="main__descr-item cw">
+                <p class="txt75 fwb">500+</p>
+                <p class="txt18 fw3">
+                  установок <br />
+                  в год
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <section class="works">
-          <div class="container">
-            <div class="works__tabBtns">
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Все</a>
+        <section class="maps">
+          <div class="container"><h2>Наши контакты</h2></div>
+          <div class="maps__item">
+            <div class="maps__item-descr">
+              <h3 class="txt35 fw5">Центральный офис в Москве</h3>
+              <div class="maps__item-descr-txt">
+                <div class="maps__item-row">
+                  <p class="txt20 fwb">
+                    <img src="assets/img/svg/phone.svg" alt="" /><a
+                      class="txt20 fwb linkHover"
+                      href="tel:+74999555078"
+                      >+7 (499) 955-50-78</a
+                    >
+                  </p>
+                  <p class="txt14">
+                    <span class="pulseDot"></span> Работаем Пн-Пт: 10:00-21:00
+                  </p>
+                </div>
+                <div class="maps__item-row">
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Адрес:</p>
+                    <p class="txt18 fw3">
+                      Коммунарка, ул.Александры <br />
+                      Монаховой, д.40 стр.1
+                    </p>
+                  </div>
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Email:</p>
+                    <p class="txt18 fw3">
+                      <a class="txt18 fw3" href="mailto:123@mail.ru"
+                        >dm@dushmaster.ru</a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Двери</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Угловые </a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">В нишу</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Трапециевидные</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Раздвижные</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Ограждения</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">На ванну</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Трапы для душа</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Одностворчатая</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Двустворчатая</a>
-              </div>
-              <div class="works__tabBtns-item">
-                <a class="txt16 btnGrad">Гармошкой</a>
+              <div class="maps__item-slider--wrap">
+                <div class="maps__slider-arrowL-1 slider-arrow">
+                  <img src="assets/img/svg/arrowL1.svg" alt="" />
+                </div>
+                <div class="maps__item-slider maps__item-slider-1">
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="maps__slider-arrowR-1 slider-arrow slider-arrow-2">
+                  <img src="assets/img/svg/arrowR1.svg" alt="" />
+                </div>
               </div>
             </div>
-            <div class="works__tabs">
-              <div class="works__tabs-item">
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/big.jpg" alt="" />
-                  </div>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad3e23941abbc78fc981c4c7a5221ddea170a76f1580e6899e7a4e915ae549ac1&amp;width=100%25&amp;height=auto&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <div class="maps__item">
+            <div class="maps__item-descr">
+              <h3 class="txt35 fw5">Шоурум в Орле</h3>
+              <div class="maps__item-descr-txt">
+                <div class="maps__item-row">
+                  <p class="txt20 fwb">
+                    <img src="assets/img/svg/phone.svg" alt="" /><a
+                      class="txt20 fwb linkHover"
+                      href="tel:+74999555078"
+                      >+7 (499) 955-50-78</a
+                    >
+                  </p>
+                  <p class="txt14">
+                    <span class="pulseDot"></span> Работаем Пн-Пт: 10:00-21:00
+                  </p>
                 </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
+                <div class="maps__item-row">
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Адрес:</p>
+                    <p class="txt18 fw3">
+                      Коммунарка, ул.Александры <br />
+                      Монаховой, д.40 стр.1
+                    </p>
                   </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="works__tabs-item">
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/big.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="works__tabs-item--wrap">
-                  <div><a class="btn btnGrad txt18">Заказать похожую</a></div>
-                  <div class="works__tabs-item--imgWrap">
-                    <img src="assets/img/homepage/works/1.jpg" alt="" />
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Email:</p>
+                    <p class="txt18 fw3">
+                      <a class="txt18 fw3" href="mailto:123@mail.ru"
+                        >dm@dushmaster.ru</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
-              <!-- <div class="works__tabs-item">
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div>
-                  <img src="assets/img/homepage/works/big.jpg" alt="" />
+              <div class="maps__item-slider--wrap">
+                <div class="maps__slider-arrowL-2 slider-arrow">
+                  <img src="assets/img/svg/arrowL1.svg" alt="" />
                 </div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-                <div><img src="assets/img/homepage/works/1.jpg" alt="" /></div>
-              </div> -->
+                <div class="maps__item-slider maps__item-slider-2">
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="maps__slider-arrowR-2 slider-arrow slider-arrow-2">
+                  <img src="assets/img/svg/arrowR1.svg" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="works__more">
-              <a class="btn btnGrad more txt18">Показать еще</a>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad3e23941abbc78fc981c4c7a5221ddea170a76f1580e6899e7a4e915ae549ac1&amp;width=100%25&amp;height=auto&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <div class="maps__item">
+            <div class="maps__item-descr">
+              <h3 class="txt35 fw5">Офис в Ярославле</h3>
+              <div class="maps__item-descr-txt">
+                <div class="maps__item-row">
+                  <p class="txt20 fwb">
+                    <img src="assets/img/svg/phone.svg" alt="" /><a
+                      class="txt20 fwb linkHover"
+                      href="tel:+74999555078"
+                      >+7 (499) 955-50-78</a
+                    >
+                  </p>
+                  <p class="txt14">
+                    <span class="pulseDot"></span> Работаем Пн-Пт: 10:00-21:00
+                  </p>
+                </div>
+                <div class="maps__item-row">
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Адрес:</p>
+                    <p class="txt18 fw3">
+                      Коммунарка, ул.Александры <br />
+                      Монаховой, д.40 стр.1
+                    </p>
+                  </div>
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Email:</p>
+                    <p class="txt18 fw3">
+                      <a class="txt18 fw3" href="mailto:123@mail.ru"
+                        >dm@dushmaster.ru</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="maps__item-slider--wrap">
+                <div class="maps__slider-arrowL-3 slider-arrow">
+                  <img src="assets/img/svg/arrowL1.svg" alt="" />
+                </div>
+                <div class="maps__item-slider maps__item-slider-3">
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="maps__slider-arrowR-3 slider-arrow slider-arrow-2">
+                  <img src="assets/img/svg/arrowR1.svg" alt="" />
+                </div>
+              </div>
             </div>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad3e23941abbc78fc981c4c7a5221ddea170a76f1580e6899e7a4e915ae549ac1&amp;width=100%25&amp;height=auto&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <div class="maps__item">
+            <div class="maps__item-descr">
+              <h3 class="txt35 fw5">Офис в Казани</h3>
+              <div class="maps__item-descr-txt">
+                <div class="maps__item-row">
+                  <p class="txt20 fwb">
+                    <img src="assets/img/svg/phone.svg" alt="" /><a
+                      class="txt20 fwb linkHover"
+                      href="tel:+74999555078"
+                      >+7 (499) 955-50-78</a
+                    >
+                  </p>
+                  <p class="txt14">
+                    <span class="pulseDot"></span> Работаем Пн-Пт: 10:00-21:00
+                  </p>
+                </div>
+                <div class="maps__item-row">
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Адрес:</p>
+                    <p class="txt18 fw3">
+                      Коммунарка, ул.Александры <br />
+                      Монаховой, д.40 стр.1
+                    </p>
+                  </div>
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Email:</p>
+                    <p class="txt18 fw3">
+                      <a class="txt18 fw3" href="mailto:123@mail.ru"
+                        >dm@dushmaster.ru</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="maps__item-slider--wrap">
+                <div class="maps__slider-arrowL-3 slider-arrow">
+                  <img src="assets/img/svg/arrowL1.svg" alt="" />
+                </div>
+                <div class="maps__item-slider maps__item-slider-3">
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="maps__slider-arrowR-3 slider-arrow slider-arrow-2">
+                  <img src="assets/img/svg/arrowR1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad3e23941abbc78fc981c4c7a5221ddea170a76f1580e6899e7a4e915ae549ac1&amp;width=100%25&amp;height=auto&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <div class="maps__item">
+            <div class="maps__item-descr">
+              <h3 class="txt35 fw5">Офис в Перми</h3>
+              <div class="maps__item-descr-txt">
+                <div class="maps__item-row">
+                  <p class="txt20 fwb">
+                    <img src="assets/img/svg/phone.svg" alt="" /><a
+                      class="txt20 fwb linkHover"
+                      href="tel:+74999555078"
+                      >+7 (499) 955-50-78</a
+                    >
+                  </p>
+                  <p class="txt14">
+                    <span class="pulseDot"></span> Работаем Пн-Пт: 10:00-21:00
+                  </p>
+                </div>
+                <div class="maps__item-row">
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Адрес:</p>
+                    <p class="txt18 fw3">
+                      Коммунарка, ул.Александры <br />
+                      Монаховой, д.40 стр.1
+                    </p>
+                  </div>
+                  <div class="maps__item--wrap">
+                    <p class="txt18 fwb">Email:</p>
+                    <p class="txt18 fw3">
+                      <a class="txt18 fw3" href="mailto:123@mail.ru"
+                        >dm@dushmaster.ru</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="maps__item-slider--wrap">
+                <div class="maps__slider-arrowL-3 slider-arrow">
+                  <img src="assets/img/svg/arrowL1.svg" alt="" />
+                </div>
+                <div class="maps__item-slider maps__item-slider-3">
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/1.jpg"
+                    src="assets/img/contacts/1.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/2.jpg"
+                    src="assets/img/contacts/2.jpg"
+                    alt=""
+                  />
+                  <img
+                    data-fancybox="map"
+                    href="assets/img/contacts/3.jpg"
+                    src="assets/img/contacts/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="maps__slider-arrowR-3 slider-arrow slider-arrow-2">
+                  <img src="assets/img/svg/arrowR1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad3e23941abbc78fc981c4c7a5221ddea170a76f1580e6899e7a4e915ae549ac1&amp;width=100%25&amp;height=auto&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
           </div>
         </section>
         <section
-          class="qa"
+          class="partner"
           style="
-            background: url(assets/img/homepage/qa/back.jpg) no-repeat bottom
+            background: url(assets/img/contacts/back2.jpg) no-repeat bottom
               center;
             background-size: cover;
           "
         >
           <div class="container">
-            <div class="qa--flex">
-              <div class="qa__left">
-                <div class="qa__title">
-                  <h2 class="cw">
-                    <span>
-                      Часто <br />
-                      задаваемые <br />
-                    </span>
-                    вопросы
-                  </h2>
-                </div>
-                <div class="qa__subtitle">
-                  <p class="txt16 fw3 cw">
-                    Не нашли ответ на свой вопрос <br />
-                    или нужна дополнительная информация?
-                  </p>
-                  <p class="txt16 fw5 cw">
-                    Бесплатно проконсультруем по телефону
-                  </p>
-                </div>
-                <div class="qa__form">
-                  <div class="qa__form-wrap">
-                    <form action="" name="formname">
-                      <input
-                        class="input-w txt14 fw3"
-                        type="tel"
-                        name="phone"
-                        placeholder="+7 ( _ _ _ )   _ _ _   _ _   _ _"
-                      />
-                      <button class="btnGrad btn txt14">Перезвоните мне</button>
-                      <span class="check-line">
-                        <span class="check-label">
-                          <span class="check-label-act"
-                            ><img src="assets/img/svg/done.svg" alt=""
-                          /></span>
-                        </span>
-                        <span class="txt12 cw">
-                          Вы соглашаетесь с условиями <br />
-                          <span class="tdu co">
-                            обработки персональных данных</span
-                          >
-                        </span>
-                      </span>
-                    </form>
-                    <div class="qa__form-img">
-                      <img src="assets/img/homepage/qa/men.png" alt="" />
-                      <div class="qa__form-img-wrap">
-                        <p class="txt13 fw5">Сергей Иванович</p>
-                        <p class="txt11 cw">Эксперт компании</p>
-                      </div>
-                    </div>
-                  </div>
+            <div class="partner__content">
+              <h2>Станьте нашим партнером</h2>
+              <p class="txt30 fw3">
+                Предоставляем особые условия оптовым клиентам
+              </p>
+              <p class="txt16 fw3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                illum aliquid in, voluptatibus expedita quibusdam sit earum,
+                porro incidunt, maiores sed! A fugiat sint beatae eveniet quidem
+                autem placeat excepturi ipsam cupiditate molestias est,
+                repellendus obcaecati rem quasi magni. Odit, eos suscipit dolore
+                ipsa optio corrupti excepturi ratione enim quasi amet nostrum
+                tempora fuga, unde nihil ducimus! Ipsum eius sed earum quos quo
+                beatae dignissimos eos, repudiandae molestiae enim expedita?
+              </p>
+              <div class="partner__btn">
+                <a class="txt18 fw5 btn btnGrad cw more ml0"
+                  >Подробнее про опт</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="call news">
+          <div class="container">
+            <div class="call--flex flex">
+              <div class="call__title">
+                <h2>
+                  <span>Есть вопросы?</span> <br />
+                  Ответим в течении дня, <br />
+                  заполните форму
+                </h2>
+              </div>
+              <div class="call__men">
+                <img src="assets/img/contacts/men.png" alt="" />
+                <div class="call__men-name">
+                  <p class="txt13 fw5">Сергей Иванович</p>
+                  <p class="txt11 cw">Эксперт компании</p>
                 </div>
               </div>
-              <div class="qa__right">
-                <div class="qa__right-itemL">
-                  <div class="qa__right-item">
-                    <details class="acordeon" open>
-                      <summary class="cw txt18 fw5">
-                        Сколько дней срок производства?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
+              <div class="schema__form call__form">
+                <div class="schema__form-content flex">
+                  <div class="schema__form-form call__form-form">
+                    <form action="" name="formname">
+                      <div class="call__form-inputWrap">
+                        <input
+                          class="input-w txt14"
+                          type="text"
+                          name="name"
+                          placeholder="Ваше Имя"
+                        />
+                        <input
+                          class="input-w txt14"
+                          type="tel"
+                          name="phone"
+                          placeholder="+7 ( _ _ _ )   _ _ _   _ _   _ _"
+                        />
+                        <input
+                          type="mail"
+                          class="input-w txt14"
+                          name="mail"
+                          placeholder="Ваш e-mail"
+                        />
                       </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon" open>
-                      <summary class="cw txt18 fw5">
-                        Стекла закаленные?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
+                      <textarea
+                        name="text"
+                        id=""
+                        placeholder="Текст Вашего сообщения"
+                        class="txt14"
+                      ></textarea>
+                      <div class="call__form-botWrap">
+                        <span class="check-line">
+                          <span class="check-label">
+                            <span class="check-label-act"
+                              ><img src="assets/img/svg/done.svg" alt=""
+                            /></span>
+                          </span>
+                          <span class="txt12">
+                            Вы соглашаетесь с условиями <br />
+                            <span class="co tdu"
+                              >обработки персональных данных</span
+                            >
+                          </span>
+                        </span>
+                        <button class="btnGrad btn txt14 fw5">Отправить</button>
                       </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon" open>
-                      <summary class="cw txt18 fw5">
-                        Какой фирмы у вас стекло?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon" open>
-                      <summary class="cw txt18 fw5">
-                        Какая толщина стекла лучше?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon" open>
-                      <summary class="cw txt18 fw5">
-                        У меня мансарда / инсталляция
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                </div>
-                <div class="qa__right-itemR">
-                  <div class="qa__right-item">
-                    <details class="acordeon2" open>
-                      <summary class="cw txt18 fw5">
-                        Какую фурнитуру используете?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          Мы разработали свою собственную фурнитуру под наши
-                          требования. Потому что нас не устраивала фурнитура,
-                          которую предлагает рынок. По технической части наша
-                          фурнитура на вершине топовых производств.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Для особых гурманов предлагаем немецкую и итальянскую
-                          фурнитуру.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon2" open>
-                      <summary class="cw txt18 fw5">
-                        Есть черная, золотая, бронзовая?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon2" open>
-                      <summary class="cw txt18 fw5">
-                        Чем отличается ваша фурнитура?
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon2" open>
-                      <summary class="cw txt18 fw5">
-                        У меня квадратный /закругленный смеситель
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
-                  </div>
-                  <div class="qa__right-item">
-                    <details class="acordeon2" open>
-                      <summary class="cw txt18 fw5">
-                        Я хочу ручку маленьку / скобку / для полотенца
-                        <span class="txt24 fwb">+</span>
-                      </summary>
-                      <div class="qa__right-item-hidden">
-                        <p class="txt14 fw3 cw">
-                          С момента заключения договора, на следующий день ваш
-                          заказ поступает в работу.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Подготавливаем чертежи и отдаем в производство, в
-                          течении 3-5 дней мы изготавливаем стекла.
-                        </p>
-                        <p class="txt14 fw3 cw">
-                          Оставшееся время уходит на ожидание очереди монтажа.
-                          Чаще всего монтаж происходит через 5-7 дней.
-                        </p>
-                      </div>
-                    </details>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -1308,12 +1448,72 @@
     </div>
     <script src="assets/js/libs/jquery-3.3.1.min.js"></script>
     <script src="assets/js/fancy/jquery.fancybox.min.js"></script>
-    <script src="assets/js/slick/slick.min.js"></script>
     <script src="assets/js/libs/jquery.maskedinput.js"></script>
+    <script src="assets/js/slick/slick.min.js"></script>
     <script src="assets/js/smoothscroll.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
       $("input[type='tel']").mask("+7 ( 9 9 9 )  9 9 9  9 9  9 9");
+      $(".maps__item-slider-1").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: $(".maps__slider-arrowR-1"),
+        prevArrow: $(".maps__slider-arrowL-1"),
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 567,
+            settings: {
+              slidesToShow: 1,
+              autoplay: false,
+            },
+          },
+        ],
+        // fade: true
+      });
+      $(".maps__item-slider-2").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: $(".maps__slider-arrowR-2"),
+        prevArrow: $(".maps__slider-arrowL-2"),
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 567,
+            settings: {
+              slidesToShow: 1,
+              autoplay: false,
+            },
+          },
+        ],
+        // fade: true
+      });
+      $(".maps__item-slider-3").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: $(".maps__slider-arrowR-3"),
+        prevArrow: $(".maps__slider-arrowL-3"),
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 567,
+            settings: {
+              slidesToShow: 1,
+              autoplay: false,
+            },
+          },
+        ],
+        // fade: true
+      });
     </script>
   </body>
 </html>

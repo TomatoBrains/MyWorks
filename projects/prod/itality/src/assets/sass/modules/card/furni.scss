@@ -11,18 +11,30 @@
       display: flex;
       justify-content: space-between;
       padding: vw(85px) vw(72px);
+      @include md_900 {
+        padding: 5rem 2rem 3rem 2rem;
+      }
     }
     &-col {
       width: 33%;
       text-align: center;
+      @include md_900 {
+        width: 31%;
+      }
     }
     &-header {
       display: flex;
       align-items: center;
       justify-content: center;
       @include adap(margin-bottom, 15px, 30px);
+      @include md_900 {
+        position: relative;
+      }
       & p {
         text-transform: uppercase;
+        @include md_900 {
+          font-size: 1.8rem;
+        }
       }
     }
     &-imgs {
@@ -40,6 +52,13 @@
   border: solid 5px #f9817b;
   display: block;
   @include adap(margin-right, 10px, 15px);
+  @include md_900 {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0;
+    position: absolute;
+    top: -4rem;
+  }
 }
 .rad {
   border-radius: 17.5px;

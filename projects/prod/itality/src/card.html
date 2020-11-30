@@ -103,7 +103,7 @@
 	              <h1 class="cw txt72">Стеклянное ограждение</h1>
 	              <p class="txt48 fw5 cw">Угловое, распашное</p>
 	              <p class="txt16 cw">Артикул продукта 3.1800.1/2</p>
-	              <p class="txt60 fwb cw">от 34 900 руб.</p>
+	              <p class="txt60 fwb cw"><span class="txt24">от</span> 34 900 <span class="txt24">руб.</span></p>
 	            </div>
 	            <div class="card__order">
 	              <a class="btn btnGrad cw txt14 fw5 orderModalBtn">Заказать</a>
@@ -2002,24 +2002,26 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 	  </div>
 	  </div>
     <script src="assets/js/libs/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/fancy/jquery.fancybox.min.js"></script>
+	<script src="assets/js/fancy/jquery.fancybox.min.js"></script>
+	<script src="assets/js/slick/slick.min.js"></script>
 	<script src="assets/js/libs/jquery.maskedinput.js"></script>
 	<!-- <script src="assets/js/smoothscroll.min.js"></script> -->
     <script src="assets/js/script.js"></script>
     <script>
       $("input[type='tel']").mask("+7 ( 9 9 9 )  9 9 9  9 9  9 9");
-
-	  $(window).scroll(function () {
-    let target = $(".param__title > p:first-of-type");
-    let targetPos = target.offset().top;
-    let targetHeight = target.height();
-    let winHeight = $(window).height();
-    let scrollToElem = targetPos - winHeight;
-	let winScrollTop = $(this).scrollTop();
-    if (winScrollTop > scrollToElem && winScrollTop < $('.param__img--move').offset().top) {
-		$('.param__img--move').css({"transform":`translateX(${(scrollToElem - winScrollTop)/1.5}px)`})
-    } 
-  });
+		 if($(window).width() > 992) {
+			$(window).scroll(function () {
+			let target = $(".param__title > p:first-of-type");
+			let targetPos = target.offset().top;
+			let targetHeight = target.height();
+			let winHeight = $(window).height();
+			let scrollToElem = targetPos - winHeight;
+			let winScrollTop = $(this).scrollTop();
+			if (winScrollTop > scrollToElem && winScrollTop < $('.param__img--move').offset().top) {
+					$('.param__img--move').css({"transform":`translateX(${(scrollToElem - winScrollTop)/1.5}px)`})
+				}
+		});
+		} 
 // $('body').scroll(function () {
 //     let target = $(".param__title > p:first-of-type");
 //     let targetPos = target.offset().top;
@@ -2031,7 +2033,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 // 		$('.param__img--move').css({"transform":`translateX(${(scrollToElem - winScrollTop)/1.5}px)`})
 //     } 
 //   });
-  $(function() {
+if($(window).width() > 992) {
+	$(function() {
   window.addEventListener("scroll", function(event){
     // var top = this.pageYOffset;
 var top = $(".variant").offset().top
@@ -2047,6 +2050,7 @@ var top = $(".variant").offset().top
 	//  } 
   });
 });
+}
 
     </script>
   </body>

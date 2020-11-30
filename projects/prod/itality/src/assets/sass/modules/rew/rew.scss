@@ -5,28 +5,54 @@
   &__title {
     height: vw(150px);
     text-align: center;
+    @include md_900 {
+      height: 10rem;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    &-title {
+      text-align: center;
+    }
   }
   &__form {
     text-align: center;
     margin: 0 auto;
     @include adap(margin-top, 30px, 58px);
     width: vw(710px);
+    @include md_900 {
+      width: 90%;
+    }
     & > p {
       @include adap(margin-bottom, 15px, 35px);
     }
     &--wrap {
       display: flex;
       justify-content: center;
+      @include xs_500 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
       & input[type="file"] {
         display: none;
       }
       & label {
-        padding: vw(30px) vw(30px) vw(50px) vw(30px);
+        padding: vw(30px) vw(30px) vw(30px) vw(30px);
         border: 1px dashed #444c5d;
         @include adap(margin-right, 20px, 70px);
         max-width: vw(195px);
         text-overflow: ellipsis;
         position: relative;
+        @include md_900 {
+          width: 32%;
+          max-width: unset;
+          padding: 1rem;
+        }
+        @include xs_500 {
+          width: 45%;
+          margin-right: 0;
+          margin-bottom: 2rem;
+        }
         &:last-of-type {
           margin-right: 0;
         }
@@ -35,28 +61,59 @@
     &-file {
       & img {
         @include adap(margin-bottom, 10px, 25px);
+        @include xs_500 {
+          width: 5rem;
+        }
       }
       & p {
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        @include xs_500 {
+          margin-top: auto;
+          width: 100%;
+        }
+      }
+      @include xs_500 {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     }
     & textarea {
       @include adap(margin-top, 30px, 70px);
       width: 100%;
+      height: vw(120px);
+      @include md_900 {
+        height: 12rem;
+      }
     }
     &-inputs {
       display: flex;
       @include adap(margin-top, 10px, 15px);
+      @include xs_500 {
+        flex-direction: column;
+        align-items: center;
+      }
       & input {
         height: vw(60px);
         width: 50%;
+        @include md_900 {
+          height: 5rem;
+        }
+        @include xs_500 {
+          width: 29rem;
+        }
         &::placeholder {
           color: rgba(68, 76, 93, 0.58);
         }
         &:first-of-type {
           margin-right: 10px;
+          @include xs_500 {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
@@ -64,6 +121,14 @@
       @include adap(margin-top, 10px, 15px);
       width: vw(325px);
       padding: vw(23px) 0;
+      @include md_900 {
+        width: 20rem;
+        padding: 1rem;
+        height: 5rem;
+      }
+      @include md_900 {
+        width: 29rem;
+      }
     }
     & .check-line {
       justify-content: center;
@@ -80,7 +145,7 @@
       bottom: -1vw;
       left: 50%;
       transform: translateX(-50%);
-      & span {
+      & > span {
         &:nth-of-type(1) {
           @include videoBtn;
           position: relative;
@@ -92,7 +157,31 @@
           height: vw(30px);
           display: flex;
           align-items: center;
+          justify-content: center;
           transition: all 0.3s ease;
+          & span {
+            background: none;
+          }
+          @include md_900 {
+            width: 3rem;
+            height: 3rem;
+            padding: 0.5rem;
+            top: 0.7rem;
+            & > span {
+              position: relative;
+              top: 2px;
+            }
+          }
+          @include xs_500 {
+            width: 2rem;
+            height: 2rem;
+            padding: 0.5rem;
+            top: 0.7rem;
+            & > span {
+              position: relative;
+              top: 2px;
+            }
+          }
           &:before {
             background-color: rgba(#fa817c, 0.3);
             transition: all 0.3s ease;

@@ -1,13 +1,25 @@
 .param {
   background: #edf2fb;
   margin-top: 100vh;
+  @include md_900 {
+    margin-top: 0;
+  }
   &__top {
     display: flex;
     height: vw(600px);
+    @include md_900 {
+      height: auto;
+    }
+    @include xs_500 {
+      flex-direction: column;
+    }
   }
   &__title {
     background: #272f42;
     position: relative;
+    @include xs_500 {
+      width: 100%;
+    }
     & p {
       &:first-of-type {
         @include adap(margin-top, 30px, 193px);
@@ -23,12 +35,36 @@
         top: 11.2vw;
         right: -0.5vw;
         z-index: 2;
+        @include md_900 {
+          width: 16rem;
+          top: 10rem;
+          right: -0.5rem;
+        }
+        @include sm_700 {
+          width: 13rem;
+          top: 8rem;
+        }
+        @include xs_500 {
+          display: none;
+        }
       }
       &:nth-of-type(2) {
         width: vw(284px);
         top: 15.5vw;
         right: 4.5vw;
         z-index: 2;
+        @include md_900 {
+          width: 13rem;
+          top: 15.5rem;
+          right: 1rem;
+        }
+        @include sm_700 {
+          width: 11rem;
+          top: 12.5rem;
+        }
+        @include xs_500 {
+          display: none;
+        }
       }
     }
   }
@@ -37,9 +73,26 @@
     align-items: flex-end;
     margin-left: -2px;
     width: 50%;
+    @include md_900 {
+      margin-left: -1px;
+    }
+    @include xs_500 {
+      width: 100%;
+    }
     &--move {
       width: vw(590px);
       display: inline-block;
+      @include md_900 {
+        width: 50%;
+        position: relative;
+        right: 50%;
+        transform: translateX(50%);
+      }
+      @include xs_500 {
+        width: 100%;
+        transform: unset;
+        right: unset;
+      }
       & img {
         position: relative;
         bottom: -4px;

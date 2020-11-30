@@ -12,6 +12,12 @@
       @include adap(margin-bottom, 20px, 30px);
       position: relative;
       cursor: pointer;
+      @include md_900 {
+        width: 48%;
+      }
+      @include xs_500 {
+        width: 100%;
+      }
       &:hover {
         & > a {
           opacity: 1;
@@ -26,6 +32,11 @@
         bottom: vw(50px);
         text-align: center;
         opacity: 0;
+        @include md_900 {
+          width: 22rem;
+          height: 7rem;
+          bottom: 2rem;
+        }
       }
     }
   }

@@ -1,11 +1,23 @@
 .comfort {
   height: vw(610px);
+  @include md_900 {
+    height: auto;
+    padding-top: 3rem;
+  }
   &--flex {
     display: flex;
     align-items: center;
+    @include md_900 {
+      flex-direction: column;
+    }
   }
   &__subtitle {
     @include adap(margin-top, 10px, 30px);
+    @include md_900 {
+      & br {
+        display: none;
+      }
+    }
   }
   &__descr {
     @include adap(margin-top, 30px, 70px);
@@ -18,6 +30,11 @@
         & > div {
           width: vw(39px);
           height: vw(39px);
+          @include md_900 {
+            width: 3rem;
+            height: 3rem;
+            flex-shrink: 0;
+          }
         }
         & > p {
           @include adap(margin-left, 10px, 15px);
@@ -30,9 +47,27 @@
     width: vw(825px);
     right: -10vw;
     bottom: -2vw;
+    @include md_900 {
+      width: 40rem;
+      right: -9rem;
+      bottom: -2rem;
+    }
+    @include xs_500 {
+      width: 30rem;
+      right: 0;
+    }
     & .manager-icon {
       right: 37vw;
       bottom: 15vw;
+      @include md_900 {
+        right: 42rem;
+        width: 15rem;
+        height: 15rem;
+        bottom: 11rem;
+      }
+      @include xs_500 {
+        right: 15rem;
+      }
       & > div {
         text-align: center;
       }

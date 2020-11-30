@@ -3,6 +3,9 @@
   position: relative;
   &__content {
     position: relative;
+    @include xs_500 {
+      height: 40rem;
+    }
     &-title {
       position: absolute;
       top: 50%;
@@ -15,9 +18,20 @@
         top: 50%;
         transform: translateY(-50%);
         left: vw(120px);
+        @include xs_500 {
+          left: 1.5rem;
+          top: 73%;
+        }
       }
       & a {
         @include adap(margin-top, 15px, 60px);
+        @include md_900 {
+          width: 30rem;
+          height: 6rem;
+        }
+        @include xs_500 {
+          width: 29rem;
+        }
       }
     }
   }

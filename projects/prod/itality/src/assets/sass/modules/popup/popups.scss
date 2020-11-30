@@ -305,19 +305,39 @@
   background: #fff;
   width: vw(975px);
   overflow: hidden;
+  @include md_900 {
+    width: 70rem;
+    padding: 2rem;
+  }
+  @include sm_700 {
+    width: 90vw;
+  }
   & .modal {
     &--flex {
       display: flex;
+      @include sm_700 {
+        flex-direction: column-reverse;
+      }
     }
     &__content {
       margin-right: vw(40px);
       width: vw(350px);
+      @include md_900 {
+        width: 50%;
+        margin-right: 3rem;
+      }
+      @include sm_700 {
+        width: 100%;
+      }
       &-title {
         & p {
           @include adap(margin-bottom, 10px, 24px);
           &:last-of-type {
             border: 1px dashed #ea8780;
             padding: vw(22px) 0;
+            @include md_900 {
+              padding: 1rem 0;
+            }
           }
         }
       }
@@ -328,11 +348,22 @@
       position: relative;
       z-index: 2;
       width: vw(435px);
+      @include md_900 {
+        width: 50%;
+      }
+      @include sm_700 {
+        width: 30rem;
+        margin: 0 auto 2rem auto;
+      }
+      @include xs_500 {
+        width: 25rem;
+        margin-top: 2rem;
+      }
       &-dots {
         position: absolute;
         bottom: 0;
         right: 0;
-        z-index: 1;
+        z-index: -1;
       }
     }
   }
@@ -346,11 +377,25 @@
       width: 100%;
       height: vw(80px);
       @include adap(margin-bottom, 10px, 18px);
+      @include md_900 {
+        height: 5rem;
+        width: 30rem;
+      }
+      @include xs_500 {
+        width: 25rem;
+      }
     }
     & button {
       width: 100%;
       height: vw(80px);
       @include adap(margin-bottom, 10px, 18px);
+      @include md_900 {
+        height: 5rem;
+        width: 30rem;
+      }
+      @include xs_500 {
+        width: 25rem;
+      }
     }
   }
   & .check-line {

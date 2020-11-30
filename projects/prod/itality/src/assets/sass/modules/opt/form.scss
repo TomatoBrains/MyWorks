@@ -4,23 +4,46 @@
   @include adap(padding-bottom, 30px, 50px);
   @include adap(padding-right, 30px, 85px);
   overflow: hidden;
-
+  @include sm_700 {
+    padding-right: 0;
+  }
   &--flex {
     display: flex;
     justify-content: space-between;
+    @include md_900 {
+      flex-wrap: wrap;
+    }
   }
   &--left {
     @include adap(margin-right, 30px, 100px);
+    @include md_900 {
+      margin-right: 0;
+      width: 100%;
+    }
   }
   &--center {
     @include adap(margin-right, 30px, 110px);
     @include adap(padding-top, 15px, 30px);
+    @include md_900 {
+      margin-right: 0;
+      width: 48%;
+    }
+    @include xs_500 {
+      width: 100%;
+    }
     & .manager__descr-item {
       @include adap(margin-bottom, 15px, 40px);
       & > div {
         width: vw(39px);
         height: vw(39px);
         flex-shrink: 0;
+        @include md_900 {
+          width: 3rem;
+          height: 3rem;
+          & br {
+            display: none;
+          }
+        }
       }
       & > p {
         @include adap(margin-left, 10px, 15px);
@@ -28,6 +51,13 @@
     }
   }
   &--right {
+    @include md_900 {
+      width: 48%;
+    }
+    @include xs_500 {
+      width: 100%;
+      margin-top: 3rem;
+    }
     & h3 {
       text-align: center;
     }
@@ -35,6 +65,12 @@
       flex-direction: column;
       width: vw(305px);
       margin: 0 auto;
+      @include md_900 {
+        width: 100%;
+      }
+      @include xs_500 {
+        width: 29rem;
+      }
       & > span {
         margin-top: 15px;
         text-align: left;
@@ -44,10 +80,18 @@
         height: vw(80px);
         margin-bottom: 15px;
         margin-right: 0;
+        @include md_900 {
+          width: 100%;
+          height: 5rem;
+        }
       }
       & button {
         width: 100%;
         height: vw(80px);
+        @include md_900 {
+          width: 100%;
+          height: 5rem;
+        }
       }
     }
   }
@@ -55,9 +99,30 @@
     left: 0;
     bottom: -8.5vw;
     position: absolute;
+    @include md_900 {
+      position: relative;
+      left: -3rem;
+      bottom: -1rem;
+      width: 50rem;
+    }
+    @include sm_700 {
+      width: 40rem;
+    }
+    @include xs_500 {
+      width: 30rem;
+    }
     & .manager-icon {
       right: 24vw;
       bottom: 17vw;
+      @include md_900 {
+        width: 12rem;
+        height: 12rem;
+        right: 0rem;
+        bottom: 14rem;
+      }
+      @include xs_500 {
+        bottom: 6rem;
+      }
     }
   }
 }

@@ -8,13 +8,35 @@
   &__content {
     display: flex;
     @include adap(margin-top, 30px, 60px);
+    @include md_900 {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-right: 3rem;
+    }
+    @include sm_700 {
+      padding-right: 0;
+    }
     &-item {
       @include adap(margin-right, 30px, 160px);
       &:first-of-type {
         @include adap(margin-left, 10px, 30px);
+        @include md_900 {
+          margin-left: 0;
+        }
       }
       &:last-of-type {
         @include adap(margin-right, 30px, 214px);
+        @include md_900 {
+          margin-right: 0;
+        }
+      }
+      @include md_900 {
+        width: 48%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+      @include xs_500 {
+        width: 100%;
       }
     }
     &-ico {
@@ -31,6 +53,10 @@
         top: -3.5vw;
         left: -2vw;
         z-index: 1;
+        @include md_900 {
+          top: -5rem;
+          left: -1rem;
+        }
       }
     }
     &-descr {
@@ -38,13 +64,30 @@
     }
   }
   &__subtitle {
-    @include adap(margin-top, 30px, 70px);
+    @include adap(margin-top, 30px, 40px);
     display: flex;
-    & p:last-of-type {
-      @include adap(margin-left, 20px, 60px);
+    & > p {
+      & a:last-of-type {
+        margin-left: vw(60px);
+        @include sm_700 {
+          display: block;
+          margin-left: 0;
+          margin-top: 1rem;
+        }
+      }
     }
+    // & p:last-of-type {
+    //   //@include adap(margin-left, 20px, 60px);
+    //   @include md_900 {
+    //     margin-left: 0;
+    //     margin-top: 2rem;
+    //   }
+    // }
     & img {
       width: vw(32px);
+      @include md_900 {
+        width: 2rem;
+      }
     }
   }
 }

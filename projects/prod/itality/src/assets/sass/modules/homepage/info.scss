@@ -60,6 +60,8 @@
     & a {
       padding: vw(23px) vw(50px);
       margin-left: 6vw;
+      width: vw(335px);
+      height: vw(80px);
       @include md_900 {
         padding: 1rem;
         width: 20rem;

@@ -21,4 +21,10 @@
       }
     }
   }
+  & .info {
+    padding-top: 0;
+  }
+  & .schema__form-content {
+    @include adap(margin-top, 20px, 45px);
+  }
 }

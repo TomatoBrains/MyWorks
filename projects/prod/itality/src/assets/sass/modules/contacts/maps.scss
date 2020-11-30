@@ -1,6 +1,9 @@
 .maps {
   @include adap(padding-top, 30px, 75px);
   @include adap(padding-bottom, 30px, 45px);
+  & h2 {
+    @include adap(margin-bottom, 30px, 65px);
+  }
   &__item {
     position: relative;
     @include adap(margin-bottom, 30px, 40px);

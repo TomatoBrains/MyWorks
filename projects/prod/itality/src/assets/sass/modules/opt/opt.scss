@@ -1,9 +1,20 @@
 .opt {
   & .main {
-    @include adap(padding-bottom, 30px, 280px);
+    @include adap(padding-bottom, 30px, 200px);
     &__pluses {
       margin-top: 0;
       @include adap(margin-right, 30px, 193px);
+      @include md_900 {
+        & br {
+          display: none;
+        }
+      }
+      @include sm_700 {
+        margin-top: 3rem;
+        &-item {
+          width: 100%;
+        }
+      }
     }
     &-wrap {
       &--flex {
@@ -18,6 +29,35 @@
         flex-direction: row-reverse;
         margin-right: 0;
         @include adap(margin-bottom, 10px, 30px);
+        @include md_900 {
+          width: 48%;
+        }
+        @include sm_700 {
+          & img {
+            width: 30%;
+            height: 9rem;
+          }
+          & > div {
+            width: 70%;
+            & br {
+              display: none;
+            }
+          }
+        }
+        @include xs_500 {
+          width: 100%;
+          & img {
+            width: 8rem;
+            height: 8rem;
+          }
+          & > div {
+            width: 70%;
+            height: 8rem;
+            & br {
+              display: none;
+            }
+          }
+        }
       }
     }
   }
